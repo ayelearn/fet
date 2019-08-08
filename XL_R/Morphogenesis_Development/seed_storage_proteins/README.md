@@ -1,0 +1,1 @@
+seed_storage_proteins

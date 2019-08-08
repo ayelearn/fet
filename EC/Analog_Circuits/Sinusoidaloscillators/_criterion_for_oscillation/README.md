@@ -1,0 +1,1 @@
+_criterion_for_oscillation

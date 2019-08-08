@@ -1,0 +1,1 @@
+_Manual_automatic_shutdown_system

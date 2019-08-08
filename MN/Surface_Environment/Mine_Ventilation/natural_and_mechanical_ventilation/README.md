@@ -1,0 +1,1 @@
+natural_and_mechanical_ventilation

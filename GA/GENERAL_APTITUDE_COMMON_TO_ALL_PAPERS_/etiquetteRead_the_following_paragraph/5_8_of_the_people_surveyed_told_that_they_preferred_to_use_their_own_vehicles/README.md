@@ -1,0 +1,1 @@
+5_8_of_the_people_surveyed_told_that_they_preferred_to_use_their_own_vehicles

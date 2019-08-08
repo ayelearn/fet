@@ -1,0 +1,1 @@
+deflection_for_symmetric_bending_

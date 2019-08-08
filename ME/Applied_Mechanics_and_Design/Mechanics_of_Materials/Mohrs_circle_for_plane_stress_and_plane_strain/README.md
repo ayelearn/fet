@@ -1,0 +1,1 @@
+Mohrs_circle_for_plane_stress_and_plane_strain

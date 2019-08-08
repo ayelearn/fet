@@ -1,0 +1,1 @@
+principle_of_equivalent_stratum

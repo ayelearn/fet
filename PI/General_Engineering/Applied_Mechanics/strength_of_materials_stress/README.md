@@ -1,0 +1,1 @@
+strength_of_materials_stress

@@ -1,0 +1,1 @@
+kinematics_and_dynamics_of_particles_and_of_rigid_bodies_in_plane_motion

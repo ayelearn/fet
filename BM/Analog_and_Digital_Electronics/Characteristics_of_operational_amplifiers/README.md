@@ -1,0 +1,1 @@
+Characteristics_of_operational_amplifiers

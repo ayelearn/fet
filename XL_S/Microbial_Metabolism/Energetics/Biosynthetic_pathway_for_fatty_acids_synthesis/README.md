@@ -1,0 +1,1 @@
+Biosynthetic_pathway_for_fatty_acids_synthesis

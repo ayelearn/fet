@@ -1,0 +1,1 @@
+efficiency_of_the_compressor_and_degree_of_reaction

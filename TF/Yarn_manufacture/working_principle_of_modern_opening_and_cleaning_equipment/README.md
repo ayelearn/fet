@@ -1,0 +1,1 @@
+working_principle_of_modern_opening_and_cleaning_equipment

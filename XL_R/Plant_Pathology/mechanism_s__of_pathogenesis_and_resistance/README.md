@@ -1,0 +1,1 @@
+mechanism_s__of_pathogenesis_and_resistance

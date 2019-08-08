@@ -1,0 +1,1 @@
+mode_of_action_and_resistance

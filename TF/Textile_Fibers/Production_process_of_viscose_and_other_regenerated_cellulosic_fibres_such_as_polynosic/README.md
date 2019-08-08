@@ -1,0 +1,1 @@
+Production_process_of_viscose_and_other_regenerated_cellulosic_fibres_such_as_polynosic

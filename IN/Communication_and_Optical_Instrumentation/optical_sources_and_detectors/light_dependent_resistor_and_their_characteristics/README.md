@@ -1,0 +1,1 @@
+light_dependent_resistor_and_their_characteristics

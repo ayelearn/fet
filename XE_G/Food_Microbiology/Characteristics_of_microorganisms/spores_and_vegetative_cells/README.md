@@ -1,0 +1,1 @@
+spores_and_vegetative_cells

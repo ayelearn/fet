@@ -1,0 +1,1 @@
+_Origin_of_magnetism_in_metallic_and_ceramic_materials

@@ -1,0 +1,1 @@
+decatizing_and_shrink_resistant_finishing_of_wool

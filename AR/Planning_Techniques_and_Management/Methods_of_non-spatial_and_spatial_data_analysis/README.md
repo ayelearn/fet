@@ -1,0 +1,1 @@
+Methods_of_non-spatial_and_spatial_data_analysis

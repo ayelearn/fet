@@ -1,0 +1,1 @@
+dependence_of_shear_modulus_on_temperature

@@ -1,0 +1,1 @@
+v-i_relationships_of_resistor

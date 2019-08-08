@@ -1,0 +1,1 @@
+electronic_configuration_of_atoms_and_ions

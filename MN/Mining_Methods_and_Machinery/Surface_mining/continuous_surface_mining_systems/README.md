@@ -1,0 +1,1 @@
+continuous_surface_mining_systems

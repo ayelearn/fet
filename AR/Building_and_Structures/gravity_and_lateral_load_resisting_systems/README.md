@@ -1,0 +1,1 @@
+gravity_and_lateral_load_resisting_systems

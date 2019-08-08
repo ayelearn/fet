@@ -1,0 +1,1 @@
+motoring_and_generating_mode_of_operation_and_their_characteristics

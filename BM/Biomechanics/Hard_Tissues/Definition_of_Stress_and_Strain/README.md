@@ -1,0 +1,1 @@
+Definition_of_Stress_and_Strain

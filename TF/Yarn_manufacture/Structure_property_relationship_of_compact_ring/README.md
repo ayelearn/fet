@@ -1,0 +1,1 @@
+Structure_property_relationship_of_compact_ring

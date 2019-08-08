@@ -1,0 +1,1 @@
+Stefan-_Boltzmann_law

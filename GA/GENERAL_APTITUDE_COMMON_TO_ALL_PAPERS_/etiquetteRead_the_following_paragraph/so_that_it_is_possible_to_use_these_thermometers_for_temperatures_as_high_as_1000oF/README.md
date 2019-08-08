@@ -1,0 +1,1 @@
+so_that_it_is_possible_to_use_these_thermometers_for_temperatures_as_high_as_1000oF

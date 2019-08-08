@@ -1,0 +1,1 @@
+plate_tectonics_relationship_with_earthquakes

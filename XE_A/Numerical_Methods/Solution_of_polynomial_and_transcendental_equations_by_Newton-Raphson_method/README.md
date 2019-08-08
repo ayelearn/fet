@@ -1,0 +1,1 @@
+Solution_of_polynomial_and_transcendental_equations_by_Newton-Raphson_method

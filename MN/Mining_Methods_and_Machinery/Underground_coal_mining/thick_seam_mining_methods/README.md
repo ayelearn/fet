@@ -1,0 +1,1 @@
+thick_seam_mining_methods

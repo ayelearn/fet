@@ -1,0 +1,1 @@
+Hall_Effect_sensors_and_associated_signal_conditioning_circuits

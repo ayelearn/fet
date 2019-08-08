@@ -1,0 +1,1 @@
+Stress-strain_relations_in_elastic_and_plastic_deformation

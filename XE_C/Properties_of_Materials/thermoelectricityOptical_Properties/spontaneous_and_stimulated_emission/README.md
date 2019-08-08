@@ -1,0 +1,1 @@
+spontaneous_and_stimulated_emission

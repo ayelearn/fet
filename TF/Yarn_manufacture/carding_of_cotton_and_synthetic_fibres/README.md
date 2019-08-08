@@ -1,0 +1,1 @@
+carding_of_cotton_and_synthetic_fibres

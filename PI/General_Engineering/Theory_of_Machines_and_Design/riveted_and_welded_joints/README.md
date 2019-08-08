@@ -1,0 +1,1 @@
+riveted_and_welded_joints

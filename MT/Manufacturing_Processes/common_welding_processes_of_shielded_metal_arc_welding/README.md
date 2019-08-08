@@ -1,0 +1,1 @@
+common_welding_processes_of_shielded_metal_arc_welding

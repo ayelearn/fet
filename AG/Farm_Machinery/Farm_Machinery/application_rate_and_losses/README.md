@@ -1,0 +1,1 @@
+application_rate_and_losses

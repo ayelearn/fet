@@ -1,0 +1,1 @@
+_Medicine_is_to_illness_as_law_is_to__A_

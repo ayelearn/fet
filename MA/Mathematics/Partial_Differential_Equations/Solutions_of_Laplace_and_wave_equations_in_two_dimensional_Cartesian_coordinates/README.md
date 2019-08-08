@@ -1,0 +1,1 @@
+Solutions_of_Laplace_and_wave_equations_in_two_dimensional_Cartesian_coordinates

@@ -1,0 +1,1 @@
+Resist_and_discharge_printing_of_cotton

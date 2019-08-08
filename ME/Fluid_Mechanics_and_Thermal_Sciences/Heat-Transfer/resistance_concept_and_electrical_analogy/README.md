@@ -1,0 +1,1 @@
+resistance_concept_and_electrical_analogy

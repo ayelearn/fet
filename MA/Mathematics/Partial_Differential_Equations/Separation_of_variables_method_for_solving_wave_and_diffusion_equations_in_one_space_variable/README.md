@@ -1,0 +1,1 @@
+Separation_of_variables_method_for_solving_wave_and_diffusion_equations_in_one_space_variable
