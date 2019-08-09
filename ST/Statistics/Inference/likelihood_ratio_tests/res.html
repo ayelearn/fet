@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Likelihood-ratio test - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Likelihood-ratio_test","wgTitle":"Likelihood-ratio test","wgCurRevisionId":905303520,"wgRevisionId":905303520,"wgArticleId":45035,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","All articles with unsourced statements","Articles with unsourced statements from September 2018","All articles with specifically marked weasel-worded phrases","Articles with specifically marked weasel-worded phrases from March 2019","Statistical ratios","Statistical tests"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February",
+"March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Likelihood-ratio_test","wgRelevantArticleId":45035,"wgRequestId":"XUyS5ApAME4AALlpHZQAAACM","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Likelihood-ratio_tests","wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgInternalRedirectTargetUrl":
+"/wiki/Likelihood-ratio_test","wgWikibaseItemId":"Q585740","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","ext.cite.ux-enhancements","ext.math.scripts","site","mediawiki.page.startup","mediawiki.page.ready",
+"mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.17"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Likelihood-ratio_test"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Likelihood-ratio_test&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Likelihood-ratio_test&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Likelihood-ratio_test"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Likelihood-ratio_test rootpage-Likelihood-ratio_test skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Likelihood-ratio test</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"><span class="mw-redirectedfrom">&#160;&#160;(Redirected from <a href="/w/index.php?title=Likelihood-ratio_tests&amp;redirect=no" class="mw-redirect" title="Likelihood-ratio tests">Likelihood-ratio tests</a>)</span></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Statistical test used for comparing the goodness of fit of two statistical models</div>
+<div role="note" class="hatnote navigation-not-searchable">Not to be confused with the use of <a href="/wiki/Likelihood_ratios_in_diagnostic_testing" title="Likelihood ratios in diagnostic testing">likelihood ratios in diagnostic testing</a>.</div>
+<p>In <a href="/wiki/Statistics" title="Statistics">statistics</a>, the <b>likelihood-ratio test</b> assesses the <a href="/wiki/Goodness_of_fit" title="Goodness of fit">goodness of fit</a> of two competing <a href="/wiki/Statistical_model" title="Statistical model">statistical models</a> based on the ratio of their <a href="/wiki/Likelihood_function" title="Likelihood function">likelihoods</a>, specifically one found by <a href="/wiki/Mathematical_optimization" title="Mathematical optimization">maximization</a> over the entire <a href="/wiki/Parameter_space" title="Parameter space">parameter space</a> and another found after imposing some <a href="/wiki/Constraint_(mathematics)" title="Constraint (mathematics)">constraint</a>. If the constraint (i.e., the <a href="/wiki/Null_hypothesis" title="Null hypothesis">null hypothesis</a>) is supported by the <a href="/wiki/Realization_(probability)" title="Realization (probability)">observed data</a>, the two likelihoods should not differ by more than <a href="/wiki/Sampling_error" title="Sampling error">sampling error</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> Thus the likelihood-ratio test tests whether this ratio is <a href="/wiki/Statistical_significance" title="Statistical significance">significantly different</a> from one, or equivalently whether its <a href="/wiki/Natural_logarithm" title="Natural logarithm">natural logarithm</a> is significantly different from zero.
+</p><p>The likelihood-ratio test is the oldest of the three classical approaches to hypothesis testing, together with the <a href="/wiki/Lagrange_multiplier_test" class="mw-redirect" title="Lagrange multiplier test">Lagrange multiplier test</a> and the <a href="/wiki/Wald_test" title="Wald test">Wald test</a>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> In fact, the latter two can be conceptualized as approximations to the likelihood-ratio test, and are asymptotically equivalent.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup><sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> In the case of comparing two models each of which has no unknown <a href="/wiki/Statistical_parameters" class="mw-redirect" title="Statistical parameters">parameters</a>, use of the likelihood-ratio test can be justified by the <a href="/wiki/Neyman%E2%80%93Pearson_lemma" title="Neyman–Pearson lemma">Neyman–Pearson lemma</a>. The lemma demonstrates that the test has the highest <a href="/wiki/Statistical_power" class="mw-redirect" title="Statistical power">power</a> among all competitors.<sup id="cite_ref-NeymanPearson1933_6-0" class="reference"><a href="#cite_note-NeymanPearson1933-6">&#91;6&#93;</a></sup>
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Definition"><span class="tocnumber">1</span> <span class="toctext">Definition</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#General"><span class="tocnumber">1.1</span> <span class="toctext">General</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Case_of_simple_hypotheses"><span class="tocnumber">1.2</span> <span class="toctext">Case of simple hypotheses</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Interpretation"><span class="tocnumber">2</span> <span class="toctext">Interpretation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#An_example"><span class="tocnumber">2.1</span> <span class="toctext">An example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Asymptotic_distribution:_Wilks’_theorem"><span class="tocnumber">3</span> <span class="toctext">Asymptotic distribution: Wilks’ theorem</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Further_reading"><span class="tocnumber">6</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Definition">Definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Likelihood-ratio_test&amp;action=edit&amp;section=1" title="Edit section: Definition">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="General">General</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Likelihood-ratio_test&amp;action=edit&amp;section=2" title="Edit section: General">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Suppose that we have a <a href="/wiki/Statistical_model" title="Statistical model">statistical model</a> with <a href="/wiki/Statistical_parameter" title="Statistical parameter">parameter space</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Theta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x0398;<!-- Θ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Theta }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bc927b19f46d005b4720db7a0f96cd5b6f1a0d9b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.808ex; height:2.176ex;" alt="\Theta "/></span>. A <a href="/wiki/Null_hypothesis" title="Null hypothesis">null hypothesis</a> is often stated by saying that the parameter <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \theta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B8;<!-- θ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \theta }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6e5ab2664b422d53eb0c7df3b87e1360d75ad9af" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.09ex; height:2.176ex;" alt="\theta "/></span> is in a specified subset <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Theta _{0}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi mathvariant="normal">&#x0398;<!-- Θ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Theta _{0}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0832411ddfb23a7a9844ec39ddfde0f06eedc4c4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.862ex; height:2.509ex;" alt="\Theta_0"/></span> of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Theta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x0398;<!-- Θ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Theta }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bc927b19f46d005b4720db7a0f96cd5b6f1a0d9b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.808ex; height:2.176ex;" alt="\Theta "/></span>. The <a href="/wiki/Alternative_hypothesis" title="Alternative hypothesis">alternative hypothesis</a> is thus that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \theta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B8;<!-- θ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \theta }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6e5ab2664b422d53eb0c7df3b87e1360d75ad9af" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.09ex; height:2.176ex;" alt="\theta "/></span> is in the <a href="/wiki/Complement_(set_theory)" title="Complement (set theory)">complement</a> of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Theta _{0}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi mathvariant="normal">&#x0398;<!-- Θ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Theta _{0}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0832411ddfb23a7a9844ec39ddfde0f06eedc4c4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.862ex; height:2.509ex;" alt="\Theta_0"/></span>, i.e. in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Theta \smallsetminus \Theta _{0}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x0398;<!-- Θ --></mi>
+        <mo>&#x2216;<!-- ∖ --></mo>
+        <msub>
+          <mi mathvariant="normal">&#x0398;<!-- Θ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Theta \smallsetminus \Theta _{0}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0ae0d3a037cbfe9e59334af781e21bdc5d27b1cc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.511ex; height:2.509ex;" alt="{\displaystyle \Theta \smallsetminus \Theta _{0}}"/></span>, which is denoted by <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Theta _{0}^{\complement }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi mathvariant="normal">&#x0398;<!-- Θ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x2201;<!-- ∁ --></mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Theta _{0}^{\complement }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/20491b8acf36b65ac80cfa8164517ab4fea56aba" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.862ex; height:3.509ex;" alt="{\displaystyle \Theta _{0}^{\complement }}"/></span>. The likelihood ratio test statistic for the null hypothesis <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle H_{0}\,:\,\theta \in \Theta _{0}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>H</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+        <mo>:</mo>
+        <mspace width="thinmathspace" />
+        <mi>&#x03B8;<!-- θ --></mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <msub>
+          <mi mathvariant="normal">&#x0398;<!-- Θ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle H_{0}\,:\,\theta \in \Theta _{0}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2979f9fc15671a39a2985c3ae2a55422e74421ae" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:12.49ex; height:2.509ex;" alt="{\displaystyle H_{0}\,:\,\theta \in \Theta _{0}}"/></span> is given by:<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle LR=-2\ln \left[{\frac {\sup _{\theta \in \Theta _{0}}{\mathcal {L}}(\theta )}{\sup _{\theta \in \Theta }{\mathcal {L}}(\theta )}}\right]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>L</mi>
+        <mi>R</mi>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>2</mn>
+        <mi>ln</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mrow>
+          <mo>[</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <munder>
+                  <mo movablelimits="true" form="prefix">sup</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>&#x03B8;<!-- θ --></mi>
+                    <mo>&#x2208;<!-- ∈ --></mo>
+                    <msub>
+                      <mi mathvariant="normal">&#x0398;<!-- Θ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>0</mn>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                </munder>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi class="MJX-tex-caligraphic" mathvariant="script">L</mi>
+                  </mrow>
+                </mrow>
+                <mo stretchy="false">(</mo>
+                <mi>&#x03B8;<!-- θ --></mi>
+                <mo stretchy="false">)</mo>
+              </mrow>
+              <mrow>
+                <munder>
+                  <mo movablelimits="true" form="prefix">sup</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>&#x03B8;<!-- θ --></mi>
+                    <mo>&#x2208;<!-- ∈ --></mo>
+                    <mi mathvariant="normal">&#x0398;<!-- Θ --></mi>
+                  </mrow>
+                </munder>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi class="MJX-tex-caligraphic" mathvariant="script">L</mi>
+                  </mrow>
+                </mrow>
+                <mo stretchy="false">(</mo>
+                <mi>&#x03B8;<!-- θ --></mi>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle LR=-2\ln \left[{\frac {\sup _{\theta \in \Theta _{0}}{\mathcal {L}}(\theta )}{\sup _{\theta \in \Theta }{\mathcal {L}}(\theta )}}\right]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/469decaa30021c7624e50c4af751485a04b77402" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:27.891ex; height:7.509ex;" alt="{\displaystyle LR=-2\ln \left[{\frac {\sup _{\theta \in \Theta _{0}}{\mathcal {L}}(\theta )}{\sup _{\theta \in \Theta }{\mathcal {L}}(\theta )}}\right]}"/></span></dd></dl>
+<p>where the quantity inside the brackets is called the likelihood ratio. Here, the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sup }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">sup</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sup }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/266a03117c05ef2558c304b1dbb5f319fcd56fd6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.501ex; height:2.009ex;" alt="\sup "/></span> notation refers to the <a href="/wiki/Supremum" class="mw-redirect" title="Supremum">supremum</a> function. As all likelihoods are positive, and as the constrained maximum cannot exceed the unconstrained maximum, the likelihood ratio is <a href="/wiki/Bounded_set" title="Bounded set">bounded</a> between zero and one. 
+</p><p>Often the likelihood-ratio test statistic is expressed as a difference between the <a href="/wiki/Log-likelihood" class="mw-redirect" title="Log-likelihood">log-likelihoods</a>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle LR=-2\left[\ell (\theta _{0})-\ell ({\hat {\theta }})\right]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>L</mi>
+        <mi>R</mi>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>2</mn>
+        <mrow>
+          <mo>[</mo>
+          <mrow>
+            <mi>&#x2113;<!-- ℓ --></mi>
+            <mo stretchy="false">(</mo>
+            <msub>
+              <mi>&#x03B8;<!-- θ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+            </msub>
+            <mo stretchy="false">)</mo>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>&#x2113;<!-- ℓ --></mi>
+            <mo stretchy="false">(</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mrow class="MJX-TeXAtom-ORD">
+                <mover>
+                  <mi>&#x03B8;<!-- θ --></mi>
+                  <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+                </mover>
+              </mrow>
+            </mrow>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle LR=-2\left[\ell (\theta _{0})-\ell ({\hat {\theta }})\right]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1cb369b4565152cb05f309c1035b0ab4470527be" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:23.897ex; height:4.843ex;" alt="{\displaystyle LR=-2\left[\ell (\theta _{0})-\ell ({\hat {\theta }})\right]}"/></span>, where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \theta _{0}\in \Theta _{0}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03B8;<!-- θ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <msub>
+          <mi mathvariant="normal">&#x0398;<!-- Θ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \theta _{0}\in \Theta _{0}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d0ead7cc3456dbc3dd89ce2a2af8ce62c66f3774" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.848ex; height:2.509ex;" alt="{\displaystyle \theta _{0}\in \Theta _{0}}"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\hat {\theta }}\in \Theta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>&#x03B8;<!-- θ --></mi>
+              <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi mathvariant="normal">&#x0398;<!-- Θ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\hat {\theta }}\in \Theta }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c1b67820cb7ed5b00f72e0184bad86a7987acf24" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.005ex; height:2.843ex;" alt="{\displaystyle {\hat {\theta }}\in \Theta }"/></span> denote the respective <a href="/wiki/Arg_max" title="Arg max">arguments of the maxima</a>. The reason for multiplying by negative two is mathematical so that, by <a href="/wiki/Wilks%27_theorem" title="Wilks&#39; theorem">Wilks' theorem</a>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle LR}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>L</mi>
+        <mi>R</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle LR}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5322c1693160b1a3d7fc7cd92ce23ecd22cbc93e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:3.347ex; height:2.176ex;" alt="LR"/></span> has an asymptotic <a href="/wiki/Chi-squared_distribution" title="Chi-squared distribution"><i>χ</i><sup>2</sup>-distribution</a> under the null hypothesis.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup> The <a href="/wiki/Sampling_distribution" title="Sampling distribution">finite sample distributions</a> of likelihood-ratio tests are generally unknown.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup>
+</p><p>The likelihood-ratio test requires that the models be <a href="/wiki/Statistical_model#Nested_models" title="Statistical model">nested</a>&#8212;i.e. the more complex model can be transformed into the simpler model by imposing constraints on the former's parameters. Many common test statistics are tests for nested models and can be phrased as log-likelihood ratios or approximations thereof: e.g. the <a href="/wiki/Z-test" title="Z-test"><i>Z</i>-test</a>, the <a href="/wiki/F-test" title="F-test"><i>F</i>-test</a>, the <a href="/wiki/G-test" title="G-test"><i>G</i>-test</a>, and <a href="/wiki/Pearson%27s_chi-squared_test" title="Pearson&#39;s chi-squared test">Pearson's chi-squared test</a>; for an illustration with the <a href="/wiki/Student%27s_t-test#One-sample_t-test" title="Student&#39;s t-test">one-sample <i>t</i>-test</a>, see below.
+</p><p>If the models are not nested, then instead of the likelihood-ratio test, there is a generalization of the test that can usually be used: for details, see <i><a href="/wiki/Relative_likelihood" class="mw-redirect" title="Relative likelihood">relative likelihood</a></i>.
+</p>
+<h3><span class="mw-headline" id="Case_of_simple_hypotheses">Case of simple hypotheses</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Likelihood-ratio_test&amp;action=edit&amp;section=3" title="Edit section: Case of simple hypotheses">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Neyman%E2%80%93Pearson_lemma" title="Neyman–Pearson lemma">Neyman–Pearson lemma</a></div>
+<p>A simple-vs.-simple hypothesis test has completely specified models under both the null hypothesis and the alternative hypothesis, which for convenience are written in terms of fixed values of a notional parameter <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \theta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B8;<!-- θ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \theta }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6e5ab2664b422d53eb0c7df3b87e1360d75ad9af" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.09ex; height:2.176ex;" alt="\theta "/></span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}H_{0}&amp;:&amp;\theta =\theta _{0},\\H_{1}&amp;:&amp;\theta =\theta _{1}.\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>H</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>:</mo>
+              </mtd>
+              <mtd>
+                <mi>&#x03B8;<!-- θ --></mi>
+                <mo>=</mo>
+                <msub>
+                  <mi>&#x03B8;<!-- θ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>H</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>:</mo>
+              </mtd>
+              <mtd>
+                <mi>&#x03B8;<!-- θ --></mi>
+                <mo>=</mo>
+                <msub>
+                  <mi>&#x03B8;<!-- θ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}H_{0}&amp;:&amp;\theta =\theta _{0},\\H_{1}&amp;:&amp;\theta =\theta _{1}.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dc1f61faa173b40b4cd416fa9245571effd0e32e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:16.655ex; height:5.843ex;" alt="&#10;\begin{align}&#10;H_0 &amp;:&amp; \theta=\theta_0 ,\\&#10;H_1 &amp;:&amp; \theta=\theta_1 .&#10;\end{align}&#10;"/></span></dd></dl>
+<p>In this case, under either hypothesis, the distribution of the data is fully specified: there are no unknown parameters to estimate. For this case, a variant of the likelihood-ratio test is available:<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup><sup id="cite_ref-Stuart_et_al._20.10–20.13_11-0" class="reference"><a href="#cite_note-Stuart_et_al._20.10–20.13-11">&#91;11&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lambda (x)={\frac {{\mathcal {L}}(\theta _{0}\mid x)}{{\mathcal {L}}(\theta _{1}\mid x)}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03BB;<!-- λ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi class="MJX-tex-caligraphic" mathvariant="script">L</mi>
+                </mrow>
+              </mrow>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>&#x03B8;<!-- θ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>0</mn>
+                </mrow>
+              </msub>
+              <mo>&#x2223;<!-- ∣ --></mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi class="MJX-tex-caligraphic" mathvariant="script">L</mi>
+                </mrow>
+              </mrow>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>&#x03B8;<!-- θ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo>&#x2223;<!-- ∣ --></mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda (x)={\frac {{\mathcal {L}}(\theta _{0}\mid x)}{{\mathcal {L}}(\theta _{1}\mid x)}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0b670f9538dac0ef97716e73625cca842e690456" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:17.253ex; height:6.509ex;" alt="{\displaystyle \lambda (x)={\frac {{\mathcal {L}}(\theta _{0}\mid x)}{{\mathcal {L}}(\theta _{1}\mid x)}}}"/></span></dd></dl>
+<p>(Some older references may use the reciprocal of the function above as the definition.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup> Thus, the likelihood ratio is small if the alternative model is better than the null model.
+</p><p>The likelihood-ratio test provides the decision rule as follows:
+</p>
+<dl><dd>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lambda &gt;c}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03BB;<!-- λ --></mi>
+        <mo>&gt;</mo>
+        <mi>c</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda &gt;c}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/13e040adf02a0e05241104fa8e91b34eb066d7a1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.461ex; height:2.176ex;" alt="{\displaystyle \lambda &gt;c}"/></span>, do not reject <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle H_{0}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>H</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle H_{0}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/43910602a221b7a4c373791f94793e3008622070" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.985ex; height:2.509ex;" alt="H_{0}"/></span>;</dd></dl>
+<dl><dd>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lambda &lt;c}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03BB;<!-- λ --></mi>
+        <mo>&lt;</mo>
+        <mi>c</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda &lt;c}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/104fc9bd1fd8fc91967b6a7aceef92600859b98c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.461ex; height:2.176ex;" alt="{\displaystyle \lambda &lt;c}"/></span>, reject <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle H_{0}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>H</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle H_{0}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/43910602a221b7a4c373791f94793e3008622070" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.985ex; height:2.509ex;" alt="H_{0}"/></span>;</dd></dl>
+<dl><dd>Reject with probability <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle q}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>q</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/06809d64fa7c817ffc7e323f85997f783dbdf71d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.07ex; height:2.009ex;" alt="q"/></span> if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lambda =c.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03BB;<!-- λ --></mi>
+        <mo>=</mo>
+        <mi>c</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda =c.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/04fc913ccf0ad86ed23d6a0fb0ceb6c7c1a91451" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.107ex; height:2.176ex;" alt="{\displaystyle \lambda =c.}"/></span></dd></dl>
+<p>The values <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle c}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>c</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/86a67b81c2de995bd608d5b2df50cd8cd7d92455" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.007ex; height:1.676ex;" alt="c"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle q}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>q</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/06809d64fa7c817ffc7e323f85997f783dbdf71d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.07ex; height:2.009ex;" alt="q"/></span> are usually chosen to obtain a specified <a href="/wiki/Significance_level" class="mw-redirect" title="Significance level">significance level</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \alpha }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B1;<!-- α --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b79333175c8b3f0840bfb4ec41b8072c83ea88d3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.488ex; height:1.676ex;" alt="\alpha "/></span>, via the relation
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle q\cdot P(\lambda =c\mid H_{0})+P(\lambda &lt;c\mid H_{0})=\alpha .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>q</mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03BB;<!-- λ --></mi>
+        <mo>=</mo>
+        <mi>c</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <msub>
+          <mi>H</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03BB;<!-- λ --></mi>
+        <mo>&lt;</mo>
+        <mi>c</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <msub>
+          <mi>H</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>&#x03B1;<!-- α --></mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q\cdot P(\lambda =c\mid H_{0})+P(\lambda &lt;c\mid H_{0})=\alpha .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d2606e20193caf3c2d3c09e8046cfd0699b1b13a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:38.698ex; height:2.843ex;" alt="{\displaystyle q\cdot P(\lambda =c\mid H_{0})+P(\lambda &lt;c\mid H_{0})=\alpha .}"/></span></dd></dl>
+<p>The <a href="/wiki/Neyman%E2%80%93Pearson_lemma" title="Neyman–Pearson lemma">Neyman–Pearson lemma</a> states that this likelihood-ratio test is the <a href="/wiki/Statistical_power" class="mw-redirect" title="Statistical power">most powerful</a> among all level <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \alpha }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B1;<!-- α --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b79333175c8b3f0840bfb4ec41b8072c83ea88d3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.488ex; height:1.676ex;" alt="\alpha "/></span> tests for this case.<sup id="cite_ref-NeymanPearson1933_6-1" class="reference"><a href="#cite_note-NeymanPearson1933-6">&#91;6&#93;</a></sup><sup id="cite_ref-Stuart_et_al._20.10–20.13_11-1" class="reference"><a href="#cite_note-Stuart_et_al._20.10–20.13-11">&#91;11&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Interpretation">Interpretation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Likelihood-ratio_test&amp;action=edit&amp;section=4" title="Edit section: Interpretation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The likelihood ratio is a function of the data <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="x"/></span>; therefore, it is a <a href="/wiki/Statistic" title="Statistic">statistic</a>.  The likelihood-ratio test rejects the null hypothesis if the value of this statistic is too small. How small is too small depends on the significance level of the test, i.e. on what probability of <a href="/wiki/Type_I_error" class="mw-redirect" title="Type I error">Type&#160;I error</a> is considered tolerable (Type&#160;I errors consist of the rejection of a null hypothesis that is true).
+</p><p>The <a href="/wiki/Numerator" class="mw-redirect" title="Numerator">numerator</a> corresponds to the likelihood of an observed outcome under the <a href="/wiki/Null_hypothesis" title="Null hypothesis">null hypothesis</a>. The <a href="/wiki/Denominator" class="mw-redirect" title="Denominator">denominator</a> corresponds to the maximum likelihood of an observed outcome, varying parameters over the whole parameter space. The numerator of this ratio is less than the denominator; so, the likelihood ratio is between 0 and 1. Low values of the likelihood ratio mean that the observed result was much less likely to occur under the null hypothesis as compared to the alternative. High values of the statistic mean that the observed outcome was nearly as likely to occur under the null hypothesis as the alternative, and so the null hypothesis cannot be rejected.
+</p>
+<h3><span class="mw-headline" id="An_example">An example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Likelihood-ratio_test&amp;action=edit&amp;section=5" title="Edit section: An example">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following example is adapted and abridged from <a href="#CITEREFStuartOrdArnold1999">Stuart et al. (1999</a>, §22.2).
+</p><p>Suppose that we have a random sample, of size <span class="texhtml mvar" style="font-style:italic;"><i>n</i></span>, from a population that is normally-distributed. Both the mean, <span class="texhtml"><i>&#956;</i></span>, and the standard deviation, <span class="texhtml"><i>&#963;</i></span>, of the population are unknown. We want to test whether the mean is equal to a given value, <span class="texhtml"><i>&#956;</i><sub>0</sub></span>. 
+</p><p>Thus, our null hypothesis is <span class="texhtml"><i>H</i><sub>0</sub>:&#160; <i>&#956;</i> = <i>&#956;</i><sub>0</sub></span>&#160; and our alternative hypothesis is <span class="texhtml"><i>H</i><sub>1</sub>:&#160; <i>&#956;</i> ≠ <i>&#956;</i><sub>0</sub></span>. The likelihood function is 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathcal {L}}(\mu ,\sigma \mid x)=\left(2\pi \sigma ^{2}\right)^{-n/2}\exp \left(-\sum _{i=1}^{n}{\frac {(x_{i}-\mu )^{2}}{2\sigma ^{2}}}\right).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">L</mi>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03BC;<!-- μ --></mi>
+        <mo>,</mo>
+        <mi>&#x03C3;<!-- σ --></mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mn>2</mn>
+              <mi>&#x03C0;<!-- π --></mi>
+              <msup>
+                <mi>&#x03C3;<!-- σ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>n</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mi>exp</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mo>&#x2212;<!-- − --></mo>
+            <munderover>
+              <mo>&#x2211;<!-- ∑ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </munderover>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mo stretchy="false">(</mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>i</mi>
+                    </mrow>
+                  </msub>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mi>&#x03BC;<!-- μ --></mi>
+                  <msup>
+                    <mo stretchy="false">)</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                </mrow>
+                <mrow>
+                  <mn>2</mn>
+                  <msup>
+                    <mi>&#x03C3;<!-- σ --></mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {L}}(\mu ,\sigma \mid x)=\left(2\pi \sigma ^{2}\right)^{-n/2}\exp \left(-\sum _{i=1}^{n}{\frac {(x_{i}-\mu )^{2}}{2\sigma ^{2}}}\right).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ceec8ece81a850e8392884ba8bda4512affe0c53" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:48.97ex; height:7.509ex;" alt="{\displaystyle {\mathcal {L}}(\mu ,\sigma \mid x)=\left(2\pi \sigma ^{2}\right)^{-n/2}\exp \left(-\sum _{i=1}^{n}{\frac {(x_{i}-\mu )^{2}}{2\sigma ^{2}}}\right).}"/></span></dd></dl>
+<p>With some calculation (omitted here), it can then be shown that 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lambda =\left(1+{\frac {t^{2}}{n-1}}\right)^{-n/2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03BB;<!-- λ --></mi>
+        <mo>=</mo>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mn>1</mn>
+              <mo>+</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac>
+                  <msup>
+                    <mi>t</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                  <mrow>
+                    <mi>n</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                  </mrow>
+                </mfrac>
+              </mrow>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>n</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda =\left(1+{\frac {t^{2}}{n-1}}\right)^{-n/2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7772c1b9c983074a35b48bcfd69e2cf3ea22bf36" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:22.252ex; height:6.843ex;" alt="{\displaystyle \lambda =\left(1+{\frac {t^{2}}{n-1}}\right)^{-n/2}}"/></span></dd></dl>
+<p>where <span class="texhtml"><i>t</i></span> is the <a href="/wiki/T-statistic" title="T-statistic"><i>t</i>-statistic</a> with <span class="texhtml"><i>n</i>&#8201;−&#8201;1</span> degrees of freedom. Hence we may use the known exact distribution of <span class="texhtml"><i>t</i><sup>2</sup></span> to draw inferences.
+</p>
+<h2><span id="Asymptotic_distribution:_Wilks.E2.80.99_theorem"></span><span class="mw-headline" id="Asymptotic_distribution:_Wilks’_theorem">Asymptotic distribution: Wilks’ theorem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Likelihood-ratio_test&amp;action=edit&amp;section=6" title="Edit section: Asymptotic distribution: Wilks’ theorem">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Wilks%27_theorem" title="Wilks&#39; theorem">Wilks' theorem</a></div>
+<p>If the distribution of the likelihood ratio corresponding to a particular null and alternative hypothesis can be explicitly determined then it can directly be used to form decision regions (to sustain or reject the null hypothesis). In most cases, however, the exact distribution of the likelihood ratio corresponding to specific hypotheses is very difficult to determine.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (September 2018)">citation needed</span></a></i>&#93;</sup>
+</p><p>Assuming <span class="texhtml"><i>H</i><sub>0</sub></span> is true, there is a fundamental result by <a href="/wiki/Samuel_S._Wilks" title="Samuel S. Wilks">Samuel S. Wilks</a>: As the sample size <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"/></span> approaches <a href="/wiki/Infinity" title="Infinity"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \infty }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \infty }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c26c105004f30c27aa7c2a9c601550a4183b1f21" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.324ex; height:1.676ex;" alt="\infty "/></span></a>, the test statistic <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle -2\log(\lambda )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>2</mn>
+        <mi>log</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03BB;<!-- λ --></mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -2\log(\lambda )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/635b100c9ccfa385dba4d6ec06f0103d725a6f8c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.494ex; height:2.843ex;" alt="{\displaystyle -2\log(\lambda )}"/></span> <a href="/wiki/Asymptotic_theory_(statistics)" title="Asymptotic theory (statistics)">asymptotically</a> will be <a href="/wiki/Chi-squared_distribution" title="Chi-squared distribution">chi-squared distributed</a> (<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \chi ^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>&#x03C7;<!-- χ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \chi ^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8c0cc9237ec72a1da6d18bc8e7fb24cdda43a49a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.509ex; height:3.009ex;" alt="\chi ^{2}"/></span>) with <a href="/wiki/Degrees_of_freedom_(statistics)" title="Degrees of freedom (statistics)">degrees of freedom</a> equal to the difference in dimensionality of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Theta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x0398;<!-- Θ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Theta }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bc927b19f46d005b4720db7a0f96cd5b6f1a0d9b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.808ex; height:2.176ex;" alt="\Theta "/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Theta _{0}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi mathvariant="normal">&#x0398;<!-- Θ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Theta _{0}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0832411ddfb23a7a9844ec39ddfde0f06eedc4c4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.862ex; height:2.509ex;" alt="\Theta_0"/></span>.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup> This implies that for a great variety of hypotheses, we can calculate the likelihood ratio <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lambda }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03BB;<!-- λ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b43d0ea3c9c025af1be9128e62a18fa74bedda2a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.355ex; height:2.176ex;" alt="\lambda "/></span> for the data and then compare <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle -2\log(\lambda )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>2</mn>
+        <mi>log</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03BB;<!-- λ --></mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -2\log(\lambda )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/635b100c9ccfa385dba4d6ec06f0103d725a6f8c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.494ex; height:2.843ex;" alt="{\displaystyle -2\log(\lambda )}"/></span> to the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \chi ^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>&#x03C7;<!-- χ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \chi ^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8c0cc9237ec72a1da6d18bc8e7fb24cdda43a49a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.509ex; height:3.009ex;" alt="\chi ^{2}"/></span> value corresponding to a desired <a href="/wiki/Statistical_significance" title="Statistical significance">statistical significance</a> as an approximate statistical test. Other extensions exist.<sup class="noprint Inline-Template" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Avoid_weasel_words" class="mw-redirect" title="Wikipedia:Avoid weasel words"><span title="The material near this tag possibly uses too vague attribution or weasel words. (March 2019)">which?</span></a></i>&#93;</sup>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Likelihood-ratio_test&amp;action=edit&amp;section=7" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Akaike_information_criterion" title="Akaike information criterion">Akaike information criterion</a></li>
+<li><a href="/wiki/Bayes_factor" title="Bayes factor">Bayes factor</a></li>
+<li><a href="/wiki/Johansen_test" title="Johansen test">Johansen test</a></li>
+<li><a href="/wiki/Model_selection" title="Model selection">Model selection</a></li>
+<li><a href="/wiki/Vuong%27s_closeness_test" title="Vuong&#39;s closeness test">Vuong's closeness test</a></li>
+<li><a href="/wiki/Sup-LR_test" class="mw-redirect" title="Sup-LR test">Sup-LR test</a></li>
+<li><a href="/wiki/Error_exponents_in_hypothesis_testing" title="Error exponents in hypothesis testing">Error exponents in hypothesis testing</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Likelihood-ratio_test&amp;action=edit&amp;section=8" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation book"><a href="/wiki/Gary_King_(political_scientist)" title="Gary King (political scientist)">King, Gary</a> (1989). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=cligOwrd7XoC&amp;pg=PA84"><i>Unifying Political Methodology&#160;: The Likelihood Theory of Statistical Inference</i></a>. New York: Cambridge University Press. p.&#160;84. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-521-36697-6" title="Special:BookSources/0-521-36697-6"><bdi>0-521-36697-6</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Unifying+Political+Methodology+%3A+The+Likelihood+Theory+of+Statistical+Inference&amp;rft.place=New+York&amp;rft.pages=84&amp;rft.pub=Cambridge+University+Press&amp;rft.date=1989&amp;rft.isbn=0-521-36697-6&amp;rft.aulast=King&amp;rft.aufirst=Gary&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DcligOwrd7XoC%26pg%3DPA84&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALikelihood-ratio+test" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation book"><a href="/wiki/G._S._Maddala" title="G. S. Maddala">Maddala, G. S.</a>; Lahiri, Kajal (2010). <i>Introduction to Econometrics</i> (Fourth ed.). New York: Wiley. p.&#160;200.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Introduction+to+Econometrics&amp;rft.place=New+York&amp;rft.pages=200&amp;rft.edition=Fourth&amp;rft.pub=Wiley&amp;rft.date=2010&amp;rft.aulast=Maddala&amp;rft.aufirst=G.+S.&amp;rft.au=Lahiri%2C+Kajal&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALikelihood-ratio+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation journal">Buse, A. (1982). "The Likelihood Ratio, Wald, and Lagrange Multiplier Tests: An Expository Note". <i><a href="/wiki/The_American_Statistician" title="The American Statistician">The American Statistician</a></i>. <b>36</b> (3a): 153–157. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1080%2F00031305.1982.10482817">10.1080/00031305.1982.10482817</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=The+American+Statistician&amp;rft.atitle=The+Likelihood+Ratio%2C+Wald%2C+and+Lagrange+Multiplier+Tests%3A+An+Expository+Note&amp;rft.volume=36&amp;rft.issue=3a&amp;rft.pages=153-157&amp;rft.date=1982&amp;rft_id=info%3Adoi%2F10.1080%2F00031305.1982.10482817&amp;rft.aulast=Buse&amp;rft.aufirst=A.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALikelihood-ratio+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation book">Pickles, Andrew (1985). <i>An Introduction to Likelihood Analysis</i>. Norwich: W. H. Hutchins &amp; Sons. pp.&#160;24–27. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-86094-190-6" title="Special:BookSources/0-86094-190-6"><bdi>0-86094-190-6</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=An+Introduction+to+Likelihood+Analysis&amp;rft.place=Norwich&amp;rft.pages=24-27&amp;rft.pub=W.+H.+Hutchins+%26+Sons&amp;rft.date=1985&amp;rft.isbn=0-86094-190-6&amp;rft.aulast=Pickles&amp;rft.aufirst=Andrew&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALikelihood-ratio+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation book">Severini, Thomas A. (2000). <i>Likelihood Methods in Statistics</i>. New York: Oxford University Press. pp.&#160;120–121. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-19-850650-3" title="Special:BookSources/0-19-850650-3"><bdi>0-19-850650-3</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Likelihood+Methods+in+Statistics&amp;rft.place=New+York&amp;rft.pages=120-121&amp;rft.pub=Oxford+University+Press&amp;rft.date=2000&amp;rft.isbn=0-19-850650-3&amp;rft.aulast=Severini&amp;rft.aufirst=Thomas+A.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALikelihood-ratio+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-NeymanPearson1933-6"><span class="mw-cite-backlink">^ <a href="#cite_ref-NeymanPearson1933_6-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-NeymanPearson1933_6-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite id="CITEREFNeymanPearson1933" class="citation"><a href="/wiki/Jerzy_Neyman" title="Jerzy Neyman">Neyman, J.</a>; <a href="/wiki/Egon_Pearson" title="Egon Pearson">Pearson, E. S.</a> (1933), <a rel="nofollow" class="external text" href="http://www.stats.org.uk/statistical-inference/NeymanPearson1933.pdf">"On the problem of the most efficient tests of statistical hypotheses"</a> <span class="cs1-format">(PDF)</span>, <i><a href="/wiki/Philosophical_Transactions_of_the_Royal_Society_of_London_A" class="mw-redirect" title="Philosophical Transactions of the Royal Society of London A">Philosophical Transactions of the Royal Society of London A</a></i>, <b>231</b> (694–706): 289–337, <a href="/wiki/Bibcode" title="Bibcode">Bibcode</a>:<a rel="nofollow" class="external text" href="http://adsabs.harvard.edu/abs/1933RSPTA.231..289N">1933RSPTA.231..289N</a>, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1098%2Frsta.1933.0009">10.1098/rsta.1933.0009</a>, <a href="/wiki/JSTOR" title="JSTOR">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/91247">91247</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Philosophical+Transactions+of+the+Royal+Society+of+London+A&amp;rft.atitle=On+the+problem+of+the+most+efficient+tests+of+statistical+hypotheses&amp;rft.volume=231&amp;rft.issue=694%E2%80%93706&amp;rft.pages=289-337&amp;rft.date=1933&amp;rft_id=%2F%2Fwww.jstor.org%2Fstable%2F91247&amp;rft_id=info%3Adoi%2F10.1098%2Frsta.1933.0009&amp;rft_id=info%3Abibcode%2F1933RSPTA.231..289N&amp;rft.aulast=Neyman&amp;rft.aufirst=J.&amp;rft.au=Pearson%2C+E.+S.&amp;rft_id=http%3A%2F%2Fwww.stats.org.uk%2Fstatistical-inference%2FNeymanPearson1933.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALikelihood-ratio+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation book"><a href="/wiki/Karl-Rudolf_Koch" title="Karl-Rudolf Koch">Koch, Karl-Rudolf</a> (1988). <i>Parameter Estimation and Hypothesis Testing in Linear Models</i>. New York: Springer. p.&#160;306. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-387-18840-1" title="Special:BookSources/0-387-18840-1"><bdi>0-387-18840-1</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Parameter+Estimation+and+Hypothesis+Testing+in+Linear+Models&amp;rft.place=New+York&amp;rft.pages=306&amp;rft.pub=Springer&amp;rft.date=1988&amp;rft.isbn=0-387-18840-1&amp;rft.aulast=Koch&amp;rft.aufirst=Karl-Rudolf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALikelihood-ratio+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation book">Silvey, S. D. (1970). <i>Statistical Inference</i>. London: Chapman &amp; Hall. pp.&#160;112–114. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-412-13820-4" title="Special:BookSources/0-412-13820-4"><bdi>0-412-13820-4</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Statistical+Inference&amp;rft.place=London&amp;rft.pages=112-114&amp;rft.pub=Chapman+%26+Hall&amp;rft.date=1970&amp;rft.isbn=0-412-13820-4&amp;rft.aulast=Silvey&amp;rft.aufirst=S.+D.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALikelihood-ratio+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation book"><a href="/wiki/Ron_C._Mittelhammer" title="Ron C. Mittelhammer">Mittelhammer, Ron C.</a>; <a href="/wiki/George_Judge" title="George Judge">Judge, George G.</a>; Miller, Douglas J. (2000). <i>Econometric Foundations</i>. New York: Cambridge University Press. p.&#160;66. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-521-62394-4" title="Special:BookSources/0-521-62394-4"><bdi>0-521-62394-4</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Econometric+Foundations&amp;rft.place=New+York&amp;rft.pages=66&amp;rft.pub=Cambridge+University+Press&amp;rft.date=2000&amp;rft.isbn=0-521-62394-4&amp;rft.aulast=Mittelhammer&amp;rft.aufirst=Ron+C.&amp;rft.au=Judge%2C+George+G.&amp;rft.au=Miller%2C+Douglas+J.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALikelihood-ratio+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite id="CITEREFMoodGraybillBoes1974" class="citation">Mood, A. M.; Graybill, F. A.; Boes, D. C. (1974), <i>Introduction to the Theory of Statistics</i> (3rd ed.), <a href="/wiki/McGraw-Hill" class="mw-redirect" title="McGraw-Hill">McGraw-Hill</a>, §9.2</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Introduction+to+the+Theory+of+Statistics&amp;rft.pages=%C2%A79.2&amp;rft.edition=3rd&amp;rft.pub=McGraw-Hill&amp;rft.date=1974&amp;rft.aulast=Mood&amp;rft.aufirst=A.+M.&amp;rft.au=Graybill%2C+F.+A.&amp;rft.au=Boes%2C+D.+C.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALikelihood-ratio+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Stuart_et_al._20.10–20.13-11"><span class="mw-cite-backlink">^ <a href="#cite_ref-Stuart_et_al._20.10–20.13_11-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Stuart_et_al._20.10–20.13_11-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite id="CITEREFStuartOrdArnold1999" class="citation">Stuart, A.; Ord, K.; Arnold, S. (1999), <i>Kendall's Advanced Theory of Statistics</i>, <b>2A</b>, <a href="/wiki/Edward_Arnold_(publisher)" title="Edward Arnold (publisher)">Arnold</a>, §§20.10–20.13</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Kendall%27s+Advanced+Theory+of+Statistics&amp;rft.pages=%C2%A7%C2%A720.10-20.13&amp;rft.pub=Arnold&amp;rft.date=1999&amp;rft.aulast=Stuart&amp;rft.aufirst=A.&amp;rft.au=Ord%2C+K.&amp;rft.au=Arnold%2C+S.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALikelihood-ratio+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite id="CITEREFCoxHinkley1974" class="citation"><a href="/wiki/David_Cox_(statistician)" title="David Cox (statistician)">Cox, D. R.</a>; <a href="/wiki/David_Hinkley" title="David Hinkley">Hinkley, D. V.</a> (1974), <i>Theoretical Statistics</i>, <a href="/wiki/Chapman_%26_Hall" title="Chapman &amp; Hall">Chapman &amp; Hall</a>, p.&#160;92, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-412-12420-3" title="Special:BookSources/0-412-12420-3"><bdi>0-412-12420-3</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Theoretical+Statistics&amp;rft.pages=92&amp;rft.pub=Chapman+%26+Hall&amp;rft.date=1974&amp;rft.isbn=0-412-12420-3&amp;rft.aulast=Cox&amp;rft.aufirst=D.+R.&amp;rft.au=Hinkley%2C+D.+V.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALikelihood-ratio+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite id="CITEREFWilks1938" class="citation"><a href="/wiki/Samuel_S._Wilks" title="Samuel S. Wilks">Wilks, S. S.</a> (1938), "The large-sample distribution of the likelihood ratio for testing composite hypotheses", <i><a href="/wiki/Annals_of_Mathematical_Statistics" title="Annals of Mathematical Statistics">Annals of Mathematical Statistics</a></i>, <b>9</b>: 60–62, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1214%2Faoms%2F1177732360">10.1214/aoms/1177732360</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Annals+of+Mathematical+Statistics&amp;rft.atitle=The+large-sample+distribution+of+the+likelihood+ratio+for+testing+composite+hypotheses&amp;rft.volume=9&amp;rft.pages=60-62&amp;rft.date=1938&amp;rft_id=info%3Adoi%2F10.1214%2Faoms%2F1177732360&amp;rft.aulast=Wilks&amp;rft.aufirst=S.+S.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALikelihood-ratio+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Likelihood-ratio_test&amp;action=edit&amp;section=9" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><cite id="CITEREFGloverDixon2004" class="citation">Glover, Scott; Dixon, Peter (2004), "Likelihood ratios: A simple and flexible statistic for empirical psychologists", <i><a href="/wiki/Psychonomic_Bulletin_%26_Review" class="mw-redirect" title="Psychonomic Bulletin &amp; Review">Psychonomic Bulletin &amp; Review</a></i>, <b>11</b> (5): 791–806, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.3758%2FBF03196706">10.3758/BF03196706</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Psychonomic+Bulletin+%26+Review&amp;rft.atitle=Likelihood+ratios%3A+A+simple+and+flexible+statistic+for+empirical+psychologists&amp;rft.volume=11&amp;rft.issue=5&amp;rft.pages=791-806&amp;rft.date=2004&amp;rft_id=info%3Adoi%2F10.3758%2FBF03196706&amp;rft.aulast=Glover&amp;rft.aufirst=Scott&amp;rft.au=Dixon%2C+Peter&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALikelihood-ratio+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFHeldSabanés_Bové2014" class="citation">Held, Leonhard; Sabanés Bové, Daniel (2014), <i>Applied Statistical Inference—Likelihood and Bayes</i>, <a href="/wiki/Springer_Science%2BBusiness_Media" title="Springer Science+Business Media">Springer</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Applied+Statistical+Inference%E2%80%94Likelihood+and+Bayes&amp;rft.pub=Springer&amp;rft.date=2014&amp;rft.aulast=Held&amp;rft.aufirst=Leonhard&amp;rft.au=Saban%C3%A9s+Bov%C3%A9%2C+Daniel&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALikelihood-ratio+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFKalbfleisch1985" class="citation"><a href="/wiki/James_G._Kalbfleisch" title="James G. Kalbfleisch">Kalbfleisch, J. G.</a> (1985), <i>Probability and Statistical Inference</i>, <b>2</b>, <a href="/wiki/Springer-Verlag" class="mw-redirect" title="Springer-Verlag">Springer-Verlag</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Probability+and+Statistical+Inference&amp;rft.pub=Springer-Verlag&amp;rft.date=1985&amp;rft.aulast=Kalbfleisch&amp;rft.aufirst=J.+G.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALikelihood-ratio+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFPerlmanWu1999" class="citation">Perlman, Michael D.; Wu, Lang (1999), "The emperor's new tests", <i><a href="/wiki/Statistical_Science" title="Statistical Science">Statistical Science</a></i>, <b>14</b> (4): 355–381, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1214%2Fss%2F1009212517">10.1214/ss/1009212517</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Statistical+Science&amp;rft.atitle=The+emperor%27s+new+tests&amp;rft.volume=14&amp;rft.issue=4&amp;rft.pages=355-381&amp;rft.date=1999&amp;rft_id=info%3Adoi%2F10.1214%2Fss%2F1009212517&amp;rft.aulast=Perlman&amp;rft.aufirst=Michael+D.&amp;rft.au=Wu%2C+Lang&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALikelihood-ratio+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFPerneger2001" class="citation">Perneger, Thomas V. (2001), "Sifting the evidence: Likelihood ratios are alternatives to P values", <i><a href="/wiki/The_BMJ" title="The BMJ">The BMJ</a></i>, <b>322</b> (7295): 1184–5, <a href="/wiki/PubMed_Central" title="PubMed Central">PMC</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//www.ncbi.nlm.nih.gov/pmc/articles/PMC1120301">1120301</a></span>, <a href="/wiki/PubMed_Identifier" class="mw-redirect" title="PubMed Identifier">PMID</a>&#160;<a rel="nofollow" class="external text" href="//www.ncbi.nlm.nih.gov/pubmed/11379590">11379590</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=The+BMJ&amp;rft.atitle=Sifting+the+evidence%3A+Likelihood+ratios+are+alternatives+to+P+values&amp;rft.volume=322&amp;rft.issue=7295&amp;rft.pages=1184-5&amp;rft.date=2001&amp;rft_id=%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC1120301&amp;rft_id=info%3Apmid%2F11379590&amp;rft.aulast=Perneger&amp;rft.aufirst=Thomas+V.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALikelihood-ratio+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFPinheiroBates2000" class="citation">Pinheiro, José C.; Bates, Douglas M. (2000), <i>Mixed-Effects Models in S and S-PLUS</i>, <a href="/wiki/Springer-Verlag" class="mw-redirect" title="Springer-Verlag">Springer-Verlag</a>, pp.&#160;82–93</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Mixed-Effects+Models+in+S+and+S-PLUS&amp;rft.pages=82-93&amp;rft.pub=Springer-Verlag&amp;rft.date=2000&amp;rft.aulast=Pinheiro&amp;rft.aufirst=Jos%C3%A9+C.&amp;rft.au=Bates%2C+Douglas+M.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALikelihood-ratio+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFSolomon1975" class="citation">Solomon, Daniel L. (1975), "A note on the non-equivalence of the Neyman-Pearson and generalized likelihood ratio tests for testing a simple null versus a simple alternative hypothesis", <i><a href="/wiki/The_American_Statistician" title="The American Statistician">The American Statistician</a></i>, <b>29</b> (2): 101–102, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1080%2F00031305.1975.10477383">10.1080/00031305.1975.10477383</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=The+American+Statistician&amp;rft.atitle=A+note+on+the+non-equivalence+of+the+Neyman-Pearson+and+generalized+likelihood+ratio+tests+for+testing+a+simple+null+versus+a+simple+alternative+hypothesis&amp;rft.volume=29&amp;rft.issue=2&amp;rft.pages=101-102&amp;rft.date=1975&amp;rft_id=info%3Adoi%2F10.1080%2F00031305.1975.10477383&amp;rft.aulast=Solomon&amp;rft.aufirst=Daniel+L.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALikelihood-ratio+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li></ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Likelihood-ratio_test&amp;action=edit&amp;section=10" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://www.itl.nist.gov/div898/handbook/apr/section2/apr233.htm">Practical application of likelihood ratio test described</a></li>
+<li><a rel="nofollow" class="external text" href="https://cran.r-project.org/web/packages/SPRT/SPRT.pdf">R Package: Wald's Sequential Probability Ratio Test</a></li>
+<li><a rel="nofollow" class="external text" href="http://faculty.vassar.edu/lowry/clin2.html">Richard Lowry's Predictive Values and Likelihood Ratios</a> Online Clinical Calculator</li></ul>
+<div role="navigation" class="navbox" aria-labelledby="Statistics" style="padding:3px"><table class="nowraplinks hlist collapsible uncollapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="/wiki/Template:Statistics" title="Template:Statistics"><abbr title="View this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Statistics" title="Template talk:Statistics"><abbr title="Discuss this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Statistics&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">e</abbr></a></li></ul></div><div id="Statistics" style="font-size:114%;margin:0 4em"><a href="/wiki/Statistics" title="Statistics">Statistics</a></div></th></tr><tr><td class="navbox-abovebelow" colspan="2"><div id="*_Outline&amp;#10;*_Index">
+<ul><li><a href="/wiki/Outline_of_statistics" title="Outline of statistics">Outline</a></li>
+<li><a href="/wiki/List_of_statistics_articles" title="List of statistics articles">Index</a></li></ul>
+</div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Descriptive_statistics" style="font-size:114%;margin:0 4em"><a href="/wiki/Descriptive_statistics" title="Descriptive statistics">Descriptive statistics</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Continuous_probability_distribution" class="mw-redirect" title="Continuous probability distribution">Continuous data</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Central_tendency" title="Central tendency">Center</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Mean" title="Mean">Mean</a>
+<ul><li><a href="/wiki/Arithmetic_mean" title="Arithmetic mean">arithmetic</a></li>
+<li><a href="/wiki/Geometric_mean" title="Geometric mean">geometric</a></li>
+<li><a href="/wiki/Harmonic_mean" title="Harmonic mean">harmonic</a></li></ul></li>
+<li><a href="/wiki/Median" title="Median">Median</a></li>
+<li><a href="/wiki/Mode_(statistics)" title="Mode (statistics)">Mode</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Statistical_dispersion" title="Statistical dispersion">Dispersion</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Variance#Sample_variance" title="Variance">Variance</a></li>
+<li><a href="/wiki/Standard_deviation" title="Standard deviation">Standard deviation</a></li>
+<li><a href="/wiki/Coefficient_of_variation" title="Coefficient of variation">Coefficient of variation</a></li>
+<li><a href="/wiki/Percentile" title="Percentile">Percentile</a></li>
+<li><a href="/wiki/Range_(statistics)" title="Range (statistics)">Range</a></li>
+<li><a href="/wiki/Interquartile_range" title="Interquartile range">Interquartile range</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Shape_of_the_distribution" class="mw-redirect" title="Shape of the distribution">Shape</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Central_limit_theorem" title="Central limit theorem">Central limit theorem</a></li>
+<li><a href="/wiki/Moment_(mathematics)" title="Moment (mathematics)">Moments</a>
+<ul><li><a href="/wiki/Skewness" title="Skewness">Skewness</a></li>
+<li><a href="/wiki/Kurtosis" title="Kurtosis">Kurtosis</a></li>
+<li><a href="/wiki/L-moment" title="L-moment">L-moments</a></li></ul></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Count_data" title="Count data">Count data</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Index_of_dispersion" title="Index of dispersion">Index of dispersion</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em">Summary tables</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Grouped_data" title="Grouped data">Grouped data</a></li>
+<li><a href="/wiki/Frequency_distribution" title="Frequency distribution">Frequency distribution</a></li>
+<li><a href="/wiki/Contingency_table" title="Contingency table">Contingency table</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Correlation_and_dependence" title="Correlation and dependence">Dependence</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Pearson_correlation_coefficient" title="Pearson correlation coefficient">Pearson product-moment correlation</a></li>
+<li><a href="/wiki/Rank_correlation" title="Rank correlation">Rank correlation</a>
+<ul><li><a href="/wiki/Spearman%27s_rank_correlation_coefficient" title="Spearman&#39;s rank correlation coefficient">Spearman's rho</a></li>
+<li><a href="/wiki/Kendall_rank_correlation_coefficient" title="Kendall rank correlation coefficient">Kendall's tau</a></li></ul></li>
+<li><a href="/wiki/Partial_correlation" title="Partial correlation">Partial correlation</a></li>
+<li><a href="/wiki/Scatter_plot" title="Scatter plot">Scatter plot</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Statistical_graphics" title="Statistical graphics">Graphics</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Bar_chart" title="Bar chart">Bar chart</a></li>
+<li><a href="/wiki/Biplot" title="Biplot">Biplot</a></li>
+<li><a href="/wiki/Box_plot" title="Box plot">Box plot</a></li>
+<li><a href="/wiki/Control_chart" title="Control chart">Control chart</a></li>
+<li><a href="/wiki/Correlogram" title="Correlogram">Correlogram</a></li>
+<li><a href="/wiki/Fan_chart_(statistics)" title="Fan chart (statistics)">Fan chart</a></li>
+<li><a href="/wiki/Forest_plot" title="Forest plot">Forest plot</a></li>
+<li><a href="/wiki/Histogram" title="Histogram">Histogram</a></li>
+<li><a href="/wiki/Pie_chart" title="Pie chart">Pie chart</a></li>
+<li><a href="/wiki/Q%E2%80%93Q_plot" title="Q–Q plot">Q–Q plot</a></li>
+<li><a href="/wiki/Run_chart" title="Run chart">Run chart</a></li>
+<li><a href="/wiki/Scatter_plot" title="Scatter plot">Scatter plot</a></li>
+<li><a href="/wiki/Stem-and-leaf_display" title="Stem-and-leaf display">Stem-and-leaf display</a></li>
+<li><a href="/wiki/Radar_chart" title="Radar chart">Radar chart</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Data_collection" style="font-size:114%;margin:0 4em"><a href="/wiki/Data_collection" title="Data collection">Data collection</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Design_of_experiments" title="Design of experiments">Study design</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Population_(statistics)" class="mw-redirect" title="Population (statistics)">Population</a></li>
+<li><a href="/wiki/Statistic" title="Statistic">Statistic</a></li>
+<li><a href="/wiki/Effect_size" title="Effect size">Effect size</a></li>
+<li><a href="/wiki/Statistical_power" class="mw-redirect" title="Statistical power">Statistical power</a></li>
+<li><a href="/wiki/Optimal_design" title="Optimal design">Optimal design</a></li>
+<li><a href="/wiki/Sample_size_determination" title="Sample size determination">Sample size determination</a></li>
+<li><a href="/wiki/Replication_(statistics)" title="Replication (statistics)">Replication</a></li>
+<li><a href="/wiki/Missing_data" title="Missing data">Missing data</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Survey_methodology" title="Survey methodology">Survey methodology</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Sampling_(statistics)" title="Sampling (statistics)">Sampling</a>
+<ul><li><a href="/wiki/Stratified_sampling" title="Stratified sampling">stratified</a></li>
+<li><a href="/wiki/Cluster_sampling" title="Cluster sampling">cluster</a></li></ul></li>
+<li><a href="/wiki/Standard_error" title="Standard error">Standard error</a></li>
+<li><a href="/wiki/Opinion_poll" title="Opinion poll">Opinion poll</a></li>
+<li><a href="/wiki/Questionnaire" title="Questionnaire">Questionnaire</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Experiment" title="Experiment">Controlled experiments</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Scientific_control" title="Scientific control">Scientific control</a></li>
+<li><a href="/wiki/Randomized_experiment" title="Randomized experiment">Randomized experiment</a></li>
+<li><a href="/wiki/Randomized_controlled_trial" title="Randomized controlled trial">Randomized controlled trial</a></li>
+<li><a href="/wiki/Random_assignment" title="Random assignment">Random assignment</a></li>
+<li><a href="/wiki/Blocking_(statistics)" title="Blocking (statistics)">Blocking</a></li>
+<li><a href="/wiki/Interaction_(statistics)" title="Interaction (statistics)">Interaction</a></li>
+<li><a href="/wiki/Factorial_experiment" title="Factorial experiment">Factorial experiment</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em">Adaptive Designs</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Adaptive_clinical_trial" title="Adaptive clinical trial">Adaptive clinical trial</a></li>
+<li><a href="/wiki/Up-and-Down_Designs" title="Up-and-Down Designs">Up-and-Down Designs</a></li>
+<li><a href="/wiki/Stochastic_approximation" title="Stochastic approximation">Stochastic approximation</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Observational_study" title="Observational study">Observational Studies</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Cross-sectional_study" title="Cross-sectional study">Cross-sectional study</a></li>
+<li><a href="/wiki/Cohort_study" title="Cohort study">Cohort study</a></li>
+<li><a href="/wiki/Natural_experiment" title="Natural experiment">Natural experiment</a></li>
+<li><a href="/wiki/Quasi-experiment" title="Quasi-experiment">Quasi-experiment</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks collapsible uncollapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Statistical_inference" style="font-size:114%;margin:0 4em"><a href="/wiki/Statistical_inference" title="Statistical inference">Statistical inference</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Statistical_theory" title="Statistical theory">Statistical theory</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Population_(statistics)" class="mw-redirect" title="Population (statistics)">Population</a></li>
+<li><a href="/wiki/Statistic" title="Statistic">Statistic</a></li>
+<li><a href="/wiki/Probability_distribution" title="Probability distribution">Probability distribution</a></li>
+<li><a href="/wiki/Sampling_distribution" title="Sampling distribution">Sampling distribution</a>
+<ul><li><a href="/wiki/Order_statistic" title="Order statistic">Order statistic</a></li></ul></li>
+<li><a href="/wiki/Empirical_distribution_function" title="Empirical distribution function">Empirical distribution</a>
+<ul><li><a href="/wiki/Density_estimation" title="Density estimation">Density estimation</a></li></ul></li>
+<li><a href="/wiki/Statistical_model" title="Statistical model">Statistical model</a>
+<ul><li><a href="/wiki/Model_specification" class="mw-redirect" title="Model specification">Model specification</a></li>
+<li><a href="/wiki/Lp_space" title="Lp space">L<sup><i>p</i></sup> space</a></li></ul></li>
+<li><a href="/wiki/Statistical_parameter" title="Statistical parameter">Parameter</a>
+<ul><li><a href="/wiki/Location_parameter" title="Location parameter">location</a></li>
+<li><a href="/wiki/Scale_parameter" title="Scale parameter">scale</a></li>
+<li><a href="/wiki/Shape_parameter" title="Shape parameter">shape</a></li></ul></li>
+<li><a href="/wiki/Parametric_statistics" title="Parametric statistics">Parametric family</a>
+<ul><li><a href="/wiki/Likelihood_function" title="Likelihood function">Likelihood</a>&#160;<a href="/wiki/Monotone_likelihood_ratio" title="Monotone likelihood ratio"><span style="font-size:85%;">(monotone)</span></a></li>
+<li><a href="/wiki/Location%E2%80%93scale_family" title="Location–scale family">Location–scale family</a></li>
+<li><a href="/wiki/Exponential_family" title="Exponential family">Exponential family</a></li></ul></li>
+<li><a href="/wiki/Completeness_(statistics)" title="Completeness (statistics)">Completeness</a></li>
+<li><a href="/wiki/Sufficient_statistic" title="Sufficient statistic">Sufficiency</a></li>
+<li><a href="/wiki/Plug-in_principle" title="Plug-in principle">Statistical functional</a>
+<ul><li><a href="/wiki/Bootstrapping_(statistics)" title="Bootstrapping (statistics)">Bootstrap</a></li>
+<li><a href="/wiki/U-statistic" title="U-statistic">U</a></li>
+<li><a href="/wiki/V-statistic" title="V-statistic">V</a></li></ul></li>
+<li><a href="/wiki/Optimal_decision" title="Optimal decision">Optimal decision</a>
+<ul><li><a href="/wiki/Loss_function" title="Loss function">loss function</a></li></ul></li>
+<li><a href="/wiki/Efficiency_(statistics)" title="Efficiency (statistics)">Efficiency</a></li>
+<li><a href="/wiki/Statistical_distance" title="Statistical distance">Statistical distance</a>
+<ul><li><a href="/wiki/Divergence_(statistics)" title="Divergence (statistics)">divergence</a></li></ul></li>
+<li><a href="/wiki/Asymptotic_theory_(statistics)" title="Asymptotic theory (statistics)">Asymptotics</a></li>
+<li><a href="/wiki/Robust_statistics" title="Robust statistics">Robustness</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Frequentist_inference" title="Frequentist inference">Frequentist inference</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Point_estimation" title="Point estimation">Point estimation</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Estimating_equations" title="Estimating equations">Estimating equations</a>
+<ul><li><a href="/wiki/Maximum_likelihood" class="mw-redirect" title="Maximum likelihood">Maximum likelihood</a></li>
+<li><a href="/wiki/Method_of_moments_(statistics)" title="Method of moments (statistics)">Method of moments</a></li>
+<li><a href="/wiki/M-estimator" title="M-estimator">M-estimator</a></li>
+<li><a href="/wiki/Minimum_distance_estimation" title="Minimum distance estimation">Minimum distance</a></li></ul></li>
+<li><a href="/wiki/Bias_of_an_estimator" title="Bias of an estimator">Unbiased estimators</a>
+<ul><li><a href="/wiki/Minimum-variance_unbiased_estimator" title="Minimum-variance unbiased estimator">Mean-unbiased minimum-variance</a>
+<ul><li><a href="/wiki/Rao%E2%80%93Blackwell_theorem" title="Rao–Blackwell theorem">Rao–Blackwellization</a></li>
+<li><a href="/wiki/Lehmann%E2%80%93Scheff%C3%A9_theorem" title="Lehmann–Scheffé theorem">Lehmann–Scheffé theorem</a></li></ul></li>
+<li><a href="/wiki/Median-unbiased_estimator" class="mw-redirect" title="Median-unbiased estimator">Median unbiased</a></li></ul></li>
+<li><a href="/wiki/Plug-in_principle" title="Plug-in principle">Plug-in</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Interval_estimation" title="Interval estimation">Interval estimation</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Confidence_interval" title="Confidence interval">Confidence interval</a></li>
+<li><a href="/wiki/Pivotal_quantity" title="Pivotal quantity">Pivot</a></li>
+<li><a href="/wiki/Likelihood_interval" class="mw-redirect" title="Likelihood interval">Likelihood interval</a></li>
+<li><a href="/wiki/Prediction_interval" title="Prediction interval">Prediction interval</a></li>
+<li><a href="/wiki/Tolerance_interval" title="Tolerance interval">Tolerance interval</a></li>
+<li><a href="/wiki/Resampling_(statistics)" title="Resampling (statistics)">Resampling</a>
+<ul><li><a href="/wiki/Bootstrapping_(statistics)" title="Bootstrapping (statistics)">Bootstrap</a></li>
+<li><a href="/wiki/Jackknife_resampling" title="Jackknife resampling">Jackknife</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Statistical_hypothesis_testing" title="Statistical hypothesis testing">Testing hypotheses</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/One-_and_two-tailed_tests" title="One- and two-tailed tests">1- &amp; 2-tails</a></li>
+<li><a href="/wiki/Power_(statistics)" title="Power (statistics)">Power</a>
+<ul><li><a href="/wiki/Uniformly_most_powerful_test" title="Uniformly most powerful test">Uniformly most powerful test</a></li></ul></li>
+<li><a href="/wiki/Permutation_test" class="mw-redirect" title="Permutation test">Permutation test</a>
+<ul><li><a href="/wiki/Randomization_test" class="mw-redirect" title="Randomization test">Randomization test</a></li></ul></li>
+<li><a href="/wiki/Multiple_comparisons" class="mw-redirect" title="Multiple comparisons">Multiple comparisons</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Parametric_statistics" title="Parametric statistics">Parametric tests</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a class="mw-selflink selflink">Likelihood-ratio</a></li>
+<li><a href="/wiki/Score_test" title="Score test">Score/Lagrange multiplier</a></li>
+<li><a href="/wiki/Wald_test" title="Wald test">Wald</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em">Specific tests</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><td colspan="2" class="navbox-list navbox-even" style="width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Z-test" title="Z-test"><i>Z</i>-test <span style="font-size:90%;">(normal)</span></a></li>
+<li><a href="/wiki/Student%27s_t-test" title="Student&#39;s t-test">Student's <i>t</i>-test</a></li>
+<li><a href="/wiki/F-test" title="F-test"><i>F</i>-test</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Goodness_of_fit" title="Goodness of fit">Goodness of fit</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Chi-squared_test" title="Chi-squared test">Chi-squared</a></li>
+<li><a href="/wiki/G-test" title="G-test"><i>G</i>-test</a></li>
+<li><a href="/wiki/Kolmogorov%E2%80%93Smirnov_test" title="Kolmogorov–Smirnov test">Kolmogorov–Smirnov</a></li>
+<li><a href="/wiki/Anderson%E2%80%93Darling_test" title="Anderson–Darling test">Anderson–Darling</a></li>
+<li><a href="/wiki/Lilliefors_test" title="Lilliefors test">Lilliefors</a></li>
+<li><a href="/wiki/Jarque%E2%80%93Bera_test" title="Jarque–Bera test">Jarque–Bera</a></li>
+<li><a href="/wiki/Shapiro%E2%80%93Wilk_test" title="Shapiro–Wilk test">Normality <span style="font-size:90%;">(Shapiro–Wilk)</span></a></li>
+<li><a class="mw-selflink selflink">Likelihood-ratio test</a></li>
+<li><a href="/wiki/Model_selection" title="Model selection">Model selection</a>
+<ul><li><a href="/wiki/Cross-validation_(statistics)" title="Cross-validation (statistics)">Cross validation</a></li>
+<li><a href="/wiki/Akaike_information_criterion" title="Akaike information criterion">AIC</a></li>
+<li><a href="/wiki/Bayesian_information_criterion" title="Bayesian information criterion">BIC</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Rank_statistics" class="mw-redirect" title="Rank statistics">Rank statistics</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Sign_test" title="Sign test">Sign</a>
+<ul><li><a href="/wiki/Sample_median" class="mw-redirect" title="Sample median">Sample median</a></li></ul></li>
+<li><a href="/wiki/Wilcoxon_signed-rank_test" title="Wilcoxon signed-rank test">Signed rank <span style="font-size:90%;">(Wilcoxon)</span></a>
+<ul><li><a href="/wiki/Hodges%E2%80%93Lehmann_estimator" title="Hodges–Lehmann estimator">Hodges–Lehmann estimator</a></li></ul></li>
+<li><a href="/wiki/Mann%E2%80%93Whitney_U_test" title="Mann–Whitney U test">Rank sum <span style="font-size:90%;">(Mann–Whitney)</span></a></li>
+<li><a href="/wiki/Nonparametric_statistics" title="Nonparametric statistics">Nonparametric</a> <a href="/wiki/Analysis_of_variance" title="Analysis of variance">anova</a>
+<ul><li><a href="/wiki/Kruskal%E2%80%93Wallis_one-way_analysis_of_variance" title="Kruskal–Wallis one-way analysis of variance">1-way <span style="font-size:90%;">(Kruskal–Wallis)</span></a></li>
+<li><a href="/wiki/Friedman_test" title="Friedman test">2-way <span style="font-size:90%;">(Friedman)</span></a></li>
+<li><a href="/wiki/Jonckheere%27s_trend_test" title="Jonckheere&#39;s trend test">Ordered alternative <span style="font-size:90%;">(Jonckheere–Terpstra)</span></a></li></ul></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Bayesian_inference" title="Bayesian inference">Bayesian inference</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Bayesian_probability" title="Bayesian probability">Bayesian probability</a>
+<ul><li><a href="/wiki/Prior_probability" title="Prior probability">prior</a></li>
+<li><a href="/wiki/Posterior_probability" title="Posterior probability">posterior</a></li></ul></li>
+<li><a href="/wiki/Credible_interval" title="Credible interval">Credible interval</a></li>
+<li><a href="/wiki/Bayes_factor" title="Bayes factor">Bayes factor</a></li>
+<li><a href="/wiki/Bayes_estimator" title="Bayes estimator">Bayesian estimator</a>
+<ul><li><a href="/wiki/Maximum_a_posteriori_estimation" title="Maximum a posteriori estimation">Maximum posterior estimator</a></li></ul></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="CorrelationRegression_analysis" style="font-size:114%;margin:0 4em"><div class="hlist hlist-separated"><ul><li><a href="/wiki/Correlation_and_dependence" title="Correlation and dependence">Correlation</a></li><li><a href="/wiki/Regression_analysis" title="Regression analysis">Regression analysis</a></li></ul></div></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Correlation_and_dependence" title="Correlation and dependence">Correlation</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Pearson_product-moment_correlation_coefficient" class="mw-redirect" title="Pearson product-moment correlation coefficient">Pearson product-moment</a></li>
+<li><a href="/wiki/Partial_correlation" title="Partial correlation">Partial correlation</a></li>
+<li><a href="/wiki/Confounding" title="Confounding">Confounding variable</a></li>
+<li><a href="/wiki/Coefficient_of_determination" title="Coefficient of determination">Coefficient of determination</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Regression_analysis" title="Regression analysis">Regression analysis</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Errors_and_residuals_in_statistics" class="mw-redirect" title="Errors and residuals in statistics">Errors and residuals</a></li>
+<li><a href="/wiki/Regression_validation" title="Regression validation">Regression validation</a></li>
+<li><a href="/wiki/Mixed_model" title="Mixed model">Mixed effects models</a></li>
+<li><a href="/wiki/Simultaneous_equations_model" title="Simultaneous equations model">Simultaneous equations models</a></li>
+<li><a href="/wiki/Multivariate_adaptive_regression_splines" class="mw-redirect" title="Multivariate adaptive regression splines">Multivariate adaptive regression splines (MARS)</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Linear_regression" title="Linear regression">Linear regression</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Simple_linear_regression" title="Simple linear regression">Simple linear regression</a></li>
+<li><a href="/wiki/Ordinary_least_squares" title="Ordinary least squares">Ordinary least squares</a></li>
+<li><a href="/wiki/General_linear_model" title="General linear model">General linear model</a></li>
+<li><a href="/wiki/Bayesian_linear_regression" title="Bayesian linear regression">Bayesian regression</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em">Non-standard predictors</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Nonlinear_regression" title="Nonlinear regression">Nonlinear regression</a></li>
+<li><a href="/wiki/Nonparametric_regression" title="Nonparametric regression">Nonparametric</a></li>
+<li><a href="/wiki/Semiparametric_regression" title="Semiparametric regression">Semiparametric</a></li>
+<li><a href="/wiki/Isotonic_regression" title="Isotonic regression">Isotonic</a></li>
+<li><a href="/wiki/Robust_regression" title="Robust regression">Robust</a></li>
+<li><a href="/wiki/Heteroscedasticity" title="Heteroscedasticity">Heteroscedasticity</a></li>
+<li><a href="/wiki/Homoscedasticity" title="Homoscedasticity">Homoscedasticity</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Generalized_linear_model" title="Generalized linear model">Generalized linear model</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Exponential_family" title="Exponential family">Exponential families</a></li>
+<li><a href="/wiki/Logistic_regression" title="Logistic regression">Logistic <span style="font-size:90%;">(Bernoulli)</span></a>&#160;/&#32;<a href="/wiki/Binomial_regression" title="Binomial regression">Binomial</a>&#160;/&#32;<a href="/wiki/Poisson_regression" title="Poisson regression">Poisson regressions</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Partition_of_sums_of_squares" title="Partition of sums of squares">Partition of variance</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Analysis_of_variance" title="Analysis of variance">Analysis of variance (ANOVA, anova)</a></li>
+<li><a href="/wiki/Analysis_of_covariance" title="Analysis of covariance">Analysis of covariance</a></li>
+<li><a href="/wiki/Multivariate_analysis_of_variance" title="Multivariate analysis of variance">Multivariate ANOVA</a></li>
+<li><a href="/wiki/Degrees_of_freedom_(statistics)" title="Degrees of freedom (statistics)">Degrees of freedom</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Categorical_/_Multivariate_/_Time-series_/_Survival_analysis" style="font-size:114%;margin:0 4em"><a href="/wiki/Categorical_variable" title="Categorical variable">Categorical</a>&#160;/&#32;<a href="/wiki/Multivariate_statistics" title="Multivariate statistics">Multivariate</a>&#160;/&#32;<a href="/wiki/Time_series" title="Time series">Time-series</a>&#160;/&#32;<a href="/wiki/Survival_analysis" title="Survival analysis">Survival analysis</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Categorical_variable" title="Categorical variable">Categorical</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Cohen%27s_kappa" title="Cohen&#39;s kappa">Cohen's kappa</a></li>
+<li><a href="/wiki/Contingency_table" title="Contingency table">Contingency table</a></li>
+<li><a href="/wiki/Graphical_model" title="Graphical model">Graphical model</a></li>
+<li><a href="/wiki/Poisson_regression" title="Poisson regression">Log-linear model</a></li>
+<li><a href="/wiki/McNemar%27s_test" title="McNemar&#39;s test">McNemar's test</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Multivariate_statistics" title="Multivariate statistics">Multivariate</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/General_linear_model" title="General linear model">Regression</a></li>
+<li><a href="/wiki/Multivariate_analysis_of_variance" title="Multivariate analysis of variance">Manova</a></li>
+<li><a href="/wiki/Principal_component_analysis" title="Principal component analysis">Principal components</a></li>
+<li><a href="/wiki/Canonical_correlation" title="Canonical correlation">Canonical correlation</a></li>
+<li><a href="/wiki/Linear_discriminant_analysis" title="Linear discriminant analysis">Discriminant analysis</a></li>
+<li><a href="/wiki/Cluster_analysis" title="Cluster analysis">Cluster analysis</a></li>
+<li><a href="/wiki/Statistical_classification" title="Statistical classification">Classification</a></li>
+<li><a href="/wiki/Structural_equation_modeling" title="Structural equation modeling">Structural equation model</a>
+<ul><li><a href="/wiki/Factor_analysis" title="Factor analysis">Factor analysis</a></li></ul></li>
+<li><a href="/wiki/Multivariate_distribution" class="mw-redirect" title="Multivariate distribution">Multivariate distributions</a>
+<ul><li><a href="/wiki/Elliptical_distribution" title="Elliptical distribution">Elliptical distributions</a>
+<ul><li><a href="/wiki/Multivariate_normal_distribution" title="Multivariate normal distribution">Normal</a></li></ul></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Time_series" title="Time series">Time-series</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;">General</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Decomposition_of_time_series" title="Decomposition of time series">Decomposition</a></li>
+<li><a href="/wiki/Trend_estimation" class="mw-redirect" title="Trend estimation">Trend</a></li>
+<li><a href="/wiki/Stationary_process" title="Stationary process">Stationarity</a></li>
+<li><a href="/wiki/Seasonal_adjustment" title="Seasonal adjustment">Seasonal adjustment</a></li>
+<li><a href="/wiki/Exponential_smoothing" title="Exponential smoothing">Exponential smoothing</a></li>
+<li><a href="/wiki/Cointegration" title="Cointegration">Cointegration</a></li>
+<li><a href="/wiki/Structural_break" title="Structural break">Structural break</a></li>
+<li><a href="/wiki/Granger_causality" title="Granger causality">Granger causality</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;">Specific tests</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Dickey%E2%80%93Fuller_test" title="Dickey–Fuller test">Dickey–Fuller</a></li>
+<li><a href="/wiki/Johansen_test" title="Johansen test">Johansen</a></li>
+<li><a href="/wiki/Ljung%E2%80%93Box_test" title="Ljung–Box test">Q-statistic <span style="font-size:90%;">(Ljung–Box)</span></a></li>
+<li><a href="/wiki/Durbin%E2%80%93Watson_statistic" title="Durbin–Watson statistic">Durbin–Watson</a></li>
+<li><a href="/wiki/Breusch%E2%80%93Godfrey_test" title="Breusch–Godfrey test">Breusch–Godfrey</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Time_domain" title="Time domain">Time domain</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Autocorrelation" title="Autocorrelation">Autocorrelation (ACF)</a>
+<ul><li><a href="/wiki/Partial_autocorrelation_function" title="Partial autocorrelation function">partial (PACF)</a></li></ul></li>
+<li><a href="/wiki/Cross-correlation" title="Cross-correlation">Cross-correlation (XCF)</a></li>
+<li><a href="/wiki/Autoregressive%E2%80%93moving-average_model" title="Autoregressive–moving-average model">ARMA model</a></li>
+<li><a href="/wiki/Box%E2%80%93Jenkins_method" title="Box–Jenkins method">ARIMA model <span style="font-size:90%;">(Box–Jenkins)</span></a></li>
+<li><a href="/wiki/Autoregressive_conditional_heteroskedasticity" title="Autoregressive conditional heteroskedasticity">Autoregressive conditional heteroskedasticity (ARCH)</a></li>
+<li><a href="/wiki/Vector_autoregression" title="Vector autoregression">Vector autoregression (VAR)</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Frequency_domain" title="Frequency domain">Frequency domain</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Spectral_density_estimation" title="Spectral density estimation">Spectral density estimation</a></li>
+<li><a href="/wiki/Fourier_analysis" title="Fourier analysis">Fourier analysis</a></li>
+<li><a href="/wiki/Wavelet" title="Wavelet">Wavelet</a></li>
+<li><a href="/wiki/Whittle_likelihood" title="Whittle likelihood">Whittle likelihood</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Survival_analysis" title="Survival analysis">Survival</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Survival_function" title="Survival function">Survival function</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Kaplan%E2%80%93Meier_estimator" title="Kaplan–Meier estimator">Kaplan–Meier estimator (product limit)</a></li>
+<li><a href="/wiki/Proportional_hazards_model" title="Proportional hazards model">Proportional hazards models</a></li>
+<li><a href="/wiki/Accelerated_failure_time_model" title="Accelerated failure time model">Accelerated failure time (AFT) model</a></li>
+<li><a href="/wiki/First-hitting-time_model" title="First-hitting-time model">First hitting time</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Failure_rate" title="Failure rate">Hazard function</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Nelson%E2%80%93Aalen_estimator" title="Nelson–Aalen estimator">Nelson–Aalen estimator</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;">Test</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Log-rank_test" class="mw-redirect" title="Log-rank test">Log-rank test</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Applications" style="font-size:114%;margin:0 4em"><a href="/wiki/List_of_fields_of_application_of_statistics" title="List of fields of application of statistics">Applications</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Biostatistics" title="Biostatistics">Biostatistics</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Bioinformatics" title="Bioinformatics">Bioinformatics</a></li>
+<li><a href="/wiki/Clinical_trial" title="Clinical trial">Clinical trials</a>&#160;/&#32;<a href="/wiki/Clinical_study_design" title="Clinical study design">studies</a></li>
+<li><a href="/wiki/Epidemiology" title="Epidemiology">Epidemiology</a></li>
+<li><a href="/wiki/Medical_statistics" title="Medical statistics">Medical statistics</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Engineering_statistics" title="Engineering statistics">Engineering statistics</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Chemometrics" title="Chemometrics">Chemometrics</a></li>
+<li><a href="/wiki/Methods_engineering" title="Methods engineering">Methods engineering</a></li>
+<li><a href="/wiki/Probabilistic_design" title="Probabilistic design">Probabilistic design</a></li>
+<li><a href="/wiki/Statistical_process_control" title="Statistical process control">Process</a>&#160;/&#32;<a href="/wiki/Quality_control" title="Quality control">quality control</a></li>
+<li><a href="/wiki/Reliability_engineering" title="Reliability engineering">Reliability</a></li>
+<li><a href="/wiki/System_identification" title="System identification">System identification</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Social_statistics" title="Social statistics">Social statistics</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Actuarial_science" title="Actuarial science">Actuarial science</a></li>
+<li><a href="/wiki/Census" title="Census">Census</a></li>
+<li><a href="/wiki/Crime_statistics" title="Crime statistics">Crime statistics</a></li>
+<li><a href="/wiki/Demographic_statistics" title="Demographic statistics">Demography</a></li>
+<li><a href="/wiki/Econometrics" title="Econometrics">Econometrics</a></li>
+<li><a href="/wiki/National_accounts" title="National accounts">National accounts</a></li>
+<li><a href="/wiki/Official_statistics" title="Official statistics">Official statistics</a></li>
+<li><a href="/wiki/Population_statistics" class="mw-redirect" title="Population statistics">Population statistics</a></li>
+<li><a href="/wiki/Psychometrics" title="Psychometrics">Psychometrics</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Spatial_analysis" title="Spatial analysis">Spatial statistics</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Cartography" title="Cartography">Cartography</a></li>
+<li><a href="/wiki/Environmental_statistics" title="Environmental statistics">Environmental statistics</a></li>
+<li><a href="/wiki/Geographic_information_system" title="Geographic information system">Geographic information system</a></li>
+<li><a href="/wiki/Geostatistics" title="Geostatistics">Geostatistics</a></li>
+<li><a href="/wiki/Kriging" title="Kriging">Kriging</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr><td class="navbox-abovebelow" colspan="2"><div>
+<ul><li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" decoding="async" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /><b><a href="/wiki/Category:Statistics" title="Category:Statistics">Category</a></b></li>
+<li><img alt="Portal" src="//upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/16px-Portal-puzzle.svg.png" decoding="async" title="Portal" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/24px-Portal-puzzle.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/32px-Portal-puzzle.svg.png 2x" data-file-width="32" data-file-height="28" /><b><a href="/wiki/Portal:Statistics" title="Portal:Statistics">Portal</a></b></li>
+<li><img alt="Commons page" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/12px-Commons-logo.svg.png" decoding="async" title="Commons page" width="12" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/18px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/24px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /><b><a href="https://commons.wikimedia.org/wiki/Category:Statistics" class="extiw" title="commons:Category:Statistics">Commons</a></b></li>
+<li><img alt="WikiProject" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/16px-People_icon.svg.png" decoding="async" title="WikiProject" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/24px-People_icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/32px-People_icon.svg.png 2x" data-file-width="100" data-file-height="100" /> <b><a href="/wiki/Wikipedia:WikiProject_Statistics" title="Wikipedia:WikiProject Statistics">WikiProject</a></b></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1273
+Cached time: 20190807095025
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.632 seconds
+Real time usage: 0.838 seconds
+Preprocessor visited node count: 2283/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 186592/2097152 bytes
+Template argument size: 2162/2097152 bytes
+Highest expansion depth: 13/40
+Expensive parser function count: 6/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 53398/5000000 bytes
+Number of Wikibase entities loaded: 4/400
+Lua time usage: 0.287/10.000 seconds
+Lua memory usage: 5.74 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  584.124      1 -total
+ 41.61%  243.082      1 Template:Reflist
+ 21.34%  124.666     12 Template:Citation
+ 19.66%  114.817      7 Template:Cite_book
+ 15.68%   91.608      1 Template:Statistics
+ 14.85%   86.761      1 Template:Navbox_with_collapsible_groups
+ 10.53%   61.497     11 Template:Navbox
+ 10.52%   61.440      2 Template:Fix
+  9.54%   55.735      1 Template:Citation_needed
+  7.00%   40.860      1 Template:Short_description
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:45035-0!canonical!math=5 and timestamp 20190807095024 and revision id 905303520
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Likelihood-ratio_test&amp;oldid=905303520">https://en.wikipedia.org/w/index.php?title=Likelihood-ratio_test&amp;oldid=905303520</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Statistical_ratios" title="Category:Statistical ratios">Statistical ratios</a></li><li><a href="/wiki/Category:Statistical_tests" title="Category:Statistical tests">Statistical tests</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_September_2018" title="Category:Articles with unsourced statements from September 2018">Articles with unsourced statements from September 2018</a></li><li><a href="/wiki/Category:All_articles_with_specifically_marked_weasel-worded_phrases" title="Category:All articles with specifically marked weasel-worded phrases">All articles with specifically marked weasel-worded phrases</a></li><li><a href="/wiki/Category:Articles_with_specifically_marked_weasel-worded_phrases_from_March_2019" title="Category:Articles with specifically marked weasel-worded phrases from March 2019">Articles with specifically marked weasel-worded phrases from March 2019</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Likelihood-ratio+test" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Likelihood-ratio+test" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Likelihood-ratio_test" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Likelihood-ratio_test" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Likelihood-ratio_test">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Likelihood-ratio_test&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Likelihood-ratio_test&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Likelihood-ratio_test" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Likelihood-ratio_test" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Likelihood-ratio_test&amp;oldid=905303520" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Likelihood-ratio_test&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q585740" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Likelihood-ratio_test&amp;id=905303520" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Likelihood-ratio+test">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Likelihood-ratio+test&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Likelihood-ratio_test&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Test_de_ra%C3%B3_de_versemblan%C3%A7a" title="Test de raó de versemblança – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Likelihood-Quotienten-Test" title="Likelihood-Quotienten-Test – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-el"><a href="https://el.wikipedia.org/wiki/%CE%88%CE%BB%CE%B5%CE%B3%CF%87%CE%BF%CF%82_%CE%9B%CF%8C%CE%B3%CE%BF%CF%85_%CE%A0%CE%B9%CE%B8%CE%B1%CE%BD%CE%BF%CF%86%CE%B1%CE%BD%CE%B5%CE%B9%CF%8E%CE%BD" title="Έλεγχος Λόγου Πιθανοφανειών – Greek" lang="el" hreflang="el" class="interlanguage-link-target">Ελληνικά</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%A2%D8%B2%D9%85%D9%88%D9%86_%D9%86%D8%B3%D8%A8%D8%AA_%D8%AF%D8%B1%D8%B3%D8%AA%E2%80%8C%D9%86%D9%85%D8%A7%DB%8C%DB%8C" title="آزمون نسبت درست‌نمایی – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Test_du_rapport_de_vraisemblance" title="Test du rapport de vraisemblance – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Rapporto_di_verosimiglianza" title="Rapporto di verosimiglianza – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%9E%D7%91%D7%97%D7%9F_%D7%99%D7%97%D7%A1_%D7%94%D7%A0%D7%A8%D7%90%D7%95%D7%AA" title="מבחן יחס הנראות – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Aannemelijkheidsquoti%C3%ABnttoets" title="Aannemelijkheidsquotiënttoets – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E5%B0%A4%E5%BA%A6%E6%AF%94%E6%A4%9C%E5%AE%9A" title="尤度比検定 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Teste_da_raz%C3%A3o_de_verossimilhan%C3%A7a" title="Teste da razão de verossimilhança – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D1%81%D1%82_%D0%BE%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BF%D1%80%D0%B0%D0%B2%D0%B4%D0%BE%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D0%B8%D1%8F" title="Тест отношения правдоподобия – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-su"><a href="https://su.wikipedia.org/wiki/Uji_rasio_likelihood" title="Uji rasio likelihood – Sundanese" lang="su" hreflang="su" class="interlanguage-link-target">Basa Sunda</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Uskottavuusosam%C3%A4%C3%A4r%C3%A4" title="Uskottavuusosamäärä – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D1%96%D1%80%D0%BA%D0%B0_%D0%B2%D1%96%D0%B4%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%BD%D1%8F%D0%BC_%D0%BF%D1%80%D0%B0%D0%B2%D0%B4%D0%BE%D0%BF%D0%BE%D0%B4%D1%96%D0%B1%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9" title="Перевірка відношенням правдоподібностей – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q585740#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 8 July 2019, at 07:57<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Likelihood-ratio_test&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.632","walltime":"0.838","ppvisitednodes":{"value":2283,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":186592,"limit":2097152},"templateargumentsize":{"value":2162,"limit":2097152},"expansiondepth":{"value":13,"limit":40},"expensivefunctioncount":{"value":6,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":53398,"limit":5000000},"entityaccesscount":{"value":4,"limit":400},"timingprofile":["100.00%  584.124      1 -total"," 41.61%  243.082      1 Template:Reflist"," 21.34%  124.666     12 Template:Citation"," 19.66%  114.817      7 Template:Cite_book"," 15.68%   91.608      1 Template:Statistics"," 14.85%   86.761      1 Template:Navbox_with_collapsible_groups"," 10.53%   61.497     11 Template:Navbox"," 10.52%   61.440      2 Template:Fix","  9.54%   55.735      1 Template:Citation_needed","  7.00%   40.860      1 Template:Short_description"]},"scribunto":{"limitreport-timeusage":{"value":"0.287","limit":"10.000"},"limitreport-memusage":{"value":6021641,"limit":52428800}},"cachereport":{"origin":"mw1273","timestamp":"20190807095025","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Likelihood-ratio test","url":"https:\/\/en.wikipedia.org\/wiki\/Likelihood-ratio_test","sameAs":"http:\/\/www.wikidata.org\/entity\/Q585740","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q585740","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-02-25T15:43:11Z","dateModified":"2019-07-08T07:57:34Z","headline":"statistical test based on the ratio of a constrained and unconstrained likelihood"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":119,"wgHostname":"mw1243"});});</script>
+</body>
+</html>

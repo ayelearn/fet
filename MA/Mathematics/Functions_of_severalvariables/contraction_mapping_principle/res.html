@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Banach fixed-point theorem - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Banach_fixed-point_theorem","wgTitle":"Banach fixed-point theorem","wgCurRevisionId":903645947,"wgRevisionId":903645947,"wgArticleId":46676,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 German-language sources (de)","All articles with unsourced statements","Articles with unsourced statements from June 2019","Wikipedia articles incorporating text from PlanetMath","Articles containing proofs","Topology","Fixed-point theorems","Metric geometry"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July",
+"August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Banach_fixed-point_theorem","wgRelevantArticleId":46676,"wgRequestId":"XUyOPApAMFIAAITWkngAAABK","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Contraction_mapping_principle","wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgInternalRedirectTargetUrl":"/wiki/Banach_fixed-point_theorem",
+"wgWikibaseItemId":"Q220680","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","ext.cite.ux-enhancements","ext.math.scripts","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc",
+"mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.17"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Banach_fixed-point_theorem"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Banach_fixed-point_theorem&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Banach_fixed-point_theorem&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Banach_fixed-point_theorem"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Banach_fixed-point_theorem rootpage-Banach_fixed-point_theorem skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Banach fixed-point theorem</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"><span class="mw-redirectedfrom">&#160;&#160;(Redirected from <a href="/w/index.php?title=Contraction_mapping_principle&amp;redirect=no" class="mw-redirect" title="Contraction mapping principle">Contraction mapping principle</a>)</span></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>In mathematics, the <b>Banach–Caccioppoli <a href="/wiki/Fixed-point_theorem" title="Fixed-point theorem">fixed-point theorem</a></b> (also known as the <b>contraction mapping theorem</b> or <b>contractive mapping theorem</b>) is an important tool in the theory of <a href="/wiki/Metric_space" title="Metric space">metric spaces</a>; it guarantees the existence and uniqueness of <a href="/wiki/Fixed_point_(mathematics)" title="Fixed point (mathematics)">fixed points</a> of certain self-maps of metric spaces, and provides a constructive method to find those fixed points. It can be understood as an abstract formulation of <a href="/wiki/Fixed-point_iteration" title="Fixed-point iteration">Picard's method of successive approximations</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> The theorem is named after <a href="/wiki/Stefan_Banach" title="Stefan Banach">Stefan Banach</a> (1892–1945) and <a href="/wiki/Renato_Caccioppoli" title="Renato Caccioppoli">Renato Caccioppoli</a> (1904–1959), and was first stated by Banach in 1922.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup> <span class="citation-needed-content" style="padding-left:0.1em; padding-right:0.1em; color:#595959; border:1px solid #DDD;">Caccioppoli independently proved the theorem in 1931.</span><sup class="noprint Inline-Template Template-Fact" style="margin-left:0.1em; white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (June 2019)">citation needed</span></a></i>&#93;</sup>
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Statement"><span class="tocnumber">1</span> <span class="toctext">Statement</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Proof"><span class="tocnumber">2</span> <span class="toctext">Proof</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Applications"><span class="tocnumber">3</span> <span class="toctext">Applications</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Converses"><span class="tocnumber">4</span> <span class="toctext">Converses</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Generalizations"><span class="tocnumber">5</span> <span class="toctext">Generalizations</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Notes"><span class="tocnumber">7</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Statement">Statement</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Banach_fixed-point_theorem&amp;action=edit&amp;section=1" title="Edit section: Statement">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><i>Definition.</i> Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (X,d)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>X</mi>
+        <mo>,</mo>
+        <mi>d</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (X,d)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cb4d7a16bca9e216c0221b43a1c3377aa5e358b8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.039ex; height:2.843ex;" alt="(X,d)"/></span> be a <a href="/wiki/Complete_metric_space" title="Complete metric space">complete metric space</a>. Then a map <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle T\colon X\to X}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>T</mi>
+        <mo>&#x003A;<!-- : --></mo>
+        <mi>X</mi>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mi>X</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle T\colon X\to X}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fdfc60a7a3b8ccc7f0c8a1d05821c89560728ce8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:10.244ex; height:2.176ex;" alt="T\colon X\to X"/></span> is called a <a href="/wiki/Contraction_mapping" title="Contraction mapping">contraction mapping</a> on <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle X}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>X</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle X}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/68baa052181f707c662844a465bfeeb135e82bab" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.98ex; height:2.176ex;" alt="X"/></span> if there exists <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle q\in [0,1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>q</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mo stretchy="false">[</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q\in [0,1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a85aabcd69ce4d9088c114404309fb9da0961486" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.821ex; height:2.843ex;" alt="{\displaystyle q\in [0,1)}"/></span> such that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle d(T(x),T(y))\leq qd(x,y)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mi>T</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mi>T</mi>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mi>q</mi>
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d(T(x),T(y))\leq qd(x,y)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fd383888ebcfccb33956072ffbebf9b1d29ce90b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:24.148ex; height:2.843ex;" alt="d(T(x),T(y))\leq qd(x,y)"/></span></dd></dl>
+<p>for all <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x,y}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x,y}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5ea0abffd33a692ded22accc104515a032851dff" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.519ex; height:2.009ex;" alt="x,y"/></span> in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle X}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>X</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle X}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/68baa052181f707c662844a465bfeeb135e82bab" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.98ex; height:2.176ex;" alt="X"/></span>.
+</p>
+<blockquote><p><b>Banach Fixed Point Theorem.</b> Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (X,d)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>X</mi>
+        <mo>,</mo>
+        <mi>d</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (X,d)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cb4d7a16bca9e216c0221b43a1c3377aa5e358b8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.039ex; height:2.843ex;" alt="(X,d)"/></span> be a non-empty <a href="/wiki/Complete_metric_space" title="Complete metric space">complete metric space</a> with a contraction mapping <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle T\colon X\to X}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>T</mi>
+        <mo>&#x003A;<!-- : --></mo>
+        <mi>X</mi>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mi>X</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle T\colon X\to X}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fdfc60a7a3b8ccc7f0c8a1d05821c89560728ce8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:10.244ex; height:2.176ex;" alt="T\colon X\to X"/></span>. Then <i>T</i> admits a unique <a href="/wiki/Fixed_point_(mathematics)" title="Fixed point (mathematics)">fixed-point</a> <i>x*</i> in <i>X</i> (i.e. <i>T</i>(<i>x*</i>) = <i>x*</i>). Furthermore, <i>x*</i> can be found as follows: start with an arbitrary element <i>x</i><sub>0</sub> in <i>X</i> and define a sequence {<i>x<sub>n</sub></i>} by <i>x<sub>n</sub></i> = <i>T</i>(<i>x</i><sub><i>n</i>−1</sub>), then <span class="nowrap"><i>x<sub>n</sub></i> → <i>x*</i></span>.</p></blockquote>
+<p><i>Remark 1.</i> The following inequalities are equivalent and describe the <a href="/wiki/Rate_of_convergence" title="Rate of convergence">speed of convergence</a>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}d(x^{*},x_{n})&amp;\leq {\frac {q^{n}}{1-q}}d(x_{1},x_{0}),\\d(x^{*},x_{n+1})&amp;\leq {\frac {q}{1-q}}d(x_{n+1},x_{n}),\\d(x^{*},x_{n+1})&amp;\leq qd(x^{*},x_{n}).\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <msup>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>&#x2217;<!-- ∗ --></mo>
+                  </mrow>
+                </msup>
+                <mo>,</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>&#x2264;<!-- ≤ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <msup>
+                      <mi>q</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>n</mi>
+                      </mrow>
+                    </msup>
+                    <mrow>
+                      <mn>1</mn>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mi>q</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <msup>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>&#x2217;<!-- ∗ --></mo>
+                  </mrow>
+                </msup>
+                <mo>,</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>&#x2264;<!-- ≤ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mi>q</mi>
+                    <mrow>
+                      <mn>1</mn>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mi>q</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <msup>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>&#x2217;<!-- ∗ --></mo>
+                  </mrow>
+                </msup>
+                <mo>,</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>&#x2264;<!-- ≤ --></mo>
+                <mi>q</mi>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <msup>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>&#x2217;<!-- ∗ --></mo>
+                  </mrow>
+                </msup>
+                <mo>,</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}d(x^{*},x_{n})&amp;\leq {\frac {q^{n}}{1-q}}d(x_{1},x_{0}),\\d(x^{*},x_{n+1})&amp;\leq {\frac {q}{1-q}}d(x_{n+1},x_{n}),\\d(x^{*},x_{n+1})&amp;\leq qd(x^{*},x_{n}).\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fb7247820b9380a7ccead9f318bcb61a83bf5f71" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -6.671ex; width:32.753ex; height:14.509ex;" alt="{\displaystyle {\begin{aligned}d(x^{*},x_{n})&amp;\leq {\frac {q^{n}}{1-q}}d(x_{1},x_{0}),\\d(x^{*},x_{n+1})&amp;\leq {\frac {q}{1-q}}d(x_{n+1},x_{n}),\\d(x^{*},x_{n+1})&amp;\leq qd(x^{*},x_{n}).\end{aligned}}}"/></span></dd></dl>
+<p>Any such value of <i>q</i> is called a <i><a href="/wiki/Lipschitz_constant" class="mw-redirect" title="Lipschitz constant">Lipschitz constant</a></i> for <i>T</i>, and the smallest one is sometimes called "the best Lipschitz constant" of <i>T</i>.
+</p><p><i>Remark 2.</i> <i>d</i>(<i>T</i>(<i>x</i>),&#160;<i>T</i>(<i>y</i>))&#160;&lt;&#160;<i>d</i>(<i>x</i>,&#160;<i>y</i>) for all <i>x</i> ≠ <i>y</i> is in general not enough to ensure the existence of a fixed point, as is shown by the map <i>T</i>&#160;: [1, ∞) → [1, ∞), <i>T</i>(<i>x</i>)&#160;=&#160;<i>x</i>&#160;+&#160;1/<i>x</i>, which lacks a fixed point. However, if <i>X</i> is <a href="/wiki/Compact_space" title="Compact space">compact</a>, then this weaker assumption does imply the existence and uniqueness of a fixed point, that can be easily found as a minimizer of <i>d</i>(<i>x</i>,&#160;<i>T</i>(<i>x</i>)), indeed, a minimizer exists by compactness, and has to be a fixed point of <i>T</i>. It then easily follows that the fixed point is the limit of any sequence of iterations of <i>T</i>.
+</p><p><i>Remark 3.</i> When using the theorem in practice, the most difficult part is typically to define <i>X</i> properly so that <i>T</i>(<i>X</i>) ⊆ <i>X</i>.
+</p>
+<h2><span class="mw-headline" id="Proof">Proof</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Banach_fixed-point_theorem&amp;action=edit&amp;section=2" title="Edit section: Proof">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Let <i>x</i><sub>0</sub> ∈ <i>X</i> be arbitrary and define a sequence {<i>x<sub>n</sub></i>} by setting <i>x<sub>n</sub></i> = <i>T</i>(<i>x</i><sub><i>n</i>−1</sub>). We first note that for all <i>n</i> ∈ <b>N</b>, we have the inequality
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle d(x_{n+1},x_{n})\leq q^{n}d(x_{1},x_{0}).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <msup>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d(x_{n+1},x_{n})\leq q^{n}d(x_{1},x_{0}).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/646421e5c7a65c42c58125f2ae6959235a13625b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:26.126ex; height:2.843ex;" alt="{\displaystyle d(x_{n+1},x_{n})\leq q^{n}d(x_{1},x_{0}).}"/></span></dd></dl>
+<p>This follows by <a href="/wiki/Principle_of_mathematical_induction" class="mw-redirect" title="Principle of mathematical induction">induction</a> on <i>n</i>, using the fact that <i>T</i> is a contraction mapping. Then we can show that {<i>x<sub>n</sub></i>} is a <a href="/wiki/Cauchy_sequence" title="Cauchy sequence">Cauchy sequence</a>. In particular, let <i>m</i>, <i>n</i> ∈ <b>N</b> such that <i>m</i> &gt; <i>n</i>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}d(x_{m},x_{n})&amp;\leq d(x_{m},x_{m-1})+d(x_{m-1},x_{m-2})+\cdots +d(x_{n+1},x_{n})\\&amp;\leq q^{m-1}d(x_{1},x_{0})+q^{m-2}d(x_{1},x_{0})+\cdots +q^{n}d(x_{1},x_{0})\\&amp;=q^{n}d(x_{1},x_{0})\sum _{k=0}^{m-n-1}q^{k}\\&amp;\leq q^{n}d(x_{1},x_{0})\sum _{k=0}^{\infty }q^{k}\\&amp;=q^{n}d(x_{1},x_{0})\left({\frac {1}{1-q}}\right).\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>&#x2264;<!-- ≤ --></mo>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mo>+</mo>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mo>+</mo>
+                <mo>&#x22EF;<!-- ⋯ --></mo>
+                <mo>+</mo>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>&#x2264;<!-- ≤ --></mo>
+                <msup>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mo>+</mo>
+                <msup>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mo>+</mo>
+                <mo>&#x22EF;<!-- ⋯ --></mo>
+                <mo>+</mo>
+                <msup>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msup>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msup>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mi>n</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                  </mrow>
+                </munderover>
+                <msup>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>&#x2264;<!-- ≤ --></mo>
+                <msup>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msup>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <msup>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msup>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mrow>
+                        <mn>1</mn>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mi>q</mi>
+                      </mrow>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}d(x_{m},x_{n})&amp;\leq d(x_{m},x_{m-1})+d(x_{m-1},x_{m-2})+\cdots +d(x_{n+1},x_{n})\\&amp;\leq q^{m-1}d(x_{1},x_{0})+q^{m-2}d(x_{1},x_{0})+\cdots +q^{n}d(x_{1},x_{0})\\&amp;=q^{n}d(x_{1},x_{0})\sum _{k=0}^{m-n-1}q^{k}\\&amp;\leq q^{n}d(x_{1},x_{0})\sum _{k=0}^{\infty }q^{k}\\&amp;=q^{n}d(x_{1},x_{0})\left({\frac {1}{1-q}}\right).\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8ba061a983e6f7d5ea044759e6f7669e4016e034" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -12.803ex; margin-bottom: -0.201ex; width:63.195ex; height:27.176ex;" alt="{\displaystyle {\begin{aligned}d(x_{m},x_{n})&amp;\leq d(x_{m},x_{m-1})+d(x_{m-1},x_{m-2})+\cdots +d(x_{n+1},x_{n})\\&amp;\leq q^{m-1}d(x_{1},x_{0})+q^{m-2}d(x_{1},x_{0})+\cdots +q^{n}d(x_{1},x_{0})\\&amp;=q^{n}d(x_{1},x_{0})\sum _{k=0}^{m-n-1}q^{k}\\&amp;\leq q^{n}d(x_{1},x_{0})\sum _{k=0}^{\infty }q^{k}\\&amp;=q^{n}d(x_{1},x_{0})\left({\frac {1}{1-q}}\right).\end{aligned}}}"/></span></dd></dl>
+<p>Let ε &gt; 0 be arbitrary, since <i>q</i> ∈ [0, 1), we can find a large <i>N</i> ∈ <b>N</b> so that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle q^{N}&lt;{\frac {\varepsilon (1-q)}{d(x_{1},x_{0})}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msup>
+        <mo>&lt;</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>&#x03B5;<!-- ε --></mi>
+              <mo stretchy="false">(</mo>
+              <mn>1</mn>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>q</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi>d</mi>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo>,</mo>
+              <msub>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>0</mn>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q^{N}&lt;{\frac {\varepsilon (1-q)}{d(x_{1},x_{0})}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/58f57ba888f0fbf7061bdd7d008e0c92e983e609" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:16.179ex; height:6.509ex;" alt="q^{N}&lt;{\frac {\varepsilon (1-q)}{d(x_{1},x_{0})}}."/></span></dd></dl>
+<p>Therefore, by choosing <i>m</i> and <i>n</i> greater than <i>N</i> we may write:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle d(x_{m},x_{n})\leq q^{n}d(x_{1},x_{0})\left({\frac {1}{1-q}}\right)&lt;\left({\frac {\varepsilon (1-q)}{d(x_{1},x_{0})}}\right)d(x_{1},x_{0})\left({\frac {1}{1-q}}\right)=\varepsilon .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <msup>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>1</mn>
+              <mrow>
+                <mn>1</mn>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>q</mi>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>&lt;</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>&#x03B5;<!-- ε --></mi>
+                <mo stretchy="false">(</mo>
+                <mn>1</mn>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>q</mi>
+                <mo stretchy="false">)</mo>
+              </mrow>
+              <mrow>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>1</mn>
+              <mrow>
+                <mn>1</mn>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>q</mi>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mi>&#x03B5;<!-- ε --></mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d(x_{m},x_{n})\leq q^{n}d(x_{1},x_{0})\left({\frac {1}{1-q}}\right)&lt;\left({\frac {\varepsilon (1-q)}{d(x_{1},x_{0})}}\right)d(x_{1},x_{0})\left({\frac {1}{1-q}}\right)=\varepsilon .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/51c2fa10dfff43a9e54fa409385d5301e18df136" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:73.494ex; height:6.509ex;" alt="d(x_{m},x_{n})\leq q^{n}d(x_{1},x_{0})\left({\frac {1}{1-q}}\right)&lt;\left({\frac {\varepsilon (1-q)}{d(x_{1},x_{0})}}\right)d(x_{1},x_{0})\left({\frac {1}{1-q}}\right)=\varepsilon ."/></span></dd></dl>
+<p>This proves that the sequence {<i>x<sub>n</sub></i>} is Cauchy. By completeness of (<i>X</i>,<i>d</i>), the sequence has a limit <i>x*</i> ∈ <i>X</i>. Furthermore, <i>x*</i> must be a <a href="/wiki/Fixed_point_(mathematics)" title="Fixed point (mathematics)">fixed point</a> of <i>T</i>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x^{*}=\lim _{n\to \infty }x_{n}=\lim _{n\to \infty }T(x_{n-1})=T\left(\lim _{n\to \infty }x_{n-1}\right)=T(x^{*}).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2217;<!-- ∗ --></mo>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <mi>T</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>T</mi>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <munder>
+              <mo movablelimits="true" form="prefix">lim</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo stretchy="false">&#x2192;<!-- → --></mo>
+                <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+              </mrow>
+            </munder>
+            <msub>
+              <mi>x</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mi>T</mi>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2217;<!-- ∗ --></mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x^{*}=\lim _{n\to \infty }x_{n}=\lim _{n\to \infty }T(x_{n-1})=T\left(\lim _{n\to \infty }x_{n-1}\right)=T(x^{*}).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bb4077ea63b25017592de4df7f412dc0aac7a99e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:55.323ex; height:4.843ex;" alt="{\displaystyle x^{*}=\lim _{n\to \infty }x_{n}=\lim _{n\to \infty }T(x_{n-1})=T\left(\lim _{n\to \infty }x_{n-1}\right)=T(x^{*}).}"/></span></dd></dl>
+<p>As a contraction mapping, <i>T</i> is continuous, so bringing the limit inside <i>T</i> was justified. Lastly, <i>T</i> cannot have more than one fixed point in (<i>X</i>,<i>d</i>), since any pair of distinct fixed points <i>p<sub>1</sub></i> and <i>p<sub>2</sub></i> would contradict the contraction of <i>T</i>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 0&lt;d(T(p_{1}),T(p_{2}))=d(p_{1},p_{2})&gt;qd(p_{1},p_{2}).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>0</mn>
+        <mo>&lt;</mo>
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mi>T</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mi>T</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>&gt;</mo>
+        <mi>q</mi>
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 0&lt;d(T(p_{1}),T(p_{2}))=d(p_{1},p_{2})&gt;qd(p_{1},p_{2}).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ab3d422665c82c0601a1edae19c202217a6f5b34" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:44.585ex; height:2.843ex;" alt="{\displaystyle 0&lt;d(T(p_{1}),T(p_{2}))=d(p_{1},p_{2})&gt;qd(p_{1},p_{2}).}"/></span></dd></dl>
+<h2><span class="mw-headline" id="Applications">Applications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Banach_fixed-point_theorem&amp;action=edit&amp;section=3" title="Edit section: Applications">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>A standard application is the proof of the <a href="/wiki/Picard%E2%80%93Lindel%C3%B6f_theorem" title="Picard–Lindelöf theorem">Picard–Lindelöf theorem</a> about the existence and uniqueness of solutions to certain <a href="/wiki/Ordinary_differential_equation" title="Ordinary differential equation">ordinary differential equations</a>. The sought solution of the differential equation is expressed as a fixed point of a suitable integral operator which transforms continuous functions into continuous functions. The Banach fixed-point theorem is then used to show that this integral operator has a unique fixed point.</li>
+<li>One consequence of the Banach fixed-point theorem is that small Lipschitz perturbations of the identity are <a href="/wiki/Lipschitz_continuity#Definitions" title="Lipschitz continuity">bi-lipschitz</a> homeomorphisms. Let Ω be an open set of a Banach space <i>E</i>; let <i>I</i>&#160;: Ω → <i>E</i> denote the identity (inclusion) map and let <i>g</i>&#160;: Ω → <i>E</i> be a Lipschitz map of constant <i>k</i> &lt; 1. Then</li></ul>
+<ol><li>Ω′&#160;:= (<i>I</i>+<i>g</i>)(Ω) is an open subset of <i>E</i>: precisely, for any <i>x</i> in Ω such that <i>B</i>(<i>x</i>, <i>r</i>) ⊂ Ω one has <i>B</i>((<i>I</i>+<i>g</i>)(<i>x</i>), <i>r</i>(1−<i>k</i>)) ⊂ Ω′;</li>
+<li><i>I</i>+<i>g</i>&#160;: Ω → Ω′ is a bi-lipschitz homeomorphism;</li></ol>
+<dl><dd>precisely, (<i>I</i>+<i>g</i>)<sup>−1</sup> is still of the form <i>I</i> + <i>h</i>&#160;: Ω → Ω′ with <i>h</i> a Lipschitz map of constant <i>k</i>/(1−<i>k</i>). A direct consequence  of this result yields the proof of the <a href="/wiki/Inverse_function_theorem" title="Inverse function theorem">inverse function theorem</a>.</dd></dl>
+<ul><li>It can be used to give sufficient conditions under which Newton's method of successive approximations is guaranteed to work, and similarly for Chebyshev's third order method.</li>
+<li>It can be used to prove existence and uniqueness of solutions to integral equations.</li>
+<li>It can be used to give a proof to the <a href="/wiki/Nash_embedding_theorem" title="Nash embedding theorem">Nash embedding theorem</a>.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup></li>
+<li>It can be used to prove existence and uniqueness of solutions to value iteration, policy iteration, and policy evaluation of <a href="/wiki/Reinforcement_learning" title="Reinforcement learning">reinforcement learning</a>.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup></li>
+<li>It can be used to prove existence and uniqueness of an equilibrium in <a href="/wiki/Cournot_competition" title="Cournot competition">Cournot competition</a>.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup></li>
+<li>It can be used to prove existence and uniqueness of an equilibrium in dynamic economic models.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup></li></ul>
+<h2><span class="mw-headline" id="Converses">Converses</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Banach_fixed-point_theorem&amp;action=edit&amp;section=4" title="Edit section: Converses">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Several converses of the Banach contraction principle exist. The following is due to <a href="/w/index.php?title=Czes%C5%82aw_Bessaga&amp;action=edit&amp;redlink=1" class="new" title="Czesław Bessaga (page does not exist)">Czesław Bessaga</a>, from 1959:
+</p><p>Let <i>f</i>&#160;: <i>X</i> → <i>X</i> be a map of an abstract <a href="/wiki/Set_(mathematics)" title="Set (mathematics)">set</a> such that each <a href="/wiki/Iterated_function" title="Iterated function">iterate</a> <i>f<sup>n</sup></i> has a unique fixed point. Let <i>q</i> ∈ (0, 1), then there exists a complete metric on <i>X</i> such that <i>f</i> is contractive, and <i>q</i> is the contraction constant.
+</p><p>Indeed, very weak assumptions suffice to obtain such a kind of converse. For example if <i>f</i>&#160;: <i>X</i> → <i>X</i> is a map on a <a href="/wiki/T1_space" title="T1 space"><i>T</i><sub>1</sub> topological space</a> with a unique <a href="/wiki/Fixed_point_(mathematics)" title="Fixed point (mathematics)">fixed point</a> <i>a</i>, such that for each <i>x</i> in <i>X</i> we have <i>f<sup>n</sup></i>(<i>x</i>) → <i>a</i>, then there already exists a metric on <i>X</i> with respect to which <i>f</i> satisfies the conditions of the Banach contraction principle with contraction constant 1/2.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup> In this case the metric is in fact an <a href="/wiki/Ultrametric" class="mw-redirect" title="Ultrametric">ultrametric</a>.
+</p>
+<h2><span class="mw-headline" id="Generalizations">Generalizations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Banach_fixed-point_theorem&amp;action=edit&amp;section=5" title="Edit section: Generalizations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There are a number of generalizations (some of which are immediate <a href="/wiki/Corollary" title="Corollary">corollaries</a>).<sup id="cite_ref-Latif2014_9-0" class="reference"><a href="#cite_note-Latif2014-9">&#91;9&#93;</a></sup>
+</p><p>Let <i>T</i>&#160;: <i>X</i> → <i>X</i> be a map on a complete non-empty metric space. Then, for example, some generalizations of the Banach fixed-point theorem are:
+</p>
+<ul><li>Assume that some iterate <i>T<sup>n</sup></i> of <i>T</i> is a contraction. Then <i>T</i> has a unique fixed point.</li>
+<li>Assume that for each <i>n</i>, there exist <i>c<sub>n</sub></i> such that <i>d(T<sup>n</sup>(x), T<sup>n</sup>(y)) ≤ c<sub>n</sub>d(x, y)</i> for all <i>x</i> and <i>y</i>, and that</li></ul>
+<dl><dd><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum \nolimits _{n}c_{n}&lt;\infty .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo movablelimits="false">&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>&lt;</mo>
+        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum \nolimits _{n}c_{n}&lt;\infty .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6f723577b17dd5c225f3996994a3ebb1a8fa0155" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.338ex; width:13.255ex; height:3.843ex;" alt="{\displaystyle \sum \nolimits _{n}c_{n}&lt;\infty .}"/></span></dd></dl></dd>
+<dd>Then <i>T</i> has a unique fixed point.</dd></dl>
+<p>In applications, the existence and unicity of a fixed point often can be shown directly with the standard Banach fixed point theorem, by a suitable choice of the metric that makes the map <i>T</i> a contraction. Indeed, the above result by Bessaga strongly suggests to look for such a metric. See also the article on <a href="/wiki/Fixed_point_theorems_in_infinite-dimensional_spaces" class="mw-redirect" title="Fixed point theorems in infinite-dimensional spaces">fixed point theorems in infinite-dimensional spaces</a> for generalizations.
+</p><p>A different class of generalizations arise from suitable generalizations of the notion of <a href="/wiki/Metric_space" title="Metric space">metric space</a>, e.g. by weakening the defining axioms for the notion of metric.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup> Some of these have applications, e.g., in the theory of programming semantics in theoretical computer science.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Banach_fixed-point_theorem&amp;action=edit&amp;section=6" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="div-col columns column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em;">
+<ul><li><a href="/wiki/Brouwer_fixed-point_theorem" title="Brouwer fixed-point theorem">Brouwer fixed-point theorem</a></li>
+<li><a href="/wiki/Caristi_fixed-point_theorem" title="Caristi fixed-point theorem">Caristi fixed-point theorem</a></li>
+<li><a href="/wiki/Contraction_mapping" title="Contraction mapping">Contraction mapping</a></li>
+<li><a href="/wiki/Fichera%27s_existence_principle" title="Fichera&#39;s existence principle">Fichera's existence principle</a></li>
+<li><a href="/wiki/Fixed-point_iteration" title="Fixed-point iteration">Fixed-point iteration</a></li>
+<li><a href="/wiki/Fixed-point_theorem" title="Fixed-point theorem">Fixed-point theorems</a></li>
+<li><a href="/wiki/Infinite_compositions_of_analytic_functions" title="Infinite compositions of analytic functions">Infinite compositions of analytic functions</a></li>
+<li><a href="/wiki/Kantorovich_theorem" title="Kantorovich theorem">Kantorovich theorem</a></li></ul>
+</div>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Banach_fixed-point_theorem&amp;action=edit&amp;section=7" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation book"><a href="/wiki/David_Kinderlehrer" title="David Kinderlehrer">Kinderlehrer, David</a>; <a href="/wiki/Guido_Stampacchia" title="Guido Stampacchia">Stampacchia, Guido</a> (1980). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=eCDnoB3Np5oC&amp;pg=PA7">"Variational Inequalities in <b>R</b><sup>N</sup>"</a>. <i>An Introduction to Variational Inequalities and Their Applications</i>. New York: Academic Press. pp.&#160;7–22. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-12-407350-6" title="Special:BookSources/0-12-407350-6"><bdi>0-12-407350-6</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Variational+Inequalities+in+R%3Csup%3EN%3C%2Fsup%3E&amp;rft.btitle=An+Introduction+to+Variational+Inequalities+and+Their+Applications&amp;rft.place=New+York&amp;rft.pages=7-22&amp;rft.pub=Academic+Press&amp;rft.date=1980&amp;rft.isbn=0-12-407350-6&amp;rft.aulast=Kinderlehrer&amp;rft.aufirst=David&amp;rft.au=Stampacchia%2C+Guido&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DeCDnoB3Np5oC%26pg%3DPA7&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABanach+fixed-point+theorem" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation journal"><a href="/wiki/Stefan_Banach" title="Stefan Banach">Banach, Stefan</a> (1922). <a rel="nofollow" class="external text" href="http://matwbn.icm.edu.pl/ksiazki/or/or2/or215.pdf">"Sur les opérations dans les ensembles abstraits et leur application aux équations intégrales"</a> <span class="cs1-format">(PDF)</span>. <i><a href="/wiki/Fundamenta_Mathematicae" title="Fundamenta Mathematicae">Fundamenta Mathematicae</a></i>. <b>3</b>: 133–181. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.4064%2Ffm-3-1-133-181">10.4064/fm-3-1-133-181</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Fundamenta+Mathematicae&amp;rft.atitle=Sur+les+op%C3%A9rations+dans+les+ensembles+abstraits+et+leur+application+aux+%C3%A9quations+int%C3%A9grales&amp;rft.volume=3&amp;rft.pages=133-181&amp;rft.date=1922&amp;rft_id=info%3Adoi%2F10.4064%2Ffm-3-1-133-181&amp;rft.aulast=Banach&amp;rft.aufirst=Stefan&amp;rft_id=http%3A%2F%2Fmatwbn.icm.edu.pl%2Fksiazki%2For%2For2%2For215.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABanach+fixed-point+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation journal">Ciesielski, Krzysztof (2007). <a rel="nofollow" class="external text" href="http://www.emis.de/journals/BJMA/tex_v1_n1_a1.pdf">"On Stefan Banach and some of his results"</a> <span class="cs1-format">(PDF)</span>. <i>Banach J. Math. Anal</i>. <b>1</b> (1): 1–10. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.15352%2Fbjma%2F1240321550">10.15352/bjma/1240321550</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Banach+J.+Math.+Anal.&amp;rft.atitle=On+Stefan+Banach+and+some+of+his+results&amp;rft.volume=1&amp;rft.issue=1&amp;rft.pages=1-10&amp;rft.date=2007&amp;rft_id=info%3Adoi%2F10.15352%2Fbjma%2F1240321550&amp;rft.aulast=Ciesielski&amp;rft.aufirst=Krzysztof&amp;rft_id=http%3A%2F%2Fwww.emis.de%2Fjournals%2FBJMA%2Ftex_v1_n1_a1.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABanach+fixed-point+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation journal">Günther, Matthias (1989). "Zum Einbettungssatz von J. Nash" &#91;On the embedding theorem of J. Nash&#93;. <i><a href="/wiki/Mathematische_Nachrichten" title="Mathematische Nachrichten">Mathematische Nachrichten</a></i> (in German). <b>144</b>: 165–187. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1002%2Fmana.19891440113">10.1002/mana.19891440113</a>. <a href="/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a>&#160;<a rel="nofollow" class="external text" href="//www.ams.org/mathscinet-getitem?mr=1037168">1037168</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Mathematische+Nachrichten&amp;rft.atitle=Zum+Einbettungssatz+von+J.+Nash&amp;rft.volume=144&amp;rft.pages=165-187&amp;rft.date=1989&amp;rft_id=info%3Adoi%2F10.1002%2Fmana.19891440113&amp;rft_id=%2F%2Fwww.ams.org%2Fmathscinet-getitem%3Fmr%3D1037168&amp;rft.aulast=G%C3%BCnther&amp;rft.aufirst=Matthias&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABanach+fixed-point+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation book">Lewis, Frank L.; Vrabie, Draguna; Syrmos, Vassilis L. (2012). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=U3Gtlot_hYEC&amp;pg=PA474">"Reinforcement Learning and Optimal Adaptive Control"</a>. <i>Optimal Control</i>. New York: John Wiley &amp; Sons. pp.&#160;461–517 [p. 474]. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-118-12272-3" title="Special:BookSources/978-1-118-12272-3"><bdi>978-1-118-12272-3</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Reinforcement+Learning+and+Optimal+Adaptive+Control&amp;rft.btitle=Optimal+Control&amp;rft.place=New+York&amp;rft.pages=461-517+p.+474&amp;rft.pub=John+Wiley+%26+Sons&amp;rft.date=2012&amp;rft.isbn=978-1-118-12272-3&amp;rft.aulast=Lewis&amp;rft.aufirst=Frank+L.&amp;rft.au=Vrabie%2C+Draguna&amp;rft.au=Syrmos%2C+Vassilis+L.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DU3Gtlot_hYEC%26pg%3DPA474&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABanach+fixed-point+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation journal">Long, Ngo Van; Soubeyran, Antoine (2000). "Existence and Uniqueness of Cournot Equilibrium: A Contraction Mapping Approach". <i><a href="/wiki/Economics_Letters" title="Economics Letters">Economics Letters</a></i>. <b>67</b> (3): 345–348. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1016%2FS0165-1765%2800%2900211-1">10.1016/S0165-1765(00)00211-1</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Economics+Letters&amp;rft.atitle=Existence+and+Uniqueness+of+Cournot+Equilibrium%3A+A+Contraction+Mapping+Approach&amp;rft.volume=67&amp;rft.issue=3&amp;rft.pages=345-348&amp;rft.date=2000&amp;rft_id=info%3Adoi%2F10.1016%2FS0165-1765%2800%2900211-1&amp;rft.aulast=Long&amp;rft.aufirst=Ngo+Van&amp;rft.au=Soubeyran%2C+Antoine&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABanach+fixed-point+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation book">Stokey, Nancy L.; <a href="/wiki/Robert_Lucas_Jr." title="Robert Lucas Jr.">Lucas, Robert E. Jr.</a> (1989). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=BgQ3AwAAQBAJ&amp;pg=PA508"><i>Recursive Methods in Economic Dynamics</i></a>. Cambridge: Harvard University Press. pp.&#160;508–516. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-674-75096-9" title="Special:BookSources/0-674-75096-9"><bdi>0-674-75096-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Recursive+Methods+in+Economic+Dynamics&amp;rft.place=Cambridge&amp;rft.pages=508-516&amp;rft.pub=Harvard+University+Press&amp;rft.date=1989&amp;rft.isbn=0-674-75096-9&amp;rft.aulast=Stokey&amp;rft.aufirst=Nancy+L.&amp;rft.au=Lucas%2C+Robert+E.+Jr.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DBgQ3AwAAQBAJ%26pg%3DPA508&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABanach+fixed-point+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation journal">Hitzler, Pascal; Seda, Anthony K. (2001). "A 'Converse' of the Banach Contraction Mapping Theorem". <i>Journal of Electrical Engineering</i>. <b>52</b> (10/s): 3–6.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Electrical+Engineering&amp;rft.atitle=A+%27Converse%27+of+the+Banach+Contraction+Mapping+Theorem&amp;rft.volume=52&amp;rft.issue=10%2Fs&amp;rft.pages=3-6&amp;rft.date=2001&amp;rft.aulast=Hitzler&amp;rft.aufirst=Pascal&amp;rft.au=Seda%2C+Anthony+K.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABanach+fixed-point+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Latif2014-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-Latif2014_9-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Latif, Abdul (2014). "Banach Contraction Principle and its Generalizations". <i>Topics in Fixed Point Theory</i>. Springer. pp.&#160;33–64. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1007%2F978-3-319-01586-6_2">10.1007/978-3-319-01586-6_2</a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-3-319-01585-9" title="Special:BookSources/978-3-319-01585-9"><bdi>978-3-319-01585-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Banach+Contraction+Principle+and+its+Generalizations&amp;rft.btitle=Topics+in+Fixed+Point+Theory&amp;rft.pages=33-64&amp;rft.pub=Springer&amp;rft.date=2014&amp;rft_id=info%3Adoi%2F10.1007%2F978-3-319-01586-6_2&amp;rft.isbn=978-3-319-01585-9&amp;rft.aulast=Latif&amp;rft.aufirst=Abdul&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABanach+fixed-point+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation book">Hitzler, Pascal; Seda, Anthony (2010). <i>Mathematical Aspects of Logic Programming Semantics</i>. Chapman and Hall/CRC. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-4398-2961-5" title="Special:BookSources/978-1-4398-2961-5"><bdi>978-1-4398-2961-5</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Mathematical+Aspects+of+Logic+Programming+Semantics&amp;rft.pub=Chapman+and+Hall%2FCRC&amp;rft.date=2010&amp;rft.isbn=978-1-4398-2961-5&amp;rft.aulast=Hitzler&amp;rft.aufirst=Pascal&amp;rft.au=Seda%2C+Anthony&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABanach+fixed-point+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation journal">Seda, Anthony K.; Hitzler, Pascal (2010). "Generalized Distance Functions in the Theory of Computation". <i>The Computer Journal</i>. <b>53</b> (4): 443–464. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1093%2Fcomjnl%2Fbxm108">10.1093/comjnl/bxm108</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=The+Computer+Journal&amp;rft.atitle=Generalized+Distance+Functions+in+the+Theory+of+Computation&amp;rft.volume=53&amp;rft.issue=4&amp;rft.pages=443-464&amp;rft.date=2010&amp;rft_id=info%3Adoi%2F10.1093%2Fcomjnl%2Fbxm108&amp;rft.aulast=Seda&amp;rft.aufirst=Anthony+K.&amp;rft.au=Hitzler%2C+Pascal&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABanach+fixed-point+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+</ol></div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Banach_fixed-point_theorem&amp;action=edit&amp;section=8" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><cite class="citation book">Istrăţescu, Vasile I. (1981). <i>Fixed Point Theory: An Introduction</i>. The Netherlands: D. Reidel. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/90-277-1224-7" title="Special:BookSources/90-277-1224-7"><bdi>90-277-1224-7</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Fixed+Point+Theory%3A+An+Introduction&amp;rft.place=The+Netherlands&amp;rft.pub=D.+Reidel&amp;rft.date=1981&amp;rft.isbn=90-277-1224-7&amp;rft.aulast=Istr%C4%83%C5%A3escu&amp;rft.aufirst=Vasile+I.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABanach+fixed-point+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/> See chapter 7.</li>
+<li><cite class="citation book">Granas, Andrzej; <a href="/wiki/James_Dugundji" title="James Dugundji">Dugundji, James</a> (2003). <i>Fixed Point Theory</i>. New York: Springer-Verlag. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-387-00173-5" title="Special:BookSources/0-387-00173-5"><bdi>0-387-00173-5</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Fixed+Point+Theory&amp;rft.place=New+York&amp;rft.pub=Springer-Verlag&amp;rft.date=2003&amp;rft.isbn=0-387-00173-5&amp;rft.aulast=Granas&amp;rft.aufirst=Andrzej&amp;rft.au=Dugundji%2C+James&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABanach+fixed-point+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite class="citation book">Kirk, William A.; Khamsi, Mohamed A. (2001). <i>An Introduction to Metric Spaces and Fixed Point Theory</i>. New York: John Wiley. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-471-41825-0" title="Special:BookSources/0-471-41825-0"><bdi>0-471-41825-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=An+Introduction+to+Metric+Spaces+and+Fixed+Point+Theory&amp;rft.place=New+York&amp;rft.pub=John+Wiley&amp;rft.date=2001&amp;rft.isbn=0-471-41825-0&amp;rft.aulast=Kirk&amp;rft.aufirst=William+A.&amp;rft.au=Khamsi%2C+Mohamed+A.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABanach+fixed-point+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite class="citation book">Kirk, William A.; Sims, Brailey (2001). <i>Handbook of Metric Fixed Point Theory</i>. London: Kluwer Academic. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-7923-7073-2" title="Special:BookSources/0-7923-7073-2"><bdi>0-7923-7073-2</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Handbook+of+Metric+Fixed+Point+Theory&amp;rft.place=London&amp;rft.pub=Kluwer+Academic&amp;rft.date=2001&amp;rft.isbn=0-7923-7073-2&amp;rft.aulast=Kirk&amp;rft.aufirst=William+A.&amp;rft.au=Sims%2C+Brailey&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABanach+fixed-point+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li></ul>
+<p><i>This article incorporates material from <a rel="nofollow" class="external text" href="http://planetmath.org/banachfixedpointtheorem">Banach fixed point theorem</a> on <a href="/wiki/PlanetMath" title="PlanetMath">PlanetMath</a>, which is licensed under the <a href="/wiki/Wikipedia:CC-BY-SA" class="mw-redirect" title="Wikipedia:CC-BY-SA">Creative Commons Attribution/Share-Alike License</a>.</i>
+</p>
+<!-- 
+NewPP limit report
+Parsed by mw1321
+Cached time: 20190727181852
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.304 seconds
+Real time usage: 0.394 seconds
+Preprocessor visited node count: 984/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 28829/2097152 bytes
+Template argument size: 890/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 3/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 42107/5000000 bytes
+Number of Wikibase entities loaded: 2/400
+Lua time usage: 0.175/10.000 seconds
+Lua memory usage: 4.62 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  301.418      1 -total
+ 44.95%  135.477      9 Template:Cite_book
+ 22.66%   68.314      6 Template:Cite_journal
+ 19.11%   57.613      1 Template:Citation_needed_span
+ 13.76%   41.484      1 Template:Fix-span
+ 10.51%   31.681      2 Template:Category_handler
+  3.86%   11.621      1 Template:Div_col
+  2.07%    6.252      1 Template:Replace
+  1.23%    3.709      1 Template:PlanetMath_attribution
+  1.17%    3.536      1 Template:Fix/category
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:46676-0!canonical!math=5 and timestamp 20190727181852 and revision id 903645947
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Banach_fixed-point_theorem&amp;oldid=903645947">https://en.wikipedia.org/w/index.php?title=Banach_fixed-point_theorem&amp;oldid=903645947</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Topology" title="Category:Topology">Topology</a></li><li><a href="/wiki/Category:Fixed-point_theorems" title="Category:Fixed-point theorems">Fixed-point theorems</a></li><li><a href="/wiki/Category:Metric_geometry" title="Category:Metric geometry">Metric geometry</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_German-language_sources_(de)" title="Category:CS1 German-language sources (de)">CS1 German-language sources (de)</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_June_2019" title="Category:Articles with unsourced statements from June 2019">Articles with unsourced statements from June 2019</a></li><li><a href="/wiki/Category:Wikipedia_articles_incorporating_text_from_PlanetMath" title="Category:Wikipedia articles incorporating text from PlanetMath">Wikipedia articles incorporating text from PlanetMath</a></li><li><a href="/wiki/Category:Articles_containing_proofs" title="Category:Articles containing proofs">Articles containing proofs</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Banach+fixed-point+theorem" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Banach+fixed-point+theorem" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Banach_fixed-point_theorem" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Banach_fixed-point_theorem" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Banach_fixed-point_theorem">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Banach_fixed-point_theorem&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Banach_fixed-point_theorem&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Banach_fixed-point_theorem" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Banach_fixed-point_theorem" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Banach_fixed-point_theorem&amp;oldid=903645947" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Banach_fixed-point_theorem&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q220680" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Banach_fixed-point_theorem&amp;id=903645947" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Banach+fixed-point+theorem">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Banach+fixed-point+theorem&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Banach_fixed-point_theorem&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-bar"><a href="https://bar.wikipedia.org/wiki/Fixpunktsatz_vom_Banach" title="Fixpunktsatz vom Banach – Bavarian" lang="bar" hreflang="bar" class="interlanguage-link-target">Boarisch</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Teorema_del_punt_fix_de_Banach" title="Teorema del punt fix de Banach – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Banachova_v%C4%9Bta_o_pevn%C3%A9m_bod%C4%9B" title="Banachova věta o pevném bodě – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-cy"><a href="https://cy.wikipedia.org/wiki/Theorem_pwynt_sefydlog_Banach" title="Theorem pwynt sefydlog Banach – Welsh" lang="cy" hreflang="cy" class="interlanguage-link-target">Cymraeg</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Fixpunktsatz_von_Banach" title="Fixpunktsatz von Banach – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Teorema_del_punto_fijo_de_Banach" title="Teorema del punto fijo de Banach – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EB%B0%94%EB%82%98%ED%9D%90_%EA%B3%A0%EC%A0%95%EC%A0%90_%EC%A0%95%EB%A6%AC" title="바나흐 고정점 정리 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Teorema_delle_contrazioni" title="Teorema delle contrazioni – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%A4%D7%98_%D7%A0%D7%A7%D7%95%D7%93%D7%AA_%D7%94%D7%A9%D7%91%D7%AA_%D7%A9%D7%9C_%D7%91%D7%A0%D7%9A" title="משפט נקודת השבת של בנך – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/Banach_fixpontt%C3%A9tele" title="Banach fixponttétele – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Contractiestelling_van_Banach" title="Contractiestelling van Banach – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%8A%E3%83%83%E3%83%8F%E3%81%AE%E4%B8%8D%E5%8B%95%E7%82%B9%E5%AE%9A%E7%90%86" title="バナッハの不動点定理 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Twierdzenie_Banacha_o_kontrakcji" title="Twierdzenie Banacha o kontrakcji – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Teorema_do_ponto_fixo_de_Banach" title="Teorema do ponto fixo de Banach – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%91%D0%B0%D0%BD%D0%B0%D1%85%D0%B0_%D0%BE_%D0%BD%D0%B5%D0%BF%D0%BE%D0%B4%D0%B2%D0%B8%D0%B6%D0%BD%D0%BE%D0%B9_%D1%82%D0%BE%D1%87%D0%BA%D0%B5" title="Теорема Банаха о неподвижной точке – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sk"><a href="https://sk.wikipedia.org/wiki/Banachova_veta_o_pevnom_bode" title="Banachova veta o pevnom bode – Slovak" lang="sk" hreflang="sk" class="interlanguage-link-target">Slovenčina</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/%D0%91%D0%B0%D0%BD%D0%B0%D1%85%D0%BE%D0%B2%D0%B0_%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%BE_%D0%BD%D0%B5%D0%BF%D0%BE%D0%BA%D1%80%D0%B5%D1%82%D0%BD%D0%BE%D1%98_%D1%82%D0%B0%D1%87%D0%BA%D0%B8" title="Банахова теорема о непокретној тачки – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Banachin_kiintopistelause" title="Banachin kiintopistelause – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Banachs_fixpunktssats" title="Banachs fixpunktssats – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Banach_sabit_nokta_teoremi" title="Banach sabit nokta teoremi – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%91%D0%B0%D0%BD%D0%B0%D1%85%D0%B0_%D0%BF%D1%80%D0%BE_%D0%BD%D0%B5%D1%80%D1%83%D1%85%D0%BE%D0%BC%D1%83_%D1%82%D0%BE%D1%87%D0%BA%D1%83" title="Теорема Банаха про нерухому точку – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E5%B7%B4%E6%8B%BF%E8%B5%AB%E4%B8%8D%E5%8A%A8%E7%82%B9%E5%AE%9A%E7%90%86" title="巴拿赫不动点定理 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q220680#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 26 June 2019, at 23:48<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Banach_fixed-point_theorem&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.304","walltime":"0.394","ppvisitednodes":{"value":984,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":28829,"limit":2097152},"templateargumentsize":{"value":890,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":3,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":42107,"limit":5000000},"entityaccesscount":{"value":2,"limit":400},"timingprofile":["100.00%  301.418      1 -total"," 44.95%  135.477      9 Template:Cite_book"," 22.66%   68.314      6 Template:Cite_journal"," 19.11%   57.613      1 Template:Citation_needed_span"," 13.76%   41.484      1 Template:Fix-span"," 10.51%   31.681      2 Template:Category_handler","  3.86%   11.621      1 Template:Div_col","  2.07%    6.252      1 Template:Replace","  1.23%    3.709      1 Template:PlanetMath_attribution","  1.17%    3.536      1 Template:Fix/category"]},"scribunto":{"limitreport-timeusage":{"value":"0.175","limit":"10.000"},"limitreport-memusage":{"value":4841233,"limit":52428800}},"cachereport":{"origin":"mw1321","timestamp":"20190727181852","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Banach fixed-point theorem","url":"https:\/\/en.wikipedia.org\/wiki\/Banach_fixed-point_theorem","sameAs":"http:\/\/www.wikidata.org\/entity\/Q220680","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q220680","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-03-30T03:09:25Z","dateModified":"2019-06-26T23:48:17Z","headline":"theorem"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":146,"wgHostname":"mw1247"});});</script>
+</body>
+</html>

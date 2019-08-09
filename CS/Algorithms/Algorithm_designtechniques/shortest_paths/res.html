@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Shortest path problem - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Shortest_path_problem","wgTitle":"Shortest path problem","wgCurRevisionId":906147832,"wgRevisionId":906147832,"wgArticleId":41985,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles lacking in-text citations from June 2009","All articles lacking in-text citations","Incomplete lists from February 2011","Incomplete lists from December 2012","Articles needing additional references from December 2015","All articles needing additional references","Articles to be expanded from August 2014","All articles to be expanded","Articles using small message boxes","Wikipedia articles with GND identifiers","Network theory","Polynomial-time problems","Computational problems in graph theory","Edsger W. Dijkstra"
+],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Shortest_path_problem","wgRelevantArticleId":41985,"wgRequestId":"XUx6gwpAIEIAALpAi0QAAACA","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Shortest_paths","wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,
+"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgInternalRedirectTargetUrl":"/wiki/Shortest_path_problem","wgWikibaseItemId":"Q1058754","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":
+"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","ext.math.scripts","ext.cite.ux-enhancements","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.17"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Shortest_path_with_direct_weights.svg/1200px-Shortest_path_with_direct_weights.svg.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Shortest_path_problem"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Shortest_path_problem&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Shortest_path_problem&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Shortest_path_problem"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Shortest_path_problem rootpage-Shortest_path_problem skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Shortest path problem</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"><span class="mw-redirectedfrom">&#160;&#160;(Redirected from <a href="/w/index.php?title=Shortest_paths&amp;redirect=no" class="mw-redirect" title="Shortest paths">Shortest paths</a>)</span></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table class="box-More_footnotes plainlinks metadata ambox ambox-style ambox-More_footnotes" role="presentation"><tbody><tr><td class="mbox-image"><div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" decoding="async" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x" data-file-width="48" data-file-height="48" /></div></td><td class="mbox-text"><div class="mbox-text-span">This article includes a <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">list of references</a>, but <b>its sources remain unclear</b> because it has <b>insufficient <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">inline citations</a></b>.<span class="hide-when-compact"> Please help to <a href="/wiki/Wikipedia:WikiProject_Fact_and_Reference_Check" class="mw-redirect" title="Wikipedia:WikiProject Fact and Reference Check">improve</a> this article by <a href="/wiki/Wikipedia:When_to_cite" title="Wikipedia:When to cite">introducing</a> more precise citations.</span>  <small class="date-container"><i>(<span class="date">June 2009</span>)</i></small><small class="hide-when-compact"><i> (<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></div></td></tr></tbody></table>
+<div class="thumb tright"><div class="thumbinner" style="width:252px;"><a href="/wiki/File:Shortest_path_with_direct_weights.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Shortest_path_with_direct_weights.svg/250px-Shortest_path_with_direct_weights.svg.png" decoding="async" width="250" height="137" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Shortest_path_with_direct_weights.svg/375px-Shortest_path_with_direct_weights.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Shortest_path_with_direct_weights.svg/500px-Shortest_path_with_direct_weights.svg.png 2x" data-file-width="512" data-file-height="280" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Shortest_path_with_direct_weights.svg" class="internal" title="Enlarge"></a></div>Shortest path (A, C, E, D, F) between vertices A and F in the weighted directed graph</div></div></div>
+<p>In <a href="/wiki/Graph_theory" title="Graph theory">graph theory</a>, the <b>shortest path problem</b> is the problem of finding a <a href="/wiki/Path_(graph_theory)" title="Path (graph theory)">path</a> between two <a href="/wiki/Vertex_(graph_theory)" title="Vertex (graph theory)">vertices</a> (or nodes) in a <a href="/wiki/Graph_(discrete_mathematics)" title="Graph (discrete mathematics)">graph</a> such that the sum of the <a href="/wiki/Glossary_of_graph_theory_terms#weighted_graph" title="Glossary of graph theory terms">weights</a> of its constituent edges is minimized.
+</p><p>The problem of finding the shortest path between two intersections on a road map may be modeled as a special case of the shortest path problem in graphs, where the vertices correspond to intersections and the edges correspond to road segments, each weighted by the length of the segment.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Definition"><span class="tocnumber">1</span> <span class="toctext">Definition</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Algorithms"><span class="tocnumber">2</span> <span class="toctext">Algorithms</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Single-source_shortest_paths"><span class="tocnumber">3</span> <span class="toctext">Single-source shortest paths</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Undirected_graphs"><span class="tocnumber">3.1</span> <span class="toctext">Undirected graphs</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Unweighted_graphs"><span class="tocnumber">3.2</span> <span class="toctext">Unweighted graphs</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Directed_acyclic_graphs_(DAGs)"><span class="tocnumber">3.3</span> <span class="toctext">Directed acyclic graphs (DAGs)</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Directed_graphs_with_nonnegative_weights"><span class="tocnumber">3.4</span> <span class="toctext">Directed graphs with nonnegative weights</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Directed_graphs_with_arbitrary_weights_without_negative_cycles"><span class="tocnumber">3.5</span> <span class="toctext">Directed graphs with arbitrary weights without negative cycles</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Planar_directed_graphs_with_arbitrary_weights"><span class="tocnumber">3.6</span> <span class="toctext">Planar directed graphs with arbitrary weights</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#All-pairs_shortest_paths"><span class="tocnumber">4</span> <span class="toctext">All-pairs shortest paths</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#Undirected_graph"><span class="tocnumber">4.1</span> <span class="toctext">Undirected graph</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Directed_graph"><span class="tocnumber">4.2</span> <span class="toctext">Directed graph</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Applications"><span class="tocnumber">5</span> <span class="toctext">Applications</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="#Road_networks"><span class="tocnumber">5.1</span> <span class="toctext">Road networks</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="#Related_problems"><span class="tocnumber">6</span> <span class="toctext">Related problems</span></a>
+<ul>
+<li class="toclevel-2 tocsection-16"><a href="#Strategic_shortest-paths"><span class="tocnumber">6.1</span> <span class="toctext">Strategic shortest-paths</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#Linear_programming_formulation"><span class="tocnumber">7</span> <span class="toctext">Linear programming formulation</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#General_algebraic_framework_on_semirings:_the_algebraic_path_problem"><span class="tocnumber">8</span> <span class="toctext">General algebraic framework on semirings: the algebraic path problem</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#Shortest_path_in_stochastic_time-dependent_networks"><span class="tocnumber">9</span> <span class="toctext">Shortest path in stochastic time-dependent networks</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="#See_also"><span class="tocnumber">10</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#References"><span class="tocnumber">11</span> <span class="toctext">References</span></a>
+<ul>
+<li class="toclevel-2 tocsection-22"><a href="#Notes"><span class="tocnumber">11.1</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Bibliography"><span class="tocnumber">11.2</span> <span class="toctext">Bibliography</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-24"><a href="#Further_reading"><span class="tocnumber">12</span> <span class="toctext">Further reading</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Definition">Definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=1" title="Edit section: Definition">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The shortest path problem can be defined for <a href="/wiki/Graph_(discrete_mathematics)" title="Graph (discrete mathematics)">graphs</a> whether <a href="/wiki/Graph_(discrete_mathematics)#Undirected_graph" title="Graph (discrete mathematics)">undirected</a>, <a href="/wiki/Graph_(discrete_mathematics)#Directed_graph" title="Graph (discrete mathematics)">directed</a>, or <a href="/wiki/Mixed_graph" title="Mixed graph">mixed</a>.
+It is defined here for undirected graphs; for directed graphs the definition of path
+requires that consecutive vertices be connected by an appropriate directed edge.
+</p><p>Two vertices are adjacent when they are both incident to a common edge.
+A <a href="/wiki/Path_(graph_theory)" title="Path (graph theory)">path</a> in an undirected graph is a <a href="/wiki/Sequence" title="Sequence">sequence</a> of vertices <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P=(v_{1},v_{2},\ldots ,v_{n})\in V\times V\times \cdots \times V}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>&#x2026;<!-- … --></mo>
+        <mo>,</mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi>V</mi>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mi>V</mi>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mo>&#x22EF;<!-- ⋯ --></mo>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mi>V</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P=(v_{1},v_{2},\ldots ,v_{n})\in V\times V\times \cdots \times V}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3dfd5f51ba29347dd40fd33d30f966f6f5336831" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:39.022ex; height:2.843ex;" alt="{\displaystyle P=(v_{1},v_{2},\ldots ,v_{n})\in V\times V\times \cdots \times V}"/></span>
+such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7dffe5726650f6daac54829972a94f38eb8ec127" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.927ex; height:2.009ex;" alt="v_{i}"/></span> is adjacent to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v_{i+1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{i+1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fda426c85b6383ebcbde4676a5237b2f646d66c8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.028ex; height:2.009ex;" alt="v_{i+1}"/></span> for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 1\leq i&lt;n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mi>i</mi>
+        <mo>&lt;</mo>
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1\leq i&lt;n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a125ffac87dde409b5799717bfcbe4121b91ad04" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:9.557ex; height:2.343ex;" alt="1\leq i&lt;n"/></span>.
+Such a path <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b4dc73bf40314945ff376bd363916a738548d40a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.745ex; height:2.176ex;" alt="P"/></span> is called a path of length <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle n-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fbd0b0f32b28f51962943ee9ede4fb34198a2521" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.398ex; height:2.343ex;" alt="n-1"/></span>
+from <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v_{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/98d33f5d498d528bd8c10edc8ac8c34347f32b3a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.182ex; height:2.009ex;" alt="v_{1}"/></span> to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v_{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d5615ffa6233b0d09d5bafafb58a752c1e8de95f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.346ex; height:2.009ex;" alt="v_{n}"/></span>.
+(The <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7dffe5726650f6daac54829972a94f38eb8ec127" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.927ex; height:2.009ex;" alt="v_{i}"/></span> are variables; their numbering here relates to their position in the sequence and needs not to relate to any canonical labeling of the vertices.)
+</p><p>Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle e_{i,j}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>,</mo>
+            <mi>j</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle e_{i,j}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d9c7a1c781b037551cd83fc9f1939d47f8a3cf4a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:3.018ex; height:2.343ex;" alt="e_{i,j}"/></span> be the edge incident to both <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7dffe5726650f6daac54829972a94f38eb8ec127" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.927ex; height:2.009ex;" alt="v_{i}"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v_{j}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{j}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/73fffa4919c0d6268f6a8d9f38c04dd3296fd0a5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.037ex; height:2.343ex;" alt="v_{j}"/></span>. Given a <a href="/wiki/Function_(mathematics)#Real-valued_functions" title="Function (mathematics)">real-valued</a> weight function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f:E\rightarrow \mathbb {R} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <mi>E</mi>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">R</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:E\rightarrow \mathbb {R} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/91e6b3cc2fb38e5eb2bbd46c677ff3478275d768" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.284ex; height:2.509ex;" alt="f:E\rightarrow \mathbb {R} "/></span>, and an undirected (simple) graph <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle G}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>G</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle G}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f5f3c8921a3b352de45446a6789b104458c9f90b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.827ex; height:2.176ex;" alt="G"/></span>, the shortest path from <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>v</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e07b00e7fc0847fbd16391c778d65bc25c452597" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.128ex; height:1.676ex;" alt="v"/></span> to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v'}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>v</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v'}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/19f1c5b0af1f30c41cb8bc0ba3bfea98681da268" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.812ex; height:2.509ex;" alt="v&#039;"/></span> is the path <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P=(v_{1},v_{2},\ldots ,v_{n})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>&#x2026;<!-- … --></mo>
+        <mo>,</mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P=(v_{1},v_{2},\ldots ,v_{n})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6f63687f8eb79392c1c9e54dbc834270f8eccf0d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.575ex; height:2.843ex;" alt="P=(v_{1},v_{2},\ldots ,v_{n})"/></span> (where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v_{1}=v}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>v</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{1}=v}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/571b239c4065bf04bc2db3a394fb647b8da99b6b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.408ex; height:2.009ex;" alt="v_{1}=v"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v_{n}=v'}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msup>
+          <mi>v</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{n}=v'}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6638608fc71df94a7aa957071adf08cd4c681404" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.257ex; height:2.843ex;" alt="v_{n}=v&#039;"/></span>) that over all possible <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"/></span> minimizes the sum <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum _{i=1}^{n-1}f(e_{i,i+1}).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>,</mo>
+            <mi>i</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{i=1}^{n-1}f(e_{i,i+1}).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b1726612bd72edc85eca854a1042f79c7ebf16d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:12.485ex; height:7.343ex;" alt="\sum _{i=1}^{n-1}f(e_{i,i+1})."/></span> When each edge in the graph has unit weight or <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f:E\rightarrow \{1\}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <mi>E</mi>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <mn>1</mn>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:E\rightarrow \{1\}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0b86e5296cc9131d7fcf6bf9c4ac23fb77c052c3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.093ex; height:2.843ex;" alt="f:E\rightarrow \{1\}"/></span>, this is equivalent to finding the path with fewest edges.
+</p><p>The problem is also sometimes called the <b>single-pair shortest path problem</b>, to distinguish it from the following variations:
+</p>
+<ul><li>The <b>single-source shortest path problem</b>, in which we have to find shortest paths from a source vertex <i>v</i> to all other vertices in the graph.</li>
+<li>The <b>single-destination shortest path problem</b>, in which we have to find shortest paths from all vertices in the directed graph to a single destination vertex <i>v</i>. This can be reduced to the single-source shortest path problem by reversing the arcs in the directed graph.</li>
+<li>The <b>all-pairs shortest path problem</b>, in which we have to find shortest paths between every pair of vertices <i>v</i>, <i>v' </i> in the graph.</li></ul>
+<p>These generalizations have significantly more efficient algorithms than the simplistic approach of running a single-pair shortest path algorithm on all relevant pairs of vertices.
+</p>
+<h2><span class="mw-headline" id="Algorithms">Algorithms</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=2" title="Edit section: Algorithms">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The most important algorithms for solving this problem are:
+</p>
+<ul><li><a href="/wiki/Dijkstra%27s_algorithm" title="Dijkstra&#39;s algorithm">Dijkstra's algorithm</a> solves the single-source shortest path problem with non-negative edge weight.</li>
+<li><a href="/wiki/Bellman%E2%80%93Ford_algorithm" title="Bellman–Ford algorithm">Bellman–Ford algorithm</a> solves the single-source problem if edge weights may be negative.</li>
+<li><a href="/wiki/A*_search_algorithm" title="A* search algorithm">A* search algorithm</a> solves for single pair shortest path using heuristics to try to speed up the search.</li>
+<li><a href="/wiki/Floyd%E2%80%93Warshall_algorithm" title="Floyd–Warshall algorithm">Floyd–Warshall algorithm</a> solves all pairs shortest paths.</li>
+<li><a href="/wiki/Johnson%27s_algorithm" title="Johnson&#39;s algorithm">Johnson's algorithm</a> solves all pairs shortest paths, and may be faster than Floyd–Warshall on <a href="/wiki/Sparse_graph" class="mw-redirect" title="Sparse graph">sparse graphs</a>.</li>
+<li><a href="/wiki/Viterbi_algorithm" title="Viterbi algorithm">Viterbi algorithm</a> solves the shortest stochastic path problem with an additional probabilistic weight on each node.</li></ul>
+<p>Additional algorithms and associated evaluations may be found in <a href="#CITEREFCherkasskyGoldbergRadzik1996">Cherkassky, Goldberg &amp; Radzik (1996)</a>.
+</p>
+<h2><span class="mw-headline" id="Single-source_shortest_paths">Single-source shortest paths</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=3" title="Edit section: Single-source shortest paths">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Undirected_graphs">Undirected graphs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=4" title="Edit section: Undirected graphs">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<table class="wikitable">
+<tbody><tr>
+<th>Weights</th>
+<th><a href="/wiki/Time_complexity" title="Time complexity">Time complexity</a></th>
+<th>Author
+</th></tr>
+<tr>
+<td>ℝ<sub>+</sub></td>
+<td><i>O</i>(<i>V<sup>2</sup></i>)</td>
+<td><a href="#CITEREFDijkstra1959">Dijkstra 1959</a>
+</td></tr>
+<tr>
+<td>ℝ<sub>+</sub></td>
+<td><i>O</i>((<i>E</i>&#160;+&#160;<i>V</i>)&#160;log&#160;<i>V</i>)</td>
+<td><a href="#CITEREFJohnson1977">Johnson 1977</a> (<a href="/wiki/Binary_heap" title="Binary heap">binary heap</a>)
+</td></tr>
+<tr>
+<td>ℝ<sub>+</sub></td>
+<td><i>O</i>(<i>E</i>&#160;+&#160;<i>V</i>&#160;log&#160;<i>V</i>)</td>
+<td><a href="#CITEREFFredmanTarjan1984">Fredman &amp; Tarjan 1984</a> (<a href="/wiki/Fibonacci_heap" title="Fibonacci heap">Fibonacci heap</a>)
+</td></tr>
+<tr>
+<td>ℕ</td>
+<td><i>O</i>(<i>E</i>)</td>
+<td><a href="#CITEREFThorup1999">Thorup 1999</a> (requires constant-time multiplication).
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Unweighted_graphs">Unweighted graphs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=5" title="Edit section: Unweighted graphs">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<table class="wikitable">
+<tbody><tr>
+<th>Algorithm</th>
+<th>Time complexity</th>
+<th>Author
+</th></tr>
+<tr>
+<td><a href="/wiki/Breadth-first_search" title="Breadth-first search">Breadth-first search</a></td>
+<td><i>O</i>(<i>E</i>&#160;+&#160;<i>V</i>)</td>
+<td>
+</td></tr></tbody></table>
+<h3><span id="Directed_acyclic_graphs_.28DAGs.29"></span><span class="mw-headline" id="Directed_acyclic_graphs_(DAGs)">Directed acyclic graphs (DAGs)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=6" title="Edit section: Directed acyclic graphs (DAGs)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>An algorithm using <a href="/wiki/Topological_sorting#Application_to_shortest_path_finding" title="Topological sorting">topological sorting</a> can solve the single-source shortest path problem in linear time, <span class="texhtml">Θ(<i>E</i> + <i>V</i>)</span>, in weighted DAGs.
+</p>
+<h3><span class="mw-headline" id="Directed_graphs_with_nonnegative_weights">Directed graphs with nonnegative weights</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=7" title="Edit section: Directed graphs with nonnegative weights">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following table is taken from <a href="#CITEREFSchrijver2004">Schrijver (2004)</a>, with some corrections and additions.
+A green background indicates an asymptotically best bound in the table; <i>L</i> is the maximum length (or weight) among all edges, assuming integer edge weights.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Algorithm</th>
+<th>Time complexity</th>
+<th>Author
+</th></tr>
+<tr>
+<td></td>
+<td><i>O</i>(<i>V</i><sup> 2</sup><i>EL</i>)</td>
+<td><a href="#CITEREFFord1956">Ford 1956</a>
+</td></tr>
+<tr>
+<td><a href="/wiki/Bellman%E2%80%93Ford_algorithm" title="Bellman–Ford algorithm">Bellman–Ford algorithm</a></td>
+<td><i>O</i>(<i>VE</i>)</td>
+<td><a href="#CITEREFShimbel1955">Shimbel 1955</a>, <a href="#CITEREFBellman1958">Bellman 1958</a>, <a href="#CITEREFMoore1959">Moore 1959</a>
+</td></tr>
+<tr>
+<td></td>
+<td><i>O</i>(<i>V</i><sup> 2</sup>&#160;log&#160;<i>V</i>)</td>
+<td><a href="#CITEREFDantzig1960">Dantzig 1960</a>
+</td></tr>
+<tr>
+<td><a href="/wiki/Dijkstra%27s_algorithm" title="Dijkstra&#39;s algorithm">Dijkstra's algorithm</a> with list</td>
+<td><i>O</i>(<i>V</i><sup> 2</sup>)</td>
+<td><a href="#CITEREFLeyzorekGrayJohnsonLadew1957">Leyzorek et al. 1957</a>, <a href="#CITEREFDijkstra1959">Dijkstra 1959</a>, Minty (see <a href="#CITEREFPollackWiebenson1960">Pollack &amp; Wiebenson 1960</a>), <a href="#CITEREFWhitingHillier1960">Whiting &amp; Hillier 1960</a>
+</td></tr>
+<tr>
+<td><a href="/wiki/Dijkstra%27s_algorithm" title="Dijkstra&#39;s algorithm">Dijkstra's algorithm</a> with <a href="/wiki/Binary_heap" title="Binary heap">binary heap</a></td>
+<td><i>O</i>((<i>E</i>&#160;+&#160;<i>V</i>)&#160;log&#160;<i>V</i>)</td>
+<td><a href="#CITEREFJohnson1977">Johnson 1977</a>
+</td></tr>
+<tr>
+<td>. . .</td>
+<td>. . .</td>
+<td>. . .
+</td></tr>
+<tr style="background: #d0ffd0">
+<td><a href="/wiki/Dijkstra%27s_algorithm" title="Dijkstra&#39;s algorithm">Dijkstra's algorithm</a> with <a href="/wiki/Fibonacci_heap" title="Fibonacci heap">Fibonacci heap</a></td>
+<td><i>O</i>(<i>E</i>&#160;+&#160;<i>V</i>&#160;log&#160;<i>V</i>)</td>
+<td><a href="#CITEREFFredmanTarjan1984">Fredman &amp; Tarjan 1984</a>, <a href="#CITEREFFredmanTarjan1987">Fredman &amp; Tarjan 1987</a>
+</td></tr>
+<tr style="background: #d0ffd0">
+<td></td>
+<td><i>O</i>(<i>E</i>&#160;log&#160;log&#160;<i>L</i>)</td>
+<td><a href="#CITEREFJohnson1981">Johnson 1981</a>, <a href="#CITEREFKarlssonPoblete1983">Karlsson &amp; Poblete 1983</a>
+</td></tr>
+<tr>
+<td><a href="/w/index.php?title=Gabow%27s_algorithm_(single-source_shortest_paths)&amp;action=edit&amp;redlink=1" class="new" title="Gabow&#39;s algorithm (single-source shortest paths) (page does not exist)">Gabow's algorithm</a></td>
+<td><i>O</i>(<i>E</i>&#160;log<sub><i>E</i>/<i>V</i></sub>&#160;<i>L</i>)</td>
+<td><a href="#CITEREFGabow1983">Gabow 1983</a>, <a href="#CITEREFGabow1985">Gabow 1985</a>
+</td></tr>
+<tr style="background: #d0ffd0">
+<td></td>
+<td><i>O</i>(<i>E</i>&#160;+&#160;<i>V</i> <span class="nowrap">&#8730;<span style="border-top:1px solid; padding:0 0.1em;">log <i>L</i></span></span>)</td>
+<td><a href="#CITEREFAhujaMehlhornOrlinTarjan1990">Ahuja et al. 1990</a>
+</td></tr>
+<tr>
+<td>Thorup
+</td>
+<td><i>O</i>(<i>E</i>&#160;+&#160;<i>V</i>&#160;log&#160;log&#160;<i>V</i>)
+</td>
+<td><a href="#CITEREFThorup2004">Thorup 2004</a>
+</td></tr></tbody></table>
+<div role="note" class="hatnote navigation-not-searchable plainlinks">This list is <a href="/wiki/Wikipedia:WikiProject_Lists#Incomplete_lists" title="Wikipedia:WikiProject Lists">incomplete</a>; you can help by <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Shortest_path_problem&amp;action=edit">expanding it</a>.</div>
+<h3><span class="mw-headline" id="Directed_graphs_with_arbitrary_weights_without_negative_cycles">Directed graphs with arbitrary weights without negative cycles</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=8" title="Edit section: Directed graphs with arbitrary weights without negative cycles">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<table class="wikitable">
+<tbody><tr>
+<th>Algorithm</th>
+<th>Time complexity</th>
+<th>Author
+</th></tr>
+<tr>
+<td></td>
+<td><i>O</i>(<i>V</i><sup> 2</sup><i>EL</i>)</td>
+<td><a href="#CITEREFFord1956">Ford 1956</a>
+</td></tr>
+<tr>
+<td><a href="/wiki/Bellman%E2%80%93Ford_algorithm" title="Bellman–Ford algorithm">Bellman–Ford algorithm</a></td>
+<td><i>O</i>(<i>VE</i>)</td>
+<td><a href="#CITEREFShimbel1955">Shimbel 1955</a>, <a href="#CITEREFBellman1958">Bellman 1958</a>, <a href="#CITEREFMoore1959">Moore 1959</a>
+</td></tr></tbody></table>
+<div role="note" class="hatnote navigation-not-searchable plainlinks">This list is <a href="/wiki/Wikipedia:WikiProject_Lists#Incomplete_lists" title="Wikipedia:WikiProject Lists">incomplete</a>; you can help by <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Shortest_path_problem&amp;action=edit">expanding it</a>.</div>
+<h3><span class="mw-headline" id="Planar_directed_graphs_with_arbitrary_weights">Planar directed graphs with arbitrary weights</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=9" title="Edit section: Planar directed graphs with arbitrary weights">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h2><span class="mw-headline" id="All-pairs_shortest_paths">All-pairs shortest paths</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=10" title="Edit section: All-pairs shortest paths">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The all-pairs shortest path problem finds the shortest paths between every pair of vertices <span class="texhtml mvar" style="font-style:italic;">v</span>, <span class="texhtml mvar" style="font-style:italic;">v'</span> in the graph.  The all-pairs shortest paths problem for unweighted directed graphs was introduced by <a href="#CITEREFShimbel1953">Shimbel (1953)</a>, who observed that it could be solved by a linear number of matrix multiplications that takes a total time of <span class="texhtml"><i>O</i>(<i>V</i><sup>4</sup>)</span>.
+</p>
+<h3><span class="mw-headline" id="Undirected_graph">Undirected graph</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=11" title="Edit section: Undirected graph">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<table class="wikitable">
+<tbody><tr>
+<th>Weights</th>
+<th>Time complexity</th>
+<th>Algorithm
+</th></tr>
+<tr>
+<td>ℝ<sub>+</sub></td>
+<td><span class="texhtml"><i>O</i>(<i>V</i><sup>3</sup>)</span></td>
+<td><a href="/wiki/Floyd%E2%80%93Warshall_algorithm" title="Floyd–Warshall algorithm">Floyd–Warshall algorithm</a>
+</td></tr>
+<tr>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \{+1,+\infty \}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">{</mo>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mo>+</mo>
+        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \{+1,+\infty \}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/56b11861f7adfb93639d92c6d5e7c31e00096a24" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.461ex; height:2.843ex;" alt="{\displaystyle \{+1,+\infty \}}"/></span></td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle O(V^{\omega }\log V)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03C9;<!-- ω --></mi>
+          </mrow>
+        </msup>
+        <mi>log</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi>V</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(V^{\omega }\log V)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/05ddb57fdb38817db51581689a342d0acd66199b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.287ex; height:2.843ex;" alt="{\displaystyle O(V^{\omega }\log V)}"/></span></td>
+<td><a href="/wiki/Seidel%27s_algorithm" title="Seidel&#39;s algorithm">Seidel's algorithm</a> (expected running time).
+</td></tr>
+<tr>
+<td>ℕ</td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle O(V^{3}/2^{\Omega (\log n)^{1/2}})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x03A9;<!-- Ω --></mi>
+            <mo stretchy="false">(</mo>
+            <mi>log</mi>
+            <mo>&#x2061;<!-- ⁡ --></mo>
+            <mi>n</mi>
+            <msup>
+              <mo stretchy="false">)</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo>/</mo>
+                </mrow>
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(V^{3}/2^{\Omega (\log n)^{1/2}})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d07dc4eb6add3bb68ddf8c032a4452dabc8401f5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.218ex; height:3.843ex;" alt="O(V^{3}/2^{\Omega (\log n)^{1/2}})"/></span></td>
+<td><a href="#CITEREFWilliams2014">Williams 2014</a>
+</td></tr>
+<tr>
+<td>ℝ<sub>+</sub></td>
+<td><span class="texhtml"><i>O</i>(<i>EV</i>&#160;log&#160;α(<i>E</i>,<i>V</i>))</span></td>
+<td><a href="#CITEREFPettieRamachandran2002">Pettie &amp; Ramachandran 2002</a>
+</td></tr>
+<tr>
+<td>ℕ</td>
+<td><span class="texhtml"><i>O</i>(<i>EV</i>)</span></td>
+<td><a href="#CITEREFThorup1999">Thorup 1999</a> (requires constant-time multiplication).
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Directed_graph">Directed graph</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=12" title="Edit section: Directed graph">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<table class="wikitable">
+<tbody><tr>
+<th>Weights</th>
+<th>Time complexity</th>
+<th>Algorithm
+</th></tr>
+<tr>
+<td>ℝ (no negative cycles)</td>
+<td><span class="texhtml"><i>O</i>(<i>V</i><sup>3</sup>)</span></td>
+<td><a href="/wiki/Floyd%E2%80%93Warshall_algorithm" title="Floyd–Warshall algorithm">Floyd–Warshall algorithm</a>
+</td></tr>
+<tr>
+<td>ℕ</td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle O(V^{3}/2^{\Omega (\log n)^{1/2}})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x03A9;<!-- Ω --></mi>
+            <mo stretchy="false">(</mo>
+            <mi>log</mi>
+            <mo>&#x2061;<!-- ⁡ --></mo>
+            <mi>n</mi>
+            <msup>
+              <mo stretchy="false">)</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo>/</mo>
+                </mrow>
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(V^{3}/2^{\Omega (\log n)^{1/2}})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d07dc4eb6add3bb68ddf8c032a4452dabc8401f5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.218ex; height:3.843ex;" alt="O(V^{3}/2^{\Omega (\log n)^{1/2}})"/></span></td>
+<td><a href="#CITEREFWilliams2014">Williams 2014</a>
+</td></tr>
+<tr>
+<td>ℝ (no negative cycles)</td>
+<td><span class="texhtml"><i>O</i>(<i>EV</i>&#160;+&#160;<i>V</i><sup>2</sup>&#160;log&#160;<i>V</i>)</span></td>
+<td><a href="/wiki/Johnson%27s_algorithm" title="Johnson&#39;s algorithm">Johnson–Dijkstra</a>
+</td></tr>
+<tr>
+<td>ℝ (no negative cycles)</td>
+<td><span class="texhtml"><i>O</i>(<i>EV</i>&#160;+&#160;<i>V</i><sup>2</sup>&#160;log&#160;log&#160;<i>V</i>)</span></td>
+<td><a href="#CITEREFPettie2004">Pettie 2004</a>
+</td></tr>
+<tr>
+<td>ℕ</td>
+<td><span class="texhtml"><i>O</i>(<i>EV</i>&#160;+&#160;<i>V</i><sup>2</sup>&#160;log&#160;log&#160;<i>V</i>)</span></td>
+<td><a href="#CITEREFHagerup2000">Hagerup 2000</a>
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Applications">Applications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=13" title="Edit section: Applications">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Shortest path algorithms are applied to automatically find directions between physical locations, such as driving directions on <a href="/wiki/Web_mapping" title="Web mapping">web mapping</a> websites like <a href="/wiki/MapQuest" title="MapQuest">MapQuest</a> or <a href="/wiki/Google_Maps" title="Google Maps">Google Maps</a>. For this application fast specialized algorithms are available.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p><p>If one represents a nondeterministic <a href="/wiki/Abstract_machine" title="Abstract machine">abstract machine</a> as a graph where vertices describe states and edges describe possible transitions, shortest path algorithms can be used to find an optimal sequence of choices to reach a certain goal state, or to establish lower bounds on the time needed to reach a given state. For example, if vertices represent the states of a puzzle like a <a href="/wiki/Rubik%27s_Cube" title="Rubik&#39;s Cube">Rubik's Cube</a> and each directed edge corresponds to a single move or turn, shortest path algorithms can be used to find a solution that uses the minimum possible number of moves.
+</p><p>In a <a href="/wiki/Computer_network" title="Computer network">networking</a> or <a href="/wiki/Telecommunications_network" title="Telecommunications network">telecommunications</a> mindset, this shortest path problem is sometimes called the min-delay path problem and usually tied with a <a href="/wiki/Widest_path_problem" title="Widest path problem">widest path problem</a>. For example, the algorithm may seek the shortest (min-delay) widest path, or widest shortest (min-delay) path.
+</p><p>A more lighthearted application is the games of "<a href="/wiki/Six_degrees_of_separation" title="Six degrees of separation">six degrees of separation</a>" that try to find the shortest path in graphs like movie stars appearing in the same film.
+</p><p>Other applications, often studied in <a href="/wiki/Operations_research" title="Operations research">operations research</a>, include plant and facility layout, <a href="/wiki/Robotics" title="Robotics">robotics</a>, <a href="/wiki/Transportation" class="mw-redirect" title="Transportation">transportation</a>, and <a href="/wiki/Very-large-scale_integration" class="mw-redirect" title="Very-large-scale integration">VLSI</a> design.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Road_networks">Road networks</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=14" title="Edit section: Road networks">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A road network can be considered as a graph with positive weights. The nodes represent road junctions and each edge of the graph is associated with a road segment between two junctions. The weight of an edge may correspond to the length of the associated road segment, the time needed to traverse the segment, or the cost of traversing the segment. Using directed edges it is also possible to model one-way streets. Such graphs are special in the sense that some edges are more important than others for long distance travel (e.g. highways). This property has been formalized using the notion of highway dimension.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup> There are a great number of algorithms that exploit this property and are therefore able to compute the shortest path a lot quicker than would be possible on general graphs.
+</p><p>All of these algorithms work in two phases. In the first phase, the graph is preprocessed without knowing the source or target node. The second phase is the query phase. In this phase, source and target node are known.The idea is that the road network is static, so the preprocessing phase can be done once and used for a large number of queries on the same road network.
+</p><p>The algorithm with the fastest known query time is called hub labeling and is able to compute shortest path on the road networks of Europe or the USA in a fraction of a microsecond.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> Other techniques that have been used are:
+</p>
+<ul><li>ALT (A* search, landmarks, and <a href="/wiki/Triangle_inequality" title="Triangle inequality">triangle inequality</a>)</li>
+<li>Arc flags</li>
+<li><a href="/wiki/Contraction_hierarchies" title="Contraction hierarchies">Contraction hierarchies</a></li>
+<li>Transit node routing</li>
+<li>Reach-based pruning</li>
+<li>Labeling</li>
+<li><a href="/wiki/Hub_labels" title="Hub labels">Hub labels</a></li></ul>
+<h2><span class="mw-headline" id="Related_problems">Related problems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=15" title="Edit section: Related problems">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>For shortest path problems in <a href="/wiki/Computational_geometry" title="Computational geometry">computational geometry</a>, see <a href="/wiki/Euclidean_shortest_path" title="Euclidean shortest path">Euclidean shortest path</a>.
+</p><p>The <a href="/wiki/Traveling_salesman_problem" class="mw-redirect" title="Traveling salesman problem">travelling salesman problem</a> is the problem of finding the shortest path that goes through every vertex exactly once, and returns to the start.  Unlike the shortest path problem, which can be solved in polynomial time in graphs without negative cycles, the travelling salesman problem is <a href="/wiki/NP-complete" class="mw-redirect" title="NP-complete">NP-complete</a> and, as such, is believed not to be efficiently solvable for large sets of data (see <a href="/wiki/P_%3D_NP_problem" class="mw-redirect" title="P = NP problem">P = NP problem</a>).  The problem of <a href="/wiki/Longest_path_problem" title="Longest path problem">finding the longest path</a> in a graph is also NP-complete.
+</p><p>The <a href="/wiki/Canadian_traveller_problem" title="Canadian traveller problem">Canadian traveller problem</a> and the stochastic shortest path problem are generalizations where either the graph isn't completely known to the mover, changes over time, or where actions (traversals) are probabilistic.
+</p><p>The shortest multiple disconnected path <sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> is a representation of the primitive path network within the framework of <a href="/wiki/Reptation_theory" class="mw-redirect" title="Reptation theory">Reptation theory</a>.
+</p><p>The <a href="/wiki/Widest_path_problem" title="Widest path problem">widest path problem</a> seeks a path so that the minimum label of any edge is as large as possible.
+</p>
+<h3><span class="mw-headline" id="Strategic_shortest-paths">Strategic shortest-paths</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=16" title="Edit section: Strategic shortest-paths">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<table class="box-Unreferenced_section plainlinks metadata ambox ambox-content ambox-Unreferenced" role="presentation"><tbody><tr><td class="mbox-image"><div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" decoding="async" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div></td><td class="mbox-text"><div class="mbox-text-span">This section <b>does not <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">cite</a> any <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">sources</a></b>.<span class="hide-when-compact"> Please help <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Shortest_path_problem&amp;action=edit">improve this section</a> by <a href="/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and <a href="/wiki/Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span>  <small class="date-container"><i>(<span class="date">December 2015</span>)</i></small><small class="hide-when-compact"><i> (<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></div></td></tr></tbody></table>
+<p>Sometimes, the edges in a graph have personalities: each edge has its own selfish interest. An example is a communication network, in which each edge is a computer that possibly belongs to a different person. Different computers have different transmission speeds, so every edge in the network has a numeric weight equal to the number of milliseconds it takes to transmit a message. Our goal is to send a message between two points in the network in the shortest time possible. If we know the transmission-time of each computer (the weight of each edge), then we can use a standard shortest-paths algorithm. If we do not know the transmission times, then we have to ask each computer to tell us its transmission-time. But, the computers may be selfish: a computer might tell us that its transmission time is very long, so that we will not bother it with our messages.  A possible solution to this problem is to use <a href="/wiki/Vickrey%E2%80%93Clarke%E2%80%93Groves_mechanism#quickest_paths" title="Vickrey–Clarke–Groves mechanism">a variant of the VCG mechanism</a>, which gives the computers an incentive to reveal their true weights.
+</p>
+<h2><span class="mw-headline" id="Linear_programming_formulation">Linear programming formulation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=17" title="Edit section: Linear programming formulation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There is a natural <a href="/wiki/Linear_programming" title="Linear programming">linear programming</a> formulation for the shortest path problem, given below. It is very simple compared to most other uses of linear programs in <a href="/wiki/Discrete_optimization" title="Discrete optimization">discrete optimization</a>, however it illustrates connections to other concepts.
+</p><p>Given a directed graph (<i>V</i>, <i>A</i>) with source node <i>s</i>, target node <i>t</i>, and cost <i>w<sub>ij</sub></i> for each edge (<i>i</i>, <i>j</i>) in <i>A</i>, consider the program with variables <i>x<sub>ij</sub></i>
+</p>
+<dl><dd>minimize <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum _{ij\in A}w_{ij}x_{ij}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>j</mi>
+            <mo>&#x2208;<!-- ∈ --></mo>
+            <mi>A</mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mi>w</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>j</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{ij\in A}w_{ij}x_{ij}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/441c9e51bb7e31b20a5df432b8cdc0796c7ad557" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:9.909ex; height:6.009ex;" alt="\sum _{ij\in A}w_{ij}x_{ij}"/></span> subject to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x\geq 0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo>&#x2265;<!-- ≥ --></mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x\geq 0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a2608e2b392b079f5b763f27bf52883dbee3b64a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.591ex; height:2.343ex;" alt="x\geq 0"/></span> and for all <i>i</i>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum _{j}x_{ij}-\sum _{j}x_{ji}={\begin{cases}1,&amp;{\text{if }}i=s;\\-1,&amp;{\text{if }}i=t;\\0,&amp;{\text{ otherwise.}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <munder>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                  <mo>,</mo>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if&#xA0;</mtext>
+                  </mrow>
+                  <mi>i</mi>
+                  <mo>=</mo>
+                  <mi>s</mi>
+                  <mo>;</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>1</mn>
+                  <mo>,</mo>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if&#xA0;</mtext>
+                  </mrow>
+                  <mi>i</mi>
+                  <mo>=</mo>
+                  <mi>t</mi>
+                  <mo>;</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                  <mo>,</mo>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>&#xA0;otherwise.</mtext>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{j}x_{ij}-\sum _{j}x_{ji}={\begin{cases}1,&amp;{\text{if }}i=s;\\-1,&amp;{\text{if }}i=t;\\0,&amp;{\text{ otherwise.}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8eb2dc462912133458de96a32d926b21ddbcfb0e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.671ex; width:38.599ex; height:8.509ex;" alt="\sum _{j}x_{ij}-\sum _{j}x_{ji}={\begin{cases}1,&amp;{\text{if }}i=s;\\-1,&amp;{\text{if }}i=t;\\0,&amp;{\text{ otherwise.}}\end{cases}}"/></span></dd></dl>
+<p>The intuition behind this is that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x_{ij}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>j</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x_{ij}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a27e97949cb2cc8f2d4c2a9421477a65f839db11" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.807ex; height:2.343ex;" alt="x_{ij}"/></span> is an indicator variable for whether edge (<i>i</i>, <i>j</i>) is part of the shortest path: 1 when it is, and 0 if it is not. We wish to select the set of edges with minimal weight, subject to the constraint that this set forms a path from <i>s</i> to <i>t</i> (represented by the equality constraint: for all vertices except <i>s</i> and <i>t</i> the number of incoming and outcoming edges that are part of the path must be the same (i.e., that it should be a path from s to t).
+</p><p>This LP has the special property that it is integral; more specifically, every <a href="/wiki/Linear_programming#Theory" title="Linear programming">basic optimal solution</a> (when one exists) has all variables equal to 0 or 1, and the set of edges whose variables equal 1 form an <i>s</i>-<i>t</i> <a href="/wiki/Dipath" class="mw-redirect" title="Dipath">dipath</a>. See Ahuja et al.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup> for one proof, although the origin of this approach dates back to mid-20th century.
+</p><p>The dual for this linear program is
+</p>
+<dl><dd>maximize <i>y</i><sub><i>t</i></sub> − <i>y</i><sub>s</sub> subject to for all <i>ij</i>, <i>y</i><sub><i>j</i></sub> − <i>y</i><sub><i>i</i></sub> &#8804; <i>w</i><sub><i>ij</i></sub></dd></dl>
+<p>and feasible duals correspond to the concept of a <a href="/wiki/Consistent_heuristic" title="Consistent heuristic">consistent heuristic</a> for the <a href="/wiki/A-star_algorithm" class="mw-redirect" title="A-star algorithm">A* algorithm</a> for shortest paths. For any feasible dual <i>y</i> the <a href="/wiki/Reduced_cost" title="Reduced cost">reduced costs</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle w'_{ij}=w_{ij}-y_{j}+y_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi>w</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>j</mi>
+          </mrow>
+          <mo>&#x2032;</mo>
+        </msubsup>
+        <mo>=</mo>
+        <msub>
+          <mi>w</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle w'_{ij}=w_{ij}-y_{j}+y_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/28efa03fd326d6b087c0303dec0f156b2cdd6c56" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.338ex; width:19.05ex; height:3.176ex;" alt="w&#039;_{ij}=w_{ij}-y_{j}+y_{i}"/></span> are nonnegative and <a href="/wiki/A-star_algorithm" class="mw-redirect" title="A-star algorithm">A*</a> essentially runs <a href="/wiki/Dijkstra%27s_algorithm" title="Dijkstra&#39;s algorithm">Dijkstra's algorithm</a> on these reduced costs.
+</p>
+<h2><span class="mw-headline" id="General_algebraic_framework_on_semirings:_the_algebraic_path_problem">General algebraic framework on semirings: the algebraic path problem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=18" title="Edit section: General algebraic framework on semirings: the algebraic path problem">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="box-Expand_section plainlinks metadata ambox mbox-small-left ambox-content" role="presentation"><tbody><tr><td class="mbox-image"><a href="/wiki/File:Wiki_letter_w_cropped.svg" class="image"><img alt="[icon]" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/20px-Wiki_letter_w_cropped.svg.png" decoding="async" width="20" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/30px-Wiki_letter_w_cropped.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/40px-Wiki_letter_w_cropped.svg.png 2x" data-file-width="44" data-file-height="31" /></a></td><td class="mbox-text"><div class="mbox-text-span">This section <b>needs expansion</b>. <small>You can help by <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=">adding to it</a>.</small>  <small class="date-container"><i>(<span class="date">August 2014</span>)</i></small></div></td></tr></tbody></table>
+<p>Many problems can be framed as a form of the shortest path for some suitably substituted notions of addition along a path and taking the minimum.  The general approach to these is to consider the two operations to be those of a <a href="/wiki/Semiring" title="Semiring">semiring</a>. Semiring multiplication is done along the path, and the addition is between paths. This general framework is known as the <a href="/w/index.php?title=Algebraic_path_problem&amp;action=edit&amp;redlink=1" class="new" title="Algebraic path problem (page does not exist)">algebraic path problem</a>.<sup id="cite_ref-Pair1966_7-0" class="reference"><a href="#cite_note-Pair1966-7">&#91;7&#93;</a></sup><sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup><sup id="cite_ref-BarasTheodorakopoulos2010_9-0" class="reference"><a href="#cite_note-BarasTheodorakopoulos2010-9">&#91;9&#93;</a></sup>
+</p><p>Most of the classic shortest-path algorithms (and new ones) can be formulated as solving linear systems over such algebraic structures.<sup id="cite_ref-GondranMinoux2008_10-0" class="reference"><a href="#cite_note-GondranMinoux2008-10">&#91;10&#93;</a></sup>
+</p><p>More recently, an even more general framework for solving these (and much less obviously related problems) has been developed under the banner of <a href="/wiki/Valuation_algebra" class="mw-redirect" title="Valuation algebra">valuation algebras</a>.<sup id="cite_ref-PoulyKohlas2012_11-0" class="reference"><a href="#cite_note-PoulyKohlas2012-11">&#91;11&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Shortest_path_in_stochastic_time-dependent_networks">Shortest path in stochastic time-dependent networks</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=19" title="Edit section: Shortest path in stochastic time-dependent networks">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In real-life situations, the transportation network is usually stochastic and time-dependent. In fact, a traveler traversing a link daily may experiences different travel times on that link due not only to the fluctuations in travel demand (origin-destination matrix) but also due to such incidents as work zones, bad weather conditions, accidents and vehicle breakdowns. As a result, a stochastic time-dependent (STD) network is a more realistic representation of an actual road network compared with the deterministic one.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup><sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup>
+</p><p>Despite considerable progress during the course of the past decade, it remains a controversial question how an optimal path should be defined and identified in stochastic road networks. In other words, there is no unique definition of an optimal path under uncertainty. One possible and common answer to this question is to find a path with the minimum expected travel time. The main advantage of using this approach is that efficient shortest path algorithms introduced for the deterministic networks can be readily employed to identify the path with the minimum expected travel time in a stochastic network. However, the resulting optimal path identified by this approach may not be reliable, because this approach fails to address travel time variability. To tackle this issue some researchers use distribution of travel time instead of expected value of it so they find the probability distribution of total travelling time using different optimization methods such as <a href="/wiki/Dynamic_programming" title="Dynamic programming">dynamic programming</a> and <a href="/wiki/Dijkstra%27s_algorithm" title="Dijkstra&#39;s algorithm">Dijkstra's algorithm</a> .<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">&#91;14&#93;</a></sup> These methods use <a href="/wiki/Stochastic_optimization" title="Stochastic optimization">stochastic optimization</a>, specifically stochastic dynamic programming to find the shortest path in networks with probabilistic arc length.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">&#91;15&#93;</a></sup> The concept of travel time reliability is used interchangeably with travel time variability in the transportation research literature, so that, in general, one can say that the higher the variability in travel time, the lower the reliability would be, and vice versa.
+</p><p>In order to account for travel time reliability more accurately, two common alternative definitions for an optimal path under uncertainty have been suggested. Some have introduced the concept of the most reliable path, aiming to maximize the probability of arriving on time or earlier than a given travel time budget. Others, alternatively, have put forward the concept of an α-reliable path based on which they intended to minimize the travel time budget required to ensure a pre-specified on-time arrival probability.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=20" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Pathfinding" title="Pathfinding">Pathfinding</a></li>
+<li><a href="/wiki/IEEE_802.1aq" title="IEEE 802.1aq">IEEE 802.1aq</a></li>
+<li><a href="/wiki/Flow_network" title="Flow network">Flow network</a></li>
+<li><a href="/wiki/Shortest_path_tree" class="mw-redirect" title="Shortest path tree">Shortest path tree</a></li>
+<li><a href="/wiki/Euclidean_shortest_path" title="Euclidean shortest path">Euclidean shortest path</a></li>
+<li><a href="/wiki/Min-plus_matrix_multiplication" title="Min-plus matrix multiplication">Min-plus matrix multiplication</a></li>
+<li><a href="/wiki/Bidirectional_search" title="Bidirectional search">Bidirectional search</a>, an algorithm that finds the shortest path between two vertices on a directed graph</li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=21" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=22" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite id="CITEREFSanders2009" class="citation journal"><a href="/wiki/Peter_Sanders_(computer_scientist)" title="Peter Sanders (computer scientist)">Sanders, Peter</a> (March 23, 2009). <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=-0ErpE8tQbw">"Fast route planning"</a>. Google Tech Talk.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Fast+route+planning&amp;rft.date=2009-03-23&amp;rft.aulast=Sanders&amp;rft.aufirst=Peter&amp;rft_id=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D-0ErpE8tQbw&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite id="CITEREFChen1996" class="citation journal">Chen, Danny Z. (December 1996). "Developing algorithms and software for geometric path planning problems". <i>ACM Computing Surveys</i>. <b>28</b> (4es). Article 18. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1145%2F242224.242246">10.1145/242224.242246</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=ACM+Computing+Surveys&amp;rft.atitle=Developing+algorithms+and+software+for+geometric+path+planning+problems&amp;rft.volume=28&amp;rft.issue=4es&amp;rft.pages=Article+18&amp;rft.date=1996-12&amp;rft_id=info%3Adoi%2F10.1145%2F242224.242246&amp;rft.aulast=Chen&amp;rft.aufirst=Danny+Z.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text">Abraham, Ittai; Fiat, Amos; <a href="/wiki/Andrew_V._Goldberg" title="Andrew V. Goldberg">Goldberg, Andrew V.</a>; Werneck, Renato F. <a rel="nofollow" class="external text" href="http://research.microsoft.com/pubs/115272/soda10.pdf%20research.microsoft.com/pubs/115272/soda10.pdf">"Highway Dimension, Shortest Paths, and Provably Efficient Algorithms"</a>. ACM-SIAM Symposium on Discrete Algorithms, pages 782–793, 2010.</span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text">Abraham, Ittai; Delling, Daniel; <a href="/wiki/Andrew_V._Goldberg" title="Andrew V. Goldberg">Goldberg, Andrew V.</a>; Werneck, Renato F. <a rel="nofollow" class="external text" href="http://research.microsoft.com/pubs/142356/HL-TR.pdf">research.microsoft.com/pubs/142356/HL-TR.pdf "A Hub-Based Labeling Algorithm for Shortest Paths on Road Networks"</a>. Symposium on Experimental Algorithms, pages 230–241, 2011.</span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite id="CITEREFKroger2005" class="citation journal">Kroger, Martin (2005). "Shortest multiple disconnected path for the analysis of entanglements in two- and three-dimensional polymeric systems". <i>Computer Physics Communications</i>. <b>168</b> (3): 209–232. <a href="/wiki/Bibcode" title="Bibcode">Bibcode</a>:<a rel="nofollow" class="external text" href="http://adsabs.harvard.edu/abs/2005CoPhC.168..209K">2005CoPhC.168..209K</a>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1016%2Fj.cpc.2005.01.020">10.1016/j.cpc.2005.01.020</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Computer+Physics+Communications&amp;rft.atitle=Shortest+multiple+disconnected+path+for+the+analysis+of+entanglements+in+two-+and+three-dimensional+polymeric+systems&amp;rft.volume=168&amp;rft.issue=3&amp;rft.pages=209-232&amp;rft.date=2005&amp;rft_id=info%3Adoi%2F10.1016%2Fj.cpc.2005.01.020&amp;rft_id=info%3Abibcode%2F2005CoPhC.168..209K&amp;rft.aulast=Kroger&amp;rft.aufirst=Martin&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation book"><a href="/wiki/Ravindra_K._Ahuja" title="Ravindra K. Ahuja">Ahuja, Ravindra K.</a>; <a href="/wiki/Thomas_L._Magnanti" title="Thomas L. Magnanti">Magnanti, Thomas L.</a>; <a href="/wiki/James_B._Orlin" title="James B. Orlin">Orlin, James B.</a> (1993). <i>Network Flows: Theory, Algorithms and Applications</i>. Prentice Hall. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-13-617549-0" title="Special:BookSources/978-0-13-617549-0"><bdi>978-0-13-617549-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Network+Flows%3A+Theory%2C+Algorithms+and+Applications&amp;rft.pub=Prentice+Hall&amp;rft.date=1993&amp;rft.isbn=978-0-13-617549-0&amp;rft.aulast=Ahuja&amp;rft.aufirst=Ravindra+K.&amp;rft.au=Magnanti%2C+Thomas+L.&amp;rft.au=Orlin%2C+James+B.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Pair1966-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-Pair1966_7-0">^</a></b></span> <span class="reference-text"><cite id="CITEREFPair1967" class="citation">Pair, Claude (1967), "Sur des algorithmes pour des problèmes de cheminement dans les graphes finis (On algorithms for path problems in finite graphs)",  in Rosentiehl (ed.), <i>Théorie des graphes (journées internationales d'études) -- Theory of Graphs (international symposium)</i>, Rome (Italy), July 1966: Dunod (Paris) et Gordon and Breach (New York), p.&#160;271</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Sur+des+algorithmes+pour+des+probl%C3%A8mes+de+cheminement+dans+les+graphes+finis+%28On+algorithms+for+path+problems+in+finite+graphs%29&amp;rft.btitle=Th%C3%A9orie+des+graphes+%28journ%C3%A9es+internationales+d%27%C3%A9tudes%29+--+Theory+of+Graphs+%28international+symposium%29&amp;rft.place=Rome+%28Italy%29%2C+July+1966&amp;rft.pages=271&amp;rft.pub=Dunod+%28Paris%29+et+Gordon+and+Breach+%28New+York%29&amp;rft.date=1967&amp;rft.aulast=Pair&amp;rft.aufirst=Claude&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"> <cite id="CITEREFDerniamePair1971" class="citation">Derniame, Jean Claude; Pair, Claude (1971), <i>Problèmes de cheminement dans les graphes (Path Problems in Graphs)</i>, Dunod (Paris)</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Probl%C3%A8mes+de+cheminement+dans+les+graphes+%28Path+Problems+in+Graphs%29&amp;rft.pub=Dunod+%28Paris%29&amp;rft.date=1971&amp;rft.aulast=Derniame&amp;rft.aufirst=Jean+Claude&amp;rft.au=Pair%2C+Claude&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-BarasTheodorakopoulos2010-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-BarasTheodorakopoulos2010_9-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Baras, John; Theodorakopoulos, George (4 April 2010). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=fZJeAQAAQBAJ&amp;pg=PA9"><i>Path Problems in Networks</i></a>. Morgan &amp; Claypool Publishers. pp.&#160;9–. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-59829-924-3" title="Special:BookSources/978-1-59829-924-3"><bdi>978-1-59829-924-3</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Path+Problems+in+Networks&amp;rft.pages=9-&amp;rft.pub=Morgan+%26+Claypool+Publishers&amp;rft.date=2010-04-04&amp;rft.isbn=978-1-59829-924-3&amp;rft.aulast=Baras&amp;rft.aufirst=John&amp;rft.au=Theodorakopoulos%2C+George&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DfZJeAQAAQBAJ%26pg%3DPA9&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-GondranMinoux2008-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-GondranMinoux2008_10-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Gondran, Michel; Minoux, Michel (2008). <i>Graphs, Dioids and Semirings: New Models and Algorithms</i>. Springer Science &amp; Business Media. chapter 4. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-387-75450-5" title="Special:BookSources/978-0-387-75450-5"><bdi>978-0-387-75450-5</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Graphs%2C+Dioids+and+Semirings%3A+New+Models+and+Algorithms&amp;rft.pages=chapter+4&amp;rft.pub=Springer+Science+%26+Business+Media&amp;rft.date=2008&amp;rft.isbn=978-0-387-75450-5&amp;rft.aulast=Gondran&amp;rft.aufirst=Michel&amp;rft.au=Minoux%2C+Michel&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-PoulyKohlas2012-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-PoulyKohlas2012_11-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Pouly, Marc; Kohlas, Jürg (2011). <i>Generic Inference: A Unifying Theory for Automated Reasoning</i>. John Wiley &amp; Sons. Chapter 6. Valuation Algebras for Path Problems. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-118-01086-0" title="Special:BookSources/978-1-118-01086-0"><bdi>978-1-118-01086-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Generic+Inference%3A+A+Unifying+Theory+for+Automated+Reasoning&amp;rft.pages=Chapter+6.+Valuation+Algebras+for+Path+Problems&amp;rft.pub=John+Wiley+%26+Sons&amp;rft.date=2011&amp;rft.isbn=978-1-118-01086-0&amp;rft.aulast=Pouly&amp;rft.aufirst=Marc&amp;rft.au=Kohlas%2C+J%C3%BCrg&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text">Loui, R.P., 1983. Optimal paths in graphs with stochastic or multidimensional weights. Communications of the ACM, 26(9), pp.670-676.</span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation journal">Rajabi-Bahaabadi, Mojtaba; Shariat-Mohaymany, Afshin; Babaei, Mohsen; Ahn, Chang Wook (2015). "Multi-objective path finding in stochastic time-dependent road networks using non-dominated sorting genetic algorithm". <i>Expert Systems with Applications</i>. <b>42</b> (12): 5056–5064. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1016%2Fj.eswa.2015.02.046">10.1016/j.eswa.2015.02.046</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Expert+Systems+with+Applications&amp;rft.atitle=Multi-objective+path+finding+in+stochastic+time-dependent+road+networks+using+non-dominated+sorting+genetic+algorithm&amp;rft.volume=42&amp;rft.issue=12&amp;rft.pages=5056-5064&amp;rft.date=2015&amp;rft_id=info%3Adoi%2F10.1016%2Fj.eswa.2015.02.046&amp;rft.aulast=Rajabi-Bahaabadi&amp;rft.aufirst=Mojtaba&amp;rft.au=Shariat-Mohaymany%2C+Afshin&amp;rft.au=Babaei%2C+Mohsen&amp;rft.au=Ahn%2C+Chang+Wook&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><cite class="citation journal">Olya, Mohammad Hessam (2014). "Finding shortest path in a combined exponential – gamma probability distribution arc length". <i>International Journal of Operational Research</i>. <b>21</b> (1): 25–37. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1504%2FIJOR.2014.064020">10.1504/IJOR.2014.064020</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=International+Journal+of+Operational+Research&amp;rft.atitle=Finding+shortest+path+in+a+combined+exponential+%E2%80%93+gamma+probability+distribution+arc+length&amp;rft.volume=21&amp;rft.issue=1&amp;rft.pages=25-37&amp;rft.date=2014&amp;rft_id=info%3Adoi%2F10.1504%2FIJOR.2014.064020&amp;rft.aulast=Olya&amp;rft.aufirst=Mohammad+Hessam&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><cite class="citation journal">Olya, Mohammad Hessam (2014). "Applying Dijkstra's algorithm for general shortest path problem with normal probability distribution arc length". <i>International Journal of Operational Research</i>. <b>21</b> (2): 143–154. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1504%2FIJOR.2014.064541">10.1504/IJOR.2014.064541</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=International+Journal+of+Operational+Research&amp;rft.atitle=Applying+Dijkstra%27s+algorithm+for+general+shortest+path+problem+with+normal+probability+distribution+arc+length&amp;rft.volume=21&amp;rft.issue=2&amp;rft.pages=143-154&amp;rft.date=2014&amp;rft_id=info%3Adoi%2F10.1504%2FIJOR.2014.064541&amp;rft.aulast=Olya&amp;rft.aufirst=Mohammad+Hessam&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+</ol></div>
+<h3><span class="mw-headline" id="Bibliography">Bibliography</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=23" title="Edit section: Bibliography">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<style data-mw-deduplicate="TemplateStyles:r886047268">.mw-parser-output .refbegin{font-size:90%;margin-bottom:0.5em}.mw-parser-output .refbegin-hanging-indents>ul{list-style-type:none;margin-left:0}.mw-parser-output .refbegin-hanging-indents>ul>li,.mw-parser-output .refbegin-hanging-indents>dl>dd{margin-left:0;padding-left:3.2em;text-indent:-3.2em;list-style:none}.mw-parser-output .refbegin-100{font-size:100%}</style><div class="refbegin" style="">
+<ul><li><cite id="CITEREFAhujaMehlhornOrlinTarjan1990" class="citation journal">Ahuja, Ravindra K.; Mehlhorn, Kurt; Orlin, James; <a href="/wiki/Robert_Tarjan" title="Robert Tarjan">Tarjan, Robert E.</a> (April 1990). <a rel="nofollow" class="external text" href="http://www.dtic.mil/cgi-bin/GetTRDoc?AD=ADA194031">"Faster algorithms for the shortest path problem"</a>. <i>Journal of the ACM</i>. ACM. <b>37</b> (2): 213–223. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1145%2F77600.77615">10.1145/77600.77615</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+the+ACM&amp;rft.atitle=Faster+algorithms+for+the+shortest+path+problem&amp;rft.volume=37&amp;rft.issue=2&amp;rft.pages=213-223&amp;rft.date=1990-04&amp;rft_id=info%3Adoi%2F10.1145%2F77600.77615&amp;rft.aulast=Ahuja&amp;rft.aufirst=Ravindra+K.&amp;rft.au=Mehlhorn%2C+Kurt&amp;rft.au=Orlin%2C+James&amp;rft.au=Tarjan%2C+Robert+E.&amp;rft_id=http%3A%2F%2Fwww.dtic.mil%2Fcgi-bin%2FGetTRDoc%3FAD%3DADA194031&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFBellman1958" class="citation journal"><a href="/wiki/Richard_Bellman" class="mw-redirect" title="Richard Bellman">Bellman, Richard</a> (1958). "On a routing problem". <i>Quarterly of Applied Mathematics</i>. <b>16</b>: 87–90. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1090%2Fqam%2F102435">10.1090/qam/102435</a>. <a href="/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a>&#160;<a rel="nofollow" class="external text" href="//www.ams.org/mathscinet-getitem?mr=0102435">0102435</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Quarterly+of+Applied+Mathematics&amp;rft.atitle=On+a+routing+problem&amp;rft.volume=16&amp;rft.pages=87-90&amp;rft.date=1958&amp;rft_id=info%3Adoi%2F10.1090%2Fqam%2F102435&amp;rft_id=%2F%2Fwww.ams.org%2Fmathscinet-getitem%3Fmr%3D0102435&amp;rft.aulast=Bellman&amp;rft.aufirst=Richard&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFCherkasskyGoldbergRadzik1996" class="citation journal">Cherkassky, Boris V.; <a href="/wiki/Andrew_V._Goldberg" title="Andrew V. Goldberg">Goldberg, Andrew V.</a>; Radzik, Tomasz (1996). <a rel="nofollow" class="external text" href="http://ftp.cs.stanford.edu/cs/theory/pub/goldberg/sp-alg.ps.Z">"Shortest paths algorithms: theory and experimental evaluation"</a>. <i>Mathematical Programming</i>. Ser. A. <b>73</b> (2): 129–174. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1016%2F0025-5610%2895%2900021-6">10.1016/0025-5610(95)00021-6</a>. <a href="/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a>&#160;<a rel="nofollow" class="external text" href="//www.ams.org/mathscinet-getitem?mr=1392160">1392160</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Mathematical+Programming&amp;rft.atitle=Shortest+paths+algorithms%3A+theory+and+experimental+evaluation&amp;rft.volume=73&amp;rft.issue=2&amp;rft.pages=129-174&amp;rft.date=1996&amp;rft_id=info%3Adoi%2F10.1016%2F0025-5610%2895%2900021-6&amp;rft_id=%2F%2Fwww.ams.org%2Fmathscinet-getitem%3Fmr%3D1392160&amp;rft.aulast=Cherkassky&amp;rft.aufirst=Boris+V.&amp;rft.au=Goldberg%2C+Andrew+V.&amp;rft.au=Radzik%2C+Tomasz&amp;rft_id=http%3A%2F%2Fftp.cs.stanford.edu%2Fcs%2Ftheory%2Fpub%2Fgoldberg%2Fsp-alg.ps.Z&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite class="citation book"><a href="/wiki/Thomas_H._Cormen" title="Thomas H. Cormen">Cormen, Thomas H.</a>; <a href="/wiki/Charles_E._Leiserson" title="Charles E. Leiserson">Leiserson, Charles E.</a>; <a href="/wiki/Ron_Rivest" title="Ron Rivest">Rivest, Ronald L.</a>; <a href="/wiki/Clifford_Stein" title="Clifford Stein">Stein, Clifford</a> (2001) [1990]. "Single-Source Shortest Paths and All-Pairs Shortest Paths". <i><a href="/wiki/Introduction_to_Algorithms" title="Introduction to Algorithms">Introduction to Algorithms</a></i> (2nd ed.). MIT Press and McGraw-Hill. pp.&#160;580–642. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-262-03293-7" title="Special:BookSources/0-262-03293-7"><bdi>0-262-03293-7</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Single-Source+Shortest+Paths+and+All-Pairs+Shortest+Paths&amp;rft.btitle=Introduction+to+Algorithms&amp;rft.pages=580-642&amp;rft.edition=2nd&amp;rft.pub=MIT+Press+and+McGraw-Hill&amp;rft.date=2001&amp;rft.isbn=0-262-03293-7&amp;rft.aulast=Cormen&amp;rft.aufirst=Thomas+H.&amp;rft.au=Leiserson%2C+Charles+E.&amp;rft.au=Rivest%2C+Ronald+L.&amp;rft.au=Stein%2C+Clifford&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFDantzig1960" class="citation journal">Dantzig, G. B. (January 1960). "On the Shortest Route through a Network". <i>Management Science</i>. <b>6</b> (2): 187–190. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1287%2Fmnsc.6.2.187">10.1287/mnsc.6.2.187</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Management+Science&amp;rft.atitle=On+the+Shortest+Route+through+a+Network&amp;rft.volume=6&amp;rft.issue=2&amp;rft.pages=187-190&amp;rft.date=1960-01&amp;rft_id=info%3Adoi%2F10.1287%2Fmnsc.6.2.187&amp;rft.aulast=Dantzig&amp;rft.aufirst=G.+B.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFDerniamePair1971" class="citation">Derniame, Jean Claude; Pair, Claude (1971), <i>Problèmes de cheminement dans les graphes (Path Problems in Graphs)</i>, Dunod (Paris)</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Probl%C3%A8mes+de+cheminement+dans+les+graphes+%28Path+Problems+in+Graphs%29&amp;rft.pub=Dunod+%28Paris%29&amp;rft.date=1971&amp;rft.aulast=Derniame&amp;rft.aufirst=Jean+Claude&amp;rft.au=Pair%2C+Claude&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFDijkstra1959" class="citation journal"><a href="/wiki/Edsger_W._Dijkstra" title="Edsger W. Dijkstra">Dijkstra, E. W.</a> (1959). "A note on two problems in connexion with graphs". <i>Numerische Mathematik</i>. <b>1</b>: 269–271. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1007%2FBF01386390">10.1007/BF01386390</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Numerische+Mathematik&amp;rft.atitle=A+note+on+two+problems+in+connexion+with+graphs&amp;rft.volume=1&amp;rft.pages=269-271&amp;rft.date=1959&amp;rft_id=info%3Adoi%2F10.1007%2FBF01386390&amp;rft.aulast=Dijkstra&amp;rft.aufirst=E.+W.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFFord1956" class="citation journal">Ford, L. R. (1956). <a rel="nofollow" class="external text" href="http://www.rand.org/pubs/papers/P923.html">"Network Flow Theory"</a>. Rand Corporation. P-923.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Network+Flow+Theory&amp;rft.date=1956&amp;rft.aulast=Ford&amp;rft.aufirst=L.+R.&amp;rft_id=http%3A%2F%2Fwww.rand.org%2Fpubs%2Fpapers%2FP923.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFFredmanTarjan1984" class="citation conference"><a href="/wiki/Michael_Fredman" title="Michael Fredman">Fredman, Michael Lawrence</a>; <a href="/wiki/Robert_Tarjan" title="Robert Tarjan">Tarjan, Robert E.</a> (1984). <i>Fibonacci heaps and their uses in improved network optimization algorithms</i>. 25th Annual Symposium on Foundations of Computer Science. <a href="/wiki/IEEE" class="mw-redirect" title="IEEE">IEEE</a>. pp.&#160;338–346. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1109%2FSFCS.1984.715934">10.1109/SFCS.1984.715934</a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-8186-0591-X" title="Special:BookSources/0-8186-0591-X"><bdi>0-8186-0591-X</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Fibonacci+heaps+and+their+uses+in+improved+network+optimization+algorithms&amp;rft.pages=338-346&amp;rft.pub=IEEE&amp;rft.date=1984&amp;rft_id=info%3Adoi%2F10.1109%2FSFCS.1984.715934&amp;rft.isbn=0-8186-0591-X&amp;rft.aulast=Fredman&amp;rft.aufirst=Michael+Lawrence&amp;rft.au=Tarjan%2C+Robert+E.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFFredmanTarjan1987" class="citation journal"><a href="/wiki/Michael_Fredman" title="Michael Fredman">Fredman, Michael Lawrence</a>; <a href="/wiki/Robert_Tarjan" title="Robert Tarjan">Tarjan, Robert E.</a> (1987). "Fibonacci heaps and their uses in improved network optimization algorithms". <i>Journal of the Association for Computing Machinery</i>. <b>34</b> (3): 596–615. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1145%2F28869.28874">10.1145/28869.28874</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+the+Association+for+Computing+Machinery&amp;rft.atitle=Fibonacci+heaps+and+their+uses+in+improved+network+optimization+algorithms&amp;rft.volume=34&amp;rft.issue=3&amp;rft.pages=596-615&amp;rft.date=1987&amp;rft_id=info%3Adoi%2F10.1145%2F28869.28874&amp;rft.aulast=Fredman&amp;rft.aufirst=Michael+Lawrence&amp;rft.au=Tarjan%2C+Robert+E.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFGabow1983" class="citation conference">Gabow, H. N. (1983). "Scaling algorithms for network problems". <a rel="nofollow" class="external text" href="http://www.eecs.umich.edu/%7Epettie/matching/Gabow-scaling-algorithms-for-network-problems.pdf"><i>Proceedings of the 24th Annual Symposium on Foundations of Computer Science (FOCS 1983)</i></a> <span class="cs1-format">(PDF)</span>. pp.&#160;248–258. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1109%2FSFCS.1983.68">10.1109/SFCS.1983.68</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.atitle=Scaling+algorithms+for+network+problems&amp;rft.btitle=Proceedings+of+the+24th+Annual+Symposium+on+Foundations+of+Computer+Science+%28FOCS+1983%29&amp;rft.pages=248-258&amp;rft.date=1983&amp;rft_id=info%3Adoi%2F10.1109%2FSFCS.1983.68&amp;rft.aulast=Gabow&amp;rft.aufirst=H.+N.&amp;rft_id=http%3A%2F%2Fwww.eecs.umich.edu%2F%257Epettie%2Fmatching%2FGabow-scaling-algorithms-for-network-problems.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFGabow1985" class="citation journal">Gabow, Harold N. (1985). "Scaling algorithms for network problems". <i><a href="/wiki/Journal_of_Computer_and_System_Sciences" title="Journal of Computer and System Sciences">Journal of Computer and System Sciences</a></i>. <b>31</b> (2): 148–168. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1016%2F0022-0000%2885%2990039-X">10.1016/0022-0000(85)90039-X</a>. <a href="/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a>&#160;<a rel="nofollow" class="external text" href="//www.ams.org/mathscinet-getitem?mr=0828519">0828519</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Computer+and+System+Sciences&amp;rft.atitle=Scaling+algorithms+for+network+problems&amp;rft.volume=31&amp;rft.issue=2&amp;rft.pages=148-168&amp;rft.date=1985&amp;rft_id=info%3Adoi%2F10.1016%2F0022-0000%2885%2990039-X&amp;rft_id=%2F%2Fwww.ams.org%2Fmathscinet-getitem%3Fmr%3D828519&amp;rft.aulast=Gabow&amp;rft.aufirst=Harold+N.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFHagerup2000" class="citation book">Hagerup, Torben (2000).  Montanari, Ugo; Rolim, José D. P.; Welzl, Emo (eds.). <a rel="nofollow" class="external text" href="http://dl.acm.org/citation.cfm?id=686343&amp;CFID=563073233&amp;CFTOKEN=28801665"><i>Improved Shortest Paths on the Word RAM</i></a>. <i>Proceedings of the 27th International Colloquium on Automata, Languages and Programming</i>. pp.&#160;61–72. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-3-540-67715-4" title="Special:BookSources/978-3-540-67715-4"><bdi>978-3-540-67715-4</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Improved+Shortest+Paths+on+the+Word+RAM&amp;rft.pages=61-72&amp;rft.date=2000&amp;rft.isbn=978-3-540-67715-4&amp;rft.aulast=Hagerup&amp;rft.aufirst=Torben&amp;rft_id=http%3A%2F%2Fdl.acm.org%2Fcitation.cfm%3Fid%3D686343%26CFID%3D563073233%26CFTOKEN%3D28801665&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite class="citation journal"><a href="/wiki/Donald_B._Johnson" title="Donald B. Johnson">Johnson, Donald B.</a> (1977). "Efficient algorithms for shortest paths in sparse networks". <i><a href="/wiki/Journal_of_the_ACM" title="Journal of the ACM">Journal of the ACM</a></i>. <b>24</b> (1): 1–13. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1145%2F321992.321993">10.1145/321992.321993</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+the+ACM&amp;rft.atitle=Efficient+algorithms+for+shortest+paths+in+sparse+networks&amp;rft.volume=24&amp;rft.issue=1&amp;rft.pages=1-13&amp;rft.date=1977&amp;rft_id=info%3Adoi%2F10.1145%2F321992.321993&amp;rft.aulast=Johnson&amp;rft.aufirst=Donald+B.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFJohnson1981" class="citation journal"><a href="/wiki/Donald_B._Johnson" title="Donald B. Johnson">Johnson, Donald B.</a> (December 1981). "A priority queue in which initialization and queue operations take <span class="texhtml"><i>O</i>(log log <i>D</i>)</span> time". <i>Mathematical Systems Theory</i>. <b>15</b> (1): 295–309. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1007%2FBF01786986">10.1007/BF01786986</a>. <a href="/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a>&#160;<a rel="nofollow" class="external text" href="//www.ams.org/mathscinet-getitem?mr=0683047">0683047</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Mathematical+Systems+Theory&amp;rft.atitle=A+priority+queue+in+which+initialization+and+queue+operations+take+%3Cspan+class%3D%22texhtml+%22+%3EO%28log+log+D%29%3C%2Fspan%3E+time&amp;rft.volume=15&amp;rft.issue=1&amp;rft.pages=295-309&amp;rft.date=1981-12&amp;rft_id=info%3Adoi%2F10.1007%2FBF01786986&amp;rft_id=%2F%2Fwww.ams.org%2Fmathscinet-getitem%3Fmr%3D683047&amp;rft.aulast=Johnson&amp;rft.aufirst=Donald+B.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFKarlssonPoblete1983" class="citation journal">Karlsson, Rolf G.; Poblete, Patricio V. (1983). "An <span class="texhtml"><i>O</i>(<i>m</i> log log <i>D</i>)</span> algorithm for shortest paths". <i><a href="/wiki/Discrete_Applied_Mathematics" title="Discrete Applied Mathematics">Discrete Applied Mathematics</a></i>. <b>6</b> (1): 91–93. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1016%2F0166-218X%2883%2990104-X">10.1016/0166-218X(83)90104-X</a>. <a href="/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a>&#160;<a rel="nofollow" class="external text" href="//www.ams.org/mathscinet-getitem?mr=0700028">0700028</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Discrete+Applied+Mathematics&amp;rft.atitle=An+%3Cspan+class%3D%22texhtml+%22+%3EO%28m+log+log+D%29%3C%2Fspan%3E+algorithm+for+shortest+paths&amp;rft.volume=6&amp;rft.issue=1&amp;rft.pages=91-93&amp;rft.date=1983&amp;rft_id=info%3Adoi%2F10.1016%2F0166-218X%2883%2990104-X&amp;rft_id=%2F%2Fwww.ams.org%2Fmathscinet-getitem%3Fmr%3D700028&amp;rft.aulast=Karlsson&amp;rft.aufirst=Rolf+G.&amp;rft.au=Poblete%2C+Patricio+V.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFLeyzorekGrayJohnsonLadew1957" class="citation book">Leyzorek, M.; Gray, R. S.; Johnson, A. A.; Ladew, W. C.; Meaker, S. R., Jr.; Petry, R. M.; Seitz, R. N. (1957). <i>Investigation of Model Techniques — First Annual Report — 6 June 1956 — 1 July 1957 — A Study of Model Techniques for Communication Systems</i>. Cleveland, Ohio: Case Institute of Technology.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Investigation+of+Model+Techniques+%E2%80%94+First+Annual+Report+%E2%80%94+6+June+1956+%E2%80%94+1+July+1957+%E2%80%94+A+Study+of+Model+Techniques+for+Communication+Systems&amp;rft.place=Cleveland%2C+Ohio&amp;rft.pub=Case+Institute+of+Technology&amp;rft.date=1957&amp;rft.aulast=Leyzorek&amp;rft.aufirst=M.&amp;rft.au=Gray%2C+R.+S.&amp;rft.au=Johnson%2C+A.+A.&amp;rft.au=Ladew%2C+W.+C.&amp;rft.au=Meaker%2C+S.+R.%2C+Jr.&amp;rft.au=Petry%2C+R.+M.&amp;rft.au=Seitz%2C+R.+N.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFMoore1959" class="citation conference"><a href="/wiki/Edward_F._Moore" title="Edward F. Moore">Moore, E. F.</a> (1959). "The shortest path through a maze". <i>Proceedings of an International Symposium on the Theory of Switching (Cambridge, Massachusetts, 2–5 April 1957)</i>. Cambridge: Harvard University Press. pp.&#160;285–292.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.atitle=The+shortest+path+through+a+maze&amp;rft.btitle=Proceedings+of+an+International+Symposium+on+the+Theory+of+Switching+%28Cambridge%2C+Massachusetts%2C+2%E2%80%935+April+1957%29&amp;rft.place=Cambridge&amp;rft.pages=285-292&amp;rft.pub=Harvard+University+Press&amp;rft.date=1959&amp;rft.aulast=Moore&amp;rft.aufirst=E.+F.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFPettieRamachandran2002" class="citation book">Pettie, Seth; Ramachandran, Vijaya (2002). <a rel="nofollow" class="external text" href="http://dl.acm.org/citation.cfm?id=545417&amp;CFID=563073233&amp;CFTOKEN=28801665"><i>Computing shortest paths with comparisons and additions</i></a>. <i>Proceedings of the Thirteenth Annual ACM-SIAM Symposium on Discrete Algorithms</i>. pp.&#160;267–276. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-89871-513-2" title="Special:BookSources/978-0-89871-513-2"><bdi>978-0-89871-513-2</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Computing+shortest+paths+with+comparisons+and+additions&amp;rft.pages=267-276&amp;rft.date=2002&amp;rft.isbn=978-0-89871-513-2&amp;rft.aulast=Pettie&amp;rft.aufirst=Seth&amp;rft.au=Ramachandran%2C+Vijaya&amp;rft_id=http%3A%2F%2Fdl.acm.org%2Fcitation.cfm%3Fid%3D545417%26CFID%3D563073233%26CFTOKEN%3D28801665&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFPettie2004" class="citation journal">Pettie, Seth (26 January 2004). "A new approach to all-pairs shortest paths on real-weighted graphs". <i>Theoretical Computer Science</i>. <b>312</b> (1): 47–74. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1016%2Fs0304-3975%2803%2900402-x">10.1016/s0304-3975(03)00402-x</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Theoretical+Computer+Science&amp;rft.atitle=A+new+approach+to+all-pairs+shortest+paths+on+real-weighted+graphs&amp;rft.volume=312&amp;rft.issue=1&amp;rft.pages=47-74&amp;rft.date=2004-01-26&amp;rft_id=info%3Adoi%2F10.1016%2Fs0304-3975%2803%2900402-x&amp;rft.aulast=Pettie&amp;rft.aufirst=Seth&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFPollackWiebenson1960" class="citation journal">Pollack, Maurice; Wiebenson, Walter (March–April 1960). "Solution of the Shortest-Route Problem—A Review". <i>Oper. Res</i>. <b>8</b> (2): 224–230. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1287%2Fopre.8.2.224">10.1287/opre.8.2.224</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Oper.+Res.&amp;rft.atitle=Solution+of+the+Shortest-Route+Problem%E2%80%94A+Review&amp;rft.volume=8&amp;rft.issue=2&amp;rft.pages=224-230&amp;rft.date=1960-03%2F1960-04&amp;rft_id=info%3Adoi%2F10.1287%2Fopre.8.2.224&amp;rft.aulast=Pollack&amp;rft.aufirst=Maurice&amp;rft.au=Wiebenson%2C+Walter&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/>  Attributes Dijkstra's algorithm to Minty ("private communication") on p.225.</li>
+<li><cite id="CITEREFSchrijver2004" class="citation book">Schrijver, Alexander (2004). <i>Combinatorial Optimization — Polyhedra and Efficiency</i>. Algorithms and Combinatorics. <b>24</b>. Springer. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-3-540-20456-5" title="Special:BookSources/978-3-540-20456-5"><bdi>978-3-540-20456-5</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Combinatorial+Optimization+%E2%80%94+Polyhedra+and+Efficiency&amp;rft.series=Algorithms+and+Combinatorics&amp;rft.pub=Springer&amp;rft.date=2004&amp;rft.isbn=978-3-540-20456-5&amp;rft.aulast=Schrijver&amp;rft.aufirst=Alexander&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/> Here: vol.A, sect.7.5b, p.&#160;103</li>
+<li><cite id="CITEREFShimbel1953" class="citation journal">Shimbel, Alfonso (1953). "Structural parameters of communication networks". <i>Bulletin of Mathematical Biophysics</i>. <b>15</b> (4): 501–507. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1007%2FBF02476438">10.1007/BF02476438</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Bulletin+of+Mathematical+Biophysics&amp;rft.atitle=Structural+parameters+of+communication+networks&amp;rft.volume=15&amp;rft.issue=4&amp;rft.pages=501-507&amp;rft.date=1953&amp;rft_id=info%3Adoi%2F10.1007%2FBF02476438&amp;rft.aulast=Shimbel&amp;rft.aufirst=Alfonso&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFShimbel1955" class="citation conference">Shimbel, A. (1955). <i>Structure in communication nets</i>. Proceedings of the Symposium on Information Networks. New York, NY: Polytechnic Press of the Polytechnic Institute of Brooklyn. pp.&#160;199–203.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Structure+in+communication+nets&amp;rft.place=New+York%2C+NY&amp;rft.pages=199-203&amp;rft.pub=Polytechnic+Press+of+the+Polytechnic+Institute+of+Brooklyn&amp;rft.date=1955&amp;rft.aulast=Shimbel&amp;rft.aufirst=A.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFThorup1999" class="citation journal">Thorup, Mikkel (1999). "Undirected single-source shortest paths with positive integer weights in linear time". <i>Journal of the ACM</i>. <b>46</b> (3): 362–394. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1145%2F316542.316548">10.1145/316542.316548</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+the+ACM&amp;rft.atitle=Undirected+single-source+shortest+paths+with+positive+integer+weights+in+linear+time&amp;rft.volume=46&amp;rft.issue=3&amp;rft.pages=362-394&amp;rft.date=1999&amp;rft_id=info%3Adoi%2F10.1145%2F316542.316548&amp;rft.aulast=Thorup&amp;rft.aufirst=Mikkel&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFThorup2004" class="citation journal">Thorup, Mikkel (2004). <a rel="nofollow" class="external text" href="http://dl.acm.org/citation.cfm?id=1039326">"Integer priority queues with decrease key in constant time and the single source shortest paths problem"</a>. <i>Journal of Computer and System Sciences</i>. <b>69</b> (3): 330–353. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1016%2Fj.jcss.2004.04.003">10.1016/j.jcss.2004.04.003</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Computer+and+System+Sciences&amp;rft.atitle=Integer+priority+queues+with+decrease+key+in+constant+time+and+the+single+source+shortest+paths+problem&amp;rft.volume=69&amp;rft.issue=3&amp;rft.pages=330-353&amp;rft.date=2004&amp;rft_id=info%3Adoi%2F10.1016%2Fj.jcss.2004.04.003&amp;rft.aulast=Thorup&amp;rft.aufirst=Mikkel&amp;rft_id=http%3A%2F%2Fdl.acm.org%2Fcitation.cfm%3Fid%3D1039326&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFWhitingHillier1960" class="citation journal">Whiting, P. D.; Hillier, J. A. (March–June 1960). "A Method for Finding the Shortest Route through a Road Network". <i>Operational Research Quarterly</i>. <b>11</b> (1/2): 37–40. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1057%2Fjors.1960.32">10.1057/jors.1960.32</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Operational+Research+Quarterly&amp;rft.atitle=A+Method+for+Finding+the+Shortest+Route+through+a+Road+Network&amp;rft.volume=11&amp;rft.issue=1%2F2&amp;rft.pages=37-40&amp;rft.date=1960-03%2F1960-06&amp;rft_id=info%3Adoi%2F10.1057%2Fjors.1960.32&amp;rft.aulast=Whiting&amp;rft.aufirst=P.+D.&amp;rft.au=Hillier%2C+J.+A.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFWilliams2014" class="citation conference"><a href="/wiki/Ryan_Williams_(computer_scientist)" title="Ryan Williams (computer scientist)">Williams, Ryan</a> (2014). "Faster all-pairs shortest paths via circuit complexity". <a href="/wiki/Symposium_on_Theory_of_Computing" title="Symposium on Theory of Computing"><i>Proceedings of the 46th Annual ACM Symposium on Theory of Computing (STOC '14)</i></a>. New York: ACM. pp.&#160;664–673. <a href="/wiki/ArXiv" title="ArXiv">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1312.6680">1312.6680</a></span>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1145%2F2591796.2591811">10.1145/2591796.2591811</a>. <a href="/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a>&#160;<a rel="nofollow" class="external text" href="//www.ams.org/mathscinet-getitem?mr=3238994">3238994</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.atitle=Faster+all-pairs+shortest+paths+via+circuit+complexity&amp;rft.btitle=Proceedings+of+the+46th+Annual+ACM+Symposium+on+Theory+of+Computing+%28STOC+%2714%29&amp;rft.place=New+York&amp;rft.pages=664-673&amp;rft.pub=ACM&amp;rft.date=2014&amp;rft_id=info%3Aarxiv%2F1312.6680&amp;rft_id=%2F%2Fwww.ams.org%2Fmathscinet-getitem%3Fmr%3D3238994&amp;rft_id=info%3Adoi%2F10.1145%2F2591796.2591811&amp;rft.aulast=Williams&amp;rft.aufirst=Ryan&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li></ul>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit&amp;section=24" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><cite class="citation conference">Frigioni, D.; Marchetti-Spaccamela, A.; Nanni, U. (1998). "Fully dynamic output bounded single source shortest path problem". <i>Proc. 7th Annu. ACM-SIAM Symp. Discrete Algorithms</i>. Atlanta, GA. pp.&#160;212–221. <a href="/wiki/CiteSeerX" title="CiteSeerX">CiteSeerX</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.32.9856">10.1.1.32.9856</a></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.atitle=Fully+dynamic+output+bounded+single+source+shortest+path+problem&amp;rft.btitle=Proc.+7th+Annu.+ACM-SIAM+Symp.+Discrete+Algorithms&amp;rft.place=Atlanta%2C+GA&amp;rft.pages=212-221&amp;rft.date=1998&amp;rft_id=%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.32.9856&amp;rft.aulast=Frigioni&amp;rft.aufirst=D.&amp;rft.au=Marchetti-Spaccamela%2C+A.&amp;rft.au=Nanni%2C+U.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite class="citation report">Dreyfus, S. E. (October 1967). <a rel="nofollow" class="external text" href="http://www.dtic.mil/dtic/tr/fulltext/u2/661265.pdf">An Appraisal of Some Shortest Path Algorithms</a> <span class="cs1-format">(PDF)</span> (Report). Project Rand. United States Air Force. RM-5433-PR.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=report&amp;rft.btitle=An+Appraisal+of+Some+Shortest+Path+Algorithms&amp;rft.series=Project+Rand&amp;rft.pub=United+States+Air+Force&amp;rft.date=1967-10&amp;rft.aulast=Dreyfus&amp;rft.aufirst=S.+E.&amp;rft_id=http%3A%2F%2Fwww.dtic.mil%2Fdtic%2Ftr%2Ffulltext%2Fu2%2F661265.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShortest+path+problem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/> DTIC AD-661265.</li></ul>
+<div role="navigation" class="navbox" aria-labelledby="Authority_control_frameless_&amp;#124;text-top_&amp;#124;10px_&amp;#124;alt=Edit_this_at_Wikidata_&amp;#124;link=https&amp;#58;//www.wikidata.org/wiki/Q1058754&amp;#124;Edit_this_at_Wikidata" style="padding:3px"><table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th id="Authority_control_frameless_&amp;#124;text-top_&amp;#124;10px_&amp;#124;alt=Edit_this_at_Wikidata_&amp;#124;link=https&amp;#58;//www.wikidata.org/wiki/Q1058754&amp;#124;Edit_this_at_Wikidata" scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Help:Authority_control" title="Help:Authority control">Authority control</a> <a href="https://www.wikidata.org/wiki/Q1058754" title="Edit this at Wikidata"><img alt="Edit this at Wikidata" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" decoding="async" width="10" height="10" style="vertical-align: text-top" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" data-file-width="20" data-file-height="20" /></a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><span class="nowrap"><a href="/wiki/Integrated_Authority_File" title="Integrated Authority File">GND</a>: <span class="uid"><a rel="nofollow" class="external text" href="https://d-nb.info/gnd/4138403-9">4138403-9</a></span></span></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1247
+Cached time: 20190804023721
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 1.096 seconds
+Real time usage: 1.359 seconds
+Preprocessor visited node count: 3170/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 101104/2097152 bytes
+Template argument size: 1116/2097152 bytes
+Highest expansion depth: 15/40
+Expensive parser function count: 11/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 95858/5000000 bytes
+Number of Wikibase entities loaded: 6/400
+Lua time usage: 0.648/10.000 seconds
+Lua memory usage: 5.34 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1023.982      1 -total
+ 39.07%  400.093     23 Template:Cite_journal
+ 21.08%  215.886      1 Template:Reflist
+ 14.08%  144.216      6 Template:Cite_conference
+  8.63%   88.385      1 Template:More_footnotes
+  8.35%   85.462      9 Template:Cite_book
+  6.17%   63.156      3 Template:Ambox
+  5.35%   54.784     32 Template:Harvnb
+  4.90%   50.149      1 Template:Authority_control
+  3.92%   40.096      2 Template:Expand_list
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:41985-0!canonical!math=5 and timestamp 20190804023720 and revision id 906147832
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Shortest_path_problem&amp;oldid=906147832">https://en.wikipedia.org/w/index.php?title=Shortest_path_problem&amp;oldid=906147832</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Network_theory" title="Category:Network theory">Network theory</a></li><li><a href="/wiki/Category:Polynomial-time_problems" title="Category:Polynomial-time problems">Polynomial-time problems</a></li><li><a href="/wiki/Category:Computational_problems_in_graph_theory" title="Category:Computational problems in graph theory">Computational problems in graph theory</a></li><li><a href="/wiki/Category:Edsger_W._Dijkstra" title="Category:Edsger W. Dijkstra">Edsger W. Dijkstra</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_lacking_in-text_citations_from_June_2009" title="Category:Articles lacking in-text citations from June 2009">Articles lacking in-text citations from June 2009</a></li><li><a href="/wiki/Category:All_articles_lacking_in-text_citations" title="Category:All articles lacking in-text citations">All articles lacking in-text citations</a></li><li><a href="/wiki/Category:Incomplete_lists_from_February_2011" title="Category:Incomplete lists from February 2011">Incomplete lists from February 2011</a></li><li><a href="/wiki/Category:Incomplete_lists_from_December_2012" title="Category:Incomplete lists from December 2012">Incomplete lists from December 2012</a></li><li><a href="/wiki/Category:Articles_needing_additional_references_from_December_2015" title="Category:Articles needing additional references from December 2015">Articles needing additional references from December 2015</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="/wiki/Category:Articles_to_be_expanded_from_August_2014" title="Category:Articles to be expanded from August 2014">Articles to be expanded from August 2014</a></li><li><a href="/wiki/Category:All_articles_to_be_expanded" title="Category:All articles to be expanded">All articles to be expanded</a></li><li><a href="/wiki/Category:Articles_using_small_message_boxes" title="Category:Articles using small message boxes">Articles using small message boxes</a></li><li><a href="/wiki/Category:Wikipedia_articles_with_GND_identifiers" title="Category:Wikipedia articles with GND identifiers">Wikipedia articles with GND identifiers</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Shortest+path+problem" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Shortest+path+problem" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Shortest_path_problem" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Shortest_path_problem" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Shortest_path_problem">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Shortest_path_problem&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Shortest_path_problem&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Shortest_path_problem" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Shortest_path_problem" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Shortest_path_problem&amp;oldid=906147832" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Shortest_path_problem&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1058754" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Shortest_path_problem&amp;id=906147832" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Shortest+path+problem">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Shortest+path+problem&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Shortest_path_problem&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Problema_del_cam%C3%AD_m%C3%A9s_curt" title="Problema del camí més curt – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/K%C3%BCrzester_Pfad" title="Kürzester Pfad – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Problema_del_camino_m%C3%A1s_corto" title="Problema del camino más corto – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%85%D8%B3%D8%A6%D9%84%D9%87_%DB%8C%D8%A7%D9%81%D8%AA%D9%86_%DA%A9%D9%88%D8%AA%D8%A7%D9%87%E2%80%8C%D8%AA%D8%B1%DB%8C%D9%86_%D9%85%D8%B3%DB%8C%D8%B1" title="مسئله یافتن کوتاه‌ترین مسیر – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Probl%C3%A8me_de_plus_court_chemin" title="Problème de plus court chemin – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EC%B5%9C%EB%8B%A8_%EA%B2%BD%EB%A1%9C_%EB%AC%B8%EC%A0%9C" title="최단 경로 문제 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-id"><a href="https://id.wikipedia.org/wiki/Masalah_jarak_terpendek" title="Masalah jarak terpendek – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Cammino_minimo" title="Cammino minimo – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-lt"><a href="https://lt.wikipedia.org/wiki/Trumpiausio_kelio_problema" title="Trumpiausio kelio problema – Lithuanian" lang="lt" hreflang="lt" class="interlanguage-link-target">Lietuvių</a></li><li class="interlanguage-link interwiki-ms"><a href="https://ms.wikipedia.org/wiki/Jarak_terpendek" title="Jarak terpendek – Malay" lang="ms" hreflang="ms" class="interlanguage-link-target">Bahasa Melayu</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E6%9C%80%E7%9F%AD%E7%B5%8C%E8%B7%AF%E5%95%8F%E9%A1%8C" title="最短経路問題 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Problem_najkr%C3%B3tszej_%C5%9Bcie%C5%BCki" title="Problem najkrótszej ścieżki – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Problema_do_caminho_m%C3%ADnimo" title="Problema do caminho mínimo – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D0%BA%D1%80%D0%B0%D1%82%D1%87%D0%B0%D0%B9%D1%88%D0%B5%D0%BC_%D0%BF%D1%83%D1%82%D0%B8" title="Задача о кратчайшем пути – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/Problem_najkra%C4%87eg_puta" title="Problem najkraćeg puta – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-th"><a href="https://th.wikipedia.org/wiki/%E0%B8%9B%E0%B8%B1%E0%B8%8D%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%96%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B8%AA%E0%B8%B8%E0%B8%94" title="ปัญหาวิถีสั้นสุด – Thai" lang="th" hreflang="th" class="interlanguage-link-target">ไทย</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BF%D1%80%D0%BE_%D0%BD%D0%B0%D0%B9%D0%BA%D0%BE%D1%80%D0%BE%D1%82%D1%88%D0%B8%D0%B9_%D1%88%D0%BB%D1%8F%D1%85" title="Задача про найкоротший шлях – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-ur"><a href="https://ur.wikipedia.org/wiki/%DA%A9%D9%85%D8%AA%D8%B1%DB%8C%D9%86_%D8%B1%D8%B3%D8%AA%DB%81_%D8%A7%D9%84%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85" title="کمترین رستہ الخوارزم – Urdu" lang="ur" hreflang="ur" class="interlanguage-link-target">اردو</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/B%C3%A0i_to%C3%A1n_%C4%91%C6%B0%E1%BB%9Dng_%C4%91i_ng%E1%BA%AFn_nh%E1%BA%A5t" title="Bài toán đường đi ngắn nhất – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E6%9C%80%E7%9F%AD%E8%B7%AF%E9%97%AE%E9%A2%98" title="最短路问题 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1058754#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 13 July 2019, at 23:39<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Shortest_path_problem&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"1.096","walltime":"1.359","ppvisitednodes":{"value":3170,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":101104,"limit":2097152},"templateargumentsize":{"value":1116,"limit":2097152},"expansiondepth":{"value":15,"limit":40},"expensivefunctioncount":{"value":11,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":95858,"limit":5000000},"entityaccesscount":{"value":6,"limit":400},"timingprofile":["100.00% 1023.982      1 -total"," 39.07%  400.093     23 Template:Cite_journal"," 21.08%  215.886      1 Template:Reflist"," 14.08%  144.216      6 Template:Cite_conference","  8.63%   88.385      1 Template:More_footnotes","  8.35%   85.462      9 Template:Cite_book","  6.17%   63.156      3 Template:Ambox","  5.35%   54.784     32 Template:Harvnb","  4.90%   50.149      1 Template:Authority_control","  3.92%   40.096      2 Template:Expand_list"]},"scribunto":{"limitreport-timeusage":{"value":"0.648","limit":"10.000"},"limitreport-memusage":{"value":5597929,"limit":52428800}},"cachereport":{"origin":"mw1247","timestamp":"20190804023721","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Shortest path problem","url":"https:\/\/en.wikipedia.org\/wiki\/Shortest_path_problem","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1058754","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1058754","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-02-26T15:45:58Z","dateModified":"2019-07-13T23:39:30Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/3\/3b\/Shortest_path_with_direct_weights.svg","headline":"computational problem"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":164,"wgHostname":"mw1329"});});</script>
+</body>
+</html>

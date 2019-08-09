@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Nodal admittance matrix - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Nodal_admittance_matrix","wgTitle":"Nodal admittance matrix","wgCurRevisionId":898438700,"wgRevisionId":898438700,"wgArticleId":3870862,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Electrical engineering","Electric power"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Nodal_admittance_matrix","wgRelevantArticleId":3870862
+,"wgRequestId":"XUpP-wpAMFsAAEhusUoAAABR","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Bus_admittance_matrix","wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgInternalRedirectTargetUrl":"/wiki/Nodal_admittance_matrix","wgWikibaseItemId":"Q7046603","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready",
+"noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","ext.math.scripts","ext.cite.ux-enhancements","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher",
+"ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Nodal_admittance_matrix"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Nodal_admittance_matrix&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Nodal_admittance_matrix&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Nodal_admittance_matrix"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Nodal_admittance_matrix rootpage-Nodal_admittance_matrix skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Nodal admittance matrix</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"><span class="mw-redirectedfrom">&#160;&#160;(Redirected from <a href="/w/index.php?title=Bus_admittance_matrix&amp;redirect=no" class="mw-redirect" title="Bus admittance matrix">Bus admittance matrix</a>)</span></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div role="note" class="hatnote navigation-not-searchable">This article is about the admittance matrix in electrical engineering. For the graph theoretic admittance matrix, see <a href="/wiki/Laplacian_matrix" title="Laplacian matrix">Laplacian matrix</a>.</div>
+<p>In <a href="/wiki/Power_engineering" title="Power engineering">power engineering</a>, <b>nodal admittance matrix</b> (or just <b>admittance matrix</b>) or <b>Y Matrix</b> or <b>Ybus</b> is an <i>N x N</i> <a href="/wiki/Matrix_(mathematics)" title="Matrix (mathematics)">matrix</a> describing a power system with <i>N</i> <a href="/wiki/Bus_(power_engineering)" class="mw-redirect" title="Bus (power engineering)">buses</a>.  It represents the nodal <a href="/wiki/Admittance" title="Admittance">admittance</a> of the buses in a power system.  In realistic systems which contain thousands of buses, the Y matrix is quite sparse. Each bus in a real power system is usually connected to only a few other buses through the <a href="/wiki/Electric_power_transmission" title="Electric power transmission">transmission lines</a>.  The Y Matrix is also one of the data requirements needed to formulate a <a href="/wiki/Power_flow_study" class="mw-redirect" title="Power flow study">power flow study</a>.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Context"><span class="tocnumber">1</span> <span class="toctext">Context</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Construction"><span class="tocnumber">2</span> <span class="toctext">Construction</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Context">Context</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nodal_admittance_matrix&amp;action=edit&amp;section=1" title="Edit section: Context">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="/wiki/Power_engineering" title="Power engineering">Electric power transmission</a> needs optimization in order to determine the necessary real and reactive power flows in a system for a given set of loads, as well as the voltages and currents in the system. Power flow studies are used not only to analyze current power flow situations, but also to plan ahead for anticipated disturbances to the system, such as the loss of a transmission line to maintenance and repairs. The power flow study would determine whether or not the system could continue functioning properly without the transmission line. Only <a href="/wiki/Computer_simulation" title="Computer simulation">computer simulation</a> allows the complex handling required in power flow analysis because in most realistic situations the system is very complex and extensive and would be impractical to solve by hand. The Y Matrix is a tool in that domain. It provides a method of systematically reducing a complex system to a matrix that can be solved by a computer program.  The equations used to construct the Y matrix come from the application of Kirchhoff’s current law and Kirchhoff’s voltage law to a circuit with steady-state sinusoidal operation. These laws give us that the sum of currents entering a node in the circuit is zero, and the sum of voltages around a closed loop starting and ending at a node is also zero. These principles are applied to all the nodes in a power flow system and thereby determine the elements of the admittance matrix, which represents the admittance relationships between nodes, which then determine the voltages, currents and power flows in the system.
+</p>
+<h2><span class="mw-headline" id="Construction">Construction</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nodal_admittance_matrix&amp;action=edit&amp;section=2" title="Edit section: Construction">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Starting from the <a href="/wiki/One-line_diagram" title="One-line diagram">single line diagram</a> of a power system, there are three main steps before writing the equations that form the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Y}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Y</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Y}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/961d67d6b454b4df2301ac571808a3538b3a6d3f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.171ex; width:1.773ex; height:2.009ex;" alt="Y"/></span> Matrix.  First, the single line diagram is converted to an impedance diagram. Next, all voltage sources are converted to their equivalent current source representations. From here, the impedance diagram is then converted to an admittance diagram. Following these three steps, the admittance matrix can be created in a straightforward manner: For an admittance diagram with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle N}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>N</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle N}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f5e3890c981ae85503089652feb48b191b57aae3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.064ex; height:2.176ex;" alt="N"/></span> buses, the admittance between the bus in consideration, <i>k</i>, and another bus, <i>i</i>, connected to <i>k</i>, can be described by <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle y_{ik}=g_{ik}+jb_{ik}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>g</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mi>j</mi>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle y_{ik}=g_{ik}+jb_{ik}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0ec0d2c739cece01f445abe718c9ae1da9c12c12" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:15.111ex; height:2.509ex;" alt="{\displaystyle y_{ik}=g_{ik}+jb_{ik}}"/></span>. The term <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle y_{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle y_{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4b2ab0248723a410cc2c67ce06ad5c043dcbb933" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.228ex; height:2.009ex;" alt="y_{k}"/></span> should be introduced here; this term accounts for the admittance of linear loads connected to bus <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle k}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3c9a2c7b599b37105512c5d570edc034056dd40" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.211ex; height:2.176ex;" alt="k"/></span> as well as the admittance-to-ground at bus <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle k}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3c9a2c7b599b37105512c5d570edc034056dd40" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.211ex; height:2.176ex;" alt="k"/></span>. The general mathematical expression follows:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Y_{ij}={\begin{cases}y_{i}+\sum _{k=1,2,\ldots ,N \atop k\neq i}{y_{ik}},&amp;{\mbox{if}}\quad i=j\\-y_{ij},&amp;{\mbox{if}}\quad i\neq j\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>Y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>i</mi>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <munder>
+                    <mo>&#x2211;<!-- ∑ --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac linethickness="0">
+                        <mrow>
+                          <mi>k</mi>
+                          <mo>=</mo>
+                          <mn>1</mn>
+                          <mo>,</mo>
+                          <mn>2</mn>
+                          <mo>,</mo>
+                          <mo>&#x2026;<!-- … --></mo>
+                          <mo>,</mo>
+                          <mi>N</mi>
+                        </mrow>
+                        <mrow>
+                          <mi>k</mi>
+                          <mo>&#x2260;<!-- ≠ --></mo>
+                          <mi>i</mi>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                  </munder>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msub>
+                      <mi>y</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>i</mi>
+                        <mi>k</mi>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                  <mo>,</mo>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if</mtext>
+                    </mstyle>
+                  </mrow>
+                  <mspace width="1em" />
+                  <mi>i</mi>
+                  <mo>=</mo>
+                  <mi>j</mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>i</mi>
+                      <mi>j</mi>
+                    </mrow>
+                  </msub>
+                  <mo>,</mo>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if</mtext>
+                    </mstyle>
+                  </mrow>
+                  <mspace width="1em" />
+                  <mi>i</mi>
+                  <mo>&#x2260;<!-- ≠ --></mo>
+                  <mi>j</mi>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Y_{ij}={\begin{cases}y_{i}+\sum _{k=1,2,\ldots ,N \atop k\neq i}{y_{ik}},&amp;{\mbox{if}}\quad i=j\\-y_{ij},&amp;{\mbox{if}}\quad i\neq j\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/95fa7f80162d7971731381e4de3000c68c028f7c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:38.196ex; height:7.509ex;" alt="&#10;Y_{ij} = \begin{cases}&#10;  y_{i} + \sum_{k=1, 2, \ldots, N \atop k \neq i} {y_{ik}}, &amp; \mbox{if} \quad i = j \\&#10;  -y_{ij},  &amp; \mbox{if} \quad i \neq j&#10;\end{cases}&#10;"/></span></dd></dl>
+<p>It is important to note that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle y_{ki}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle y_{ki}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e0ac82817bd4c0b4dee2d112a96b8219a46c2f89" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.795ex; height:2.009ex;" alt="{\displaystyle y_{ki}}"/></span> is non-zero only where a physical connection exists between two buses.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> This consideration is not seen in the following example because each node is connected to both of the other nodes. Each <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle y_{ki}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle y_{ki}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e0ac82817bd4c0b4dee2d112a96b8219a46c2f89" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.795ex; height:2.009ex;" alt="{\displaystyle y_{ki}}"/></span> defines one element of the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle N\times {N}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>N</mi>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>N</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle N\times {N}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a41a151915fb416955978266a386df70ffa00ddc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.968ex; height:2.176ex;" alt="{\displaystyle N\times {N}}"/></span> matrix. From the general case where N is greater than 2, it is desirable to solve these equations as a system, namely through matrix algebra. The general matrix appears as follows:
+The nodal admittance matrix form:
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Y={\begin{bmatrix}Y_{11}&amp;Y_{12}&amp;\cdots &amp;Y_{1n}\\Y_{21}&amp;Y_{22}&amp;\cdots &amp;Y_{2n}\\\cdots &amp;\cdots &amp;\cdots &amp;\cdots \\Y_{n1}&amp;Y_{n2}&amp;\cdots &amp;Y_{nn}\end{bmatrix}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Y</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>[</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>11</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>12</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>&#x22EF;<!-- ⋯ --></mo>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>21</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>22</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>&#x22EF;<!-- ⋯ --></mo>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>&#x22EF;<!-- ⋯ --></mo>
+                </mtd>
+                <mtd>
+                  <mo>&#x22EF;<!-- ⋯ --></mo>
+                </mtd>
+                <mtd>
+                  <mo>&#x22EF;<!-- ⋯ --></mo>
+                </mtd>
+                <mtd>
+                  <mo>&#x22EF;<!-- ⋯ --></mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>&#x22EF;<!-- ⋯ --></mo>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>]</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Y={\begin{bmatrix}Y_{11}&amp;Y_{12}&amp;\cdots &amp;Y_{1n}\\Y_{21}&amp;Y_{22}&amp;\cdots &amp;Y_{2n}\\\cdots &amp;\cdots &amp;\cdots &amp;\cdots \\Y_{n1}&amp;Y_{n2}&amp;\cdots &amp;Y_{nn}\end{bmatrix}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e4f8ea61d327e5a66e559416e7c5d99770c03103" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -5.671ex; width:28.752ex; height:12.509ex;" alt="Y={\begin{bmatrix}Y_{{11}}&amp;Y_{{12}}&amp;\cdots &amp;Y_{{1n}}\\Y_{{21}}&amp;Y_{{22}}&amp;\cdots &amp;Y_{{2n}}\\\cdots &amp;\cdots &amp;\cdots &amp;\cdots \\Y_{{n1}}&amp;Y_{{n2}}&amp;\cdots &amp;Y_{{nn}}\end{bmatrix}}"/></span>
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:402px;"><a href="/wiki/File:3_bus_network.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2a/3_bus_network.jpg/400px-3_bus_network.jpg" decoding="async" width="400" height="275" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/2a/3_bus_network.jpg/600px-3_bus_network.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/2a/3_bus_network.jpg/800px-3_bus_network.jpg 2x" data-file-width="1515" data-file-height="1040" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:3_bus_network.jpg" class="internal" title="Enlarge"></a></div>The admittance diagram of a three bus network.</div></div></div>
+<p>Once the admittance matrix has been formed, the admittance matrix can be input to solve the matrix form of Ohm's Law--the equation <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Y*V=I}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Y</mi>
+        <mo>&#x2217;<!-- ∗ --></mo>
+        <mi>V</mi>
+        <mo>=</mo>
+        <mi>I</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Y*V=I}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/faeca2925b4be1f5f42b80bcea831607e7284976" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:10.025ex; height:2.176ex;" alt="{\displaystyle Y*V=I}"/></span>. In this instance <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle V}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>V</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/af0f6064540e84211d0ffe4dac72098adfa52845" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.787ex; height:2.176ex;" alt="V"/></span> is an <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle N\times {1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>N</mi>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mn>1</mn>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle N\times {1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/beca10b624c66aaf487a31e955717d238e1c0d18" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.066ex; height:2.176ex;" alt="{\displaystyle N\times {1}}"/></span> vector of the voltage at each node and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle I}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>I</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle I}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/535ea7fc4134a31cbe2251d9d3511374bc41be9f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.172ex; height:2.176ex;" alt="I"/></span> is the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle N\times {1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>N</mi>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mn>1</mn>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle N\times {1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/beca10b624c66aaf487a31e955717d238e1c0d18" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.066ex; height:2.176ex;" alt="{\displaystyle N\times {1}}"/></span> vector of corresponding currents. In matrix form, Ohm's Law is as follows:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{pmatrix}Y_{11}&amp;Y_{12}&amp;\cdots &amp;Y_{1N}\\Y_{21}&amp;Y_{22}&amp;\cdots &amp;Y_{2N}\\\vdots &amp;\ddots &amp;\cdots &amp;\vdots \\Y_{NN}&amp;Y_{N2}&amp;\cdots &amp;Y_{NN}\\\end{pmatrix}}*{\begin{pmatrix}V_{1}\\V_{2}\\\vdots \\V_{N}\\\end{pmatrix}}={\begin{pmatrix}I_{1}\\I_{2}\\\vdots \\I_{N}\\\end{pmatrix}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>11</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>12</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>&#x22EF;<!-- ⋯ --></mo>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                      <mi>N</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>21</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>22</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>&#x22EF;<!-- ⋯ --></mo>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                      <mi>N</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>&#x22EE;<!-- ⋮ --></mo>
+                </mtd>
+                <mtd>
+                  <mo>&#x22F1;<!-- ⋱ --></mo>
+                </mtd>
+                <mtd>
+                  <mo>&#x22EF;<!-- ⋯ --></mo>
+                </mtd>
+                <mtd>
+                  <mo>&#x22EE;<!-- ⋮ --></mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>N</mi>
+                      <mi>N</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>N</mi>
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>&#x22EF;<!-- ⋯ --></mo>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>N</mi>
+                      <mi>N</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>&#x2217;<!-- ∗ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>V</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>V</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>&#x22EE;<!-- ⋮ --></mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>V</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>N</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>I</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>I</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>&#x22EE;<!-- ⋮ --></mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>I</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>N</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{pmatrix}Y_{11}&amp;Y_{12}&amp;\cdots &amp;Y_{1N}\\Y_{21}&amp;Y_{22}&amp;\cdots &amp;Y_{2N}\\\vdots &amp;\ddots &amp;\cdots &amp;\vdots \\Y_{NN}&amp;Y_{N2}&amp;\cdots &amp;Y_{NN}\\\end{pmatrix}}*{\begin{pmatrix}V_{1}\\V_{2}\\\vdots \\V_{N}\\\end{pmatrix}}={\begin{pmatrix}I_{1}\\I_{2}\\\vdots \\I_{N}\\\end{pmatrix}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8f574baa58dcaa0e7c81a5351049e45ade5406a0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -6.505ex; width:48.067ex; height:14.176ex;" alt="{\displaystyle {\begin{pmatrix}Y_{11}&amp;Y_{12}&amp;\cdots &amp;Y_{1N}\\Y_{21}&amp;Y_{22}&amp;\cdots &amp;Y_{2N}\\\vdots &amp;\ddots &amp;\cdots &amp;\vdots \\Y_{NN}&amp;Y_{N2}&amp;\cdots &amp;Y_{NN}\\\end{pmatrix}}*{\begin{pmatrix}V_{1}\\V_{2}\\\vdots \\V_{N}\\\end{pmatrix}}={\begin{pmatrix}I_{1}\\I_{2}\\\vdots \\I_{N}\\\end{pmatrix}}}"/></span></dd></dl>
+<p>To illustrate this process with the admittance matrix of the three bus network in the figure would be:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Y={\begin{pmatrix}y_{1}+y_{12}+y_{13}&amp;-y_{12}&amp;-y_{13}\\-y_{12}&amp;y_{2}+y_{12}+y_{23}&amp;-y_{23}\\-y_{13}&amp;-y_{23}&amp;y_{3}+y_{13}+y_{23}\\\end{pmatrix}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Y</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>12</mn>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>13</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>12</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>13</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>12</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>12</mn>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>23</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>23</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>13</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>23</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>3</mn>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>13</mn>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>23</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Y={\begin{pmatrix}y_{1}+y_{12}+y_{13}&amp;-y_{12}&amp;-y_{13}\\-y_{12}&amp;y_{2}+y_{12}+y_{23}&amp;-y_{23}\\-y_{13}&amp;-y_{23}&amp;y_{3}+y_{13}+y_{23}\\\end{pmatrix}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ebfc38cffe5c64d61694fc21867c5209a2298b16" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.171ex; width:56.051ex; height:9.509ex;" alt="{\displaystyle Y={\begin{pmatrix}y_{1}+y_{12}+y_{13}&amp;-y_{12}&amp;-y_{13}\\-y_{12}&amp;y_{2}+y_{12}+y_{23}&amp;-y_{23}\\-y_{13}&amp;-y_{23}&amp;y_{3}+y_{13}+y_{23}\\\end{pmatrix}}}"/></span></dd></dl>
+<p>The Y Matrix diagonal elements <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Y_{11},Y_{22},...,Y_{nn}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>Y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>11</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>Y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>22</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>.</mo>
+        <mo>.</mo>
+        <mo>.</mo>
+        <mo>,</mo>
+        <msub>
+          <mi>Y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Y_{11},Y_{22},...,Y_{nn}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2825892da05ca1b92f55a371d58292b63f845d9b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:16.213ex; height:2.509ex;" alt="Y_{{11}},Y_{{22}},...,Y_{{nn}}"/></span> are called the <i>self-admittances</i> at the nodes, and each equals the sum of all the admittances terminating on the node identified by the repeated subscripts. The other admittances are the <i>mutual admittances</i> of the nodes, and each equals the negative of the sum of all admittances connected directly between the nodes identified by the double subscripts. The admittance matrix <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Y}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Y</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Y}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/961d67d6b454b4df2301ac571808a3538b3a6d3f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.171ex; width:1.773ex; height:2.009ex;" alt="Y"/></span> is typically a <a href="/wiki/Symmetric_matrix" title="Symmetric matrix">symmetric matrix</a> as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle y_{mn}=y_{nm}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mi>m</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle y_{mn}=y_{nm}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b92e8626af1f674e1db5c354adf0c8e2bef5e5ec" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.699ex; height:2.009ex;" alt="y_{mn} = y_{nm}"/></span>.  However, extensions of the line model and models of other components such as transformers may make <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Y}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Y</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Y}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/961d67d6b454b4df2301ac571808a3538b3a6d3f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.171ex; width:1.773ex; height:2.009ex;" alt="Y"/></span> asymmetrical.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p><p>For small transmission systems of about less than 10 nodes or buses, the Y matrix can be calculated manually. But for a realistic system with relatively large number of nodes or buses, say 1000 nodes, a computer program for computing Y is more practical to use. 
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:Node_Network.gif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Node_Network.gif/220px-Node_Network.gif" decoding="async" width="220" height="158" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Node_Network.gif/330px-Node_Network.gif 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Node_Network.gif/440px-Node_Network.gif 2x" data-file-width="631" data-file-height="454" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Node_Network.gif" class="internal" title="Enlarge"></a></div>Node Network Courtesy of scialert.net</div></div></div>
+<p>To help motivate the importance of using a system of equations in matrix form, see the adjacent figure. Not only does it become impractical to calculate the current vector <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle V}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>V</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/af0f6064540e84211d0ffe4dac72098adfa52845" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.787ex; height:2.176ex;" alt="V"/></span> by hand, it becomes necessary to use computational power to form the admittance matrix itself. 
+</p><p><br />
+Example:<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:Two_Node_Power_Flow_Diagram.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/04/Two_Node_Power_Flow_Diagram.png/220px-Two_Node_Power_Flow_Diagram.png" decoding="async" width="220" height="122" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/04/Two_Node_Power_Flow_Diagram.png/330px-Two_Node_Power_Flow_Diagram.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/04/Two_Node_Power_Flow_Diagram.png/440px-Two_Node_Power_Flow_Diagram.png 2x" data-file-width="748" data-file-height="414" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Two_Node_Power_Flow_Diagram.png" class="internal" title="Enlarge"></a></div>Two node power flow diagram courtesy of Grainger and Stevenson</div></div></div>
+<p>To take a look at a generalizable <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 2\times 2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>2</mn>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mn>2</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2\times 2}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f8a0e3400ffb97d67c00267ed50cddfe824cbe80" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.165ex; height:2.176ex;" alt="2\times2"/></span> matrix, consider the figure of the two-node network. By <a href="/wiki/Kirchhoff%27s_circuit_laws#Kirchhoff.27s_current_law_.28KCL.29" title="Kirchhoff&#39;s circuit laws">Kirchhoff's Current Law</a>, it can be shown that&#160;:<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{pmatrix}I_{m}\\I_{n}\\\end{pmatrix}}={\begin{pmatrix}1\\1\\\end{pmatrix}}*I_{a}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>I</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>m</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>I</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>&#x2217;<!-- ∗ --></mo>
+        <msub>
+          <mi>I</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>a</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{pmatrix}I_{m}\\I_{n}\\\end{pmatrix}}={\begin{pmatrix}1\\1\\\end{pmatrix}}*I_{a}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0b8fd6896f0a4c27809ebbffc0707f9968ff4fba" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:19.624ex; height:6.176ex;" alt="{\displaystyle {\begin{pmatrix}I_{m}\\I_{n}\\\end{pmatrix}}={\begin{pmatrix}1\\1\\\end{pmatrix}}*I_{a}}"/></span> since there are no other currents entering or exiting nodes <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle m}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0a07d98bb302f3856cbabc47b2b9016692e3f7bc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.04ex; height:1.676ex;" alt="m"/></span> or <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"/></span>. The voltage drop across the line can be expressed as&#160;:<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle V_{a}={\begin{pmatrix}1*-1\\\end{pmatrix}}*{\begin{pmatrix}V_{m}\\V_{n}\\\end{pmatrix}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>a</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                  <mo>&#x2217;<!-- ∗ --></mo>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>1</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>&#x2217;<!-- ∗ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>V</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>m</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>V</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V_{a}={\begin{pmatrix}1*-1\\\end{pmatrix}}*{\begin{pmatrix}V_{m}\\V_{n}\\\end{pmatrix}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/85e9d5f28e9440016352eba9de7334c4ed985579" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:23.842ex; height:6.176ex;" alt="{\displaystyle V_{a}={\begin{pmatrix}1*-1\\\end{pmatrix}}*{\begin{pmatrix}V_{m}\\V_{n}\\\end{pmatrix}}}"/></span>. Next, use <a href="/wiki/Ohm%27s_Law" class="mw-redirect" title="Ohm&#39;s Law">Ohm's Law</a> with admittance instead of impedance. Using substitution to get&#160;:<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{pmatrix}Y_{a}&amp;-Y_{a}\\-Y_{a}&amp;Y_{a}\end{pmatrix}}*{\begin{pmatrix}V_{m}\\V_{n}\\\end{pmatrix}}={\begin{pmatrix}I_{m}\\I_{n}\\\end{pmatrix}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>a</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>a</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>a</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>Y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>a</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>&#x2217;<!-- ∗ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>V</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>m</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>V</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>I</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>m</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>I</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{pmatrix}Y_{a}&amp;-Y_{a}\\-Y_{a}&amp;Y_{a}\end{pmatrix}}*{\begin{pmatrix}V_{m}\\V_{n}\\\end{pmatrix}}={\begin{pmatrix}I_{m}\\I_{n}\\\end{pmatrix}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9aec975fbcc7391551f6b0385bcd7aa859daffc2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:34.383ex; height:6.176ex;" alt="{\displaystyle {\begin{pmatrix}Y_{a}&amp;-Y_{a}\\-Y_{a}&amp;Y_{a}\end{pmatrix}}*{\begin{pmatrix}V_{m}\\V_{n}\\\end{pmatrix}}={\begin{pmatrix}I_{m}\\I_{n}\\\end{pmatrix}}}"/></span>. To reintroduce some generality, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Y_{11}=Y_{mm},Y_{21}=Y_{nm},Y_{12}=Y_{mn},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>Y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>11</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>Y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mi>m</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>Y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>21</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>Y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mi>m</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>Y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>Y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Y_{11}=Y_{mm},Y_{21}=Y_{nm},Y_{12}=Y_{mn},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/77c29abcacb9ec1506388a00e12e11b57e8d12e1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:34.183ex; height:2.509ex;" alt="{\displaystyle Y_{11}=Y_{mm},Y_{21}=Y_{nm},Y_{12}=Y_{mn},}"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Y_{22}=Y_{nn}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>Y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>22</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>Y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Y_{22}=Y_{nn}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/13ae25948a9bbd2bce10f19ccdf890c60d9091f3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:9.881ex; height:2.509ex;" alt="{\displaystyle Y_{22}=Y_{nn}}"/></span>. Thus, this example can be taken as a first step in understanding how to generally construct an <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle NxN}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>N</mi>
+        <mi>x</mi>
+        <mi>N</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle NxN}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/208de85cf4e5f85a9e3761170eeb173e9fc38b58" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.457ex; height:2.176ex;" alt="{\displaystyle NxN}"/></span> matrix by hand.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nodal_admittance_matrix&amp;action=edit&amp;section=3" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Admittance_parameters" title="Admittance parameters">Admittance parameters</a></li>
+<li><a href="/wiki/Zbus" title="Zbus">Zbus</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nodal_admittance_matrix&amp;action=edit&amp;section=4" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+ <div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web">McCalley, James. <a rel="nofollow" class="external text" href="http://home.eng.iastate.edu/~jdm/ee458_2011/PowerFlowEquations.pdf">"The Power Flow Equations"</a> <span class="cs1-format">(PDF)</span>. <i>Iowa State Engineering</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Iowa+State+Engineering&amp;rft.atitle=The+Power+Flow+Equations&amp;rft.aulast=McCalley&amp;rft.aufirst=James&amp;rft_id=http%3A%2F%2Fhome.eng.iastate.edu%2F~jdm%2Fee458_2011%2FPowerFlowEquations.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANodal+admittance+matrix" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation book">Grainger, John (1994). <a rel="nofollow" class="external text" href="https://www.amazon.com/Power-System-Analysis-John-Grainger/dp/0070612935"><i>Power System Analysis</i></a>. McGraw-Hill Science/Engineering/Math. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0070612938" title="Special:BookSources/978-0070612938"><bdi>978-0070612938</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Power+System+Analysis&amp;rft.pub=McGraw-Hill+Science%2FEngineering%2FMath&amp;rft.date=1994&amp;rft.isbn=978-0070612938&amp;rft.aulast=Grainger&amp;rft.aufirst=John&amp;rft_id=https%3A%2F%2Fwww.amazon.com%2FPower-System-Analysis-John-Grainger%2Fdp%2F0070612935&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANodal+admittance+matrix" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation book">Grainger, John (1994). <i>Power System Analysis</i> (1 ed.). McGraw-Hill Science/Engineering/Math. pp.&#160;240–241. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0070612938" title="Special:BookSources/978-0070612938"><bdi>978-0070612938</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Power+System+Analysis&amp;rft.pages=240-241&amp;rft.edition=1&amp;rft.pub=McGraw-Hill+Science%2FEngineering%2FMath&amp;rft.date=1994&amp;rft.isbn=978-0070612938&amp;rft.aulast=Grainger&amp;rft.aufirst=John&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANodal+admittance+matrix" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nodal_admittance_matrix&amp;action=edit&amp;section=5" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20060206073952/http://www.jcmiras.net/jcm/item/73/">A C/C++ Program and Source Code for Computing Ybus and Zbus Matrices</a></li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1253
+Cached time: 20190725123442
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision]
+CPU time usage: 0.232 seconds
+Real time usage: 0.306 seconds
+Preprocessor visited node count: 371/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 4957/2097152 bytes
+Template argument size: 87/2097152 bytes
+Highest expansion depth: 8/40
+Expensive parser function count: 0/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 9881/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.100/10.000 seconds
+Lua memory usage: 2.17 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  182.060      1 -total
+ 69.19%  125.972      1 Template:Reflist
+ 46.69%   85.009      1 Template:Cite_web
+ 25.71%   46.808      1 Template:About
+ 11.57%   21.060      2 Template:Cite_book
+  1.72%    3.136      1 Template:Main_other
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:3870862-0!canonical!math=5 and timestamp 20190725123442 and revision id 898438700
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Nodal_admittance_matrix&amp;oldid=898438700">https://en.wikipedia.org/w/index.php?title=Nodal_admittance_matrix&amp;oldid=898438700</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Electrical_engineering" title="Category:Electrical engineering">Electrical engineering</a></li><li><a href="/wiki/Category:Electric_power" title="Category:Electric power">Electric power</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Nodal+admittance+matrix" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Nodal+admittance+matrix" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Nodal_admittance_matrix" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Nodal_admittance_matrix" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Nodal_admittance_matrix">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Nodal_admittance_matrix&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Nodal_admittance_matrix&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Nodal_admittance_matrix" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Nodal_admittance_matrix" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Nodal_admittance_matrix&amp;oldid=898438700" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Nodal_admittance_matrix&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q7046603" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Nodal_admittance_matrix&amp;id=898438700" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Nodal+admittance+matrix">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Nodal+admittance+matrix&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Nodal_admittance_matrix&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+									</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q7046603#sitelinks-wikipedia" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 23 May 2019, at 15:36<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Nodal_admittance_matrix&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.232","walltime":"0.306","ppvisitednodes":{"value":371,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":4957,"limit":2097152},"templateargumentsize":{"value":87,"limit":2097152},"expansiondepth":{"value":8,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":9881,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  182.060      1 -total"," 69.19%  125.972      1 Template:Reflist"," 46.69%   85.009      1 Template:Cite_web"," 25.71%   46.808      1 Template:About"," 11.57%   21.060      2 Template:Cite_book","  1.72%    3.136      1 Template:Main_other"]},"scribunto":{"limitreport-timeusage":{"value":"0.100","limit":"10.000"},"limitreport-memusage":{"value":2270292,"limit":52428800}},"cachereport":{"origin":"mw1253","timestamp":"20190725123442","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Nodal admittance matrix","url":"https:\/\/en.wikipedia.org\/wiki\/Nodal_admittance_matrix","sameAs":"http:\/\/www.wikidata.org\/entity\/Q7046603","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q7046603","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2006-01-28T03:33:28Z","dateModified":"2019-05-23T15:36:51Z"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":92,"wgHostname":"mw1256"});});</script>
+</body>
+</html>

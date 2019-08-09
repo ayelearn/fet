@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Uniform continuity - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Uniform_continuity","wgTitle":"Uniform continuity","wgCurRevisionId":907054527,"wgRevisionId":907054527,"wgArticleId":32337,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Continuous mappings","Calculus","Mathematical analysis","General topology"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName"
+:"Uniform_continuity","wgRelevantArticleId":32337,"wgRequestId":"XUo@GQpAAEUAAJuMDnQAAABM","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q741865","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user"
+:"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.math.styles":"ready","mediawiki.page.gallery.styles":"ready","ext.cite.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["ext.math.scripts","ext.cite.ux-enhancements","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups",
+"ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.page.gallery.styles%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/b/b1/Continuity_and_uniform_continuity_2.gif"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Uniform_continuity"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Uniform_continuity&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Uniform_continuity&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Uniform_continuity"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Uniform_continuity rootpage-Uniform_continuity skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Uniform continuity</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Function limiting the "growth" of distances of outputs uniformly across its domain</div><div class="thumb tright"><div class="thumbinner" style="width:322px;"><a href="/wiki/File:Continuity_and_uniform_continuity_2.gif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/b/b1/Continuity_and_uniform_continuity_2.gif" decoding="async" width="320" height="281" class="thumbimage" data-file-width="320" data-file-height="281" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Continuity_and_uniform_continuity_2.gif" class="internal" title="Enlarge"></a></div>The graph of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x)={\tfrac {1}{x}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mi>x</mi>
+            </mfrac>
+          </mstyle>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)={\tfrac {1}{x}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/86ad8bb8ae44173f9fc433075758a1750ecf5c51" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:9.292ex; height:3.343ex;" alt="{\displaystyle f(x)={\tfrac {1}{x}}}"/></span> escapes the top and/or bottom of the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\text{height}}\times {\text{width}}=2\varepsilon \times 2\delta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>height</mtext>
+        </mrow>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>width</mtext>
+        </mrow>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mi>&#x03B5;<!-- ε --></mi>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mn>2</mn>
+        <mi>&#x03B4;<!-- δ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{height}}\times {\text{width}}=2\varepsilon \times 2\delta }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2bcbf852473d00a81d824b861a440eb6b319264e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:25.382ex; height:2.676ex;" alt="{\displaystyle {\text{height}}\times {\text{width}}=2\varepsilon \times 2\delta }"/></span> window, however small the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \delta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B4;<!-- δ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \delta }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c5321cfa797202b3e1f8620663ff43c4660ea03a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.049ex; height:2.343ex;" alt="\delta "/></span>, so <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/202945cce41ecebb6f643f31d119c514bec7a074" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.418ex; height:2.843ex;" alt="f(x)"/></span> is <b>not</b> uniformly continuous. The function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle g(x)={\sqrt {x}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mi>x</mi>
+          </msqrt>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g(x)={\sqrt {x}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/200d7544a5ab10c9b757bc078ebed1c1f1102cee" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:10.619ex; height:3.009ex;" alt="{\displaystyle g(x)={\sqrt {x}}}"/></span>, on the other hand, <b>is</b> uniformly continuous.</div></div></div>
+<p>In <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>, a <a href="/wiki/Function_(mathematics)" title="Function (mathematics)">function</a> <i>f</i> is <b>uniformly continuous</b> if, roughly speaking, it is possible to guarantee that <i>f</i>(<i>x</i>) and <i>f</i>(<i>y</i>) be as close to each other as we please by requiring only that <i>x</i> and <i>y</i> are sufficiently close to each other; unlike ordinary <a href="/wiki/Continuous_function" title="Continuous function">continuity</a>, the maximum distance between <i>f</i>(<i>x</i>) and <i>f</i>(<i>y</i>) cannot depend on <i>x</i> and <i>y</i> themselves. 
+</p><p>Continuous functions can fail to be uniformly continuous if they are unbounded on a finite domain, such as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x)={\tfrac {1}{x}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mi>x</mi>
+            </mfrac>
+          </mstyle>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)={\tfrac {1}{x}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/86ad8bb8ae44173f9fc433075758a1750ecf5c51" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:9.292ex; height:3.343ex;" alt="{\displaystyle f(x)={\tfrac {1}{x}}}"/></span> on (0,1), or if their slopes become unbounded on an infinite domain, such as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x)=x^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)=x^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/84ddac4ae10b1aa4a11741c79771a583419fb1fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.9ex; height:3.176ex;" alt="f(x)=x^{2}"/></span> on the real line. However, any <a href="/wiki/Lipschitz_continuity" title="Lipschitz continuity">Lipschitz map</a> between <a href="/wiki/Metric_space" title="Metric space">metric spaces</a> is uniformly continuous, in particular any <a href="/wiki/Isometry" title="Isometry">isometry</a> (distance-preserving map) . 
+</p><p>Although ordinary continuity can be defined for functions between general topological spaces, defining uniform continuity requires more structure.  The concept relies on comparing the sizes of <a href="/wiki/Neighbourhood_(mathematics)" title="Neighbourhood (mathematics)">neighbourhoods</a> of distinct points, so it requires a metric space, or more generally a <a href="/wiki/Uniform_space" title="Uniform space">uniform space</a>. 
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Definition_for_functions_on_metric_spaces"><span class="tocnumber">1</span> <span class="toctext">Definition for functions on metric spaces</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Local_continuity_versus_global_uniform_continuity"><span class="tocnumber">2</span> <span class="toctext">Local continuity versus global uniform continuity</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Examples_and_counterexamples"><span class="tocnumber">3</span> <span class="toctext">Examples and counterexamples</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Properties"><span class="tocnumber">4</span> <span class="toctext">Properties</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Visualization"><span class="tocnumber">5</span> <span class="toctext">Visualization</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#History"><span class="tocnumber">6</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Other_characterisations"><span class="tocnumber">7</span> <span class="toctext">Other characterisations</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Non-standard_analysis"><span class="tocnumber">7.1</span> <span class="toctext">Non-standard analysis</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Cauchy_continuity"><span class="tocnumber">7.2</span> <span class="toctext">Cauchy continuity</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Relations_with_the_extension_problem"><span class="tocnumber">8</span> <span class="toctext">Relations with the extension problem</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Generalization_to_topological_vector_spaces"><span class="tocnumber">9</span> <span class="toctext">Generalization to topological vector spaces</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Generalization_to_uniform_spaces"><span class="tocnumber">10</span> <span class="toctext">Generalization to uniform spaces</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#References"><span class="tocnumber">11</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Further_reading"><span class="tocnumber">12</span> <span class="toctext">Further reading</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Definition_for_functions_on_metric_spaces">Definition for functions on metric spaces</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniform_continuity&amp;action=edit&amp;section=1" title="Edit section: Definition for functions on metric spaces">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Given <a href="/wiki/Metric_spaces" class="mw-redirect" title="Metric spaces">metric spaces</a> (<i>X</i>,&#160;<i>d</i><sub>1</sub>) and (<i>Y</i>,&#160;<i>d</i><sub>2</sub>), a function <i>f</i>&#160;:&#160;<i>X</i>&#160;→&#160;<i>Y</i> is called <b>uniformly continuous</b> if  for every <a href="/wiki/Real_number" title="Real number">real number</a> <i>ε</i>&#160;&gt;&#160;0 there exists real <i>δ</i>&#160;&gt;&#160;0 such that for every <i>x</i>,&#160;<i>y</i>&#160;∈&#160;<i>X</i> with <i>d</i><sub>1</sub>(<i>x</i>,&#160;<i>y</i>)&#160;&lt;&#160;<i>δ</i>, we have that <i>d</i><sub>2</sub>(<i>f</i>(x),&#160;<i>f</i>(<i>y</i>))&#160;&lt;&#160;<i>ε</i>.
+</p><p>If <i>X</i> and <i>Y</i> are subsets of the <a href="/wiki/Real_line" title="Real line">real line</a>, <i>d</i><sub>1</sub> and <i>d</i><sub>2</sub> can be the <a href="/wiki/Real_line#As_a_metric_space" title="Real line">standard one dimensional Euclidean distance</a>, yielding the definition: for all <i>ε</i>&#160;&gt;&#160;0 there exists a <i>δ</i>&#160;&gt;&#160;0 such that for all <i>x</i>,&#160;<i>y</i>&#160;∈&#160;<i>X</i>, |<i>x</i>&#160;−&#160;<i>y</i>| &lt;&#160;<i>δ</i> implies |<i>f</i>(<i>x</i>)&#160;−&#160;<i>f</i>(<i>y</i>)|&lt;&#160;<i>ε.</i>
+</p><p>The difference between uniform continuity, versus ordinary continuity at every point, is that in uniform continuity the value of <i>δ</i> depends only on <i>ε</i> and not on the point in the domain.
+</p>
+<h2><span class="mw-headline" id="Local_continuity_versus_global_uniform_continuity">Local continuity versus global uniform continuity</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniform_continuity&amp;action=edit&amp;section=2" title="Edit section: Local continuity versus global uniform continuity">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="/wiki/Continuous_function" title="Continuous function">Continuity</a> itself is a <i>local</i> property of a function—that is, a function <i>f</i> is continuous, or not, at a particular point, and this can be determined by looking only at the values of the function in an (arbitrarily small) neighbourhood of that point.  When we speak of a function being continuous on an <a href="/wiki/Interval_(mathematics)" title="Interval (mathematics)">interval</a>, we mean only that it is continuous at each point of the interval.  In contrast, uniform continuity is a <i>global</i> property of <i>f</i>, in the sense that the standard definition refers to <i>pairs</i> of points rather than individual points.  On the other hand, it is possible to give a definition that is <i>local</i> in terms of the natural extension <i>f</i>* (the characteristics of which at nonstandard points are determined by the global properties of <i>f</i>), although it is not possible to give a local definition of uniform continuity for an arbitrary hyperreal-valued function, see <a href="/wiki/Uniform_continuity#Non-standard_analysis" title="Uniform continuity">below</a>.
+</p><p>The mathematical statements that a function is continuous on an interval <i>I</i> and the definition that a function is uniformly continuous on the same interval are structurally very similar. Continuity of a function for every point <i>x</i> of an interval can thus be expressed by a formula starting with the <a href="/wiki/Quantification_(logic)" class="mw-redirect" title="Quantification (logic)">quantification</a>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \forall x\in I\;\forall \epsilon &gt;0\;\exists \delta &gt;0\;\forall y\in I:\,|x-y|&lt;\delta \,\Rightarrow \,|f(x)-f(y)|&lt;\epsilon \,,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2200;<!-- ∀ --></mi>
+        <mi>x</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi>I</mi>
+        <mspace width="thickmathspace" />
+        <mi mathvariant="normal">&#x2200;<!-- ∀ --></mi>
+        <mi>&#x03F5;<!-- ϵ --></mi>
+        <mo>&gt;</mo>
+        <mn>0</mn>
+        <mspace width="thickmathspace" />
+        <mi mathvariant="normal">&#x2203;<!-- ∃ --></mi>
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mo>&gt;</mo>
+        <mn>0</mn>
+        <mspace width="thickmathspace" />
+        <mi mathvariant="normal">&#x2200;<!-- ∀ --></mi>
+        <mi>y</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi>I</mi>
+        <mo>:</mo>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>y</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&lt;</mo>
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mspace width="thinmathspace" />
+        <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&lt;</mo>
+        <mi>&#x03F5;<!-- ϵ --></mi>
+        <mspace width="thinmathspace" />
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x\in I\;\forall \epsilon &gt;0\;\exists \delta &gt;0\;\forall y\in I:\,|x-y|&lt;\delta \,\Rightarrow \,|f(x)-f(y)|&lt;\epsilon \,,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/211fa810d7224b2eaddca745038cb3aea759415e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:63.481ex; height:2.843ex;" alt="{\displaystyle \forall x\in I\;\forall \epsilon &gt;0\;\exists \delta &gt;0\;\forall y\in I:\,|x-y|&lt;\delta \,\Rightarrow \,|f(x)-f(y)|&lt;\epsilon \,,}"/></span></dd></dl>
+<p>whereas for uniform continuity, the order of the first, second, and third quantifiers are rotated:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \forall \epsilon &gt;0\;\exists \delta &gt;0\;\forall x,y\in I:\,|x-y|&lt;\delta \,\Rightarrow \,|f(x)-f(y)|&lt;\epsilon }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2200;<!-- ∀ --></mi>
+        <mi>&#x03F5;<!-- ϵ --></mi>
+        <mo>&gt;</mo>
+        <mn>0</mn>
+        <mspace width="thickmathspace" />
+        <mi mathvariant="normal">&#x2203;<!-- ∃ --></mi>
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mo>&gt;</mo>
+        <mn>0</mn>
+        <mspace width="thickmathspace" />
+        <mi mathvariant="normal">&#x2200;<!-- ∀ --></mi>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi>I</mi>
+        <mo>:</mo>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>y</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&lt;</mo>
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mspace width="thinmathspace" />
+        <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&lt;</mo>
+        <mi>&#x03F5;<!-- ϵ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall \epsilon &gt;0\;\exists \delta &gt;0\;\forall x,y\in I:\,|x-y|&lt;\delta \,\Rightarrow \,|f(x)-f(y)|&lt;\epsilon }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/089ece0b1c1538e500fb962ca82a57db9fdd4b52" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:57.531ex; height:2.843ex;" alt="{\displaystyle \forall \epsilon &gt;0\;\exists \delta &gt;0\;\forall x,y\in I:\,|x-y|&lt;\delta \,\Rightarrow \,|f(x)-f(y)|&lt;\epsilon }"/></span></dd></dl>
+<p>Thus for continuity at each point, one takes an arbitrary point <i>x,</i> and then there must exist a distance <i>δ</i>,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \cdots \forall x\,\exists \delta \cdots ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>&#x22EF;<!-- ⋯ --></mo>
+        <mi mathvariant="normal">&#x2200;<!-- ∀ --></mi>
+        <mi>x</mi>
+        <mspace width="thinmathspace" />
+        <mi mathvariant="normal">&#x2203;<!-- ∃ --></mi>
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mo>&#x22EF;<!-- ⋯ --></mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \cdots \forall x\,\exists \delta \cdots ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1b75d161e1ad65e01894f2c5393983866fb5b397" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:12.605ex; height:2.676ex;" alt="\cdots \forall x\,\exists \delta \cdots ,"/></span></dd></dl>
+<p>while for uniform continuity a single <i>δ</i> must work uniformly for all points <i>x</i> (and <i>y</i>):
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \cdots \exists \delta \,\forall x\,\forall y\cdots .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>&#x22EF;<!-- ⋯ --></mo>
+        <mi mathvariant="normal">&#x2203;<!-- ∃ --></mi>
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mspace width="thinmathspace" />
+        <mi mathvariant="normal">&#x2200;<!-- ∀ --></mi>
+        <mi>x</mi>
+        <mspace width="thinmathspace" />
+        <mi mathvariant="normal">&#x2200;<!-- ∀ --></mi>
+        <mi>y</mi>
+        <mo>&#x22EF;<!-- ⋯ --></mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \cdots \exists \delta \,\forall x\,\forall y\cdots .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5b605e3f60a70c7daaa228473777569bbd1b0f6e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:15.44ex; height:2.676ex;" alt="\cdots \exists \delta \,\forall x\,\forall y\cdots ."/></span></dd></dl>
+<h2><span class="mw-headline" id="Examples_and_counterexamples">Examples and counterexamples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniform_continuity&amp;action=edit&amp;section=3" title="Edit section: Examples and counterexamples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>Every <a href="/wiki/Lipschitz_continuous" class="mw-redirect" title="Lipschitz continuous">Lipschitz continuous</a> map between two metric spaces is uniformly continuous. In particular, every function which is differentiable and has bounded derivative is uniformly continuous. More generally, every <a href="/wiki/H%C3%B6lder_continuous" class="mw-redirect" title="Hölder continuous">Hölder continuous</a> function is uniformly continuous.</li>
+<li>Despite being nowhere differentiable, the <a href="/wiki/Weierstrass_function" title="Weierstrass function">Weierstrass function</a> is everywhere uniformly continuous</li>
+<li>Every member of a <a href="/wiki/Uniform_equicontinuity" class="mw-redirect" title="Uniform equicontinuity">uniformly equicontinuous</a> set of functions is uniformly continuous.</li>
+<li>The <a href="/wiki/Tangent_function" class="mw-redirect" title="Tangent function">tangent function</a> is continuous on the interval (−<i>π</i>/2,&#160;<i>π</i>/2) but is <i>not</i> uniformly continuous on that interval.</li>
+<li>The exponential function <i>x</i>&#160;<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \scriptstyle \mapsto }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="false" scriptlevel="1">
+          <mo stretchy="false">&#x21A6;<!-- ↦ --></mo>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \scriptstyle \mapsto }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ae57ed0724c898656f195bb99abe08d950697114" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.643ex; height:1.509ex;" alt="{\displaystyle \scriptstyle \mapsto }"/></span>&#160;<i>e</i><sup><i>x</i></sup> is continuous everywhere on the real line but is not uniformly continuous on the line.</li></ul>
+<h2><span class="mw-headline" id="Properties">Properties</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniform_continuity&amp;action=edit&amp;section=4" title="Edit section: Properties">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Every uniformly continuous function is <a href="/wiki/Continuous_function" title="Continuous function">continuous</a>, but the converse does not hold.  Consider for instance the function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f\colon \mathbb {R} \rightarrow \mathbb {R} ,x\mapsto x^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>&#x003A;<!-- : --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">R</mi>
+        </mrow>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">R</mi>
+        </mrow>
+        <mo>,</mo>
+        <mi>x</mi>
+        <mo stretchy="false">&#x21A6;<!-- ↦ --></mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f\colon \mathbb {R} \rightarrow \mathbb {R} ,x\mapsto x^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e513f960829fa3c6b3c8f61531b2a24a12a658ec" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:17.644ex; height:3.009ex;" alt="{\displaystyle f\colon \mathbb {R} \rightarrow \mathbb {R} ,x\mapsto x^{2}}"/></span>.  Given an arbitrarily small positive real number <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \epsilon }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03F5;<!-- ϵ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \epsilon }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3837cad72483d97bcdde49c85d3b7b859fb3fd2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.944ex; height:1.676ex;" alt="\epsilon "/></span>, uniform continuity requires the existence of a positive number <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \delta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B4;<!-- δ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \delta }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c5321cfa797202b3e1f8620663ff43c4660ea03a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.049ex; height:2.343ex;" alt="\delta "/></span> such that for all <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x_{1},x_{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x_{1},x_{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/188263943645114e27e316cc1be787861e5b67be" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:5.802ex; height:2.009ex;" alt="x_{1},x_{2}"/></span> with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |x_{1}-x_{2}|&lt;\delta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&lt;</mo>
+        <mi>&#x03B4;<!-- δ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |x_{1}-x_{2}|&lt;\delta }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/edde71dcdcd74114908eefe0f0127ed03a6c8e3d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:13.049ex; height:2.843ex;" alt="|x_{1}-x_{2}|&lt;\delta "/></span>, we have <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |f(x_{1})-f(x_{2})|&lt;\epsilon }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&lt;</mo>
+        <mi>&#x03F5;<!-- ϵ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |f(x_{1})-f(x_{2})|&lt;\epsilon }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aea2c51e4363377d6f4ebc10254cdefa4ede1a9c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.12ex; height:2.843ex;" alt="|f(x_{1})-f(x_{2})|&lt;\epsilon "/></span>.  But
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x+\delta )-f(x)=2x\delta +\delta ^{2}=\delta (2x+\delta )\ ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mi>x</mi>
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mo>+</mo>
+        <msup>
+          <mi>&#x03B4;<!-- δ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mo stretchy="false">)</mo>
+        <mtext>&#xA0;</mtext>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x+\delta )-f(x)=2x\delta +\delta ^{2}=\delta (2x+\delta )\ ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8366165d3afa9a7e1d55124f06492e66edc22120" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:40.717ex; height:3.176ex;" alt="f(x+\delta )-f(x)=2x\delta +\delta ^{2}=\delta (2x+\delta )\ ,"/></span></dd></dl>
+<p>and for all sufficiently large <i>x</i> this quantity is greater than <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \epsilon }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03F5;<!-- ϵ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \epsilon }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3837cad72483d97bcdde49c85d3b7b859fb3fd2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.944ex; height:1.676ex;" alt="\epsilon "/></span>.
+</p><p>Any <a href="/wiki/Absolutely_continuous" class="mw-redirect" title="Absolutely continuous">absolutely continuous</a> function is uniformly continuous. On the other hand, the <a href="/wiki/Cantor_function" title="Cantor function">Cantor function</a> is uniformly continuous but not absolutely continuous.
+</p><p>The image of a <a href="/wiki/Totally_bounded_space" title="Totally bounded space">totally bounded</a> subset under a uniformly continuous function is totally bounded. However, the image of a bounded subset of an arbitrary metric space under a uniformly continuous function need not be bounded: as a counterexample, consider the identity function from the integers endowed with the <a href="/wiki/Discrete_metric" class="mw-redirect" title="Discrete metric">discrete metric</a> to the integers endowed with the usual <a href="/wiki/Euclidean_metric" class="mw-redirect" title="Euclidean metric">Euclidean metric</a>.
+</p><p>The <a href="/wiki/Heine%E2%80%93Cantor_theorem" title="Heine–Cantor theorem">Heine–Cantor theorem</a> asserts that every continuous function on a <a href="/wiki/Compact_set" class="mw-redirect" title="Compact set">compact set</a> is uniformly continuous.  In particular, if a function is continuous on a <a href="/wiki/Interval_(mathematics)" title="Interval (mathematics)">closed bounded interval</a> of the real line, it is uniformly continuous on that interval. The <a href="/wiki/Darboux_integral" title="Darboux integral">Darboux integrability</a> of continuous functions follows almost immediately from this theorem.
+</p><p>If a real-valued function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"/></span> is continuous on <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle [0,\infty )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [0,\infty )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8dc2d914c2df66bc0f7893bfb8da36766650fe47" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.072ex; height:2.843ex;" alt="[0,\infty )"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{x\to \infty }f(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{x\to \infty }f(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9efb758b038d035a38821897944158094f068db6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:9.031ex; height:3.843ex;" alt="\lim _{x\to \infty }f(x)"/></span> exists (and is finite), then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"/></span> is uniformly continuous. In particular, every element of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle C_{0}(\mathbb {R} )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">R</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle C_{0}(\mathbb {R} )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b291a758a02ce8473dba27a2bcc64085902da8bd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.203ex; height:2.843ex;" alt="C_{0}({\mathbb  {R}})"/></span>, the space of continuous functions on <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbb {R} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">R</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {R} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/786849c765da7a84dbc3cce43e96aad58a5868dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.678ex; height:2.176ex;" alt="\mathbb {R} "/></span> that vanish at infinity, is uniformly continuous. This is a generalization of the Heine-Cantor theorem mentioned above, since <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle C_{c}(\mathbb {R} )\subset C_{0}(\mathbb {R} )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>c</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">R</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2282;<!-- ⊂ --></mo>
+        <msub>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">R</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle C_{c}(\mathbb {R} )\subset C_{0}(\mathbb {R} )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dd1b83d1513524e985bc0b084615c0a2c3b9b492" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:15.395ex; height:2.843ex;" alt="C_{c}({\mathbb  {R}})\subset C_{0}({\mathbb  {R}})"/></span>.
+</p>
+<h2><span class="mw-headline" id="Visualization">Visualization</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniform_continuity&amp;action=edit&amp;section=5" title="Edit section: Visualization">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>For a uniformly continuous function, there is for every given <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \epsilon &gt;0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03F5;<!-- ϵ --></mi>
+        <mo>&gt;</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \epsilon &gt;0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/568095ad3924314374a5ab68fae17343661f2a71" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.205ex; height:2.176ex;" alt="\epsilon &gt;0"/></span> a <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \delta &gt;0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mo>&gt;</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \delta &gt;0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/595d5cea06fdcaf2642caf549eda2cfc537958a9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.31ex; height:2.343ex;" alt="\delta &gt;0"/></span> such that two values <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/202945cce41ecebb6f643f31d119c514bec7a074" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.418ex; height:2.843ex;" alt="f(x)"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(y)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(y)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aaa9215c6afa4892692ba05ae4c44f23600ea79d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.243ex; height:2.843ex;" alt="f(y)"/></span> have a maximal distance <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \epsilon }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03F5;<!-- ϵ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \epsilon }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3837cad72483d97bcdde49c85d3b7b859fb3fd2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.944ex; height:1.676ex;" alt="\epsilon "/></span> whenever <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="x"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle y}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>y</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle y}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b8a6208ec717213d4317e666f1ae872e00620a0d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.155ex; height:2.009ex;" alt="y"/></span> do not differ for more than <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \delta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B4;<!-- δ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \delta }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c5321cfa797202b3e1f8620663ff43c4660ea03a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.049ex; height:2.343ex;" alt="\delta "/></span>. Thus we can draw around each point <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (x,f(x))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (x,f(x))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b21dd0c5c5815bc0516f679f631fd588ceb458d6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.59ex; height:2.843ex;" alt="(x,f(x))"/></span> of the graph a rectangle with height <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 2\epsilon }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>2</mn>
+        <mi>&#x03F5;<!-- ϵ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2\epsilon }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7c92b38f8fa5386a30fab561c41b983c3384cd52" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.107ex; height:2.176ex;" alt="2\epsilon"/></span> and width <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 2\delta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>2</mn>
+        <mi>&#x03B4;<!-- δ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2\delta }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1eb07ea6b418948bdfb59fcfd066dec83d281f7f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.211ex; height:2.343ex;" alt="2\delta"/></span> so that the graph lies completely inside the rectangle and not directly above or below. For functions that are not uniformly continuous, this isn't possible. The graph might lie inside the rectangle for certain midpoints on the graph but there are always midpoints of the rectangle on the graph where the function lies above or below the rectangle.
+</p>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 435px"><div style="width: 435px">
+			<div class="thumb" style="width: 430px;"><div style="margin:30px auto;"><a href="/wiki/File:Gleichm%C3%A4%C3%9Fig_stetige_Funktion.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Gleichm%C3%A4%C3%9Fig_stetige_Funktion.svg/400px-Gleichm%C3%A4%C3%9Fig_stetige_Funktion.svg.png" decoding="async" width="400" height="270" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Gleichm%C3%A4%C3%9Fig_stetige_Funktion.svg/600px-Gleichm%C3%A4%C3%9Fig_stetige_Funktion.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Gleichm%C3%A4%C3%9Fig_stetige_Funktion.svg/800px-Gleichm%C3%A4%C3%9Fig_stetige_Funktion.svg.png 2x" data-file-width="661" data-file-height="446" /></a></div></div>
+			<div class="gallerytext">
+<p>For uniformly continuous functions, there is for each <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \epsilon &gt;0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03F5;<!-- ϵ --></mi>
+        <mo>&gt;</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \epsilon &gt;0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/568095ad3924314374a5ab68fae17343661f2a71" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.205ex; height:2.176ex;" alt="\epsilon &gt;0"/></span> a <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \delta &gt;0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mo>&gt;</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \delta &gt;0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/595d5cea06fdcaf2642caf549eda2cfc537958a9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.31ex; height:2.343ex;" alt="\delta &gt;0"/></span> such that when we draw a rectangle around each point of the graph with width <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 2\delta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>2</mn>
+        <mi>&#x03B4;<!-- δ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2\delta }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1eb07ea6b418948bdfb59fcfd066dec83d281f7f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.211ex; height:2.343ex;" alt="2\delta"/></span> and height <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 2\epsilon }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>2</mn>
+        <mi>&#x03F5;<!-- ϵ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2\epsilon }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7c92b38f8fa5386a30fab561c41b983c3384cd52" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.107ex; height:2.176ex;" alt="2\epsilon"/></span>, the graph lies completely inside the rectangle.
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 435px"><div style="width: 435px">
+			<div class="thumb" style="width: 430px;"><div style="margin:26.5px auto;"><a href="/wiki/File:Nicht_gleichm%C3%A4%C3%9Fig_stetige_Funktion.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Nicht_gleichm%C3%A4%C3%9Fig_stetige_Funktion.svg/400px-Nicht_gleichm%C3%A4%C3%9Fig_stetige_Funktion.svg.png" decoding="async" width="400" height="277" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Nicht_gleichm%C3%A4%C3%9Fig_stetige_Funktion.svg/600px-Nicht_gleichm%C3%A4%C3%9Fig_stetige_Funktion.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Nicht_gleichm%C3%A4%C3%9Fig_stetige_Funktion.svg/800px-Nicht_gleichm%C3%A4%C3%9Fig_stetige_Funktion.svg.png 2x" data-file-width="690" data-file-height="477" /></a></div></div>
+			<div class="gallerytext">
+<p>For functions that are not uniformly continuous, there is an <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \epsilon &gt;0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03F5;<!-- ϵ --></mi>
+        <mo>&gt;</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \epsilon &gt;0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/568095ad3924314374a5ab68fae17343661f2a71" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.205ex; height:2.176ex;" alt="\epsilon &gt;0"/></span> such that regardless of the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \delta &gt;0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mo>&gt;</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \delta &gt;0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/595d5cea06fdcaf2642caf549eda2cfc537958a9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.31ex; height:2.343ex;" alt="\delta &gt;0"/></span> there are always points on the graph, when we draw a <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 2\epsilon }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>2</mn>
+        <mi>&#x03F5;<!-- ϵ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2\epsilon }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7c92b38f8fa5386a30fab561c41b983c3384cd52" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.107ex; height:2.176ex;" alt="2\epsilon"/></span>-<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 2\delta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>2</mn>
+        <mi>&#x03B4;<!-- δ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2\delta }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1eb07ea6b418948bdfb59fcfd066dec83d281f7f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.211ex; height:2.343ex;" alt="2\delta"/></span>-rectangle around it, there are values directly above or below the rectangle. There might be midpoints where the graph is completely inside the rectangle but this is not true for every midpoint.
+</p>
+			</div>
+		</div></li>
+</ul>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniform_continuity&amp;action=edit&amp;section=6" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The first published definition of uniform continuity was by Heine in 1870, and in 1872 he published a proof that a continuous function on an open interval need not be uniformly continuous.  The proofs are almost verbatim given by Dirichlet in his lectures on definite integrals in 1854. The definition of uniform continuity appears earlier in the work of Bolzano where he also proved that continuous functions on an open interval do not need to be uniformly continuous.  In addition he also states that a continuous function on a closed interval is uniformly continuous, but he does not give a complete proof.<sup id="cite_ref-FOOTNOTERusnockKerr-Lawson2005_1-0" class="reference"><a href="#cite_note-FOOTNOTERusnockKerr-Lawson2005-1">&#91;1&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Other_characterisations">Other characterisations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniform_continuity&amp;action=edit&amp;section=7" title="Edit section: Other characterisations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Non-standard_analysis">Non-standard analysis</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniform_continuity&amp;action=edit&amp;section=8" title="Edit section: Non-standard analysis">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In <a href="/wiki/Non-standard_analysis" title="Non-standard analysis">non-standard analysis</a>, a real-valued function <i>f</i> of a real variable is <a href="/wiki/Microcontinuity" title="Microcontinuity">microcontinuous</a> at a point <i>a</i> precisely if the difference <i>f</i>*(<i>a</i>&#160;+&#160;<i>δ</i>)&#160;−&#160;<i>f</i>*(<i>a</i>) is infinitesimal whenever <i>δ</i> is infinitesimal.  Thus <i>f</i> is continuous on a set <i>A</i> in R precisely if <i>f</i>* is microcontinuous at every real point <i>a</i>&#160;∈&#160;<i>A</i>.  Uniform continuity can be expressed as the condition that (the natural extension of) f is microcontinuous not only at real points in <i>A</i>, but at all points in its non-standard counterpart (natural extension) <sup>*</sup><i>A</i> in <sup>*</sup>R. Note that there exist hyperreal-valued functions which meet this criterion but are not uniformly continuous, as well as uniformly continuous hyperreal-valued functions which do not meet this criterion, however, such functions cannot be expressed in the form <i>f</i>* for any real-valued function <i>f</i>. (see <a href="/wiki/Non-standard_calculus" title="Non-standard calculus">non-standard calculus</a> for more details and examples).
+</p>
+<h3><span class="mw-headline" id="Cauchy_continuity">Cauchy continuity</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniform_continuity&amp;action=edit&amp;section=9" title="Edit section: Cauchy continuity">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>For a function between metric spaces, uniform continuity implies <a href="/wiki/Cauchy_continuity" class="mw-redirect" title="Cauchy continuity">Cauchy continuity</a> (<a href="#CITEREFFitzpatrick2006">Fitzpatrick 2006</a>).  More specifically, let <i>A</i> be a subset of <b>R</b><sup><i>n</i></sup>. If a function <i>f</i>&#160;:&#160;<i>A</i>&#160;→&#160;<b>R</b><sup><i>m</i></sup> is uniformly continuous then for every pair of sequences <i>x</i><sub><i>n</i></sub> and <i>y</i><sub><i>n</i></sub> such that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{n\to \infty }|x_{n}-y_{n}|=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{n\to \infty }|x_{n}-y_{n}|=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fedb33b9e4948db41d6c9c65c969a239712bd3c4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:17.96ex; height:3.843ex;" alt="{\displaystyle \lim _{n\to \infty }|x_{n}-y_{n}|=0}"/></span></dd></dl>
+<p>we have
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{n\to \infty }|f(x_{n})-f(y_{n})|=0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>=</mo>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{n\to \infty }|f(x_{n})-f(y_{n})|=0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4e2eacaf805720bf6e0a4e363350f88c344879d2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:24.783ex; height:3.843ex;" alt="{\displaystyle \lim _{n\to \infty }|f(x_{n})-f(y_{n})|=0.}"/></span></dd></dl>
+<h2><span class="mw-headline" id="Relations_with_the_extension_problem">Relations with the extension problem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniform_continuity&amp;action=edit&amp;section=10" title="Edit section: Relations with the extension problem">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Let <i>X</i> be a metric space, <i>S</i> a subset of <i>X, R</i> a complete metric space, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f:S\rightarrow R}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <mi>S</mi>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mi>R</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:S\rightarrow R}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cfa00289232d1536ef3289d595473115a9404a14" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.093ex; height:2.509ex;" alt="f:S\rightarrow R"/></span> a
+continuous function.  When can <i>f</i> be extended to a continuous function on all of <i>X</i>?
+</p><p>If <i>S</i> is closed in <i>X</i>, the answer is given by the <a href="/wiki/Tietze_extension_theorem" title="Tietze extension theorem">Tietze extension theorem</a>: always.  So it is necessary and sufficient to extend <i>f</i> to the closure of <i>S</i> in <i>X</i>: that is, we may assume without loss of generality that <i>S</i> is dense in <i>X</i>, and this has the further pleasant consequence that if the extension exists, it is unique.
+</p><p>Let us suppose moreover that <i>X</i> is <a href="/wiki/Complete_metric_space" title="Complete metric space">complete</a>, so that <i>X</i> is
+the completion of <i>S</i>.  Then a continuous function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f:S\rightarrow R}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <mi>S</mi>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mi>R</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:S\rightarrow R}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cfa00289232d1536ef3289d595473115a9404a14" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.093ex; height:2.509ex;" alt="f:S\rightarrow R"/></span> extends to all of <i>X</i> if and only if <i>f</i> is <a href="/wiki/Cauchy-continuous_function" title="Cauchy-continuous function">Cauchy-continuous</a>, i. e., the image under <i>f</i> of a Cauchy sequence remains Cauchy. (In general, Cauchy continuity is necessary and sufficient for extension of <i>f</i> to the completion of <i>X</i>, so is <i>a priori</i> stronger than extendability to <i>X</i>.)
+</p><p>It is easy to see that every uniformly continuous function is Cauchy-continuous and thus extends to <i>X</i>.  The converse does not hold, since the function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f:R\rightarrow R,x\mapsto x^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <mi>R</mi>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mi>R</mi>
+        <mo>,</mo>
+        <mi>x</mi>
+        <mo stretchy="false">&#x21A6;<!-- ↦ --></mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:R\rightarrow R,x\mapsto x^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d5c7c27e73eb57ad989b9e9f7c242a7c477c5023" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:18.719ex; height:3.009ex;" alt="{\displaystyle f:R\rightarrow R,x\mapsto x^{2}}"/></span> is, as seen above, not uniformly continuous, but it is continuous and thus -- since <i>R</i> is complete -- Cauchy continuous.  In general, for functions defined on unbounded spaces like <i>R</i>, uniform continuity is a rather strong condition.  It is desirable to have a weaker condition from which to deduce extendability.
+</p><p>For example, suppose <i>a &gt; 1</i> is a real number.  At the precalculus level, the function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f:x\mapsto a^{x}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <mi>x</mi>
+        <mo stretchy="false">&#x21A6;<!-- ↦ --></mo>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:x\mapsto a^{x}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c15c8f360406c0fad372c26f6a99008823bd3f14" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.562ex; height:2.676ex;" alt="f:x\mapsto a^{x}"/></span> can be given a precise definition only for rational values of <i>x</i> (assuming the existence of qth roots of positive real numbers, an application of the Intermediate Value Theorem).  One would like to extend <i>f</i> to a function defined on all of <i>R</i>.  The identity
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x+\delta )-f(x)=a^{x}(a^{\delta }-1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B4;<!-- δ --></mi>
+          </mrow>
+        </msup>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x+\delta )-f(x)=a^{x}(a^{\delta }-1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8f611af4ca3fa3042a2824866b4ca94e0ccc0060" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:29.081ex; height:3.176ex;" alt="{\displaystyle f(x+\delta )-f(x)=a^{x}(a^{\delta }-1)}"/></span></dd></dl>
+<p>shows that <i>f</i> is not uniformly continuous on the set <i>Q</i> of all rational numbers; however for any bounded interval <i>I</i> the restriction of <i>f</i> to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Q\cap I}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Q</mi>
+        <mo>&#x2229;<!-- ∩ --></mo>
+        <mi>I</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q\cap I}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bf4c2c82bc2c74cf955c3a300d439b75edc03120" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:5.593ex; height:2.509ex;" alt="Q\cap I"/></span> is uniformly continuous, hence Cauchy-continuous, hence f extends to a continuous function on <i>I</i>. But since this holds for every <i>I</i>, there is then a unique extension of <i>f</i> to a continuous function on all of <i>R</i>.
+</p><p>More generally, a continuous function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f:S\rightarrow R}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <mi>S</mi>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mi>R</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:S\rightarrow R}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cfa00289232d1536ef3289d595473115a9404a14" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.093ex; height:2.509ex;" alt="f:S\rightarrow R"/></span> whose restriction to every bounded subset of <i>S</i> is uniformly continuous is extendable to <i>X</i>, and the converse holds if <i>X</i> is <a href="/wiki/Locally_compact" class="mw-redirect" title="Locally compact">locally compact</a>.
+</p><p>A typical application of the extendability of a uniformly continuous function is the proof of the inverse <a href="/wiki/Fourier_transformation" class="mw-redirect" title="Fourier transformation">Fourier transformation</a> formula. We first prove that the formula is true for test functions, there are densely many of them. We then extend the inverse map to the whole space using the fact that linear map is continuous; thus, uniformly continuous.
+</p>
+<h2><span class="mw-headline" id="Generalization_to_topological_vector_spaces">Generalization to topological vector spaces</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniform_continuity&amp;action=edit&amp;section=11" title="Edit section: Generalization to topological vector spaces">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In the special case of two <a href="/wiki/Topological_vector_spaces" class="mw-redirect" title="Topological vector spaces">topological vector spaces</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle V}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>V</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/af0f6064540e84211d0ffe4dac72098adfa52845" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.787ex; height:2.176ex;" alt="V"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle W}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>W</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle W}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/54a9c4c547f4d6111f81946cad242b18298d70b7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.435ex; height:2.176ex;" alt="W"/></span>, the notion of uniform continuity of a map <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f:V\to W}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <mi>V</mi>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mi>W</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:V\to W}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/574dffa1c85efaef6b6ef553ebd8ad9cf7f87fd6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:11.052ex; height:2.509ex;" alt="f:V\to W"/></span> becomes: for any neighborhood <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle B}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>B</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle B}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/47136aad860d145f75f3eed3022df827cee94d7a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.764ex; height:2.176ex;" alt="B"/></span> of zero in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle W}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>W</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle W}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/54a9c4c547f4d6111f81946cad242b18298d70b7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.435ex; height:2.176ex;" alt="W"/></span>, there exists a neighborhood <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="A"/></span> of zero in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle V}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>V</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/af0f6064540e84211d0ffe4dac72098adfa52845" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.787ex; height:2.176ex;" alt="V"/></span> such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v_{1}-v_{2}\in A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{1}-v_{2}\in A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/febf68e0635e328caac59a654efb6a8470b10050" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:11.788ex; height:2.509ex;" alt="v_{1}-v_{2}\in A"/></span> implies <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(v_{1})-f(v_{2})\in B.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi>B</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(v_{1})-f(v_{2})\in B.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c06938eefccdb5e90e0d7873229c4d4535f2ab80" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.631ex; height:2.843ex;" alt="f(v_{1})-f(v_{2})\in B."/></span>
+</p><p>For <a href="/wiki/Linear_transformation" class="mw-redirect" title="Linear transformation">linear transformations</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f:V\to W}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <mi>V</mi>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mi>W</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:V\to W}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/574dffa1c85efaef6b6ef553ebd8ad9cf7f87fd6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:11.052ex; height:2.509ex;" alt="f:V\to W"/></span>, uniform continuity is equivalent to continuity.  This fact is frequently used implicitly in <a href="/wiki/Functional_analysis" title="Functional analysis">functional analysis</a> to extend a linear map off a dense subspace of a <a href="/wiki/Banach_space" title="Banach space">Banach space</a>.
+</p>
+<h2><span class="mw-headline" id="Generalization_to_uniform_spaces">Generalization to uniform spaces</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniform_continuity&amp;action=edit&amp;section=12" title="Edit section: Generalization to uniform spaces">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Just as the most natural and general setting for continuity is <a href="/wiki/Topological_space" title="Topological space">topological spaces</a>,
+the most natural and general setting for the study of <i>uniform</i> continuity are the <a href="/wiki/Uniform_space" title="Uniform space">uniform spaces</a>.
+A function <i>f</i>&#160;:&#160;<i>X</i>&#160;→&#160;<i>Y</i> between uniform spaces is called <i>uniformly continuous</i> if for every <a href="/wiki/Entourage_(topology)" class="mw-redirect" title="Entourage (topology)">entourage</a> <i>V</i> in <i>Y</i> there exists an entourage <i>U</i> in <i>X</i> such that for every (<i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>) in <i>U</i> we have (<i>f</i>(<i>x</i><sub>1</sub>), <i>f</i>(<i>x</i><sub>2</sub>)) in <i>V</i>.
+</p><p>In this setting, it is also true that uniformly continuous maps transform Cauchy sequences into Cauchy sequences.
+</p><p>Each compact Hausdorff space possesses exactly one uniform structure compatible with the topology. A consequence is a generalisation of the Heine-Cantor theorem: each continuous function from a compact Hausdorff space to a uniform space is uniformly continuous.
+</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniform_continuity&amp;action=edit&amp;section=13" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-FOOTNOTERusnockKerr-Lawson2005-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTERusnockKerr-Lawson2005_1-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFRusnockKerr-Lawson2005">Rusnock &amp; Kerr-Lawson 2005</a>.</span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Uniform_continuity&amp;action=edit&amp;section=14" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><cite class="citation book"><a href="/wiki/Nicolas_Bourbaki" title="Nicolas Bourbaki">Bourbaki, Nicolas</a>. <i>General Topology: Chapters 1–4</i> &#91;<i>Topologie Générale</i>&#93;. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-387-19374-X" title="Special:BookSources/0-387-19374-X"><bdi>0-387-19374-X</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=General+Topology%3A+Chapters+1%E2%80%934&amp;rft.isbn=0-387-19374-X&amp;rft.aulast=Bourbaki&amp;rft.aufirst=Nicolas&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniform+continuity" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style> Chapter II is a comprehensive reference of uniform spaces.</li>
+<li><cite class="citation book"><a href="/wiki/Jean_Dieudonn%C3%A9" title="Jean Dieudonné">Dieudonné, Jean</a> (1960). <i>Foundations of Modern Analysis</i>. Academic Press.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Foundations+of+Modern+Analysis&amp;rft.pub=Academic+Press&amp;rft.date=1960&amp;rft.aulast=Dieudonn%C3%A9&amp;rft.aufirst=Jean&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniform+continuity" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite class="citation book">Fitzpatrick, Patrick (2006). <i>Advanced Calculus</i>. Brooks/Cole. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-534-92612-6" title="Special:BookSources/0-534-92612-6"><bdi>0-534-92612-6</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Advanced+Calculus&amp;rft.pub=Brooks%2FCole&amp;rft.date=2006&amp;rft.isbn=0-534-92612-6&amp;rft.aulast=Fitzpatrick&amp;rft.aufirst=Patrick&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniform+continuity" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite class="citation book">Kelley, John L. (1955). <i>General topology</i>. Graduate Texts in Mathematics. Springer-Verlag. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-387-90125-6" title="Special:BookSources/0-387-90125-6"><bdi>0-387-90125-6</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=General+topology&amp;rft.series=Graduate+Texts+in+Mathematics&amp;rft.pub=Springer-Verlag&amp;rft.date=1955&amp;rft.isbn=0-387-90125-6&amp;rft.aulast=Kelley&amp;rft.aufirst=John+L.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniform+continuity" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFKudryavtsev2001" class="citation">Kudryavtsev, L.D. (2001) [1994], <a rel="nofollow" class="external text" href="https://www.encyclopediaofmath.org/index.php?title=Uniform_continuity&amp;oldid=12797">"Uniform continuity"</a>,  in <a href="/wiki/Michiel_Hazewinkel" title="Michiel Hazewinkel">Hazewinkel, Michiel</a> (ed.), <i><a href="/wiki/Encyclopedia_of_Mathematics" title="Encyclopedia of Mathematics">Encyclopedia of Mathematics</a></i>, Springer Science+Business Media B.V. / Kluwer Academic Publishers, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-55608-010-4" title="Special:BookSources/978-1-55608-010-4"><bdi>978-1-55608-010-4</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Uniform+continuity&amp;rft.btitle=Encyclopedia+of+Mathematics&amp;rft.pub=Springer+Science%2BBusiness+Media+B.V.+%2F+Kluwer+Academic+Publishers&amp;rft.date=2001&amp;rft.isbn=978-1-55608-010-4&amp;rft.aulast=Kudryavtsev&amp;rft.aufirst=L.D.&amp;rft_id=https%3A%2F%2Fwww.encyclopediaofmath.org%2Findex.php%3Ftitle%3DUniform_continuity%26oldid%3D12797&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniform+continuity" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite class="citation book"><a href="/wiki/Walter_Rudin" title="Walter Rudin">Rudin, Walter</a> (1976). <i>Principles of Mathematical Analysis</i>. New York: <a href="/wiki/McGraw-Hill" class="mw-redirect" title="McGraw-Hill">McGraw-Hill</a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-07-054235-8" title="Special:BookSources/978-0-07-054235-8"><bdi>978-0-07-054235-8</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Principles+of+Mathematical+Analysis&amp;rft.place=New+York&amp;rft.pub=McGraw-Hill&amp;rft.date=1976&amp;rft.isbn=978-0-07-054235-8&amp;rft.aulast=Rudin&amp;rft.aufirst=Walter&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniform+continuity" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFRusnockKerr-Lawson2005" class="citation">Rusnock, P.; Kerr-Lawson, A. (2005), "Bolzano and uniform continuity", <i>Historia Mathematica</i>, <b>32</b> (3): 303–311, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1016%2Fj.hm.2004.11.003">10.1016/j.hm.2004.11.003</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Historia+Mathematica&amp;rft.atitle=Bolzano+and+uniform+continuity&amp;rft.volume=32&amp;rft.issue=3&amp;rft.pages=303-311&amp;rft.date=2005&amp;rft_id=info%3Adoi%2F10.1016%2Fj.hm.2004.11.003&amp;rft.aulast=Rusnock&amp;rft.aufirst=P.&amp;rft.au=Kerr-Lawson%2C+A.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniform+continuity" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1241
+Cached time: 20190720044131
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision]
+CPU time usage: 0.352 seconds
+Real time usage: 0.488 seconds
+Preprocessor visited node count: 773/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 11285/2097152 bytes
+Template argument size: 391/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 1/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 18551/5000000 bytes
+Number of Wikibase entities loaded: 1/400
+Lua time usage: 0.146/10.000 seconds
+Lua memory usage: 2.8 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  266.177      1 -total
+ 42.47%  113.041      5 Template:Cite_book
+ 20.00%   53.244      2 Template:Citation
+ 18.71%   49.794      1 Template:Short_description
+ 17.50%   46.590      1 Template:Pagetype
+  5.96%   15.862      1 Template:SpringerEOM
+  5.34%   14.221      1 Template:Reflist
+  4.21%   11.211      1 Template:Sfn
+  2.56%    6.825      1 Template:Harv
+  1.25%    3.328      1 Template:Main_other
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:32337-0!canonical!math=5 and timestamp 20190720044131 and revision id 907054527
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Uniform_continuity&amp;oldid=907054527">https://en.wikipedia.org/w/index.php?title=Uniform_continuity&amp;oldid=907054527</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Continuous_mappings" title="Category:Continuous mappings">Continuous mappings</a></li><li><a href="/wiki/Category:Calculus" title="Category:Calculus">Calculus</a></li><li><a href="/wiki/Category:Mathematical_analysis" title="Category:Mathematical analysis">Mathematical analysis</a></li><li><a href="/wiki/Category:General_topology" title="Category:General topology">General topology</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Uniform+continuity" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Uniform+continuity" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Uniform_continuity" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Uniform_continuity" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Uniform_continuity">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Uniform_continuity&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Uniform_continuity&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Uniform_continuity" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Uniform_continuity" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Uniform_continuity&amp;oldid=907054527" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Uniform_continuity&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q741865" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Uniform_continuity&amp;id=907054527" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Uniform+continuity">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Uniform+continuity&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Uniform_continuity&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-bg"><a href="https://bg.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B2%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%BD%D0%B0_%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D0%BA%D1%8A%D1%81%D0%BD%D0%B0%D1%82%D0%BE%D1%81%D1%82" title="Равномерна непрекъснатост – Bulgarian" lang="bg" hreflang="bg" class="interlanguage-link-target">Български</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Continu%C3%AFtat_uniforme" title="Continuïtat uniforme – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Stejnom%C4%9Brn%C4%9B_spojit%C3%A1_funkce" title="Stejnoměrně spojitá funkce – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-cy"><a href="https://cy.wikipedia.org/wiki/Di-dorredd_unffurf" title="Di-dorredd unffurf – Welsh" lang="cy" hreflang="cy" class="interlanguage-link-target">Cymraeg</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Gleichm%C3%A4%C3%9Fige_Stetigkeit" title="Gleichmäßige Stetigkeit – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-et"><a href="https://et.wikipedia.org/wiki/%C3%9Chtlane_pidevus" title="Ühtlane pidevus – Estonian" lang="et" hreflang="et" class="interlanguage-link-target">Eesti</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Continuidad_uniforme" title="Continuidad uniforme – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Continuit%C3%A9_uniforme" title="Continuité uniforme – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-gl"><a href="https://gl.wikipedia.org/wiki/Continuidade_uniforme" title="Continuidade uniforme – Galician" lang="gl" hreflang="gl" class="interlanguage-link-target">Galego</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EA%B7%A0%EB%93%B1_%EC%97%B0%EC%86%8D_%ED%95%A8%EC%88%98" title="균등 연속 함수 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-hr"><a href="https://hr.wikipedia.org/wiki/Jednolika_neprekidnost_funkcije" title="Jednolika neprekidnost funkcije – Croatian" lang="hr" hreflang="hr" class="interlanguage-link-target">Hrvatski</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Continuit%C3%A0_uniforme" title="Continuità uniforme – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%94_%D7%A8%D7%A6%D7%99%D7%A4%D7%94_%D7%91%D7%9E%D7%99%D7%93%D7%94_%D7%A9%D7%95%D7%95%D7%94" title="פונקציה רציפה במידה שווה – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-kk"><a href="https://kk.wikipedia.org/wiki/%D0%91%D1%96%D1%80%D2%9B%D0%B0%D0%BB%D1%8B%D0%BF%D1%82%D1%8B_%D2%AF%D0%B7%D1%96%D0%BB%D1%96%D1%81%D1%81%D1%96%D0%B7_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F" title="Бірқалыпты үзіліссіз функция – Kazakh" lang="kk" hreflang="kk" class="interlanguage-link-target">Қазақша</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/Egyenletesen_folytonos_f%C3%BCggv%C3%A9ny" title="Egyenletesen folytonos függvény – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-mk"><a href="https://mk.wikipedia.org/wiki/%D0%A0%D0%B0%D0%BC%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%BD%D0%B0_%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D0%BA%D0%B8%D0%BD%D0%B0%D1%82%D0%BE%D1%81%D1%82" title="Рамномерна непрекинатост – Macedonian" lang="mk" hreflang="mk" class="interlanguage-link-target">Македонски</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Uniforme_continu%C3%AFteit" title="Uniforme continuïteit – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E4%B8%80%E6%A7%98%E9%80%A3%E7%B6%9A" title="一様連続 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Funkcja_jednostajnie_ci%C4%85g%C5%82a" title="Funkcja jednostajnie ciągła – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Continuidade_uniforme" title="Continuidade uniforme – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="https://ro.wikipedia.org/wiki/Continuitate_uniform%C4%83" title="Continuitate uniformă – Romanian" lang="ro" hreflang="ro" class="interlanguage-link-target">Română</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B2%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%BD%D0%B0%D1%8F_%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%BE%D1%81%D1%82%D1%8C" title="Равномерная непрерывность – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B2%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%BD%D0%B0_%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D0%BA%D0%B8%D0%B4%D0%BD%D0%BE%D1%81%D1%82" title="Равномерна непрекидност – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Tasainen_jatkuvuus" title="Tasainen jatkuvuus – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Likformig_kontinuitet" title="Likformig kontinuitet – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-tg"><a href="https://tg.wikipedia.org/wiki/%D0%91%D0%B5%D1%84%D0%BE%D1%81%D0%B8%D0%BB%D0%B0%D0%B3%D0%B8%D0%B8_%D0%BC%D1%83%D0%BD%D1%82%D0%B0%D0%B7%D0%B0%D0%BC" title="Бефосилагии мунтазам – Tajik" lang="tg" hreflang="tg" class="interlanguage-link-target">Тоҷикӣ</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%A0%D1%96%D0%B2%D0%BD%D0%BE%D0%BC%D1%96%D1%80%D0%BD%D0%B0_%D0%BD%D0%B5%D0%BF%D0%B5%D1%80%D0%B5%D1%80%D0%B2%D0%BD%D1%96%D1%81%D1%82%D1%8C" title="Рівномірна неперервність – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E4%B8%80%E8%87%B4%E8%BF%9E%E7%BB%AD" title="一致连续 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q741865#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 20 July 2019, at 04:41<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Uniform_continuity&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.352","walltime":"0.488","ppvisitednodes":{"value":773,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":11285,"limit":2097152},"templateargumentsize":{"value":391,"limit":2097152},"expansiondepth":{"value":7,"limit":40},"expensivefunctioncount":{"value":1,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":18551,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  266.177      1 -total"," 42.47%  113.041      5 Template:Cite_book"," 20.00%   53.244      2 Template:Citation"," 18.71%   49.794      1 Template:Short_description"," 17.50%   46.590      1 Template:Pagetype","  5.96%   15.862      1 Template:SpringerEOM","  5.34%   14.221      1 Template:Reflist","  4.21%   11.211      1 Template:Sfn","  2.56%    6.825      1 Template:Harv","  1.25%    3.328      1 Template:Main_other"]},"scribunto":{"limitreport-timeusage":{"value":"0.146","limit":"10.000"},"limitreport-memusage":{"value":2937000,"limit":52428800}},"cachereport":{"origin":"mw1241","timestamp":"20190720044131","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Uniform continuity","url":"https:\/\/en.wikipedia.org\/wiki\/Uniform_continuity","sameAs":"http:\/\/www.wikidata.org\/entity\/Q741865","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q741865","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-01-24T15:47:21Z","dateModified":"2019-07-20T04:41:31Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/b\/b1\/Continuity_and_uniform_continuity_2.gif","headline":"function limiting the \"growth\" of distances of outputs uniformly across its domain"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":110,"wgHostname":"mw1274"});});</script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Memory hierarchy - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Memory_hierarchy","wgTitle":"Memory hierarchy","wgCurRevisionId":872104906,"wgRevisionId":872104906,"wgArticleId":137146,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with citations lacking titles","CS1 errors: chapter ignored","Pages with citations having bare URLs","All articles with unsourced statements","Articles with unsourced statements from September 2009","Computer architecture","Computer data storage","Hierarchy"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August",
+"September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Memory_hierarchy","wgRelevantArticleId":137146,"wgRequestId":"XUm7ZQpAICkAAEuDPF4AAADV","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q1589327","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready"
+,"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.cite.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher",
+"ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/ComputerMemoryHierarchy.svg/1200px-ComputerMemoryHierarchy.svg.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Memory_hierarchy"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Memory_hierarchy&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Memory_hierarchy&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Memory_hierarchy"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Memory_hierarchy rootpage-Memory_hierarchy skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Memory hierarchy</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/File:ComputerMemoryHierarchy.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0c/ComputerMemoryHierarchy.svg/300px-ComputerMemoryHierarchy.svg.png" decoding="async" width="300" height="223" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/0c/ComputerMemoryHierarchy.svg/450px-ComputerMemoryHierarchy.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/0c/ComputerMemoryHierarchy.svg/600px-ComputerMemoryHierarchy.svg.png 2x" data-file-width="826" data-file-height="614" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:ComputerMemoryHierarchy.svg" class="internal" title="Enlarge"></a></div>Diagram of the computer memory hierarchy</div></div></div>
+<p>In <a href="/wiki/Computer_architecture" title="Computer architecture">computer architecture</a>, the <b>memory hierarchy</b> separates <a href="/wiki/Computer_storage" class="mw-redirect" title="Computer storage">computer storage</a> into a hierarchy based on response time. Since response time, complexity, and capacity are related, the levels may also be distinguished by their performance and controlling technologies.<sup id="cite_ref-toyzee_1-0" class="reference"><a href="#cite_note-toyzee-1">&#91;1&#93;</a></sup> Memory hierarchy affects performance in computer architectural design, algorithm predictions, and lower level <a href="/wiki/Computer_programming" title="Computer programming">programming</a> constructs involving <a href="/wiki/Locality_of_reference" title="Locality of reference">locality of reference</a>. 
+</p><p>Designing for high performance requires considering the restrictions of the memory hierarchy, i.e. the size and capabilities of each component. Each of the various components can be viewed as part of a hierarchy of memories (m<sub>1</sub>,m<sub>2</sub>,...,m<sub>n</sub>) in which each member m<sub>i</sub> is typically smaller and faster than the next highest member m<sub>i+1</sub> of the hierarchy. To limit waiting by higher levels, a lower level will respond by filling a buffer and then signaling for activating the transfer.
+</p><p>There are four major storage levels.<sup id="cite_ref-toyzee_1-1" class="reference"><a href="#cite_note-toyzee-1">&#91;1&#93;</a></sup>
+</p>
+<ol><li><i>Internal</i> &#8211; <a href="/wiki/Processor_register" title="Processor register">Processor registers</a> and <a href="/wiki/CPU_cache" title="CPU cache">cache</a>.</li>
+<li>Main &#8211; the system <a href="/wiki/Random-access_memory" title="Random-access memory">RAM</a> and controller cards.</li>
+<li>On-line mass storage &#8211; Secondary storage.</li>
+<li>Off-line bulk storage &#8211; Tertiary and Off-line storage.</li></ol>
+<p>This is a general memory hierarchy structuring. Many other structures are useful.  For example, a paging algorithm may be considered as a level for <a href="/wiki/Virtual_memory" title="Virtual memory">virtual memory</a> when designing a <a href="/wiki/Computer_architecture" title="Computer architecture">computer architecture</a>, and one can include a level of <a href="/wiki/Nearline_storage" title="Nearline storage">nearline storage</a> between online and offline storage.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Properties_of_the_technologies_in_the_memory_hierarchy"><span class="tocnumber">1</span> <span class="toctext">Properties of the technologies in the memory hierarchy</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Examples"><span class="tocnumber">2</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Properties_of_the_technologies_in_the_memory_hierarchy">Properties of the technologies in the memory hierarchy</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Memory_hierarchy&amp;action=edit&amp;section=1" title="Edit section: Properties of the technologies in the memory hierarchy">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>Adding complexity slows down the <i>memory hierarchy</i>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup></li>
+<li>CMOx memory technology stretches the Flash space in the memory hierarchy<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup></li>
+<li>One of the main ways to increase system performance is minimising how far down the memory hierarchy one has to go to manipulate data.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup></li>
+<li>Latency and bandwidth are two metrics associated with caches and. Neither of them is uniform, but is specific to a particular component of the memory hierarchy.<sup id="cite_ref-sun_5-0" class="reference"><a href="#cite_note-sun-5">&#91;5&#93;</a></sup></li>
+<li>Predicting where in the memory hierarchy the data resides is difficult.<sup id="cite_ref-sun_5-1" class="reference"><a href="#cite_note-sun-5">&#91;5&#93;</a></sup></li>
+<li>...the location in the memory hierarchy dictates the time required for the prefetch to occur.<sup id="cite_ref-sun_5-2" class="reference"><a href="#cite_note-sun-5">&#91;5&#93;</a></sup></li></ul>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Memory_hierarchy&amp;action=edit&amp;section=2" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/File:Hwloc.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/95/Hwloc.png/300px-Hwloc.png" decoding="async" width="300" height="139" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/95/Hwloc.png/450px-Hwloc.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/95/Hwloc.png/600px-Hwloc.png 2x" data-file-width="1450" data-file-height="670" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Hwloc.png" class="internal" title="Enlarge"></a></div>Memory hierarchy of an AMD Bulldozer server.</div></div></div>
+<p>The number of levels in the memory hierarchy and the performance at each level has increased over time. The type of memory or storage components also change historically <sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup>.  For example, the memory hierarchy of an Intel Haswell Mobile <sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup> processor circa 2013 is:
+</p>
+<ul><li><a href="/wiki/Processor_register" title="Processor register">Processor registers</a> &#8211; the fastest possible access (usually 1 CPU cycle). A few thousand bytes in size</li>
+<li><a href="/wiki/CPU_cache" title="CPU cache">Cache</a>
+<ul><li>Level 0 (L0) <a href="/wiki/Micro-operation" title="Micro-operation">Micro operations</a> cache &#8211; 6 <a href="/wiki/KiB" class="mw-redirect" title="KiB">KiB</a> <sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup> in size</li>
+<li>Level 1 (L1) <a href="/wiki/Opcode" title="Opcode">Instruction</a> cache &#8211; 128 KiB in size</li>
+<li>Level 1 (L1) Data cache &#8211; 128 KiB in size. Best access speed is around 700 <a href="/wiki/GiB" class="mw-redirect" title="GiB">GiB</a>/second<sup id="cite_ref-sisd_qa_f_mem_hsw_9-0" class="reference"><a href="#cite_note-sisd_qa_f_mem_hsw-9">&#91;9&#93;</a></sup></li>
+<li>Level 2 (L2) Instruction and data (shared) &#8211; 1 <a href="/wiki/MiB" class="mw-redirect" title="MiB">MiB</a> in size. Best access speed is around 200 GiB/second<sup id="cite_ref-sisd_qa_f_mem_hsw_9-1" class="reference"><a href="#cite_note-sisd_qa_f_mem_hsw-9">&#91;9&#93;</a></sup></li>
+<li>Level 3 (L3) Shared cache &#8211; 6 MiB in size. Best access speed is around 100 GB/second<sup id="cite_ref-sisd_qa_f_mem_hsw_9-2" class="reference"><a href="#cite_note-sisd_qa_f_mem_hsw-9">&#91;9&#93;</a></sup></li>
+<li>Level 4 (L4) Shared cache &#8211; 128 MiB in size. Best access speed is around 40 GB/second<sup id="cite_ref-sisd_qa_f_mem_hsw_9-3" class="reference"><a href="#cite_note-sisd_qa_f_mem_hsw-9">&#91;9&#93;</a></sup></li></ul></li>
+<li><a href="/wiki/Computer_memory" title="Computer memory">Main memory</a> (<a href="/wiki/Primary_storage" class="mw-redirect" title="Primary storage">Primary storage</a>) &#8211; <a href="/wiki/GiB" class="mw-redirect" title="GiB">Gigabytes</a> in size. Best access speed is around 10 GB/second.<sup id="cite_ref-sisd_qa_f_mem_hsw_9-4" class="reference"><a href="#cite_note-sisd_qa_f_mem_hsw-9">&#91;9&#93;</a></sup> In the case of a <a href="/wiki/Non-Uniform_Memory_Access" class="mw-redirect" title="Non-Uniform Memory Access">NUMA</a> machine, access times may not be uniform</li>
+<li><a href="/wiki/Disk_storage" title="Disk storage">Disk storage</a> (<a href="/wiki/Secondary_storage" class="mw-redirect" title="Secondary storage">Secondary storage</a>) &#8211; <a href="/wiki/TiB" class="mw-redirect" title="TiB">Terabytes</a> in size. As of 2017, best access speed is from a consumer <a href="/wiki/Solid-state_drive" title="Solid-state drive">solid state drive</a> is about 2000 MB/second <sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup></li>
+<li><a href="/wiki/Nearline_storage" title="Nearline storage">Nearline storage</a> (<a href="/wiki/Tertiary_storage" class="mw-redirect" title="Tertiary storage">Tertiary storage</a>) &#8211; Up to <a href="/wiki/Exabytes" class="mw-redirect" title="Exabytes">exabytes</a> in size.  As of 2013, best access speed is about 160 MB/second<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup></li>
+<li><a href="/wiki/Offline_storage" class="mw-redirect" title="Offline storage">Offline storage</a></li></ul>
+<p>The lower levels of the hierarchy – from disks downwards – are also known as <a href="/wiki/Tiered_storage" class="mw-redirect" title="Tiered storage">tiered storage</a>. The formal distinction between online, nearline, and offline storage is:<sup id="cite_ref-pearson2010_12-0" class="reference"><a href="#cite_note-pearson2010-12">&#91;12&#93;</a></sup>
+</p>
+<ul><li>Online storage is immediately available for I/O.</li>
+<li>Nearline storage is not immediately available, but can be made online quickly without human intervention.</li>
+<li>Offline storage is not immediately available, and requires some human intervention to bring online.</li></ul>
+<p>For example, always-on spinning disks are online, while spinning disks that spin-down, such as massive array of idle disk (<a href="/wiki/MAID" class="mw-redirect" title="MAID">MAID</a>), are nearline. Removable media such as tape cartridges that can be automatically loaded, as in a <a href="/wiki/Tape_library" title="Tape library">tape library</a>, are nearline, while cartridges that must be manually loaded are offline.
+</p><p>Most modern <a href="/wiki/Central_processing_unit" title="Central processing unit">CPUs</a> are so fast that for most program workloads, the <a href="https://en.wiktionary.org/wiki/bottleneck" class="extiw" title="wikt:bottleneck">bottleneck</a> is the <a href="/wiki/Locality_of_reference" title="Locality of reference">locality of reference</a> of memory accesses and the efficiency of the <a href="/wiki/CPU_cache" title="CPU cache">caching</a> and memory transfer between different levels of the hierarchy<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (September 2009)">citation needed</span></a></i>&#93;</sup>. As a result, the CPU spends much of its time idling, waiting for memory I/O to complete.  This is sometimes called the <i>space cost</i>, as a larger memory object is more likely to overflow a small/fast level and require use of a larger/slower level. The resulting load on memory use is known as <i>pressure</i> (respectively <i>register pressure</i>, <i>cache pressure</i>, and (main) <i>memory pressure</i>). Terms for data being missing from a higher level and needing to be fetched from a lower level are, respectively: <a href="/wiki/Register_spilling" class="mw-redirect" title="Register spilling">register spilling</a> (due to <a href="/wiki/Register_pressure" class="mw-redirect" title="Register pressure">register pressure</a>: register to cache), <a href="/wiki/Cache_miss" class="mw-redirect" title="Cache miss">cache miss</a> (cache to main memory), and (hard) <a href="/wiki/Page_fault" title="Page fault">page fault</a> (main memory to disk).
+</p><p>Modern <a href="/wiki/Programming_language" title="Programming language">programming languages</a> mainly assume two levels of memory, main memory and disk storage, though in <a href="/wiki/Assembly_language" title="Assembly language">assembly language</a> and <a href="/wiki/Inline_assembler" title="Inline assembler">inline assemblers</a> in languages such as <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>, registers can be directly accessed. Taking optimal advantage of the memory hierarchy requires the cooperation of programmers, hardware, and compilers (as well as underlying support from the operating system):
+</p>
+<ul><li><b>Programmers</b> are responsible for moving data between disk and memory through file I/O.</li>
+<li><b>Hardware</b> is responsible for moving data between memory and caches.</li>
+<li><b><a href="/wiki/Compiler_optimization" class="mw-redirect" title="Compiler optimization">Optimizing compilers</a></b> are responsible for generating code that, when executed, will cause the hardware to use caches and registers efficiently.</li></ul>
+<p>Many programmers assume one level of memory.  This works fine until the application hits a performance wall.  Then the memory hierarchy will be assessed during <a href="/wiki/Code_refactoring" title="Code refactoring">code refactoring</a>.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Memory_hierarchy&amp;action=edit&amp;section=3" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/w/index.php?title=Memory_characteristics&amp;action=edit&amp;redlink=1" class="new" title="Memory characteristics (page does not exist)">Memory characteristics</a></li>
+<li><a href="/wiki/Cache_Hierarchy" class="mw-redirect" title="Cache Hierarchy">Cache Hierarchy</a></li>
+<li><a href="/wiki/Locality_of_reference#Spatial_and_temporal_locality_usage" title="Locality of reference">Use of spatial and temporal locality: hierarchical memory</a></li>
+<li><a href="/wiki/Cache_(computing)#Buffer_vs._cache" title="Cache (computing)">Buffer vs. cache</a></li>
+<li><a href="/wiki/CPU_cache#Cache_hierarchy_in_a_modern_processor" title="CPU cache">Cache hierarchy in a modern processor</a></li>
+<li><a href="/wiki/Memory_wall" class="mw-redirect" title="Memory wall">Memory wall</a></li>
+<li><a href="/wiki/Computer_memory" title="Computer memory">Computer memory</a></li>
+<li><a href="/wiki/Hierarchical_storage_management" title="Hierarchical storage management">Hierarchical storage management</a></li>
+<li><a href="/wiki/Cloud_storage" title="Cloud storage">Cloud storage</a></li>
+<li><a href="/wiki/Memory_access_pattern" title="Memory access pattern">Memory access pattern</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Memory_hierarchy&amp;action=edit&amp;section=4" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-toyzee-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-toyzee_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-toyzee_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation book">Toy, Wing; Zee, Benjamin (1986). <i>Computer Hardware/Software Architecture</i>. Prentice Hall. p.&#160;30. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-13-163502-6" title="Special:BookSources/0-13-163502-6"><bdi>0-13-163502-6</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Computer+Hardware%2FSoftware+Architecture&amp;rft.pages=30&amp;rft.pub=Prentice+Hall&amp;rft.date=1986&amp;rft.isbn=0-13-163502-6&amp;rft.aulast=Toy&amp;rft.aufirst=Wing&amp;rft.au=Zee%2C+Benjamin&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemory+hierarchy" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a href="/wiki/Write-combining" class="mw-redirect" title="Write-combining">Write-combining</a></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20090805170055/http://www.unitysemi.com/applications-memory-hierarchy.html">"Memory Hierarchy"</a>. Unitity Semiconductor Corporation. Archived from <a rel="nofollow" class="external text" href="http://www.unitysemi.com/applications-memory-hierarchy.html">the original</a> on 5 August 2009<span class="reference-accessdate">. Retrieved <span class="nowrap">16 September</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Memory+Hierarchy&amp;rft.pub=Unitity+Semiconductor+Corporation&amp;rft_id=http%3A%2F%2Fwww.unitysemi.com%2Fapplications-memory-hierarchy.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemory+hierarchy" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web">Pádraig Brady. <a rel="nofollow" class="external text" href="http://www.pixelbeat.org/docs/memory_hierarchy/">"Multi-Core"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">16 September</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Multi-Core&amp;rft.au=P%C3%A1draig+Brady&amp;rft_id=http%3A%2F%2Fwww.pixelbeat.org%2Fdocs%2Fmemory_hierarchy%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemory+hierarchy" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-sun-5"><span class="mw-cite-backlink">^ <a href="#cite_ref-sun_5-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-sun_5-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-sun_5-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><cite class="citation journal">van der Pas, Ruud (2002). Santa Clara, California: Sun Microsystems: 26. 817-0742-10 <a rel="nofollow" class="external text" href="http://www.sun.com/">http://www.sun.com/</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.pages=26&amp;rft.date=2002&amp;rft.aulast=van+der+Pas&amp;rft.aufirst=Ruud&amp;rft_id=http%3A%2F%2Fwww.sun.com%2Fblueprints%2F1102%2F817-0742.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemory+hierarchy" class="Z3988"></span> <span class="cs1-visible-error error citation-comment">Missing or empty <code class="cs1-code">&#124;title=</code> (<a href="/wiki/Help:CS1_errors#citation_missing_title" title="Help:CS1 errors">help</a>); </span><span class="cs1-visible-error error citation-comment"><code class="cs1-code">&#124;contribution=</code> ignored (<a href="/wiki/Help:CS1_errors#chapter_ignored" title="Help:CS1 errors">help</a>)</span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.computerhistory.org/timeline/memory-storage/">"Memory &amp; Storage - Timeline of Computer History - Computer History Museum"</a>. <i>www.computerhistory.org</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.computerhistory.org&amp;rft.atitle=Memory+%26+Storage+-+Timeline+of+Computer+History+-+Computer+History+Museum&amp;rft_id=http%3A%2F%2Fwww.computerhistory.org%2Ftimeline%2Fmemory-storage%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemory+hierarchy" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation web">Crothers, Brooke. <a rel="nofollow" class="external text" href="http://news.cnet.com/8301-13579_3-57609045-37/dissecting-intels-top-graphics-in-apples-15-inch-macbook-pro/">"Dissecting Intel's top graphics in Apple's 15-inch MacBook Pro - CNET"</a>. News.cnet.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-07-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Dissecting+Intel%27s+top+graphics+in+Apple%27s+15-inch+MacBook+Pro+-+CNET&amp;rft.pub=News.cnet.com&amp;rft.aulast=Crothers&amp;rft.aufirst=Brooke&amp;rft_id=http%3A%2F%2Fnews.cnet.com%2F8301-13579_3-57609045-37%2Fdissecting-intels-top-graphics-in-apples-15-inch-macbook-pro%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemory+hierarchy" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.anandtech.com/show/6355/intels-haswell-architecture/6">"Intel's Haswell Architecture Analyzed: Building a New PC and a New Intel"</a>. AnandTech<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-07-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Intel%27s+Haswell+Architecture+Analyzed%3A+Building+a+New+PC+and+a+New+Intel&amp;rft.pub=AnandTech&amp;rft_id=http%3A%2F%2Fwww.anandtech.com%2Fshow%2F6355%2Fintels-haswell-architecture%2F6&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemory+hierarchy" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-sisd_qa_f_mem_hsw-9"><span class="mw-cite-backlink">^ <a href="#cite_ref-sisd_qa_f_mem_hsw_9-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-sisd_qa_f_mem_hsw_9-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-sisd_qa_f_mem_hsw_9-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-sisd_qa_f_mem_hsw_9-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-sisd_qa_f_mem_hsw_9-4"><sup><i><b>e</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.sisoftware.co.uk/?d=qa&amp;f=mem_hsw">"SiSoftware Zone"</a>. Sisoftware.co.uk<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-07-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=SiSoftware+Zone&amp;rft.pub=Sisoftware.co.uk&amp;rft_id=http%3A%2F%2Fwww.sisoftware.co.uk%2F%3Fd%3Dqa%26f%3Dmem_hsw&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemory+hierarchy" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.storagereview.com/samsung_960_pro_m2_nvme_ssd_review">"Samsung 960 Pro M.2 NVMe SSD Review"</a>. storagereview.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2017-04-13</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Samsung+960+Pro+M.2+NVMe+SSD+Review&amp;rft.pub=storagereview.com&amp;rft_id=http%3A%2F%2Fwww.storagereview.com%2Fsamsung_960_pro_m2_nvme_ssd_review&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemory+hierarchy" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20110727052050/http://www.lto.org/technology/generations.html">"Ultrium - LTO Technology - Ultrium GenerationsLTO"</a>. Lto.org. Archived from <a rel="nofollow" class="external text" href="http://www.lto.org/technology/generations.html">the original</a> on 2011-07-27<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-07-31</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Ultrium+-+LTO+Technology+-+Ultrium+GenerationsLTO&amp;rft.pub=Lto.org&amp;rft_id=http%3A%2F%2Fwww.lto.org%2Ftechnology%2Fgenerations.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemory+hierarchy" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-pearson2010-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-pearson2010_12-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Pearson, Tony (2010). <a rel="nofollow" class="external text" href="https://www.ibm.com/developerworks/community/blogs/InsideSystemStorage/entry/the_correct_use_of_the_term_nearline2">"Correct use of the term Nearline"</a>. <i>IBM Developerworks, Inside System Storage</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-08-16</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=IBM+Developerworks%2C+Inside+System+Storage&amp;rft.atitle=Correct+use+of+the+term+Nearline.&amp;rft.date=2010&amp;rft.aulast=Pearson&amp;rft.aufirst=Tony&amp;rft_id=https%3A%2F%2Fwww.ibm.com%2Fdeveloperworks%2Fcommunity%2Fblogs%2FInsideSystemStorage%2Fentry%2Fthe_correct_use_of_the_term_nearline2&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemory+hierarchy" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+</ol></div></div>
+<!-- 
+NewPP limit report
+Parsed by mw1320
+Cached time: 20190715012929
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision]
+CPU time usage: 0.204 seconds
+Real time usage: 0.273 seconds
+Preprocessor visited node count: 736/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 17929/2097152 bytes
+Template argument size: 582/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 1/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 33436/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.106/10.000 seconds
+Lua memory usage: 3.45 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  213.532      1 -total
+ 63.42%  135.426      1 Template:Reflist
+ 36.51%   77.968      1 Template:Citation_needed
+ 34.22%   73.080      1 Template:Cite_book
+ 28.33%   60.489      1 Template:Fix
+ 18.67%   39.873      2 Template:Category_handler
+ 15.93%   34.009      9 Template:Cite_web
+  7.58%   16.184      1 Template:Delink
+  3.01%    6.432      1 Template:Cite_journal
+  1.70%    3.625      1 Template:Fix/category
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:137146-0!canonical and timestamp 20190715012928 and revision id 872104906
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Memory_hierarchy&amp;oldid=872104906">https://en.wikipedia.org/w/index.php?title=Memory_hierarchy&amp;oldid=872104906</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Computer_architecture" title="Category:Computer architecture">Computer architecture</a></li><li><a href="/wiki/Category:Computer_data_storage" title="Category:Computer data storage">Computer data storage</a></li><li><a href="/wiki/Category:Hierarchy" title="Category:Hierarchy">Hierarchy</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_with_citations_lacking_titles" title="Category:Pages with citations lacking titles">Pages with citations lacking titles</a></li><li><a href="/wiki/Category:CS1_errors:_chapter_ignored" title="Category:CS1 errors: chapter ignored">CS1 errors: chapter ignored</a></li><li><a href="/wiki/Category:Pages_with_citations_having_bare_URLs" title="Category:Pages with citations having bare URLs">Pages with citations having bare URLs</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_September_2009" title="Category:Articles with unsourced statements from September 2009">Articles with unsourced statements from September 2009</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Memory+hierarchy" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Memory+hierarchy" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Memory_hierarchy" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Memory_hierarchy" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Memory_hierarchy">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Memory_hierarchy&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Memory_hierarchy&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Memory_hierarchy" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Memory_hierarchy" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Memory_hierarchy&amp;oldid=872104906" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Memory_hierarchy&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1589327" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Memory_hierarchy&amp;id=872104906" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Memory+hierarchy">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Memory+hierarchy&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Memory_hierarchy&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Jerarquia_de_mem%C3%B2ria" title="Jerarquia de memòria – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Speicherhierarchie" title="Speicherhierarchie – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Jerarqu%C3%ADa_de_memoria" title="Jerarquía de memoria – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%B3%D9%84%D8%B3%D9%84%D9%87%E2%80%8C%D9%85%D8%B1%D8%A7%D8%AA%D8%A8_%D8%AD%D8%A7%D9%81%D8%B8%D9%87" title="سلسله‌مراتب حافظه – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Hi%C3%A9rarchie_de_m%C3%A9moire" title="Hiérarchie de mémoire – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EB%A6%AC_%EA%B3%84%EC%B8%B5_%EA%B5%AC%EC%A1%B0" title="메모리 계층 구조 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-id"><a href="https://id.wikipedia.org/wiki/Hirarki_memori" title="Hirarki memori – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%9E%D7%93%D7%A8%D7%92_%D7%96%D7%99%D7%9B%D7%A8%D7%95%D7%9F" title="מדרג זיכרון – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Geheugenhi%C3%ABrarchie" title="Geheugenhiërarchie – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Hierarquia_de_mem%C3%B3ria" title="Hierarquia de memória – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%98%D0%B5%D1%80%D0%B0%D1%80%D1%85%D0%B8%D1%8F_%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8" title="Иерархия памяти – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/%D0%9C%D0%B5%D0%BC%D0%BE%D1%80%D0%B8%D1%98%D1%81%D0%BA%D0%B0_%D1%85%D0%B8%D1%98%D0%B5%D1%80%D0%B0%D1%80%D1%85%D0%B8%D1%98%D0%B0" title="Меморијска хијерархија – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Bellek_hiyerar%C5%9Fisi" title="Bellek hiyerarşisi – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%86%D1%94%D1%80%D0%B0%D1%80%D1%85%D1%96%D1%8F_%D0%BF%D0%B0%D0%BC%27%D1%8F%D1%82%D1%96" title="Ієрархія пам&#039;яті – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E8%A8%98%E6%86%B6%E9%AB%94%E9%9A%8E%E5%B1%A4" title="記憶體階層 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1589327#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 5 December 2018, at 05:05<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Memory_hierarchy&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.204","walltime":"0.273","ppvisitednodes":{"value":736,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":17929,"limit":2097152},"templateargumentsize":{"value":582,"limit":2097152},"expansiondepth":{"value":11,"limit":40},"expensivefunctioncount":{"value":1,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":33436,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  213.532      1 -total"," 63.42%  135.426      1 Template:Reflist"," 36.51%   77.968      1 Template:Citation_needed"," 34.22%   73.080      1 Template:Cite_book"," 28.33%   60.489      1 Template:Fix"," 18.67%   39.873      2 Template:Category_handler"," 15.93%   34.009      9 Template:Cite_web","  7.58%   16.184      1 Template:Delink","  3.01%    6.432      1 Template:Cite_journal","  1.70%    3.625      1 Template:Fix/category"]},"scribunto":{"limitreport-timeusage":{"value":"0.106","limit":"10.000"},"limitreport-memusage":{"value":3617676,"limit":52428800}},"cachereport":{"origin":"mw1320","timestamp":"20190715012929","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Memory hierarchy","url":"https:\/\/en.wikipedia.org\/wiki\/Memory_hierarchy","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1589327","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1589327","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-10-25T14:59:18Z","dateModified":"2018-12-05T05:05:17Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/0\/0c\/ComputerMemoryHierarchy.svg","headline":"computer architecture that separates storage into a hierarchy based on response time"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":121,"wgHostname":"mw1320"});});</script>
+</body>
+</html>

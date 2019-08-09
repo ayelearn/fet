@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Stone–Weierstrass theorem - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Stone–Weierstrass_theorem","wgTitle":"Stone–Weierstrass theorem","wgCurRevisionId":867254821,"wgRevisionId":867254821,"wgArticleId":28858,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["All articles with unsourced statements","Articles with unsourced statements from July 2018","Wikipedia articles with BNF identifiers","Wikipedia articles with GND identifiers","Wikipedia articles with LCCN identifiers","Wikipedia articles with SUDOC identifiers","Continuous mappings","Theorems in analysis","Theorems in approximation theory","1885 in mathematics","1937 in mathematics"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],
+"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Stone–Weierstrass_theorem","wgRelevantArticleId":28858,"wgRequestId":"XUm@IApAAD0AAF1cwi8AAACG","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Weierstrass_approximation_theorem","wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,
+"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgInternalRedirectTargetUrl":"/wiki/Stone%E2%80%93Weierstrass_theorem","wgWikibaseItemId":"Q939927","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect",
+"ext.cite.ux-enhancements","ext.math.scripts","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Stone%E2%80%93Weierstrass_theorem"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Stone%E2%80%93Weierstrass_theorem"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Stone–Weierstrass_theorem rootpage-Stone–Weierstrass_theorem skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Stone–Weierstrass theorem</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"><span class="mw-redirectedfrom">&#160;&#160;(Redirected from <a href="/w/index.php?title=Weierstrass_approximation_theorem&amp;redirect=no" class="mw-redirect" title="Weierstrass approximation theorem">Weierstrass approximation theorem</a>)</span></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>In <a href="/wiki/Mathematical_analysis" title="Mathematical analysis">mathematical analysis</a>, the <b>Weierstrass approximation theorem</b> states that every <a href="/wiki/Continuous_function" title="Continuous function">continuous function</a> defined on a closed <a href="/wiki/Interval_(mathematics)" title="Interval (mathematics)">interval</a> <span class="texhtml">[<i>a</i>, <i>b</i>]</span> can be <a href="/wiki/Uniform_convergence" title="Uniform convergence">uniformly approximated</a> as closely as desired by a <a href="/wiki/Polynomial" title="Polynomial">polynomial</a> function. Because polynomials are among the simplest functions, and because computers can directly evaluate polynomials, this theorem has both practical and theoretical relevance, especially in <a href="/wiki/Polynomial_interpolation" title="Polynomial interpolation">polynomial interpolation</a>. The original version of this result was established by <a href="/wiki/Karl_Weierstrass" title="Karl Weierstrass">Karl Weierstrass</a> in <a href="#Historical_works">1885</a> using the <a href="/wiki/Weierstrass_transform" title="Weierstrass transform">Weierstrass transform</a>.
+</p><p><a href="/wiki/Marshall_H._Stone" class="mw-redirect" title="Marshall H. Stone">Marshall H. Stone</a> considerably generalized the theorem (<a href="#CITEREFStone1937">Stone 1937</a>) and simplified the proof (<a href="#CITEREFStone1948">Stone 1948</a>).  His result is known as the <b>Stone–Weierstrass theorem</b>. The Stone–Weierstrass theorem generalizes the Weierstrass approximation theorem in two directions both regressive and progressive: instead of the real interval <span class="texhtml">[<i>a</i>, <i>b</i>]</span>, an arbitrary <a href="/wiki/Compact_space" title="Compact space">compact</a> <a href="/wiki/Hausdorff_space" title="Hausdorff space">Hausdorff space</a> <span class="texhtml mvar" style="font-style:italic;">X</span> is considered, and instead of the <a href="/wiki/Algebra_over_a_field" title="Algebra over a field">algebra</a> of polynomial functions, approximation with elements from more general subalgebras of <span class="texhtml">C(<i>X</i>)</span> is investigated.  The Stone–Weierstrass theorem is a vital result in the study of the algebra of <a href="/wiki/Continuous_functions_on_a_compact_Hausdorff_space" title="Continuous functions on a compact Hausdorff space">continuous functions on a compact Hausdorff space</a>.
+</p><p>Further, there is a generalization of the Stone–Weierstrass theorem to noncompact <a href="/wiki/Tychonoff_space" title="Tychonoff space">Tychonoff spaces</a>, namely, any continuous function on a Tychonoff space is approximated <a href="/wiki/Compact-open_topology" title="Compact-open topology">uniformly on compact sets</a> by algebras of the type appearing in the Stone–Weierstrass theorem and described below.
+</p><p>A different generalization of Weierstrass' original theorem is <a href="/wiki/Mergelyan%27s_theorem" title="Mergelyan&#39;s theorem">Mergelyan's theorem</a>, which generalizes it to functions defined on certain subsets of the <a href="/wiki/Complex_plane" title="Complex plane">complex plane</a>.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Weierstrass_approximation_theorem"><span class="tocnumber">1</span> <span class="toctext">Weierstrass approximation theorem</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Applications"><span class="tocnumber">1.1</span> <span class="toctext">Applications</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Stone–Weierstrass_theorem,_real_version"><span class="tocnumber">2</span> <span class="toctext">Stone–Weierstrass theorem, real version</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Locally_compact_version"><span class="tocnumber">2.1</span> <span class="toctext">Locally compact version</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Applications_2"><span class="tocnumber">2.2</span> <span class="toctext">Applications</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Stone–Weierstrass_theorem,_complex_version"><span class="tocnumber">3</span> <span class="toctext">Stone–Weierstrass theorem, complex version</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Stone–Weierstrass_theorem,_quaternion_version"><span class="tocnumber">4</span> <span class="toctext">Stone–Weierstrass theorem, quaternion version</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Stone–Weierstrass_theorem,_C*-algebra_version"><span class="tocnumber">5</span> <span class="toctext">Stone–Weierstrass theorem, C*-algebra version</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Lattice_versions"><span class="tocnumber">6</span> <span class="toctext">Lattice versions</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Bishop&#39;s_theorem"><span class="tocnumber">7</span> <span class="toctext">Bishop's theorem</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Nachbin&#39;s_theorem"><span class="tocnumber">8</span> <span class="toctext">Nachbin's theorem</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#See_also"><span class="tocnumber">9</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Notes"><span class="tocnumber">10</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#References"><span class="tocnumber">11</span> <span class="toctext">References</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a href="#Historical_works"><span class="tocnumber">11.1</span> <span class="toctext">Historical works</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#External_links"><span class="tocnumber">12</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Weierstrass_approximation_theorem">Weierstrass approximation theorem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=edit&amp;section=1" title="Edit section: Weierstrass approximation theorem">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The statement of the approximation theorem as originally discovered by Weierstrass is as follows:
+</p>
+<dl><dd><b>Weierstrass Approximation Theorem.</b> Suppose <span class="texhtml"> <i>f</i> </span> is a continuous real-valued function defined on the real interval <span class="texhtml">[<i>a</i>, <i>b</i>]</span>. For every <span class="texhtml"><i>ε</i> &gt; 0</span>, there exists a polynomial <span class="texhtml"><i>p</i></span> such that for all <span class="texhtml mvar" style="font-style:italic;">x</span> in <span class="texhtml">[<i>a</i>, <i>b</i>]</span>, we have <span class="texhtml">| <i>f</i> (<i>x</i>) − <i>p</i>(<i>x</i>)| &lt; <i>ε</i></span>, or equivalently, the <a href="/wiki/Supremum_norm" class="mw-redirect" title="Supremum norm">supremum norm</a> <span class="texhtml">|| <i>f</i>  − <i>p</i>|| &lt; <i>ε</i></span>.</dd></dl>
+<p>A constructive proof of this theorem using <a href="/wiki/Bernstein_polynomial" title="Bernstein polynomial">Bernstein polynomials</a> is outlined on that page.
+</p>
+<h3><span class="mw-headline" id="Applications">Applications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=edit&amp;section=2" title="Edit section: Applications">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>As a consequence of the Weierstrass approximation theorem, one can show that the space <span class="texhtml">C[<i>a</i>, <i>b</i>]</span> is <a href="/wiki/Separable_space" title="Separable space">separable</a>: the polynomial functions are dense, and each polynomial function can be uniformly approximated by one with <a href="/wiki/Rational_number" title="Rational number">rational</a> coefficients; there are only <a href="/wiki/Countable" class="mw-redirect" title="Countable">countably many</a> polynomials with rational coefficients. Since <span class="texhtml">C[<i>a</i>, <i>b</i>]</span> is <a href="/wiki/Hausdorff_space" title="Hausdorff space">Hausdorff</a> and separable it follows that <span class="texhtml">C[<i>a</i>, <i>b</i>]</span> has <a href="/wiki/Cardinality" title="Cardinality">cardinality</a> equal to <span class="texhtml">2<sup>ℵ<sub>0</sub></sup></span> — the same cardinality as the <a href="/wiki/Cardinality_of_the_continuum" title="Cardinality of the continuum">cardinality of the reals</a>.  (Remark: This cardinality result also follows from the fact that a continuous function on the reals is uniquely determined by its restriction to the rationals.)
+</p>
+<h2><span id="Stone.E2.80.93Weierstrass_theorem.2C_real_version"></span><span class="mw-headline" id="Stone–Weierstrass_theorem,_real_version">Stone–Weierstrass theorem, real version</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=edit&amp;section=3" title="Edit section: Stone–Weierstrass theorem, real version">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The set <span class="texhtml">C[<i>a</i>, <i>b</i>]</span> of continuous real-valued functions on <span class="texhtml">[<i>a</i>, <i>b</i>]</span>, together with the supremum norm <span class="texhtml">|| <i>f</i> || = sup<sub><i>a</i> ≤ <i>x</i> ≤ <i>b</i></sub> | <i>f</i> (<i>x</i>)|</span>, is a <a href="/wiki/Banach_algebra" title="Banach algebra">Banach algebra</a>, (that is, an <a href="/wiki/Associative_algebra" title="Associative algebra">associative algebra</a> and a <a href="/wiki/Banach_space" title="Banach space">Banach space</a> such that <span class="texhtml">|| <i>fg</i>|| ≤ || <i>f</i> ||·||<i>g</i>||</span> for all <span class="texhtml"> <i>f</i>, <i>g</i></span>). The set of all polynomial functions forms a subalgebra of <span class="texhtml">C[<i>a</i>, <i>b</i>]</span> (that is, a <a href="/wiki/Linear_subspace" title="Linear subspace">vector subspace</a> of <span class="texhtml">C[<i>a</i>, <i>b</i>]</span> that is closed under multiplication of functions), and the content of the Weierstrass approximation theorem is that this subalgebra is <a href="/wiki/Topology_Glossary" class="mw-redirect" title="Topology Glossary">dense</a> in <span class="texhtml">C[<i>a</i>, <i>b</i>]</span>.
+</p><p>Stone starts with an arbitrary compact Hausdorff space <span class="texhtml mvar" style="font-style:italic;">X</span> and considers the algebra <span class="texhtml">C(<i>X</i>, <b>R</b>)</span> of real-valued continuous functions on <span class="texhtml mvar" style="font-style:italic;">X</span>, with the topology of <a href="/wiki/Uniform_convergence" title="Uniform convergence">uniform convergence</a>. He wants to find subalgebras of <span class="texhtml">C(<i>X</i>, <b>R</b>)</span> which are dense. It turns out that the crucial property that a subalgebra must satisfy is that it <i><a href="/wiki/Separating_set" title="Separating set">separates points</a></i>: a set <span class="texhtml mvar" style="font-style:italic;">A</span> of functions defined on <span class="texhtml mvar" style="font-style:italic;">X</span> is said to separate points if, for every two different points <span class="texhtml mvar" style="font-style:italic;">x</span> and <span class="texhtml mvar" style="font-style:italic;">y</span> in <span class="texhtml mvar" style="font-style:italic;">X</span> there exists a function <span class="texhtml mvar" style="font-style:italic;">p</span> in <span class="texhtml mvar" style="font-style:italic;">A</span> with <span class="texhtml"><i>p</i>(<i>x</i>) ≠ <i>p</i>(<i>y</i>)</span>. Now we may state:
+</p>
+<dl><dd><b>Stone–Weierstrass Theorem (real numbers).</b> Suppose <span class="texhtml mvar" style="font-style:italic;">X</span> is a compact Hausdorff space and <span class="texhtml mvar" style="font-style:italic;">A</span> is a subalgebra of <span class="texhtml">C(<i>X</i>, <b>R</b>)</span> which contains a non-zero constant function. Then <span class="texhtml mvar" style="font-style:italic;">A</span> is dense in <span class="texhtml">C(<i>X</i>, <b>R</b>)</span> <a href="/wiki/If_and_only_if" title="If and only if">if and only if</a> it separates points.</dd></dl>
+<p>This implies Weierstrass’ original statement since the polynomials on <span class="texhtml">[<i>a</i>, <i>b</i>]</span> form a subalgebra of <span class="texhtml">C[<i>a</i>, <i>b</i>]</span> which contains the constants and separates points.
+</p>
+<h3><span class="mw-headline" id="Locally_compact_version">Locally compact version</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=edit&amp;section=4" title="Edit section: Locally compact version">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A version of the Stone–Weierstrass theorem is also true when <span class="texhtml mvar" style="font-style:italic;">X</span> is only <a href="/wiki/Locally_compact" class="mw-redirect" title="Locally compact">locally compact</a>. Let <span class="texhtml">C<sub>0</sub>(<i>X</i>, <b>R</b>)</span> be the space of real-valued continuous functions on <span class="texhtml mvar" style="font-style:italic;">X</span> which <a href="/wiki/Vanish_at_infinity" title="Vanish at infinity">vanish at infinity</a>; that is, a continuous function <span class="texhtml"> <i>f</i> </span> is in <span class="texhtml">C<sub>0</sub>(<i>X</i>, <b>R</b>)</span> if, for every <span class="texhtml"><i>ε</i> &gt; 0</span>, there exists a compact set <span class="texhtml"><i>K</i> ⊂ <i>X</i></span> such that <span class="texhtml"> | <i>f</i> |  &lt; <i>ε</i></span> on <span class="texhtml"><i>X</i>&#160;\&#160;<i>K</i></span>. Again, <span class="texhtml">C<sub>0</sub>(<i>X</i>, <b>R</b>)</span> is a <a href="/wiki/Banach_algebra" title="Banach algebra">Banach algebra</a> with the <a href="/wiki/Supremum_norm" class="mw-redirect" title="Supremum norm">supremum norm</a>. A subalgebra <span class="texhtml mvar" style="font-style:italic;">A</span> of <span class="texhtml">C<sub>0</sub>(<i>X</i>, <b>R</b>)</span> is said to <b>vanish nowhere</b> if not all of the elements of <span class="texhtml mvar" style="font-style:italic;">A</span> simultaneously vanish at a point; that is, for every <span class="texhtml mvar" style="font-style:italic;">x</span> in <span class="texhtml mvar" style="font-style:italic;">X</span>, there is some <span class="texhtml"> <i>f</i> </span> in <span class="texhtml mvar" style="font-style:italic;">A</span> such that <span class="texhtml"> <i>f</i> (<i>x</i>) ≠ 0</span>. The theorem generalizes as follows:
+</p>
+<dl><dd><b>Stone–Weierstrass Theorem (locally compact spaces).</b> Suppose <span class="texhtml mvar" style="font-style:italic;">X</span> is a <i>locally compact</i> Hausdorff space and <span class="texhtml mvar" style="font-style:italic;">A</span> is a subalgebra of <span class="texhtml">C<sub>0</sub>(<i>X</i>, <b>R</b>)</span>. Then <span class="texhtml mvar" style="font-style:italic;">A</span> is dense in <span class="texhtml">C<sub>0</sub>(<i>X</i>, <b>R</b>)</span> (given the topology of <a href="/wiki/Uniform_convergence" title="Uniform convergence">uniform convergence</a>) if and only if it separates points and vanishes nowhere.</dd></dl>
+<p>This version clearly implies the previous version in the case when <span class="texhtml mvar" style="font-style:italic;">X</span> is compact, since in that case <span class="texhtml">C<sub>0</sub>(<i>X</i>, <b>R</b>) = C(<i>X</i>, <b>R</b>)</span>. There are also more general versions of the Stone–Weierstrass that weaken the assumption of local compactness.<sup id="cite_ref-Willard_1-0" class="reference"><a href="#cite_note-Willard-1">&#91;1&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Applications_2">Applications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=edit&amp;section=5" title="Edit section: Applications">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The Stone–Weierstrass theorem can be used to prove the following two statements which go beyond Weierstrass's result.
+</p>
+<ul><li>If <span class="texhtml"> <i>f</i> </span> is a continuous real-valued function defined on the set <span class="texhtml">[<i>a</i>, <i>b</i>] × [<i>c</i>, <i>d</i>]</span> and <span class="texhtml"><i>ε</i> &gt; 0</span>, then there exists a polynomial function <span class="texhtml mvar" style="font-style:italic;">p</span> in two variables such that <span class="texhtml">| <i>f</i> (<i>x</i>, <i>y</i>) − <i>p</i>(<i>x</i>, <i>y</i>) | &lt; <i>ε</i></span> for all <span class="texhtml mvar" style="font-style:italic;">x</span> in <span class="texhtml">[<i>a</i>, <i>b</i>]</span> and <span class="texhtml mvar" style="font-style:italic;">y</span> in <span class="texhtml">[<i>c</i>, <i>d</i>]</span>.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (July 2018)">citation needed</span></a></i>&#93;</sup></li>
+<li>If <span class="texhtml mvar" style="font-style:italic;">X</span> and <span class="texhtml mvar" style="font-style:italic;">Y</span> are two compact Hausdorff spaces and <span class="texhtml"><i>f</i>&#160;: <i>X</i> × <i>Y</i> → <b>R</b></span> is a continuous function, then for every <span class="texhtml"><i>ε</i> &gt; 0</span> there exist <span class="texhtml"><i>n</i> &gt; 0</span> and continuous functions <span class="texhtml"> <i>f</i><sub>1</sub>, ...,  <i>f<sub>n</sub></i> </span> on <span class="texhtml mvar" style="font-style:italic;">X</span> and continuous functions <span class="texhtml"><i>g</i><sub>1</sub>, ..., <i>g<sub>n</sub></i></span> on <span class="texhtml mvar" style="font-style:italic;">Y</span> such that <span class="texhtml">|| <i>f</i> − ∑&#160;<i>f<sub>i</sub> g<sub>i</sub></i> || &lt; <i>ε</i></span>.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (July 2018)">citation needed</span></a></i>&#93;</sup></li></ul>
+<p>The theorem has many other applications to analysis, including:
+</p>
+<ul><li><a href="/wiki/Fourier_series" title="Fourier series">Fourier series</a>: The set of linear combinations of functions <span class="texhtml"><i>e<sub>n</sub></i>(<i>x</i>) = <i>e</i><sup>2<i>πinx</i></sup>, <i>n</i> ∈ <b>Z</b></span> is dense in <span class="texhtml">C([0, 1]/{0, 1})</span>, where we identify the endpoints of the interval <span class="texhtml">[0, 1]</span> to obtain a circle.  An important consequence of this is that the <span class="texhtml"><i>e<sub>n</sub></i></span> are an <a href="/wiki/Orthonormal_basis" title="Orthonormal basis">orthonormal basis</a> of the space <a href="/wiki/Lp_space" title="Lp space"><span class="texhtml">L<sup>2</sup>([0, 1])</span></a> of <a href="/wiki/Square-integrable_function" title="Square-integrable function">square-integrable functions</a> on <span class="texhtml">[0, 1]</span>.</li></ul>
+<h2><span id="Stone.E2.80.93Weierstrass_theorem.2C_complex_version"></span><span class="mw-headline" id="Stone–Weierstrass_theorem,_complex_version">Stone–Weierstrass theorem, complex version</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=edit&amp;section=6" title="Edit section: Stone–Weierstrass theorem, complex version">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Slightly more general is the following theorem, where we consider the algebra <span class="texhtml">C(<i>X</i>, <b>C</b>)</span> of complex-valued continuous functions on the compact space <span class="texhtml mvar" style="font-style:italic;">X</span>, again with the topology of uniform convergence. This is a <a href="/wiki/C*-algebra" title="C*-algebra">C*-algebra</a> with the *-operation given by pointwise <a href="/wiki/Complex_conjugation" class="mw-redirect" title="Complex conjugation">complex conjugation</a>.
+</p>
+<dl><dd><b>Stone–Weierstrass Theorem (complex numbers).</b> Let <span class="texhtml mvar" style="font-style:italic;">X</span> be a compact Hausdorff space and let <span class="texhtml mvar" style="font-style:italic;">S</span> be a subset of <span class="texhtml">C(<i>X</i>, <b>C</b>)</span> which <a href="/wiki/Separating_set" title="Separating set">separates points</a>. Then the complex <a href="/wiki/Unital_algebra" class="mw-redirect" title="Unital algebra">unital</a> <a href="/wiki/*-algebra" title="*-algebra">*-algebra</a> generated by <span class="texhtml mvar" style="font-style:italic;">S</span> is dense in <span class="texhtml">C(<i>X</i>, <b>C</b>)</span>.</dd></dl>
+<p>The complex unital *-algebra generated by <span class="texhtml mvar" style="font-style:italic;">S</span> consists of all those functions that can be obtained from the elements of <span class="texhtml mvar" style="font-style:italic;">S</span> by throwing in the constant function <span class="texhtml">1</span> and adding them, multiplying them, conjugating them, or multiplying them with complex scalars, and repeating finitely many times.
+</p><p>This theorem implies the real version, because if a sequence of complex-valued functions uniformly approximate a given function <span class="texhtml"> <i>f</i> </span>, then the real parts of those functions uniformly approximate the real part of <span class="texhtml"> <i>f</i> </span>.  As in the real case, an analog of this theorem is true for locally compact Hausdorff spaces.
+</p>
+<h2><span id="Stone.E2.80.93Weierstrass_theorem.2C_quaternion_version"></span><span class="mw-headline" id="Stone–Weierstrass_theorem,_quaternion_version">Stone–Weierstrass theorem, quaternion version</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=edit&amp;section=7" title="Edit section: Stone–Weierstrass theorem, quaternion version">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Following <a href="#CITEREFJohn_C.Holladay1957">John C.Holladay (1957)</a>&#160;: consider the algebra <span class="texhtml">C(<i>X</i>, <b>H</b>)</span> of quaternion-valued continuous functions on the compact space <span class="texhtml mvar" style="font-style:italic;">X</span>, again with the topology of uniform convergence. If a quaternion <i>q</i> is written in the form <i>q</i>&#160;=&#160;<i>a</i>&#160;+&#160;<i>ib</i>;+&#160;<i>jc</i>&#160;+&#160;<i>kd</i> then the <b>scalar part</b> a is the <b>real number</b> (<i>q</i>&#160;−&#160;<i>iqi</i>&#160;−&#160;<i>jqj</i>&#160;−&#160;<i>kqk</i>)/4. Likewise being the <b>scalar part</b> of −<i>qi</i>, −<i>qj</i> and −<i>qk</i>&#160;: b,c and d are respectively the <b>real numbers</b> (−<i>qi</i>&#160;−&#160;<i>iq</i>&#160;+&#160;<i>jqk</i>&#160;−&#160;<i>kqj</i>)/4,
+(−<i>qj</i>&#160;−&#160;<i>iqk</i>&#160;−&#160;<i>jq</i>&#160;+&#160;<i>kqi</i>)/4 and (−<i>qk</i>&#160;+&#160;<i>iqj</i>&#160;−&#160;<i>jqk</i>&#160;−&#160;<i>kq</i>)/4.  Then we may state&#160;:
+</p>
+<dl><dd><b>Stone–Weierstrass Theorem (quaternion numbers).</b> Suppose <span class="texhtml mvar" style="font-style:italic;">X</span> is a compact Hausdorff space and <span class="texhtml mvar" style="font-style:italic;">A</span> is a subalgebra of <span class="texhtml">C(<i>X</i>, <b>H</b>)</span> which contains a non-zero constant function. Then <span class="texhtml mvar" style="font-style:italic;">A</span> is dense in <span class="texhtml">C(<i>X</i>, <b>H</b>)</span> if and only if it <a href="/wiki/Separating_set" title="Separating set">separates points</a>.</dd></dl>
+<h2><span id="Stone.E2.80.93Weierstrass_theorem.2C_C.2A-algebra_version"></span><span class="mw-headline" id="Stone–Weierstrass_theorem,_C*-algebra_version">Stone–Weierstrass theorem, C*-algebra version</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=edit&amp;section=8" title="Edit section: Stone–Weierstrass theorem, C*-algebra version">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The space of complex-valued continuous functions on a compact Hausdorff space <i>X</i> i.e. C(<i>X</i>, <b>C</b>) is the canonical example of a unital <a href="/wiki/C*-algebra#Commutative_C.2A-algebras" title="C*-algebra">commutative C*-algebra</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathfrak {A}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="fraktur">A</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathfrak {A}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/34aa92fbdb716183c034a2cfc30dafbaa51cfcd6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.669ex; height:2.176ex;" alt="{\mathfrak {A}}"/></span>. The space <i>X</i> may be viewed as the space of pure states on <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathfrak {A}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="fraktur">A</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathfrak {A}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/34aa92fbdb716183c034a2cfc30dafbaa51cfcd6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.669ex; height:2.176ex;" alt="{\mathfrak {A}}"/></span>, with the weak-* topology. Following the above cue, a non-commutative extension of the Stone–Weierstrass theorem, which has remain unsolved, is as follows:
+</p>
+<dl><dd><b>Conjecture.</b> If a unital <a href="/wiki/C*-algebra" title="C*-algebra">C*-algebra</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathfrak {A}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="fraktur">A</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathfrak {A}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/34aa92fbdb716183c034a2cfc30dafbaa51cfcd6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.669ex; height:2.176ex;" alt="{\mathfrak {A}}"/></span> has a C*-subalgebra <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathfrak {B}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="fraktur">B</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathfrak {B}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f939c87a07b7af23e09792e9edb2c7caebb18864" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.054ex; height:2.176ex;" alt="{\mathfrak {B}}"/></span> which separates the pure states of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathfrak {A}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="fraktur">A</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathfrak {A}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/34aa92fbdb716183c034a2cfc30dafbaa51cfcd6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.669ex; height:2.176ex;" alt="{\mathfrak {A}}"/></span>, then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathfrak {A}}={\mathfrak {B}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="fraktur">A</mi>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="fraktur">B</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathfrak {A}}={\mathfrak {B}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/900b6bf740fd3de81fc32fa5c96fe9415d247631" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.822ex; height:2.176ex;" alt="{\mathfrak  {A}}={\mathfrak  {B}}"/></span>.</dd></dl>
+<p>In 1960, Jim Glimm proved a weaker version of the above conjecture.
+</p>
+<dl><dd><b>Stone–Weierstrass theorem (C*-algebras).</b><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> If a unital C*-algebra <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathfrak {A}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="fraktur">A</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathfrak {A}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/34aa92fbdb716183c034a2cfc30dafbaa51cfcd6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.669ex; height:2.176ex;" alt="{\mathfrak {A}}"/></span> has a C*-subalgebra <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathfrak {B}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="fraktur">B</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathfrak {B}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f939c87a07b7af23e09792e9edb2c7caebb18864" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.054ex; height:2.176ex;" alt="{\mathfrak {B}}"/></span> which separates the pure state space (i.e. the weak-* closure of the pure states) of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathfrak {A}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="fraktur">A</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathfrak {A}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/34aa92fbdb716183c034a2cfc30dafbaa51cfcd6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.669ex; height:2.176ex;" alt="{\mathfrak {A}}"/></span>, then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathfrak {A}}={\mathfrak {B}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="fraktur">A</mi>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="fraktur">B</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathfrak {A}}={\mathfrak {B}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/900b6bf740fd3de81fc32fa5c96fe9415d247631" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.822ex; height:2.176ex;" alt="{\mathfrak  {A}}={\mathfrak  {B}}"/></span>.</dd></dl>
+<h2><span class="mw-headline" id="Lattice_versions">Lattice versions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=edit&amp;section=9" title="Edit section: Lattice versions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Let <span class="texhtml mvar" style="font-style:italic;">X</span> be a compact Hausdorff space. Stone's original proof of the theorem used the idea of <a href="/wiki/Lattice_(order)" title="Lattice (order)">lattices</a> in <span class="texhtml">C(<i>X</i>, <b>R</b>)</span>.  A subset <span class="texhtml mvar" style="font-style:italic;">L</span> of <span class="texhtml">C(<i>X</i>, <b>R</b>)</span> is called a <a href="/wiki/Lattice_(order)" title="Lattice (order)">lattice</a> if for any two elements <span class="texhtml"> <i>f</i>, <i>g</i> ∈ <i>L</i></span>, the functions <span class="texhtml">max{ <i>f</i>, <i>g</i>}, min{ <i>f</i>, <i>g</i>} </span>also belong to <span class="texhtml mvar" style="font-style:italic;">L</span>. The lattice version of the Stone–Weierstrass theorem states:
+</p>
+<dl><dd><b>Stone–Weierstrass Theorem (lattices).</b> Suppose <span class="texhtml mvar" style="font-style:italic;">X</span> is a compact Hausdorff space with at least two points and <span class="texhtml mvar" style="font-style:italic;">L</span> is a lattice in <span class="texhtml">C(<i>X</i>, <b>R</b>)</span> with the property that for any two distinct elements <span class="texhtml mvar" style="font-style:italic;">x</span> and <span class="texhtml mvar" style="font-style:italic;">y</span> of <span class="texhtml mvar" style="font-style:italic;">X</span> and any two real numbers <span class="texhtml mvar" style="font-style:italic;">a</span> and <span class="texhtml mvar" style="font-style:italic;">b</span> there exists an element <span class="texhtml"> <i>f</i>  ∈ <i>L</i></span> with <span class="texhtml"> <i>f</i> (<i>x</i>) = <i>a</i></span> and <span class="texhtml"> <i>f</i> (<i>y</i>) = <i>b</i></span>. Then <span class="texhtml mvar" style="font-style:italic;">L</span> is dense in <span class="texhtml">C(<i>X</i>, <b>R</b>)</span>.</dd></dl>
+<p>The above versions of Stone–Weierstrass can be proven from this version once one realizes that the lattice property can also be formulated using the <a href="/wiki/Absolute_value" title="Absolute value">absolute value</a> <span class="texhtml">| <i>f</i> |</span> which in turn can be approximated by polynomials in <span class="texhtml"> <i>f</i> </span>. A variant of the theorem applies to linear subspaces of <span class="texhtml">C(<i>X</i>, <b>R</b>)</span> closed under max (<a href="#CITEREFHewittStromberg1965">Hewitt &amp; Stromberg 1965</a>, Theorem 7.29):
+</p>
+<dl><dd><b>Stone–Weierstrass Theorem.</b> Suppose <span class="texhtml mvar" style="font-style:italic;">X</span> is a compact Hausdorff space and <span class="texhtml mvar" style="font-style:italic;">B</span> is a family of functions in <span class="texhtml">C(<i>X</i>, <b>R</b>)</span> such that
+<ol><li><span class="texhtml mvar" style="font-style:italic;">B</span> separates points.</li>
+<li><span class="texhtml mvar" style="font-style:italic;">B</span> contains the constant function 1.</li>
+<li>If <span class="texhtml"> <i>f</i>  ∈ <i>B</i></span> then <span class="texhtml"><i>af</i>  ∈ <i>B</i></span> for all constants <span class="texhtml"><i>a</i> ∈ <b>R</b></span>.</li>
+<li>If <span class="texhtml"> <i>f</i>,  <i>g</i> ∈ <i>B</i></span>, then <span class="texhtml"> <i>f</i>  + <i>g</i>, max{ <i>f</i>, <i>g</i>} ∈ <i>B</i></span>.</li></ol></dd>
+<dd>Then <span class="texhtml mvar" style="font-style:italic;">B</span> is dense in <span class="texhtml">C(<i>X</i>, <b>R</b>)</span>.</dd></dl>
+<p>More precise information is available:
+</p>
+<dl><dd>Suppose <span class="texhtml mvar" style="font-style:italic;">X</span> is a compact Hausdorff space with at least two points and <span class="texhtml mvar" style="font-style:italic;">L</span> is a lattice in <span class="texhtml">C(<i>X</i>, <b>R</b>)</span>. The function <span class="texhtml"><i>φ</i> ∈ C(<i>X</i>, <b>R</b>)</span> belongs to the <a href="/wiki/Closure_(topology)" title="Closure (topology)">closure</a> of <span class="texhtml mvar" style="font-style:italic;">L</span> if and only if for each pair of distinct points <i>x</i> and <i>y</i> in <span class="texhtml mvar" style="font-style:italic;">X</span> and for each <span class="texhtml"><i>ε</i> &gt; 0</span> there exists some <span class="texhtml"> <i>f</i>  ∈ <i>L</i></span> for which <span class="texhtml">| <i>f</i> (<i>x</i>) − <i>φ</i>(<i>x</i>)| &lt; <i>ε</i></span> and <span class="texhtml">| <i>f</i> (<i>y</i>) − <i>φ</i>(<i>y</i>)| &lt; <i>ε</i></span>.</dd></dl>
+<h2><span id="Bishop.27s_theorem"></span><span class="mw-headline" id="Bishop's_theorem">Bishop's theorem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=edit&amp;section=10" title="Edit section: Bishop&#039;s theorem">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Another generalization of the Stone–Weierstrass theorem is due to <a href="/wiki/Errett_Bishop" title="Errett Bishop">Errett Bishop</a>.  Bishop's theorem is as follows (<a href="#CITEREFBishop1961">Bishop 1961</a>):
+</p>
+<dl><dd>Let <span class="texhtml mvar" style="font-style:italic;">A</span> be a closed subalgebra of the <a href="/wiki/Banach_space" title="Banach space">Banach space</a> <span class="texhtml">C(<i>X</i>, <b>C</b>)</span> of continuous complex-valued functions on a compact Hausdorff space <span class="texhtml mvar" style="font-style:italic;">X</span>.  Suppose that <span class="texhtml"> <i>f</i>  ∈ C(<i>X</i>, <b>C</b>)</span> has the following property:
+<dl><dd><span class="texhtml"> <i>f</i> |<sub><i>S</i></sub> ∈ <i>A<sub>S</sub></i></span> for every maximal set <span class="texhtml"><i>S</i> ⊂ <i>X</i></span> such that all real functions of <span class="texhtml"><i>A<sub>S</sub></i></span> are constant.</dd></dl></dd>
+<dd>Then <span class="texhtml"> <i>f</i>  ∈ <i>A</i></span>.</dd></dl>
+<p><a href="#CITEREFGlicksberg1962">Glicksberg (1962)</a> gives a short proof of Bishop's theorem using the <a href="/wiki/Krein%E2%80%93Milman_theorem" title="Krein–Milman theorem">Krein–Milman theorem</a> in an essential way, as well as the <a href="/wiki/Hahn%E2%80%93Banach_theorem" title="Hahn–Banach theorem">Hahn–Banach theorem</a>&#160;: the process of <a href="#CITEREFLouis_de_Branges1959">Louis de Branges (1959)</a>.  See also <a href="#CITEREFRudin1973">Rudin (1973</a>, §5.7).
+</p>
+<h2><span id="Nachbin.27s_theorem"></span><span class="mw-headline" id="Nachbin's_theorem">Nachbin's theorem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=edit&amp;section=11" title="Edit section: Nachbin&#039;s theorem">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Nachbin's theorem gives an analog for Stone–Weierstrass theorem for algebras of complex valued smooth functions on a smooth manifold (<a href="#CITEREFNachbin1949">Nachbin 1949</a>). Nachbin's theorem is as follows (<a href="#CITEREFLlavona1986">Llavona 1986</a>):
+</p>
+<dl><dd>Let <span class="texhtml mvar" style="font-style:italic;">A</span> be a subalgebra of the algebra <span class="texhtml">C<sup>∞</sup>(<i>M</i>)</span> of smooth functions on a finite dimensional smooth manifold <span class="texhtml mvar" style="font-style:italic;">M</span>. Suppose that <span class="texhtml mvar" style="font-style:italic;">A</span> separates the points of <span class="texhtml mvar" style="font-style:italic;">M</span> and also separates the tangent vectors of <span class="texhtml mvar" style="font-style:italic;">M</span>: for each point <i>m</i> ∈ <i>M</i> and tangent vector <i>v</i> at the tangent space at <i>m</i>, there is a <i>f</i> ∈ <span class="texhtml mvar" style="font-style:italic;">A</span> such that d<i>f</i>(<i>x</i>)(<i>v</i>) ≠ 0. Then <span class="texhtml mvar" style="font-style:italic;">A</span> is dense in <span class="texhtml">C<sup>∞</sup>(<i>M</i>)</span>.</dd></dl>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=edit&amp;section=12" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/M%C3%BCntz%E2%80%93Sz%C3%A1sz_theorem" title="Müntz–Szász theorem">Müntz–Szász theorem</a>.</li>
+<li><a href="/wiki/Bernstein_polynomial" title="Bernstein polynomial">Bernstein polynomial</a>.</li>
+<li><a href="/wiki/Runge%27s_phenomenon" title="Runge&#39;s phenomenon">Runge's phenomenon</a> shows that finding a polynomial <span class="texhtml mvar" style="font-style:italic;">P</span> such that <span class="texhtml"> <i>f</i> (<i>x</i>) = <i>P</i>(<i>x</i>)</span> for some finely spaced <span class="texhtml"><i>x</i> = <i>x<sub>n</sub></i></span> is a bad way to attempt to find a polynomial approximating <span class="texhtml"> <i>f</i> </span> uniformly.  However, as is shown in <a href="/wiki/Walter_Rudin" title="Walter Rudin">Walter Rudin</a>'s Principles of Mathematical Analysis, one can easily find a polynomial <span class="texhtml mvar" style="font-style:italic;">P</span> uniformly approximating <span class="texhtml"> <i>f</i> </span> by convolving <span class="texhtml"> <i>f</i> </span> with a polynomial kernel.</li>
+<li><a href="/wiki/Mergelyan%27s_theorem" title="Mergelyan&#39;s theorem">Mergelyan's theorem</a>, concerning polynomial approximations of complex functions.</li></ul>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=edit&amp;section=13" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-Willard-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-Willard_1-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Willard, Stephen (1970). <i>General Topology</i>. Addison-Wesley. p.&#160;293. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-486-43479-6" title="Special:BookSources/0-486-43479-6"><bdi>0-486-43479-6</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=General+Topology&amp;rft.pages=293&amp;rft.pub=Addison-Wesley&amp;rft.date=1970&amp;rft.isbn=0-486-43479-6&amp;rft.aulast=Willard&amp;rft.aufirst=Stephen&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStone%E2%80%93Weierstrass+theorem" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation journal"><a href="/wiki/James_Glimm" title="James Glimm">Glimm, James</a> (1960). "A Stone–Weierstrass Theorem for C*-algebras". <i><a href="/wiki/Annals_of_Mathematics" title="Annals of Mathematics">Annals of Mathematics</a></i>. Second Series. <b>72</b> (2): 216–244 [Theorem 1]. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.2307%2F1970133">10.2307/1970133</a>. <a href="/wiki/JSTOR" title="JSTOR">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/1970133">1970133</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Annals+of+Mathematics&amp;rft.atitle=A+Stone%E2%80%93Weierstrass+Theorem+for+C%2A-algebras&amp;rft.volume=72&amp;rft.issue=2&amp;rft.pages=216-244+Theorem+1&amp;rft.date=1960&amp;rft_id=info%3Adoi%2F10.2307%2F1970133&amp;rft_id=%2F%2Fwww.jstor.org%2Fstable%2F1970133&amp;rft.aulast=Glimm&amp;rft.aufirst=James&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStone%E2%80%93Weierstrass+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=edit&amp;section=14" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><cite id="CITEREFJohn_C.Holladay1957" class="citation">John C.Holladay (1957), <a rel="nofollow" class="external text" href="http://www.ams.org/journals/proc/1957-008-04/S0002-9939-1957-0087047-7/S0002-9939-1957-0087047-7.pdf">"The Stone–Weierstrass theorem for quaternions"</a> <span class="cs1-format">(PDF)</span>, <i>Proc. Amer. Math. Soc.</i>, <b>8</b>: 656, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1090%2FS0002-9939-1957-0087047-7">10.1090/S0002-9939-1957-0087047-7</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Proc.+Amer.+Math.+Soc.&amp;rft.atitle=The+Stone%E2%80%93Weierstrass+theorem+for+quaternions&amp;rft.volume=8&amp;rft.pages=656&amp;rft.date=1957&amp;rft_id=info%3Adoi%2F10.1090%2FS0002-9939-1957-0087047-7&amp;rft.au=John+C.Holladay&amp;rft_id=http%3A%2F%2Fwww.ams.org%2Fjournals%2Fproc%2F1957-008-04%2FS0002-9939-1957-0087047-7%2FS0002-9939-1957-0087047-7.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStone%E2%80%93Weierstrass+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/>.</li>
+<li><cite id="CITEREFLouis_de_Branges1959" class="citation"><a href="/wiki/Louis_de_Branges" class="mw-redirect" title="Louis de Branges">Louis de Branges</a> (1959), "The Stone–Weierstrass theorem", <i>Proc. Amer. Math. Soc.</i>, <b>10</b>: 822–824, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1090%2Fs0002-9939-1959-0113131-7">10.1090/s0002-9939-1959-0113131-7</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Proc.+Amer.+Math.+Soc.&amp;rft.atitle=The+Stone%E2%80%93Weierstrass+theorem&amp;rft.volume=10&amp;rft.pages=822-824&amp;rft.date=1959&amp;rft_id=info%3Adoi%2F10.1090%2Fs0002-9939-1959-0113131-7&amp;rft.au=Louis+de+Branges&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStone%E2%80%93Weierstrass+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/>.</li>
+<li><a href="/wiki/Jan_Brinkhuis" title="Jan Brinkhuis">Jan Brinkhuis</a> &amp; Vladimir Tikhomirov (2005) <i>Optimization: Insights and Applications</i>, <a href="/wiki/Princeton_University_Press" title="Princeton University Press">Princeton University Press</a> <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-691-10287-0" title="Special:BookSources/978-0-691-10287-0">978-0-691-10287-0</a> <a href="/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a rel="nofollow" class="external text" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2168305">2168305</a>.</li>
+<li><cite id="CITEREFGlimm1960" class="citation">Glimm, James (1960), "A Stone–Weierstrass Theorem for C*-algebras", <i>Annals of Mathematics</i>, Second Series, <b>72</b> (2): 216–244, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.2307%2F1970133">10.2307/1970133</a>, <a href="/wiki/JSTOR" title="JSTOR">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/1970133">1970133</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Annals+of+Mathematics&amp;rft.atitle=A+Stone%E2%80%93Weierstrass+Theorem+for+C%2A-algebras&amp;rft.volume=72&amp;rft.issue=2&amp;rft.pages=216-244&amp;rft.date=1960&amp;rft_id=info%3Adoi%2F10.2307%2F1970133&amp;rft_id=%2F%2Fwww.jstor.org%2Fstable%2F1970133&amp;rft.aulast=Glimm&amp;rft.aufirst=James&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStone%E2%80%93Weierstrass+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFBishop1961" class="citation">Bishop, Errett (1961), <a rel="nofollow" class="external text" href="http://projecteuclid.org/DPubS/Repository/1.0/Disseminate?handle=euclid.pjm/1103037116&amp;view=body&amp;content-type=pdf_1">"A generalization of the Stone–Weierstrass theorem"</a>, <i>Pacific Journal of Mathematics</i>, <b>11</b> (3): 777–783, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.2140%2Fpjm.1961.11.777">10.2140/pjm.1961.11.777</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Pacific+Journal+of+Mathematics&amp;rft.atitle=A+generalization+of+the+Stone%E2%80%93Weierstrass+theorem&amp;rft.volume=11&amp;rft.issue=3&amp;rft.pages=777-783&amp;rft.date=1961&amp;rft_id=info%3Adoi%2F10.2140%2Fpjm.1961.11.777&amp;rft.aulast=Bishop&amp;rft.aufirst=Errett&amp;rft_id=http%3A%2F%2Fprojecteuclid.org%2FDPubS%2FRepository%2F1.0%2FDisseminate%3Fhandle%3Deuclid.pjm%2F1103037116%26view%3Dbody%26content-type%3Dpdf_1&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStone%E2%80%93Weierstrass+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/>.</li>
+<li><cite id="CITEREFGlicksberg1962" class="citation">Glicksberg, Irving (1962), "Measures Orthogonal to Algebras and Sets of Antisymmetry", <i>Transactions of the American Mathematical Society</i>, Transactions of the American Mathematical Society, Vol. 105, No. 3, <b>105</b> (3): 415–435, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.2307%2F1993729">10.2307/1993729</a>, <a href="/wiki/JSTOR" title="JSTOR">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/1993729">1993729</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Transactions+of+the+American+Mathematical+Society&amp;rft.atitle=Measures+Orthogonal+to+Algebras+and+Sets+of+Antisymmetry&amp;rft.volume=105&amp;rft.issue=3&amp;rft.pages=415-435&amp;rft.date=1962&amp;rft_id=info%3Adoi%2F10.2307%2F1993729&amp;rft_id=%2F%2Fwww.jstor.org%2Fstable%2F1993729&amp;rft.aulast=Glicksberg&amp;rft.aufirst=Irving&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStone%E2%80%93Weierstrass+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/>.</li>
+<li><cite id="CITEREFHewittStromberg1965" class="citation">Hewitt, E; Stromberg, K (1965), <i>Real and abstract analysis</i>, Springer-Verlag</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Real+and+abstract+analysis&amp;rft.pub=Springer-Verlag&amp;rft.date=1965&amp;rft.aulast=Hewitt&amp;rft.aufirst=E&amp;rft.au=Stromberg%2C+K&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStone%E2%80%93Weierstrass+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/>.</li>
+<li><cite id="CITEREFRudin1976" class="citation"><a href="/wiki/Walter_Rudin" title="Walter Rudin">Rudin, Walter</a> (1976), <i>Principles of mathematical analysis</i> (3rd. ed.), McGraw-Hill, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-07-054235-8" title="Special:BookSources/978-0-07-054235-8"><bdi>978-0-07-054235-8</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Principles+of+mathematical+analysis&amp;rft.edition=3rd.&amp;rft.pub=McGraw-Hill&amp;rft.date=1976&amp;rft.isbn=978-0-07-054235-8&amp;rft.aulast=Rudin&amp;rft.aufirst=Walter&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStone%E2%80%93Weierstrass+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/>.</li>
+<li><cite id="CITEREFRudin1973" class="citation"><a href="/wiki/Walter_Rudin" title="Walter Rudin">Rudin, Walter</a> (1973), <i>Functional analysis</i>, McGraw-Hill, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-07-054236-8" title="Special:BookSources/0-07-054236-8"><bdi>0-07-054236-8</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Functional+analysis&amp;rft.pub=McGraw-Hill&amp;rft.date=1973&amp;rft.isbn=0-07-054236-8&amp;rft.aulast=Rudin&amp;rft.aufirst=Walter&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStone%E2%80%93Weierstrass+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/>.</li>
+<li><cite id="CITEREFNachbin1949" class="citation">Nachbin, L. (1949), "Sur les algèbres denses de fonctions diffèrentiables sur une variété", <i>C. R. Acad. Sci. Paris</i>, <b>228</b>: 1549–1551</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=C.+R.+Acad.+Sci.+Paris&amp;rft.atitle=Sur+les+alg%C3%A8bres+denses+de+fonctions+diff%C3%A8rentiables+sur+une+vari%C3%A9t%C3%A9&amp;rft.volume=228&amp;rft.pages=1549-1551&amp;rft.date=1949&amp;rft.aulast=Nachbin&amp;rft.aufirst=L.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStone%E2%80%93Weierstrass+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFLlavona1986" class="citation">Llavona, José G. (1986), <i>Approximation of continuously differentiable functions</i>, Amsterdam: North-Holland, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9780080872414" title="Special:BookSources/9780080872414"><bdi>9780080872414</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Approximation+of+continuously+differentiable+functions&amp;rft.place=Amsterdam&amp;rft.pub=North-Holland&amp;rft.date=1986&amp;rft.isbn=9780080872414&amp;rft.aulast=Llavona&amp;rft.aufirst=Jos%C3%A9+G.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStone%E2%80%93Weierstrass+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFJG_Burkill" class="citation">JG Burkill, <a rel="nofollow" class="external text" href="http://www.math.tifr.res.in/~publ/ln/tifr16.pdf"><i>Lectures On Approximation By Polynomials</i></a> <span class="cs1-format">(PDF)</span></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Lectures+On+Approximation+By+Polynomials&amp;rft.au=JG+Burkill&amp;rft_id=http%3A%2F%2Fwww.math.tifr.res.in%2F~publ%2Fln%2Ftifr16.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStone%E2%80%93Weierstrass+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/>.</li></ul>
+<h3><span class="mw-headline" id="Historical_works">Historical works</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=edit&amp;section=15" title="Edit section: Historical works">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The historical publication of Weierstrass (in <a href="/wiki/German_language" title="German language">German language</a>) is freely available from the digital online archive of the <i><a rel="nofollow" class="external text" href="http://bibliothek.bbaw.de/">Berlin Brandenburgische Akademie der Wissenschaften</a></i>:
+</p>
+<ul><li>K. Weierstrass (1885). Über die analytische Darstellbarkeit sogenannter willkürlicher Functionen einer reellen Veränderlichen. <i>Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften zu Berlin</i>, 1885 (II).</li></ul>
+<dl><dd><a rel="nofollow" class="external text" href="http://bibliothek.bbaw.de/bibliothek-digital/digitalequellen/schriften/anzeige/index_html?band=10-sitz/1885-2&amp;seite:int=109">Erste Mitteilung</a> (part 1) pp. 633–639, <a rel="nofollow" class="external text" href="http://bibliothek.bbaw.de/bibliothek-digital/digitalequellen/schriften/anzeige/index_html?band=10-sitz/1885-2&amp;seite:int=272">Zweite Mitteilung</a> (part 2) pp. 789–805.</dd></dl>
+<p>Important historical works of Stone include:
+</p>
+<ul><li><cite id="CITEREFStone1937" class="citation"><a href="/wiki/Marshall_Stone" class="mw-redirect" title="Marshall Stone">Stone, M. H.</a> (1937), "Applications of the Theory of Boolean Rings to General Topology", <i>Transactions of the American Mathematical Society</i>, Transactions of the American Mathematical Society, Vol. 41, No. 3, <b>41</b> (3): 375–481, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.2307%2F1989788">10.2307/1989788</a>, <a href="/wiki/JSTOR" title="JSTOR">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/1989788">1989788</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Transactions+of+the+American+Mathematical+Society&amp;rft.atitle=Applications+of+the+Theory+of+Boolean+Rings+to+General+Topology&amp;rft.volume=41&amp;rft.issue=3&amp;rft.pages=375-481&amp;rft.date=1937&amp;rft_id=info%3Adoi%2F10.2307%2F1989788&amp;rft_id=%2F%2Fwww.jstor.org%2Fstable%2F1989788&amp;rft.aulast=Stone&amp;rft.aufirst=M.+H.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStone%E2%80%93Weierstrass+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/>.</li>
+<li><cite id="CITEREFStone1948" class="citation"><a href="/wiki/Marshall_Stone" class="mw-redirect" title="Marshall Stone">Stone, M. H.</a> (1948), "The Generalized Weierstrass Approximation Theorem", <i>Mathematics Magazine</i>, <b>21</b> (4): 167–184, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.2307%2F3029750">10.2307/3029750</a>, <a href="/wiki/JSTOR" title="JSTOR">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/3029750">3029750</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Mathematics+Magazine&amp;rft.atitle=The+Generalized+Weierstrass+Approximation+Theorem&amp;rft.volume=21&amp;rft.issue=4&amp;rft.pages=167-184&amp;rft.date=1948&amp;rft_id=info%3Adoi%2F10.2307%2F3029750&amp;rft_id=%2F%2Fwww.jstor.org%2Fstable%2F3029750&amp;rft.aulast=Stone&amp;rft.aufirst=M.+H.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStone%E2%80%93Weierstrass+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/>; <b>21</b> (5), 237–254.</li></ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=edit&amp;section=16" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><cite id="CITEREFHazewinkel2001" class="citation"><a href="/wiki/Michiel_Hazewinkel" title="Michiel Hazewinkel">Hazewinkel, Michiel</a>, ed. (2001) [1994], <a rel="nofollow" class="external text" href="https://www.encyclopediaofmath.org/index.php?title=p/s090370">"Stone–Weierstrass theorem"</a>, <i><a href="/wiki/Encyclopedia_of_Mathematics" title="Encyclopedia of Mathematics">Encyclopedia of Mathematics</a></i>, Springer Science+Business Media B.V. / Kluwer Academic Publishers, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-55608-010-4" title="Special:BookSources/978-1-55608-010-4"><bdi>978-1-55608-010-4</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Stone%E2%80%93Weierstrass+theorem&amp;rft.btitle=Encyclopedia+of+Mathematics&amp;rft.pub=Springer+Science%2BBusiness+Media+B.V.+%2F+Kluwer+Academic+Publishers&amp;rft.date=2001&amp;rft.isbn=978-1-55608-010-4&amp;rft_id=https%3A%2F%2Fwww.encyclopediaofmath.org%2Findex.php%3Ftitle%3Dp%2Fs090370&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStone%E2%80%93Weierstrass+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li></ul>
+<div role="navigation" class="navbox" aria-labelledby="Authority_control_frameless_&amp;#124;text-top_&amp;#124;10px_&amp;#124;alt=Edit_this_at_Wikidata_&amp;#124;link=https&amp;#58;//www.wikidata.org/wiki/Q939927&amp;#124;Edit_this_at_Wikidata" style="padding:3px"><table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th id="Authority_control_frameless_&amp;#124;text-top_&amp;#124;10px_&amp;#124;alt=Edit_this_at_Wikidata_&amp;#124;link=https&amp;#58;//www.wikidata.org/wiki/Q939927&amp;#124;Edit_this_at_Wikidata" scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Help:Authority_control" title="Help:Authority control">Authority control</a> <a href="https://www.wikidata.org/wiki/Q939927" title="Edit this at Wikidata"><img alt="Edit this at Wikidata" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" decoding="async" width="10" height="10" style="vertical-align: text-top" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" data-file-width="20" data-file-height="20" /></a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><span class="nowrap"><a href="/wiki/Biblioth%C3%A8que_nationale_de_France" title="Bibliothèque nationale de France">BNF</a>: <span class="uid"><a rel="nofollow" class="external text" href="https://catalogue.bnf.fr/ark:/12148/cb15014506g">cb15014506g</a> <a rel="nofollow" class="external text" href="https://data.bnf.fr/ark:/12148/cb15014506g">(data)</a></span></span></li>
+<li><span class="nowrap"><a href="/wiki/Integrated_Authority_File" title="Integrated Authority File">GND</a>: <span class="uid"><a rel="nofollow" class="external text" href="https://d-nb.info/gnd/4341745-0">4341745-0</a></span></span></li>
+<li><span class="nowrap"><a href="/wiki/Library_of_Congress_Control_Number" title="Library of Congress Control Number">LCCN</a>: <span class="uid"><a rel="nofollow" class="external text" href="https://id.loc.gov/authorities/subjects/sh94005265">sh94005265</a></span></span></li>
+<li><span class="nowrap"><a href="/wiki/Syst%C3%A8me_universitaire_de_documentation" title="Système universitaire de documentation">SUDOC</a>: <span class="uid"><a rel="nofollow" class="external text" href="https://www.idref.fr/092475205">092475205</a></span></span></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1272
+Cached time: 20190804021246
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.544 seconds
+Real time usage: 0.739 seconds
+Preprocessor visited node count: 3438/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 47074/2097152 bytes
+Template argument size: 4019/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 7/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 36266/5000000 bytes
+Number of Wikibase entities loaded: 3/400
+Lua time usage: 0.272/10.000 seconds
+Lua memory usage: 5.19 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  556.514      1 -total
+ 24.88%  138.468      1 Template:Reflist
+ 21.16%  117.734     14 Template:Citation
+ 16.45%   91.562      1 Template:Authority_control
+ 12.14%   67.562      2 Template:Citation_needed
+ 12.13%   67.483      1 Template:Cite_book
+ 10.08%   56.104      1 Template:Cite_journal
+ 10.02%   55.778      2 Template:Fix
+  8.76%   48.741      1 Template:Isbn
+  6.70%   37.291      4 Template:Category_handler
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:28858-0!canonical!math=5 and timestamp 20190804021246 and revision id 867254821
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Stone–Weierstrass_theorem&amp;oldid=867254821">https://en.wikipedia.org/w/index.php?title=Stone–Weierstrass_theorem&amp;oldid=867254821</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Continuous_mappings" title="Category:Continuous mappings">Continuous mappings</a></li><li><a href="/wiki/Category:Theorems_in_analysis" title="Category:Theorems in analysis">Theorems in analysis</a></li><li><a href="/wiki/Category:Theorems_in_approximation_theory" title="Category:Theorems in approximation theory">Theorems in approximation theory</a></li><li><a href="/wiki/Category:1885_in_mathematics" title="Category:1885 in mathematics">1885 in mathematics</a></li><li><a href="/wiki/Category:1937_in_mathematics" title="Category:1937 in mathematics">1937 in mathematics</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_July_2018" title="Category:Articles with unsourced statements from July 2018">Articles with unsourced statements from July 2018</a></li><li><a href="/wiki/Category:Wikipedia_articles_with_BNF_identifiers" title="Category:Wikipedia articles with BNF identifiers">Wikipedia articles with BNF identifiers</a></li><li><a href="/wiki/Category:Wikipedia_articles_with_GND_identifiers" title="Category:Wikipedia articles with GND identifiers">Wikipedia articles with GND identifiers</a></li><li><a href="/wiki/Category:Wikipedia_articles_with_LCCN_identifiers" title="Category:Wikipedia articles with LCCN identifiers">Wikipedia articles with LCCN identifiers</a></li><li><a href="/wiki/Category:Wikipedia_articles_with_SUDOC_identifiers" title="Category:Wikipedia articles with SUDOC identifiers">Wikipedia articles with SUDOC identifiers</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Stone%E2%80%93Weierstrass+theorem" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Stone%E2%80%93Weierstrass+theorem" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Stone%E2%80%93Weierstrass_theorem" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Stone%E2%80%93Weierstrass_theorem" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Stone%E2%80%93Weierstrass_theorem">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Stone%E2%80%93Weierstrass_theorem" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Stone%E2%80%93Weierstrass_theorem" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;oldid=867254821" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q939927" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Stone%E2%80%93Weierstrass_theorem&amp;id=867254821" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Stone%E2%80%93Weierstrass+theorem">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Stone%E2%80%93Weierstrass+theorem&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D9%86%D8%B8%D8%B1%D9%8A%D8%A9_%D9%88%D8%B1%D9%8A%D8%B4%D8%AA%D8%B1%D8%B3" title="نظرية وريشترس – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Satz_von_Stone-Weierstra%C3%9F" title="Satz von Stone-Weierstraß – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Teorema_de_aproximaci%C3%B3n_de_Weierstrass" title="Teorema de aproximación de Weierstrass – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Stone-Weierstrass" title="Théorème de Stone-Weierstrass – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Teorema_di_approssimazione_di_Weierstrass" title="Teorema di approssimazione di Weierstrass – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%A4%D7%98_%D7%94%D7%A7%D7%99%D7%A8%D7%95%D7%91_%D7%A9%D7%9C_%D7%95%D7%99%D7%99%D7%A8%D7%A9%D7%98%D7%A8%D7%90%D7%A1" title="משפט הקירוב של ויירשטראס – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/Weierstrass_approxim%C3%A1ci%C3%B3s_t%C3%A9tele" title="Weierstrass approximációs tétele – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Stelling_van_Stone-Weierstrass" title="Stelling van Stone-Weierstrass – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%88%E3%83%BC%E3%83%B3%EF%BC%9D%E3%83%AF%E3%82%A4%E3%82%A8%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%88%E3%83%A9%E3%82%B9%E3%81%AE%E5%AE%9A%E7%90%86" title="ストーン＝ワイエルシュトラスの定理 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Twierdzenie_Stone%E2%80%99a-Weierstrassa" title="Twierdzenie Stone’a-Weierstrassa – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Teorema_de_Stone-Weierstrass" title="Teorema de Stone-Weierstrass – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%92%D0%B5%D0%B9%D0%B5%D1%80%D1%88%D1%82%D1%80%D0%B0%D1%81%D1%81%D0%B0_%E2%80%94_%D0%A1%D1%82%D0%BE%D1%83%D0%BD%D0%B0" title="Теорема Вейерштрасса — Стоуна – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Stone%E2%80%93Weierstrass_sats" title="Stone–Weierstrass sats – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E9%AD%8F%E5%B0%94%E6%96%BD%E7%89%B9%E6%8B%89%E6%96%AF%E9%80%BC%E8%BF%91%E5%AE%9A%E7%90%86" title="魏尔施特拉斯逼近定理 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q939927#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 4 November 2018, at 17:02<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Stone%E2%80%93Weierstrass_theorem&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.544","walltime":"0.739","ppvisitednodes":{"value":3438,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":47074,"limit":2097152},"templateargumentsize":{"value":4019,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":7,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":36266,"limit":5000000},"entityaccesscount":{"value":3,"limit":400},"timingprofile":["100.00%  556.514      1 -total"," 24.88%  138.468      1 Template:Reflist"," 21.16%  117.734     14 Template:Citation"," 16.45%   91.562      1 Template:Authority_control"," 12.14%   67.562      2 Template:Citation_needed"," 12.13%   67.483      1 Template:Cite_book"," 10.08%   56.104      1 Template:Cite_journal"," 10.02%   55.778      2 Template:Fix","  8.76%   48.741      1 Template:Isbn","  6.70%   37.291      4 Template:Category_handler"]},"scribunto":{"limitreport-timeusage":{"value":"0.272","limit":"10.000"},"limitreport-memusage":{"value":5443471,"limit":52428800}},"cachereport":{"origin":"mw1272","timestamp":"20190804021246","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Stone\u2013Weierstrass theorem","url":"https:\/\/en.wikipedia.org\/wiki\/Stone%E2%80%93Weierstrass_theorem","sameAs":"http:\/\/www.wikidata.org\/entity\/Q939927","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q939927","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2001-11-11T17:30:23Z","dateModified":"2018-11-04T17:02:42Z","headline":"theorem"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":115,"wgHostname":"mw1266"});});</script>
+</body>
+</html>

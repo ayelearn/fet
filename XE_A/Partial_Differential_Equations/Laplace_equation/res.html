@@ -1,0 +1,3158 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Laplace's equation - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Laplace's_equation","wgTitle":"Laplace's equation","wgCurRevisionId":906969840,"wgRevisionId":906969840,"wgArticleId":36941,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Use American English from March 2019","All Wikipedia articles written in American English","Articles with short description","Elliptic partial differential equations","Harmonic functions","Equations","Fourier analysis","Pierre-Simon Laplace"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October",
+"November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Laplace's_equation","wgRelevantArticleId":36941,"wgRequestId":"XUv@IgpAIC4AABomrGgAAACN","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Laplace_equation","wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgInternalRedirectTargetUrl":"/wiki/Laplace%27s_equation","wgWikibaseItemId":"Q339444","wgCentralAuthMobileDomain":!1,
+"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","ext.math.scripts","ext.cite.ux-enhancements","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips",
+"ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Laplace%27s_equation"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Laplace%27s_equation&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Laplace%27s_equation&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Laplace%27s_equation"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Laplace_s_equation rootpage-Laplace_s_equation skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Laplace's equation</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"><span class="mw-redirectedfrom">&#160;&#160;(Redirected from <a href="/w/index.php?title=Laplace_equation&amp;redirect=no" class="mw-redirect" title="Laplace equation">Laplace equation</a>)</span></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p class="mw-empty-elt">
+</p>
+<div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Second order partial differential equation</div>
+<div role="note" class="hatnote navigation-not-searchable">For Laplace's tidal equations, see <a href="/wiki/Theory_of_tides#Laplace&#39;s_tidal_equations" title="Theory of tides">Theory of tides §&#160;Laplace's tidal equations</a>.</div>
+<p>In <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>, <b>Laplace's equation</b> is a second-order <a href="/wiki/Partial_differential_equation" title="Partial differential equation">partial differential equation</a> named after <a href="/wiki/Pierre-Simon_Laplace" title="Pierre-Simon Laplace">Pierre-Simon Laplace</a> who first studied its properties. This is often written as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla ^{2}f=0\qquad {\mbox{or}}\qquad \Delta f=0,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mi>f</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mspace width="2em" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mtext>or</mtext>
+          </mstyle>
+        </mrow>
+        <mspace width="2em" />
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <mi>f</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla ^{2}f=0\qquad {\mbox{or}}\qquad \Delta f=0,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6433a9872ba9ac81628023a14eb21661d8ef29e0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:28.016ex; height:3.009ex;" alt="{\displaystyle \nabla ^{2}f=0\qquad {\mbox{or}}\qquad \Delta f=0,}"/></span></dd></dl>
+<p>where  <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Delta =\nabla \cdot \nabla =\nabla ^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <mo>=</mo>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>=</mo>
+        <msup>
+          <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Delta =\nabla \cdot \nabla =\nabla ^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bee487b31b9e1ef453359b842ef87322009b3402" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:16.674ex; height:2.676ex;" alt="{\displaystyle \Delta =\nabla \cdot \nabla =\nabla ^{2}}"/></span>is the <a href="/wiki/Laplace_operator" title="Laplace operator">Laplace operator</a>,<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;note 1&#93;</a></sup> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \cdot }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \cdot }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6df6024211b717870f07844116e116b2eb314d12" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.583ex; height:2.176ex;" alt="\nabla \cdot"/></span> is <a href="/wiki/Divergence" title="Divergence">divergence</a> <a href="/wiki/Operator_(mathematics)" title="Operator (mathematics)">operator</a> (also symbolized "div"), <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a3d0e93b78c50237f9ea83d027e4ebbdaef354b2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.936ex; height:2.176ex;" alt="\nabla "/></span> is the <a href="/wiki/Gradient" title="Gradient">gradient</a> operator (also symbolized "grad"),  and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x,y,z)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x,y,z)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f5d48dce2c4341575269f1709237a2e18923237a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.729ex; height:2.843ex;" alt="{\displaystyle f(x,y,z)}"/></span> is a twice-differentiable real-valued function. The Laplace operator therefore maps a scalar function to another scalar function.
+</p><p>If the right-hand side is specified as a given function, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle h(x,y,z)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>h</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle h(x,y,z)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dcd33aa5f28290a211f9f6557e3f2d858af72d2d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.789ex; height:2.843ex;" alt="{\displaystyle h(x,y,z)}"/></span>, we have
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Delta f=h.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <mi>f</mi>
+        <mo>=</mo>
+        <mi>h</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Delta f=h.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ff0e02f075a0511027478cd3f0d03d608797bb7c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:8.299ex; height:2.509ex;" alt="{\displaystyle \Delta f=h.}"/></span></dd></dl>
+<p>This is called <a href="/wiki/Poisson%27s_equation" title="Poisson&#39;s equation">Poisson's equation</a>, a generalization of Laplace's equation, Laplace's and  Poisson's equation are the simplest examples of <a href="/wiki/Elliptic_partial_differential_equation" title="Elliptic partial differential equation">elliptic partial differential equations</a>. 
+</p><p>The Laplace equation is also a special case of the <a href="/wiki/Helmholtz_equation" title="Helmholtz equation">Helmholtz equation</a>.
+</p><p>The general theory of solutions to Laplace's equation is known as <a href="/wiki/Potential_theory" title="Potential theory">potential theory</a>. The solutions of Laplace's equation are the <a href="/wiki/Harmonic_function" title="Harmonic function">harmonic functions</a>,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;1&#93;</a></sup> which are important in branches of physics, notably electrostatics, gravitation, and <a href="/wiki/Fluid_dynamics" title="Fluid dynamics">fluid dynamics</a>. In the study of <a href="/wiki/Heat_conduction" class="mw-redirect" title="Heat conduction">heat conduction</a>, the Laplace equation is the <a href="/wiki/Steady-state" class="mw-redirect" title="Steady-state">steady-state</a> <a href="/wiki/Heat_equation" title="Heat equation">heat equation</a>.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;2&#93;</a></sup>
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Forms_in_different_coordinate_systems"><span class="tocnumber">1</span> <span class="toctext">Forms in different coordinate systems</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Boundary_conditions"><span class="tocnumber">2</span> <span class="toctext">Boundary conditions</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#In_two_dimensions"><span class="tocnumber">3</span> <span class="toctext">In two dimensions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Analytic_functions"><span class="tocnumber">3.1</span> <span class="toctext">Analytic functions</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Fluid_flow"><span class="tocnumber">3.2</span> <span class="toctext">Fluid flow</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Electrostatics"><span class="tocnumber">3.3</span> <span class="toctext">Electrostatics</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#In_three_dimensions"><span class="tocnumber">4</span> <span class="toctext">In three dimensions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Fundamental_solution"><span class="tocnumber">4.1</span> <span class="toctext">Fundamental solution</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Green&#39;s_function"><span class="tocnumber">4.2</span> <span class="toctext">Green's function</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Electrostatics_2"><span class="tocnumber">4.3</span> <span class="toctext">Electrostatics</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#In_the_Schwarzschild_metric"><span class="tocnumber">5</span> <span class="toctext">In the Schwarzschild metric</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Notes"><span class="tocnumber">7</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#Further_reading"><span class="tocnumber">9</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Forms_in_different_coordinate_systems">Forms in different coordinate systems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laplace%27s_equation&amp;action=edit&amp;section=1" title="Edit section: Forms in different coordinate systems">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In <b><a href="/wiki/Cartesian_coordinates" class="mw-redirect" title="Cartesian coordinates">Cartesian coordinates</a>,</b><sup id="cite_ref-Griffiths_4-0" class="reference"><a href="#cite_note-Griffiths-4">&#91;3&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Delta f={\frac {\partial ^{2}f}{\partial x^{2}}}+{\frac {\partial ^{2}f}{\partial y^{2}}}+{\frac {\partial ^{2}f}{\partial z^{2}}}=0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <mi>f</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mi>f</mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <msup>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mi>f</mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <msup>
+                <mi>y</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mi>f</mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <msup>
+                <mi>z</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Delta f={\frac {\partial ^{2}f}{\partial x^{2}}}+{\frac {\partial ^{2}f}{\partial y^{2}}}+{\frac {\partial ^{2}f}{\partial z^{2}}}=0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ab521a0cb1afed153012498aa12337b62d34af5f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:30.464ex; height:6.343ex;" alt="{\displaystyle \Delta f={\frac {\partial ^{2}f}{\partial x^{2}}}+{\frac {\partial ^{2}f}{\partial y^{2}}}+{\frac {\partial ^{2}f}{\partial z^{2}}}=0.}"/></span></dd></dl>
+<p>In <b><a href="/wiki/Cylindrical_coordinates" class="mw-redirect" title="Cylindrical coordinates">cylindrical coordinates</a></b>,<sup id="cite_ref-Griffiths_4-1" class="reference"><a href="#cite_note-Griffiths-4">&#91;3&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Delta f={\frac {1}{r}}{\frac {\partial }{\partial r}}\left(r{\frac {\partial f}{\partial r}}\right)+{\frac {1}{r^{2}}}{\frac {\partial ^{2}f}{\partial \phi ^{2}}}+{\frac {\partial ^{2}f}{\partial z^{2}}}=0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <mi>f</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>r</mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>r</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mi>r</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>f</mi>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>r</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msup>
+              <mi>r</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mi>f</mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <msup>
+                <mi>&#x03D5;<!-- ϕ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mi>f</mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <msup>
+                <mi>z</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Delta f={\frac {1}{r}}{\frac {\partial }{\partial r}}\left(r{\frac {\partial f}{\partial r}}\right)+{\frac {1}{r^{2}}}{\frac {\partial ^{2}f}{\partial \phi ^{2}}}+{\frac {\partial ^{2}f}{\partial z^{2}}}=0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6b7f67bdfcfe18aaf7a1bef79be52f6e6ff2bec3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:42.438ex; height:6.343ex;" alt="{\displaystyle \Delta f={\frac {1}{r}}{\frac {\partial }{\partial r}}\left(r{\frac {\partial f}{\partial r}}\right)+{\frac {1}{r^{2}}}{\frac {\partial ^{2}f}{\partial \phi ^{2}}}+{\frac {\partial ^{2}f}{\partial z^{2}}}=0.}"/></span></dd></dl>
+<p>In <b><a href="/wiki/Spherical_coordinates" class="mw-redirect" title="Spherical coordinates">spherical coordinates</a></b>, using the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (r,\theta ,\varphi )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>r</mi>
+        <mo>,</mo>
+        <mi>&#x03B8;<!-- θ --></mi>
+        <mo>,</mo>
+        <mi>&#x03C6;<!-- φ --></mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (r,\theta ,\varphi )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d0fbf2e667b8c94c169165fc44e0d73e66c901a9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.536ex; height:2.843ex;" alt="{\displaystyle (r,\theta ,\varphi )}"/></span>convention,<sup id="cite_ref-Griffiths_4-2" class="reference"><a href="#cite_note-Griffiths-4">&#91;3&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Delta f={\frac {1}{r^{2}}}{\frac {\partial }{\partial r}}\left(r^{2}{\frac {\partial f}{\partial r}}\right)+{\frac {1}{r^{2}\sin \theta }}{\frac {\partial }{\partial \theta }}\left(\sin \theta {\frac {\partial f}{\partial \theta }}\right)+{\frac {1}{r^{2}\sin ^{2}\theta }}{\frac {\partial ^{2}f}{\partial \varphi ^{2}}}=0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <mi>f</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msup>
+              <mi>r</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>r</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <msup>
+              <mi>r</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>f</mi>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>r</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <msup>
+                <mi>r</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mi>sin</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mi>&#x03B8;<!-- θ --></mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>&#x03B8;<!-- θ --></mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mi>sin</mi>
+            <mo>&#x2061;<!-- ⁡ --></mo>
+            <mi>&#x03B8;<!-- θ --></mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>f</mi>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>&#x03B8;<!-- θ --></mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <msup>
+                <mi>r</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <msup>
+                <mi>sin</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mi>&#x03B8;<!-- θ --></mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mi>f</mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <msup>
+                <mi>&#x03C6;<!-- φ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Delta f={\frac {1}{r^{2}}}{\frac {\partial }{\partial r}}\left(r^{2}{\frac {\partial f}{\partial r}}\right)+{\frac {1}{r^{2}\sin \theta }}{\frac {\partial }{\partial \theta }}\left(\sin \theta {\frac {\partial f}{\partial \theta }}\right)+{\frac {1}{r^{2}\sin ^{2}\theta }}{\frac {\partial ^{2}f}{\partial \varphi ^{2}}}=0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/41eac5e92907b87e065cdcd850f4dac128dd53e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:68.308ex; height:6.343ex;" alt="{\displaystyle \Delta f={\frac {1}{r^{2}}}{\frac {\partial }{\partial r}}\left(r^{2}{\frac {\partial f}{\partial r}}\right)+{\frac {1}{r^{2}\sin \theta }}{\frac {\partial }{\partial \theta }}\left(\sin \theta {\frac {\partial f}{\partial \theta }}\right)+{\frac {1}{r^{2}\sin ^{2}\theta }}{\frac {\partial ^{2}f}{\partial \varphi ^{2}}}=0.}"/></span></dd></dl>
+<p>More generally, in <b><a href="/wiki/Curvilinear_coordinates" title="Curvilinear coordinates">curvilinear coordinates</a></b>,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Delta f={\frac {\partial }{\partial \xi ^{j}}}\left({\frac {\partial f}{\partial \xi ^{k}}}g^{kj}\right)+{\frac {\partial f}{\partial \xi ^{j}}}g^{jm}\Gamma _{mn}^{n}=0,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <mi>f</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <msup>
+                <mi>&#x03BE;<!-- ξ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>j</mi>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>f</mi>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <msup>
+                    <mi>&#x03BE;<!-- ξ --></mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>k</mi>
+                    </mrow>
+                  </msup>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <msup>
+              <mi>g</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+                <mi>j</mi>
+              </mrow>
+            </msup>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>f</mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <msup>
+                <mi>&#x03BE;<!-- ξ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>j</mi>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <msup>
+          <mi>g</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mi>m</mi>
+          </mrow>
+        </msup>
+        <msubsup>
+          <mi mathvariant="normal">&#x0393;<!-- Γ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mi>n</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msubsup>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Delta f={\frac {\partial }{\partial \xi ^{j}}}\left({\frac {\partial f}{\partial \xi ^{k}}}g^{kj}\right)+{\frac {\partial f}{\partial \xi ^{j}}}g^{jm}\Gamma _{mn}^{n}=0,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/78423d446a4d3a61d90be30a16450d5f5caa8e39" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:40.81ex; height:6.343ex;" alt="\Delta f={\frac {\partial }{\partial \xi ^{j}}}\left({\frac {\partial f}{\partial \xi ^{k}}}g^{kj}\right)+{\frac {\partial f}{\partial \xi ^{j}}}g^{jm}\Gamma _{mn}^{n}=0,"/></span></dd></dl>
+<p>or 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Delta f={\frac {1}{\sqrt {|g|}}}{\frac {\partial }{\partial \xi ^{i}}}\!\left({\sqrt {|g|}}g^{ij}{\frac {\partial f}{\partial \xi ^{j}}}\right)=0,\qquad (g=\mathrm {det} \{g_{ij}\}).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <mi>f</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msqrt>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mi>g</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+            </msqrt>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <msup>
+                <mi>&#x03BE;<!-- ξ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mspace width="negativethinmathspace" />
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msqrt>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">|</mo>
+                </mrow>
+                <mi>g</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">|</mo>
+                </mrow>
+              </msqrt>
+            </mrow>
+            <msup>
+              <mi>g</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+                <mi>j</mi>
+              </mrow>
+            </msup>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>f</mi>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <msup>
+                    <mi>&#x03BE;<!-- ξ --></mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>j</mi>
+                    </mrow>
+                  </msup>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mspace width="2em" />
+        <mo stretchy="false">(</mo>
+        <mi>g</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+          <mi mathvariant="normal">e</mi>
+          <mi mathvariant="normal">t</mi>
+        </mrow>
+        <mo fence="false" stretchy="false">{</mo>
+        <msub>
+          <mi>g</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo fence="false" stretchy="false">}</mo>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Delta f={\frac {1}{\sqrt {|g|}}}{\frac {\partial }{\partial \xi ^{i}}}\!\left({\sqrt {|g|}}g^{ij}{\frac {\partial f}{\partial \xi ^{j}}}\right)=0,\qquad (g=\mathrm {det} \{g_{ij}\}).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0ef744348ff28db66ed3b38bfe58f69fdf2a0a68" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:55.469ex; height:6.843ex;" alt="\Delta f={\frac {1}{\sqrt {|g|}}}{\frac {\partial }{\partial \xi ^{i}}}\!\left({\sqrt {|g|}}g^{ij}{\frac {\partial f}{\partial \xi ^{j}}}\right)=0,\qquad (g=\mathrm {det} \{g_{ij}\})."/></span></dd></dl>
+<h2><span class="mw-headline" id="Boundary_conditions">Boundary conditions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laplace%27s_equation&amp;action=edit&amp;section=2" title="Edit section: Boundary conditions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:352px;"><a href="/wiki/File:Laplace%27s_equation_on_an_annulus.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Laplace%27s_equation_on_an_annulus.svg/350px-Laplace%27s_equation_on_an_annulus.svg.png" decoding="async" width="350" height="175" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Laplace%27s_equation_on_an_annulus.svg/525px-Laplace%27s_equation_on_an_annulus.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Laplace%27s_equation_on_an_annulus.svg/700px-Laplace%27s_equation_on_an_annulus.svg.png 2x" data-file-width="2268" data-file-height="1134" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Laplace%27s_equation_on_an_annulus.svg" class="internal" title="Enlarge"></a></div>Laplace's equation on an <a href="/wiki/Annulus_(mathematics)" title="Annulus (mathematics)">annulus</a> (inner radius <i>r</i> = 2 and outer radius <i>R</i> = 4) with Dirichlet boundary conditions <i>u</i>(<i>r</i>=2) = 0 and <i>u</i>(<i>R</i>=4) = 4 sin(5 <i>θ</i>)</div></div></div>
+<div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Boundary_value_problem" title="Boundary value problem">Boundary value problem</a></div>
+<p>The <a href="/wiki/Dirichlet_problem" title="Dirichlet problem">Dirichlet problem</a> for Laplace's equation consists of finding a solution <i>φ</i> on some domain <i>D</i> such that <i>φ</i> on the boundary of <i>D</i> is equal to some given function. Since the Laplace operator appears in the <a href="/wiki/Heat_equation" title="Heat equation">heat equation</a>, one physical interpretation of this problem is as follows: fix the temperature on the boundary of the domain according to the given specification of the boundary condition. Allow heat to flow until a stationary state is reached in which the temperature at each point on the domain doesn't change anymore. The temperature distribution in the interior will then be given by the solution to the corresponding Dirichlet problem.
+</p><p>The <a href="/wiki/Neumann_boundary_condition" title="Neumann boundary condition">Neumann boundary conditions</a> for Laplace's equation specify not the function <i>φ</i> itself on the boundary of <i>D</i>, but its <a href="/wiki/Normal_derivative" class="mw-redirect" title="Normal derivative">normal derivative</a>. Physically, this corresponds to the construction of a potential for a vector field whose effect is known at the boundary of <i>D</i> alone.
+</p><p>Solutions of Laplace's equation are called <a href="/wiki/Harmonic_function" title="Harmonic function">harmonic functions</a>; they are all <a href="/wiki/Analytic_function" title="Analytic function">analytic</a> within the domain where the equation is satisfied. If any two functions are solutions to Laplace's equation (or any linear homogeneous differential equation), their sum (or any linear combination) is also a solution. This property, called the <a href="/wiki/Superposition_principle" title="Superposition principle">principle of superposition</a>, is very useful, e.g., solutions to complex problems can be constructed by summing simple solutions.
+</p>
+<h2><span class="mw-headline" id="In_two_dimensions">In two dimensions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laplace%27s_equation&amp;action=edit&amp;section=3" title="Edit section: In two dimensions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Laplace's equation in two independent variables in rectangular coordinates has the form 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {\partial ^{2}\psi }{\partial x^{2}}}+{\frac {\partial ^{2}\psi }{\partial y^{2}}}\equiv \psi _{xx}+\psi _{yy}=0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mi>&#x03C8;<!-- ψ --></mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <msup>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mi>&#x03C8;<!-- ψ --></mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <msup>
+                <mi>y</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>&#x2261;<!-- ≡ --></mo>
+        <msub>
+          <mi>&#x03C8;<!-- ψ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>&#x03C8;<!-- ψ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\partial ^{2}\psi }{\partial x^{2}}}+{\frac {\partial ^{2}\psi }{\partial y^{2}}}\equiv \psi _{xx}+\psi _{yy}=0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f65ed0c8bdf8ef3edd4a940da1e1fc51679f4264" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:30.186ex; height:6.343ex;" alt="{\frac {\partial ^{2}\psi }{\partial x^{2}}}+{\frac {\partial ^{2}\psi }{\partial y^{2}}}\equiv \psi _{xx}+\psi _{yy}=0."/></span></dd></dl>
+<h3><span class="mw-headline" id="Analytic_functions">Analytic functions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laplace%27s_equation&amp;action=edit&amp;section=4" title="Edit section: Analytic functions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The real and imaginary parts of a complex <a href="/wiki/Analytic_function" title="Analytic function">analytic function</a> both satisfy the Laplace equation. That is, if <span class="nowrap"><i>z</i> = <i>x</i> + <i>iy</i></span>, and if 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)=u(x,y)+iv(x,y),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>u</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>i</mi>
+        <mi>v</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)=u(x,y)+iv(x,y),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/845c3bf3b793fe31aa15a7d7663a1448d6d5daf3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:24.678ex; height:2.843ex;" alt="f(z)=u(x,y)+iv(x,y),"/></span></dd></dl>
+<p>then the necessary condition that <i>f</i>(<i>z</i>) be analytic is that the <a href="/wiki/Cauchy%E2%80%93Riemann_equations" title="Cauchy–Riemann equations">Cauchy–Riemann equations</a> be satisfied:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle u_{x}=v_{y},\quad v_{x}=-u_{y}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="1em" />
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u_{x}=v_{y},\quad v_{x}=-u_{y}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ae2c10d8be01694a139a2582a7dbd050bacf66a5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:21.367ex; height:2.676ex;" alt="u_{x}=v_{y},\quad v_{x}=-u_{y}."/></span></dd></dl>
+<p>where <i>u<sub>x</sub></i> is the first partial derivative of <i>u</i> with respect to <i>x</i>.
+It follows that 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle u_{yy}=(-v_{x})_{y}=-(v_{y})_{x}=-(u_{x})_{x}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u_{yy}=(-v_{x})_{y}=-(v_{y})_{x}=-(u_{x})_{x}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6109359d983361cb953f60a5d791c9a64065dd90" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:34.364ex; height:3.009ex;" alt="u_{yy}=(-v_{x})_{y}=-(v_{y})_{x}=-(u_{x})_{x}."/></span></dd></dl>
+<p>Therefore <i>u</i> satisfies the Laplace equation. A similar calculation shows that <i>v</i> also satisfies the Laplace equation. 
+Conversely, given a harmonic function, it is the real part of an analytic function, <i>f</i>(<i>z</i>) (at least locally). If a trial form is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)=\varphi (x,y)+i\psi (x,y),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>&#x03C6;<!-- φ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>i</mi>
+        <mi>&#x03C8;<!-- ψ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)=\varphi (x,y)+i\psi (x,y),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/38bab684371153db8e40fa7b1d0def826da7f649" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:25.254ex; height:2.843ex;" alt="f(z)=\varphi (x,y)+i\psi (x,y),"/></span></dd></dl>
+<p>then the Cauchy–Riemann equations will be satisfied if we set
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \psi _{x}=-\varphi _{y},\quad \psi _{y}=\varphi _{x}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03C8;<!-- ψ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>&#x03C6;<!-- φ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="1em" />
+        <msub>
+          <mi>&#x03C8;<!-- ψ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>&#x03C6;<!-- φ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \psi _{x}=-\varphi _{y},\quad \psi _{y}=\varphi _{x}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/77b2fdb172dad9ea6e82810468c2c281877edbc8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:22.519ex; height:2.843ex;" alt="\psi _{x}=-\varphi _{y},\quad \psi _{y}=\varphi _{x}."/></span></dd></dl>
+<p>This relation does not determine <i>ψ</i>, but only its increments:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle d\psi =-\varphi _{y}\,dx+\varphi _{x}\,dy.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mi>&#x03C8;<!-- ψ --></mi>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>&#x03C6;<!-- φ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>x</mi>
+        <mo>+</mo>
+        <msub>
+          <mi>&#x03C6;<!-- φ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>y</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d\psi =-\varphi _{y}\,dx+\varphi _{x}\,dy.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cffd2b1b61b24e832073f8bb0fe09666c259b517" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:22.076ex; height:2.843ex;" alt="d\psi =-\varphi _{y}\,dx+\varphi _{x}\,dy."/></span></dd></dl>
+<p>The Laplace equation for <i>φ</i> implies that the integrability condition for <i>ψ</i> is satisfied:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \psi _{xy}=\psi _{yx},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03C8;<!-- ψ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>&#x03C8;<!-- ψ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \psi _{xy}=\psi _{yx},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/de087eb588b22211e664b2b0ed20a060905b9ffb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:10.751ex; height:2.843ex;" alt="\psi _{xy}=\psi _{yx},"/></span></dd></dl>
+<p>and thus <i>ψ</i> may be defined by a line integral. The integrability condition and <a href="/wiki/Stokes%27_theorem" title="Stokes&#39; theorem">Stokes' theorem</a> implies that the value of the line integral connecting two points is independent of the path. The resulting pair of solutions of the Laplace equation are called <b>conjugate harmonic functions</b>. This construction is only valid locally, or provided that the path does not loop around a singularity. For example, if <i>r</i> and <i>θ</i> are polar coordinates and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \varphi =\log r,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03C6;<!-- φ --></mi>
+        <mo>=</mo>
+        <mi>log</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi>r</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi =\log r,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/af6d0132b739d21c478f116016ef3c5f5e1f5128" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.673ex; height:2.676ex;" alt="\varphi =\log r,"/></span></dd></dl>
+<p>then a corresponding analytic function is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)=\log z=\log r+i\theta .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>log</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi>z</mi>
+        <mo>=</mo>
+        <mi>log</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi>r</mi>
+        <mo>+</mo>
+        <mi>i</mi>
+        <mi>&#x03B8;<!-- θ --></mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)=\log z=\log r+i\theta .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2c2c95a1d9906e359cc0b8f44f3e5752ae7d9802" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:24.608ex; height:2.843ex;" alt="f(z)=\log z=\log r+i\theta ."/></span></dd></dl>
+<p>However, the angle <i>θ</i> is single-valued only in a region that does not enclose the origin.
+</p><p>The close connection between the Laplace equation and analytic functions implies that any solution of the Laplace equation has derivatives of all orders, and can be expanded in a power series, at least inside a circle that does not enclose a singularity. This is in sharp contrast to solutions of the <a href="/wiki/Wave_equation" title="Wave equation">wave equation</a>, which generally have less regularity.
+</p><p>There is an intimate connection between power series and <a href="/wiki/Fourier_series" title="Fourier series">Fourier series</a>. If we expand a function <i>f</i> in a power series inside a circle of radius <i>R</i>, this means that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)=\sum _{n=0}^{\infty }c_{n}z^{n},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)=\sum _{n=0}^{\infty }c_{n}z^{n},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/44ced82a311caba08489e9a00686dcc9140e538a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:16.198ex; height:6.843ex;" alt="f(z)=\sum _{n=0}^{\infty }c_{n}z^{n},"/></span></dd></dl>
+<p>with suitably defined coefficients whose real and imaginary parts are given by 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle c_{n}=a_{n}+ib_{n}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mi>i</mi>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c_{n}=a_{n}+ib_{n}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2809d995f9f01394a1ce6df2f1114c802b852352" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:14.278ex; height:2.509ex;" alt="c_{n}=a_{n}+ib_{n}."/></span></dd></dl>
+<p>Therefore
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)=\sum _{n=0}^{\infty }\left[a_{n}r^{n}\cos n\theta -b_{n}r^{n}\sin n\theta \right]+i\sum _{n=1}^{\infty }\left[a_{n}r^{n}\sin n\theta +b_{n}r^{n}\cos n\theta \right],}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mrow>
+          <mo>[</mo>
+          <mrow>
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <msup>
+              <mi>r</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msup>
+            <mi>cos</mi>
+            <mo>&#x2061;<!-- ⁡ --></mo>
+            <mi>n</mi>
+            <mi>&#x03B8;<!-- θ --></mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <msub>
+              <mi>b</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <msup>
+              <mi>r</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msup>
+            <mi>sin</mi>
+            <mo>&#x2061;<!-- ⁡ --></mo>
+            <mi>n</mi>
+            <mi>&#x03B8;<!-- θ --></mi>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <mo>+</mo>
+        <mi>i</mi>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mrow>
+          <mo>[</mo>
+          <mrow>
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <msup>
+              <mi>r</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msup>
+            <mi>sin</mi>
+            <mo>&#x2061;<!-- ⁡ --></mo>
+            <mi>n</mi>
+            <mi>&#x03B8;<!-- θ --></mi>
+            <mo>+</mo>
+            <msub>
+              <mi>b</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <msup>
+              <mi>r</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msup>
+            <mi>cos</mi>
+            <mo>&#x2061;<!-- ⁡ --></mo>
+            <mi>n</mi>
+            <mi>&#x03B8;<!-- θ --></mi>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)=\sum _{n=0}^{\infty }\left[a_{n}r^{n}\cos n\theta -b_{n}r^{n}\sin n\theta \right]+i\sum _{n=1}^{\infty }\left[a_{n}r^{n}\sin n\theta +b_{n}r^{n}\cos n\theta \right],}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b1b3cac9f3349f533d6d5728e469d9e909e90453" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:71.459ex; height:6.843ex;" alt="f(z)=\sum _{n=0}^{\infty }\left[a_{n}r^{n}\cos n\theta -b_{n}r^{n}\sin n\theta \right]+i\sum _{n=1}^{\infty }\left[a_{n}r^{n}\sin n\theta +b_{n}r^{n}\cos n\theta \right],"/></span></dd></dl>
+<p>which is a Fourier series for <i>f</i>.  These trigonometric functions can themselves be expanded, using <a href="/wiki/De_Moivre%27s_formula#Formulas_for_cosine_and_sine_individually" title="De Moivre&#39;s formula">multiple angle formulae</a>.
+</p>
+<h3><span class="mw-headline" id="Fluid_flow">Fluid flow</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laplace%27s_equation&amp;action=edit&amp;section=5" title="Edit section: Fluid flow">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Let the quantities <i>u</i> and <i>v</i> be the horizontal and vertical components of the velocity field of a steady incompressible, irrotational flow in two dimensions. The continuity condition for an incompressible flow is that 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle u_{x}+v_{y}=0,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u_{x}+v_{y}=0,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/867d0409a897bfd709ee12ed5048f64ad359f5eb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:12.427ex; height:2.843ex;" alt="u_{x}+v_{y}=0,"/></span></dd></dl>
+<p>and the condition that the flow be irrotational is that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \times \mathbf {V} =v_{x}-u_{y}=0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">V</mi>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \times \mathbf {V} =v_{x}-u_{y}=0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/02bfca6b02677970c908ae35bc437fc518c62fbc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:22.321ex; height:2.843ex;" alt="\nabla \times \mathbf {V} =v_{x}-u_{y}=0."/></span></dd></dl>
+<p>If we define the differential of a function <i>ψ</i> by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle d\psi =vdx-udy,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mi>&#x03C8;<!-- ψ --></mi>
+        <mo>=</mo>
+        <mi>v</mi>
+        <mi>d</mi>
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>u</mi>
+        <mi>d</mi>
+        <mi>y</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d\psi =vdx-udy,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8a64104a22c05814759c17515eb9cdb1997b8bf4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:16.689ex; height:2.509ex;" alt="d\psi =vdx-udy,"/></span></dd></dl>
+<p>then the continuity condition is the integrability condition for this differential: the resulting function is called the <a href="/wiki/Stream_function" title="Stream function">stream function</a> because it is constant along <a href="/wiki/Streamlines,_streaklines_and_pathlines" class="mw-redirect" title="Streamlines, streaklines and pathlines">flow lines</a>. The first derivatives of <i>ψ</i> are given by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \psi _{x}=v,\quad \psi _{y}=-u,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03C8;<!-- ψ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>v</mi>
+        <mo>,</mo>
+        <mspace width="1em" />
+        <msub>
+          <mi>&#x03C8;<!-- ψ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>u</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \psi _{x}=v,\quad \psi _{y}=-u,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/04c995e41615d4c42c1630f832fcdc27eea671a7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:19.714ex; height:2.843ex;" alt="\psi _{x}=v,\quad \psi _{y}=-u,"/></span></dd></dl>
+<p>and the irrotationality condition implies that <i>ψ</i> satisfies the Laplace equation. The harmonic function <i>φ</i> that is conjugate to <i>ψ</i> is called the <a href="/wiki/Velocity_potential" title="Velocity potential">velocity potential</a>. The Cauchy–Riemann equations imply that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \varphi _{x}=-u,\quad \varphi _{y}=-v.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03C6;<!-- φ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>u</mi>
+        <mo>,</mo>
+        <mspace width="1em" />
+        <msub>
+          <mi>&#x03C6;<!-- φ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>v</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi _{x}=-u,\quad \varphi _{y}=-v.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d837a5537ca7adbeb4ce74f549da7f43734a5419" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:21.536ex; height:2.676ex;" alt="\varphi _{x}=-u,\quad \varphi _{y}=-v."/></span></dd></dl>
+<p>Thus every analytic function corresponds to a steady incompressible, irrotational fluid flow in the plane. The real part is the velocity potential, and the imaginary part is the stream function.
+</p>
+<h3><span class="mw-headline" id="Electrostatics">Electrostatics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laplace%27s_equation&amp;action=edit&amp;section=6" title="Edit section: Electrostatics">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>According to <a href="/wiki/Maxwell%27s_equations" title="Maxwell&#39;s equations">Maxwell's equations</a>, an electric field <span class="nowrap">(<i>u</i>, <i>v</i>)</span> in two space dimensions that is independent of time satisfies
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \times (u,v,0)=(v_{x}-u_{y}){\hat {\mathbf {k} }}=\mathbf {0} ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo>,</mo>
+        <mi>v</mi>
+        <mo>,</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">k</mi>
+              </mrow>
+              <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mn mathvariant="bold">0</mn>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \times (u,v,0)=(v_{x}-u_{y}){\hat {\mathbf {k} }}=\mathbf {0} ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0f150e7a71b6b3fc397eff0c6fb122d867ee8e2a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:31.193ex; height:3.509ex;" alt="\nabla \times (u,v,0)=(v_{x}-u_{y}){\hat {\mathbf {k} }}=\mathbf {0} ,"/></span></dd></dl>
+<p>and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \cdot (u,v)=\rho ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo>,</mo>
+        <mi>v</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>&#x03C1;<!-- ρ --></mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \cdot (u,v)=\rho ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/04bace3550c99467233b3a137b689b2ce983ae9b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:13.863ex; height:2.843ex;" alt="\nabla \cdot (u,v)=\rho ,"/></span></dd></dl>
+<p>where <i>ρ</i> is the charge density. The first Maxwell equation is the integrability condition for the differential
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle d\varphi =-u\,dx-v\,dy,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mi>&#x03C6;<!-- φ --></mi>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>u</mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>v</mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>y</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d\varphi =-u\,dx-v\,dy,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8e85f8dea65272a720e833530d89128c5c086cbb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.278ex; height:2.676ex;" alt="d\varphi =-u\,dx-v\,dy,"/></span></dd></dl>
+<p>so the electric potential <i>φ</i> may be constructed to satisfy
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \varphi _{x}=-u,\quad \varphi _{y}=-v.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03C6;<!-- φ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>u</mi>
+        <mo>,</mo>
+        <mspace width="1em" />
+        <msub>
+          <mi>&#x03C6;<!-- φ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>v</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi _{x}=-u,\quad \varphi _{y}=-v.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d837a5537ca7adbeb4ce74f549da7f43734a5419" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:21.536ex; height:2.676ex;" alt="\varphi _{x}=-u,\quad \varphi _{y}=-v."/></span></dd></dl>
+<p>The second of Maxwell's equations then implies that 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \varphi _{xx}+\varphi _{yy}=-\rho ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03C6;<!-- φ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>&#x03C6;<!-- φ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>&#x03C1;<!-- ρ --></mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi _{xx}+\varphi _{yy}=-\rho ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bff876849810e23f1414fc2c1987bf66d9ffc5ab" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:16.615ex; height:2.676ex;" alt="\varphi _{xx}+\varphi _{yy}=-\rho ,"/></span></dd></dl>
+<p>which is the <a href="/wiki/Poisson_equation" class="mw-redirect" title="Poisson equation">Poisson equation</a>. The Laplace equation can be used in three-dimensional problems in electrostatics and fluid flow just as in two dimensions.
+</p>
+<h2><span class="mw-headline" id="In_three_dimensions">In three dimensions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laplace%27s_equation&amp;action=edit&amp;section=7" title="Edit section: In three dimensions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Fundamental_solution">Fundamental solution</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laplace%27s_equation&amp;action=edit&amp;section=8" title="Edit section: Fundamental solution">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A <a href="/wiki/Fundamental_solution" title="Fundamental solution">fundamental solution</a> of Laplace's equation satisfies
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Delta u=u_{xx}+u_{yy}+u_{zz}=-\delta (x-x',y-y',z-z'),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <mi>u</mi>
+        <mo>=</mo>
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>z</mi>
+            <mi>z</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <msup>
+          <mi>x</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <msup>
+          <mi>y</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <msup>
+          <mi>z</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Delta u=u_{xx}+u_{yy}+u_{zz}=-\delta (x-x',y-y',z-z'),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b959db4267d5e080915e70d673e50e9ecc57cbeb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:49.992ex; height:3.176ex;" alt="\Delta u=u_{xx}+u_{yy}+u_{zz}=-\delta (x-x&#039;,y-y&#039;,z-z&#039;),"/></span></dd></dl>
+<p>where the <a href="/wiki/Dirac_delta_function" title="Dirac delta function">Dirac delta function</a> <i>δ</i> denotes a unit source concentrated at the point <span class="nowrap">(<i>x</i>′, <i>y</i>′, <i>z</i>′)</span>. No function has this property: in fact it is a <a href="/wiki/Distribution_(mathematics)" title="Distribution (mathematics)">distribution</a> rather than a function; but it can be thought of as a limit of functions whose integrals over space are unity, and whose support (the region where the function is non-zero) shrinks to a point (see <a href="/wiki/Weak_solution" title="Weak solution">weak solution</a>). It is common to take a different sign convention for this equation than one typically does when defining fundamental solutions. This choice of sign is often convenient to work with because −Δ is a <a href="/wiki/Positive_operator" class="mw-redirect" title="Positive operator">positive operator</a>. The definition of the fundamental solution thus implies that, if the Laplacian of <i>u</i> is integrated over any volume that encloses the source point, then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \iiint _{V}\nabla \cdot \nabla u\,dV=-1.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222D;<!-- ∭ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>V</mi>
+          </mrow>
+        </msub>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mi>u</mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>V</mi>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \iiint _{V}\nabla \cdot \nabla u\,dV=-1.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1b73370c4f9fd9606dc6424624f38623774698dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:22.568ex; height:5.676ex;" alt="\iiint _{V}\nabla \cdot \nabla u\,dV=-1."/></span></dd></dl>
+<p>The Laplace equation is unchanged under a rotation of coordinates, and hence we can expect that a fundamental solution may be obtained among solutions that only depend upon the distance <i>r</i> from the source point. If we choose the volume to be a ball of radius <i>a</i> around the source point, then <a href="/wiki/Gauss%27_divergence_theorem" class="mw-redirect" title="Gauss&#39; divergence theorem">Gauss' divergence theorem</a> implies that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle -1=\iiint _{V}\nabla \cdot \nabla u\,dV=\iint _{S}{\frac {du}{dr}}\,dS=\left.4\pi a^{2}{\frac {du}{dr}}\right|_{r=a}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <mo>=</mo>
+        <msub>
+          <mo>&#x222D;<!-- ∭ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>V</mi>
+          </mrow>
+        </msub>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mi>u</mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>V</mi>
+        <mo>=</mo>
+        <msub>
+          <mo>&#x222C;<!-- ∬ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>d</mi>
+              <mi>u</mi>
+            </mrow>
+            <mrow>
+              <mi>d</mi>
+              <mi>r</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>S</mi>
+        <mo>=</mo>
+        <msub>
+          <mrow>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+            <mrow>
+              <mn>4</mn>
+              <mi>&#x03C0;<!-- π --></mi>
+              <msup>
+                <mi>a</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac>
+                  <mrow>
+                    <mi>d</mi>
+                    <mi>u</mi>
+                  </mrow>
+                  <mrow>
+                    <mi>d</mi>
+                    <mi>r</mi>
+                  </mrow>
+                </mfrac>
+              </mrow>
+            </mrow>
+            <mo>|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+            <mo>=</mo>
+            <mi>a</mi>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -1=\iiint _{V}\nabla \cdot \nabla u\,dV=\iint _{S}{\frac {du}{dr}}\,dS=\left.4\pi a^{2}{\frac {du}{dr}}\right|_{r=a}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5dff5560874e18fe5d100828b6943dcf4ec6ddf1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:51.377ex; height:5.843ex;" alt="-1=\iiint _{V}\nabla \cdot \nabla u\,dV=\iint _{S}{\frac {du}{dr}}\,dS=\left.4\pi a^{2}{\frac {du}{dr}}\right|_{r=a}."/></span></dd></dl>
+<p>It follows that 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {du}{dr}}=-{\frac {1}{4\pi r^{2}}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>d</mi>
+              <mi>u</mi>
+            </mrow>
+            <mrow>
+              <mi>d</mi>
+              <mi>r</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mn>4</mn>
+              <mi>&#x03C0;<!-- π --></mi>
+              <msup>
+                <mi>r</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {du}{dr}}=-{\frac {1}{4\pi r^{2}}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/352b06b0581bc5165bd2cb4802ccc41bb56e81fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:14.369ex; height:5.676ex;" alt="{\frac {du}{dr}}=-{\frac {1}{4\pi r^{2}}},"/></span></dd></dl>
+<p>on a sphere of radius <i>r</i> that is centered on the source point, and hence
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle u={\frac {1}{4\pi r}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>u</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mn>4</mn>
+              <mi>&#x03C0;<!-- π --></mi>
+              <mi>r</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u={\frac {1}{4\pi r}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7b0b107e64b4905add474451959de3af6bcb483c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:9.454ex; height:5.176ex;" alt="u={\frac {1}{4\pi r}}."/></span></dd></dl>
+<p>Note that, with the opposite sign convention (used in <a href="/wiki/Physics" title="Physics">physics</a>), this is the <a href="/wiki/Potential" title="Potential">potential</a> generated by a <a href="/wiki/Point_particle" title="Point particle">point particle</a>, for an <a href="/wiki/Inverse-square_law" title="Inverse-square law">inverse-square law</a> force, arising in the solution of <a href="/wiki/Poisson_equation" class="mw-redirect" title="Poisson equation">Poisson equation</a>. A similar argument shows that in two dimensions
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle u=-{\frac {\log(r)}{2\pi }}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>u</mi>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>log</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mo stretchy="false">(</mo>
+              <mi>r</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mn>2</mn>
+              <mi>&#x03C0;<!-- π --></mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u=-{\frac {\log(r)}{2\pi }}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f01ae0b2c0c4d3418d5cadcc64ffe79554adcda0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:13.549ex; height:5.676ex;" alt="u=-{\frac {\log(r)}{2\pi }}."/></span></dd></dl>
+<p>where log(<i>r</i>) denotes the <a href="/wiki/Natural_logarithm" title="Natural logarithm">natural logarithm</a>. Note that, with the opposite sign convention, this is the <a href="/wiki/Potential" title="Potential">potential</a> generated by a pointlike <a href="/wiki/Potential_flow" title="Potential flow">sink</a> (see <a href="/wiki/Point_particle" title="Point particle">point particle</a>), which is the solution of the <a href="/wiki/Euler_equations_(fluid_dynamics)" title="Euler equations (fluid dynamics)">Euler equations</a> in two-dimensional <a href="/wiki/Incompressible_flow" title="Incompressible flow">incompressible flow</a>.
+</p>
+<h3><span id="Green.27s_function"></span><span class="mw-headline" id="Green's_function">Green's function</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laplace%27s_equation&amp;action=edit&amp;section=9" title="Edit section: Green&#039;s function">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A <a href="/wiki/Green%27s_function" title="Green&#39;s function">Green's function</a> is a fundamental solution that also satisfies a suitable condition on the boundary <i>S</i> of a volume <i>V</i>. For instance, 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle G(x,y,z;x',y',z')}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>G</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mo>;</mo>
+        <msup>
+          <mi>x</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo>,</mo>
+        <msup>
+          <mi>y</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo>,</mo>
+        <msup>
+          <mi>z</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle G(x,y,z;x',y',z')}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f3beb797172056ba9b239ad9af982282494c5fb0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.014ex; height:3.009ex;" alt="G(x,y,z;x&#039;,y&#039;,z&#039;)"/></span></dd></dl>
+<p>may satisfy
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \cdot \nabla G=-\delta (x-x',y-y',z-z')\qquad {\hbox{in }}V,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mi>G</mi>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <msup>
+          <mi>x</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <msup>
+          <mi>y</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <msup>
+          <mi>z</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">)</mo>
+        <mspace width="2em" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mtext>in&#xA0;</mtext>
+          </mstyle>
+        </mrow>
+        <mi>V</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \cdot \nabla G=-\delta (x-x',y-y',z-z')\qquad {\hbox{in }}V,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bf9af97579e42a71ff32d25bb96d41a782d8a71d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:44.538ex; height:3.009ex;" alt="\nabla \cdot \nabla G=-\delta (x-x&#039;,y-y&#039;,z-z&#039;)\qquad {\hbox{in }}V,"/></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle G=0\quad {\hbox{if}}\quad (x,y,z)\qquad {\hbox{on }}S.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>G</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mspace width="1em" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mtext>if</mtext>
+          </mstyle>
+        </mrow>
+        <mspace width="1em" />
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="2em" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mtext>on&#xA0;</mtext>
+          </mstyle>
+        </mrow>
+        <mi>S</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle G=0\quad {\hbox{if}}\quad (x,y,z)\qquad {\hbox{on }}S.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d0ce74aec546aacc5d618a877d8ec49ef5c9e62b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:29.369ex; height:2.843ex;" alt="G=0\quad {\hbox{if}}\quad (x,y,z)\qquad {\hbox{on }}S."/></span></dd></dl>
+<p>Now if <i>u</i> is any solution of the Poisson equation in <i>V</i>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \cdot \nabla u=-f,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mi>u</mi>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>f</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \cdot \nabla u=-f,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7e0170beabc5bca51c3052d708868702e042f016" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:13.713ex; height:2.509ex;" alt="\nabla \cdot \nabla u=-f,"/></span></dd></dl>
+<p>and <i>u</i> assumes the boundary values <i>g</i> on <i>S</i>, then we may apply <a href="/wiki/Green%27s_identities" title="Green&#39;s identities">Green's identity</a>, (a consequence of the divergence theorem) which states that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \iiint _{V}\left[G\,\nabla \cdot \nabla u-u\,\nabla \cdot \nabla G\right]\,dV=\iiint _{V}\nabla \cdot \left[G\nabla u-u\nabla G\right]\,dV=\iint _{S}\left[Gu_{n}-uG_{n}\right]\,dS.\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222D;<!-- ∭ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>V</mi>
+          </mrow>
+        </msub>
+        <mrow>
+          <mo>[</mo>
+          <mrow>
+            <mi>G</mi>
+            <mspace width="thinmathspace" />
+            <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+            <mo>&#x22C5;<!-- ⋅ --></mo>
+            <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+            <mi>u</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>u</mi>
+            <mspace width="thinmathspace" />
+            <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+            <mo>&#x22C5;<!-- ⋅ --></mo>
+            <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+            <mi>G</mi>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>V</mi>
+        <mo>=</mo>
+        <msub>
+          <mo>&#x222D;<!-- ∭ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>V</mi>
+          </mrow>
+        </msub>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow>
+          <mo>[</mo>
+          <mrow>
+            <mi>G</mi>
+            <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+            <mi>u</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>u</mi>
+            <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+            <mi>G</mi>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>V</mi>
+        <mo>=</mo>
+        <msub>
+          <mo>&#x222C;<!-- ∬ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <mrow>
+          <mo>[</mo>
+          <mrow>
+            <mi>G</mi>
+            <msub>
+              <mi>u</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>u</mi>
+            <msub>
+              <mi>G</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>S</mi>
+        <mo>.</mo>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \iiint _{V}\left[G\,\nabla \cdot \nabla u-u\,\nabla \cdot \nabla G\right]\,dV=\iiint _{V}\nabla \cdot \left[G\nabla u-u\nabla G\right]\,dV=\iint _{S}\left[Gu_{n}-uG_{n}\right]\,dS.\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5b42331f8ae6edb5abb438f575369019cba8f4d3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:86.777ex; height:5.676ex;" alt="\iiint _{V}\left[G\,\nabla \cdot \nabla u-u\,\nabla \cdot \nabla G\right]\,dV=\iiint _{V}\nabla \cdot \left[G\nabla u-u\nabla G\right]\,dV=\iint _{S}\left[Gu_{n}-uG_{n}\right]\,dS.\,"/></span></dd></dl>
+<p>The notations <i>u<sub>n</sub></i> and <i>G<sub>n</sub></i> denote normal derivatives on <i>S</i>. In view of the conditions satisfied by <i>u</i> and <i>G</i>, this result simplifies to
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle u(x',y',z')=\iiint _{V}Gf\,dV+\iint _{S}G_{n}g\,dS.\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>u</mi>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>x</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo>,</mo>
+        <msup>
+          <mi>y</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo>,</mo>
+        <msup>
+          <mi>z</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msub>
+          <mo>&#x222D;<!-- ∭ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>V</mi>
+          </mrow>
+        </msub>
+        <mi>G</mi>
+        <mi>f</mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>V</mi>
+        <mo>+</mo>
+        <msub>
+          <mo>&#x222C;<!-- ∬ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>G</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mi>g</mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>S</mi>
+        <mo>.</mo>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u(x',y',z')=\iiint _{V}Gf\,dV+\iint _{S}G_{n}g\,dS.\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e17613d266caeffbd368dfc6cc9279c570b8eef0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:41.353ex; height:5.676ex;" alt="u(x&#039;,y&#039;,z&#039;)=\iiint _{V}Gf\,dV+\iint _{S}G_{n}g\,dS.\,"/></span></dd></dl>
+<p>Thus the Green's function describes the influence at <span class="nowrap">(<i>x</i>′, <i>y</i>′, <i>z</i>′)</span> of the data <i>f</i> and <i>g</i>. For the case of the interior of a sphere of radius <i>a</i>, the Green's function may be obtained by means of a reflection (<a href="#CITEREFSommerfeld1949">Sommerfeld 1949</a>): the source point <i>P</i> at distance <i>ρ</i> from the center of the sphere is reflected along its radial line to a point <i>P'</i> that is at a distance
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \rho '={\frac {a^{2}}{\rho }}.\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>&#x03C1;<!-- ρ --></mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+            <mi>&#x03C1;<!-- ρ --></mi>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \rho '={\frac {a^{2}}{\rho }}.\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5606760e4600fe1de81e1e5fad505ce0e462f939" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:9.139ex; height:6.176ex;" alt="\rho &#039;={\frac {a^{2}}{\rho }}.\,"/></span></dd></dl>
+<p>Note that if <i>P</i> is inside the sphere, then <i>P'</i> will be outside the sphere. The Green's function is then given by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {1}{4\pi R}}-{\frac {a}{4\pi \rho R'}},\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mn>4</mn>
+              <mi>&#x03C0;<!-- π --></mi>
+              <mi>R</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>a</mi>
+            <mrow>
+              <mn>4</mn>
+              <mi>&#x03C0;<!-- π --></mi>
+              <mi>&#x03C1;<!-- ρ --></mi>
+              <msup>
+                <mi>R</mi>
+                <mo>&#x2032;</mo>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{4\pi R}}-{\frac {a}{4\pi \rho R'}},\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0eb1fad96064150fdad1ff7627fa66f0c9e02de8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:15.95ex; height:5.676ex;" alt="{\frac {1}{4\pi R}}-{\frac {a}{4\pi \rho R&#039;}},\,"/></span></dd></dl>
+<p>where <i>R</i> denotes the distance to the source point <i>P</i> and <i>R</i>′ denotes the distance to the reflected point <i>P</i>′. A consequence of this expression for the Green's function is the <b><a href="/wiki/Poisson_integral_formula" class="mw-redirect" title="Poisson integral formula">Poisson integral formula</a></b>. Let <i>ρ</i>, <i>θ</i>, and <i>φ</i> be <a href="/wiki/Spherical_coordinates" class="mw-redirect" title="Spherical coordinates">spherical coordinates</a> for the source point <i>P</i>. Here <i>θ</i> denotes the angle with the vertical axis, which is contrary to the usual American mathematical notation, but agrees with standard European and physical practice. Then the solution of the Laplace equation with Dirichlet boundary values <i>g</i> inside the sphere is given by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle u(P)={\frac {1}{4\pi }}a^{3}\left(1-{\frac {\rho ^{2}}{a^{2}}}\right)\int _{0}^{2\pi }\int _{0}^{\pi }{\frac {g(\theta ',\varphi ')\sin \theta '}{(a^{2}+\rho ^{2}-2a\rho \cos \Theta )^{\frac {3}{2}}}}d\theta '\,d\varphi '}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>u</mi>
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mn>4</mn>
+              <mi>&#x03C0;<!-- π --></mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mn>1</mn>
+            <mo>&#x2212;<!-- − --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <msup>
+                  <mi>&#x03C1;<!-- ρ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>&#x03C0;<!-- π --></mi>
+          </mrow>
+        </msubsup>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03C0;<!-- π --></mi>
+          </mrow>
+        </msubsup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>g</mi>
+              <mo stretchy="false">(</mo>
+              <msup>
+                <mi>&#x03B8;<!-- θ --></mi>
+                <mo>&#x2032;</mo>
+              </msup>
+              <mo>,</mo>
+              <msup>
+                <mi>&#x03C6;<!-- φ --></mi>
+                <mo>&#x2032;</mo>
+              </msup>
+              <mo stretchy="false">)</mo>
+              <mi>sin</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <msup>
+                <mi>&#x03B8;<!-- θ --></mi>
+                <mo>&#x2032;</mo>
+              </msup>
+            </mrow>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <msup>
+                <mi>a</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>+</mo>
+              <msup>
+                <mi>&#x03C1;<!-- ρ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>2</mn>
+              <mi>a</mi>
+              <mi>&#x03C1;<!-- ρ --></mi>
+              <mi>cos</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mi mathvariant="normal">&#x0398;<!-- Θ --></mi>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>3</mn>
+                    <mn>2</mn>
+                  </mfrac>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mi>d</mi>
+        <msup>
+          <mi>&#x03B8;<!-- θ --></mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <msup>
+          <mi>&#x03C6;<!-- φ --></mi>
+          <mo>&#x2032;</mo>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u(P)={\frac {1}{4\pi }}a^{3}\left(1-{\frac {\rho ^{2}}{a^{2}}}\right)\int _{0}^{2\pi }\int _{0}^{\pi }{\frac {g(\theta ',\varphi ')\sin \theta '}{(a^{2}+\rho ^{2}-2a\rho \cos \Theta )^{\frac {3}{2}}}}d\theta '\,d\varphi '}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/03291b44e15ac6473c168ee3b75517d096782369" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.838ex; width:64.477ex; height:7.676ex;" alt="{\displaystyle u(P)={\frac {1}{4\pi }}a^{3}\left(1-{\frac {\rho ^{2}}{a^{2}}}\right)\int _{0}^{2\pi }\int _{0}^{\pi }{\frac {g(\theta &#039;,\varphi &#039;)\sin \theta &#039;}{(a^{2}+\rho ^{2}-2a\rho \cos \Theta )^{\frac {3}{2}}}}d\theta &#039;\,d\varphi &#039;}"/></span> (<a href="#CITEREFZachmanoglou1986">Zachmanoglou 1986</a>, p. 228)</dd></dl>
+<p>where
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \cos \Theta =\cos \theta \cos \theta '+\sin \theta \sin \theta '\cos(\varphi -\varphi ')}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>cos</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi mathvariant="normal">&#x0398;<!-- Θ --></mi>
+        <mo>=</mo>
+        <mi>cos</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi>&#x03B8;<!-- θ --></mi>
+        <mi>cos</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <msup>
+          <mi>&#x03B8;<!-- θ --></mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo>+</mo>
+        <mi>sin</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi>&#x03B8;<!-- θ --></mi>
+        <mi>sin</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <msup>
+          <mi>&#x03B8;<!-- θ --></mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mi>cos</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03C6;<!-- φ --></mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <msup>
+          <mi>&#x03C6;<!-- φ --></mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \cos \Theta =\cos \theta \cos \theta '+\sin \theta \sin \theta '\cos(\varphi -\varphi ')}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/63883a6b77b3f61ea8f4b26946cbadebd6b7491a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:43.105ex; height:3.009ex;" alt="{\displaystyle \cos \Theta =\cos \theta \cos \theta &#039;+\sin \theta \sin \theta &#039;\cos(\varphi -\varphi &#039;)}"/></span></dd></dl>
+<p>is the cosine of the angle between <span class="nowrap">(<i>θ</i>, <i>φ</i>)</span> and <span class="nowrap">(<i>θ</i>′, <i>φ</i>′)</span>.  A simple consequence of this formula is that if <i>u</i> is a harmonic function, then the value of <i>u</i> at the center of the sphere is the mean value of its values on the sphere. This mean value property immediately implies that a non-constant harmonic function cannot assume its maximum value at an interior point.
+</p>
+<h3><span class="mw-headline" id="Electrostatics_2">Electrostatics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laplace%27s_equation&amp;action=edit&amp;section=10" title="Edit section: Electrostatics">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {E} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">E</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {E} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0d7f22b39d51f780fc02859059c1757c606b9de2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.757ex; height:2.176ex;" alt="\mathbf {E} "/></span> be the electric field, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \rho }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03C1;<!-- ρ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \rho }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1f7d439671d1289b6a816e6af7a304be40608d64" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:1.202ex; height:2.176ex;" alt="\rho "/></span> be the electric charge density, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \varepsilon _{0}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03B5;<!-- ε --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varepsilon _{0}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/acb0a8377db20e42274444cb181d51b5532b5844" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.138ex; height:2.009ex;" alt="\varepsilon _{0}"/></span> be the permittivity of free space. Then Gauss's law for electricity (Maxwell's first equation) in differential form states<sup id="cite_ref-Griffiths-2_5-0" class="reference"><a href="#cite_note-Griffiths-2-5">&#91;4&#93;</a></sup>
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \cdot \mathbf {E} ={\frac {\rho }{\epsilon _{0}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">E</mi>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>&#x03C1;<!-- ρ --></mi>
+            <msub>
+              <mi>&#x03F5;<!-- ϵ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \cdot \mathbf {E} ={\frac {\rho }{\epsilon _{0}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/66d78562a764b50f0ce7c6d19a8c7cd118f1f237" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:11.952ex; height:5.176ex;" alt="{\displaystyle \nabla \cdot \mathbf {E} ={\frac {\rho }{\epsilon _{0}}}.}"/></span>
+</p><p>Now, the electric field can be expressed as the negative gradient of the electric potential <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle V}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>V</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/af0f6064540e84211d0ffe4dac72098adfa52845" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.787ex; height:2.176ex;" alt="V"/></span>,
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle E=-\nabla V,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>E</mi>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mi>V</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle E=-\nabla V,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/40bf8662ba05de81ab6698e301441b9a6d86fd59" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:11.052ex; height:2.509ex;" alt="{\displaystyle E=-\nabla V,}"/></span>
+</p><p>if the field is irrotational, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \times \mathbf {E} =\mathbf {0} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">E</mi>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mn mathvariant="bold">0</mn>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \times \mathbf {E} =\mathbf {0} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ad7e78fa2586a1ddcf90559d8317826d82a18995" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:10.968ex; height:2.176ex;" alt="{\displaystyle \nabla \times \mathbf {E} =\mathbf {0} }"/></span>. The irrotationality of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {E} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">E</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {E} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0d7f22b39d51f780fc02859059c1757c606b9de2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.757ex; height:2.176ex;" alt="\mathbf {E} "/></span> is also known as the electrostatic condition.<sup id="cite_ref-Griffiths-2_5-1" class="reference"><a href="#cite_note-Griffiths-2-5">&#91;4&#93;</a></sup>
+</p><p>Plugging this relation into Gauss's law, we obtain Poisson's equation for electricity,<sup id="cite_ref-Griffiths-2_5-2" class="reference"><a href="#cite_note-Griffiths-2-5">&#91;4&#93;</a></sup>
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla ^{2}V=-{\frac {\rho }{\varepsilon _{0}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mi>V</mi>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>&#x03C1;<!-- ρ --></mi>
+            <msub>
+              <mi>&#x03B5;<!-- ε --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla ^{2}V=-{\frac {\rho }{\varepsilon _{0}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c50abf495118d025eaee10585fb28f38faf48501" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:13.305ex; height:5.176ex;" alt="{\displaystyle \nabla ^{2}V=-{\frac {\rho }{\varepsilon _{0}}}.}"/></span>
+</p><p>In the particular case of a source-free region, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \rho =0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03C1;<!-- ρ --></mi>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \rho =0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2ba6310b27df5f9c9b0b1732e08cce27b99d68cf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.463ex; height:2.676ex;" alt="\rho =0"/></span> and Poisson's equation reduces to Laplace's equation for the electric potential.<sup id="cite_ref-Griffiths-2_5-3" class="reference"><a href="#cite_note-Griffiths-2-5">&#91;4&#93;</a></sup>
+</p><p>If the electrostatic potential <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle V}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>V</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/af0f6064540e84211d0ffe4dac72098adfa52845" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.787ex; height:2.176ex;" alt="V"/></span> is specified on the boundary of a region <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathcal {R}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">R</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {R}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/74532dc308c806964b832df0d0d73352195c2f2f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.971ex; height:2.176ex;" alt="{\mathcal {R}}"/></span>, then it is uniquely determined. If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathcal {R}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">R</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {R}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/74532dc308c806964b832df0d0d73352195c2f2f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.971ex; height:2.176ex;" alt="{\mathcal {R}}"/></span> is surrounded by a conducting material with a specified charge density <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \rho }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03C1;<!-- ρ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \rho }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1f7d439671d1289b6a816e6af7a304be40608d64" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:1.202ex; height:2.176ex;" alt="\rho "/></span>, and if the total charge <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Q}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Q</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8752c7023b4b3286800fe3238271bbca681219ed" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.838ex; height:2.509ex;" alt="Q"/></span> is known, then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle V}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>V</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/af0f6064540e84211d0ffe4dac72098adfa52845" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.787ex; height:2.176ex;" alt="V"/></span> is also unique.<sup id="cite_ref-Griffiths-3_6-0" class="reference"><a href="#cite_note-Griffiths-3-6">&#91;5&#93;</a></sup>
+</p><p>A potential that doesn't satisfy Laplace's equation together with the boundary condition is an invalid electrostatic potential.
+</p>
+<h2><span class="mw-headline" id="In_the_Schwarzschild_metric">In the Schwarzschild metric</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laplace%27s_equation&amp;action=edit&amp;section=11" title="Edit section: In the Schwarzschild metric">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>S. Persides<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;6&#93;</a></sup> solved the Laplace equation in <a href="/wiki/Schwarzschild_metric" title="Schwarzschild metric">Schwarzschild spacetime</a> on hypersurfaces of constant <i>t</i>. Using the canonical variables <i>r</i>, <i>θ</i>, <i>φ</i> the solution is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Psi (r,\theta ,\varphi )=R(r)Y_{l}(\theta ,\varphi ),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>r</mi>
+        <mo>,</mo>
+        <mi>&#x03B8;<!-- θ --></mi>
+        <mo>,</mo>
+        <mi>&#x03C6;<!-- φ --></mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>R</mi>
+        <mo stretchy="false">(</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <msub>
+          <mi>Y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>l</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03B8;<!-- θ --></mi>
+        <mo>,</mo>
+        <mi>&#x03C6;<!-- φ --></mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Psi (r,\theta ,\varphi )=R(r)Y_{l}(\theta ,\varphi ),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c5f5803e89eb812a5fcd06d3d8d99cc7bc8317db" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:25.239ex; height:2.843ex;" alt="{\displaystyle \Psi (r,\theta ,\varphi )=R(r)Y_{l}(\theta ,\varphi ),}"/></span></dd></dl>
+<p>where <span class="nowrap"><i>Y<sub>l</sub></i>(<i>θ</i>, <i>φ</i>)</span> is a <a href="/wiki/Spherical_harmonics" title="Spherical harmonics">spherical harmonic function</a>, and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle R(r)=(-1)^{l}{\frac {(l!)^{2}r_{s}^{l}}{(2l)!}}P_{l}\left(1-{\frac {2r}{r_{s}}}\right)+(-1)^{l+1}{\frac {2(2l+1)!}{(l)!^{2}r_{s}^{l+1}}}Q_{l}\left(1-{\frac {2r}{r_{s}}}\right).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>R</mi>
+        <mo stretchy="false">(</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>l</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>l</mi>
+              <mo>!</mo>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <msubsup>
+                <mi>r</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>s</mi>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>l</mi>
+                </mrow>
+              </msubsup>
+            </mrow>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mn>2</mn>
+              <mi>l</mi>
+              <mo stretchy="false">)</mo>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>l</mi>
+          </mrow>
+        </msub>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mn>1</mn>
+            <mo>&#x2212;<!-- − --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mn>2</mn>
+                  <mi>r</mi>
+                </mrow>
+                <msub>
+                  <mi>r</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>s</mi>
+                  </mrow>
+                </msub>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>+</mo>
+        <mo stretchy="false">(</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>l</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>2</mn>
+              <mo stretchy="false">(</mo>
+              <mn>2</mn>
+              <mi>l</mi>
+              <mo>+</mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+              <mo>!</mo>
+            </mrow>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>l</mi>
+              <mo stretchy="false">)</mo>
+              <msup>
+                <mo>!</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <msubsup>
+                <mi>r</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>s</mi>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>l</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msubsup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>l</mi>
+          </mrow>
+        </msub>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mn>1</mn>
+            <mo>&#x2212;<!-- − --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mn>2</mn>
+                  <mi>r</mi>
+                </mrow>
+                <msub>
+                  <mi>r</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>s</mi>
+                  </mrow>
+                </msub>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle R(r)=(-1)^{l}{\frac {(l!)^{2}r_{s}^{l}}{(2l)!}}P_{l}\left(1-{\frac {2r}{r_{s}}}\right)+(-1)^{l+1}{\frac {2(2l+1)!}{(l)!^{2}r_{s}^{l+1}}}Q_{l}\left(1-{\frac {2r}{r_{s}}}\right).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b0453bf5292b49cbfa52f577f226f9fe5fc5b77a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:68.597ex; height:7.009ex;" alt="{\displaystyle R(r)=(-1)^{l}{\frac {(l!)^{2}r_{s}^{l}}{(2l)!}}P_{l}\left(1-{\frac {2r}{r_{s}}}\right)+(-1)^{l+1}{\frac {2(2l+1)!}{(l)!^{2}r_{s}^{l+1}}}Q_{l}\left(1-{\frac {2r}{r_{s}}}\right).}"/></span></dd></dl>
+<p>Here <i>P<sub>l</sub></i> and <i>Q<sub>l</sub></i> are <a href="/wiki/Legendre_functions" class="mw-redirect" title="Legendre functions">Legendre functions</a> of the first and second kind, respectively, while <i>r<sub>s</sub></i> is the <a href="/wiki/Schwarzschild_radius" title="Schwarzschild radius">Schwarzschild radius</a>. The parameter <i>l</i> is an arbitrary non-negative integer.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laplace%27s_equation&amp;action=edit&amp;section=12" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/6-sphere_coordinates" title="6-sphere coordinates">6-sphere coordinates</a>, a coordinate system under which Laplace's equation becomes <a href="/wiki/Separable_partial_differential_equation" title="Separable partial differential equation"><i>R</i>-separable</a></li>
+<li><a href="/wiki/Helmholtz_equation" title="Helmholtz equation">Helmholtz equation</a>, a general case of Laplace's equation.</li>
+<li><a href="/wiki/Spherical_harmonic" class="mw-redirect" title="Spherical harmonic">Spherical harmonic</a></li>
+<li><a href="/wiki/Quadrature_domains" title="Quadrature domains">Quadrature domains</a></li>
+<li><a href="/wiki/Potential_theory" title="Potential theory">Potential theory</a></li>
+<li><a href="/wiki/Potential_flow" title="Potential flow">Potential flow</a></li>
+<li><a href="/wiki/Bateman_transform" title="Bateman transform">Bateman transform</a></li>
+<li><a href="/wiki/Earnshaw%27s_theorem" title="Earnshaw&#39;s theorem">Earnshaw's theorem</a> uses the Laplace equation to show that stable static ferromagnetic suspension is impossible</li>
+<li><a href="/wiki/Vector_Laplacian" title="Vector Laplacian">Vector Laplacian</a></li>
+<li><a href="/wiki/Fundamental_solution" title="Fundamental solution">Fundamental solution</a></li></ul>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laplace%27s_equation&amp;action=edit&amp;section=13" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">The delta symbol, Δ, is also commonly used to represent a finite change in some quantity, e.g. <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Delta x=x_{1}-x_{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <mi>x</mi>
+        <mo>=</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Delta x=x_{1}-x_{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a6f39956070d8bf2d175fa81aaf9917b9be1fe05" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:13.972ex; height:2.509ex;" alt="{\displaystyle \Delta x=x_{1}-x_{2}}"/></span>. Its use to represent the Laplacian should not be confused with this use.</span>
+</li>
+</ol></div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laplace%27s_equation&amp;action=edit&amp;section=14" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">Stewart, James. <i><a rel="nofollow" class="external text" href="https://books.google.com/books?id=QyOYWR9RLI8C&amp;printsec=frontcover&amp;dq=isbn:9780538497909&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwiT1Lz75K3jAhWkds0KHZV8C_wQ6AEIKjAA#v=snippet&amp;q=%22Laplace&#39;s%20equation%22&amp;f=false">Calculus&#160;: Early Transcendentals</a></i>. 7th ed., Brooks/Cole, Cengage Learning, 2012. Chapter 14: Partial Derivatives. p. 908. <style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-538-49790-9" title="Special:BookSources/978-0-538-49790-9">978-0-538-49790-9</a>.</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text">Zill, Dennis G, and Michael R Cullen. <i>Differential Equations with Boundary-Value Problems</i>. 8th edition / ed., Brooks/Cole, Cengage Learning, 2013. Chapter 12: Boundary-value Problems in Rectangular Coordinates. p. 462. <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-111-82706-9" title="Special:BookSources/978-1-111-82706-9">978-1-111-82706-9</a>.</span>
+</li>
+<li id="cite_note-Griffiths-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-Griffiths_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Griffiths_4-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Griffiths_4-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text">Griffiths, David J. <i><a rel="nofollow" class="external text" href="https://books.google.com/books?id=ndAoDwAAQBAJ&amp;printsec=frontcover&amp;dq=isbn:9781108420419&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwiR9PCXocHjAhXjdc0KHexpCk0Q6AEIKjAA#v=snippet&amp;q=%22Laplace&#39;s%20equation%22&amp;f=false">Introduction to Electrodynamics</a></i>. 4th ed., Pearson, 2013. Inner front cover. <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-108-42041-9" title="Special:BookSources/978-1-108-42041-9">978-1-108-42041-9</a>.</span>
+</li>
+<li id="cite_note-Griffiths-2-5"><span class="mw-cite-backlink">^ <a href="#cite_ref-Griffiths-2_5-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Griffiths-2_5-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Griffiths-2_5-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-Griffiths-2_5-3"><sup><i><b>d</b></i></sup></a></span> <span class="reference-text">Griffiths, David J. <i>Introduction to Electrodynamics</i>. Fourth ed., Pearson, 2013. Chapter 2: Electrostatics. p. 83-4. <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-108-42041-9" title="Special:BookSources/978-1-108-42041-9">978-1-108-42041-9</a>.</span>
+</li>
+<li id="cite_note-Griffiths-3-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-Griffiths-3_6-0">^</a></b></span> <span class="reference-text">Griffiths, David J. <i>Introduction to Electrodynamics</i>. Fourth ed., Pearson, 2013. Chapter 3: Potentials. p. 119-121. <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-108-42041-9" title="Special:BookSources/978-1-108-42041-9">978-1-108-42041-9</a>.</span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation journal">Persides, S. (1973). "The Laplace and poisson equations in Schwarzschild's space-time". <i>Journal of Mathematical Analysis and Applications</i>. <b>43</b> (3): 571–578. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1016%2F0022-247X%2873%2990277-1">10.1016/0022-247X(73)90277-1</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Mathematical+Analysis+and+Applications&amp;rft.atitle=The+Laplace+and+poisson+equations+in+Schwarzschild%27s+space-time&amp;rft.volume=43&amp;rft.issue=3&amp;rft.pages=571-578&amp;rft.date=1973&amp;rft_id=info%3Adoi%2F10.1016%2F0022-247X%2873%2990277-1&amp;rft.aulast=Persides&amp;rft.aufirst=S.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALaplace%27s+equation" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laplace%27s_equation&amp;action=edit&amp;section=15" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><cite class="citation book">Evans, L. C. (1998). <i>Partial Differential Equations</i>. Providence: American Mathematical Society. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-8218-0772-9" title="Special:BookSources/978-0-8218-0772-9"><bdi>978-0-8218-0772-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Partial+Differential+Equations&amp;rft.place=Providence&amp;rft.pub=American+Mathematical+Society&amp;rft.date=1998&amp;rft.isbn=978-0-8218-0772-9&amp;rft.aulast=Evans&amp;rft.aufirst=L.+C.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALaplace%27s+equation" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite class="citation book">Petrovsky, I. G. (1967). <i>Partial Differential Equations</i>. Philadelphia: W. B. Saunders.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Partial+Differential+Equations&amp;rft.place=Philadelphia&amp;rft.pub=W.+B.+Saunders&amp;rft.date=1967&amp;rft.aulast=Petrovsky&amp;rft.aufirst=I.+G.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALaplace%27s+equation" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite class="citation book">Polyanin, A. D. (2002). <i>Handbook of Linear Partial Differential Equations for Engineers and Scientists</i>. Boca Raton: Chapman &amp; Hall/CRC Press. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-58488-299-2" title="Special:BookSources/978-1-58488-299-2"><bdi>978-1-58488-299-2</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Handbook+of+Linear+Partial+Differential+Equations+for+Engineers+and+Scientists&amp;rft.place=Boca+Raton&amp;rft.pub=Chapman+%26+Hall%2FCRC+Press&amp;rft.date=2002&amp;rft.isbn=978-1-58488-299-2&amp;rft.aulast=Polyanin&amp;rft.aufirst=A.+D.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALaplace%27s+equation" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFSommerfeld1949" class="citation book">Sommerfeld, A. (1949). <i>Partial Differential Equations in Physics</i>. New York: Academic Press.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Partial+Differential+Equations+in+Physics&amp;rft.place=New+York&amp;rft.pub=Academic+Press&amp;rft.date=1949&amp;rft.aulast=Sommerfeld&amp;rft.aufirst=A.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALaplace%27s+equation" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFZachmanoglou1986" class="citation book">Zachmanoglou, E. C. (1986). <i>Introduction to Partial Differential Equations with Applications</i>. New York: Dover.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Introduction+to+Partial+Differential+Equations+with+Applications&amp;rft.place=New+York&amp;rft.pub=Dover&amp;rft.date=1986&amp;rft.aulast=Zachmanoglou&amp;rft.aufirst=E.+C.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALaplace%27s+equation" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li></ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laplace%27s_equation&amp;action=edit&amp;section=16" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><cite id="CITEREFHazewinkel2001" class="citation"><a href="/wiki/Michiel_Hazewinkel" title="Michiel Hazewinkel">Hazewinkel, Michiel</a>, ed. (2001) [1994], <a rel="nofollow" class="external text" href="https://www.encyclopediaofmath.org/index.php?title=p/l057470">"Laplace equation"</a>, <i><a href="/wiki/Encyclopedia_of_Mathematics" title="Encyclopedia of Mathematics">Encyclopedia of Mathematics</a></i>, Springer Science+Business Media B.V. / Kluwer Academic Publishers, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-55608-010-4" title="Special:BookSources/978-1-55608-010-4"><bdi>978-1-55608-010-4</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Laplace+equation&amp;rft.btitle=Encyclopedia+of+Mathematics&amp;rft.pub=Springer+Science%2BBusiness+Media+B.V.+%2F+Kluwer+Academic+Publishers&amp;rft.date=2001&amp;rft.isbn=978-1-55608-010-4&amp;rft_id=https%3A%2F%2Fwww.encyclopediaofmath.org%2Findex.php%3Ftitle%3Dp%2Fl057470&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALaplace%27s+equation" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><a rel="nofollow" class="external text" href="http://eqworld.ipmnet.ru/en/solutions/lpde/lpde301.pdf">Laplace Equation (particular solutions and boundary value problems)</a> at EqWorld: The World of Mathematical Equations.</li>
+<li><a rel="nofollow" class="external text" href="http://www.exampleproblems.com/wiki/index.php/PDE:Laplaces_Equation">Example initial-boundary value problems</a> using Laplace's equation from exampleproblems.com.</li>
+<li><span class="citation mathworld" id="Reference-Mathworld-Laplace&#39;s_Equation"><cite class="citation web"><a href="/wiki/Eric_W._Weisstein" title="Eric W. Weisstein">Weisstein, Eric W.</a> <a rel="nofollow" class="external text" href="http://mathworld.wolfram.com/LaplacesEquation.html">"Laplace's Equation"</a>. <i><a href="/wiki/MathWorld" title="MathWorld">MathWorld</a></i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=MathWorld&amp;rft.atitle=Laplace%27s+Equation&amp;rft.au=Weisstein%2C+Eric+W.&amp;rft_id=http%3A%2F%2Fmathworld.wolfram.com%2FLaplacesEquation.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALaplace%27s+equation" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span></li>
+<li><a rel="nofollow" class="external text" href="http://www.ntu.edu.sg/home/mwtang/bemsite.htm">Find out how boundary value problems governed by Laplace's equation may be solved numerically by boundary element method</a></li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1326
+Cached time: 20190719150758
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision]
+CPU time usage: 0.428 seconds
+Real time usage: 0.601 seconds
+Preprocessor visited node count: 2054/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 20926/2097152 bytes
+Template argument size: 3021/2097152 bytes
+Highest expansion depth: 15/40
+Expensive parser function count: 2/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 32949/5000000 bytes
+Number of Wikibase entities loaded: 1/400
+Lua time usage: 0.119/10.000 seconds
+Lua memory usage: 3.92 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  384.961      1 -total
+ 55.24%  212.666      1 Template:Reflist
+ 28.65%  110.292      5 Template:ISBN
+ 21.77%   83.814      1 Template:Cite_journal
+ 13.90%   53.508      5 Template:Catalog_lookup_link
+  8.39%   32.312      1 Template:Use_American_English
+  7.26%   27.958      5 Template:Cite_book
+  6.95%   26.773      1 Template:Short_description
+  6.29%   24.204      1 Template:Pagetype
+  5.69%   21.910      5 Template:Error-small
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:36941-0!canonical!math=5 and timestamp 20190719150758 and revision id 906969840
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Laplace%27s_equation&amp;oldid=906969840">https://en.wikipedia.org/w/index.php?title=Laplace%27s_equation&amp;oldid=906969840</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Elliptic_partial_differential_equations" title="Category:Elliptic partial differential equations">Elliptic partial differential equations</a></li><li><a href="/wiki/Category:Harmonic_functions" title="Category:Harmonic functions">Harmonic functions</a></li><li><a href="/wiki/Category:Equations" title="Category:Equations">Equations</a></li><li><a href="/wiki/Category:Fourier_analysis" title="Category:Fourier analysis">Fourier analysis</a></li><li><a href="/wiki/Category:Pierre-Simon_Laplace" title="Category:Pierre-Simon Laplace">Pierre-Simon Laplace</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Use_American_English_from_March_2019" title="Category:Use American English from March 2019">Use American English from March 2019</a></li><li><a href="/wiki/Category:All_Wikipedia_articles_written_in_American_English" title="Category:All Wikipedia articles written in American English">All Wikipedia articles written in American English</a></li><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Laplace%27s+equation" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Laplace%27s+equation" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Laplace%27s_equation" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Laplace%27s_equation" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Laplace%27s_equation">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Laplace%27s_equation&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Laplace%27s_equation&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Laplace%27s_equation" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Laplace%27s_equation" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Laplace%27s_equation&amp;oldid=906969840" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Laplace%27s_equation&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q339444" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Laplace%27s_equation&amp;id=906969840" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-wikibase-otherprojects" aria-labelledby="p-wikibase-otherprojects-label">
+			<h3 id="p-wikibase-otherprojects-label">In other projects</h3>
+			<div class="body">
+								<ul>
+					<li class="wb-otherproject-link wb-otherproject-wikiquote"><a href="https://en.wikiquote.org/wiki/Laplace%27s_equation" hreflang="en">Wikiquote</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Laplace%27s+equation">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Laplace%27s+equation&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Laplace%27s_equation&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D9%85%D8%B9%D8%A7%D8%AF%D9%84%D8%A9_%D9%84%D8%A7%D8%A8%D9%84%D8%A7%D8%B3" title="معادلة لابلاس – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-ast"><a href="https://ast.wikipedia.org/wiki/Ecuaci%C3%B3n_de_Laplace" title="Ecuación de Laplace – Asturian" lang="ast" hreflang="ast" class="interlanguage-link-target">Asturianu</a></li><li class="interlanguage-link interwiki-be"><a href="https://be.wikipedia.org/wiki/%D0%A3%D1%80%D0%B0%D1%9E%D0%BD%D0%B5%D0%BD%D0%BD%D0%B5_%D0%9B%D0%B0%D0%BF%D0%BB%D0%B0%D1%81%D0%B0" title="Ураўненне Лапласа – Belarusian" lang="be" hreflang="be" class="interlanguage-link-target">Беларуская</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Equaci%C3%B3_de_Laplace" title="Equació de Laplace – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cy"><a href="https://cy.wikipedia.org/wiki/Hafaliad_Laplace" title="Hafaliad Laplace – Welsh" lang="cy" hreflang="cy" class="interlanguage-link-target">Cymraeg</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Laplace-Gleichung" title="Laplace-Gleichung – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-et"><a href="https://et.wikipedia.org/wiki/Laplace%27i_v%C3%B5rrand" title="Laplace&#039;i võrrand – Estonian" lang="et" hreflang="et" class="interlanguage-link-target">Eesti</a></li><li class="interlanguage-link interwiki-el"><a href="https://el.wikipedia.org/wiki/%CE%95%CE%BE%CE%AF%CF%83%CF%89%CF%83%CE%B7_%CE%9B%CE%B1%CF%80%CE%BB%CE%AC%CF%82" title="Εξίσωση Λαπλάς – Greek" lang="el" hreflang="el" class="interlanguage-link-target">Ελληνικά</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Ecuaci%C3%B3n_de_Laplace" title="Ecuación de Laplace – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eo"><a href="https://eo.wikipedia.org/wiki/Laplaca_ekvacio" title="Laplaca ekvacio – Esperanto" lang="eo" hreflang="eo" class="interlanguage-link-target">Esperanto</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%85%D8%B9%D8%A7%D8%AF%D9%84%D9%87_%D9%84%D8%A7%D9%BE%D9%84%D8%A7%D8%B3" title="معادله لاپلاس – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/%C3%89quation_de_Laplace" title="Équation de Laplace – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-gl"><a href="https://gl.wikipedia.org/wiki/Ecuaci%C3%B3n_de_Laplace" title="Ecuación de Laplace – Galician" lang="gl" hreflang="gl" class="interlanguage-link-target">Galego</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EB%9D%BC%ED%94%8C%EB%9D%BC%EC%8A%A4_%EB%B0%A9%EC%A0%95%EC%8B%9D" title="라플라스 방정식 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-hy"><a href="https://hy.wikipedia.org/wiki/%D4%BC%D5%A1%D5%BA%D5%AC%D5%A1%D5%BD%D5%AB_%D5%B0%D5%A1%D5%BE%D5%A1%D5%BD%D5%A1%D6%80%D5%B8%D6%82%D5%B4" title="Լապլասի հավասարում – Armenian" lang="hy" hreflang="hy" class="interlanguage-link-target">Հայերեն</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Equazione_di_Laplace" title="Equazione di Laplace – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%95%D7%95%D7%90%D7%AA_%D7%9C%D7%A4%D7%9C%D7%A1" title="משוואת לפלס – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-kk"><a href="https://kk.wikipedia.org/wiki/%D0%9B%D0%B0%D0%BF%D0%BB%D0%B0%D1%81_%D1%82%D0%B5%D2%A3%D0%B4%D0%B5%D1%83%D1%96" title="Лаплас теңдеуі – Kazakh" lang="kk" hreflang="kk" class="interlanguage-link-target">Қазақша</a></li><li class="interlanguage-link interwiki-mk"><a href="https://mk.wikipedia.org/wiki/%D0%9B%D0%B0%D0%BF%D0%BB%D0%B0%D1%81%D0%BE%D0%B2%D0%B0_%D1%80%D0%B0%D0%B2%D0%B5%D0%BD%D0%BA%D0%B0" title="Лапласова равенка – Macedonian" lang="mk" hreflang="mk" class="interlanguage-link-target">Македонски</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Laplace-vergelijking" title="Laplace-vergelijking – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E3%83%A9%E3%83%97%E3%83%A9%E3%82%B9%E6%96%B9%E7%A8%8B%E5%BC%8F" title="ラプラス方程式 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/Laplace-ligning" title="Laplace-ligning – Norwegian" lang="no" hreflang="no" class="interlanguage-link-target">Norsk</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/R%C3%B3wnanie_r%C3%B3%C5%BCniczkowe_Laplace%E2%80%99a" title="Równanie różniczkowe Laplace’a – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Equa%C3%A7%C3%A3o_de_Laplace" title="Equação de Laplace – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="https://ro.wikipedia.org/wiki/Ecua%C8%9Bia_lui_Laplace" title="Ecuația lui Laplace – Romanian" lang="ro" hreflang="ro" class="interlanguage-link-target">Română</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%A3%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5_%D0%9B%D0%B0%D0%BF%D0%BB%D0%B0%D1%81%D0%B0" title="Уравнение Лапласа – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-simple"><a href="https://simple.wikipedia.org/wiki/Laplace%27s_equation" title="Laplace&#039;s equation – Simple English" lang="en-simple" hreflang="en-simple" class="interlanguage-link-target">Simple English</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/%D0%9B%D0%B0%D0%BF%D0%BB%D0%B0%D1%81%D0%BE%D0%B2%D0%B0_%D1%98%D0%B5%D0%B4%D0%BD%D0%B0%D1%87%D0%B8%D0%BD%D0%B0" title="Лапласова једначина – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Laplacen_yht%C3%A4l%C3%B6" title="Laplacen yhtälö – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Laplaces_ekvation" title="Laplaces ekvation – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-te"><a href="https://te.wikipedia.org/wiki/%E0%B0%B2%E0%B0%BE%E0%B0%AA%E0%B1%8D%E0%B0%B2%E0%B0%BE%E0%B0%B8%E0%B1%8D_%E0%B0%B8%E0%B0%AE%E0%B1%80%E0%B0%95%E0%B0%B0%E0%B0%A3%E0%B0%82" title="లాప్లాస్ సమీకరణం – Telugu" lang="te" hreflang="te" class="interlanguage-link-target">తెలుగు</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Laplace_denklemi" title="Laplace denklemi – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%A0%D1%96%D0%B2%D0%BD%D1%8F%D0%BD%D0%BD%D1%8F_%D0%9B%D0%B0%D0%BF%D0%BB%D0%B0%D1%81%D0%B0" title="Рівняння Лапласа – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-vec"><a href="https://vec.wikipedia.org/wiki/Equasion_de_Laplace" title="Equasion de Laplace – Venetian" lang="vec" hreflang="vec" class="interlanguage-link-target">Vèneto</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/Ph%C6%B0%C6%A1ng_tr%C3%ACnh_Laplace" title="Phương trình Laplace – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh badge-Q17437798 badge-goodarticle" title="good article"><a href="https://zh.wikipedia.org/wiki/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E6%96%B9%E7%A8%8B" title="拉普拉斯方程 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q339444#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 19 July 2019, at 15:07<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Laplace%27s_equation&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.428","walltime":"0.601","ppvisitednodes":{"value":2054,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":20926,"limit":2097152},"templateargumentsize":{"value":3021,"limit":2097152},"expansiondepth":{"value":15,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":32949,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  384.961      1 -total"," 55.24%  212.666      1 Template:Reflist"," 28.65%  110.292      5 Template:ISBN"," 21.77%   83.814      1 Template:Cite_journal"," 13.90%   53.508      5 Template:Catalog_lookup_link","  8.39%   32.312      1 Template:Use_American_English","  7.26%   27.958      5 Template:Cite_book","  6.95%   26.773      1 Template:Short_description","  6.29%   24.204      1 Template:Pagetype","  5.69%   21.910      5 Template:Error-small"]},"scribunto":{"limitreport-timeusage":{"value":"0.119","limit":"10.000"},"limitreport-memusage":{"value":4112070,"limit":52428800}},"cachereport":{"origin":"mw1326","timestamp":"20190719150758","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Laplace's equation","url":"https:\/\/en.wikipedia.org\/wiki\/Laplace%27s_equation","sameAs":"http:\/\/www.wikidata.org\/entity\/Q339444","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q339444","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-01-29T01:44:26Z","dateModified":"2019-07-19T15:07:58Z","headline":"second order partial differential equation"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":96,"wgHostname":"mw1325"});});</script>
+</body>
+</html>

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Quantile - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Quantile","wgTitle":"Quantile","wgCurRevisionId":900044736,"wgRevisionId":900044736,"wgArticleId":25184,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 maint: Archived copy as title","All articles with unsourced statements","Articles with unsourced statements from February 2010","Commons category link is on Wikidata","Summary statistics"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May",
+"Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Quantile","wgRelevantArticleId":25184,"wgRequestId":"XUnWYwpAMEoAAAVO3iAAAABQ","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Quantiles","wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgInternalRedirectTargetUrl":"/wiki/Quantile","wgWikibaseItemId":"Q578714","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":
+"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.cite.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","ext.cite.ux-enhancements","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher",
+"ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/5/5e/Iqr_with_quantile.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Quantile"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Quantile&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Quantile&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Quantile"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Quantile rootpage-Quantile skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Quantile</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"><span class="mw-redirectedfrom">&#160;&#160;(Redirected from <a href="/w/index.php?title=Quantiles&amp;redirect=no" class="mw-redirect" title="Quantiles">Quantiles</a>)</span></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="thumb tright"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:Iqr_with_quantile.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Iqr_with_quantile.png/220px-Iqr_with_quantile.png" decoding="async" width="220" height="127" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Iqr_with_quantile.png/330px-Iqr_with_quantile.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Iqr_with_quantile.png/440px-Iqr_with_quantile.png 2x" data-file-width="742" data-file-height="428" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Iqr_with_quantile.png" class="internal" title="Enlarge"></a></div>Probability density of a <a href="/wiki/Normal_distribution" title="Normal distribution">normal distribution</a>, with quartiles shown. The area below the red curve is the same in the intervals (−∞,<i>Q</i><sub>1</sub>), (<i>Q</i><sub>1</sub>,<i>Q</i><sub>2</sub>), (<i>Q</i><sub>2</sub>,<i>Q</i><sub>3</sub>), and (<i>Q</i><sub>3</sub>,+∞).</div></div></div>
+<p>In statistics and probability <b>quantiles</b> are cut points dividing the range of a <a href="/wiki/Probability_distribution" title="Probability distribution">probability distribution</a> into continuous intervals with equal probabilities, or dividing the observations in a sample in the same way. There is one fewer quantile than the number of groups created. Thus <a href="/wiki/Quartiles" class="mw-redirect" title="Quartiles">quartiles</a> are the three cut points that will divide a dataset into four equal-sized groups. Common quantiles have special names: for instance quartile, decile (creating 10 groups: see below for more).  The groups created are termed halves, thirds, quarters, etc., though sometimes the terms for the quantile are used for the groups created, rather than for the cut points.
+</p><p><span class="texhtml"><i>q</i></span>-<b>quantiles</b> are values that partition a finite set of values into <span class="texhtml"><i>q</i></span> subsets of (nearly) equal sizes.  There are <span class="texhtml"><i>q</i> − 1</span> of the <span class="texhtml"><i>q</i></span>-quantiles, one for each integer <span class="texhtml"><i>k</i></span> satisfying <span class="texhtml">0 &lt; <i>k</i> &lt; <i>q</i></span>.  In some cases the value of a quantile may not be uniquely determined, as can be the case for the <a href="/wiki/Median" title="Median">median</a> (2-quantile) of a uniform probability distribution on a set of even size.  Quantiles can also be applied to continuous distributions, providing a way to generalize <a href="/wiki/Rank_statistics" class="mw-redirect" title="Rank statistics">rank statistics</a> to continuous variables.  When the <a href="/wiki/Cumulative_distribution_function" title="Cumulative distribution function">cumulative distribution function</a> of a <a href="/wiki/Random_variable" title="Random variable">random variable</a> is known, the <span class="texhtml"><i>q</i></span>-quantiles are the application of the <a href="/wiki/Quantile_function" title="Quantile function">quantile function</a> (the <a href="/wiki/Inverse_function" title="Inverse function">inverse function</a> of the <a href="/wiki/Cumulative_distribution_function" title="Cumulative distribution function">cumulative distribution function</a>) to the values <span class="texhtml">{1/<i>q</i>, 2/<i>q</i>, …, (<i>q</i> − 1)/<i>q</i></span>}.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Specialized_quantiles"><span class="tocnumber">1</span> <span class="toctext">Specialized quantiles</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Quantiles_of_a_population"><span class="tocnumber">2</span> <span class="toctext">Quantiles of a population</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Examples"><span class="tocnumber">2.1</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="#Even-sized_population"><span class="tocnumber">2.1.1</span> <span class="toctext">Even-sized population</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#Odd-sized_population"><span class="tocnumber">2.1.2</span> <span class="toctext">Odd-sized population</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Estimating_quantiles_from_a_sample"><span class="tocnumber">3</span> <span class="toctext">Estimating quantiles from a sample</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Discussion"><span class="tocnumber">4</span> <span class="toctext">Discussion</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Further_reading"><span class="tocnumber">7</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Specialized_quantiles">Specialized quantiles</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile&amp;action=edit&amp;section=1" title="Edit section: Specialized quantiles">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Some <span class="texhtml"><i>q</i></span>-quantiles have special names:<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (February 2010)">citation needed</span></a></i>&#93;</sup> 
+</p>
+<ul><li>The only 2-quantile is called the <a href="/wiki/Median" title="Median">median</a></li>
+<li>The 3-quantiles are called <a href="https://en.wiktionary.org/wiki/tertile" class="extiw" title="wikt:tertile">tertiles</a> or <a href="https://en.wiktionary.org/wiki/tercile" class="extiw" title="wikt:tercile">terciles</a> → T</li>
+<li>The 4-quantiles are called <a href="/wiki/Quartile" title="Quartile">quartiles</a> → Q; the difference between upper and lower quartiles is also called the <a href="/wiki/Interquartile_range" title="Interquartile range">interquartile range</a>, <b>midspread</b> or <b>middle fifty</b> → IQR = <i>Q</i><sub>3</sub>&#160;−&#160; <i>Q</i><sub>1</sub></li>
+<li>The 5-quantiles are called <a href="https://en.wiktionary.org/wiki/quintile" class="extiw" title="wikt:quintile">quintiles</a> → QU</li>
+<li>The 6-quantiles are called <a href="https://en.wiktionary.org/wiki/sextile" class="extiw" title="wikt:sextile">sextiles</a> → S</li>
+<li>The 7-quantiles are called <a href="https://en.wiktionary.org/wiki/septile" class="extiw" title="wikt:septile">septiles</a></li>
+<li>The 8-quantiles are called <a href="https://en.wiktionary.org/wiki/octile" class="extiw" title="wikt:octile">octiles</a></li>
+<li>The 10-quantiles are called <a href="/wiki/Decile" title="Decile">deciles</a> → D</li>
+<li>The 12-quantiles are called duo-deciles or dodeciles</li>
+<li>The 16-quantiles are called <a href="https://en.wiktionary.org/wiki/hexadecile" class="extiw" title="wikt:hexadecile">hexadeciles</a> → H</li>
+<li>The 20-quantiles are called <a href="https://en.wiktionary.org/wiki/ventile" class="extiw" title="wikt:ventile">ventiles</a>, <a href="https://en.wiktionary.org/wiki/vigintile" class="extiw" title="wikt:vigintile">vigintiles</a>, or demi-deciles → V</li>
+<li>The 100-quantiles are called <a href="/wiki/Percentile" title="Percentile">percentiles</a> → P</li>
+<li><span id="millile"></span><span id="permille"></span> The 1000-quantiles have been called permilles or milliles, but these are rare and largely obsolete<sup id="cite_ref-walker_1-0" class="reference"><a href="#cite_note-walker-1">&#91;1&#93;</a></sup></li></ul>
+<h2><span class="mw-headline" id="Quantiles_of_a_population">Quantiles of a population</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile&amp;action=edit&amp;section=2" title="Edit section: Quantiles of a population">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>As in the computation of, for example, <a href="/wiki/Standard_deviation" title="Standard deviation">standard deviation</a>, the estimation of a quantile depends upon whether one is operating with a <a href="/wiki/Statistical_population" title="Statistical population">statistical population</a> or with a <a href="/wiki/Sample_(statistics)" title="Sample (statistics)">sample</a> drawn from it.  For a population, of discrete values or for a continuous population density, the <span class="texhtml"><i>k</i></span>-th <span class="texhtml"><i>q</i></span>-quantile is the data value where the cumulative distribution function crosses <span class="texhtml"><i>k</i>/<i>q</i></span>.  That is, <span class="texhtml"><i>x</i></span> is a <span class="texhtml"><i>k</i></span>-th <span class="texhtml"><i>q</i></span>-quantile for a variable <span class="texhtml"><i>X</i></span> if
+</p>
+<dl><dd><span class="texhtml">Pr[<i>X</i> &lt; <i>x</i>] ≤ <i>k</i>/<i>q</i></span> or, equivalently, <span class="texhtml">Pr[<i>X</i> ≥ <i>x</i>] ≥ 1 − <i>k</i>/<i>q</i></span></dd></dl>
+<p>and
+</p>
+<dl><dd><span class="texhtml">Pr[<i>X</i> ≤ <i>x</i>] ≥ <i>k</i>/<i>q</i></span> or, equivalently, <span class="texhtml">Pr[<i>X</i> &gt; <i>x</i>] ≤ 1 − <i>k</i>/<i>q</i></span>.</dd></dl>
+<p>For a finite population of <span class="texhtml"><i>N</i></span> equally probable values indexed <span class="texhtml">1, …, <i>N</i></span> from lowest to highest, the <span class="texhtml"><i>k</i></span>-th <span class="texhtml"><i>q</i></span>-quantile of this population can equivalently be computed via the value of <span class="texhtml"><i>I</i><sub><i>p</i></sub> = <i>N</i> <i>k</i>/<i>q</i></span>.  If <span class="texhtml"><i>I</i><sub><i>p</i></sub></span> is not an integer, then round up to the next integer to get the appropriate index; the corresponding data value is the <span class="texhtml"><i>k</i></span>-th <span class="texhtml"><i>q</i></span>-quantile.  On the other hand, if <span class="texhtml"><i>I</i><sub><i>p</i></sub></span> is an integer then any number from the data value at that index to the data value of the next can be taken as the quantile, and it is conventional (though arbitrary) to take the average of those two values (see <a href="#Estimating_the_quantiles_of_a_population">Estimating the quantiles</a>).
+</p><p>If, instead of using integers <span class="texhtml"><i>k</i></span> and <span class="texhtml"><i>q</i></span>, the “<span class="texhtml"><i>p</i></span>-quantile” is based on a <a href="/wiki/Real_number" title="Real number">real number</a> <span class="texhtml"><i>p</i></span> with <span class="texhtml">0 &lt; <i>p</i> &lt; 1</span> then <span class="texhtml"><i>p</i></span> replaces <span class="texhtml"><i>k</i>/<i>q</i></span> in the above formulas.  Some software programs (including <a href="/wiki/Microsoft_Excel" title="Microsoft Excel">Microsoft Excel</a>) regard the minimum and maximum as the 0th and 100th percentile, respectively; however, such terminology is an extension beyond traditional statistics definitions.
+</p>
+<h3><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile&amp;action=edit&amp;section=3" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following two examples use the Nearest Rank definition of quantile with rounding. For an explanation of this definition, see <a href="/wiki/Percentile" title="Percentile">percentiles</a>.
+</p>
+<h4><span class="mw-headline" id="Even-sized_population">Even-sized population</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile&amp;action=edit&amp;section=4" title="Edit section: Even-sized population">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Consider an ordered population of 10 data values {3, 6, 7, 8, 8, 10, 13, 15, 16, 20}. What are the 4-quantiles (the "quartiles") of this dataset?
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Quartile
+</th>
+<th>Calculation
+</th>
+<th>Result
+</th></tr>
+<tr>
+<td>Zeroth quartile
+</td>
+<td>Although not universally accepted, one can also speak of the zeroth quartile. This is the minimum value of the set, so the zeroth quartile in this example would be 3.
+</td>
+<td>3
+</td></tr>
+<tr>
+<td>First quartile
+</td>
+<td>The rank of the first quartile is 10&#215;(1/4) = 2.5, which rounds up to 3, meaning that 3 is the rank in the population (from least to greatest values) at which approximately 1/4 of the values are less than the value of the first quartile. The third value in the population is 7.
+</td>
+<td>7
+</td></tr>
+<tr>
+<td>Second quartile
+</td>
+<td>The rank of the second quartile (same as the median) is 10&#215;(2/4) = 5, which is an integer, while the number of values (10) is an even number, so the average of both the fifth and sixth values is taken&#8212;that is (8+10)/2 = 9, though any value from 8 through to 10 could be taken to be the median.
+</td>
+<td>9
+</td></tr>
+<tr>
+<td>Third quartile
+</td>
+<td>The rank of the third quartile is 10&#215;(3/4) = 7.5, which rounds up to 8. The eighth value in the population is 15.
+</td>
+<td>15
+</td></tr>
+<tr>
+<td>Fourth quartile
+</td>
+<td>Although not universally accepted, one can also speak of the fourth quartile. This is the maximum value of the set, so the fourth quartile in this example would be 20. Under the Nearest Rank definition of quantile, the rank of the fourth quartile is the rank of the biggest number, so the rank of the fourth quartile would be 10.
+</td>
+<td>20
+</td></tr></tbody></table>
+<p>So the first, second and third 4-quantiles (the "quartiles") of the dataset {3, 6, 7, 8, 8, 10, 13, 15, 16, 20}  are {7, 9, 15}. If also required, the zeroth quartile is 3 and the fourth quartile is 20.
+</p>
+<h4><span class="mw-headline" id="Odd-sized_population">Odd-sized population</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile&amp;action=edit&amp;section=5" title="Edit section: Odd-sized population">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Consider an ordered population of 11 data values {3, 6, 7, 8, 8, 9, 10, 13, 15, 16, 20}. What are the 4-quantiles (the "quartiles") of this dataset?
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Quartile
+</th>
+<th>Calculation
+</th>
+<th>Result
+</th></tr>
+<tr>
+<td>Zeroth quartile
+</td>
+<td>Although not universally accepted, one can also speak of the zeroth quartile. This is the minimum value of the set, so the zeroth quartile in this example would be 3.
+</td>
+<td>3
+</td></tr>
+<tr>
+<td>First quartile
+</td>
+<td>The first quartile is determined by 11&#215;(1/4) = 2.75, which rounds up to 3, meaning that 3 is the rank in the population (from least to greatest values) at which approximately 1/4 of the values are less than the value of the first quartile. The third value in the population is 7.
+</td>
+<td>7
+</td></tr>
+<tr>
+<td>Second quartile
+</td>
+<td>The second quartile value (same as the median) is determined by 11&#215;(2/4) = 5.5, which rounds up to 6. Therefore, 6 is the rank in the population (from least to greatest values) at which approximately 2/4 of the values are less than the value of the second quartile (or median). The sixth value in the population is 9.
+</td>
+<td>9
+</td></tr>
+<tr>
+<td>Third quartile
+</td>
+<td>The third quartile value for the original example above is determined by 11&#215;(3/4) = 8.25, which rounds up to 9. The ninth value in the population is 15.
+</td>
+<td>15
+</td></tr>
+<tr>
+<td>Fourth quartile
+</td>
+<td>Although not universally accepted, one can also speak of the fourth quartile. This is the maximum value of the set, so the fourth quartile in this example would be 20. Under the Nearest Rank definition of quantile, the rank of the fourth quartile is the rank of the biggest number, so the rank of the fourth quartile would be 11.
+</td>
+<td>20
+</td></tr></tbody></table>
+<p>So the first, second and third 4-quantiles (the "quartiles") of the dataset {3, 6, 7, 8, 8, 9, 10, 13, 15, 16, 20}  are {7, 9, 15}. If also required, the zeroth quartile is 3 and the fourth quartile is 20.
+</p>
+<h2><span class="mw-headline" id="Estimating_quantiles_from_a_sample">Estimating quantiles from a sample</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile&amp;action=edit&amp;section=6" title="Edit section: Estimating quantiles from a sample">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>When one has a sample drawn from an unknown population, the <a href="/wiki/Cumulative_distribution_function" title="Cumulative distribution function">cumulative distribution function</a> and <a href="/wiki/Quantile_function" title="Quantile function">quantile function</a> of the underlying population are not known and the task becomes that of <a href="/wiki/Estimation_theory" title="Estimation theory">estimating</a> the quantiles.  There are several methods.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> <a href="/wiki/Mathematica" class="mw-redirect" title="Mathematica">Mathematica</a>,<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup> <a href="/wiki/Matlab" class="mw-redirect" title="Matlab">Matlab</a>,<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> <a href="/wiki/R_(programming_language)" title="R (programming language)">R</a><sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> and <a href="/wiki/GNU_Octave" title="GNU Octave">GNU Octave</a><sup id="cite_ref-Function_Reference:_quantile_-_Octave-Forge_-_SourceForge_6-0" class="reference"><a href="#cite_note-Function_Reference:_quantile_-_Octave-Forge_-_SourceForge-6">&#91;6&#93;</a></sup> programming languages include nine sample quantile methods. <a href="/wiki/SAS_(software)" title="SAS (software)">SAS</a> includes five sample quantile methods, <a href="/wiki/SciPy" title="SciPy">SciPy</a><sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup> and <a href="/wiki/Maple_(software)" title="Maple (software)">Maple</a><sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup> both include eight, <a href="/wiki/EViews" title="EViews">EViews</a><sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup> includes the six piecewise linear functions, <a href="/wiki/Stata" title="Stata">Stata</a><sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup>  includes two, and <a href="/wiki/Microsoft_Excel" title="Microsoft Excel">Microsoft Excel</a> includes two. Mathematica supports an arbitrary parameter for methods that allows for other, non-standard, methods.
+</p><p>In effect, the methods compute <span class="texhtml"><i>Q</i><sub><i>p</i></sub></span>, the estimate for the <span class="texhtml"><i>k</i></span>-th <span class="texhtml"><i>q</i></span>-quantile, where <span class="texhtml"><i>p</i> = <i>k</i>/<i>q</i></span>, from a sample of size <span class="texhtml"><i>N</i></span> by computing a real valued index <span class="texhtml"><i>h</i></span>.  When <span class="texhtml"><i>h</i></span> is an integer, the <span class="texhtml"><i>h</i></span>-th smallest of the <span class="texhtml"><i>N</i></span> values, <span class="texhtml"><i>x</i><sub><i>h</i></sub></span>, is the quantile estimate.  Otherwise a rounding or interpolation scheme is used to compute the quantile estimate from <span class="texhtml"><i>h</i></span>, <span class="texhtml"><i>x</i><sub>⌊<i>h</i>⌋</sub></span>, and <span class="texhtml"><i>x</i><sub>⌈<i>h</i>⌉</sub></span>.  (For notation, see <a href="/wiki/Floor_and_ceiling_functions" title="Floor and ceiling functions">floor and ceiling functions</a>).
+</p><p>The estimate types and interpolation schemes used include:
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Type
+</th>
+<th><span class="texhtml"><i>h</i></span>
+</th>
+<th><span class="texhtml"><i>Q</i><sub><i>p</i></sub></span>
+</th>
+<th>Notes
+</th></tr>
+<tr>
+<td>R-1, SAS-3, Maple-1
+</td>
+<td><span class="texhtml"><i>Np</i> + 1/2</span>
+</td>
+<td><span class="texhtml"><i>x</i><sub>⌈<i>h</i> – 1/2⌉</sub></span>
+</td>
+<td>Inverse of <a href="/wiki/Empirical_distribution_function" title="Empirical distribution function">empirical distribution function</a>.
+</td></tr>
+<tr>
+<td>R-2, SAS-5, Maple-2, Stata
+</td>
+<td><span class="texhtml"><i>Np</i> + 1/2</span>
+</td>
+<td><span class="texhtml">(<i>x</i><sub>⌈<i>h</i> – 1/2⌉</sub> + <i>x</i><sub>⌊<i>h</i> + 1/2⌋</sub>) / 2</span>
+</td>
+<td>The same as R-1, but with averaging at discontinuities.
+</td></tr>
+<tr>
+<td>R-3, SAS-2
+</td>
+<td><span class="texhtml"><i>Np</i></span>
+</td>
+<td><span class="texhtml"><i>x</i><sub>⌊<i>h</i>⌉</sub></span>
+</td>
+<td>The observation numbered closest to <span class="texhtml"><i>Np</i></span>.  Here, <span class="texhtml">⌊<i>h</i>⌉</span> indicates rounding to the nearest integer, choosing the even integer in the case of a tie.
+</td></tr>
+<tr>
+<td>R-4, SAS-1, SciPy-(0,1), Maple-3
+</td>
+<td><span class="texhtml"><i>Np</i></span>
+</td>
+<td><span class="texhtml"><i>x</i><sub>⌊<i>h</i>⌋</sub> + (<i>h</i> − ⌊<i>h</i>⌋) (<i>x</i><sub>⌊<i>h</i>⌋ + 1</sub> − <i>x</i><sub>⌊<i>h</i>⌋</sub>)</span>
+</td>
+<td>Linear interpolation of the empirical distribution function.
+</td></tr>
+<tr>
+<td>R-5, SciPy-(.5,.5), Maple-4
+</td>
+<td><span class="texhtml"><i>Np</i> + 1/2</span>
+</td>
+<td><span class="texhtml"><i>x</i><sub>⌊<i>h</i>⌋</sub> + (<i>h</i> − ⌊<i>h</i>⌋) (<i>x</i><sub>⌊<i>h</i>⌋ + 1</sub> − <i>x</i><sub>⌊<i>h</i>⌋</sub>)</span>
+</td>
+<td>Piecewise linear function where the knots are the values midway through the steps of the empirical distribution function.
+</td></tr>
+<tr>
+<td>R-6, Excel, SAS-4, SciPy-(0,0), Maple-5, Stata-altdef
+</td>
+<td><span class="texhtml">(<i>N</i> + 1)<i>p</i></span>
+</td>
+<td><span class="texhtml"><i>x</i><sub>⌊<i>h</i>⌋</sub> + (<i>h</i> − ⌊<i>h</i>⌋) (<i>x</i><sub>⌊<i>h</i>⌋ + 1</sub> − <i>x</i><sub>⌊<i>h</i>⌋</sub>)</span>
+</td>
+<td>Linear interpolation of the expectations for the order statistics for the uniform distribution on [0,1].  That is, it is the linear interpolation between points <span class="texhtml">(<i>p</i><sub><i>h</i></sub>, <i>x</i><sub><i>h</i></sub>)</span>, where <span class="texhtml"><i>p</i><sub><i>h</i></sub> = <i>h</i>/(<i>N</i>+1)</span> is the probability that the last of (<span class="texhtml"><i>N</i>+1</span>) randomly drawn values will not exceed the <span class="texhtml"><i>h</i></span>-th smallest of the first <span class="texhtml"><i>N</i></span> randomly drawn values.
+</td></tr>
+<tr>
+<td>R-7, Excel, SciPy-(1,1), Maple-6, NumPy, Julia
+</td>
+<td><span class="texhtml">(<i>N</i> − 1)<i>p</i> + 1</span>
+</td>
+<td><span class="texhtml"><i>x</i><sub>⌊<i>h</i>⌋</sub> + (<i>h</i> − ⌊<i>h</i>⌋) (<i>x</i><sub>⌊<i>h</i>⌋ + 1</sub> − <i>x</i><sub>⌊<i>h</i>⌋</sub>)</span>
+</td>
+<td>Linear interpolation of the modes for the order statistics for the uniform distribution on [0,1].
+</td></tr>
+<tr>
+<td>R-8, SciPy-(1/3,1/3), Maple-7
+</td>
+<td><span class="texhtml">(<i>N</i> + 1/3)<i>p</i> + 1/3</span>
+</td>
+<td><span class="texhtml"><i>x</i><sub>⌊<i>h</i>⌋</sub> + (<i>h</i> − ⌊<i>h</i>⌋) (<i>x</i><sub>⌊<i>h</i>⌋ + 1</sub> − <i>x</i><sub>⌊<i>h</i>⌋</sub>)</span>
+</td>
+<td>Linear interpolation of the approximate medians for order statistics.
+</td></tr>
+<tr>
+<td>R-9, SciPy-(3/8,3/8), Maple-8
+</td>
+<td><span class="texhtml">(<i>N</i> + 1/4)<i>p</i> + 3/8</span>
+</td>
+<td><span class="texhtml"><i>x</i><sub>⌊<i>h</i>⌋</sub> + (<i>h</i> − ⌊<i>h</i>⌋) (<i>x</i><sub>⌊<i>h</i>⌋ + 1</sub> − <i>x</i><sub>⌊<i>h</i>⌋</sub>)</span>
+</td>
+<td>The resulting quantile estimates are approximately unbiased for the expected order statistics if <span class="texhtml"><i>x</i></span> is normally distributed.
+</td></tr></tbody></table>
+<p>Notes:
+</p>
+<ul><li>R-1 through R-3 are piecewise constant, with discontinuities.</li>
+<li>R-4 and following are piecewise linear, without discontinuities, but differ in how <span class="texhtml"><i>h</i></span> is computed.</li>
+<li>R-3 and R-4 are not symmetric in that they do not give <span class="texhtml"><i>h</i> = (<i>N</i> + 1) / 2</span> when <span class="texhtml"><i>p</i> = 1/2</span>.</li>
+<li>Excel PERCENTILE.EXC is equivalent to R-6</li>
+<li>Excel PERCENTILE and PERCENTILE.INC are equivalent to R-7</li>
+<li>Packages differ in how they estimate quantiles beyond the lowest and highest values in the sample.  Choices include returning an error value, computing linear extrapolation, or assuming a constant value.</li></ul>
+<p>The <a href="/wiki/Standard_error_(statistics)" class="mw-redirect" title="Standard error (statistics)">standard error</a> of a quantile estimate can in general be estimated via the <a href="/wiki/Bootstrap_(statistics)" class="mw-redirect" title="Bootstrap (statistics)">bootstrap</a>.  The Maritz–Jarrett method can also be used.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Discussion">Discussion</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile&amp;action=edit&amp;section=7" title="Edit section: Discussion">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Standardized test results are commonly misinterpreted as a student scoring "in the 80th percentile," for example, as if the 80th percentile is an interval to score "in," which it is not; one can score "at" some percentile, or between two percentiles, but not "in" some percentile.  Perhaps by this example it is meant that the student scores between the 80th and 81st percentiles, or "in" the group of students whose score placed them at the 80th percentile.
+</p><p>If a distribution is symmetric, then the median is the mean (so long as the latter exists). But, in general, the median and the mean can differ. For instance, with a random variable that has an <a href="/wiki/Exponential_distribution" title="Exponential distribution">exponential distribution</a>, any particular sample of this random variable will have roughly a 63% chance of being less than the mean.  This is because the exponential distribution has a long tail for positive values but is zero for negative numbers.
+</p><p>Quantiles are useful measures because they are less susceptible than means to long-tailed distributions and outliers.  Empirically, if the data being analyzed are not actually distributed according to an assumed distribution, or if there are other potential sources for outliers that are far removed from the mean, then quantiles may be more useful descriptive statistics than means and other moment-related statistics.
+</p><p>Closely related is the subject of <a href="/wiki/Least_absolute_deviations" title="Least absolute deviations">least absolute deviations</a>, a method of regression that is more robust to outliers than is least squares, in which the sum of the absolute value of the observed errors is used in place of the squared error.  The connection is that the mean is the single estimate of a distribution that minimizes expected squared error while the median minimizes expected absolute error.  <a href="/wiki/Least_absolute_deviations" title="Least absolute deviations">Least absolute deviations</a> shares the ability to be relatively insensitive to large deviations in outlying observations, although even better methods of <a href="/wiki/Robust_regression" title="Robust regression">robust regression</a> are available.
+</p><p>The quantiles of a random variable are preserved under increasing transformations, in the sense that, for example, if <span class="texhtml"><i>m</i></span> is the median of a random variable <span class="texhtml"><i>X</i></span>, then <span class="texhtml">2<sup><i>m</i></sup></span> is the median of <span class="texhtml">2<sup><i>X</i></sup></span>, unless an arbitrary choice has been made from a range of values to specify a particular quantile. (See quantile estimation, above, for examples of such interpolation.)   Quantiles can also be used in cases where only <a href="/wiki/Ordinal_scale" class="mw-redirect" title="Ordinal scale">ordinal</a> data are available.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile&amp;action=edit&amp;section=8" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="div-col columns column-width" style="-moz-column-width: 20em; -webkit-column-width: 20em; column-width: 20em;">
+<ul><li><a href="/wiki/Flashsort" title="Flashsort">Flashsort</a> – sort by first bucketing by quantile</li>
+<li><a href="/wiki/Interquartile_range" title="Interquartile range">Interquartile range</a></li>
+<li><a href="/wiki/Descriptive_statistics" title="Descriptive statistics">Descriptive statistics</a></li>
+<li><a href="/wiki/Quartile" title="Quartile">Quartile</a></li>
+<li><a href="/wiki/Q%E2%80%93Q_plot" title="Q–Q plot">Q–Q plot</a></li>
+<li><a href="/wiki/Quantile_function" title="Quantile function">Quantile function</a></li>
+<li><a href="/wiki/Quantile_normalization" title="Quantile normalization">Quantile normalization</a></li>
+<li><a href="/wiki/Quantile_regression" title="Quantile regression">Quantile regression</a></li>
+<li><a href="/wiki/Quantization_(signal_processing)" title="Quantization (signal processing)">Quantization</a></li>
+<li><a href="/wiki/Summary_statistics" title="Summary statistics">Summary statistics</a></li>
+<li><a href="/wiki/Tolerance_interval" title="Tolerance interval">Tolerance interval</a> ("<a href="/wiki/Confidence_intervals" class="mw-redirect" title="Confidence intervals">confidence intervals</a> for the <i>p</i>th quantile"<sup id="cite_ref-vardeman_12-0" class="reference"><a href="#cite_note-vardeman-12">&#91;12&#93;</a></sup>)</li></ul>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile&amp;action=edit&amp;section=9" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-walker-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-walker_1-0">^</a></b></span> <span class="reference-text">Helen Mary Walker, Joseph Lev, <i>Elementary Statistical Methods</i>, 1969, [p. 60 <a rel="nofollow" class="external free" href="https://books.google.com/books?id=ogYnAQAAIAAJ&amp;dq=permille">https://books.google.com/books?id=ogYnAQAAIAAJ&amp;dq=permille</a>]</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation journal">Hyndman, R.J.; Fan, Y. (November 1996). "Sample Quantiles in Statistical Packages". <i>American Statistician</i>. American Statistical Association. <b>50</b> (4): 361–365. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.2307%2F2684934">10.2307/2684934</a>. <a href="/wiki/JSTOR" title="JSTOR">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/2684934">2684934</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=American+Statistician&amp;rft.atitle=Sample+Quantiles+in+Statistical+Packages&amp;rft.volume=50&amp;rft.issue=4&amp;rft.pages=361-365&amp;rft.date=1996-11&amp;rft_id=info%3Adoi%2F10.2307%2F2684934&amp;rft_id=%2F%2Fwww.jstor.org%2Fstable%2F2684934&amp;rft.au=Hyndman%2C+R.J.&amp;rft.au=Fan%2C+Y.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantile" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://reference.wolfram.com/language/ref/Quantile.html">Mathematica Documentation</a> See 'Details' section</span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.mathworks.co.uk/matlabcentral/fileexchange/46555-quantile-calculation">MATLAB implementation of the various estimation methods</a></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation book">Frohne, I.; Hyndman, R.J. (2009). <a rel="nofollow" class="external text" href="http://stat.ethz.ch/R-manual/R-devel/library/stats/html/quantile.html"><i>Sample Quantiles</i></a>. R Project. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/3-900051-07-0" title="Special:BookSources/3-900051-07-0"><bdi>3-900051-07-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Sample+Quantiles&amp;rft.pub=R+Project&amp;rft.date=2009&amp;rft.isbn=3-900051-07-0&amp;rft.au=Frohne%2C+I.&amp;rft.au=Hyndman%2C+R.J.&amp;rft_id=http%3A%2F%2Fstat.ethz.ch%2FR-manual%2FR-devel%2Flibrary%2Fstats%2Fhtml%2Fquantile.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantile" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Function_Reference:_quantile_-_Octave-Forge_-_SourceForge-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-Function_Reference:_quantile_-_Octave-Forge_-_SourceForge_6-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://octave.sourceforge.net/octave/function/quantile.html">"Function Reference: quantile - Octave-Forge - SourceForge"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">6 September</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Function+Reference%3A+quantile+-+Octave-Forge+-+SourceForge&amp;rft_id=http%3A%2F%2Foctave.sourceforge.net%2Foctave%2Ffunction%2Fquantile.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantile" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.mstats.mquantiles.html">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.mstats.mquantiles.html</a></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.maplesoft.com/support/help/maple/view.aspx?path=Statistics%2FQuantile">http://www.maplesoft.com/support/help/maple/view.aspx?path=Statistics%2FQuantile</a></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20160416123322/http://www.eviews.com/help/EViews%209%20Help/graphs.020.09.html">"Archived copy"</a>. Archived from <a rel="nofollow" class="external text" href="http://www.eviews.com/help/EViews%209%20Help/graphs.020.09.html#ww140852">the original</a> on April 16, 2016<span class="reference-accessdate">. Retrieved <span class="nowrap">April 4,</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Archived+copy&amp;rft_id=http%3A%2F%2Fwww.eviews.com%2Fhelp%2FEViews%25209%2520Help%2Fgraphs.020.09.html%23ww140852&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantile" class="Z3988"></span><span class="cs1-maint citation-comment">CS1 maint: Archived copy as title (<a href="/wiki/Category:CS1_maint:_Archived_copy_as_title" title="Category:CS1 maint: Archived copy as title">link</a>)</span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.stata.com/manuals/dpctile.pdf">Stata documentation for the pctile and xtile commands</a> See 'Methods and formulas' section.</span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation book">Wilcox, Rand R. (2010). <i>Introduction to Robust Estimation and Hypothesis Testing</i>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-12-751542-9" title="Special:BookSources/0-12-751542-9"><bdi>0-12-751542-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Introduction+to+Robust+Estimation+and+Hypothesis+Testing&amp;rft.date=2010&amp;rft.isbn=0-12-751542-9&amp;rft.aulast=Wilcox&amp;rft.aufirst=Rand+R.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantile" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-vardeman-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-vardeman_12-0">^</a></b></span> <span class="reference-text"><cite class="citation journal">Stephen B. Vardeman (1992). "What about the Other Intervals?". <i>The American Statistician</i>. <b>46</b> (3): 193–197. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.2307%2F2685212">10.2307/2685212</a>. <a href="/wiki/JSTOR" title="JSTOR">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/2685212">2685212</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=The+American+Statistician&amp;rft.atitle=What+about+the+Other+Intervals%3F&amp;rft.volume=46&amp;rft.issue=3&amp;rft.pages=193-197&amp;rft.date=1992&amp;rft_id=info%3Adoi%2F10.2307%2F2685212&amp;rft_id=%2F%2Fwww.jstor.org%2Fstable%2F2685212&amp;rft.au=Stephen+B.+Vardeman&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantile" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile&amp;action=edit&amp;section=10" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><cite class="citation book">Serfling, R. J. (1980). <i>Approximation Theorems of Mathematical Statistics</i>. John Wiley &amp; Sons. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-471-02403-1" title="Special:BookSources/0-471-02403-1"><bdi>0-471-02403-1</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Approximation+Theorems+of+Mathematical+Statistics&amp;rft.pub=John+Wiley+%26+Sons&amp;rft.date=1980&amp;rft.isbn=0-471-02403-1&amp;rft.aulast=Serfling&amp;rft.aufirst=R.+J.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantile" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li></ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile&amp;action=edit&amp;section=11" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/File:Commons-logo.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/12px-Commons-logo.svg.png" decoding="async" width="12" height="16" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/18px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/24px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></a> Media related to <a href="https://commons.wikimedia.org/wiki/Category:Quantiles" class="extiw" title="commons:Category:Quantiles">Quantiles</a> at Wikimedia Commons</li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1264
+Cached time: 20190727180339
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.320 seconds
+Real time usage: 0.430 seconds
+Preprocessor visited node count: 1877/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 18020/2097152 bytes
+Template argument size: 2618/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 3/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 22354/5000000 bytes
+Number of Wikibase entities loaded: 2/400
+Lua time usage: 0.151/10.000 seconds
+Lua memory usage: 4.04 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  357.782      1 -total
+ 52.36%  187.330      1 Template:Reflist
+ 39.87%  142.652      2 Template:Cite_journal
+ 19.36%   69.251      1 Template:Citation_needed
+ 14.82%   53.023      1 Template:Fix
+ 10.59%   37.881      2 Template:Category_handler
+  8.21%   29.386      1 Template:Commons_category-inline
+  5.90%   21.098     84 Template:Math
+  4.92%   17.620      3 Template:Cite_book
+  4.26%   15.253      2 Template:Cite_web
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:25184-0!canonical and timestamp 20190727180339 and revision id 900044736
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Quantile&amp;oldid=900044736">https://en.wikipedia.org/w/index.php?title=Quantile&amp;oldid=900044736</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Summary_statistics" title="Category:Summary statistics">Summary statistics</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_maint:_Archived_copy_as_title" title="Category:CS1 maint: Archived copy as title">CS1 maint: Archived copy as title</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_February_2010" title="Category:Articles with unsourced statements from February 2010">Articles with unsourced statements from February 2010</a></li><li><a href="/wiki/Category:Commons_category_link_is_on_Wikidata" title="Category:Commons category link is on Wikidata">Commons category link is on Wikidata</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Quantile" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Quantile" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Quantile" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Quantile" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Quantile">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Quantile&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Quantile&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Quantile" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Quantile" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Quantile&amp;oldid=900044736" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Quantile&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q578714" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Quantile&amp;id=900044736" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-wikibase-otherprojects" aria-labelledby="p-wikibase-otherprojects-label">
+			<h3 id="p-wikibase-otherprojects-label">In other projects</h3>
+			<div class="body">
+								<ul>
+					<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:Quantiles" hreflang="en">Wikimedia Commons</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Quantile">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Quantile&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Quantile&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%AA%D8%AC%D8%B2%D9%8A%D8%A1_(%D8%A5%D8%AD%D8%B5%D8%A7%D8%A1)" title="تجزيء (إحصاء) – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-be"><a href="https://be.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%BD%D1%82%D1%8B%D0%BB%D1%8C" title="Квантыль – Belarusian" lang="be" hreflang="be" class="interlanguage-link-target">Беларуская</a></li><li class="interlanguage-link interwiki-bg"><a href="https://bg.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%B0_%D1%81%D1%80%D0%B5%D0%B4%D0%BD%D0%B0_%D0%B2%D0%B5%D0%BB%D0%B8%D1%87%D0%B8%D0%BD%D0%B0" title="Позиционна средна величина – Bulgarian" lang="bg" hreflang="bg" class="interlanguage-link-target">Български</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Quantil" title="Quantil – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Kvantil" title="Kvantil – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/Fraktil" title="Fraktil – Danish" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Quantil_(Wahrscheinlichkeitstheorie)" title="Quantil (Wahrscheinlichkeitstheorie) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Cuantil" title="Cuantil – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eu"><a href="https://eu.wikipedia.org/wiki/Kuantil" title="Kuantil – Basque" lang="eu" hreflang="eu" class="interlanguage-link-target">Euskara</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%DA%86%D9%86%D8%AF%DA%A9" title="چندک – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Quantile" title="Quantile – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Quantile" title="Quantile – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/Kvantilisek" title="Kvantilisek – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Kwantiel" title="Kwantiel – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E5%88%86%E4%BD%8D%E6%95%B0" title="分位数 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/Kvantil" title="Kvantil – Norwegian" lang="no" hreflang="no" class="interlanguage-link-target">Norsk</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Kwantyl" title="Kwantyl – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Quantil" title="Quantil – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%BD%D1%82%D0%B8%D0%BB%D1%8C" title="Квантиль – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sl"><a href="https://sl.wikipedia.org/wiki/Kvantil" title="Kvantil – Slovenian" lang="sl" hreflang="sl" class="interlanguage-link-target">Slovenščina</a></li><li class="interlanguage-link interwiki-su"><a href="https://su.wikipedia.org/wiki/Quantile" title="Quantile – Sundanese" lang="su" hreflang="su" class="interlanguage-link-target">Basa Sunda</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Kvantiili" title="Kvantiili – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%BD%D1%82%D0%B8%D0%BB%D1%8C" title="Квантиль – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E5%88%86%E4%BD%8D%E6%95%B0" title="分位数 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q578714#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 3 June 2019, at 02:01<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Quantile&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.320","walltime":"0.430","ppvisitednodes":{"value":1877,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":18020,"limit":2097152},"templateargumentsize":{"value":2618,"limit":2097152},"expansiondepth":{"value":11,"limit":40},"expensivefunctioncount":{"value":3,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":22354,"limit":5000000},"entityaccesscount":{"value":2,"limit":400},"timingprofile":["100.00%  357.782      1 -total"," 52.36%  187.330      1 Template:Reflist"," 39.87%  142.652      2 Template:Cite_journal"," 19.36%   69.251      1 Template:Citation_needed"," 14.82%   53.023      1 Template:Fix"," 10.59%   37.881      2 Template:Category_handler","  8.21%   29.386      1 Template:Commons_category-inline","  5.90%   21.098     84 Template:Math","  4.92%   17.620      3 Template:Cite_book","  4.26%   15.253      2 Template:Cite_web"]},"scribunto":{"limitreport-timeusage":{"value":"0.151","limit":"10.000"},"limitreport-memusage":{"value":4240507,"limit":52428800}},"cachereport":{"origin":"mw1264","timestamp":"20190727180339","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Quantile","url":"https:\/\/en.wikipedia.org\/wiki\/Quantile","sameAs":"http:\/\/www.wikidata.org\/entity\/Q578714","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q578714","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2001-05-20T05:15:34Z","dateModified":"2019-06-03T02:01:04Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/5\/5e\/Iqr_with_quantile.png","headline":"cutpoint dividing a set of observations into equal sized groups"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":99,"wgHostname":"mw1239"});});</script>
+</body>
+</html>

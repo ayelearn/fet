@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Numerical differentiation - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Numerical_differentiation","wgTitle":"Numerical differentiation","wgCurRevisionId":901876290,"wgRevisionId":901876290,"wgArticleId":1254566,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Numerical analysis","Differential calculus"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Numerical_differentiation",
+"wgRelevantArticleId":1254566,"wgRequestId":"XUpGlQpAMEsAAAKQXc8AAACQ","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q1683292","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready",
+"ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.math.scripts","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init",
+"ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Derivative.svg/1200px-Derivative.svg.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Numerical_differentiation"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Numerical_differentiation&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Numerical_differentiation&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Numerical_differentiation"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Numerical_differentiation rootpage-Numerical_differentiation skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Numerical differentiation</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>In <a href="/wiki/Numerical_analysis" title="Numerical analysis">numerical analysis</a>, <b>numerical differentiation</b> describes <a href="/wiki/Algorithm" title="Algorithm">algorithms</a> for estimating the <a href="/wiki/Derivative" title="Derivative">derivative</a> of a <a href="/wiki/Mathematical_function" class="mw-redirect" title="Mathematical function">mathematical function</a> or function <a href="/wiki/Subroutine" title="Subroutine">subroutine</a> using values of the function and perhaps other knowledge about the function.
+</p>
+<div class="floatright"><a href="/wiki/File:Derivative.svg" class="image"><img alt="Derivative.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/18/Derivative.svg/230px-Derivative.svg.png" decoding="async" width="230" height="255" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/18/Derivative.svg/345px-Derivative.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/18/Derivative.svg/460px-Derivative.svg.png 2x" data-file-width="1158" data-file-height="1282" /></a></div>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Finite_difference_formulas"><span class="tocnumber">1</span> <span class="toctext">Finite difference formulas</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Practical_considerations_using_floating-point_arithmetic"><span class="tocnumber">1.1</span> <span class="toctext">Practical considerations using floating-point arithmetic</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Higher-order_methods"><span class="tocnumber">1.2</span> <span class="toctext">Higher-order methods</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Higher_derivatives"><span class="tocnumber">1.3</span> <span class="toctext">Higher derivatives</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Practical_Implementation"><span class="tocnumber">2</span> <span class="toctext">Practical Implementation</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Differential_quadrature"><span class="tocnumber">3</span> <span class="toctext">Differential quadrature</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Complex-variable_methods"><span class="tocnumber">4</span> <span class="toctext">Complex-variable methods</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Finite_difference_formulas">Finite difference formulas</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Numerical_differentiation&amp;action=edit&amp;section=1" title="Edit section: Finite difference formulas">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The simplest method is to use finite difference approximations.
+</p><p>A simple two-point estimation is to compute the slope of a nearby <a href="/wiki/Secant_line" title="Secant line">secant line</a> through the points (<i>x</i>, <i>f</i>(<i>x</i>)) and (<i>x</i>&#160;+&#160;<i>h</i>, <i>f</i>(<i>x</i>&#160;+&#160;<i>h</i>)).<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> Choosing a small number <i>h</i>,  <i>h</i> represents a small change in <i>x</i>, and it can be either positive or negative.  The slope of this line is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {f(x+h)-f(x)}{h}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>+</mo>
+              <mi>h</mi>
+              <mo stretchy="false">)</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mi>h</mi>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {f(x+h)-f(x)}{h}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5786e28a8f6398c48edcf26eff7d3a154c1c7fd2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:17.338ex; height:5.843ex;" alt="{\displaystyle {\frac {f(x+h)-f(x)}{h}}.}"/></span></dd></dl>
+<p>This expression is <a href="/wiki/Isaac_Newton" title="Isaac Newton">Newton</a>'s <a href="/wiki/Difference_quotient" title="Difference quotient">difference quotient</a> (also known as a first-order <a href="/wiki/Divided_difference" class="mw-redirect" title="Divided difference">divided difference</a>).
+</p><p>The slope of this secant line differs from the slope of the tangent line by an amount that is approximately proportional to <i>h</i>. As <i>h</i> approaches zero, the slope of the secant line approaches the slope of the tangent line. Therefore, the true <b>derivative of</b> <i><b>f</b></i> <b>at</b> <i><b>x</b></i> is the limit of the value of the difference quotient as the secant lines get closer and closer to being a tangent line:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f'(x)=\lim _{h\to 0}{\frac {f(x+h)-f(x)}{h}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>h</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mn>0</mn>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>+</mo>
+              <mi>h</mi>
+              <mo stretchy="false">)</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mi>h</mi>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f'(x)=\lim _{h\to 0}{\frac {f(x+h)-f(x)}{h}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3f07ddc190e96e17d5d7e1ab262e8e5baf865949" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:29.38ex; height:5.843ex;" alt="{\displaystyle f&#039;(x)=\lim _{h\to 0}{\frac {f(x+h)-f(x)}{h}}.}"/></span></dd></dl>
+<p>Since immediately <a href="/wiki/Substitution_(logic)" title="Substitution (logic)">substituting</a> 0 for <i>h</i> results in <a href="/wiki/Division_by_zero" title="Division by zero">division by zero</a>, calculating the derivative directly can be unintuitive.
+</p><p>Equivalently, the slope could be estimated by employing positions (<i>x</i>&#160;−&#160;<i>h</i>) and <i>x</i>.
+</p><p>Another two-point formula is to compute the slope of a nearby secant line through the points (<i>x</i>&#160;-&#160;<i>h</i>, <i>f</i>(<i>x</i>&#160;−&#160;<i>h</i>)) and (<i>x</i>&#160;+&#160;<i>h</i>, <i>f</i>(<i>x</i>&#160;+&#160;<i>h</i>)). The slope of this line is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {f(x+h)-f(x-h)}{2h}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>+</mo>
+              <mi>h</mi>
+              <mo stretchy="false">)</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>h</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mn>2</mn>
+              <mi>h</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {f(x+h)-f(x-h)}{2h}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8c47753768b4e184080c6782a3ee8ca9d8174b0a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:21.517ex; height:5.843ex;" alt="{\displaystyle {\frac {f(x+h)-f(x-h)}{2h}}.}"/></span></dd></dl>
+<p>This formula is known as the <a href="/wiki/Symmetric_difference_quotient" class="mw-redirect" title="Symmetric difference quotient">symmetric difference quotient</a>. In this case the first-order errors cancel, so the slope of these secant lines differ from the slope of the tangent line by an amount that is approximately proportional to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle h^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>h</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle h^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0ee96b2a49abab22ea200cc66ab956379d0c4773" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.393ex; height:2.676ex;" alt="h^{2}"/></span>. Hence for small values of <i>h</i> this is a more accurate approximation to the tangent line than the one-sided estimation. Note however that although the slope is being computed at <i>x</i>, the value of the function at <i>x</i> is not involved.
+</p><p>The estimation error is given by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle R={\frac {-f^{(3)}(c)}{6}}h^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>R</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo>&#x2212;<!-- − --></mo>
+              <msup>
+                <mi>f</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">(</mo>
+                  <mn>3</mn>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </msup>
+              <mo stretchy="false">(</mo>
+              <mi>c</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mn>6</mn>
+          </mfrac>
+        </mrow>
+        <msup>
+          <mi>h</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle R={\frac {-f^{(3)}(c)}{6}}h^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1795861aa0f7b848702fc5b2f55a4ae66b4e7322" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:16.37ex; height:6.009ex;" alt="{\displaystyle R={\frac {-f^{(3)}(c)}{6}}h^{2}}"/></span>,</dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle c}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>c</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/86a67b81c2de995bd608d5b2df50cd8cd7d92455" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.007ex; height:1.676ex;" alt="c"/></span> is some point between <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x-h}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>h</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x-h}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ee7e0e37cdb761ce4bdda4dc5cc581424c90c972" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.509ex; height:2.343ex;" alt="{\displaystyle x-h}"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x+h}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>h</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x+h}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fada64bf0345b4e3b386457f437d96ee3560e6ef" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.509ex; height:2.343ex;" alt="{\displaystyle x+h}"/></span>.
+This error does not include the <a href="/wiki/Rounding_error" class="mw-redirect" title="Rounding error">rounding error</a> due to numbers being represented and calculations being performed in limited precision.
+</p><p>The symmetric difference quotient is employed as the method of approximating the derivative in a number of calculators, including <a href="/wiki/TI-82" title="TI-82">TI-82</a>, <a href="/wiki/TI-83" class="mw-redirect" title="TI-83">TI-83</a>, <a href="/wiki/TI-84" class="mw-redirect" title="TI-84">TI-84</a>, <a href="/wiki/TI-85" title="TI-85">TI-85</a>, all of which use this method with <i>h</i>&#160;= 0.001.<sup id="cite_ref-Merseth2003_2-0" class="reference"><a href="#cite_note-Merseth2003-2">&#91;2&#93;</a></sup><sup id="cite_ref-RubySellers2014_3-0" class="reference"><a href="#cite_note-RubySellers2014-3">&#91;3&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Practical_considerations_using_floating-point_arithmetic">Practical considerations using floating-point arithmetic</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Numerical_differentiation&amp;action=edit&amp;section=2" title="Edit section: Practical considerations using floating-point arithmetic">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/File:AbsoluteErrorNumericalDifferentiationExample.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/41/AbsoluteErrorNumericalDifferentiationExample.png/300px-AbsoluteErrorNumericalDifferentiationExample.png" decoding="async" width="300" height="177" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/41/AbsoluteErrorNumericalDifferentiationExample.png/450px-AbsoluteErrorNumericalDifferentiationExample.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/41/AbsoluteErrorNumericalDifferentiationExample.png/600px-AbsoluteErrorNumericalDifferentiationExample.png 2x" data-file-width="1548" data-file-height="914" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:AbsoluteErrorNumericalDifferentiationExample.png" class="internal" title="Enlarge"></a></div>Example showing the difficulty of choosing <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle h}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>h</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle h}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b26be3e694314bc90c3215047e4a2010c6ee184a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.339ex; height:2.176ex;" alt="h"/></span> due to both rounding error and formula error</div></div></div>
+<p>An important consideration in practice when the function is calculated using <a href="/wiki/Floating-point_arithmetic" title="Floating-point arithmetic">floating-point arithmetic</a> is how small a value of <i>h</i> to choose. If chosen too small, the subtraction will yield a large <a href="/wiki/Rounding_error" class="mw-redirect" title="Rounding error">rounding error</a>. In fact, all the finite-difference formulae are <a href="/wiki/Ill-conditioned" class="mw-redirect" title="Ill-conditioned">ill-conditioned</a><sup id="cite_ref-Fornberg1_4-0" class="reference"><a href="#cite_note-Fornberg1-4">&#91;4&#93;</a></sup> and due to cancellation will produce a value of zero if <i>h</i> is small enough.<sup id="cite_ref-SquireTrapp1_5-0" class="reference"><a href="#cite_note-SquireTrapp1-5">&#91;5&#93;</a></sup> If too large, the calculation of the slope of the secant line will be more accurately calculated, but the estimate of the slope of the tangent by using the secant could be worse.
+</p><p>For the numerical derivative formula evaluated at <i>x</i> and <i>x</i> + <i>h</i>, a choice for <i>h</i> that is small without producing a large rounding error is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\sqrt {\varepsilon }}x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mi>&#x03B5;<!-- ε --></mi>
+          </msqrt>
+        </mrow>
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\sqrt {\varepsilon }}x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eb3da7276d0d944582a90b076d80734ba1f3b378" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:4.349ex; height:3.009ex;" alt="{\displaystyle {\sqrt {\varepsilon }}x}"/></span> (though not when <i>x</i>&#160;= 0), where the <a href="/wiki/Machine_epsilon" title="Machine epsilon">machine epsilon</a> <i>ε</i> is typically of the order of 2.2<span style="margin:0 .15em 0 .25em">×</span>10<sup>−16</sup>.
+<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup> A formula for <i>h</i> that balances the rounding error against the secant error for optimum accuracy is<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle h=2{\sqrt {\varepsilon \left|{\frac {f(x)}{f''(x)}}\right|}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>h</mi>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mi>&#x03B5;<!-- ε --></mi>
+            <mrow>
+              <mo>|</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac>
+                  <mrow>
+                    <mi>f</mi>
+                    <mo stretchy="false">(</mo>
+                    <mi>x</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mrow>
+                    <msup>
+                      <mi>f</mi>
+                      <mo>&#x2033;</mo>
+                    </msup>
+                    <mo stretchy="false">(</mo>
+                    <mi>x</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </mfrac>
+              </mrow>
+              <mo>|</mo>
+            </mrow>
+          </msqrt>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle h=2{\sqrt {\varepsilon \left|{\frac {f(x)}{f''(x)}}\right|}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/44642736f6dcab854f147c97cad4622c6ddb0c47" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:17.121ex; height:7.509ex;" alt="{\displaystyle h=2{\sqrt {\varepsilon \left|{\frac {f(x)}{f&#039;&#039;(x)}}\right|}}}"/></span></dd></dl>
+<p>(though not when <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f''(x)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2033;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f''(x)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c2edaff1f47ff907dc216455e4720de2afb1b162" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.858ex; height:3.009ex;" alt="f&#039;&#039;(x)=0"/></span>), and to employ it will require knowledge of the function.
+</p><p>This epsilon is for double-precision (64-bit) variables: such calculations in single precision are rarely useful. The resulting value is unlikely to be a "round" number in binary, so it is important to realise that although <i>x</i> is a <a href="/wiki/Floating_point#Representable_numbers,_conversion_and_rounding" class="mw-redirect" title="Floating point">machine-representable</a> number, <i>x</i> + <i>h</i> almost certainly will not be. This means that <i>x</i> + <i>h</i> will be changed (by rounding or truncation) to a nearby machine-representable number, with the consequence that (<i>x</i>&#160;+&#160;<i>h</i>)&#160;−&#160;<i>x</i> will <i>not</i> equal <i>h</i>; the two function evaluations will not be exactly <i>h</i> apart. In this regard, since most decimal fractions are recurring sequences in binary (just as 1/3 is in decimal) a seemingly round step such as <i>h</i>&#160;= 0.1 will not be a round number in binary; it is 0.000110011001100...<sub>2</sub> A possible approach is as follows:
+</p>
+<pre> h&#160;:= sqrt(eps) * x;
+ xph&#160;:= x + h;
+ dx&#160;:= xph - x;
+ slope&#160;:= (F(xph) - F(x)) / dx;
+</pre>
+<p>However, with computers, <a href="/wiki/Compiler_optimization" class="mw-redirect" title="Compiler optimization">compiler optimization</a> facilities may fail to attend to the details of actual computer arithmetic and instead apply the axioms of mathematics to deduce that <i>dx</i> and <i>h</i> are the same. With <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> and similar languages, a directive that <i>xph</i> is a <a href="/wiki/Volatile_variable" class="mw-redirect" title="Volatile variable">volatile variable</a> will prevent this.
+</p>
+<h3><span class="mw-headline" id="Higher-order_methods">Higher-order methods</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Numerical_differentiation&amp;action=edit&amp;section=3" title="Edit section: Higher-order methods">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Further information: <a href="/wiki/Finite_difference_coefficient" title="Finite difference coefficient">Finite difference coefficient</a></div>
+<p>Higher-order methods for approximating the derivative, as well as methods for higher derivatives, exist.
+</p><p>Given below is the five-point method for the first derivative (<a href="/wiki/Five-point_stencil" title="Five-point stencil">five-point stencil</a> in one dimension):<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f'(x)={\frac {-f(x+2h)+8f(x+h)-8f(x-h)+f(x-2h)}{12h}}+{\frac {h^{4}}{30}}f^{(5)}(c),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>+</mo>
+              <mn>2</mn>
+              <mi>h</mi>
+              <mo stretchy="false">)</mo>
+              <mo>+</mo>
+              <mn>8</mn>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>+</mo>
+              <mi>h</mi>
+              <mo stretchy="false">)</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>8</mn>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>h</mi>
+              <mo stretchy="false">)</mo>
+              <mo>+</mo>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>2</mn>
+              <mi>h</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mn>12</mn>
+              <mi>h</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>h</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>4</mn>
+              </mrow>
+            </msup>
+            <mn>30</mn>
+          </mfrac>
+        </mrow>
+        <msup>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mn>5</mn>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f'(x)={\frac {-f(x+2h)+8f(x+h)-8f(x-h)+f(x-2h)}{12h}}+{\frac {h^{4}}{30}}f^{(5)}(c),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1ca8191df1498e48cafebacb747598bee7433441" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:71.633ex; height:5.843ex;" alt="{\displaystyle f&#039;(x)={\frac {-f(x+2h)+8f(x+h)-8f(x-h)+f(x-2h)}{12h}}+{\frac {h^{4}}{30}}f^{(5)}(c),}"/></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle c\in [x-2h,x+2h]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>c</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mo stretchy="false">[</mo>
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>2</mn>
+        <mi>h</mi>
+        <mo>,</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mn>2</mn>
+        <mi>h</mi>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c\in [x-2h,x+2h]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/666c60123c8e7ff40bbb58e46c1af3c5fbb5e688" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.518ex; height:2.843ex;" alt="{\displaystyle c\in [x-2h,x+2h]}"/></span>.
+</p><p>For other stencil configurations and derivative orders, the <a rel="nofollow" class="external text" href="http://web.media.mit.edu/~crtaylor/calculator.html">Finite Difference Coefficients Calculator</a> is a tool that can be used to generate derivative approximation methods for any stencil with any derivative order (provided a solution exists).
+</p>
+<h3><span class="mw-headline" id="Higher_derivatives">Higher derivatives</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Numerical_differentiation&amp;action=edit&amp;section=4" title="Edit section: Higher derivatives">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Using Newton's difference quotient,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f'(x)=\lim _{h\to 0}{\frac {f(x+h)-f(x)}{h}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>h</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mn>0</mn>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>+</mo>
+              <mi>h</mi>
+              <mo stretchy="false">)</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mi>h</mi>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f'(x)=\lim _{h\to 0}{\frac {f(x+h)-f(x)}{h}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/365388f33bd9aece1a578a9a1fb3021d1eddc7e4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:28.733ex; height:5.843ex;" alt="{\displaystyle f&#039;(x)=\lim _{h\to 0}{\frac {f(x+h)-f(x)}{h}}}"/></span></dd></dl>
+<p>the following can be shown<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup> (for <i>n&gt;0</i>):
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f^{(n)}(x)=\lim _{h\to 0}{\frac {1}{h^{n}}}\sum _{k=0}^{n}(-1)^{k+n}{\binom {n}{k}}f(x+kh).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>h</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mn>0</mn>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msup>
+              <mi>h</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <mo stretchy="false">(</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mrow class="MJX-TeXAtom-OPEN">
+              <mo maxsize="2.047em" minsize="2.047em">(</mo>
+            </mrow>
+            <mfrac linethickness="0">
+              <mi>n</mi>
+              <mi>k</mi>
+            </mfrac>
+            <mrow class="MJX-TeXAtom-CLOSE">
+              <mo maxsize="2.047em" minsize="2.047em">)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>k</mi>
+        <mi>h</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f^{(n)}(x)=\lim _{h\to 0}{\frac {1}{h^{n}}}\sum _{k=0}^{n}(-1)^{k+n}{\binom {n}{k}}f(x+kh).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d3eaca68b11f6b3c33841b6f28059f5828f8ae58" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:44.395ex; height:7.009ex;" alt="{\displaystyle f^{(n)}(x)=\lim _{h\to 0}{\frac {1}{h^{n}}}\sum _{k=0}^{n}(-1)^{k+n}{\binom {n}{k}}f(x+kh).}"/></span></dd></dl>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Practical_Implementation">Practical Implementation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Numerical_differentiation&amp;action=edit&amp;section=5" title="Edit section: Practical Implementation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A fast open source Python implementation of numerical derivatives using finite differences is the <a rel="nofollow" class="external text" href="https://github.com/maroba/findiff">findiff</a> project. It features calculation of any derivative and any accuracy order in an arbitrary number of dimensions.
+</p>
+<h2><span class="mw-headline" id="Differential_quadrature">Differential quadrature</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Numerical_differentiation&amp;action=edit&amp;section=6" title="Edit section: Differential quadrature">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="/w/index.php?title=Differential_quadrature&amp;action=edit&amp;redlink=1" class="new" title="Differential quadrature (page does not exist)">Differential quadrature</a> is the approximation of derivatives by using weighted sums of function values.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup><sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup> The name is in analogy with <i>quadrature</i>, meaning <a href="/wiki/Numerical_integration" title="Numerical integration">numerical integration</a>, where weighted sums are used in methods such as <a href="/wiki/Simpson%27s_method" class="mw-redirect" title="Simpson&#39;s method">Simpson's method</a> or the <a href="/wiki/Trapezoidal_rule" title="Trapezoidal rule">Trapezoidal rule</a>. There are various methods for determining the weight coefficients. Differential quadrature is used to solve <a href="/wiki/Partial_differential_equations" class="mw-redirect" title="Partial differential equations">partial differential equations</a>.
+</p>
+<h2><span class="mw-headline" id="Complex-variable_methods">Complex-variable methods</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Numerical_differentiation&amp;action=edit&amp;section=7" title="Edit section: Complex-variable methods">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The classical finite-difference approximations for numerical differentiation are ill-conditioned. However, if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"/></span> is a <a href="/wiki/Holomorphic_function" title="Holomorphic function">holomorphic function</a>, real-valued on the real line, which can be evaluated at points in the complex plane near <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="x"/></span>, then there are <a href="/wiki/Numerical_stability" title="Numerical stability">stable</a> methods. For example,<sup id="cite_ref-SquireTrapp1_5-1" class="reference"><a href="#cite_note-SquireTrapp1-5">&#91;5&#93;</a></sup> the first derivative can be calculated by the complex-step derivative formula:<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f'(x)\approx \Im (f(x+ih))/h.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2248;<!-- ≈ --></mo>
+        <mi mathvariant="normal">&#x2111;<!-- ℑ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>i</mi>
+        <mi>h</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>h</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f'(x)\approx \Im (f(x+ih))/h.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d54d5a5102ea50d899da6681a07f1b4e58933a17" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:23.887ex; height:3.009ex;" alt="{\displaystyle f&#039;(x)\approx \Im (f(x+ih))/h.}"/></span></dd></dl>
+<p>The above formula is only valid for calculating a first-order derivative. A generalization of the above for calculating derivatives of any order employ <a href="/wiki/Multicomplex_numbers" class="mw-redirect" title="Multicomplex numbers">multicomplex numbers</a>, resulting in multicomplex derivatives.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup>
+</p><p>In general, derivatives of any order can be calculated using <a href="/wiki/Cauchy%27s_integral_formula" title="Cauchy&#39;s integral formula">Cauchy's integral formula</a>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f^{(n)}(a)={\frac {n!}{2\pi i}}\oint _{\gamma }{\frac {f(z)}{(z-a)^{n+1}}}\,\mathrm {d} z,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>n</mi>
+              <mo>!</mo>
+            </mrow>
+            <mrow>
+              <mn>2</mn>
+              <mi>&#x03C0;<!-- π --></mi>
+              <mi>i</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+            <mrow class="MJX-TeXAtom-VCENTER">
+              <mstyle mathsize="2.07em">
+                <mtext>&#x222E;<!-- ∮ --></mtext>
+                <mspace width="thinmathspace" />
+              </mstyle>
+            </mrow>
+            <mspace width="thinmathspace" />
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B3;<!-- γ --></mi>
+          </mrow>
+        </msub>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>z</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>z</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>a</mi>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>z</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f^{(n)}(a)={\frac {n!}{2\pi i}}\oint _{\gamma }{\frac {f(z)}{(z-a)^{n+1}}}\,\mathrm {d} z,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bf1609d3019d7cf273dab749342a9308f7dc80e7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.838ex; width:34.235ex; height:6.676ex;" alt="{\displaystyle f^{(n)}(a)={\frac {n!}{2\pi i}}\oint _{\gamma }{\frac {f(z)}{(z-a)^{n+1}}}\,\mathrm {d} z,}"/></span></dd></dl>
+<p>where the integration is done <a href="/wiki/Numerical_integration" title="Numerical integration">numerically</a>.
+</p><p>Using complex variables for numerical differentiation was started by Lyness and Moler in 1967.<sup id="cite_ref-LynessMoler1_14-0" class="reference"><a href="#cite_note-LynessMoler1-14">&#91;14&#93;</a></sup> A method based on numerical inversion of a complex <a href="/wiki/Laplace_transform" title="Laplace transform">Laplace transform</a> was developed by Abate and Dubner.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">&#91;15&#93;</a></sup> An algorithm that can be used without requiring knowledge about the method or the character of the function was developed by Fornberg.<sup id="cite_ref-Fornberg1_4-1" class="reference"><a href="#cite_note-Fornberg1-4">&#91;4&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Numerical_differentiation&amp;action=edit&amp;section=8" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Automatic_differentiation" title="Automatic differentiation">Automatic differentiation</a></li>
+<li><a href="/wiki/Finite_difference" title="Finite difference">Finite difference</a></li>
+<li><a href="/wiki/Five-point_stencil" title="Five-point stencil">Five-point stencil</a></li>
+<li><a href="/wiki/Numerical_integration" title="Numerical integration">Numerical integration</a></li>
+<li><a href="/wiki/Numerical_ordinary_differential_equations" class="mw-redirect" title="Numerical ordinary differential equations">Numerical ordinary differential equations</a></li>
+<li><a href="/wiki/Numerical_smoothing_and_differentiation" class="mw-redirect" title="Numerical smoothing and differentiation">Numerical smoothing and differentiation</a></li>
+<li><a href="/wiki/List_of_numerical_analysis_software" class="mw-redirect" title="List of numerical analysis software">List of numerical analysis software</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Numerical_differentiation&amp;action=edit&amp;section=9" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">Richard L. Burden, J. Douglas Faires (2000), <i>Numerical Analysis</i>, (7th Ed),  Brooks/Cole. <style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-534-38216-9" title="Special:BookSources/0-534-38216-9">0-534-38216-9</a>.</span>
+</li>
+<li id="cite_note-Merseth2003-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-Merseth2003_2-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Katherine Klippert Merseth (2003). <i>Windows on Teaching Math: Cases of Middle and Secondary Classrooms</i>. Teachers College Press. p.&#160;34. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-8077-4279-2" title="Special:BookSources/978-0-8077-4279-2"><bdi>978-0-8077-4279-2</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Windows+on+Teaching+Math%3A+Cases+of+Middle+and+Secondary+Classrooms&amp;rft.pages=34&amp;rft.pub=Teachers+College+Press&amp;rft.date=2003&amp;rft.isbn=978-0-8077-4279-2&amp;rft.au=Katherine+Klippert+Merseth&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumerical+differentiation" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-RubySellers2014-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-RubySellers2014_3-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Tamara Lefcourt Ruby; James Sellers; Lisa Korf; Jeremy Van Horn; Mike Munn (2014). <i>Kaplan AP Calculus AB &amp; BC 2015</i>. Kaplan Publishing. p.&#160;299. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-61865-686-5" title="Special:BookSources/978-1-61865-686-5"><bdi>978-1-61865-686-5</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Kaplan+AP+Calculus+AB+%26+BC+2015&amp;rft.pages=299&amp;rft.pub=Kaplan+Publishing&amp;rft.date=2014&amp;rft.isbn=978-1-61865-686-5&amp;rft.au=Tamara+Lefcourt+Ruby&amp;rft.au=James+Sellers&amp;rft.au=Lisa+Korf&amp;rft.au=Jeremy+Van+Horn&amp;rft.au=Mike+Munn&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumerical+differentiation" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Fornberg1-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-Fornberg1_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Fornberg1_4-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Numerical Differentiation of Analytic Functions, B Fornberg – ACM Transactions on Mathematical Software (TOMS), 1981.</span>
+</li>
+<li id="cite_note-SquireTrapp1-5"><span class="mw-cite-backlink">^ <a href="#cite_ref-SquireTrapp1_5-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-SquireTrapp1_5-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Using Complex Variables to Estimate Derivatives of Real Functions, W. Squire, G. Trapp – SIAM REVIEW, 1998.</span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text">Following <i><a href="/wiki/Numerical_Recipes" title="Numerical Recipes">Numerical Recipes</a> in C</i>, <a rel="nofollow" class="external text" href="http://www.nrbook.com/a/bookcpdf/c5-7.pdf">Chapter 5.7</a>.</span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.uio.no/studier/emner/matnat/math/MAT-INF1100/h10/kompendiet/kap11.pdf">p. 263</a>.</span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text">Abramowitz &amp; Stegun, Table 25.2.</span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation book">Shilov, George. <i>Elementary Real and Complex Analysis</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Elementary+Real+and+Complex+Analysis&amp;rft.aulast=Shilov&amp;rft.aufirst=George&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumerical+differentiation" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text">Differential Quadrature and Its Application in Engineering: Engineering Applications, Chang Shu, Springer, 2000, <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-85233-209-9" title="Special:BookSources/978-1-85233-209-9">978-1-85233-209-9</a>.</span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text">Advanced Differential Quadrature Methods, Yingyan Zhang, CRC Press, 2009, <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-4200-8248-7" title="Special:BookSources/978-1-4200-8248-7">978-1-4200-8248-7</a>.</span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation journal">Martins, J.&#160;R.&#160;R.&#160;A.; Sturdza, P.; Alonso, J.&#160;J. (2003). "The Complex-Step Derivative Approximation". <i>ACM Transactions on Mathematical Software</i>. <b>29</b> (3): 245–262. <a href="/wiki/CiteSeerX" title="CiteSeerX">CiteSeerX</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.141.8002">10.1.1.141.8002</a></span>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1145%2F838250.838251">10.1145/838250.838251</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=ACM+Transactions+on+Mathematical+Software&amp;rft.atitle=The+Complex-Step+Derivative+Approximation&amp;rft.volume=29&amp;rft.issue=3&amp;rft.pages=245-262&amp;rft.date=2003&amp;rft_id=%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.141.8002&amp;rft_id=info%3Adoi%2F10.1145%2F838250.838251&amp;rft.aulast=Martins&amp;rft.aufirst=J.%C2%A0R.%C2%A0R.%C2%A0A.&amp;rft.au=Sturdza%2C+P.&amp;rft.au=Alonso%2C+J.%C2%A0J.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumerical+differentiation" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://russell.ae.utexas.edu/FinalPublications/ConferencePapers/2010Feb_SanDiego_AAS-10-218_mulicomplex.pdf">http://russell.ae.utexas.edu/FinalPublications/ConferencePapers/2010Feb_SanDiego_AAS-10-218_mulicomplex.pdf</a></span>
+</li>
+<li id="cite_note-LynessMoler1-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-LynessMoler1_14-0">^</a></b></span> <span class="reference-text"><cite class="citation journal">Lyness, J. N.; Moler, C. B. (1967). "Numerical differentiation of analytic functions". <i>SIAM J. Numer. Anal</i>. <b>4</b>: 202–210. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1137%2F0704019">10.1137/0704019</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=SIAM+J.+Numer.+Anal.&amp;rft.atitle=Numerical+differentiation+of+analytic+functions&amp;rft.volume=4&amp;rft.pages=202-210&amp;rft.date=1967&amp;rft_id=info%3Adoi%2F10.1137%2F0704019&amp;rft.aulast=Lyness&amp;rft.aufirst=J.+N.&amp;rft.au=Moler%2C+C.+B.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumerical+differentiation" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><cite class="citation journal">Abate, J; Dubner, H (March 1968). "A New Method for Generating Power Series Expansions of Functions". <i>SIAM J. Numer. Anal</i>. <b>5</b> (1): 102–112. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1137%2F0705008">10.1137/0705008</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=SIAM+J.+Numer.+Anal.&amp;rft.atitle=A+New+Method+for+Generating+Power+Series+Expansions+of+Functions&amp;rft.volume=5&amp;rft.issue=1&amp;rft.pages=102-112&amp;rft.date=1968-03&amp;rft_id=info%3Adoi%2F10.1137%2F0705008&amp;rft.aulast=Abate&amp;rft.aufirst=J&amp;rft.au=Dubner%2C+H&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANumerical+differentiation" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Numerical_differentiation&amp;action=edit&amp;section=10" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="background-color:#f9f9f9;border:1px solid #aaa;color:#000">
+<tbody><tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" decoding="async" width="40" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></td>
+<td class="mbox-text plainlist">Wikibooks has a book on the topic of: <i><b><a href="https://en.wikibooks.org/wiki/Numerical_Methods" class="extiw" title="wikibooks:Numerical Methods">Numerical Methods</a></b></i></td></tr>
+</tbody></table>
+<ul><li><a rel="nofollow" class="external free" href="http://mathworld.wolfram.com/NumericalDifferentiation.html">http://mathworld.wolfram.com/NumericalDifferentiation.html</a></li>
+<li><a rel="nofollow" class="external text" href="http://numericalmethods.eng.usf.edu/topics/continuous_02dif.html">Numerical Differentiation Resources: Textbook notes, PPT, Worksheets, Audiovisual YouTube Lectures</a> at <a rel="nofollow" class="external text" href="http://numericalmethods.eng.usf.edu/">Numerical Methods for STEM Undergraduate</a></li>
+<li><a rel="nofollow" class="external free" href="ftp://math.nist.gov/pub/repository/diff/src/DIFF">ftp://math.nist.gov/pub/repository/diff/src/DIFF</a> Fortran code for the numerical differentiation of a function using Neville's process to extrapolate from a sequence of simple polynomial approximations.</li>
+<li><a rel="nofollow" class="external text" href="http://www.nag.co.uk/numeric/fl/nagdoc_fl24/html/D04/d04conts.html">NAG Library numerical differentiation routines</a></li>
+<li><a rel="nofollow" class="external free" href="http://graphulator.com">http://graphulator.com</a> <a rel="nofollow" class="external text" href="http://graphulator.com">Online numerical graphing calculator with calculus function.</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.boost.org/doc/libs/release/libs/math/doc/html/math_toolkit/diff.html">Boost. Math numerical differentiation, including finite differencing and the complex step derivative</a></li>
+<li><a rel="nofollow" class="external text" href="https://blogs.mathworks.com/cleve/2013/10/14/complex-step-differentiation/">Complex Step Differentiation</a></li>
+<li><a rel="nofollow" class="external text" href="https://sinews.siam.org/Details-Page/differentiation-without-a-difference">Differentiation With(out) a Difference</a> by <a href="/wiki/Nicholas_Higham" title="Nicholas Higham">Nicholas Higham</a>, <a href="/wiki/SIAM" class="mw-redirect" title="SIAM">SIAM</a> News.</li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1319
+Cached time: 20190715011246
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision]
+CPU time usage: 0.304 seconds
+Real time usage: 0.442 seconds
+Preprocessor visited node count: 1314/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 15266/2097152 bytes
+Template argument size: 1736/2097152 bytes
+Highest expansion depth: 15/40
+Expensive parser function count: 2/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 28261/5000000 bytes
+Number of Wikibase entities loaded: 2/400
+Lua time usage: 0.102/10.000 seconds
+Lua memory usage: 3.02 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  320.518      1 -total
+ 79.11%  253.551      1 Template:Reflist
+ 30.99%   99.315      3 Template:Isbn
+ 24.19%   77.533      3 Template:Cite_journal
+ 18.91%   60.594      3 Template:Catalog_lookup_link
+ 17.02%   54.542      3 Template:Cite_book
+  9.26%   29.665      1 Template:Further
+  5.75%   18.436      1 Template:Wikibooks
+  4.75%   15.238      1 Template:Sister_project
+  4.47%   14.320      3 Template:Error-small
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1254566-0!canonical!math=5 and timestamp 20190715011246 and revision id 901876290
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Numerical_differentiation&amp;oldid=901876290">https://en.wikipedia.org/w/index.php?title=Numerical_differentiation&amp;oldid=901876290</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Numerical_analysis" title="Category:Numerical analysis">Numerical analysis</a></li><li><a href="/wiki/Category:Differential_calculus" title="Category:Differential calculus">Differential calculus</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Numerical+differentiation" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Numerical+differentiation" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Numerical_differentiation" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Numerical_differentiation" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Numerical_differentiation">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Numerical_differentiation&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Numerical_differentiation&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Numerical_differentiation" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Numerical_differentiation" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Numerical_differentiation&amp;oldid=901876290" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Numerical_differentiation&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1683292" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Numerical_differentiation&amp;id=901876290" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Numerical+differentiation">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Numerical+differentiation&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Numerical_differentiation&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%AA%D9%81%D8%A7%D8%B6%D9%84_%D8%B9%D8%AF%D8%AF%D9%8A" title="تفاضل عددي – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Derivaci%C3%B3_num%C3%A8rica" title="Derivació numèrica – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Numerick%C3%A1_derivace" title="Numerická derivace – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Numerische_Differentiation" title="Numerische Differentiation – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Derivaci%C3%B3n_num%C3%A9rica" title="Derivación numérica – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Diferencia%C3%A7%C3%A3o_num%C3%A9rica" title="Diferenciação numérica – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5_%D0%B4%D0%B8%D1%84%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" title="Численное дифференцирование – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Say%C4%B1sal_t%C3%BCrev" title="Sayısal türev – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%B5%D0%BB%D1%8C%D0%BD%D0%B5_%D0%B4%D0%B8%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D1%96%D1%8E%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F" title="Чисельне диференціювання – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E6%95%B8%E5%80%BC%E5%BE%AE%E5%88%86" title="數值微分 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1683292#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 14 June 2019, at 21:53<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Numerical_differentiation&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.304","walltime":"0.442","ppvisitednodes":{"value":1314,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":15266,"limit":2097152},"templateargumentsize":{"value":1736,"limit":2097152},"expansiondepth":{"value":15,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":28261,"limit":5000000},"entityaccesscount":{"value":2,"limit":400},"timingprofile":["100.00%  320.518      1 -total"," 79.11%  253.551      1 Template:Reflist"," 30.99%   99.315      3 Template:Isbn"," 24.19%   77.533      3 Template:Cite_journal"," 18.91%   60.594      3 Template:Catalog_lookup_link"," 17.02%   54.542      3 Template:Cite_book","  9.26%   29.665      1 Template:Further","  5.75%   18.436      1 Template:Wikibooks","  4.75%   15.238      1 Template:Sister_project","  4.47%   14.320      3 Template:Error-small"]},"scribunto":{"limitreport-timeusage":{"value":"0.102","limit":"10.000"},"limitreport-memusage":{"value":3170254,"limit":52428800}},"cachereport":{"origin":"mw1319","timestamp":"20190715011246","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Numerical differentiation","url":"https:\/\/en.wikipedia.org\/wiki\/Numerical_differentiation","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1683292","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1683292","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-12-08T02:02:46Z","dateModified":"2019-06-14T21:53:51Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/1\/18\/Derivative.svg"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":125,"wgHostname":"mw1240"});});</script>
+</body>
+</html>

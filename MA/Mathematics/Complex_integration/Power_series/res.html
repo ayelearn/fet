@@ -1,0 +1,3367 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Power series - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Power_series","wgTitle":"Power series","wgCurRevisionId":906973309,"wgRevisionId":906973309,"wgArticleId":59958,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Real analysis","Complex analysis","Multivariable calculus","Mathematical series"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Power_series","wgRelevantArticleId":
+59958,"wgRequestId":"XUoz6wpAADoAAJ7g-G0AAABH","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q206925","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready",
+"user":"ready","user.options":"ready","user.tokens":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["ext.math.scripts","ext.cite.ux-enhancements","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader",
+"ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Power_series"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Power_series&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Power_series&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Power_series"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Power_series rootpage-Power_series skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Power series</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>In <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>, a <b>power series</b> (in one variable) is an <a href="/wiki/Infinite_series" class="mw-redirect" title="Infinite series">infinite series</a> of the form
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum _{n=0}^{\infty }a_{n}\left(x-c\right)^{n}=a_{0}+a_{1}(x-c)^{1}+a_{2}(x-c)^{2}+\cdots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mi>x</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>c</mi>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>c</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>c</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mo>&#x22EF;<!-- ⋯ --></mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{n=0}^{\infty }a_{n}\left(x-c\right)^{n}=a_{0}+a_{1}(x-c)^{1}+a_{2}(x-c)^{2}+\cdots }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4e5fb2e6307992df18a8caf6cd141fbcb0f82a1c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:51.671ex; height:6.843ex;" alt="{\displaystyle \sum _{n=0}^{\infty }a_{n}\left(x-c\right)^{n}=a_{0}+a_{1}(x-c)^{1}+a_{2}(x-c)^{2}+\cdots }"/></span></dd></dl>
+<p>where <i>a<sub>n</sub></i> represents the coefficient of the <i>n</i>th term and <i>c</i> is a constant. <i>a<sub>n</sub></i> is independent of x and may be expressed as a function of n (e.g., <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a_{n}=1/n!}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mo>!</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{n}=1/n!}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8ba2eb8c6e0cf56976076fa8d8396975a62ed48a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.913ex; height:2.843ex;" alt="{\displaystyle a_{n}=1/n!}"/></span>). Power series are useful in analysis since they arise as <a href="/wiki/Taylor_series" title="Taylor series">Taylor series</a> of infinitely differentiable <a href="/wiki/Function_(mathematics)" title="Function (mathematics)">functions</a>. In fact, <a href="/wiki/Borel%27s_lemma" title="Borel&#39;s lemma">Borel's theorem</a> implies that every power series is the Taylor series of some smooth function.
+</p><p>In many situations <i>c</i> (the <i>center</i> of the series) is equal to zero, for instance when considering a <a href="/wiki/Maclaurin_series" class="mw-redirect" title="Maclaurin series">Maclaurin series</a>.  In such cases, the power series takes the simpler form
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum _{n=0}^{\infty }a_{n}x^{n}=a_{0}+a_{1}x+a_{2}x^{2}+\cdots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mi>x</mi>
+        <mo>+</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mo>&#x22EF;<!-- ⋯ --></mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{n=0}^{\infty }a_{n}x^{n}=a_{0}+a_{1}x+a_{2}x^{2}+\cdots }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7cc6070fbb8e2f52483e0a6f111d56217ae7eaac" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:33.647ex; height:6.843ex;" alt="{\displaystyle \sum _{n=0}^{\infty }a_{n}x^{n}=a_{0}+a_{1}x+a_{2}x^{2}+\cdots }"/></span></dd></dl>
+<p>These power series arise primarily in <a href="/wiki/Mathematical_analysis" title="Mathematical analysis">analysis</a>, but also occur in <a href="/wiki/Combinatorics" title="Combinatorics">combinatorics</a> as <a href="/wiki/Generating_function" title="Generating function">generating functions</a> (a kind of <a href="/wiki/Formal_power_series" title="Formal power series">formal power series</a>) and in electrical engineering (under the name of the <a href="/wiki/Z-transform" title="Z-transform">Z-transform</a>). The familiar <a href="/wiki/Decimal_representation" title="Decimal representation">decimal notation</a> for <a href="/wiki/Real_number" title="Real number">real numbers</a> can also be viewed as an example of a power series, with integer coefficients, but with the argument <i>x</i> fixed at &#x200b;<span class="frac nowrap"><sup>1</sup>&#8260;<sub>10</sub></span>. In <a href="/wiki/Number_theory" title="Number theory">number theory</a>, the concept of <a href="/wiki/P-adic_number" title="P-adic number">p-adic numbers</a> is also closely related to that of a power series.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Examples"><span class="tocnumber">1</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#On_the_set_of_exponents"><span class="tocnumber">1.1</span> <span class="toctext">On the set of exponents</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Radius_of_convergence"><span class="tocnumber">2</span> <span class="toctext">Radius of convergence</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Operations_on_power_series"><span class="tocnumber">3</span> <span class="toctext">Operations on power series</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Addition_and_subtraction"><span class="tocnumber">3.1</span> <span class="toctext">Addition and subtraction</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Multiplication_and_division"><span class="tocnumber">3.2</span> <span class="toctext">Multiplication and division</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Differentiation_and_integration"><span class="tocnumber">3.3</span> <span class="toctext">Differentiation and integration</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Analytic_functions"><span class="tocnumber">4</span> <span class="toctext">Analytic functions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Behavior_near_the_boundary"><span class="tocnumber">4.1</span> <span class="toctext">Behavior near the boundary</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Formal_power_series"><span class="tocnumber">5</span> <span class="toctext">Formal power series</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Power_series_in_several_variables"><span class="tocnumber">6</span> <span class="toctext">Power series in several variables</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Order_of_a_power_series"><span class="tocnumber">7</span> <span class="toctext">Order of a power series</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Notes"><span class="tocnumber">9</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#References"><span class="tocnumber">10</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#External_links"><span class="tocnumber">11</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Power_series&amp;action=edit&amp;section=1" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:Exp_series.gif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/Exp_series.gif/220px-Exp_series.gif" decoding="async" width="220" height="295" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/6/62/Exp_series.gif 1.5x" data-file-width="292" data-file-height="392" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Exp_series.gif" class="internal" title="Enlarge"></a></div>The <a href="/wiki/Exponential_function" title="Exponential function">exponential function</a> (in blue), and the sum of the first <i>n</i> + 1 terms of its <a href="/wiki/Maclaurin_series" class="mw-redirect" title="Maclaurin series">Maclaurin power series</a> (in red).</div></div></div>
+<p>Any <a href="/wiki/Polynomial" title="Polynomial">polynomial</a> can be easily expressed as a power series around any center <i>c</i>, although all but finitely many the coefficients will be zero since a power series has infinitely many terms by definition.  For instance, the polynomial <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle f(x)=x^{2}+2x+3}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>2</mn>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mn>3</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle f(x)=x^{2}+2x+3}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2ab8a2bbb9db938f33834bf17ba545fb94a6febf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.235ex; height:3.009ex;" alt="{\textstyle f(x)=x^{2}+2x+3}"/></span> can be written as a power series around the center <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle c=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mi>c</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle c=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6506ce5736f03ea4474f04212a131194a523d36f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.268ex; height:2.176ex;" alt="{\textstyle c=0}"/></span> as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x)=3+2x+1x^{2}+0x^{3}+0x^{4}+\cdots \,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>3</mn>
+        <mo>+</mo>
+        <mn>2</mn>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>0</mn>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>0</mn>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mo>&#x22EF;<!-- ⋯ --></mo>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)=3+2x+1x^{2}+0x^{3}+0x^{4}+\cdots \,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/23f2bee2ff97299a867f03c38fa8c8e2256b9529" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:39.122ex; height:3.176ex;" alt="f(x) = 3 + 2 x + 1 x^2 + 0 x^3 + 0 x^4 + \cdots \,"/></span></dd></dl>
+<p>or around the center <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle c=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mi>c</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle c=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/625c1729482bc8efaf557e6023fdb95fc6fcc489" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.268ex; height:2.176ex;" alt="{\textstyle c=1}"/></span> as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x)=6+4(x-1)+1(x-1)^{2}+0(x-1)^{3}+0(x-1)^{4}+\cdots \,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>6</mn>
+        <mo>+</mo>
+        <mn>4</mn>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>0</mn>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>0</mn>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mo>&#x22EF;<!-- ⋯ --></mo>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)=6+4(x-1)+1(x-1)^{2}+0(x-1)^{3}+0(x-1)^{4}+\cdots \,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2987581ccdcb37a5f9134f463f068066e58b5d5d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:62.371ex; height:3.176ex;" alt="{\displaystyle f(x)=6+4(x-1)+1(x-1)^{2}+0(x-1)^{3}+0(x-1)^{4}+\cdots \,}"/></span></dd></dl>
+<p>or indeed around any other center <i>c</i>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>  One can view power series as being like "polynomials of infinite degree," although power series are not polynomials.
+</p><p>The <a href="/wiki/Geometric_series" title="Geometric series">geometric series</a> formula
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {1}{1-x}}=\sum _{n=0}^{\infty }x^{n}=1+x+x^{2}+x^{3}+\cdots ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mn>1</mn>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>x</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mo>&#x22EF;<!-- ⋯ --></mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{1-x}}=\sum _{n=0}^{\infty }x^{n}=1+x+x^{2}+x^{3}+\cdots ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8269f51f1ff57b747d0ed49c869cc2005910e75c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:41.035ex; height:6.843ex;" alt="{\displaystyle {\frac {1}{1-x}}=\sum _{n=0}^{\infty }x^{n}=1+x+x^{2}+x^{3}+\cdots ,}"/></span></dd></dl>
+<p>which is valid for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle |x|&lt;1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>x</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&lt;</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle |x|&lt;1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/97eb5e05b697b35a18f9198ad9ea43e064190b48" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.884ex; height:2.843ex;" alt="{\textstyle |x|&lt;1}"/></span>, is one of the most important examples of a power series, as are the exponential function formula
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle e^{x}=\sum _{n=0}^{\infty }{\frac {x^{n}}{n!}}=1+x+{\frac {x^{2}}{2!}}+{\frac {x^{3}}{3!}}+\cdots ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>x</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msup>
+            <mrow>
+              <mi>n</mi>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>x</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+            <mrow>
+              <mn>2</mn>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>x</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>3</mn>
+              </mrow>
+            </msup>
+            <mrow>
+              <mn>3</mn>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mo>&#x22EF;<!-- ⋯ --></mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle e^{x}=\sum _{n=0}^{\infty }{\frac {x^{n}}{n!}}=1+x+{\frac {x^{2}}{2!}}+{\frac {x^{3}}{3!}}+\cdots ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ed65a70c3c13bbc41efbe50fe0ad9e69c69ddc1a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:39.63ex; height:6.843ex;" alt="{\displaystyle e^{x}=\sum _{n=0}^{\infty }{\frac {x^{n}}{n!}}=1+x+{\frac {x^{2}}{2!}}+{\frac {x^{3}}{3!}}+\cdots ,}"/></span></dd></dl>
+<p>and the sine formula
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sin(x)=\sum _{n=0}^{\infty }{\frac {(-1)^{n}x^{2n+1}}{(2n+1)!}}=x-{\frac {x^{3}}{3!}}+{\frac {x^{5}}{5!}}-{\frac {x^{7}}{7!}}+\cdots ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>sin</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>1</mn>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msup>
+              <msup>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                  <mi>n</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msup>
+            </mrow>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mn>2</mn>
+              <mi>n</mi>
+              <mo>+</mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>x</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>3</mn>
+              </mrow>
+            </msup>
+            <mrow>
+              <mn>3</mn>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>x</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>5</mn>
+              </mrow>
+            </msup>
+            <mrow>
+              <mn>5</mn>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>x</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>7</mn>
+              </mrow>
+            </msup>
+            <mrow>
+              <mn>7</mn>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mo>&#x22EF;<!-- ⋯ --></mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sin(x)=\sum _{n=0}^{\infty }{\frac {(-1)^{n}x^{2n+1}}{(2n+1)!}}=x-{\frac {x^{3}}{3!}}+{\frac {x^{5}}{5!}}-{\frac {x^{7}}{7!}}+\cdots ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5ec44696a78ce7ee9452c79d4ca254164e7e21f4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:54.347ex; height:7.009ex;" alt="{\displaystyle \sin(x)=\sum _{n=0}^{\infty }{\frac {(-1)^{n}x^{2n+1}}{(2n+1)!}}=x-{\frac {x^{3}}{3!}}+{\frac {x^{5}}{5!}}-{\frac {x^{7}}{7!}}+\cdots ,}"/></span></dd></dl>
+<p>valid for all real x.
+</p><p>These power series are also examples of <a href="/wiki/Taylor_series" title="Taylor series">Taylor series</a>.
+</p>
+<h3><span class="mw-headline" id="On_the_set_of_exponents">On the set of exponents</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Power_series&amp;action=edit&amp;section=2" title="Edit section: On the set of exponents">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Negative powers are not permitted in a power series; for instance, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle 1+x^{-1}+x^{-2}+\cdots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mn>1</mn>
+        <mo>+</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mo>&#x22EF;<!-- ⋯ --></mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle 1+x^{-1}+x^{-2}+\cdots }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffff2e69ea67a177ec282d4f251dcda2c4ae6d2a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:19.732ex; height:2.676ex;" alt="{\textstyle 1+x^{-1}+x^{-2}+\cdots }"/></span> is not considered a power series (although it is a <a href="/wiki/Laurent_series" title="Laurent series">Laurent series</a>).  Similarly, fractional powers such as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle x^{\frac {1}{2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>1</mn>
+              <mn>2</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle x^{\frac {1}{2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/26e2047c66c67e10f3feffc5931b10ebd1201cb5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:3.065ex; height:3.509ex;" alt="{\textstyle x^{\frac {1}{2}}}"/></span> are not permitted (but see <a href="/wiki/Puiseux_series" title="Puiseux series">Puiseux series</a>).  The coefficients <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle a_{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle a_{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7fa2abcaf88fe4d1fbd7afaf7a7f537ee20cafae" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.448ex; height:2.009ex;" alt="{\textstyle a_{n}}"/></span> are not allowed to depend on <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d951e0f3b54b6a3d73bb9a0a005749046cbce781" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="{\textstyle x}"/></span>, thus for instance:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sin(x)x+\sin(2x)x^{2}+\sin(3x)x^{3}+\cdots \,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>sin</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>sin</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mi>sin</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mo>&#x22EF;<!-- ⋯ --></mo>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sin(x)x+\sin(2x)x^{2}+\sin(3x)x^{3}+\cdots \,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/de7e438f1b4d5ded70bc0e489163a5939810453b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:38.038ex; height:3.176ex;" alt="\sin(x) x + \sin(2x) x^2 + \sin(3x) x^3 + \cdots \,"/></span></dd></dl>
+<p>is not a power series.
+</p>
+<h2><span class="mw-headline" id="Radius_of_convergence">Radius of convergence</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Power_series&amp;action=edit&amp;section=3" title="Edit section: Radius of convergence">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A power series will converge for some values of the variable <i>x</i> and may diverge for others. All power series <i>f</i>(<i>x</i>) in powers of (<i>x</i> &#8722; <i>c</i>) will converge at <i>x</i> = <i>c</i>. (The correct value <i>f</i>(<i>c</i>) = <i>a</i><sub>0</sub> requires interpreting the expression 0<sup>0</sup> as equal to 1.) If <i>c</i> is not the only convergent point, then there is always a number <i>r</i> with 0 &lt; <i>r</i> ≤ ∞ such that the series converges whenever |<i>x</i> &#8722; <i>c</i>| &lt; <i>r</i> and diverges whenever |<i>x</i> &#8722; <i>c</i>| &gt; <i>r</i>.  The number <i>r</i> is called the <b><a href="/wiki/Radius_of_convergence" title="Radius of convergence">radius of convergence</a></b> of the power series; in general it is given as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle r=\liminf _{n\to \infty }\left|a_{n}\right|^{-{\frac {1}{n}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>r</mi>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim&#x2006;inf</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <msup>
+          <mrow>
+            <mo>|</mo>
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <mo>|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mi>n</mi>
+              </mfrac>
+            </mrow>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle r=\liminf _{n\to \infty }\left|a_{n}\right|^{-{\frac {1}{n}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c4628c7d5ce3626b80cd5b26c78079f4339a16f2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:17.692ex; height:5.009ex;" alt="{\displaystyle r=\liminf _{n\to \infty }\left|a_{n}\right|^{-{\frac {1}{n}}}}"/></span></dd></dl>
+<p>or, equivalently,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle r^{-1}=\limsup _{n\to \infty }\left|a_{n}\right|^{\frac {1}{n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>r</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim&#x2006;sup</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <msup>
+          <mrow>
+            <mo>|</mo>
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <mo>|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>1</mn>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle r^{-1}=\limsup _{n\to \infty }\left|a_{n}\right|^{\frac {1}{n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ad4a17d2e71a132bdb6657203ab6cf0181e07cf2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:19.597ex; height:5.509ex;" alt="{\displaystyle r^{-1}=\limsup _{n\to \infty }\left|a_{n}\right|^{\frac {1}{n}}}"/></span></dd></dl>
+<p>(this is the <a href="/wiki/Cauchy%E2%80%93Hadamard_theorem" title="Cauchy–Hadamard theorem">Cauchy–Hadamard theorem</a>; see <a href="/wiki/Limit_superior_and_limit_inferior" title="Limit superior and limit inferior">limit superior and limit inferior</a> for an explanation of the notation). The relation
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle r^{-1}=\lim _{n\to \infty }\left|{a_{n+1} \over a_{n}}\right|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>r</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <mrow>
+          <mo>|</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <msub>
+                <mi>a</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <msub>
+                <mi>a</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+            </mfrac>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle r^{-1}=\lim _{n\to \infty }\left|{a_{n+1} \over a_{n}}\right|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8568457570425b3e09107af3d4b0beb4c7a27791" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:17.818ex; height:5.509ex;" alt="{\displaystyle r^{-1}=\lim _{n\to \infty }\left|{a_{n+1} \over a_{n}}\right|}"/></span></dd></dl>
+<p>is also satisfied, if this limit exists.
+</p><p>The series <a href="/wiki/Absolute_convergence" title="Absolute convergence">converges absolutely</a> for |<i>x</i> − <i>c</i>| &lt; <i>r</i> and <a href="/wiki/Uniform_convergence" title="Uniform convergence">converges uniformly</a> on every <a href="/wiki/Compact_space" title="Compact space">compact</a> <a href="/wiki/Subset" title="Subset">subset</a> of {<i>x</i>&#160;: |<i>x</i> − <i>c</i>| &lt; <i>r</i>}.  That is, the series is absolutely and <a href="/wiki/Compactly_convergent" class="mw-redirect" title="Compactly convergent">compactly convergent</a> on the interior of the disc of convergence.
+</p><p>For |<i>x</i> − <i>c</i>| = <i>r</i>, we cannot make any general statement on whether the series converges or diverges. However, for the case of real variables, <a href="/wiki/Abel%27s_theorem" title="Abel&#39;s theorem">Abel's theorem</a> states that the sum of the series is continuous at <i>x</i> if the series converges at <i>x</i>. In the case of complex variables, we can only claim continuity along the line segment starting at <i>c</i> and ending at <i>x</i>.
+</p>
+<h2><span class="mw-headline" id="Operations_on_power_series">Operations on power series</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Power_series&amp;action=edit&amp;section=4" title="Edit section: Operations on power series">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Addition_and_subtraction">Addition and subtraction</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Power_series&amp;action=edit&amp;section=5" title="Edit section: Addition and subtraction">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>When two functions <i>f</i> and <i>g</i> are decomposed into power series around the same center <i>c</i>, the power series of the sum or difference of the functions can be obtained by termwise addition and subtraction. That is, if
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x)=\sum _{n=0}^{\infty }a_{n}(x-c)^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>c</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)=\sum _{n=0}^{\infty }a_{n}(x-c)^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1b75f7c4f124d6b5b389811fb1763f9b301de8ab" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:21.911ex; height:6.843ex;" alt="{\displaystyle f(x)=\sum _{n=0}^{\infty }a_{n}(x-c)^{n}}"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle g(x)=\sum _{n=0}^{\infty }b_{n}(x-c)^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>c</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g(x)=\sum _{n=0}^{\infty }b_{n}(x-c)^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/90cbd9155c76abcb17808b88077ee2b4815dc8bb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:21.516ex; height:6.843ex;" alt="{\displaystyle g(x)=\sum _{n=0}^{\infty }b_{n}(x-c)^{n}}"/></span></dd></dl>
+<p>then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x)\pm g(x)=\sum _{n=0}^{\infty }(a_{n}\pm b_{n})(x-c)^{n}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x00B1;<!-- ± --></mo>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>&#x00B1;<!-- ± --></mo>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>c</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)\pm g(x)=\sum _{n=0}^{\infty }(a_{n}\pm b_{n})(x-c)^{n}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fb5c0f89d925ac8348accb734c949ab57a5b8799" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:36.132ex; height:6.843ex;" alt="{\displaystyle f(x)\pm g(x)=\sum _{n=0}^{\infty }(a_{n}\pm b_{n})(x-c)^{n}.}"/></span></dd></dl>
+<p>It is not true that if two power series <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle \sum _{n=0}^{\infty }a_{n}x^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle \sum _{n=0}^{\infty }a_{n}x^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f3c568fbac5294cf1b6c98adc7f1cf07f75f6c4f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:11.156ex; height:3.176ex;" alt="{\textstyle \sum _{n=0}^{\infty }a_{n}x^{n}}"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle \sum _{n=0}^{\infty }b_{n}x^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle \sum _{n=0}^{\infty }b_{n}x^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d4a76aed81f1b6bbd4f6f7e6e9235f42b23add71" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:10.924ex; height:3.176ex;" alt="{\textstyle \sum _{n=0}^{\infty }b_{n}x^{n}}"/></span> have the same radius of convergence, then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle \sum _{n=0}^{\infty }\left(a_{n}+b_{n}\right)x^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <mo>+</mo>
+            <msub>
+              <mi>b</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle \sum _{n=0}^{\infty }\left(a_{n}+b_{n}\right)x^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7bbab766a5fe7591dc27133bdb6d6c42fbb90159" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:18.409ex; height:3.176ex;" alt="{\textstyle \sum _{n=0}^{\infty }\left(a_{n}+b_{n}\right)x^{n}}"/></span> also has this radius of convergence. If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle a_{n}=(-1)^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle a_{n}=(-1)^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9bae8e185042fabe194d11cbd1cb630d1b3baa00" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.545ex; height:2.843ex;" alt="{\textstyle a_{n}=(-1)^{n}}"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle b_{n}=(-1)^{n+1}\left(1-{\frac {1}{3^{n}}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mn>1</mn>
+            <mo>&#x2212;<!-- − --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <msup>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msup>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle b_{n}=(-1)^{n+1}\left(1-{\frac {1}{3^{n}}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b0334867eff2efd105e0e497b40ebb7324b19c0c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:23.202ex; height:4.843ex;" alt="{\textstyle b_{n}=(-1)^{n+1}\left(1-{\frac {1}{3^{n}}}\right)}"/></span>, then both series have the same radius of convergence of 1, but the series <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle \sum _{n=0}^{\infty }\left(a_{n}+b_{n}\right)x^{n}=\sum _{n=0}^{\infty }{\frac {(-1)^{n}}{3^{n}}}x^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <mo>+</mo>
+            <msub>
+              <mi>b</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>1</mn>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msup>
+            </mrow>
+            <msup>
+              <mn>3</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle \sum _{n=0}^{\infty }\left(a_{n}+b_{n}\right)x^{n}=\sum _{n=0}^{\infty }{\frac {(-1)^{n}}{3^{n}}}x^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8214fe92f14255e0ec2512c560084636a48f6375" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.338ex; width:35.397ex; height:4.343ex;" alt="{\textstyle \sum _{n=0}^{\infty }\left(a_{n}+b_{n}\right)x^{n}=\sum _{n=0}^{\infty }{\frac {(-1)^{n}}{3^{n}}}x^{n}}"/></span> has a radius of convergence of 3.
+</p>
+<h3><span class="mw-headline" id="Multiplication_and_division">Multiplication and division</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Power_series&amp;action=edit&amp;section=6" title="Edit section: Multiplication and division">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>With the same definitions for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/202945cce41ecebb6f643f31d119c514bec7a074" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.418ex; height:2.843ex;" alt="f(x)"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle g(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c6ca91363022bd5e4dcb17e5ef29f78b8ef00b59" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.255ex; height:2.843ex;" alt="g(x)"/></span>, the power series of the product and quotient of the functions can be obtained as follows:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}f(x)g(x)&amp;=\left(\sum _{n=0}^{\infty }a_{n}(x-c)^{n}\right)\left(\sum _{n=0}^{\infty }b_{n}(x-c)^{n}\right)\\&amp;=\sum _{i=0}^{\infty }\sum _{j=0}^{\infty }a_{i}b_{j}(x-c)^{i+j}\\&amp;=\sum _{n=0}^{\infty }\left(\sum _{i=0}^{n}a_{i}b_{n-i}\right)(x-c)^{n}.\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <mi>x</mi>
+                <mo stretchy="false">)</mo>
+                <mi>g</mi>
+                <mo stretchy="false">(</mo>
+                <mi>x</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <munderover>
+                      <mo>&#x2211;<!-- ∑ --></mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>n</mi>
+                        <mo>=</mo>
+                        <mn>0</mn>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                      </mrow>
+                    </munderover>
+                    <msub>
+                      <mi>a</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>n</mi>
+                      </mrow>
+                    </msub>
+                    <mo stretchy="false">(</mo>
+                    <mi>x</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mi>c</mi>
+                    <msup>
+                      <mo stretchy="false">)</mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>n</mi>
+                      </mrow>
+                    </msup>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <munderover>
+                      <mo>&#x2211;<!-- ∑ --></mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>n</mi>
+                        <mo>=</mo>
+                        <mn>0</mn>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                      </mrow>
+                    </munderover>
+                    <msub>
+                      <mi>b</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>n</mi>
+                      </mrow>
+                    </msub>
+                    <mo stretchy="false">(</mo>
+                    <mi>x</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mi>c</mi>
+                    <msup>
+                      <mo stretchy="false">)</mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>n</mi>
+                      </mrow>
+                    </msup>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>j</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <msub>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                  </mrow>
+                </msub>
+                <msub>
+                  <mi>b</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>j</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>x</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>c</mi>
+                <msup>
+                  <mo stretchy="false">)</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                    <mo>+</mo>
+                    <mi>j</mi>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <munderover>
+                      <mo>&#x2211;<!-- ∑ --></mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>i</mi>
+                        <mo>=</mo>
+                        <mn>0</mn>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>n</mi>
+                      </mrow>
+                    </munderover>
+                    <msub>
+                      <mi>a</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>i</mi>
+                      </mrow>
+                    </msub>
+                    <msub>
+                      <mi>b</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>n</mi>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mi>i</mi>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo stretchy="false">(</mo>
+                <mi>x</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>c</mi>
+                <msup>
+                  <mo stretchy="false">)</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msup>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}f(x)g(x)&amp;=\left(\sum _{n=0}^{\infty }a_{n}(x-c)^{n}\right)\left(\sum _{n=0}^{\infty }b_{n}(x-c)^{n}\right)\\&amp;=\sum _{i=0}^{\infty }\sum _{j=0}^{\infty }a_{i}b_{j}(x-c)^{i+j}\\&amp;=\sum _{n=0}^{\infty }\left(\sum _{i=0}^{n}a_{i}b_{n-i}\right)(x-c)^{n}.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7cc81a496f8324ef3bcf46dd4e316c31e869d6c4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -10.671ex; width:48.83ex; height:22.509ex;" alt="{\displaystyle {\begin{aligned}f(x)g(x)&amp;=\left(\sum _{n=0}^{\infty }a_{n}(x-c)^{n}\right)\left(\sum _{n=0}^{\infty }b_{n}(x-c)^{n}\right)\\&amp;=\sum _{i=0}^{\infty }\sum _{j=0}^{\infty }a_{i}b_{j}(x-c)^{i+j}\\&amp;=\sum _{n=0}^{\infty }\left(\sum _{i=0}^{n}a_{i}b_{n-i}\right)(x-c)^{n}.\end{aligned}}}"/></span></dd></dl>
+<p>The sequence <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle m_{n}=\sum _{i=0}^{n}a_{i}b_{n-i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>m</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m_{n}=\sum _{i=0}^{n}a_{i}b_{n-i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/813747104affdd4f7106420814a538383fb45aef" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:16.191ex; height:6.843ex;" alt="m_n = \sum_{i=0}^n a_i b_{n-i}"/></span> is known as the <a href="/wiki/Convolution" title="Convolution">convolution</a> of the sequences <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a_{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/790f9209748c2dca7ed7b81932c37c02af1dbc31" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.448ex; height:2.009ex;" alt="a_{n}"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle b_{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b_{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/28e2d72f6dd9375c8f1f59f1effd9b4e5492ac97" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.216ex; height:2.509ex;" alt="b_{n}"/></span>.
+</p><p>For division, if one defines the sequence <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle d_{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d_{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/858aa7b9662c90d0e01c9615aac9b1fdd84a02dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.427ex; height:2.509ex;" alt="d_{n}"/></span> by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {f(x)}{g(x)}}={\frac {\sum _{n=0}^{\infty }a_{n}(x-c)^{n}}{\sum _{n=0}^{\infty }b_{n}(x-c)^{n}}}=\sum _{n=0}^{\infty }d_{n}(x-c)^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi>g</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <munderover>
+                <mo>&#x2211;<!-- ∑ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                  <mo>=</mo>
+                  <mn>0</mn>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                </mrow>
+              </munderover>
+              <msub>
+                <mi>a</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>c</mi>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msup>
+            </mrow>
+            <mrow>
+              <munderover>
+                <mo>&#x2211;<!-- ∑ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                  <mo>=</mo>
+                  <mn>0</mn>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                </mrow>
+              </munderover>
+              <msub>
+                <mi>b</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>c</mi>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>c</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {f(x)}{g(x)}}={\frac {\sum _{n=0}^{\infty }a_{n}(x-c)^{n}}{\sum _{n=0}^{\infty }b_{n}(x-c)^{n}}}=\sum _{n=0}^{\infty }d_{n}(x-c)^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a6f9b718d757418c36e254e47e0aa18ff1cbbb63" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:43.474ex; height:7.009ex;" alt="{\displaystyle {\frac {f(x)}{g(x)}}={\frac {\sum _{n=0}^{\infty }a_{n}(x-c)^{n}}{\sum _{n=0}^{\infty }b_{n}(x-c)^{n}}}=\sum _{n=0}^{\infty }d_{n}(x-c)^{n}}"/></span></dd></dl>
+<p>then 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x)=\left(\sum _{n=0}^{\infty }b_{n}(x-c)^{n}\right)\left(\sum _{n=0}^{\infty }d_{n}(x-c)^{n}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <munderover>
+              <mo>&#x2211;<!-- ∑ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>=</mo>
+                <mn>0</mn>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+              </mrow>
+            </munderover>
+            <msub>
+              <mi>b</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <mo stretchy="false">(</mo>
+            <mi>x</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>c</mi>
+            <msup>
+              <mo stretchy="false">)</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msup>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <munderover>
+              <mo>&#x2211;<!-- ∑ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>=</mo>
+                <mn>0</mn>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+              </mrow>
+            </munderover>
+            <msub>
+              <mi>d</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <mo stretchy="false">(</mo>
+            <mi>x</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>c</mi>
+            <msup>
+              <mo stretchy="false">)</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msup>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)=\left(\sum _{n=0}^{\infty }b_{n}(x-c)^{n}\right)\left(\sum _{n=0}^{\infty }d_{n}(x-c)^{n}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d48f3dab1f299fd5f6a5e0d9fd0558104de9e5c3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:43.803ex; height:7.509ex;" alt="{\displaystyle f(x)=\left(\sum _{n=0}^{\infty }b_{n}(x-c)^{n}\right)\left(\sum _{n=0}^{\infty }d_{n}(x-c)^{n}\right)}"/></span></dd></dl>
+<p>and one can solve recursively for the terms <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle d_{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d_{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/858aa7b9662c90d0e01c9615aac9b1fdd84a02dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.427ex; height:2.509ex;" alt="d_{n}"/></span> by comparing coefficients.
+</p><p>Solving the corresponding equations yields the formulae based on <a href="/wiki/Determinant" title="Determinant">determinants</a> of certain matrices of the coefficients of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/202945cce41ecebb6f643f31d119c514bec7a074" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.418ex; height:2.843ex;" alt="f(x)"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle g(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c6ca91363022bd5e4dcb17e5ef29f78b8ef00b59" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.255ex; height:2.843ex;" alt="g(x)"/></span>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle d_{0}={\frac {a_{0}}{b_{0}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>b</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d_{0}={\frac {a_{0}}{b_{0}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/36241306c3aa565b07c0eb1851cf024b7b0d377f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:8.482ex; height:5.176ex;" alt="{\displaystyle d_{0}={\frac {a_{0}}{b_{0}}}}"/></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle d_{n}={\frac {1}{b_{0}^{n+1}}}\cdot \det {\begin{vmatrix}a_{n}&amp;b_{1}&amp;b_{2}&amp;\ldots &amp;b_{n}\\a_{n-1}&amp;b_{0}&amp;b_{1}&amp;\ldots &amp;b_{n-1}\\a_{n-2}&amp;0&amp;b_{0}&amp;\ldots &amp;b_{n-2}\\\vdots &amp;\vdots &amp;\vdots &amp;\ddots &amp;\vdots \\a_{0}&amp;0&amp;0&amp;\ldots &amp;b_{0}\end{vmatrix}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msubsup>
+              <mi>b</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+              </mrow>
+            </msubsup>
+          </mfrac>
+        </mrow>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mo movablelimits="true" form="prefix">det</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>|</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>a</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>b</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>b</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>&#x2026;<!-- … --></mo>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>b</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>a</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>b</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>0</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>b</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>&#x2026;<!-- … --></mo>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>b</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>a</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>b</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>0</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>&#x2026;<!-- … --></mo>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>b</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>&#x22EE;<!-- ⋮ --></mo>
+                </mtd>
+                <mtd>
+                  <mo>&#x22EE;<!-- ⋮ --></mo>
+                </mtd>
+                <mtd>
+                  <mo>&#x22EE;<!-- ⋮ --></mo>
+                </mtd>
+                <mtd>
+                  <mo>&#x22F1;<!-- ⋱ --></mo>
+                </mtd>
+                <mtd>
+                  <mo>&#x22EE;<!-- ⋮ --></mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>a</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>0</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mo>&#x2026;<!-- … --></mo>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>b</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>0</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>|</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d_{n}={\frac {1}{b_{0}^{n+1}}}\cdot \det {\begin{vmatrix}a_{n}&amp;b_{1}&amp;b_{2}&amp;\ldots &amp;b_{n}\\a_{n-1}&amp;b_{0}&amp;b_{1}&amp;\ldots &amp;b_{n-1}\\a_{n-2}&amp;0&amp;b_{0}&amp;\ldots &amp;b_{n-2}\\\vdots &amp;\vdots &amp;\vdots &amp;\ddots &amp;\vdots \\a_{0}&amp;0&amp;0&amp;\ldots &amp;b_{0}\end{vmatrix}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/126a80ac66db75c849ea027a41c9815d5ffce717" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -8.171ex; width:43.257ex; height:17.509ex;" alt="{\displaystyle d_{n}={\frac {1}{b_{0}^{n+1}}}\cdot \det {\begin{vmatrix}a_{n}&amp;b_{1}&amp;b_{2}&amp;\ldots &amp;b_{n}\\a_{n-1}&amp;b_{0}&amp;b_{1}&amp;\ldots &amp;b_{n-1}\\a_{n-2}&amp;0&amp;b_{0}&amp;\ldots &amp;b_{n-2}\\\vdots &amp;\vdots &amp;\vdots &amp;\ddots &amp;\vdots \\a_{0}&amp;0&amp;0&amp;\ldots &amp;b_{0}\end{vmatrix}}}"/></span></dd></dl>
+<h3><span class="mw-headline" id="Differentiation_and_integration">Differentiation and integration</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Power_series&amp;action=edit&amp;section=7" title="Edit section: Differentiation and integration">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Once a function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/202945cce41ecebb6f643f31d119c514bec7a074" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.418ex; height:2.843ex;" alt="f(x)"/></span> is given as a power series as above, it is <a href="/wiki/Derivative" title="Derivative">differentiable</a> on the <a href="/wiki/Interior_(topology)" title="Interior (topology)">interior</a> of the domain of convergence. It can be <a href="/wiki/Derivative" title="Derivative">differentiated</a> and <a href="/wiki/Integral" title="Integral">integrated</a> quite easily, by treating every term separately:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}f^{\prime }(x)&amp;=\sum _{n=1}^{\infty }a_{n}n\left(x-c\right)^{n-1}=\sum _{n=0}^{\infty }a_{n+1}\left(n+1\right)\left(x-c\right)^{n},\\\int f(x)\,dx&amp;=\sum _{n=0}^{\infty }{\frac {a_{n}\left(x-c\right)^{n+1}}{n+1}}+k=\sum _{n=1}^{\infty }{\frac {a_{n-1}\left(x-c\right)^{n}}{n}}+k.\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msup>
+                  <mi>f</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi class="MJX-variant" mathvariant="normal">&#x2032;<!-- ′ --></mi>
+                  </mrow>
+                </msup>
+                <mo stretchy="false">(</mo>
+                <mi>x</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <msub>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+                <mi>n</mi>
+                <msup>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mi>x</mi>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mi>c</mi>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <mo>=</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <msub>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mi>n</mi>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <msup>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mi>x</mi>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mi>c</mi>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msup>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mo>&#x222B;<!-- ∫ --></mo>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <mi>x</mi>
+                <mo stretchy="false">)</mo>
+                <mspace width="thinmathspace" />
+                <mi>d</mi>
+                <mi>x</mi>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <msub>
+                        <mi>a</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>n</mi>
+                        </mrow>
+                      </msub>
+                      <msup>
+                        <mrow>
+                          <mo>(</mo>
+                          <mrow>
+                            <mi>x</mi>
+                            <mo>&#x2212;<!-- − --></mo>
+                            <mi>c</mi>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>n</mi>
+                          <mo>+</mo>
+                          <mn>1</mn>
+                        </mrow>
+                      </msup>
+                    </mrow>
+                    <mrow>
+                      <mi>n</mi>
+                      <mo>+</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo>+</mo>
+                <mi>k</mi>
+                <mo>=</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <msub>
+                        <mi>a</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>n</mi>
+                          <mo>&#x2212;<!-- − --></mo>
+                          <mn>1</mn>
+                        </mrow>
+                      </msub>
+                      <msup>
+                        <mrow>
+                          <mo>(</mo>
+                          <mrow>
+                            <mi>x</mi>
+                            <mo>&#x2212;<!-- − --></mo>
+                            <mi>c</mi>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>n</mi>
+                        </mrow>
+                      </msup>
+                    </mrow>
+                    <mi>n</mi>
+                  </mfrac>
+                </mrow>
+                <mo>+</mo>
+                <mi>k</mi>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}f^{\prime }(x)&amp;=\sum _{n=1}^{\infty }a_{n}n\left(x-c\right)^{n-1}=\sum _{n=0}^{\infty }a_{n+1}\left(n+1\right)\left(x-c\right)^{n},\\\int f(x)\,dx&amp;=\sum _{n=0}^{\infty }{\frac {a_{n}\left(x-c\right)^{n+1}}{n+1}}+k=\sum _{n=1}^{\infty }{\frac {a_{n-1}\left(x-c\right)^{n}}{n}}+k.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/510793d09297f28fd32970958374d4252a24413c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -6.382ex; margin-bottom: -0.29ex; width:60.293ex; height:14.509ex;" alt="{\displaystyle {\begin{aligned}f^{\prime }(x)&amp;=\sum _{n=1}^{\infty }a_{n}n\left(x-c\right)^{n-1}=\sum _{n=0}^{\infty }a_{n+1}\left(n+1\right)\left(x-c\right)^{n},\\\int f(x)\,dx&amp;=\sum _{n=0}^{\infty }{\frac {a_{n}\left(x-c\right)^{n+1}}{n+1}}+k=\sum _{n=1}^{\infty }{\frac {a_{n-1}\left(x-c\right)^{n}}{n}}+k.\end{aligned}}}"/></span></dd></dl>
+<p>Both of these series have the same radius of convergence as the original one.
+</p>
+<h2><span class="mw-headline" id="Analytic_functions">Analytic functions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Power_series&amp;action=edit&amp;section=8" title="Edit section: Analytic functions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Analytic_function" title="Analytic function">Analytic function</a></div>
+<p>A function <i>f</i> defined on some <a href="/wiki/Open_set" title="Open set">open subset</a> <i>U</i> of <b>R</b> or <b>C</b> is called <a href="/wiki/Analytic_function" title="Analytic function">analytic</a> if it is locally given by a convergent power series. This means that every <i>a</i> ∈ <i>U</i> has an open <a href="/wiki/Neighborhood_(topology)" class="mw-redirect" title="Neighborhood (topology)">neighborhood</a> <i>V</i> ⊆ <i>U</i>, such that there exists a power series with center <i>a</i> which converges to <i>f</i>(<i>x</i>) for every <i>x</i> ∈ <i>V</i>.
+</p><p>Every power series with a positive radius of convergence is analytic on the <a href="/wiki/Topological_interior" class="mw-redirect" title="Topological interior">interior</a> of its region of convergence. All <a href="/wiki/Holomorphic_function" title="Holomorphic function">holomorphic functions</a> are complex-analytic. Sums and products of analytic functions are analytic, as are quotients as long as the denominator is non-zero.
+</p><p>If a function is analytic, then it is infinitely differentiable, but in the real case the converse is not generally true. For an analytic function, the coefficients <i>a</i><sub><i>n</i></sub> can be computed as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a_{n}={\frac {f^{\left(n\right)}\left(c\right)}{n!}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mi>f</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>n</mi>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </msup>
+              <mrow>
+                <mo>(</mo>
+                <mi>c</mi>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi>n</mi>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{n}={\frac {f^{\left(n\right)}\left(c\right)}{n!}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f828bed557597a2d270ffeeef7f06a1e5a9dae00" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:13.404ex; height:6.176ex;" alt="{\displaystyle a_{n}={\frac {f^{\left(n\right)}\left(c\right)}{n!}}}"/></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f^{(n)}(c)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f^{(n)}(c)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3d1a27ac4d3d6de663cc95fc039e5067b1ec29e8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.634ex; height:3.343ex;" alt="f^{(n)}(c)"/></span> denotes the <i>n</i>th derivative of <i>f</i> at <i>c</i>, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f^{(0)}(c)=f(c)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mn>0</mn>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f^{(0)}(c)=f(c)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cfea393738e57cbe003b8c6ddc46541f8416d2ab" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:13.663ex; height:3.343ex;" alt="f^{(0)}(c) = f(c)"/></span>. This means that every analytic function is locally represented by its <a href="/wiki/Taylor_series" title="Taylor series">Taylor series</a>.
+</p><p>The global form of an analytic function is completely determined by its local behavior in the following sense: if <i>f</i> and <i>g</i> are two analytic functions defined on the same <a href="/wiki/Connectedness" title="Connectedness">connected</a> open set <i>U</i>, and if there exists an element <i>c</i>∈<i>U</i> such that <i>f</i><sup>&#160;(<i>n</i>)</sup>(<i>c</i>) = <i>g</i><sup>&#160;(<i>n</i>)</sup>(<i>c</i>) for all <i>n</i> ≥ 0, then <i>f</i>(<i>x</i>) = <i>g</i>(<i>x</i>) for all <i>x</i> ∈ <i>U</i>.
+</p><p>If a power series with radius of convergence <i>r</i> is given, one can consider <a href="/wiki/Analytic_continuation" title="Analytic continuation">analytic continuations</a> of the series, i.e. analytic functions <i>f</i> which are defined on larger sets than { <i>x</i>&#160;: |<i>x</i> − <i>c</i>| &lt; <i>r</i> } and agree with the given power series on this set. The number <i>r</i> is maximal in the following sense: there always exists a <a href="/wiki/Complex_number" title="Complex number">complex number</a> <i>x</i> with |<i>x</i> − <i>c</i>| = <i>r</i> such that no analytic continuation of the series can be defined at <i>x</i>.
+</p><p>The power series expansion of the <a href="/wiki/Inverse_function" title="Inverse function">inverse function</a> of an analytic function can be determined using the <a href="/wiki/Lagrange_inversion_theorem" title="Lagrange inversion theorem">Lagrange inversion theorem</a>.
+</p>
+<h3><span class="mw-headline" id="Behavior_near_the_boundary">Behavior near the boundary</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Power_series&amp;action=edit&amp;section=9" title="Edit section: Behavior near the boundary">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The sum of a power series with a positive radius of convergence is an analytic function at every point in the interior of the disc of convergence. However, different behavior can occur at points on the boundary of that disc. For example:
+</p>
+<ol><li><i>Divergence while the sum extends to an analytic function</i>: <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum _{n=0}^{\infty }z^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{n=0}^{\infty }z^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/778a5de787f1ea9e0f36ad780a53199c1a6b8074" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:6.051ex; height:6.843ex;" alt="{\displaystyle \sum _{n=0}^{\infty }z^{n}}"/></span> has radius of convergence equal to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/92d98b82a3778f043108d4e20960a9193df57cbf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.162ex; height:2.176ex;" alt="1"/></span> and diverges at every point of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |z|=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>z</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |z|=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b3749e5cd50ee274eb73aea2ade8441687140a66" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.643ex; height:2.843ex;" alt="|z|=1"/></span>. Nevertheless, the sum in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |z|&lt;1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>z</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&lt;</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |z|&lt;1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e1c0fa57b899b653a3823f85f43fd666309c09b3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.643ex; height:2.843ex;" alt="|z|&lt;1"/></span> is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {1}{1-z}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mn>1</mn>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>z</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{1-z}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2dddb318874f5bf492d7c67325e1519831a30c0f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.927ex; height:5.343ex;" alt="{\frac  {1}{1-z}}"/></span>, which is analytic at every point of the plane except for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle z=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>z</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle z=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/078535cde78d90bfa1d9fbb2446204593a921d57" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.349ex; height:2.176ex;" alt="z=1"/></span>.</li>
+<li><i>Convergent at some points divergent at others.</i>: <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum _{n=1}^{\infty }(-1)^{n+1}{\frac {z^{n}}{n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mo stretchy="false">(</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>z</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msup>
+            <mi>n</mi>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{n=1}^{\infty }(-1)^{n+1}{\frac {z^{n}}{n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/015bf9d399714ea70d9fc595dcd28a25d154c266" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:14.599ex; height:6.843ex;" alt="{\displaystyle \sum _{n=1}^{\infty }(-1)^{n+1}{\frac {z^{n}}{n}}}"/></span> has radius of convergence <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/92d98b82a3778f043108d4e20960a9193df57cbf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.162ex; height:2.176ex;" alt="1"/></span>. It converges for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle z=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>z</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle z=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/078535cde78d90bfa1d9fbb2446204593a921d57" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.349ex; height:2.176ex;" alt="z=1"/></span>, while it diverges for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle z=-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>z</mi>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle z=-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/af5d92c041c1ddaa688b8f7f68d333e107e93709" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:7.157ex; height:2.343ex;" alt="z=-1"/></span></li>
+<li><i>Absolute convergence at every point of the boundary</i>: <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum _{n=1}^{\infty }{\frac {z^{n}}{n^{2}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>z</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msup>
+            <msup>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{n=1}^{\infty }{\frac {z^{n}}{n^{2}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9a1b0aff100203526aa1e5033e4fe5ef42dc16af" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:7.027ex; height:6.843ex;" alt="{\displaystyle \sum _{n=1}^{\infty }{\frac {z^{n}}{n^{2}}}}"/></span> has radius of convergence <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/92d98b82a3778f043108d4e20960a9193df57cbf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.162ex; height:2.176ex;" alt="1"/></span>, while it converges absolutely, and uniformly, at every point of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |z|=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>z</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |z|=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b3749e5cd50ee274eb73aea2ade8441687140a66" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.643ex; height:2.843ex;" alt="|z|=1"/></span> due to <a href="/wiki/Weierstrass_M-test" title="Weierstrass M-test">Weierstrass M-test</a> applied with the <a href="/wiki/Harmonic_series_(mathematics)#p-series" title="Harmonic series (mathematics)">hyper-harmonic convergent series</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum _{n=1}^{\infty }{\frac {1}{n^{2}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msup>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{n=1}^{\infty }{\frac {1}{n^{2}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0b42204c71e0c7128ff6f317abcb1deea9c6a946" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:7.027ex; height:6.843ex;" alt="\sum _{{n=1}}^{{\infty }}{\frac  {1}{n^{2}}}"/></span>.</li>
+<li><i>Convergent on the closure of the disc of convergence but not continuous sum</i>: <a href="/wiki/Wac%C5%82aw_Sierpi%C5%84ski" title="Wacław Sierpiński">Sierpiński</a> gave an example<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> of a power series with radius of convergence <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/92d98b82a3778f043108d4e20960a9193df57cbf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.162ex; height:2.176ex;" alt="1"/></span>, convergent at all points with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |z|=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>z</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |z|=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b3749e5cd50ee274eb73aea2ade8441687140a66" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.643ex; height:2.843ex;" alt="|z|=1"/></span>, but the sum is an unbounded function and, in particular, discontinuous. A sufficient condition for one-sided continuity at a boundary point is given by <a href="/wiki/Abel%27s_theorem" title="Abel&#39;s theorem">Abel's theorem</a>.</li></ol>
+<h2><span class="mw-headline" id="Formal_power_series">Formal power series</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Power_series&amp;action=edit&amp;section=10" title="Edit section: Formal power series">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Formal_power_series" title="Formal power series">Formal power series</a></div>
+<p>In <a href="/wiki/Abstract_algebra" title="Abstract algebra">abstract algebra</a>, one attempts to capture the essence of power series without being restricted to the <a href="/wiki/Field_(mathematics)" title="Field (mathematics)">fields</a> of real and complex numbers, and without the need to talk about convergence. This leads to the concept of <a href="/wiki/Formal_power_series" title="Formal power series">formal power series</a>, a concept of great utility in <a href="/wiki/Algebraic_combinatorics" title="Algebraic combinatorics">algebraic combinatorics</a>.
+</p>
+<h2><span class="mw-headline" id="Power_series_in_several_variables">Power series in several variables</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Power_series&amp;action=edit&amp;section=11" title="Edit section: Power series in several variables">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>An extension of the theory is necessary for the purposes of <a href="/wiki/Multivariable_calculus" title="Multivariable calculus">multivariable calculus</a>. A <b>power series</b> is here defined to be an infinite series of the form
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x_{1},\dots ,x_{n})=\sum _{j_{1},\dots ,j_{n}=0}^{\infty }a_{j_{1},\dots ,j_{n}}\prod _{k=1}^{n}\left(x_{k}-c_{k}\right)^{j_{k}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>&#x2026;<!-- … --></mo>
+        <mo>,</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>j</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <mo>,</mo>
+            <mo>&#x2026;<!-- … --></mo>
+            <mo>,</mo>
+            <msub>
+              <mi>j</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>j</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <mo>,</mo>
+            <mo>&#x2026;<!-- … --></mo>
+            <mo>,</mo>
+            <msub>
+              <mi>j</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+        <munderover>
+          <mo>&#x220F;<!-- ∏ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <msub>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+              </msub>
+              <mo>&#x2212;<!-- − --></mo>
+              <msub>
+                <mi>c</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+              </msub>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>j</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x_{1},\dots ,x_{n})=\sum _{j_{1},\dots ,j_{n}=0}^{\infty }a_{j_{1},\dots ,j_{n}}\prod _{k=1}^{n}\left(x_{k}-c_{k}\right)^{j_{k}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2d39fcfaf7da4164828fd1b2b28ad32a4ed68136" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:47.553ex; height:7.343ex;" alt="{\displaystyle f(x_{1},\dots ,x_{n})=\sum _{j_{1},\dots ,j_{n}=0}^{\infty }a_{j_{1},\dots ,j_{n}}\prod _{k=1}^{n}\left(x_{k}-c_{k}\right)^{j_{k}},}"/></span></dd></dl>
+<p>where <i>j</i> = (<i>j</i><sub>1</sub>, ..., <i>j</i><sub><i>n</i></sub>) is a vector of natural numbers, the coefficients <i>a</i><sub>(<i>j<sub>1</sub>, …, j<sub>n</sub></i>)</sub> are usually real or complex numbers, and the center <i>c</i> = (<i>c</i><sub>1</sub>, ..., <i>c</i><sub><i>n</i></sub>) and argument <i>x</i> = (<i>x</i><sub>1</sub>, ..., <i>x</i><sub><i>n</i></sub>) are usually real or complex vectors. The symbol <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Pi }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x03A0;<!-- Π --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Pi }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eed3e3db6cc2028a183af948212ed2551d25c954" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="\Pi "/></span> is the <a href="/wiki/Multiplication#Capital_Pi_notation" title="Multiplication">product symbol</a>, denoting multiplication. In the more convenient <a href="/wiki/Multi-index" class="mw-redirect" title="Multi-index">multi-index</a> notation this can be written
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x)=\sum _{\alpha \in \mathbb {N} ^{n}}a_{\alpha }\left(x-c\right)^{\alpha }.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B1;<!-- α --></mi>
+            <mo>&#x2208;<!-- ∈ --></mo>
+            <msup>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="double-struck">N</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msup>
+          </mrow>
+        </munder>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B1;<!-- α --></mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mi>x</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>c</mi>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B1;<!-- α --></mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)=\sum _{\alpha \in \mathbb {N} ^{n}}a_{\alpha }\left(x-c\right)^{\alpha }.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6cdbf769c672ac2280238227c65c8b049a00843c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:23.634ex; height:5.676ex;" alt="{\displaystyle f(x)=\sum _{\alpha \in \mathbb {N} ^{n}}a_{\alpha }\left(x-c\right)^{\alpha }.}"/></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbb {N} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {N} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fdf9a96b565ea202d0f4322e9195613fb26a9bed" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.678ex; height:2.176ex;" alt="\mathbb {N} "/></span> is the set of <a href="/wiki/Natural_number" title="Natural number">natural numbers</a>, and so <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbb {N} ^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">N</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {N} ^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6de4673cd92dd1c8e3a19aeda306b77ad113ebd3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.897ex; height:2.343ex;" alt="\mathbb {N} ^{n}"/></span> is the set of ordered n-<a href="/wiki/Tuple" title="Tuple">tuples</a> of natural numbers.
+</p><p>The theory of such series is trickier than for single-variable series, with more complicated regions of convergence.  For instance, the power series <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum _{n=0}^{\infty }x_{1}^{n}x_{2}^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msubsup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msubsup>
+        <msubsup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{n=0}^{\infty }x_{1}^{n}x_{2}^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1d2c1a9fc7a2e67d6e78775530764c724a838de6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:8.838ex; height:6.843ex;" alt="{\displaystyle \sum _{n=0}^{\infty }x_{1}^{n}x_{2}^{n}}"/></span> is absolutely convergent in the set <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \{(x_{1},x_{2}):|x_{1}x_{2}|&lt;1\}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">{</mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>:</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&lt;</mo>
+        <mn>1</mn>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \{(x_{1},x_{2}):|x_{1}x_{2}|&lt;1\}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/93508dc232b7d0251c2a2493ea5c06e04c877afc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:22.196ex; height:2.843ex;" alt="{\displaystyle \{(x_{1},x_{2}):|x_{1}x_{2}|&lt;1\}}"/></span> between two hyperbolas.  (This is an example of a <i>log-convex set</i>, in the sense that the set of points <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (\log |x_{1}|,\log |x_{2}|)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>log</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>,</mo>
+        <mi>log</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\log |x_{1}|,\log |x_{2}|)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/98dccc8c81568abf13aaa335960d66b5d3c91fbb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:16.916ex; height:2.843ex;" alt="(\log |x_1|, \log |x_2|)"/></span>, where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (x_{1},x_{2})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (x_{1},x_{2})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b9bb1427314b1719774232fe0d156a0edacf1ced" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.611ex; height:2.843ex;" alt="(x_{1},x_{2})"/></span> lies in the above region, is a convex set.  More generally, one can show that when c=0, the interior of the region of absolute convergence is always a log-convex set in this sense.)  On the other hand, in the interior of this region of convergence one may differentiate and integrate under the series sign, just as one may with ordinary power series.
+</p>
+<h2><span class="mw-headline" id="Order_of_a_power_series">Order of a power series</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Power_series&amp;action=edit&amp;section=12" title="Edit section: Order of a power series">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Let α be a multi-index for a power series <i>f</i>(<i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, ..., <i>x</i><sub><i>n</i></sub>).  The <b>order</b> of the power series <i>f</i> is defined to be the least value <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle r}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>r</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle r}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0d1ecb613aa2984f0576f70f86650b7c2a132538" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.049ex; height:1.676ex;" alt="r"/></span> such that there is <i>a</i><sub>α</sub> ≠ 0 with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle r=|\alpha |=\alpha _{1}+\alpha _{2}+\ldots +\alpha _{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>r</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>&#x03B1;<!-- α --></mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mi>&#x03B1;<!-- α --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>&#x03B1;<!-- α --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mo>&#x2026;<!-- … --></mo>
+        <mo>+</mo>
+        <msub>
+          <mi>&#x03B1;<!-- α --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle r=|\alpha |=\alpha _{1}+\alpha _{2}+\ldots +\alpha _{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7126ae995d63b1498505962377630626fe2d42ce" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:29.061ex; height:2.843ex;" alt="{\displaystyle r=|\alpha |=\alpha _{1}+\alpha _{2}+\ldots +\alpha _{n}}"/></span>, or <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \infty }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \infty }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c26c105004f30c27aa7c2a9c601550a4183b1f21" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.324ex; height:1.676ex;" alt="\infty "/></span> if <i>f</i> ≡ 0.  In particular, for a power series <i>f</i>(<i>x</i>) in a single variable <i>x</i>, the order of <i>f</i> is the smallest power of <i>x</i> with a nonzero coefficient.  This definition readily extends to <a href="/wiki/Laurent_series" title="Laurent series">Laurent series</a>.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Power_series&amp;action=edit&amp;section=13" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Flat_function" title="Flat function">Flat function</a></li>
+<li><a href="/wiki/Linear_approximation" title="Linear approximation">Linear approximation</a></li>
+<li><a href="/wiki/Random_variable" title="Random variable">Random variable</a></li>
+<li><a href="/wiki/Series_multisection" title="Series multisection">Series multisection</a></li></ul>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Power_series&amp;action=edit&amp;section=14" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation book"><a href="/wiki/Howard_Levi" title="Howard Levi">Howard Levi</a> (1967). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=AcI-AAAAIAAJ"><i>Polynomials, Power Series, and Calculus</i></a>. Van Nostrand. p.&#160;24.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Polynomials%2C+Power+Series%2C+and+Calculus&amp;rft.pages=24&amp;rft.pub=Van+Nostrand&amp;rft.date=1967&amp;rft.au=Howard+Levi&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DAcI-AAAAIAAJ&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APower+series" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation book"><a href="/wiki/Wac%C5%82aw_Sierpi%C5%84ski" title="Wacław Sierpiński">Wacław Sierpiński</a> (1916). <a rel="nofollow" class="external text" href="https://zbmath.org/?q=an:46.1466.03"><i>Sur une série potentielle qui, étant convergente en tout point de son cercle de convergence, représente sur ce cercle une fonction discontinue. (French)</i></a>. Palermo Rend. pp.&#160;187–190.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Sur+une+s%C3%A9rie+potentielle+qui%2C+%C3%A9tant+convergente+en+tout+point+de+son+cercle+de+convergence%2C+repr%C3%A9sente+sur+ce+cercle+une+fonction+discontinue.+%28French%29&amp;rft.pages=187-190&amp;rft.pub=Palermo+Rend.&amp;rft.date=1916&amp;rft.au=Wac%C5%82aw+Sierpi%C5%84ski&amp;rft_id=https%3A%2F%2Fzbmath.org%2F%3Fq%3Dan%3A46.1466.03&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APower+series" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Power_series&amp;action=edit&amp;section=15" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><cite id="CITEREFSolomentsev2001" class="citation">Solomentsev, E.D. (2001) [1994], <a rel="nofollow" class="external text" href="https://www.encyclopediaofmath.org/index.php?title=Power_series&amp;oldid=15309">"Power series"</a>,  in <a href="/wiki/Michiel_Hazewinkel" title="Michiel Hazewinkel">Hazewinkel, Michiel</a> (ed.), <i><a href="/wiki/Encyclopedia_of_Mathematics" title="Encyclopedia of Mathematics">Encyclopedia of Mathematics</a></i>, Springer Science+Business Media B.V. / Kluwer Academic Publishers, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-55608-010-4" title="Special:BookSources/978-1-55608-010-4"><bdi>978-1-55608-010-4</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Power+series&amp;rft.btitle=Encyclopedia+of+Mathematics&amp;rft.pub=Springer+Science%2BBusiness+Media+B.V.+%2F+Kluwer+Academic+Publishers&amp;rft.date=2001&amp;rft.isbn=978-1-55608-010-4&amp;rft.aulast=Solomentsev&amp;rft.aufirst=E.D.&amp;rft_id=https%3A%2F%2Fwww.encyclopediaofmath.org%2Findex.php%3Ftitle%3DPower_series%26oldid%3D15309&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APower+series" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li></ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Power_series&amp;action=edit&amp;section=16" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><span class="citation mathworld" id="Reference-Mathworld-Formal_Power_Series"><cite class="citation web"><a href="/wiki/Eric_W._Weisstein" title="Eric W. Weisstein">Weisstein, Eric W.</a> <a rel="nofollow" class="external text" href="http://mathworld.wolfram.com/FormalPowerSeries.html">"Formal Power Series"</a>. <i><a href="/wiki/MathWorld" title="MathWorld">MathWorld</a></i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=MathWorld&amp;rft.atitle=Formal+Power+Series&amp;rft.au=Weisstein%2C+Eric+W.&amp;rft_id=http%3A%2F%2Fmathworld.wolfram.com%2FFormalPowerSeries.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APower+series" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span></li>
+<li><span class="citation mathworld" id="Reference-Mathworld-Power_Series"><cite class="citation web"><a href="/wiki/Eric_W._Weisstein" title="Eric W. Weisstein">Weisstein, Eric W.</a> <a rel="nofollow" class="external text" href="http://mathworld.wolfram.com/PowerSeries.html">"Power Series"</a>. <i><a href="/wiki/MathWorld" title="MathWorld">MathWorld</a></i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=MathWorld&amp;rft.atitle=Power+Series&amp;rft.au=Weisstein%2C+Eric+W.&amp;rft_id=http%3A%2F%2Fmathworld.wolfram.com%2FPowerSeries.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APower+series" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span></li>
+<li><a rel="nofollow" class="external text" href="http://demonstrations.wolfram.com/PowersOfComplexNumbers/">Powers of Complex Numbers</a> by Michael Schreiber, <a href="/wiki/Wolfram_Demonstrations_Project" title="Wolfram Demonstrations Project">Wolfram Demonstrations Project</a>.</li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1266
+Cached time: 20190719153729
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision]
+CPU time usage: 0.304 seconds
+Real time usage: 0.465 seconds
+Preprocessor visited node count: 836/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 10013/2097152 bytes
+Template argument size: 222/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 0/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 14197/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.107/10.000 seconds
+Lua memory usage: 2.39 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  204.675      1 -total
+ 59.82%  122.432      1 Template:Reflist
+ 52.48%  107.413      2 Template:Cite_book
+ 15.23%   31.180      2 Template:Main
+  9.13%   18.688      2 Template:MathWorld
+  7.71%   15.788      2 Template:Cite_web
+  6.32%   12.936      1 Template:SpringerEOM
+  4.91%   10.057      1 Template:Fraction
+  4.52%    9.243      1 Template:Citation
+  1.86%    3.805      1 Template:Zwsp
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:59958-0!canonical!math=5 and timestamp 20190719153729 and revision id 906973309
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Power_series&amp;oldid=906973309">https://en.wikipedia.org/w/index.php?title=Power_series&amp;oldid=906973309</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Real_analysis" title="Category:Real analysis">Real analysis</a></li><li><a href="/wiki/Category:Complex_analysis" title="Category:Complex analysis">Complex analysis</a></li><li><a href="/wiki/Category:Multivariable_calculus" title="Category:Multivariable calculus">Multivariable calculus</a></li><li><a href="/wiki/Category:Mathematical_series" title="Category:Mathematical series">Mathematical series</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Power+series" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Power+series" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Power_series" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Power_series" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Power_series">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Power_series&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Power_series&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Power_series" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Power_series" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Power_series&amp;oldid=906973309" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Power_series&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q206925" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Power_series&amp;id=906973309" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-wikibase-otherprojects" aria-labelledby="p-wikibase-otherprojects-label">
+			<h3 id="p-wikibase-otherprojects-label">In other projects</h3>
+			<div class="body">
+								<ul>
+					<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:Power_series" hreflang="en">Wikimedia Commons</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Power+series">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Power+series&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Power_series&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D9%85%D8%AA%D8%B3%D9%84%D8%B3%D9%84%D8%A9_%D9%82%D9%88%D9%89" title="متسلسلة قوى – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-az"><a href="https://az.wikipedia.org/wiki/Q%C3%BCvv%C9%99t_s%C4%B1ralar%C4%B1" title="Qüvvət sıraları – Azerbaijani" lang="az" hreflang="az" class="interlanguage-link-target">Azərbaycanca</a></li><li class="interlanguage-link interwiki-be"><a href="https://be.wikipedia.org/wiki/%D0%A1%D1%82%D1%83%D0%BF%D0%B5%D0%BD%D0%BD%D1%8B_%D1%80%D0%B0%D0%B4" title="Ступенны рад – Belarusian" lang="be" hreflang="be" class="interlanguage-link-target">Беларуская</a></li><li class="interlanguage-link interwiki-be-x-old"><a href="https://be-x-old.wikipedia.org/wiki/%D0%A1%D1%82%D1%83%D0%BF%D0%B5%D0%BD%D0%B5%D0%B2%D1%8B_%D1%88%D1%8D%D1%80%D0%B0%D0%B3" title="Ступеневы шэраг – Belarusian (Taraškievica orthography)" lang="be-tarask" hreflang="be-tarask" class="interlanguage-link-target">Беларуская (тарашкевіца)‎</a></li><li class="interlanguage-link interwiki-bg"><a href="https://bg.wikipedia.org/wiki/%D0%A1%D1%82%D0%B5%D0%BF%D0%B5%D0%BD%D0%B5%D0%BD_%D1%80%D0%B5%D0%B4" title="Степенен ред – Bulgarian" lang="bg" hreflang="bg" class="interlanguage-link-target">Български</a></li><li class="interlanguage-link interwiki-bs"><a href="https://bs.wikipedia.org/wiki/Potencijalni_red" title="Potencijalni red – Bosnian" lang="bs" hreflang="bs" class="interlanguage-link-target">Bosanski</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/S%C3%A8rie_de_pot%C3%A8ncies_enteres" title="Sèrie de potències enteres – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Mocninn%C3%A1_%C5%99ada" title="Mocninná řada – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/Potensr%C3%A6kke" title="Potensrække – Danish" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Potenzreihe" title="Potenzreihe – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-et"><a href="https://et.wikipedia.org/wiki/Astmerida" title="Astmerida – Estonian" lang="et" hreflang="et" class="interlanguage-link-target">Eesti</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Serie_de_potencias" title="Serie de potencias – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eu"><a href="https://eu.wikipedia.org/wiki/Berretura-serie" title="Berretura-serie – Basque" lang="eu" hreflang="eu" class="interlanguage-link-target">Euskara</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%B3%D8%B1%DB%8C_%D8%AA%D9%88%D8%A7%D9%86%DB%8C" title="سری توانی – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/S%C3%A9rie_enti%C3%A8re" title="Série entière – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EB%A9%B1%EA%B8%89%EC%88%98" title="멱급수 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-hy"><a href="https://hy.wikipedia.org/wiki/%D4%B1%D5%BD%D5%BF%D5%AB%D5%B3%D5%A1%D5%B6%D5%A1%D5%B5%D5%AB%D5%B6_%D5%B7%D5%A1%D6%80%D6%84" title="Աստիճանային շարք – Armenian" lang="hy" hreflang="hy" class="interlanguage-link-target">Հայերեն</a></li><li class="interlanguage-link interwiki-hi"><a href="https://hi.wikipedia.org/wiki/%E0%A4%98%E0%A4%BE%E0%A4%A4_%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A3%E0%A5%80" title="घात श्रेणी – Hindi" lang="hi" hreflang="hi" class="interlanguage-link-target">हिन्दी</a></li><li class="interlanguage-link interwiki-id"><a href="https://id.wikipedia.org/wiki/Deret_pangkat" title="Deret pangkat – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-is"><a href="https://is.wikipedia.org/wiki/Veldar%C3%B6%C3%B0" title="Veldaröð – Icelandic" lang="is" hreflang="is" class="interlanguage-link-target">Íslenska</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Serie_di_potenze" title="Serie di potenze – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%98%D7%95%D7%A8_%D7%97%D7%96%D7%A7%D7%95%D7%AA" title="טור חזקות – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/Hatv%C3%A1nysor" title="Hatványsor – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Machtreeks" title="Machtreeks – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E5%86%AA%E7%B4%9A%E6%95%B0" title="冪級数 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/Potensrekke" title="Potensrekke – Norwegian" lang="no" hreflang="no" class="interlanguage-link-target">Norsk</a></li><li class="interlanguage-link interwiki-nn"><a href="https://nn.wikipedia.org/wiki/Potensrekkje" title="Potensrekkje – Norwegian Nynorsk" lang="nn" hreflang="nn" class="interlanguage-link-target">Norsk nynorsk</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Szereg_pot%C4%99gowy" title="Szereg potęgowy – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/S%C3%A9rie_de_pot%C3%AAncias" title="Série de potências – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="https://ro.wikipedia.org/wiki/Serie_de_puteri" title="Serie de puteri – Romanian" lang="ro" hreflang="ro" class="interlanguage-link-target">Română</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B5%D0%BF%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9_%D1%80%D1%8F%D0%B4" title="Степенной ряд – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-simple"><a href="https://simple.wikipedia.org/wiki/Power_series" title="Power series – Simple English" lang="en-simple" hreflang="en-simple" class="interlanguage-link-target">Simple English</a></li><li class="interlanguage-link interwiki-sl"><a href="https://sl.wikipedia.org/wiki/Poten%C4%8Dna_vrsta" title="Potenčna vrsta – Slovenian" lang="sl" hreflang="sl" class="interlanguage-link-target">Slovenščina</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/%D0%A1%D1%82%D0%B5%D0%BF%D0%B5%D0%BD%D0%B8_%D1%80%D0%B5%D0%B4" title="Степени ред – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Potenssisarja" title="Potenssisarja – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Potensserie" title="Potensserie – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-tl"><a href="https://tl.wikipedia.org/wiki/Makapangyarihang_serye" title="Makapangyarihang serye – Tagalog" lang="tl" hreflang="tl" class="interlanguage-link-target">Tagalog</a></li><li class="interlanguage-link interwiki-ta"><a href="https://ta.wikipedia.org/wiki/%E0%AE%85%E0%AE%9F%E0%AF%81%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AF%8D_%E0%AE%A4%E0%AF%8A%E0%AE%9F%E0%AE%B0%E0%AF%8D_(%E0%AE%95%E0%AE%A3%E0%AE%BF%E0%AE%A4%E0%AE%AE%E0%AF%8D)" title="அடுக்குத் தொடர் (கணிதம்) – Tamil" lang="ta" hreflang="ta" class="interlanguage-link-target">தமிழ்</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Kuvvet_serisi" title="Kuvvet serisi – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%A1%D1%82%D0%B5%D0%BF%D0%B5%D0%BD%D0%B5%D0%B2%D0%B8%D0%B9_%D1%80%D1%8F%D0%B4" title="Степеневий ряд – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-ur"><a href="https://ur.wikipedia.org/wiki/%D9%82%D9%88%D8%AA%DB%8C_%D8%B3%D9%84%D8%B3%D9%84%DB%81" title="قوتی سلسلہ – Urdu" lang="ur" hreflang="ur" class="interlanguage-link-target">اردو</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E5%B9%82%E7%BA%A7%E6%95%B0" title="幂级数 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q206925#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 19 July 2019, at 15:37<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Power_series&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.304","walltime":"0.465","ppvisitednodes":{"value":836,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":10013,"limit":2097152},"templateargumentsize":{"value":222,"limit":2097152},"expansiondepth":{"value":7,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":14197,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  204.675      1 -total"," 59.82%  122.432      1 Template:Reflist"," 52.48%  107.413      2 Template:Cite_book"," 15.23%   31.180      2 Template:Main","  9.13%   18.688      2 Template:MathWorld","  7.71%   15.788      2 Template:Cite_web","  6.32%   12.936      1 Template:SpringerEOM","  4.91%   10.057      1 Template:Fraction","  4.52%    9.243      1 Template:Citation","  1.86%    3.805      1 Template:Zwsp"]},"scribunto":{"limitreport-timeusage":{"value":"0.107","limit":"10.000"},"limitreport-memusage":{"value":2510115,"limit":52428800}},"cachereport":{"origin":"mw1266","timestamp":"20190719153729","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Power series","url":"https:\/\/en.wikipedia.org\/wiki\/Power_series","sameAs":"http:\/\/www.wikidata.org\/entity\/Q206925","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q206925","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-06-29T08:41:48Z","dateModified":"2019-07-19T15:37:29Z","headline":"an infinite series of addition, mainly in mathematical analysis"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":99,"wgHostname":"mw1263"});});</script>
+</body>
+</html>
