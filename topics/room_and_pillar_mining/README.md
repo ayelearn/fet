@@ -1,0 +1,1 @@
+room_and_pillar_mining

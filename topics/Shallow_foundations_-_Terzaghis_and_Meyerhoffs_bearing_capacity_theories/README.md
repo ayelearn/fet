@@ -1,0 +1,1 @@
+Shallow_foundations_-_Terzaghis_and_Meyerhoffs_bearing_capacity_theories

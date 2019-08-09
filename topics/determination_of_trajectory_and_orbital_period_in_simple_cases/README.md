@@ -1,0 +1,1 @@
+determination_of_trajectory_and_orbital_period_in_simple_cases

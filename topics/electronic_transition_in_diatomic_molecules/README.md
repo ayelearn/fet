@@ -1,0 +1,1 @@
+electronic_transition_in_diatomic_molecules

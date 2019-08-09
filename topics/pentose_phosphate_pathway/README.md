@@ -1,0 +1,1 @@
+pentose_phosphate_pathway

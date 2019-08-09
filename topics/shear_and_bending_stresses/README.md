@@ -1,0 +1,1 @@
+shear_and_bending_stresses

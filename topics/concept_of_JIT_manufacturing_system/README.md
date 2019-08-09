@@ -1,0 +1,1 @@
+concept_of_JIT_manufacturing_system

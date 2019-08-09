@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Schwarz lemma - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Schwarz_lemma","wgTitle":"Schwarz lemma","wgCurRevisionId":882967219,"wgRevisionId":882967219,"wgArticleId":1432589,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Wikipedia articles incorporating text from PlanetMath","Articles containing proofs","Riemann surfaces","Lemmas","Theorems in complex analysis"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov",
+"Dec"],"wgRelevantPageName":"Schwarz_lemma","wgRelevantArticleId":1432589,"wgRequestId":"XUW8yApAADkAAI7jRlUAAACV","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q1341771","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":
+"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["ext.math.scripts","ext.cite.ux-enhancements","ext.scribunto.logs","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart",
+"ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Gamma_abs_3D.png/1200px-Gamma_abs_3D.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Schwarz_lemma"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Schwarz_lemma&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Schwarz_lemma&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Schwarz_lemma"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Schwarz_lemma rootpage-Schwarz_lemma skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Schwarz lemma</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table class="vertical-navbox nowraplinks hlist" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%"><tbody><tr><td style="padding-top:0.4em;line-height:1.2em"><span style="font-size: 8pt; font-weight: none"><a href="/wiki/Mathematical_analysis" title="Mathematical analysis">Mathematical analysis</a> → <b>Complex analysis</b></span></td></tr><tr><th style="padding:0.2em 0.4em 0.2em;padding-top:0;font-size:145%;line-height:1.2em"><a href="/wiki/Complex_analysis" title="Complex analysis">Complex analysis</a></th></tr><tr><td style="padding:0.2em 0 0.4em"><a href="/wiki/File:Gamma_abs_3D.png" class="image"><img alt="Gamma abs 3D.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/33/Gamma_abs_3D.png/200px-Gamma_abs_3D.png" decoding="async" width="200" height="156" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/33/Gamma_abs_3D.png/300px-Gamma_abs_3D.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/33/Gamma_abs_3D.png/400px-Gamma_abs_3D.png 2x" data-file-width="1280" data-file-height="1000" /></a></td></tr><tr><th style="padding:0.1em">
+<a href="/wiki/Complex_number" title="Complex number">Complex numbers</a></th></tr><tr><td style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Real_number" title="Real number">Real number</a></li>
+<li><a href="/wiki/Imaginary_number" title="Imaginary number">Imaginary number</a></li>
+<li><a href="/wiki/Complex_plane" title="Complex plane">Complex plane</a></li>
+<li><a href="/wiki/Complex_conjugate" title="Complex conjugate">Complex conjugate</a></li>
+<li><a href="/wiki/Unit_complex_number" class="mw-redirect" title="Unit complex number">Unit complex number</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+<a href="/wiki/Complex_functions" class="mw-redirect" title="Complex functions">Complex functions</a></th></tr><tr><td style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Complex-valued_function" class="mw-redirect" title="Complex-valued function">Complex-valued function</a></li>
+<li><a href="/wiki/Analytic_function" title="Analytic function">Analytic function</a></li>
+<li><a href="/wiki/Holomorphic_function" title="Holomorphic function">Holomorphic function</a></li>
+<li><a href="/wiki/Cauchy%E2%80%93Riemann_equations" title="Cauchy–Riemann equations">Cauchy–Riemann equations</a></li>
+<li><a href="/wiki/Formal_power_series" title="Formal power series">Formal power series</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+<a href="/wiki/Complex_analysis#Major_results" title="Complex analysis">Basic Theory</a></th></tr><tr><td style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Zeros_and_poles" title="Zeros and poles">Zeros and poles</a></li>
+<li><a href="/wiki/Cauchy%27s_integral_theorem" title="Cauchy&#39;s integral theorem">Cauchy's integral theorem</a></li>
+<li><a href="/wiki/Antiderivative_(complex_analysis)" title="Antiderivative (complex analysis)">Local primitive</a></li>
+<li><a href="/wiki/Cauchy%27s_integral_formula" title="Cauchy&#39;s integral formula">Cauchy's integral formula</a></li>
+<li><a href="/wiki/Winding_number" title="Winding number">Winding number</a></li>
+<li><a href="/wiki/Laurent_series" title="Laurent series">Laurent series</a></li>
+<li><a href="/wiki/Isolated_singularity" title="Isolated singularity">Isolated singularity</a></li>
+<li><a href="/wiki/Residue_theorem" title="Residue theorem">Residue theorem</a></li>
+<li><a href="/wiki/Conformal_map" title="Conformal map">Conformal map</a></li>
+<li><a class="mw-selflink selflink">Schwarz lemma</a></li>
+<li><a href="/wiki/Harmonic_function" title="Harmonic function">Harmonic function</a></li>
+<li><a href="/wiki/Laplace%27s_equation" title="Laplace&#39;s equation">Laplace's equation</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+<a href="/wiki/Geometric_function_theory" title="Geometric function theory">Geometric function theory</a></th></tr><tr><th style="padding:0.1em">
+<a href="/wiki/Complex_analysis#History" title="Complex analysis">People</a></th></tr><tr><td style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Augustin-Louis_Cauchy" title="Augustin-Louis Cauchy">Augustin-Louis Cauchy</a></li>
+<li><a href="/wiki/Leonhard_Euler" title="Leonhard Euler">Leonhard Euler</a></li>
+<li><a href="/wiki/Carl_Friedrich_Gauss" title="Carl Friedrich Gauss">Carl Friedrich Gauss</a></li>
+<li><a href="/wiki/Jacques_Hadamard" title="Jacques Hadamard">Jacques Hadamard</a></li>
+<li><a href="/wiki/Kiyoshi_Oka" title="Kiyoshi Oka">Kiyoshi Oka</a></li>
+<li><a href="/wiki/Bernhard_Riemann" title="Bernhard Riemann">Bernhard Riemann</a></li>
+<li><a href="/wiki/Karl_Weierstrass" title="Karl Weierstrass">Karl Weierstrass</a></li></ul></td>
+</tr><tr><td style="padding:0.3em 0.4em 0.3em;font-weight:bold">
+<ul><li><a href="/wiki/File:Nuvola_apps_kmplot.svg" class="image"><img alt="Nuvola apps kmplot.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Nuvola_apps_kmplot.svg/16px-Nuvola_apps_kmplot.svg.png" decoding="async" width="16" height="16" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Nuvola_apps_kmplot.svg/24px-Nuvola_apps_kmplot.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Nuvola_apps_kmplot.svg/32px-Nuvola_apps_kmplot.svg.png 2x" data-file-width="400" data-file-height="400" /></a> <a href="/wiki/Portal:Analysis" class="mw-redirect" title="Portal:Analysis">Analysis&#32;portal</a></li></ul></td></tr><tr><td style="text-align:right;font-size:115%"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="/wiki/Template:Complex_analysis_sidebar" title="Template:Complex analysis sidebar"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Complex_analysis_sidebar" title="Template talk:Complex analysis sidebar"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Complex_analysis_sidebar&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p>In <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>, the <b>Schwarz lemma</b>, named after <a href="/wiki/Hermann_Amandus_Schwarz" class="mw-redirect" title="Hermann Amandus Schwarz">Hermann Amandus Schwarz</a>, is a result in <a href="/wiki/Complex_analysis" title="Complex analysis">complex analysis</a> about <a href="/wiki/Holomorphic_functions" class="mw-redirect" title="Holomorphic functions">holomorphic functions</a> from the <a href="/wiki/Open_set" title="Open set">open</a> <a href="/wiki/Unit_disk" title="Unit disk">unit disk</a> to itself. The lemma is less celebrated than stronger theorems, such as the <a href="/wiki/Riemann_mapping_theorem" title="Riemann mapping theorem">Riemann mapping theorem</a>, which it helps to prove. It is, however, one of the simplest results capturing the rigidity of holomorphic functions.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Statement"><span class="tocnumber">1</span> <span class="toctext">Statement</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Proof"><span class="tocnumber">2</span> <span class="toctext">Proof</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Schwarz–Pick_theorem"><span class="tocnumber">3</span> <span class="toctext">Schwarz&#8211;Pick theorem</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Proof_of_Schwarz–Pick_theorem"><span class="tocnumber">4</span> <span class="toctext">Proof of Schwarz&#8211;Pick theorem</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Further_generalizations_and_related_results"><span class="tocnumber">5</span> <span class="toctext">Further generalizations and related results</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Statement">Statement</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Schwarz_lemma&amp;action=edit&amp;section=1" title="Edit section: Statement">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<blockquote>
+<p><b>Schwarz Lemma.</b> Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {D} =\{z:|z|&lt;1\}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">D</mi>
+        </mrow>
+        <mo>=</mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <mi>z</mi>
+        <mo>:</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>z</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&lt;</mo>
+        <mn>1</mn>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {D} =\{z:|z|&lt;1\}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2588dfba24ccfe012e48d8b944afa7698c600076" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.141ex; height:2.843ex;" alt="{\displaystyle \mathbf {D} =\{z:|z|&lt;1\}}"/></span> be the open <a href="/wiki/Unit_disk" title="Unit disk">unit disk</a> in the <a href="/wiki/Complex_number" title="Complex number">complex plane</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbb {C} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">C</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {C} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f9add4085095b9b6d28d045fd9c92c2c09f549a7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.678ex; height:2.176ex;" alt="\mathbb {C} "/></span> centered at the <a href="/wiki/Origin_(mathematics)" title="Origin (mathematics)">origin</a> and let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f:\mathbf {D} \rightarrow \mathbb {C} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">D</mi>
+        </mrow>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">C</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:\mathbf {D} \rightarrow \mathbb {C} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1b53cdf58e8a4e181f3f24f62e4618969c00b291" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.558ex; height:2.509ex;" alt="{\displaystyle f:\mathbf {D} \rightarrow \mathbb {C} }"/></span> be a <a href="/wiki/Holomorphic_map" class="mw-redirect" title="Holomorphic map">holomorphic map</a> such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(0)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(0)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8d308c32c9894b88115262081194321ae7d9bbf3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.511ex; height:2.843ex;" alt="f(0)=0"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |f(z)|\leq 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |f(z)|\leq 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9911f1a792696e795238322266d257b2fcba73ae" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.731ex; height:2.843ex;" alt="{\displaystyle |f(z)|\leq 1}"/></span> on <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {D} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">D</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {D} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b2345293072878db24e119c580def49ad582e3ed" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.05ex; height:2.176ex;" alt="\mathbf{D}"/></span>.
+</p><p>Then, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |f(z)|\leq |z|\ \forall z\in \mathbf {D} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>z</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mtext>&#xA0;</mtext>
+        <mi mathvariant="normal">&#x2200;<!-- ∀ --></mi>
+        <mi>z</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">D</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |f(z)|\leq |z|\ \forall z\in \mathbf {D} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/35d3ab6296ed9be7ed91f86d9e5bff80d1a3ec69" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.802ex; height:2.843ex;" alt="{\displaystyle |f(z)|\leq |z|\ \forall z\in \mathbf {D} }"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |f'(0)|\leq 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |f'(0)|\leq 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dfadfa666b21a6679331e9c8062f50715ffc2495" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.532ex; height:3.009ex;" alt="|f&#039;(0)| \leq 1"/></span>.
+</p><p>Moreover, if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |f(z)|=|z|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>z</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |f(z)|=|z|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/92da83ed966eef1b9a7d367915d0ce532385b309" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.95ex; height:2.843ex;" alt="|f(z)|=|z|"/></span> for some non-zero <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle z}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>z</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle z}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bf368e72c009decd9b6686ee84a375632e11de98" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.088ex; height:1.676ex;" alt="z"/></span> or <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |f'(0)|=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |f'(0)|=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c681f851453ef191f6adcfd9237048fac6d5201e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.532ex; height:3.009ex;" alt="|f&#039;(0)| = 1"/></span>, then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)=az}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>a</mi>
+        <mi>z</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)=az}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a0b80a2c5084a1af7b9d56e5d6da86d6ab1c56c4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.592ex; height:2.843ex;" alt="f(z)=az"/></span> for some <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a\in \mathbb {C} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">C</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a\in \mathbb {C} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8d91ce77d373853ee8167f0d93fbb4949ff11cbf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.749ex; height:2.176ex;" alt="a \in \mathbb{C}"/></span> with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |a|=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>a</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |a|=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6863ee6da2e95e2b0f0d4673a17a17b39336d462" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.784ex; height:2.843ex;" alt="|a|=1"/></span>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p>
+</blockquote>
+<h2><span class="mw-headline" id="Proof">Proof</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Schwarz_lemma&amp;action=edit&amp;section=2" title="Edit section: Proof">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The proof is a straightforward application of the <a href="/wiki/Maximum_modulus_principle" title="Maximum modulus principle">maximum modulus principle</a> on the function
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle g(z)={\begin{cases}{\frac {f(z)}{z}}\,&amp;{\mbox{if }}z\neq 0\\f'(0)&amp;{\mbox{if }}z=0,\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mrow>
+                        <mi>f</mi>
+                        <mo stretchy="false">(</mo>
+                        <mi>z</mi>
+                        <mo stretchy="false">)</mo>
+                      </mrow>
+                      <mi>z</mi>
+                    </mfrac>
+                  </mrow>
+                  <mspace width="thinmathspace" />
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if&#xA0;</mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>z</mi>
+                  <mo>&#x2260;<!-- ≠ --></mo>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msup>
+                    <mi>f</mi>
+                    <mo>&#x2032;</mo>
+                  </msup>
+                  <mo stretchy="false">(</mo>
+                  <mn>0</mn>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if&#xA0;</mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>z</mi>
+                  <mo>=</mo>
+                  <mn>0</mn>
+                  <mo>,</mo>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g(z)={\begin{cases}{\frac {f(z)}{z}}\,&amp;{\mbox{if }}z\neq 0\\f'(0)&amp;{\mbox{if }}z=0,\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/37733dc3ce35b9a5a43b27592d42a62ec0e7c726" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:24.971ex; height:7.509ex;" alt="g(z)={\begin{cases}{\frac  {f(z)}{z}}\,&amp;{\mbox{if }}z\neq 0\\f&#039;(0)&amp;{\mbox{if }}z=0,\end{cases}}"/></span></dd></dl>
+<p>which is holomorphic on the whole of <b>D</b>,  including at the origin (because <i>f</i> is differentiable at the origin and fixes zero). Now if  <b>D</b><sub><i>r</i></sub> = {<i>z</i>&#160;: |<i>z</i>| ≤ <i>r</i>} denotes the closed disk of radius <i>r</i> centered at the origin, then the maximum modulus principle implies that, for <i>r</i> &lt; 1, given any <i>z</i> in <b>D</b><sub><i>r</i></sub>, there exists <i>z</i><sub><i>r</i></sub> on the boundary of <b>D</b><sub><i>r</i></sub> such that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |g(z)|\leq |g(z_{r})|={\frac {|f(z_{r})|}{|z_{r}|}}\leq {\frac {1}{r}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>z</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>r</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <msub>
+                <mi>z</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>r</mi>
+                </mrow>
+              </msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>r</mi>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |g(z)|\leq |g(z_{r})|={\frac {|f(z_{r})|}{|z_{r}|}}\leq {\frac {1}{r}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8963f2ce990e9e09e59bfc9bfa346742f442cfbc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:30.794ex; height:6.509ex;" alt="|g(z)|\leq |g(z_{r})|={\frac  {|f(z_{r})|}{|z_{r}|}}\leq {\frac  {1}{r}}."/></span></dd></dl>
+<p>As <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle r\rightarrow 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>r</mi>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle r\rightarrow 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/40071d59f67deed2a19d24c9354cbe0505b0d5da" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.825ex; height:2.176ex;" alt="r\rightarrow 1"/></span> we get <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |g(z)|\leq 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |g(z)|\leq 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/60e48d52e9b1cdcae2450a85e3c2e92d5626e627" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.568ex; height:2.843ex;" alt="|g(z)|\leq 1"/></span>.
+</p><p>Moreover, suppose that |<i>f</i>(<i>z</i>)| = |<i>z</i>| for some non-zero <i>z</i> in <b>D</b>, or |<i>f′</i>(0)| = 1. Then, |<i>g</i>(<i>z</i>)| = 1 at some point of <b>D</b>. So by the maximum modulus principle, <i>g</i>(<i>z</i>) is equal to a constant <i>a</i> such that |<i>a</i>| = 1. Therefore, <i>f</i>(<i>z</i>) = <i>az</i>, as desired.
+</p>
+<h2><span id="Schwarz.E2.80.93Pick_theorem"></span><span class="mw-headline" id="Schwarz–Pick_theorem">Schwarz&#8211;Pick theorem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Schwarz_lemma&amp;action=edit&amp;section=3" title="Edit section: Schwarz–Pick theorem">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A variant of the Schwarz lemma, known as the <b>Schwarz&#8211;Pick theorem</b> (after <a href="/wiki/Georg_Pick" class="mw-redirect" title="Georg Pick">Georg Pick</a>), characterizes the analytic automorphisms of the unit disc, i.e. <a href="/wiki/Bijective" class="mw-redirect" title="Bijective">bijective</a> <a href="/wiki/Holomorphic_map" class="mw-redirect" title="Holomorphic map">holomorphic mappings</a> of the unit disc to itself:
+</p><p>Let <i>f</i>&#160;: <b>D</b> → <b>D</b> be holomorphic.  Then, for all <i>z</i><sub>1</sub>,&#160;<i>z</i><sub>2</sub>&#160;∈&#160;<b>D</b>,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \left|{\frac {f(z_{1})-f(z_{2})}{1-{\overline {f(z_{1})}}f(z_{2})}}\right|\leq \left|{\frac {z_{1}-z_{2}}{1-{\overline {z_{1}}}z_{2}}}\right|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>|</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+              </mrow>
+              <mrow>
+                <mn>1</mn>
+                <mo>&#x2212;<!-- − --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mrow>
+                      <mi>f</mi>
+                      <mo stretchy="false">(</mo>
+                      <msub>
+                        <mi>z</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>1</mn>
+                        </mrow>
+                      </msub>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow>
+          <mo>|</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+              </mrow>
+              <mrow>
+                <mn>1</mn>
+                <mo>&#x2212;<!-- − --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <msub>
+                      <mi>z</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left|{\frac {f(z_{1})-f(z_{2})}{1-{\overline {f(z_{1})}}f(z_{2})}}\right|\leq \left|{\frac {z_{1}-z_{2}}{1-{\overline {z_{1}}}z_{2}}}\right|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6ebba2abaa77e7c9ec326b308a5d2dd6cac712be" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:30.311ex; height:7.843ex;" alt="\left|{\frac  {f(z_{1})-f(z_{2})}{1-\overline {f(z_{1})}f(z_{2})}}\right|\leq \left|{\frac  {z_{1}-z_{2}}{1-\overline {z_{1}}z_{2}}}\right|"/></span></dd></dl>
+<p>and, for all <i>z</i>&#160;∈&#160;<b>D</b>,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {\left|f'(z)\right|}{1-\left|f(z)\right|^{2}}}\leq {\frac {1}{1-\left|z\right|^{2}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo>|</mo>
+              <mrow>
+                <msup>
+                  <mi>f</mi>
+                  <mo>&#x2032;</mo>
+                </msup>
+                <mo stretchy="false">(</mo>
+                <mi>z</mi>
+                <mo stretchy="false">)</mo>
+              </mrow>
+              <mo>|</mo>
+            </mrow>
+            <mrow>
+              <mn>1</mn>
+              <mo>&#x2212;<!-- − --></mo>
+              <msup>
+                <mrow>
+                  <mo>|</mo>
+                  <mrow>
+                    <mi>f</mi>
+                    <mo stretchy="false">(</mo>
+                    <mi>z</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>|</mo>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mn>1</mn>
+              <mo>&#x2212;<!-- − --></mo>
+              <msup>
+                <mrow>
+                  <mo>|</mo>
+                  <mi>z</mi>
+                  <mo>|</mo>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\left|f'(z)\right|}{1-\left|f(z)\right|^{2}}}\leq {\frac {1}{1-\left|z\right|^{2}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/da5ac818c38e9fe80e98ced65184212139327573" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:23.383ex; height:7.009ex;" alt="{\frac  {\left|f&#039;(z)\right|}{1-\left|f(z)\right|^{2}}}\leq {\frac  {1}{1-\left|z\right|^{2}}}."/></span></dd></dl>
+<p>The expression
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle d(z_{1},z_{2})=\tanh ^{-1}\left|{\frac {z_{1}-z_{2}}{1-{\overline {z_{1}}}z_{2}}}\right|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>tanh</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mrow>
+          <mo>|</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+              </mrow>
+              <mrow>
+                <mn>1</mn>
+                <mo>&#x2212;<!-- − --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <msub>
+                      <mi>z</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d(z_{1},z_{2})=\tanh ^{-1}\left|{\frac {z_{1}-z_{2}}{1-{\overline {z_{1}}}z_{2}}}\right|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/19a66f51ab60014ec792f8c570d9e25216e1bae0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:28.932ex; height:6.176ex;" alt="d(z_{1},z_{2})=\tanh ^{{-1}}\left|{\frac  {z_{1}-z_{2}}{1-\overline {z_{1}}z_{2}}}\right|"/></span></dd></dl>
+<p>is the distance of the points <i>z</i><sub>1</sub>,&#160;<i>z</i><sub>2</sub> in the <a href="/wiki/Poincar%C3%A9_metric" title="Poincaré metric">Poincaré metric</a>, i.e. the metric in the Poincaré disc model for <a href="/wiki/Hyperbolic_geometry" title="Hyperbolic geometry">hyperbolic geometry</a> in dimension two. The Schwarz&#8211;Pick theorem then essentially states that a holomorphic map of the unit disk into itself <i>decreases</i> the distance of points in the Poincaré metric. If equality holds throughout in one of the two inequalities above (which is equivalent to saying that the holomorphic map preserves the distance in the Poincaré metric), then <i>f</i> must be an analytic automorphism of the unit disc, given by a <a href="/wiki/M%C3%B6bius_transformation" title="Möbius transformation">Möbius transformation</a> mapping the unit disc to itself.
+</p><p>An analogous statement on the <a href="/wiki/Upper_half-plane" title="Upper half-plane">upper half-plane</a> <b>H</b> can be made as follows:
+</p>
+<blockquote><p>Let <i>f</i>&#160;: <b>H</b> → <b>H</b> be holomorphic. Then, for all <i>z</i><sub>1</sub>,&#160;<i>z</i><sub>2</sub> ∈ <b>H</b>,
+</p><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \left|{\frac {f(z_{1})-f(z_{2})}{{\overline {f(z_{1})}}-f(z_{2})}}\right|\leq {\frac {\left|z_{1}-z_{2}\right|}{\left|{\overline {z_{1}}}-z_{2}\right|}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>|</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+              </mrow>
+              <mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mrow>
+                      <mi>f</mi>
+                      <mo stretchy="false">(</mo>
+                      <msub>
+                        <mi>z</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>1</mn>
+                        </mrow>
+                      </msub>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo>|</mo>
+              <mrow>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+              </mrow>
+              <mo>|</mo>
+            </mrow>
+            <mrow>
+              <mo>|</mo>
+              <mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <msub>
+                      <mi>z</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+              </mrow>
+              <mo>|</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left|{\frac {f(z_{1})-f(z_{2})}{{\overline {f(z_{1})}}-f(z_{2})}}\right|\leq {\frac {\left|z_{1}-z_{2}\right|}{\left|{\overline {z_{1}}}-z_{2}\right|}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c0bbce71cff3d7ba290baf2897ddde40275e73c9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:28.633ex; height:7.843ex;" alt="\left|{\frac  {f(z_{1})-f(z_{2})}{\overline {f(z_{1})}-f(z_{2})}}\right|\leq {\frac  {\left|z_{1}-z_{2}\right|}{\left|\overline {z_{1}}-z_{2}\right|}}."/></span></dd></dl>
+</blockquote>
+<p>This is an easy consequence of the Schwarz&#8211;Pick theorem mentioned above: One just needs to remember that the <a href="/wiki/Cayley_transform" title="Cayley transform">Cayley transform</a> <i>W</i>(<i>z</i>)&#160;=&#160;(<i>z</i>&#160;−&#160;<i>i</i>)/(<i>z</i>&#160;+&#160;<i>i</i>) maps the upper half-plane <b>H</b> conformally onto the unit disc&#160;<b>D</b>. Then, the map <i>W</i>&#160;o&#160;<i>f</i>&#160;o&#160;<i>W</i><sup>−1</sup> is a holomorphic map from <b>D</b> onto&#160;<b>D</b>.  Using the Schwarz&#8211;Pick theorem on this map, and finally simplifying the results by using the formula for <i>W</i>, we get the desired result. Also, for all <i>z</i>&#160;∈&#160;<b>H</b>,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {\left|f'(z)\right|}{{\text{Im}}(f(z))}}\leq {\frac {1}{{\text{Im}}(z)}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo>|</mo>
+              <mrow>
+                <msup>
+                  <mi>f</mi>
+                  <mo>&#x2032;</mo>
+                </msup>
+                <mo stretchy="false">(</mo>
+                <mi>z</mi>
+                <mo stretchy="false">)</mo>
+              </mrow>
+              <mo>|</mo>
+            </mrow>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mtext>Im</mtext>
+              </mrow>
+              <mo stretchy="false">(</mo>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>z</mi>
+              <mo stretchy="false">)</mo>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mtext>Im</mtext>
+              </mrow>
+              <mo stretchy="false">(</mo>
+              <mi>z</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\left|f'(z)\right|}{{\text{Im}}(f(z))}}\leq {\frac {1}{{\text{Im}}(z)}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/948513e5cdda3dcecff45fa6d69be6d3063da78b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:19.851ex; height:6.509ex;" alt="{\frac  {\left|f&#039;(z)\right|}{{\text{Im}}(f(z))}}\leq {\frac  {1}{{\text{Im}}(z)}}."/></span></dd></dl>
+<p>If equality holds for either the one or the other expressions, then <i>f</i> must be a <a href="/wiki/M%C3%B6bius_transformation" title="Möbius transformation">Möbius transformation</a> with real coefficients.  That is, if equality holds, then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)={\frac {az+b}{cz+d}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>a</mi>
+              <mi>z</mi>
+              <mo>+</mo>
+              <mi>b</mi>
+            </mrow>
+            <mrow>
+              <mi>c</mi>
+              <mi>z</mi>
+              <mo>+</mo>
+              <mi>d</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)={\frac {az+b}{cz+d}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5e1c54bc9fa6c6e6c9a0bf18de3e62b22fc8e08d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:14.267ex; height:5.676ex;" alt="f(z)={\frac  {az+b}{cz+d}}"/></span></dd></dl>
+<p>with <i>a</i>,&#160;<i>b</i>,&#160;<i>c</i>,&#160;<i>d</i> ∈ <b>R</b>, and <i>ad</i>&#160;−&#160;<i>bc</i>&#160;&gt;&#160;0.
+</p>
+<h2><span id="Proof_of_Schwarz.E2.80.93Pick_theorem"></span><span class="mw-headline" id="Proof_of_Schwarz–Pick_theorem">Proof of Schwarz&#8211;Pick theorem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Schwarz_lemma&amp;action=edit&amp;section=4" title="Edit section: Proof of Schwarz–Pick theorem">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The proof of the Schwarz&#8211;Pick theorem follows from Schwarz's lemma and the fact that a <a href="/wiki/M%C3%B6bius_transformation" title="Möbius transformation">Möbius transformation</a> of the form
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {z-z_{0}}{{\overline {z_{0}}}z-1}},\qquad |z_{0}|&lt;1,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>z</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <msub>
+                <mi>z</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>0</mn>
+                </mrow>
+              </msub>
+            </mrow>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mover>
+                  <msub>
+                    <mi>z</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>0</mn>
+                    </mrow>
+                  </msub>
+                  <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                </mover>
+              </mrow>
+              <mi>z</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mspace width="2em" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msub>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&lt;</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {z-z_{0}}{{\overline {z_{0}}}z-1}},\qquad |z_{0}|&lt;1,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/38d9392c5c6b8707eabaadb1895307a4252909a0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:22.193ex; height:5.676ex;" alt="{\frac  {z-z_{0}}{\overline {z_{0}}z-1}},\qquad |z_{0}|&lt;1,"/></span></dd></dl>
+<p>maps the unit circle to itself. Fix <i>z</i><sub>1</sub> and define the Möbius transformations
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle M(z)={\frac {z_{1}-z}{1-{\overline {z_{1}}}z}},\qquad \varphi (z)={\frac {f(z_{1})-z}{1-{\overline {f(z_{1})}}z}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>M</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>z</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>z</mi>
+            </mrow>
+            <mrow>
+              <mn>1</mn>
+              <mo>&#x2212;<!-- − --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mover>
+                  <msub>
+                    <mi>z</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                </mover>
+              </mrow>
+              <mi>z</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mspace width="2em" />
+        <mi>&#x03C6;<!-- φ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>z</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>z</mi>
+            </mrow>
+            <mrow>
+              <mn>1</mn>
+              <mo>&#x2212;<!-- − --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mover>
+                  <mrow>
+                    <mi>f</mi>
+                    <mo stretchy="false">(</mo>
+                    <msub>
+                      <mi>z</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                </mover>
+              </mrow>
+              <mi>z</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle M(z)={\frac {z_{1}-z}{1-{\overline {z_{1}}}z}},\qquad \varphi (z)={\frac {f(z_{1})-z}{1-{\overline {f(z_{1})}}z}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fd4e7eb91441b34276147e068572fddbde35ed1e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:41.723ex; height:7.176ex;" alt="M(z)={\frac  {z_{1}-z}{1-\overline {z_{1}}z}},\qquad \varphi (z)={\frac  {f(z_{1})-z}{1-\overline {f(z_{1})}z}}."/></span></dd></dl>
+<p>Since <i>M</i>(<i>z</i><sub>1</sub>)&#160;=&#160;0 and the Möbius transformation is invertible, the composition φ(<i>f</i>(<i>M</i><sup>−1</sup>(<i>z</i>))) maps 0 to 0 and the unit disk is mapped into itself. Thus we can apply Schwarz's lemma, which is to say
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \left|\varphi \left(f(M^{-1}(z))\right)\right|=\left|{\frac {f(z_{1})-f(M^{-1}(z))}{1-{\overline {f(z_{1})}}f(M^{-1}(z))}}\right|\leq |z|.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>|</mo>
+          <mrow>
+            <mi>&#x03C6;<!-- φ --></mi>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <msup>
+                  <mi>M</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <mo stretchy="false">(</mo>
+                <mi>z</mi>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">)</mo>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>|</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <msup>
+                  <mi>M</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <mo stretchy="false">(</mo>
+                <mi>z</mi>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">)</mo>
+              </mrow>
+              <mrow>
+                <mn>1</mn>
+                <mo>&#x2212;<!-- − --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mrow>
+                      <mi>f</mi>
+                      <mo stretchy="false">(</mo>
+                      <msub>
+                        <mi>z</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>1</mn>
+                        </mrow>
+                      </msub>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <msup>
+                  <mi>M</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <mo stretchy="false">(</mo>
+                <mi>z</mi>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>z</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left|\varphi \left(f(M^{-1}(z))\right)\right|=\left|{\frac {f(z_{1})-f(M^{-1}(z))}{1-{\overline {f(z_{1})}}f(M^{-1}(z))}}\right|\leq |z|.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/96041016e714ba172d909c149701f8ff359c77ec" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:47.661ex; height:7.843ex;" alt="\left|\varphi \left(f(M^{{-1}}(z))\right)\right|=\left|{\frac  {f(z_{1})-f(M^{{-1}}(z))}{1-\overline {f(z_{1})}f(M^{{-1}}(z))}}\right|\leq |z|."/></span></dd></dl>
+<p>Now calling <i>z</i><sub>2</sub>&#160;=&#160;<i>M</i><sup>−1</sup>(<i>z</i>) (which will still be in the unit disk) yields the desired conclusion
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \left|{\frac {f(z_{1})-f(z_{2})}{1-{\overline {f(z_{1})}}f(z_{2})}}\right|\leq \left|{\frac {z_{1}-z_{2}}{1-{\overline {z_{1}}}z_{2}}}\right|.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>|</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+              </mrow>
+              <mrow>
+                <mn>1</mn>
+                <mo>&#x2212;<!-- − --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mrow>
+                      <mi>f</mi>
+                      <mo stretchy="false">(</mo>
+                      <msub>
+                        <mi>z</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>1</mn>
+                        </mrow>
+                      </msub>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow>
+          <mo>|</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+              </mrow>
+              <mrow>
+                <mn>1</mn>
+                <mo>&#x2212;<!-- − --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <msub>
+                      <mi>z</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+                <msub>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left|{\frac {f(z_{1})-f(z_{2})}{1-{\overline {f(z_{1})}}f(z_{2})}}\right|\leq \left|{\frac {z_{1}-z_{2}}{1-{\overline {z_{1}}}z_{2}}}\right|.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8d5e76ca3cb3400c277c42dfdd29d84ee89eedb0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:31.345ex; height:7.843ex;" alt="\left|{\frac  {f(z_{1})-f(z_{2})}{1-\overline {f(z_{1})}f(z_{2})}}\right|\leq \left|{\frac  {z_{1}-z_{2}}{1-\overline {z_{1}}z_{2}}}\right|."/></span></dd></dl>
+<p>To prove the second part of the theorem, we rearrange the left-hand side into the difference quotient and let <i>z</i><sub>2</sub> tend to <i>z</i><sub>1</sub>.
+</p>
+<h2><span class="mw-headline" id="Further_generalizations_and_related_results">Further generalizations and related results</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Schwarz_lemma&amp;action=edit&amp;section=5" title="Edit section: Further generalizations and related results">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <a href="/wiki/Schwarz%E2%80%93Ahlfors%E2%80%93Pick_theorem" title="Schwarz–Ahlfors–Pick theorem">Schwarz–Ahlfors–Pick theorem</a> provides an analogous theorem for hyperbolic manifolds.
+</p><p><a href="/wiki/De_Branges%27_theorem" class="mw-redirect" title="De Branges&#39; theorem">De Branges' theorem</a>, formerly known as the Bieberbach Conjecture, is an important extension of the lemma, giving restrictions on the higher derivatives of <i>f</i> at 0 in case <i>f</i> is <a href="/wiki/Injective" class="mw-redirect" title="Injective">injective</a>; that is, <a href="/wiki/Univalent_mapping" class="mw-redirect" title="Univalent mapping">univalent</a>.
+</p><p>The <a href="/wiki/Koebe_1/4_theorem" class="mw-redirect" title="Koebe 1/4 theorem">Koebe 1/4 theorem</a> provides a related estimate in the case that <i>f</i> is univalent.
+</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Schwarz_lemma&amp;action=edit&amp;section=6" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">Theorem 5.34 in <cite class="citation book">Rodriguez, Jane P. Gilman, Irwin Kra, Rubi E. (2007). <i>Complex analysis&#160;: in the spirit of Lipman Bers</i> ([Online] ed.). New York: Springer. p.&#160;95. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-387-74714-9" title="Special:BookSources/978-0-387-74714-9"><bdi>978-0-387-74714-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Complex+analysis+%3A+in+the+spirit+of+Lipman+Bers&amp;rft.place=New+York&amp;rft.pages=95&amp;rft.edition=%5BOnline%5D&amp;rft.pub=Springer&amp;rft.date=2007&amp;rft.isbn=978-0-387-74714-9&amp;rft.aulast=Rodriguez&amp;rft.aufirst=Jane+P.+Gilman%2C+Irwin+Kra%2C+Rubi+E.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASchwarz+lemma" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></span>
+</li>
+</ol></div>
+<ul><li>Jurgen Jost, <i>Compact Riemann Surfaces</i> (2002), Springer-Verlag, New York. <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/3-540-43299-X" title="Special:BookSources/3-540-43299-X">3-540-43299-X</a> <i>(See Section 2.3)</i></li>
+<li><cite class="citation book">S. Dineen (1989). <i>The Schwarz Lemma</i>. Oxford. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-19-853571-6" title="Special:BookSources/0-19-853571-6"><bdi>0-19-853571-6</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Schwarz+Lemma&amp;rft.pub=Oxford&amp;rft.date=1989&amp;rft.isbn=0-19-853571-6&amp;rft.au=S.+Dineen&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASchwarz+lemma" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li></ul>
+<p><i>This article incorporates material from <a href="http://planetmath.org/node/33047" class="extiw" title="planetmath:33047">Schwarz lemma</a> on <a href="/wiki/PlanetMath" title="PlanetMath">PlanetMath</a>, which is licensed under the <a href="/wiki/Wikipedia:CC-BY-SA" class="mw-redirect" title="Wikipedia:CC-BY-SA">Creative Commons Attribution/Share-Alike License</a>.</i>
+</p>
+<!-- 
+NewPP limit report
+Parsed by mw1266
+Cached time: 20190803083655
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.208 seconds
+Real time usage: 0.388 seconds
+Preprocessor visited node count: 511/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 9528/2097152 bytes
+Template argument size: 455/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 1/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 7784/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.091/10.000 seconds
+Lua memory usage: 2.11 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  217.289      1 -total
+ 51.14%  111.123      2 Template:Cite_book
+ 26.40%   57.374      1 Template:Complex_analysis_sidebar
+ 17.85%   38.785      1 Template:Isbn
+  8.48%   18.427      1 Template:Portal-inline
+  5.83%   12.675      1 Template:Catalog_lookup_link
+  4.53%    9.833      1 Template:Error-small
+  3.58%    7.777      1 Template:Small
+  2.70%    5.858      3 Template:Yesno-no
+  1.97%    4.271      1 Template:PlanetMath_attribution
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1432589-0!canonical!math=5 and timestamp 20190803083654 and revision id 882967219
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Schwarz_lemma&amp;oldid=882967219">https://en.wikipedia.org/w/index.php?title=Schwarz_lemma&amp;oldid=882967219</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Riemann_surfaces" title="Category:Riemann surfaces">Riemann surfaces</a></li><li><a href="/wiki/Category:Lemmas" title="Category:Lemmas">Lemmas</a></li><li><a href="/wiki/Category:Theorems_in_complex_analysis" title="Category:Theorems in complex analysis">Theorems in complex analysis</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Wikipedia_articles_incorporating_text_from_PlanetMath" title="Category:Wikipedia articles incorporating text from PlanetMath">Wikipedia articles incorporating text from PlanetMath</a></li><li><a href="/wiki/Category:Articles_containing_proofs" title="Category:Articles containing proofs">Articles containing proofs</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Schwarz+lemma" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Schwarz+lemma" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Schwarz_lemma" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Schwarz_lemma" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Schwarz_lemma">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Schwarz_lemma&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Schwarz_lemma&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Schwarz_lemma" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Schwarz_lemma" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Schwarz_lemma&amp;oldid=882967219" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Schwarz_lemma&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1341771" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Schwarz_lemma&amp;id=882967219" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Schwarz+lemma">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Schwarz+lemma&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Schwarz_lemma&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Schwarzsches_Lemma" title="Schwarzsches Lemma – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Lemme_de_Schwarz" title="Lemme de Schwarz – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EC%8A%88%EB%B0%94%EB%A5%B4%EC%B8%A0_%EB%B3%B4%EC%A1%B0%EC%A0%95%EB%A6%AC" title="슈바르츠 보조정리 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Lemma_di_Schwarz" title="Lemma di Schwarz – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%9C%D7%9E%D7%AA_%D7%A9%D7%95%D7%95%D7%A8%D7%A5" title="למת שוורץ – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Lemma_van_Schwarz" title="Lemma van Schwarz – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E3%81%AE%E8%A3%9C%E9%A1%8C" title="シュワルツの補題 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Lemat_Schwarza" title="Lemat Schwarza – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0_%D0%A8%D0%B2%D0%B0%D1%80%D1%86%D0%B0" title="Лемма Шварца – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Schwarz_%C3%B6nsav%C4%B1" title="Schwarz önsavı – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%9B%D0%B5%D0%BC%D0%B0_%D0%A8%D0%B2%D0%B0%D1%80%D1%86%D0%B0" title="Лема Шварца – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E6%96%BD%E7%93%A6%E8%8C%A8%E5%BC%95%E7%90%86" title="施瓦茨引理 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1341771#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 12 February 2019, at 13:23<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Schwarz_lemma&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.208","walltime":"0.388","ppvisitednodes":{"value":511,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":9528,"limit":2097152},"templateargumentsize":{"value":455,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":1,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":7784,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  217.289      1 -total"," 51.14%  111.123      2 Template:Cite_book"," 26.40%   57.374      1 Template:Complex_analysis_sidebar"," 17.85%   38.785      1 Template:Isbn","  8.48%   18.427      1 Template:Portal-inline","  5.83%   12.675      1 Template:Catalog_lookup_link","  4.53%    9.833      1 Template:Error-small","  3.58%    7.777      1 Template:Small","  2.70%    5.858      3 Template:Yesno-no","  1.97%    4.271      1 Template:PlanetMath_attribution"]},"scribunto":{"limitreport-timeusage":{"value":"0.091","limit":"10.000"},"limitreport-memusage":{"value":2214739,"limit":52428800},"limitreport-logs":"table#1 {\n  [\"size\"] = \"tiny\",\n}\n"},"cachereport":{"origin":"mw1266","timestamp":"20190803083655","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Schwarz lemma","url":"https:\/\/en.wikipedia.org\/wiki\/Schwarz_lemma","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1341771","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1341771","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2005-01-26T04:25:04Z","dateModified":"2019-02-12T13:23:58Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/3\/33\/Gamma_abs_3D.png","headline":"lemma"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":133,"wgHostname":"mw1262"});});</script>
+</body>
+</html>

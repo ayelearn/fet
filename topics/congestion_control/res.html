@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Network congestion - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Network_congestion","wgTitle":"Network congestion","wgCurRevisionId":907586520,"wgRevisionId":907586520,"wgArticleId":430522,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with archiveurl citation errors","Pages using RFC magic links","Articles needing additional references from May 2013","All articles needing additional references","All articles with unsourced statements","Articles with unsourced statements from February 2019","Articles with unsourced statements from July 2010","Articles with unsourced statements from January 2011","All articles with dead external links","Articles with dead external links from September 2018","Articles with permanently dead external links",
+"Network performance","Teletraffic","Transport layer protocols","Technological failures","Packets (information technology)"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Network_congestion","wgRelevantArticleId":430522,"wgRequestId":"XUq4nQpAICAAAEE4pk0AAACQ","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Congestion_control","wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en"
+,"pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgInternalRedirectTargetUrl":"/wiki/Network_congestion#Congestion_control","wgWikibaseItemId":"Q180368","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready",
+"ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","ext.cite.ux-enhancements","ext.math.scripts","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp",
+"skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Network_congestion#Congestion_control"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Network_congestion&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Network_congestion&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Network_congestion#Congestion_control"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Network_congestion rootpage-Network_congestion skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Network congestion</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"><span class="mw-redirectedfrom">&#160;&#160;(Redirected from <a href="/w/index.php?title=Congestion_control&amp;redirect=no" class="mw-redirect" title="Congestion control">Congestion control</a>)</span></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><b>Network congestion</b> in <a href="/wiki/Data_networking" class="mw-redirect" title="Data networking">data networking</a> and <a href="/wiki/Queueing_theory" title="Queueing theory">queueing theory</a> is the reduced <a href="/wiki/Quality_of_service" title="Quality of service">quality of service</a> that occurs when a network node or link is carrying more data than it can handle. Typical effects include <a href="/wiki/Queueing_delay" class="mw-redirect" title="Queueing delay">queueing delay</a>, <a href="/wiki/Packet_loss" title="Packet loss">packet loss</a> or the <a href="/wiki/Blocking_probability" class="mw-redirect" title="Blocking probability">blocking</a> of new connections. A consequence of congestion is that an incremental increase in <a href="/wiki/Offered_load" title="Offered load">offered load</a> leads either only to a small increase or even a decrease in network <a href="/wiki/Throughput" title="Throughput">throughput</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p><p><a href="/wiki/Network_protocol" class="mw-redirect" title="Network protocol">Network protocols</a> that use aggressive <a href="/wiki/Retransmission_(data_networks)" title="Retransmission (data networks)">retransmissions</a> to compensate for packet loss due to congestion can increase congestion, even after the initial load has been reduced to a level that would not normally have induced network congestion. Such networks exhibit two stable states under the same level of load. The stable state with low throughput is known as <b>congestive collapse</b>.
+</p><p>Networks use <b>congestion control</b> and <b>congestion avoidance</b> techniques to try to avoid collapse. These include: <a href="/wiki/Exponential_backoff" title="Exponential backoff">exponential backoff</a> in protocols such as <a href="/wiki/Carrier_sense_multiple_access_with_collision_avoidance" class="mw-redirect" title="Carrier sense multiple access with collision avoidance">CSMA/CA</a> in <a href="/wiki/802.11" class="mw-redirect" title="802.11">802.11</a> and the similar <a href="/wiki/Carrier-sense_multiple_access_with_collision_detection" title="Carrier-sense multiple access with collision detection">CSMA/CD</a> in the original <a href="/wiki/Ethernet" title="Ethernet">Ethernet</a>, <a href="/wiki/Sliding_window" class="mw-redirect" title="Sliding window">window</a> reduction in <a href="/wiki/Transmission_control_protocol" class="mw-redirect" title="Transmission control protocol">TCP</a>, and <a href="/wiki/Fair_queueing" class="mw-redirect" title="Fair queueing">fair queueing</a> in devices such as <a href="/wiki/Router_(computing)" title="Router (computing)">routers</a> and <a href="/wiki/Network_switch" title="Network switch">network switches</a>. Other techniques that address congestion include priority schemes which transmit some packets with higher priority ahead of others and the explicit allocation of network resources to specific flows through the use of <a href="/wiki/Admission_control" title="Admission control">admission control</a>.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Network_capacity"><span class="tocnumber">1</span> <span class="toctext">Network capacity</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Congestive_collapse"><span class="tocnumber">2</span> <span class="toctext">Congestive collapse</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Congestion_control"><span class="tocnumber">3</span> <span class="toctext">Congestion control</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Theory_of_congestion_control"><span class="tocnumber">3.1</span> <span class="toctext">Theory of congestion control</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Classification_of_congestion_control_algorithms"><span class="tocnumber">3.2</span> <span class="toctext">Classification of congestion control algorithms</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Mitigation"><span class="tocnumber">4</span> <span class="toctext">Mitigation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Practical_network_congestion_avoidance"><span class="tocnumber">4.1</span> <span class="toctext">Practical network congestion avoidance</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#TCP/IP_congestion_avoidance"><span class="tocnumber">4.2</span> <span class="toctext">TCP/IP congestion avoidance</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Active_queue_management"><span class="tocnumber">4.3</span> <span class="toctext">Active queue management</span></a>
+<ul>
+<li class="toclevel-3 tocsection-10"><a href="#Random_early_detection"><span class="tocnumber">4.3.1</span> <span class="toctext">Random early detection</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#Robust_random_early_detection_(RRED)"><span class="tocnumber">4.3.2</span> <span class="toctext">Robust random early detection (RRED)</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Flowbased-RED/WRED"><span class="tocnumber">4.3.3</span> <span class="toctext">Flowbased-RED/WRED</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#Explicit_Congestion_Notification"><span class="tocnumber">4.3.4</span> <span class="toctext">Explicit Congestion Notification</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#Cisco_AQM:_Dynamic_buffer_limiting"><span class="tocnumber">4.3.5</span> <span class="toctext">Cisco AQM: Dynamic buffer limiting</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#TCP_window_shaping"><span class="tocnumber">4.3.6</span> <span class="toctext">TCP window shaping</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="#Backward_ECN"><span class="tocnumber">4.3.7</span> <span class="toctext">Backward ECN</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#Side_effects_of_congestive_collapse_avoidance"><span class="tocnumber">5</span> <span class="toctext">Side effects of congestive collapse avoidance</span></a>
+<ul>
+<li class="toclevel-2 tocsection-18"><a href="#Radio_links"><span class="tocnumber">5.1</span> <span class="toctext">Radio links</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Short-lived_connections"><span class="tocnumber">5.2</span> <span class="toctext">Short-lived connections</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="#Admission_control"><span class="tocnumber">6</span> <span class="toctext">Admission control</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#Books"><span class="tocnumber">9</span> <span class="toctext">Books</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Network_capacity">Network capacity</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=1" title="Edit section: Network capacity">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Network resources are limited, including <a href="/wiki/Router_(computing)" title="Router (computing)">router</a> processing time and link <a href="/wiki/Throughput" title="Throughput">throughput</a>. <a href="/wiki/Resource_contention" title="Resource contention">Resource contention</a> may occur on networks in a number of common circumstances. A <a href="/wiki/Wireless_LAN" title="Wireless LAN">wireless LAN</a> is easily filled by a single personal computer. Even on fast computer networks, the <a href="/wiki/Backbone_network" title="Backbone network">backbone</a> can easily be congested by a few servers and client PCs. <a href="/wiki/Denial-of-service_attack" title="Denial-of-service attack">Denial-of-service attacks</a> by <a href="/wiki/Botnet" title="Botnet">botnets</a> are capable of filling even the largest <a href="/wiki/Internet_backbone" title="Internet backbone">Internet backbone</a> network links, generating large-scale network congestion. In telephone networks, a <a href="/wiki/Mass_call_event" title="Mass call event">mass call event</a> can overwhelm digital telephone circuits.
+</p>
+<h2><span class="mw-headline" id="Congestive_collapse">Congestive collapse</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=2" title="Edit section: Congestive collapse">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Congestive collapse (or congestion collapse) is the condition in which congestion prevents or limits useful communication. Congestion collapse generally occurs at choke points in the network, where incoming traffic exceeds outgoing bandwidth. Connection points between a <a href="/wiki/Local_area_network" title="Local area network">local area network</a> and a <a href="/wiki/Wide_area_network" title="Wide area network">wide area network</a> are common choke points. When a network is in this condition, it settles into a stable state where traffic demand is high but little useful throughput is available, <a href="/wiki/Packet_delay" class="mw-redirect" title="Packet delay">packet delay</a> and loss occur and <a href="/wiki/Quality_of_service" title="Quality of service">quality of service</a> is extremely poor.
+</p><p>Congestive collapse was identified as a possible problem by 1984.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> It was first observed on the early Internet in October 1986, when the <a href="/wiki/NSFnet" class="mw-redirect" title="NSFnet">NSFnet</a> phase-I backbone dropped three orders of magnitude from its capacity of 32&#160;kbit/s to 40&#160;bit/s, which continued until end nodes started implementing <a href="/wiki/Van_Jacobson" title="Van Jacobson">Van Jacobson</a>'s <a href="/wiki/Congestion_control" class="mw-redirect" title="Congestion control">congestion control</a> between 1987 and 1988.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup> When more <a href="/wiki/Packet_(information_technology)" class="mw-redirect" title="Packet (information technology)">packets</a> were sent than could be handled by intermediate routers, the intermediate routers discarded many packets, expecting the end points of the network to retransmit the information. However, early TCP implementations had poor retransmission behavior. When this packet loss occurred, the endpoints sent extra packets that repeated the information lost, doubling the incoming rate.
+</p>
+<h2><span class="mw-headline" id="Congestion_control">Congestion control</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=3" title="Edit section: Congestion control">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Congestion control modulates traffic entry into a telecommunications network in order to avoid congestive collapse resulting from oversubscription.  This is typically accomplished by reducing the rate of packets. Whereas congestion control prevents senders from overwhelming the <i>network</i>, <a href="/wiki/Flow_control_(data)" title="Flow control (data)">flow control</a> prevents the sender from overwhelming the <i>receiver</i>.
+</p>
+<h3><span class="mw-headline" id="Theory_of_congestion_control">Theory of congestion control</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=4" title="Edit section: Theory of congestion control">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<table class="box-Unreferenced_section plainlinks metadata ambox ambox-content ambox-Unreferenced" role="presentation"><tbody><tr><td class="mbox-image"><div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" decoding="async" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div></td><td class="mbox-text"><div class="mbox-text-span">This section <b>does not <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">cite</a> any <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">sources</a></b>.<span class="hide-when-compact"> Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=Network_congestion&amp;action=edit">improve this section</a> by <a href="/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and <a href="/wiki/Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span>  <small class="date-container"><i>(<span class="date">May 2013</span>)</i></small><small class="hide-when-compact"><i> (<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></div></td></tr></tbody></table>
+<p>The theory on congestion control was pioneered by <a href="/wiki/Frank_Kelly_(professor)" class="mw-redirect" title="Frank Kelly (professor)">Frank Kelly</a>, who applied <a href="/wiki/Microeconomic_theory" class="mw-redirect" title="Microeconomic theory">microeconomic theory</a> and <a href="/wiki/Convex_optimization" title="Convex optimization">convex optimization</a> theory to describe how individuals controlling their own rates can interact to achieve an <i>optimal</i> network-wide rate allocation. Examples of <i>optimal</i> rate allocation are <a href="/wiki/Max-min_fairness" title="Max-min fairness">max-min fair allocation</a> and Kelly's suggestion of <a href="/wiki/Proportionally_fair" title="Proportionally fair">proportionally fair</a> allocation, although many others are possible.
+</p><p>Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e87000dd6142b81d041896a30fe58f0c3acb2158" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.129ex; height:2.009ex;" alt="x_{i}"/></span> be the rate of flow <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle i}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>i</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle i}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/add78d8608ad86e54951b8c8bd6c8d8416533d20" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.802ex; height:2.176ex;" alt="i"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle c_{l}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>l</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c_{l}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/161bd00c9b87a82436365401180e618862a74b57" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.729ex; height:2.009ex;" alt="c_{l}"/></span> be the capacity of link <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle l}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>l</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle l}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/829091f745070b9eb97a80244129025440a1cfac" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.693ex; height:2.176ex;" alt="l"/></span>, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle r_{li}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>r</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>l</mi>
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle r_{li}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d9ca9bc1d312360fe8b833b1d3a40c31f6b5a9b2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.339ex; height:2.009ex;" alt="r_{{li}}"/></span> be 1 if flow <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle i}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>i</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle i}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/add78d8608ad86e54951b8c8bd6c8d8416533d20" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.802ex; height:2.176ex;" alt="i"/></span> uses link <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle l}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>l</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle l}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/829091f745070b9eb97a80244129025440a1cfac" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.693ex; height:2.176ex;" alt="l"/></span> and 0 otherwise. Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="x"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle c}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>c</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/86a67b81c2de995bd608d5b2df50cd8cd7d92455" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.007ex; height:1.676ex;" alt="c"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle R}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>R</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle R}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4b0bfb3769bf24d80e15374dc37b0441e2616e33" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.764ex; height:2.176ex;" alt="R"/></span> be the corresponding vectors and matrix. Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle U(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>U</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle U(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6d626d3a1e65c94535c811c73fa83389cfb76683" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.922ex; height:2.843ex;" alt="U(x)"/></span> be an increasing, strictly <a href="/wiki/Concave_function" title="Concave function">concave</a> function, called the <a href="/wiki/Utility" title="Utility">utility</a>, which measures how much benefit a user obtains by transmitting at rate <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="x"/></span>. The optimal rate allocation then satisfies
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \max \limits _{x}\sum _{i}U(x_{i})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo form="prefix">max</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </munder>
+        <munder>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </munder>
+        <mi>U</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \max \limits _{x}\sum _{i}U(x_{i})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/74ba73a4843c9154d4e270c927c20ff6386c4969" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:14.176ex; height:5.509ex;" alt="\max \limits _{x}\sum _{i}U(x_{i})"/></span></dd></dl>
+<dl><dd>such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Rx\leq c}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>R</mi>
+        <mi>x</mi>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mi>c</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Rx\leq c}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b4e4c372141f3f56d786d87cd24e6d407dfd88e0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:7.199ex; height:2.343ex;" alt="Rx\leq c"/></span></dd></dl>
+<p>The <a href="/wiki/Lagrange_duality" class="mw-redirect" title="Lagrange duality">Lagrange dual</a> of this problem decouples, so that each flow sets its own rate, based only on a <i>price</i> signalled by the network. Each link capacity imposes a constraint, which gives rise to a <a href="/wiki/Lagrange_multiplier" title="Lagrange multiplier">Lagrange multiplier</a>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle p_{l}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>l</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{l}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8a6fe795eb4b6eb46accb014678dd510e755503f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:1.981ex; height:2.009ex;" alt="p_{l}"/></span>. The sum of these multipliers, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle y_{i}=\sum _{l}p_{l}r_{li},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <munder>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>l</mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>l</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>r</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>l</mi>
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle y_{i}=\sum _{l}p_{l}r_{li},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/75b8fc164439700db351c945a0f8ce8c35084cc2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:13.657ex; height:5.509ex;" alt="y_{i}=\sum _{l}p_{l}r_{{li}},"/></span> is the price to which the flow responds.
+</p><p>Congestion control then becomes a distributed optimisation algorithm. Many current congestion control algorithms can be modelled in this framework, with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle p_{l}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>l</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{l}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8a6fe795eb4b6eb46accb014678dd510e755503f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:1.981ex; height:2.009ex;" alt="p_{l}"/></span> being either the loss probability or the queueing delay at link <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle l}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>l</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle l}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/829091f745070b9eb97a80244129025440a1cfac" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.693ex; height:2.176ex;" alt="l"/></span>. A major weakness is that it assigns the same price to all flows, while sliding window flow control causes <a href="/wiki/Burst_transmission" title="Burst transmission">burstiness</a> that causes different flows to observe different loss or delay at a given link.
+</p>
+<h3><span class="mw-headline" id="Classification_of_congestion_control_algorithms">Classification of congestion control algorithms</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=5" title="Edit section: Classification of congestion control algorithms">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/TCP_congestion_control" title="TCP congestion control">TCP congestion control</a></div>
+<p>Among the ways to classify congestion control algorithms are:
+</p>
+<ul><li>By type and amount of feedback received from the network: Loss; delay; single-bit or multi-bit explicit signals</li>
+<li>By incremental deployability: Only sender needs modification; sender and receiver need modification; only router needs modification; sender, receiver and routers need modification.</li>
+<li>By performance aspect: high bandwidth-delay product networks; lossy links; fairness; advantage to short flows; variable-rate links</li>
+<li>By fairness criterion: Max-min fairness; proportionally fair; <a href="/w/index.php?title=Controlled_delay&amp;action=edit&amp;redlink=1" class="new" title="Controlled delay (page does not exist)">controlled delay</a></li></ul>
+<h2><span class="mw-headline" id="Mitigation">Mitigation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=6" title="Edit section: Mitigation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Mechanisms have been invented to prevent network congestion or to deal with a network collapse:
+</p>
+<ul><li><a href="/wiki/Network_scheduler" title="Network scheduler">Network scheduler</a>&#160;&#8211;&#32; <a href="/wiki/Active_queue_management" title="Active queue management">active queue management</a> which reorders or selectively drops network packets in the presence of congestion</li>
+<li><a href="/wiki/Explicit_Congestion_Notification" title="Explicit Congestion Notification">Explicit Congestion Notification</a>&#160;&#8211;&#32; an extension to IP and TCP communications protocols that adds a flow control mechanism</li>
+<li><a href="/wiki/TCP_congestion_control" title="TCP congestion control">TCP congestion control</a>&#160;&#8211;&#32; various implementations of efforts to deal with network congestion</li></ul>
+<p>The correct endpoint behavior is usually to repeat dropped information, but progressively slow the repetition rate. Provided all endpoints do this, the congestion lifts and the network resumes normal behavior.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (February 2019)">citation needed</span></a></i>&#93;</sup> Other strategies such as <a href="/wiki/Slow-start" class="mw-redirect" title="Slow-start">slow-start</a> ensure that new connections don't overwhelm the router before congestion detection initiates.
+</p><p>Common router congestion avoidance mechanisms include <a href="/wiki/Fair_queuing" title="Fair queuing">fair queuing</a> and other <a href="/wiki/Scheduling_algorithms" class="mw-redirect" title="Scheduling algorithms">scheduling algorithms</a>, and <a href="/wiki/Random_early_detection" title="Random early detection">random early detection</a> (RED) where packets are randomly dropped as congestion is detected. This proactively triggers the endpoints to slow transmission before congestion collapse occurs. Fair queuing is most useful in routers at choke points with a small number of connections passing through them. Larger routers must rely on RED.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (February 2019)">citation needed</span></a></i>&#93;</sup>
+</p><p>Some end-to-end protocols are designed behave well under congested conditions; <a href="/wiki/Transmission_control_protocol" class="mw-redirect" title="Transmission control protocol">TCP</a> is a well known example. The first TCP implementations to handle congestion were described in 1984,<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> but <a href="/wiki/Van_Jacobson" title="Van Jacobson">Van Jacobson</a>'s inclusion of an open source solution in the Berkeley Standard Distribution UNIX ("<a href="/wiki/BSD" class="mw-redirect" title="BSD">BSD</a>") in 1988 first provided good behavior.
+</p><p><a href="/wiki/User_Datagram_Protocol" title="User Datagram Protocol">UDP</a> does not control congestion. Protocols built atop UDP must handle congestion independently. Protocols that transmit at a fixed rate, independent of congestion, can be problematic. Real-time streaming protocols, including many <a href="/wiki/Voice_over_IP" title="Voice over IP">Voice over IP</a> protocols, have this property. Thus, special measures, such as <a href="/wiki/Quality_of_service" title="Quality of service">quality of service</a>, must be taken to keep packets from being dropped in the presence of congestion.
+</p><p>In general, congestion in pure datagram networks must be kept at the periphery of the network, where the above mechanisms can handle it. Congestion in the <a href="/wiki/Internet_backbone" title="Internet backbone">Internet backbone</a> is problematic. Cheap <a href="/wiki/Fiber-optic" class="mw-redirect" title="Fiber-optic">fiber-optic</a> lines have reduced costs in the Internet backbone allowing it to be provisioned with enough bandwidth to keep congestion at the periphery.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (July 2010)">citation needed</span></a></i>&#93;</sup>
+</p>
+<h3><span class="mw-headline" id="Practical_network_congestion_avoidance">Practical network congestion avoidance</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=7" title="Edit section: Practical network congestion avoidance">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Connection-oriented <a href="/wiki/Communications_protocol" class="mw-redirect" title="Communications protocol">protocols</a>, such as the widely used <a href="/wiki/Transmission_control_protocol" class="mw-redirect" title="Transmission control protocol">TCP</a> protocol, generally watch for packet errors, losses, or delays (see <a href="/wiki/Quality_of_Service" class="mw-redirect" title="Quality of Service">Quality of Service</a>) to adjust the transmit speed. Various network congestion avoidance processes, support different trade-offs.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup>
+</p>
+<h3><span id="TCP.2FIP_congestion_avoidance"></span><span class="mw-headline" id="TCP/IP_congestion_avoidance">TCP/IP congestion avoidance</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=8" title="Edit section: TCP/IP congestion avoidance">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <a href="/wiki/TCP_congestion_avoidance_algorithm" class="mw-redirect" title="TCP congestion avoidance algorithm">TCP congestion avoidance algorithm</a> is the primary basis for <a href="/wiki/Congestion_control" class="mw-redirect" title="Congestion control">congestion control</a> in the Internet.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup><sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup><sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup><sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup><sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup>
+</p><p>Problems occur when concurrent TCP flows experience <a href="/wiki/Computer_port_(software)" class="mw-redirect" title="Computer port (software)">port queue buffer</a> <a href="/wiki/Tail-drop" class="mw-redirect" title="Tail-drop">tail-drops</a>, defeating TCP's automatic congestion avoidance. All flows that experience port queue buffer tail-drop begin a TCP retrain at the same moment – this is called <a href="/wiki/TCP_global_synchronization" title="TCP global synchronization">TCP global synchronization</a>.
+</p>
+<h3><span class="mw-headline" id="Active_queue_management">Active queue management</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=9" title="Edit section: Active queue management">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Active_queue_management" title="Active queue management">Active queue management</a> (AQM) is the reorder or drop of network packets inside a transmit buffer that is associated with a <a href="/wiki/Network_interface_controller" title="Network interface controller">network interface controller</a> (NIC). This task is performed by the <a href="/wiki/Network_scheduler" title="Network scheduler">network scheduler</a>.
+</p>
+<h4><span class="mw-headline" id="Random_early_detection">Random early detection</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=10" title="Edit section: Random early detection">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>One solution is to use <a href="/wiki/Random_early_detection" title="Random early detection">random early detection</a> (RED) on the network equipment's <a href="/wiki/Computer_port_(software)" class="mw-redirect" title="Computer port (software)">port queue buffer</a>.<sup id="cite_ref-FloydRED_11-0" class="reference"><a href="#cite_note-FloydRED-11">&#91;11&#93;</a></sup><sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup> On <a href="/wiki/Computer_networking_device" class="mw-redirect" title="Computer networking device">network equipment</a> ports with more than one queue buffer, <a href="/wiki/Weighted_random_early_detection" title="Weighted random early detection">weighted random early detection</a> (WRED) could be used if available.
+</p><p>RED indirectly signals to sender and receiver by deleting some packets, e.g. when the average queue buffer lengths are more than a threshold (e.g. 50%) and deletes <a href="/wiki/Linear" class="mw-redirect" title="Linear">linearly</a> or <a href="/wiki/Cubic_function" title="Cubic function">cubically</a> more packets,<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup> up to e.g. 100%. The average queue buffer lengths are computed over 1 second intervals.
+</p>
+<h4><span id="Robust_random_early_detection_.28RRED.29"></span><span class="mw-headline" id="Robust_random_early_detection_(RRED)">Robust random early detection (RRED)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=11" title="Edit section: Robust random early detection (RRED)">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The <a href="/wiki/Robust_random_early_detection" title="Robust random early detection">robust random early detection</a> (RRED) algorithm was proposed to improve the TCP throughput against <a href="/wiki/Denial-of-service_attack" title="Denial-of-service attack">denial-of-service</a> (DoS) attacks, particularly low-rate denial-of-service (LDoS) attacks. Experiments confirmed that RED-like algorithms were vulnerable under Low-rate Denial-of-Service (LDoS) attacks due to the oscillating TCP queue size caused by the attacks.<sup id="cite_ref-RRED_14-0" class="reference"><a href="#cite_note-RRED-14">&#91;14&#93;</a></sup>
+</p>
+<h4><span id="Flowbased-RED.2FWRED"></span><span class="mw-headline" id="Flowbased-RED/WRED">Flowbased-RED/WRED</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=12" title="Edit section: Flowbased-RED/WRED">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Some network equipment is equipped with ports that can follow and measure each flow (flowbased-RED/WRED) and are thereby able to signal a too big bandwidth flow according to some quality of service policy. A policy could then divide the bandwidth among all flows by some criteria.
+</p>
+<h4><span class="mw-headline" id="Explicit_Congestion_Notification">Explicit Congestion Notification</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=13" title="Edit section: Explicit Congestion Notification">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Another approach is to use <a href="/wiki/Internet_Protocol" title="Internet Protocol">IP</a> <a href="/wiki/Explicit_Congestion_Notification" title="Explicit Congestion Notification">Explicit Congestion Notification</a> (ECN).<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">&#91;15&#93;</a></sup> ECN is used only when two hosts signal that they want to use it. With this method, a protocol bit is used to signal explicit congestion. This is better than the indirect packet delete congestion notification performed by the RED/WRED algorithms, but it requires explicit support by both hosts.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">&#91;16&#93;</a></sup> ECN coauthor <a href="/wiki/Sally_Floyd" title="Sally Floyd">Sally Floyd</a> published detailed information on ECN, including the version required for <a href="/wiki/Cisco_IOS" title="Cisco IOS">Cisco IOS</a>.<sup id="cite_ref-FloydRED_11-1" class="reference"><a href="#cite_note-FloydRED-11">&#91;11&#93;</a></sup>
+</p><p>When a router receives a packet marked as ECN-capable and anticipates (using RED) congestion, it sets the ECN flag, notifying the sender of congestion. The sender should respond by decreasing its transmission bandwidth, e.g., by decreasing the TCP window size (sending rate) or by other means.
+</p>
+<h4><span class="mw-headline" id="Cisco_AQM:_Dynamic_buffer_limiting">Cisco AQM: Dynamic buffer limiting</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=14" title="Edit section: Cisco AQM: Dynamic buffer limiting">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p><a href="/wiki/Cisco_Systems" title="Cisco Systems">Cisco Systems</a> (Engine IV and V) has the capability to classify flows as aggressive (bad) or adaptive (good). It ensures that no flows fill the port queues. DBL can utilize IP ECN instead of packet-delete-signalling.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">&#91;17&#93;</a></sup><sup id="cite_ref-18" class="reference"><a href="#cite_note-18">&#91;18&#93;</a></sup>
+</p>
+<h4><span class="mw-headline" id="TCP_window_shaping">TCP window shaping</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=15" title="Edit section: TCP window shaping">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/TCP_window_scale_option" title="TCP window scale option">TCP window scale option</a></div>
+<p>Congestion avoidance can be achieved efficiently by reducing traffic. When an application requests a large file, graphic or web page, it usually advertises a "window" of between 32K and 64K. This results in the server sending a full window of data (assuming the file is larger than the window). When many applications simultaneously request downloads, this data creates a congestion point at an upstream provider by flooding the queue. By using a device to reduce the window advertisement, the remote servers send less data, thus reducing the congestion. This technique can reduce network congestion by a factor of 40.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (January 2011)">citation needed</span></a></i>&#93;</sup>
+</p>
+<h4><span class="mw-headline" id="Backward_ECN"><span id="BECN"></span>Backward ECN</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=16" title="Edit section: Backward ECN">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Backward ECN (BECN) is another proposed congestion mechanism. It uses <a href="/wiki/ICMP_source_quench" class="mw-redirect" title="ICMP source quench">ICMP source quench</a> messages as an IP signalling mechanism to implement a basic ECN mechanism for IP networks, keeping congestion notifications at the IP level and requiring no negotiation between network endpoints. Effective congestion notifications can be propagated to transport layer protocols, such as TCP and UDP, for the appropriate adjustments.<sup id="cite_ref-19" class="reference"><a href="#cite_note-19">&#91;19&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Side_effects_of_congestive_collapse_avoidance">Side effects of congestive collapse avoidance</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=17" title="Edit section: Side effects of congestive collapse avoidance">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Radio_links">Radio links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=18" title="Edit section: Radio links">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The protocols that avoid congestive collapse are often based on the idea that data loss is caused by congestion. This is true in nearly all cases; errors during transmission are rare. However, this causes <a href="/wiki/WiFi" class="mw-redirect" title="WiFi">WiFi</a>, <a href="/wiki/3G" title="3G">3G</a> or other networks with a radio layer to have poor throughput in some cases since wireless networks are susceptible to data loss due to interference. The TCP connections running over a radio based <a href="/wiki/Physical_layer" title="Physical layer">physical layer</a> see the data loss and tend to erroneously believe that congestion is occurring.
+</p>
+<h3><span class="mw-headline" id="Short-lived_connections">Short-lived connections</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=19" title="Edit section: Short-lived connections">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The slow-start protocol performs badly for short connections. Older <a href="/wiki/Web_browser" title="Web browser">web browsers</a> created many short-lived connections and opened and closed the connection for each file. This kept most connections in the slow start mode, which slowed response times.
+</p><p>To avoid this problem, modern browsers either open multiple connections simultaneously or <a href="/wiki/HTTP_persistent_connections" class="mw-redirect" title="HTTP persistent connections">reuse one connection</a> for all files requested from a particular server. Initial performance can be poor, and many connections never get out of the slow-start regime, significantly increasing latency.
+</p>
+<h2><span class="mw-headline" id="Admission_control">Admission control</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=20" title="Edit section: Admission control">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="/wiki/Admission_control" title="Admission control">Admission control</a> requires devices to receive permission before establishing new network connections. If the new connection risks creating congestion, permission can be denied. One example of this is the use of Contention-Free Transmission Opportunities (CFTXOPs) in the <a href="/wiki/ITU-T" title="ITU-T">ITU-T</a> <a href="/wiki/G.hn" title="G.hn">G.hn</a> standard, which provides high-speed (up to 1 Gbit/s) <a href="/wiki/Local_area_network" title="Local area network">local area networking</a> over varying wires (power lines, phone lines and coaxial cables).
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=21" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="div-col columns column-width" style="-moz-column-width: 25em; -webkit-column-width: 25em; column-width: 25em;">
+<ul><li><a href="/wiki/Bandwidth_management" title="Bandwidth management">Bandwidth management</a></li>
+<li><a href="/wiki/Bufferbloat" title="Bufferbloat">Bufferbloat</a></li>
+<li><a href="/wiki/Cascading_failure" title="Cascading failure">Cascading failure</a></li>
+<li><a href="/wiki/Choke_exchange" title="Choke exchange">Choke exchange</a></li>
+<li><a href="/wiki/Erlang_(unit)" title="Erlang (unit)">Erlang (unit)</a></li>
+<li><a href="/wiki/Max-min_fairness" title="Max-min fairness">Max-min fairness</a></li>
+<li><a href="/wiki/Sorcerer%27s_Apprentice_Syndrome" title="Sorcerer&#39;s Apprentice Syndrome">Sorcerer's Apprentice Syndrome</a></li>
+<li><a href="/wiki/TCP_congestion-avoidance_algorithm" class="mw-redirect" title="TCP congestion-avoidance algorithm">TCP congestion-avoidance algorithm</a></li>
+<li><a href="/wiki/Teletraffic_engineering" title="Teletraffic engineering">Teletraffic engineering</a></li>
+<li><a href="/wiki/Thrashing_(computer_science)" title="Thrashing (computer science)">Thrashing</a></li>
+<li><a href="/wiki/Traffic_shaping" title="Traffic shaping">Traffic shaping</a></li>
+<li><a href="/wiki/Reliability_(computer_networking)" title="Reliability (computer networking)">Reliability (computer networking)</a></li></ul>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=22" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">(Al-Bahadili, 2012, p. 282)  Al-Bahadili, H. (2012). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=uNlplf2C03QC&amp;lpg=PA282&amp;dq=network%20congestion%20occurs%20when%20a%20link%20or%20node%20is%20carrying%20so%20much%20data%20that%20its%20quality%20of%20service%20deteriorates.&amp;pg=PA282#v=onepage&amp;q=network%20congestion%20occurs%20when%20a%20link%20or%20node%20is%20carrying%20so%20much%20data%20that%20its%20quality%20of%20service%20deteriorates.&amp;f=false">Simulation in computer network design and modeling: Use and analysis</a>.  Hershey, PA: IGI Global.</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style><a href="/wiki/Request_for_Comments_(identifier)" class="mw-redirect" title="Request for Comments (identifier)">RFC</a>&#160;<a rel="nofollow" class="external text" href="https://tools.ietf.org/html/rfc896">896</a></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation book">Fall, K.R.; Stevens, W.R. (2011). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=a23OAn5i8R0C"><i>TCP/IP Illustrated, Volume 1: The Protocols</i></a> (2 ed.). Pearson Education. p.&#160;739. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9780132808187" title="Special:BookSources/9780132808187"><bdi>9780132808187</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=TCP%2FIP+Illustrated%2C+Volume+1%3A+The+Protocols&amp;rft.pages=739&amp;rft.edition=2&amp;rft.pub=Pearson+Education&amp;rft.date=2011&amp;rft.isbn=9780132808187&amp;rft.au=Fall%2C+K.R.&amp;rft.au=Stevens%2C+W.R.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3Da23OAn5i8R0C&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANetwork+congestion" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation journal">Vinton G. Cerf; Robert E. Kahn (May 1974). "<i>A Protocol for Packet Network Intercommunication</i>". <i>IEEE Transactions on Communications</i>. <b>22</b> (5): 637–648. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1109%2Ftcom.1974.1092259">10.1109/tcom.1974.1092259</a>. Archived from the original<span class="cs1-visible-error error citation-comment"><code class="cs1-code">&#124;archive-url=</code> requires <code class="cs1-code">&#124;url=</code> (<a href="/wiki/Help:CS1_errors#archive_missing_url" title="Help:CS1 errors">help</a>)</span> on March 4, 2016.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Transactions+on+Communications&amp;rft.atitle=A+Protocol+for+Packet+Network+Intercommunication&amp;rft.volume=22&amp;rft.issue=5&amp;rft.pages=637-648&amp;rft.date=1974-05&amp;rft_id=info%3Adoi%2F10.1109%2Ftcom.1974.1092259&amp;rft.au=Vinton+G.+Cerf&amp;rft.au=Robert+E.+Kahn&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANetwork+congestion" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://citeseer.ist.psu.edu/lee00tcp.html">TCP Tunnels: Avoiding Congestion Collapse (2000)</a></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><a href="/wiki/Van_Jacobson" title="Van Jacobson">Van Jacobson</a>, <a href="/wiki/Michael_J._Karels" title="Michael J. Karels">Michael J. Karels</a>. <a rel="nofollow" class="external text" href="http://citeseer.ist.psu.edu/484335.html">Congestion Avoidance and Control</a> (1988). <i>Proceedings of the Sigcomm '88 Symposium</i>, vol.18(4): pp.314&#8211;329. Stanford, CA. August, 1988. This paper originated many of the congestion avoidance algorithms used in TCP/IP.</span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc2001">RFC 2001</a> - TCP Slow Start, Congestion Avoidance, Fast Retransmit, and Fast Recovery Algorithms</span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc2581">RFC 2581</a> - TCP Congestion Control</span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc3390">RFC 3390</a> - TCP Increasing TCP's Initial Window</span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.eventhelix.com/RealtimeMantra/Networking/TCP_Congestion_Avoidance.pdf">TCP Congestion Avoidance Explained via a Sequence Diagram</a></span>
+</li>
+<li id="cite_note-FloydRED-11"><span class="mw-cite-backlink">^ <a href="#cite_ref-FloydRED_11-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-FloydRED_11-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.icir.org/floyd/red.html">Sally Floyd: RED (Random Early Detection) Queue Management</a></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text">Sally Floyd, Van Jacobson. <a rel="nofollow" class="external text" href="http://citeseer.ist.psu.edu/462978.html">Random Early Detection Gateways for Congestion Avoidance</a> (1993). <i>IEEE/ACM Transactions on Networking</i>, vol.1(4): pp.397&#8211;413. Invented Random Early Detection (RED) gateways.</span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.ist-mobydick.org/publications/aqm_iscc2003.pdf">An Analytical RED Function Design Guaranteeing Stable System Behavior</a> Quote: "...The advantage of this function lies not only in avoiding heavy oscillations but also in avoiding link under-utilization at low loads. The applicability of the derived function is independent of the load range, no parameters are to be adjusted. Compared to the original linear drop function applicability is extended by far...Our example with realistic system parameters gives an approximation function of the cubic of the queue size..."</span>
+</li>
+<li id="cite_note-RRED-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-RRED_14-0">^</a></b></span> <span class="reference-text"><cite class="citation journal">Zhang, Changwang; Yin, Jianping; Cai, Zhiping; Chen, Weifeng (2010). <a rel="nofollow" class="external text" href="http://sites.google.com/site/cwzhangres/home/files/RREDRobustREDAlgorithmtoCounterLow-rateDenial-of-ServiceAttacks.pdf?attredirects=0">"RRED: Robust RED Algorithm to Counter Low-rate Denial-of-Service Attacks"</a> <span class="cs1-format">(PDF)</span>. <i>IEEE Communications Letters</i>. <a href="/wiki/IEEE" class="mw-redirect" title="IEEE">IEEE</a>. <b>14</b>: 489–491.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Communications+Letters&amp;rft.atitle=RRED%3A+Robust+RED+Algorithm+to+Counter+Low-rate+Denial-of-Service+Attacks&amp;rft.volume=14&amp;rft.pages=489-491&amp;rft.date=2010&amp;rft.aulast=Zhang&amp;rft.aufirst=Changwang&amp;rft.au=Yin%2C+Jianping&amp;rft.au=Cai%2C+Zhiping&amp;rft.au=Chen%2C+Weifeng&amp;rft_id=http%3A%2F%2Fsites.google.com%2Fsite%2Fcwzhangres%2Fhome%2Ffiles%2FRREDRobustREDAlgorithmtoCounterLow-rateDenial-of-ServiceAttacks.pdf%3Fattredirects%3D0&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANetwork+congestion" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc3168">RFC 3168</a> - The Addition of Explicit Congestion Notification (ECN) to IP</span>
+</li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://citeseer.ist.psu.edu/bagal99comparative.html">Comparative study of RED, ECN and TCP Rate Control (1999)</a></span>
+</li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20080821192051/http://www.cisco.com/univercd/cc/td/doc/product/lan/cat4000/12_1_19/config/qos.htm#1271743">"Active Queue Management"</a>. Archived from <a rel="nofollow" class="external text" href="http://www.cisco.com/univercd/cc/td/doc/product/lan/cat4000/12_1_19/config/qos.htm#1271743">the original</a> on 2008-08-21<span class="reference-accessdate">. Retrieved <span class="nowrap">2010-11-26</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Active+Queue+Management&amp;rft_id=http%3A%2F%2Fwww.cisco.com%2Funivercd%2Fcc%2Ftd%2Fdoc%2Fproduct%2Flan%2Fcat4000%2F12_1_19%2Fconfig%2Fqos.htm%231271743&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANetwork+congestion" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.cisco.com/univercd/cc/td/doc/product/lan/cat4000/12_1_19/config/qos.htm#1271759">Enabling Dynamic Buffer Limiting</a></span>
+</li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/draft-salim-jhsbnns-ecn-00">A proposal for Backward ECN for the Internet Protocol</a></span>
+</li>
+</ol></div>
+<ul><li>"Deploying IP and MPLS QoS for Multiservice Networks: Theory and Practice" by John Evans, Clarence Filsfils (Morgan Kaufmann, 2007, <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-12-370549-5" title="Special:BookSources/0-12-370549-5">0-12-370549-5</a>)</li>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc2914">RFC 2914</a> - Congestion Control Principles, Sally Floyd, September, 2000</li>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc896">RFC 896</a> - "Congestion Control in IP/TCP", John Nagle, 6 January 1984</li>
+<li>Introduction to <i><a rel="nofollow" class="external text" href="http://ee.lbl.gov/papers/congavoid.pdf">Congestion Avoidance and Control</a></i>, Van Jacobson and Michael J. Karels, November, 1988</li></ul>
+<h2><span class="mw-headline" id="Books">Books</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=23" title="Edit section: Books">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>"Deploying IP and MPLS QoS for Multiservice Networks: Theory and Practice" by John Evans, Clarence Filsfils (Morgan Kaufmann, 2007, <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-12-370549-5" title="Special:BookSources/0-12-370549-5">0-12-370549-5</a>)</li></ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Network_congestion&amp;action=edit&amp;section=24" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="div-col columns column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em;">
+<ul><li>Nagle, J. <a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc896">RFC 896</a>: <i>Congestion control in IP/TCP internetworks</i> (1984)</li>
+<li>Floyd, S. <a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc2914">RFC 2914</a>: <i>Congestion control principles</i> (2000)</li>
+<li>Floyd, S. and K. Fall, <i><a rel="nofollow" class="external text" href="http://www.aciri.org/floyd/end2end-paper.html">Promoting the Use of End-to-End Congestion Control in the Internet</a></i> (IEEE/ACM Transactions on Networking, August 1999)</li>
+<li>Sally Floyd, <i><a rel="nofollow" class="external text" href="http://www.ima.umn.edu/talks/workshops/10-22-24.99/floyd/floyd.pdf">On the Evolution of End-to-end Congestion Control in the Internet: An Idiosyncratic View</a></i> (IMA Workshop on Scaling Phenomena in Communication Networks, October 1999) (<i><a href="/wiki/Portable_Document_Format" class="mw-redirect" title="Portable Document Format">pdf</a> format</i>)</li>
+<li><a rel="nofollow" class="external text" href="http://www.linktionary.com/q/queuing.html">Linktionary term: Queuing</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cse.wustl.edu/~jain/papers.html">Pierre-Francois Quet, Sriram Chellappan, Arjan Durresi, Mukundan Sridharan, Hitay Ozbay, Raj Jain, " Guidelines for optimizing Multi-Level ECN, using fluid flow based TCP model"</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.washington.edu/homes/ratul/red-pd/">Sally Floyd, Ratul Mahajan, David Wetherall: RED-PD: RED with Preferential Dropping</a></li>
+<li><a rel="nofollow" class="external text" href="http://code.google.com/p/guduz/">A Generic Simple RED Simulator for educational purposes by Mehmet Suzen</a></li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20140221123729/http://utopia.duth.gr/~emamatas/jie2007.pdf">Approaches to Congestion Control in Packet Networks</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ecse.rpi.edu/Homepages/shivkuma/research/cong-papers.html">Papers in Congestion Control</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.icir.org/floyd/red.html">Random Early Detection Homepage</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.icir.org/floyd/ecn.html">Explicit Congestion Notification Homepage</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.icir.org/tfrc/">TFRC Homepage</a></li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20090113204941/http://www.ccs.neu.edu/home/ladrian/abstract/aimdfc.html">AIMD-FC Homepage</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.visualland.net/tcp_histrory.php?simu=tcp_fast_recovery&amp;protocol=TCP&amp;title=5.%20Fast%20recovery&amp;ctype=1"><sup class="noprint Inline-Template"><span style="white-space: nowrap;">&#91;<i></i></span></sup></a><i><a href="/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot"><span title="&#160;Dead link since September 2018">permanent dead link</span></a></i>&#93; TCP congestion control simulation: Fast recovery</li>
+<li><a rel="nofollow" class="external text" href="http://sites.google.com/site/cwzhangres/home/posts/recentpublicationsinlow-ratedosattacks">Recent Publications in low-rate denial-of-service (DoS) attacks</a></li></ul>
+</div>
+<!-- 
+NewPP limit report
+Parsed by mw1287
+Cached time: 20190723221751
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision]
+CPU time usage: 0.392 seconds
+Real time usage: 0.608 seconds
+Preprocessor visited node count: 2033/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 28993/2097152 bytes
+Template argument size: 4066/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 6/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 26072/5000000 bytes
+Number of Wikibase entities loaded: 1/400
+Lua time usage: 0.151/10.000 seconds
+Lua memory usage: 3.76 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  419.700      1 -total
+ 41.71%  175.059      1 Template:Reflist
+ 16.82%   70.603      1 Template:Unreferenced_section
+ 15.92%   66.828      4 Template:Citation_needed
+ 14.71%   61.739      5 Template:Fix
+ 13.83%   58.050      3 Template:Catalog_lookup_link
+ 12.94%   54.295      1 Template:Cite_book
+ 12.91%   54.184      1 Template:IETF_RFC
+ 12.03%   50.472      1 Template:Unreferenced
+ 11.03%   46.289      1 Template:Ambox
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:430522-0!canonical!math=5 and timestamp 20190723221750 and revision id 907586520
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Network_congestion&amp;oldid=907586520#Congestion_control">https://en.wikipedia.org/w/index.php?title=Network_congestion&amp;oldid=907586520#Congestion_control</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Network_performance" title="Category:Network performance">Network performance</a></li><li><a href="/wiki/Category:Teletraffic" title="Category:Teletraffic">Teletraffic</a></li><li><a href="/wiki/Category:Transport_layer_protocols" title="Category:Transport layer protocols">Transport layer protocols</a></li><li><a href="/wiki/Category:Technological_failures" title="Category:Technological failures">Technological failures</a></li><li><a href="/wiki/Category:Packets_(information_technology)" title="Category:Packets (information technology)">Packets (information technology)</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_with_archiveurl_citation_errors" title="Category:Pages with archiveurl citation errors">Pages with archiveurl citation errors</a></li><li><a href="/wiki/Category:Pages_using_RFC_magic_links" title="Category:Pages using RFC magic links">Pages using RFC magic links</a></li><li><a href="/wiki/Category:Articles_needing_additional_references_from_May_2013" title="Category:Articles needing additional references from May 2013">Articles needing additional references from May 2013</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_February_2019" title="Category:Articles with unsourced statements from February 2019">Articles with unsourced statements from February 2019</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_July_2010" title="Category:Articles with unsourced statements from July 2010">Articles with unsourced statements from July 2010</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_January_2011" title="Category:Articles with unsourced statements from January 2011">Articles with unsourced statements from January 2011</a></li><li><a href="/wiki/Category:All_articles_with_dead_external_links" title="Category:All articles with dead external links">All articles with dead external links</a></li><li><a href="/wiki/Category:Articles_with_dead_external_links_from_September_2018" title="Category:Articles with dead external links from September 2018">Articles with dead external links from September 2018</a></li><li><a href="/wiki/Category:Articles_with_permanently_dead_external_links" title="Category:Articles with permanently dead external links">Articles with permanently dead external links</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Network+congestion" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Network+congestion" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Network_congestion" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Network_congestion" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Network_congestion">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Network_congestion&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Network_congestion&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Network_congestion" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Network_congestion" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Network_congestion&amp;oldid=907586520" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Network_congestion&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q180368" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Network_congestion&amp;id=907586520" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Network+congestion">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Network+congestion&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Network_congestion&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%A7%D8%B2%D8%AF%D8%AD%D8%A7%D9%85_%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A9" title="ازدحام الشبكة – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Congesti%C3%B3_de_xarxa" title="Congestió de xarxa – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Zahlcen%C3%AD_s%C3%ADt%C4%9B" title="Zahlcení sítě – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/Undg%C3%A5else_af_datanet-trafikforstoppelse" title="Undgåelse af datanet-trafikforstoppelse – Danish" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/%C3%9Cberlastkontrolle" title="Überlastkontrolle – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Congesti%C3%B3n_de_red" title="Congestión de red – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eu"><a href="https://eu.wikipedia.org/wiki/Kongestio" title="Kongestio – Basque" lang="eu" hreflang="eu" class="interlanguage-link-target">Euskara</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%DA%A9%D9%86%D8%AA%D8%B1%D9%84_%D8%A7%D8%B2%D8%AF%D8%AD%D8%A7%D9%85" title="کنترل ازدحام – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Congestion_(r%C3%A9seau)" title="Congestion (réseau) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%ED%98%BC%EC%9E%A1_%EC%A0%9C%EC%96%B4" title="혼잡 제어 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Controllo_della_congestione" title="Controllo della congestione – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-mk"><a href="https://mk.wikipedia.org/wiki/%D0%9C%D1%80%D0%B5%D0%B6%D0%B5%D0%BD_%D0%B7%D0%B0%D1%81%D1%82%D0%BE%D1%98" title="Мрежен застој – Macedonian" lang="mk" hreflang="mk" class="interlanguage-link-target">Македонски</a></li><li class="interlanguage-link interwiki-ml"><a href="https://ml.wikipedia.org/wiki/%E0%B4%A8%E0%B5%86%E0%B4%B1%E0%B5%8D%E0%B4%B1%E0%B5%8D%E0%B4%B5%E0%B5%BC%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%8D_%E0%B4%95%E0%B5%BA%E0%B4%9C%E0%B4%B7%E0%B5%BB" title="നെറ്റ്വർക്ക് കൺജഷൻ – Malayalam" lang="ml" hreflang="ml" class="interlanguage-link-target">മലയാളം</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Congestie_(data)" title="Congestie (data) – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E8%BC%BB%E8%BC%B3%E5%88%B6%E5%BE%A1" title="輻輳制御 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Zapobieganie_przeci%C4%85%C5%BCeniu" title="Zapobieganie przeciążeniu – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0_%D1%81%D0%B5%D1%82%D0%B8" title="Перегрузка сети – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/%D0%9C%D1%80%D0%B5%D0%B6%D0%BD%D0%BE_%D0%B7%D0%B0%D0%B3%D1%83%D1%88%D0%B5%D1%9A%D0%B5" title="Мрежно загушење – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Tukkeutuminen" title="Tukkeutuminen – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6" title="拥塞控制 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q180368#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 23 July 2019, at 22:17<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Network_congestion&amp;mobileaction=toggle_view_mobile#Congestion_control" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.392","walltime":"0.608","ppvisitednodes":{"value":2033,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":28993,"limit":2097152},"templateargumentsize":{"value":4066,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":6,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":26072,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  419.700      1 -total"," 41.71%  175.059      1 Template:Reflist"," 16.82%   70.603      1 Template:Unreferenced_section"," 15.92%   66.828      4 Template:Citation_needed"," 14.71%   61.739      5 Template:Fix"," 13.83%   58.050      3 Template:Catalog_lookup_link"," 12.94%   54.295      1 Template:Cite_book"," 12.91%   54.184      1 Template:IETF_RFC"," 12.03%   50.472      1 Template:Unreferenced"," 11.03%   46.289      1 Template:Ambox"]},"scribunto":{"limitreport-timeusage":{"value":"0.151","limit":"10.000"},"limitreport-memusage":{"value":3940613,"limit":52428800}},"cachereport":{"origin":"mw1287","timestamp":"20190723221751","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Network congestion","url":"https:\/\/en.wikipedia.org\/wiki\/Network_congestion#Congestion_control","sameAs":"http:\/\/www.wikidata.org\/entity\/Q180368","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q180368","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-01-14T12:40:37Z","dateModified":"2019-07-23T22:17:44Z","headline":"reduced quality of service due to high network traffic"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":108,"wgHostname":"mw1330"});});</script>
+</body>
+</html>

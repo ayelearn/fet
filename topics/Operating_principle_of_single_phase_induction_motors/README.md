@@ -1,0 +1,1 @@
+Operating_principle_of_single_phase_induction_motors

@@ -1,0 +1,1 @@
+Standards_of_quality

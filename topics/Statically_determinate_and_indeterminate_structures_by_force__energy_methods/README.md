@@ -1,0 +1,1 @@
+Statically_determinate_and_indeterminate_structures_by_force__energy_methods

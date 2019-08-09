@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Volume integral - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Volume_integral","wgTitle":"Volume integral","wgCurRevisionId":901116574,"wgRevisionId":901116574,"wgArticleId":1247265,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Multivariable calculus"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Volume_integral","wgRelevantArticleId":1247265,"wgRequestId":"XUhwbApAICIAAI1G5KoAAAAL"
+,"wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q1788036","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready",
+"user.tokens":"loading","ext.math.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["ext.math.scripts","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks",
+"ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Volume_integral"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Volume_integral&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Volume_integral&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Volume_integral"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Volume_integral rootpage-Volume_integral skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Volume integral</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table class="vertical-navbox nowraplinks plainlist" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%"><tbody><tr><td style="padding-top:0.4em;line-height:1.2em">Part of a series of articles about</td></tr><tr><th style="padding:0.2em 0.4em 0.2em;padding-top:0;font-size:145%;line-height:1.2em;padding-bottom:0.25em;"><a href="/wiki/Calculus" title="Calculus">Calculus</a></th></tr><tr><td style="padding:0.3em 0.4em 0.3em;font-weight:bold;border-top: 1px solid #aaa; border-bottom: 1px solid #aaa;padding:0.15em 0.25em 0.3em;font-weight:normal;">
+<ul><li><a href="/wiki/Fundamental_theorem_of_calculus" title="Fundamental theorem of calculus">Fundamental theorem</a></li></ul>
+<div class="hlist">
+<ul><li><a href="/wiki/Limit_of_a_function" title="Limit of a function">Limits of functions</a></li>
+<li><a href="/wiki/Continuous_function" title="Continuous function">Continuity</a></li></ul>
+</div><div class="hlist">
+<ul><li><a href="/wiki/Mean_value_theorem" title="Mean value theorem">Mean value theorem</a></li>
+<li><a href="/wiki/Rolle%27s_theorem" title="Rolle&#39;s theorem">Rolle's theorem</a></li></ul>
+</div></td></tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;;display:block;margin-top:0.65em;"><span style="font-size:110%;"><a href="/wiki/Differential_calculus" title="Differential calculus">Differential</a></span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none"><tbody><tr><th style="padding:0.1em">
+Definitions</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Derivative" title="Derivative">Derivative</a>&#160;(<a href="/wiki/Generalizations_of_the_derivative" title="Generalizations of the derivative">generalizations</a>)</li></ul>
+<div class="hlist" style="padding:0.1em 0;line-height:1.2em;">
+<ul><li><a href="/wiki/Differential_(mathematics)" title="Differential (mathematics)">Differential</a>
+<ul><li><a href="/wiki/Differential_(infinitesimal)" title="Differential (infinitesimal)">infinitesimal</a></li>
+<li><a href="/wiki/Differential_of_a_function" title="Differential of a function">of a function</a></li>
+<li><a href="/wiki/Total_differential" class="mw-redirect" title="Total differential">total</a></li></ul></li></ul>
+</div></td>
+</tr><tr><th style="padding:0.1em">
+Concepts</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<div class="hlist">
+<ul><li><a href="/wiki/Notation_for_differentiation" title="Notation for differentiation">Differentiation notation</a></li>
+<li><a href="/wiki/Second_derivative" title="Second derivative">Second derivative</a></li>
+<li><a href="/wiki/Third_derivative" title="Third derivative">Third derivative</a></li>
+<li><a href="/wiki/Change_of_variables" title="Change of variables">Change of variables</a></li>
+<li><a href="/wiki/Implicit_function" title="Implicit function">Implicit differentiation</a></li>
+<li><a href="/wiki/Related_rates" title="Related rates">Related rates</a></li>
+<li><a href="/wiki/Taylor%27s_theorem" title="Taylor&#39;s theorem">Taylor's theorem</a></li></ul>
+</div></td>
+</tr><tr><th style="padding:0.1em">
+<a href="/wiki/Differentiation_rules" title="Differentiation rules">Rules and identities</a></th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<div class="hlist">
+<ul><li><a href="/wiki/Sum_rule_in_differentiation" title="Sum rule in differentiation">Sum</a></li>
+<li><a href="/wiki/Product_rule" title="Product rule">Product</a></li>
+<li><a href="/wiki/Chain_rule" title="Chain rule">Chain</a></li>
+<li><a href="/wiki/Power_rule" title="Power rule">Power</a></li>
+<li><a href="/wiki/Quotient_rule" title="Quotient rule">Quotient</a></li>
+<li><a href="/wiki/Inverse_functions_and_differentiation" title="Inverse functions and differentiation">Inverse</a></li>
+<li><a href="/wiki/General_Leibniz_rule" title="General Leibniz rule">General Leibniz</a></li>
+<li><a href="/wiki/Fa%C3%A0_di_Bruno%27s_formula" title="Faà di Bruno&#39;s formula">Faà di Bruno's formula</a></li></ul>
+</div></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;"><span style="font-size:110%;"><a href="/wiki/Integral" title="Integral">Integral</a></span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none"><tbody><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Lists_of_integrals" title="Lists of integrals">Lists of integrals</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+Definitions</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Antiderivative" title="Antiderivative">Antiderivative</a></li>
+<li><a href="/wiki/Integral" title="Integral">Integral</a>&#160;(<a href="/wiki/Improper_integral" title="Improper integral">improper</a>)</li>
+<li><a href="/wiki/Riemann_integral" title="Riemann integral">Riemann integral</a></li>
+<li><a href="/wiki/Lebesgue_integration" title="Lebesgue integration">Lebesgue integration</a></li>
+<li><a href="/wiki/Contour_integration" title="Contour integration">Contour integration</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+Integration by</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Integration_by_parts" title="Integration by parts">Parts</a></li>
+<li><a href="/wiki/Disc_integration" title="Disc integration">Discs</a></li>
+<li><a href="/wiki/Shell_integration" title="Shell integration">Cylindrical shells</a></li>
+<li><a href="/wiki/Integration_by_substitution" title="Integration by substitution">Substitution</a>&#160;(<a href="/wiki/Trigonometric_substitution" title="Trigonometric substitution">trigonometric</a>)</li>
+<li><a href="/wiki/Partial_fractions_in_integration" class="mw-redirect" title="Partial fractions in integration">Partial fractions</a></li>
+<li><a href="/wiki/Order_of_integration_(calculus)" title="Order of integration (calculus)">Order</a></li>
+<li><a href="/wiki/Integration_by_reduction_formulae" title="Integration by reduction formulae">Reduction formulae</a></li></ul></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;"><span style="font-size:110%;"><a href="/wiki/Series_(mathematics)" title="Series (mathematics)">Series</a></span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none"><tbody><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Geometric_series" title="Geometric series">Geometric</a>&#160;(<a href="/wiki/Arithmetico%E2%80%93geometric_sequence" title="Arithmetico–geometric sequence">arithmetico-geometric</a>)</li>
+<li><a href="/wiki/Harmonic_series_(mathematics)" title="Harmonic series (mathematics)">Harmonic</a></li>
+<li><a href="/wiki/Alternating_series" title="Alternating series">Alternating</a></li>
+<li><a href="/wiki/Power_series" title="Power series">Power</a></li>
+<li><a href="/wiki/Binomial_series" title="Binomial series">Binomial</a></li>
+<li><a href="/wiki/Taylor_series" title="Taylor series">Taylor</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+<a href="/wiki/Convergence_tests" title="Convergence tests">Convergence tests</a></th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Term_test" title="Term test">Summand limit (term test)</a></li>
+<li><a href="/wiki/Ratio_test" title="Ratio test">Ratio</a></li>
+<li><a href="/wiki/Root_test" title="Root test">Root</a></li>
+<li><a href="/wiki/Integral_test_for_convergence" title="Integral test for convergence">Integral</a></li>
+<li><a href="/wiki/Direct_comparison_test" title="Direct comparison test">Direct comparison</a></li>
+<li><br /><a href="/wiki/Limit_comparison_test" title="Limit comparison test">Limit comparison</a></li>
+<li><a href="/wiki/Alternating_series_test" title="Alternating series test">Alternating series</a></li>
+<li><a href="/wiki/Cauchy_condensation_test" title="Cauchy condensation test">Cauchy condensation</a></li>
+<li><a href="/wiki/Dirichlet%27s_test" title="Dirichlet&#39;s test">Dirichlet</a></li>
+<li><a href="/wiki/Abel%27s_test" title="Abel&#39;s test">Abel</a></li></ul></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;"><span style="font-size:110%;"><a href="/wiki/Vector_calculus" title="Vector calculus">Vector</a></span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none"><tbody><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Gradient" title="Gradient">Gradient</a></li>
+<li><a href="/wiki/Divergence" title="Divergence">Divergence</a></li>
+<li><a href="/wiki/Curl_(mathematics)" title="Curl (mathematics)">Curl</a></li>
+<li><a href="/wiki/Laplace_operator" title="Laplace operator">Laplacian</a></li>
+<li><a href="/wiki/Directional_derivative" title="Directional derivative">Directional derivative</a></li>
+<li><a href="/wiki/Vector_calculus_identities" title="Vector calculus identities">Identities</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+Theorems</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Divergence_theorem" title="Divergence theorem">Divergence</a></li>
+<li><a href="/wiki/Gradient_theorem" title="Gradient theorem">Gradient</a></li>
+<li><a href="/wiki/Green%27s_theorem" title="Green&#39;s theorem">Green's</a></li>
+<li><a href="/wiki/Kelvin%E2%80%93Stokes_theorem" title="Kelvin–Stokes theorem">Kelvin–Stokes</a></li>
+<li><a href="/wiki/Stokes%27_theorem" title="Stokes&#39; theorem">Stokes</a></li></ul></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;"><span style="font-size:110%;"><a href="/wiki/Multivariable_calculus" title="Multivariable calculus">Multivariable</a></span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none"><tbody><tr><th style="padding:0.1em">
+Formalisms</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Matrix_calculus" title="Matrix calculus">Matrix</a></li>
+<li><a href="/wiki/Tensor_calculus" title="Tensor calculus">Tensor</a></li>
+<li><a href="/wiki/Exterior_derivative" title="Exterior derivative">Exterior</a></li>
+<li><a href="/wiki/Geometric_calculus" title="Geometric calculus">Geometric</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+Definitions</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Partial_derivative" title="Partial derivative">Partial derivative</a></li>
+<li><a href="/wiki/Multiple_integral" title="Multiple integral">Multiple integral</a></li>
+<li><a href="/wiki/Line_integral" title="Line integral">Line integral</a></li>
+<li><a href="/wiki/Surface_integral" title="Surface integral">Surface integral</a></li>
+<li><a class="mw-selflink selflink">Volume integral</a></li>
+<li><a href="/wiki/Jacobian_matrix_and_determinant" title="Jacobian matrix and determinant">Jacobian</a></li>
+<li><a href="/wiki/Hessian_matrix" title="Hessian matrix">Hessian</a></li></ul></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;"><span style="font-size:110%;">Specialized</span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><div class="hlist">
+<ul><li><a href="/wiki/Fractional_calculus" title="Fractional calculus">Fractional</a></li>
+<li><a href="/wiki/Malliavin_calculus" title="Malliavin calculus">Malliavin</a></li>
+<li><a href="/wiki/Stochastic_calculus" title="Stochastic calculus">Stochastic</a></li>
+<li><a href="/wiki/Calculus_of_variations" title="Calculus of variations">Variations</a></li></ul>
+</div></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;"><span style="font-size:110%;"><a href="/wiki/Glossary_of_calculus" title="Glossary of calculus">Glossary of calculus</a></span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><div class="hlist">
+<ul><li><a href="/wiki/Glossary_of_calculus" title="Glossary of calculus">Glossary of calculus</a></li></ul>
+</div></div></div></td>
+</tr><tr><td style="text-align:right;font-size:115%;padding-top: 0.6em;"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="/wiki/Template:Calculus" title="Template:Calculus"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Calculus" title="Template talk:Calculus"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Calculus&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p>In <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>&#8212;in particular, in <a href="/wiki/Multivariable_calculus" title="Multivariable calculus">multivariable calculus</a>&#8212;a <b>volume integral</b> refers to an <a href="/wiki/Integral" title="Integral">integral</a> over a  3-<a href="/wiki/Dimension" title="Dimension">dimensional</a> domain, that is, it is a special case of <a href="/wiki/Multiple_integral" title="Multiple integral">multiple integrals</a>. Volume integrals are especially important in physics for many applications, for example, to calculate flux densities.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#In_coordinates"><span class="tocnumber">1</span> <span class="toctext">In coordinates</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Example_1"><span class="tocnumber">2</span> <span class="toctext">Example 1</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#External_links"><span class="tocnumber">4</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="In_coordinates">In coordinates</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Volume_integral&amp;action=edit&amp;section=1" title="Edit section: In coordinates">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>It can also mean a <a href="/wiki/Multiple_integral" title="Multiple integral">triple integral</a> within a region <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle D\subset \mathbb {R} ^{3}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>D</mi>
+        <mo>&#x2282;<!-- ⊂ --></mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">R</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D\subset \mathbb {R} ^{3}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/13996a303eacb86889fecb7cd989b9c67c495b9a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:7.755ex; height:2.676ex;" alt="{\displaystyle D\subset \mathbb {R} ^{3}}"/></span> of a <a href="/wiki/Function_(mathematics)" title="Function (mathematics)">function</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x,y,z),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x,y,z),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/71106bab3a7c5be0d86e38ab3bd4f91cf94e9115" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.376ex; height:2.843ex;" alt="f(x,y,z),"/></span> and is usually written as:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \iiint _{D}f(x,y,z)\,dx\,dy\,dz.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222D;<!-- ∭ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>D</mi>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>x</mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>y</mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \iiint _{D}f(x,y,z)\,dx\,dy\,dz.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f5fe06bc9a91420054921ca946e40ee29f2f7831" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:23.437ex; height:5.676ex;" alt="{\displaystyle \iiint _{D}f(x,y,z)\,dx\,dy\,dz.}"/></span></dd></dl>
+<p>A volume integral in <a href="/wiki/Cylindrical_coordinates" class="mw-redirect" title="Cylindrical coordinates">cylindrical coordinates</a> is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \iiint _{D}f(\rho ,\varphi ,z)\rho \,d\rho \,d\varphi \,dz,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222D;<!-- ∭ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>D</mi>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03C1;<!-- ρ --></mi>
+        <mo>,</mo>
+        <mi>&#x03C6;<!-- φ --></mi>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mi>&#x03C1;<!-- ρ --></mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>&#x03C1;<!-- ρ --></mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>&#x03C6;<!-- φ --></mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \iiint _{D}f(\rho ,\varphi ,z)\rho \,d\rho \,d\varphi \,dz,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ade33e992af29f94b9b8c494f6dcac99d89950f6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:25.113ex; height:5.676ex;" alt="{\displaystyle \iiint _{D}f(\rho ,\varphi ,z)\rho \,d\rho \,d\varphi \,dz,}"/></span></dd></dl>
+<p>and a volume integral in <a href="/wiki/Spherical_coordinates" class="mw-redirect" title="Spherical coordinates">spherical coordinates</a> (using the ISO convention for angles with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \varphi }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03C6;<!-- φ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/33ee699558d09cf9d653f6351f9fda0b2f4aaa3e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:1.52ex; height:2.176ex;" alt="\varphi "/></span> as the azimuth and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \theta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B8;<!-- θ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \theta }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6e5ab2664b422d53eb0c7df3b87e1360d75ad9af" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.09ex; height:2.176ex;" alt="\theta "/></span> measured from the polar axis (see more on <a href="/wiki/Spherical_coordinate_system#Conventions" title="Spherical coordinate system">conventions</a>)) has the form
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \iiint _{D}f(r,\theta ,\varphi )r^{2}\sin \theta \,dr\,d\theta \,d\varphi .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222D;<!-- ∭ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>D</mi>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>r</mi>
+        <mo>,</mo>
+        <mi>&#x03B8;<!-- θ --></mi>
+        <mo>,</mo>
+        <mi>&#x03C6;<!-- φ --></mi>
+        <mo stretchy="false">)</mo>
+        <msup>
+          <mi>r</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mi>sin</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi>&#x03B8;<!-- θ --></mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>r</mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>&#x03B8;<!-- θ --></mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>&#x03C6;<!-- φ --></mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \iiint _{D}f(r,\theta ,\varphi )r^{2}\sin \theta \,dr\,d\theta \,d\varphi .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/14e39eed164ac11b2fe1cbd828cf8517fcff497e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:30.432ex; height:5.676ex;" alt="{\displaystyle \iiint _{D}f(r,\theta ,\varphi )r^{2}\sin \theta \,dr\,d\theta \,d\varphi .}"/></span></dd></dl>
+<h2><span class="mw-headline" id="Example_1">Example 1</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Volume_integral&amp;action=edit&amp;section=2" title="Edit section: Example 1">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Integrating the function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x,y,z)=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x,y,z)=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f4c4ea840cd139e57682ad1838bf974a9f315d84" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.99ex; height:2.843ex;" alt="f(x,y,z)=1"/></span> over a unit cube yields the following result:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{0}^{1}\int _{0}^{1}\int _{0}^{1}1\,dx\,dy\,dz=\int _{0}^{1}\int _{0}^{1}(1-0)\,dy\,dz=\int _{0}^{1}(1-0)dz=1-0=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msubsup>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msubsup>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msubsup>
+        <mn>1</mn>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>x</mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>y</mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msubsup>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msubsup>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>y</mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msubsup>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>0</mn>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{0}^{1}\int _{0}^{1}\int _{0}^{1}1\,dx\,dy\,dz=\int _{0}^{1}\int _{0}^{1}(1-0)\,dy\,dz=\int _{0}^{1}(1-0)dz=1-0=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3a2c6b30a9d738ccf89880de7e2e0da66b837f60" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:72.628ex; height:6.176ex;" alt="{\displaystyle \int _{0}^{1}\int _{0}^{1}\int _{0}^{1}1\,dx\,dy\,dz=\int _{0}^{1}\int _{0}^{1}(1-0)\,dy\,dz=\int _{0}^{1}(1-0)dz=1-0=1}"/></span></dd></dl>
+<p>So the volume of the unit cube is 1 as expected. This is rather trivial however, and a volume integral is far more powerful. For instance if we have a scalar density function on the unit cube then the volume integral will give the total mass of the cube. For example for density function:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{cases}f:\mathbb {R} ^{3}\to \mathbb {R} \\(x,y,z)\longmapsto x+y+z\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mi>f</mi>
+                  <mo>:</mo>
+                  <msup>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="double-struck">R</mi>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>3</mn>
+                    </mrow>
+                  </msup>
+                  <mo stretchy="false">&#x2192;<!-- → --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">R</mi>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo>,</mo>
+                  <mi>y</mi>
+                  <mo>,</mo>
+                  <mi>z</mi>
+                  <mo stretchy="false">)</mo>
+                  <mo stretchy="false">&#x27FC;<!-- ⟼ --></mo>
+                  <mi>x</mi>
+                  <mo>+</mo>
+                  <mi>y</mi>
+                  <mo>+</mo>
+                  <mi>z</mi>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{cases}f:\mathbb {R} ^{3}\to \mathbb {R} \\(x,y,z)\longmapsto x+y+z\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/29e4d229d5d22a497bcd0a771bcdedfc6f38547f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:24.295ex; height:6.176ex;" alt="{\displaystyle {\begin{cases}f:\mathbb {R} ^{3}\to \mathbb {R} \\(x,y,z)\longmapsto x+y+z\end{cases}}}"/></span></dd></dl>
+<p>the total mass of the cube is: 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{0}^{1}\int _{0}^{1}\int _{0}^{1}(x+y+z)\,dx\,dy\,dz=\int _{0}^{1}\int _{0}^{1}\left({\frac {1}{2}}+y+z\right)\,dy\,dz=\int _{0}^{1}(1+z)\,dz={\frac {3}{2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msubsup>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msubsup>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msubsup>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>y</mi>
+        <mo>+</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>x</mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>y</mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msubsup>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msubsup>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+            <mo>+</mo>
+            <mi>y</mi>
+            <mo>+</mo>
+            <mi>z</mi>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>y</mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msubsup>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>3</mn>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{0}^{1}\int _{0}^{1}\int _{0}^{1}(x+y+z)\,dx\,dy\,dz=\int _{0}^{1}\int _{0}^{1}\left({\frac {1}{2}}+y+z\right)\,dy\,dz=\int _{0}^{1}(1+z)\,dz={\frac {3}{2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b48b3bd1184fbcbb848f6171ebb78ed630d1a32e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:82.171ex; height:6.343ex;" alt="{\displaystyle \int _{0}^{1}\int _{0}^{1}\int _{0}^{1}(x+y+z)\,dx\,dy\,dz=\int _{0}^{1}\int _{0}^{1}\left({\frac {1}{2}}+y+z\right)\,dy\,dz=\int _{0}^{1}(1+z)\,dz={\frac {3}{2}}}"/></span></dd></dl>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Volume_integral&amp;action=edit&amp;section=3" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><a href="/wiki/File:Nuvola_apps_edu_mathematics_blue-p.svg" class="image"><img alt="icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nuvola_apps_edu_mathematics_blue-p.svg/28px-Nuvola_apps_edu_mathematics_blue-p.svg.png" decoding="async" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nuvola_apps_edu_mathematics_blue-p.svg/42px-Nuvola_apps_edu_mathematics_blue-p.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nuvola_apps_edu_mathematics_blue-p.svg/56px-Nuvola_apps_edu_mathematics_blue-p.svg.png 2x" data-file-width="128" data-file-height="128" /></a></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Mathematics" title="Portal:Mathematics">Mathematics portal</a></span></li></ul></div>
+<ul><li><a href="/wiki/Divergence_theorem" title="Divergence theorem">Divergence theorem</a></li>
+<li><a href="/wiki/Surface_integral" title="Surface integral">Surface integral</a></li>
+<li><a href="/wiki/Volume_element" title="Volume element">Volume element</a></li></ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Volume_integral&amp;action=edit&amp;section=4" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><cite id="CITEREFHazewinkel2001" class="citation"><a href="/wiki/Michiel_Hazewinkel" title="Michiel Hazewinkel">Hazewinkel, Michiel</a>, ed. (2001) [1994], <a rel="nofollow" class="external text" href="https://www.encyclopediaofmath.org/index.php?title=p/m065370">"Multiple integral"</a>, <i><a href="/wiki/Encyclopedia_of_Mathematics" title="Encyclopedia of Mathematics">Encyclopedia of Mathematics</a></i>, Springer Science+Business Media B.V. / Kluwer Academic Publishers, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-55608-010-4" title="Special:BookSources/978-1-55608-010-4"><bdi>978-1-55608-010-4</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Multiple+integral&amp;rft.btitle=Encyclopedia+of+Mathematics&amp;rft.pub=Springer+Science%2BBusiness+Media+B.V.+%2F+Kluwer+Academic+Publishers&amp;rft.date=2001&amp;rft.isbn=978-1-55608-010-4&amp;rft_id=https%3A%2F%2Fwww.encyclopediaofmath.org%2Findex.php%3Ftitle%3Dp%2Fm065370&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVolume+integral" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></li>
+<li><span class="citation mathworld" id="Reference-Mathworld-Volume_integral"><cite class="citation web"><a href="/wiki/Eric_W._Weisstein" title="Eric W. Weisstein">Weisstein, Eric W.</a> <a rel="nofollow" class="external text" href="http://mathworld.wolfram.com/VolumeIntegral.html">"Volume integral"</a>. <i><a href="/wiki/MathWorld" title="MathWorld">MathWorld</a></i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=MathWorld&amp;rft.atitle=Volume+integral&amp;rft.au=Weisstein%2C+Eric+W.&amp;rft_id=http%3A%2F%2Fmathworld.wolfram.com%2FVolumeIntegral.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVolume+integral" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span></li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1243
+Cached time: 20190731025713
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.160 seconds
+Real time usage: 0.240 seconds
+Preprocessor visited node count: 600/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 40882/2097152 bytes
+Template argument size: 725/2097152 bytes
+Highest expansion depth: 8/40
+Expensive parser function count: 1/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 4140/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.068/10.000 seconds
+Lua memory usage: 1.72 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  152.676      1 -total
+ 48.78%   74.482      1 Template:Springer
+ 45.01%   68.718      1 Template:Citation
+ 38.90%   59.394      1 Template:Calculus
+  9.56%   14.600      5 Template:Sidebar
+  6.08%    9.289      1 Template:Portal
+  5.55%    8.470      1 Template:MathWorld
+  5.03%    7.678      7 Template:Bigger
+  4.15%    6.338      1 Template:Cite_web
+  3.05%    4.658      7 Template:Startflatlist
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1247265-0!canonical!math=5 and timestamp 20190731025713 and revision id 901116574
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Volume_integral&amp;oldid=901116574">https://en.wikipedia.org/w/index.php?title=Volume_integral&amp;oldid=901116574</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Multivariable_calculus" title="Category:Multivariable calculus">Multivariable calculus</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Volume+integral" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Volume+integral" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Volume_integral" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Volume_integral" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Volume_integral">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Volume_integral&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Volume_integral&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Volume_integral" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Volume_integral" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Volume_integral&amp;oldid=901116574" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Volume_integral&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1788036" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Volume_integral&amp;id=901116574" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Volume+integral">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Volume+integral&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Volume_integral&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%AA%D9%83%D8%A7%D9%85%D9%84_%D8%AD%D8%AC%D9%85%D9%8A" title="تكامل حجمي – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Integral_de_volum" title="Integral de volum – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Volumenintegral" title="Volumenintegral – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-eo"><a href="https://eo.wikipedia.org/wiki/Volumena_integralo" title="Volumena integralo – Esperanto" lang="eo" hreflang="eo" class="interlanguage-link-target">Esperanto</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%A7%D9%86%D8%AA%DA%AF%D8%B1%D8%A7%D9%84_%D8%AD%D8%AC%D9%85%DB%8C" title="انتگرال حجمی – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Integrale_di_volume" title="Integrale di volume – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-km"><a href="https://km.wikipedia.org/wiki/%E1%9E%A2%E1%9E%B6%E1%9F%86%E1%9E%84%E1%9E%8F%E1%9F%81%E1%9E%80%E1%9F%92%E1%9E%9A%E1%9E%B6%E1%9E%9B%E1%9E%98%E1%9E%B6%E1%9E%8C" title="អាំងតេក្រាលមាឌ – Khmer" lang="km" hreflang="km" class="interlanguage-link-target">ភាសាខ្មែរ</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Integral_de_volume" title="Integral de volume – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/%D0%97%D0%B0%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D0%BD%D1%81%D0%BA%D0%B8_%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB" title="Запремински интеграл – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Tilavuusintegraali" title="Tilavuusintegraali – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/T%C3%ADch_ph%C3%A2n_kh%E1%BB%91i" title="Tích phân khối – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1788036#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 9 June 2019, at 20:17<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Volume_integral&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.160","walltime":"0.240","ppvisitednodes":{"value":600,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":40882,"limit":2097152},"templateargumentsize":{"value":725,"limit":2097152},"expansiondepth":{"value":8,"limit":40},"expensivefunctioncount":{"value":1,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":4140,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  152.676      1 -total"," 48.78%   74.482      1 Template:Springer"," 45.01%   68.718      1 Template:Citation"," 38.90%   59.394      1 Template:Calculus","  9.56%   14.600      5 Template:Sidebar","  6.08%    9.289      1 Template:Portal","  5.55%    8.470      1 Template:MathWorld","  5.03%    7.678      7 Template:Bigger","  4.15%    6.338      1 Template:Cite_web","  3.05%    4.658      7 Template:Startflatlist"]},"scribunto":{"limitreport-timeusage":{"value":"0.068","limit":"10.000"},"limitreport-memusage":{"value":1808439,"limit":52428800}},"cachereport":{"origin":"mw1243","timestamp":"20190731025713","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Volume integral","url":"https:\/\/en.wikipedia.org\/wiki\/Volume_integral","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1788036","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1788036","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-12-06T00:52:22Z","dateModified":"2019-06-09T20:17:50Z","headline":"definite integral of a vector function over a volume"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":99,"wgHostname":"mw1332"});});</script>
+</body>
+</html>

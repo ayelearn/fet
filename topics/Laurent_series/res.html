@@ -1,0 +1,1851 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Laurent series - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Laurent_series","wgTitle":"Laurent series","wgCurRevisionId":890438602,"wgRevisionId":890438602,"wgArticleId":61213,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Complex analysis","Series expansions"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Laurent_series","wgRelevantArticleId":61213
+,"wgRequestId":"XUjDWgpAICAAAEe4AHYAAABW","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q425432","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":
+"ready","user.options":"ready","user.tokens":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.math.scripts","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader",
+"ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Laurent_series.svg/1200px-Laurent_series.svg.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Laurent_series"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Laurent_series&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Laurent_series&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Laurent_series"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Laurent_series rootpage-Laurent_series skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Laurent series</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Power series generalized to allow negative powers</div>
+<div role="note" class="hatnote navigation-not-searchable">This article is about doubly infinite power series. For power series with finitely many negative exponents, see <a href="/wiki/Formal_Laurent_series" class="mw-redirect" title="Formal Laurent series">Formal Laurent series</a>.</div>
+<div class="thumb tright"><div class="thumbinner" style="width:258px;"><a href="/wiki/File:Laurent_series.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Laurent_series.svg/256px-Laurent_series.svg.png" decoding="async" width="256" height="256" class="thumbimage" data-file-width="256" data-file-height="256" /></a>  <div class="thumbcaption">A Laurent series is defined with respect to a particular point <i>c</i> and a path of integration γ. The path of integration must lie in an annulus, indicated here by the red color, inside which <i>f</i>(<i>z</i>) is <a href="/wiki/Holomorphic_function" title="Holomorphic function">holomorphic</a> (<a href="/wiki/Holomorphic_functions_are_analytic" class="mw-redirect" title="Holomorphic functions are analytic">analytic</a>).</div></div></div>
+<p>In <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>, the <b>Laurent series</b> of a complex function <i>f</i>(<i>z</i>) is a representation of that function as a <a href="/wiki/Power_series" title="Power series">power series</a> which includes terms of negative degree. It may be used to express complex functions in cases where a <a href="/wiki/Taylor_series" title="Taylor series">Taylor series</a> expansion cannot be applied. The Laurent series was named after and first published by <a href="/wiki/Pierre_Alphonse_Laurent" title="Pierre Alphonse Laurent">Pierre Alphonse Laurent</a> in 1843.  <a href="/wiki/Karl_Weierstrass" title="Karl Weierstrass">Karl Weierstrass</a> may have discovered it first in a paper written in 1841, but it was not published until after his death.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p><p>The Laurent series for a complex function <i>f</i>(<i>z</i>) about a point <i>c</i> is given by:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)=\sum _{n=-\infty }^{\infty }a_{n}(z-c)^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>c</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)=\sum _{n=-\infty }^{\infty }a_{n}(z-c)^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ded34ece82f8e7bc2d1dad8f119f19b3adbe867f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:23.259ex; height:6.843ex;" alt="f(z)=\sum _{n=-\infty }^{\infty }a_{n}(z-c)^{n}"/></span></dd></dl>
+<p>where <i>a<sub>n</sub> and c</i> are constants, with <i>a<sub>n</sub></i> defined by a <a href="/wiki/Line_integral" title="Line integral">line integral</a> that generalizes <a href="/wiki/Cauchy%27s_integral_formula" title="Cauchy&#39;s integral formula">Cauchy's integral formula</a>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a_{n}={\frac {1}{2\pi i}}\oint _{\gamma }{\frac {f(z)}{(z-c)^{n+1}}}\,dz.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mn>2</mn>
+              <mi>&#x03C0;<!-- π --></mi>
+              <mi>i</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+            <mrow class="MJX-TeXAtom-VCENTER">
+              <mstyle mathsize="2.07em">
+                <mtext>&#x222E;<!-- ∮ --></mtext>
+                <mspace width="thinmathspace" />
+              </mstyle>
+            </mrow>
+            <mspace width="thinmathspace" />
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B3;<!-- γ --></mi>
+          </mrow>
+        </msub>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>z</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>z</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>c</mi>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{n}={\frac {1}{2\pi i}}\oint _{\gamma }{\frac {f(z)}{(z-c)^{n+1}}}\,dz.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fdbb630e4a25bfadda5ddbfc83ccaa04c2f3cc2f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.838ex; width:29.526ex; height:6.676ex;" alt="{\displaystyle a_{n}={\frac {1}{2\pi i}}\oint _{\gamma }{\frac {f(z)}{(z-c)^{n+1}}}\,dz.}"/></span></dd></dl>
+<p>The path of integration <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \gamma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B3;<!-- γ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gamma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a223c880b0ce3da8f64ee33c4f0010beee400b1a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:1.262ex; height:2.176ex;" alt="\gamma "/></span> is counterclockwise around a <a href="/wiki/Jordan_curve" class="mw-redirect" title="Jordan curve">Jordan curve</a> enclosing <i>c</i> and lying in an <a href="/wiki/Annulus_(mathematics)" title="Annulus (mathematics)">annulus</a> <i>A</i> in which <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d8dd568d570b390c337c0a911f0a1c5c214e8240" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.176ex; height:2.843ex;" alt="f(z)"/></span> is <a href="/wiki/Holomorphic_function" title="Holomorphic function">holomorphic</a> (analytic). The expansion for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d8dd568d570b390c337c0a911f0a1c5c214e8240" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.176ex; height:2.843ex;" alt="f(z)"/></span> will then be valid anywhere inside the annulus. The annulus is shown in red in the figure on the right, along with an example of a suitable path of integration labeled <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \gamma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B3;<!-- γ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gamma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a223c880b0ce3da8f64ee33c4f0010beee400b1a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:1.262ex; height:2.176ex;" alt="\gamma "/></span>. If we take <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \gamma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B3;<!-- γ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gamma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a223c880b0ce3da8f64ee33c4f0010beee400b1a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:1.262ex; height:2.176ex;" alt="\gamma "/></span> to be a circle <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |z-c|=\varrho }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>z</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>c</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>=</mo>
+        <mi>&#x03F1;<!-- ϱ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |z-c|=\varrho }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7bd5a81f194c3738bc143bfe3843d805f29c4799" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.529ex; height:2.843ex;" alt="|z-c|=\varrho "/></span>, where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle r&lt;\varrho &lt;R}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>r</mi>
+        <mo>&lt;</mo>
+        <mi>&#x03F1;<!-- ϱ --></mi>
+        <mo>&lt;</mo>
+        <mi>R</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle r&lt;\varrho &lt;R}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7560249cfd288a9b2a7525befe1ae6e23761e589" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.212ex; height:2.509ex;" alt="r&lt;\varrho &lt;R"/></span>, this just amounts
+to computing the complex <a href="/wiki/Fourier_coefficients" class="mw-redirect" title="Fourier coefficients">Fourier coefficients</a> of the restriction of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"/></span> to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \gamma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B3;<!-- γ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gamma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a223c880b0ce3da8f64ee33c4f0010beee400b1a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:1.262ex; height:2.176ex;" alt="\gamma "/></span>. The fact that these
+integrals are unchanged by a deformation of the contour <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \gamma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B3;<!-- γ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gamma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a223c880b0ce3da8f64ee33c4f0010beee400b1a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:1.262ex; height:2.176ex;" alt="\gamma "/></span> is an immediate consequence of <a href="/wiki/Green%27s_theorem" title="Green&#39;s theorem">Green's theorem</a>. 
+</p><p>In practice, the above integral  formula may not offer the most practical method for computing the coefficients
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a_{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/790f9209748c2dca7ed7b81932c37c02af1dbc31" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.448ex; height:2.009ex;" alt="a_{n}"/></span> for a given function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d8dd568d570b390c337c0a911f0a1c5c214e8240" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.176ex; height:2.843ex;" alt="f(z)"/></span>; instead, one often pieces together the Laurent
+series by combining known Taylor expansions.
+Because the Laurent expansion of a function is <a href="/wiki/Unique_(mathematics)" class="mw-redirect" title="Unique (mathematics)">unique</a> whenever
+it exists, any  expression of this form that actually equals the given function 
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d8dd568d570b390c337c0a911f0a1c5c214e8240" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.176ex; height:2.843ex;" alt="f(z)"/></span> in some annulus must actually be the 
+Laurent expansion of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d8dd568d570b390c337c0a911f0a1c5c214e8240" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.176ex; height:2.843ex;" alt="f(z)"/></span>.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Convergent_Laurent_series"><span class="tocnumber">1</span> <span class="toctext">Convergent Laurent series</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Uniqueness"><span class="tocnumber">2</span> <span class="toctext">Uniqueness</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Laurent_polynomials"><span class="tocnumber">3</span> <span class="toctext">Laurent polynomials</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Principal_part"><span class="tocnumber">4</span> <span class="toctext">Principal part</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Multiplication"><span class="tocnumber">4.1</span> <span class="toctext">Multiplication</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Convergent_Laurent_series">Convergent Laurent series</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laurent_series&amp;action=edit&amp;section=1" title="Edit section: Convergent Laurent series">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Laurent series with complex coefficients are an important tool in <a href="/wiki/Complex_analysis" title="Complex analysis">complex analysis</a>, especially to investigate the behavior of functions near <a href="/wiki/Mathematical_singularity" class="mw-redirect" title="Mathematical singularity">singularities</a>.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:Expinvsqlau_SVG.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/33/Expinvsqlau_SVG.svg/220px-Expinvsqlau_SVG.svg.png" decoding="async" width="220" height="165" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/33/Expinvsqlau_SVG.svg/330px-Expinvsqlau_SVG.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/33/Expinvsqlau_SVG.svg/440px-Expinvsqlau_SVG.svg.png 2x" data-file-width="720" data-file-height="540" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Expinvsqlau_SVG.svg" class="internal" title="Enlarge"></a></div><i>e</i><sup>&#8722;(1/<i>x</i><sup>2</sup>)</sup> and Laurent approximations: see text for key. As the negative degree of the Laurent series rises, it approaches the correct function.</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:Expinvsqlau_GIF.gif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/54/Expinvsqlau_GIF.gif/220px-Expinvsqlau_GIF.gif" decoding="async" width="220" height="165" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/54/Expinvsqlau_GIF.gif/330px-Expinvsqlau_GIF.gif 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/54/Expinvsqlau_GIF.gif/440px-Expinvsqlau_GIF.gif 2x" data-file-width="800" data-file-height="600" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Expinvsqlau_GIF.gif" class="internal" title="Enlarge"></a></div><i>e</i><sup>&#8722;(1/<i>x</i><sup>2</sup>)</sup> and its Laurent approximations with the negative degree rising. The neighborhood around the zero singularity can never be approximated.</div></div></div>
+<p>Consider for instance the function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x)=e^{-1/x^{2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <msup>
+              <mi>x</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)=e^{-1/x^{2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c19dffe755542d56d94d0c05a9ca442345c324a2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:13.526ex; height:3.509ex;" alt="f(x)=e^{-1/x^{2}}"/></span> with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(0)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(0)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8d308c32c9894b88115262081194321ae7d9bbf3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.511ex; height:2.843ex;" alt="f(0)=0"/></span>. As a real function, it is infinitely differentiable everywhere; as a complex function however it is not differentiable at <i>x</i> = 0. By replacing <i>x</i> with &#8722;1/<i>x</i><sup>2</sup> in the <a href="/wiki/Power_series" title="Power series">power series</a> for the <a href="/wiki/Exponential_function" title="Exponential function">exponential function</a>, we obtain its Laurent series which converges and is equal to <i>f</i>(<i>x</i>) for all complex numbers <i>x</i> except at the singularity <i>x</i> = 0. The graph opposite shows <i>e</i><sup>&#8722;1/<i>x</i><sup>2</sup></sup> in black and its Laurent approximations
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum _{n=0}^{N}(-1)^{n}\,{x^{-2n} \over n!}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </munderover>
+        <mo stretchy="false">(</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>x</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>2</mn>
+                <mi>n</mi>
+              </mrow>
+            </msup>
+            <mrow>
+              <mi>n</mi>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{n=0}^{N}(-1)^{n}\,{x^{-2n} \over n!}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0a0f9c9f7ab16726891ac89b8e2219e888ba3358" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:15.225ex; height:7.343ex;" alt="\sum _{n=0}^{N}(-1)^{n}\,{x^{-2n} \over n!}"/></span></dd></dl>
+<p>for <i>N</i> = <span style="color:#b30000;">1</span>, <span style="color:#00b300;">2</span>, <span style="color:#0000b3;">3</span>, <span style="color:#b3b300;">4</span>, <span style="color:#00b3b3;">5</span>, <span style="color:#b300b3;">6</span>, <span style="color:#b3b3b3;">7</span> and <span style="color:#33b300;">50</span>. As <i>N</i> → ∞, the approximation becomes exact for all (complex) numbers <i>x</i> except at the singularity <i>x</i> = 0.
+</p><p>More generally, Laurent series can be used to express <a href="/wiki/Holomorphic_function" title="Holomorphic function">holomorphic functions</a> defined on an <a href="/wiki/Annulus_(mathematics)" title="Annulus (mathematics)">annulus</a>, much as <a href="/wiki/Power_series" title="Power series">power series</a> are used to express holomorphic functions defined on a <a href="/wiki/Disk_(mathematics)" title="Disk (mathematics)">disc</a>.
+</p><p>Suppose 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum _{n=-\infty }^{\infty }a_{n}(z-c)^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>c</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{n=-\infty }^{\infty }a_{n}(z-c)^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8988427a8dd2fe8dbfad50a6a35106925dbce8df" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:15.985ex; height:6.843ex;" alt="\sum _{n=-\infty }^{\infty }a_{n}(z-c)^{n}"/></span></dd></dl>
+<p>is a given Laurent series with complex coefficients <i>a</i><sub><i>n</i></sub> and a complex center <i>c</i>. Then there exists a <a href="/wiki/Unique_(mathematics)" class="mw-redirect" title="Unique (mathematics)">unique</a> inner radius <var>r</var> and outer radius <i>R</i> such that:
+</p>
+<ul><li>The Laurent series converges on the open annulus <i>A</i>&#160;≡ {<i>z</i>&#160;: <i>r</i>&#160;&lt;&#160;|<i>z</i>&#160;&#8722;&#160;<i>c</i>|&#160;&lt;&#160;<i>R</i>}. To say that the Laurent series converges, we mean that both the positive degree power series and the negative degree power series converge. Furthermore, this convergence will be <a href="/wiki/Uniform_convergence" title="Uniform convergence">uniform</a> on <a href="/wiki/Compact_set" class="mw-redirect" title="Compact set">compact sets</a>. Finally, the convergent series defines a <a href="/wiki/Holomorphic_function" title="Holomorphic function">holomorphic function</a> <i>f</i>(<i>z</i>) on the open annulus.</li>
+<li>Outside the annulus, the Laurent series diverges. That is, at each point of the <a href="/wiki/Exterior_(topology)" title="Exterior (topology)">exterior</a> of <i>A</i>, the positive degree power series or the negative degree power series diverges.</li>
+<li>On the <a href="/wiki/Boundary_(topology)" title="Boundary (topology)">boundary</a> of the annulus, one cannot make a general statement, except to say that there is at least one point on the inner boundary and one point on the outer boundary such that <i>f</i>(<i>z</i>) cannot be holomorphically continued to those points.</li></ul>
+<p>It is possible that <i>r</i> may be zero or <i>R</i> may be infinite; at the other extreme, it's not necessarily true that <i>r</i> is less than <i>R</i>.
+These radii can be computed as follows:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}r&amp;=\limsup _{n\rightarrow \infty }|a_{-n}|^{\frac {1}{n}}\\{1 \over R}&amp;=\limsup _{n\rightarrow \infty }|a_{n}|^{\frac {1}{n}}.\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mi>r</mi>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munder>
+                  <mo movablelimits="true" form="prefix">lim&#x2006;sup</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo stretchy="false">&#x2192;<!-- → --></mo>
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munder>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">|</mo>
+                </mrow>
+                <msub>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo stretchy="false">|</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mi>n</mi>
+                    </mfrac>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <mi>R</mi>
+                  </mfrac>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munder>
+                  <mo movablelimits="true" form="prefix">lim&#x2006;sup</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo stretchy="false">&#x2192;<!-- → --></mo>
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munder>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">|</mo>
+                </mrow>
+                <msub>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo stretchy="false">|</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mi>n</mi>
+                    </mfrac>
+                  </mrow>
+                </msup>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}r&amp;=\limsup _{n\rightarrow \infty }|a_{-n}|^{\frac {1}{n}}\\{1 \over R}&amp;=\limsup _{n\rightarrow \infty }|a_{n}|^{\frac {1}{n}}.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bfbbb396a0c0aa108c6363820c1cde0f5ca92893" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.858ex; margin-bottom: -0.313ex; width:20.845ex; height:11.509ex;" alt="{\begin{aligned}r&amp;=\limsup _{n\rightarrow \infty }|a_{-n}|^{\frac {1}{n}}\\{1 \over R}&amp;=\limsup _{n\rightarrow \infty }|a_{n}|^{\frac {1}{n}}.\end{aligned}}"/></span></dd></dl>
+<p>We take <i>R</i> to be infinite when this latter <a href="/wiki/Limit_superior" class="mw-redirect" title="Limit superior">lim sup</a> is zero.
+</p><p>Conversely, if we start with an annulus of the form <i>A</i>&#160;≡ {<i>z</i>&#160;: <i>r</i>&#160;&lt; |<i>z</i>&#160;&#8722;&#160;<i>c</i>|&#160;&lt;&#160;<i>R</i>} and a holomorphic function <i>f</i>(<i>z</i>) defined on <i>A</i>, then there always exists a unique Laurent series with center <i>c</i> which converges (at least) on <i>A</i> and represents the function <i>f</i>(<i>z</i>).
+</p><p>As an example, consider the following rational function, along with its <a href="/wiki/Partial_fraction" class="mw-redirect" title="Partial fraction">partial fraction</a> expansion:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)\ =\ {\frac {1}{(z{-}1)(z{-}2i)}}\ =\ {\frac {1+2i}{5}}\left({\frac {1}{z{-}1}}-{\frac {1}{z{-}2i}}\right).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mtext>&#xA0;</mtext>
+        <mo>=</mo>
+        <mtext>&#xA0;</mtext>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>z</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>&#x2212;<!-- − --></mo>
+              </mrow>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+              <mo stretchy="false">(</mo>
+              <mi>z</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>&#x2212;<!-- − --></mo>
+              </mrow>
+              <mn>2</mn>
+              <mi>i</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mtext>&#xA0;</mtext>
+        <mo>=</mo>
+        <mtext>&#xA0;</mtext>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>1</mn>
+              <mo>+</mo>
+              <mn>2</mn>
+              <mi>i</mi>
+            </mrow>
+            <mn>5</mn>
+          </mfrac>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mrow>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>&#x2212;<!-- − --></mo>
+                  </mrow>
+                  <mn>1</mn>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <mo>&#x2212;<!-- − --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mrow>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>&#x2212;<!-- − --></mo>
+                  </mrow>
+                  <mn>2</mn>
+                  <mi>i</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)\ =\ {\frac {1}{(z{-}1)(z{-}2i)}}\ =\ {\frac {1+2i}{5}}\left({\frac {1}{z{-}1}}-{\frac {1}{z{-}2i}}\right).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0030ccdb97a4829461e5ce7befa9968d52343fbb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:51.149ex; height:6.343ex;" alt="{\displaystyle f(z)\ =\ {\frac {1}{(z{-}1)(z{-}2i)}}\ =\ {\frac {1+2i}{5}}\left({\frac {1}{z{-}1}}-{\frac {1}{z{-}2i}}\right).}"/></span></dd></dl>
+<p>This function has singularities at <i>z</i>&#160;=&#160;1 and <i>z</i>&#160;=&#160;2<i>i</i>, where the denominator of the expression is zero and the expression is therefore undefined.
+A <a href="/wiki/Taylor_series" title="Taylor series">Taylor series</a> about <i>z</i>&#160;=&#160;0 (which yields a power series) will only converge in a disc of <a href="/wiki/Radius" title="Radius">radius</a> 1, since it "hits" the singularity at 1.
+</p><p>However, there are three possible Laurent expansions about 0, depending on the radius of <i>z</i>:
+</p>
+<ul><li>One series is defined on the inner disc where |<i>z</i>|&#160;&lt;&#160;1; it is the same as the Taylor series,</li></ul>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)={\frac {1+2i}{5}}\sum _{n=0}^{\infty }\left({\frac {1}{(2i)^{n+1}}}-1\right)z^{n}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>1</mn>
+              <mo>+</mo>
+              <mn>2</mn>
+              <mi>i</mi>
+            </mrow>
+            <mn>5</mn>
+          </mfrac>
+        </mrow>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mrow>
+                  <mo stretchy="false">(</mo>
+                  <mn>2</mn>
+                  <mi>i</mi>
+                  <msup>
+                    <mo stretchy="false">)</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>+</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msup>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)={\frac {1+2i}{5}}\sum _{n=0}^{\infty }\left({\frac {1}{(2i)^{n+1}}}-1\right)z^{n}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/586de18378eada528632d2bf7ae8e1c151ed73ca" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:36.904ex; height:6.843ex;" alt="{\displaystyle f(z)={\frac {1+2i}{5}}\sum _{n=0}^{\infty }\left({\frac {1}{(2i)^{n+1}}}-1\right)z^{n}.}"/></span></dd></dl>
+<p>This follows from the partial fraction form of the function, along with the formula for the sum  of a <a href="/wiki/Geometric_series" title="Geometric series">geometric series</a>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \textstyle {\frac {1}{z-a}}=-{\frac {1}{a}}\sum _{n=0}^{\infty }\left({\tfrac {z}{a}}\right)^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="false" scriptlevel="0">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>1</mn>
+              <mrow>
+                <mi>z</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>a</mi>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>=</mo>
+          <mo>&#x2212;<!-- − --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>1</mn>
+              <mi>a</mi>
+            </mfrac>
+          </mrow>
+          <munderover>
+            <mo>&#x2211;<!-- ∑ --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>n</mi>
+              <mo>=</mo>
+              <mn>0</mn>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+            </mrow>
+          </munderover>
+          <msup>
+            <mrow>
+              <mo>(</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mstyle displaystyle="false" scriptlevel="0">
+                  <mfrac>
+                    <mi>z</mi>
+                    <mi>a</mi>
+                  </mfrac>
+                </mstyle>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>n</mi>
+            </mrow>
+          </msup>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \textstyle {\frac {1}{z-a}}=-{\frac {1}{a}}\sum _{n=0}^{\infty }\left({\tfrac {z}{a}}\right)^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/899401dda3e8ebb60d5fe3ec6bbdbd8ce6647178" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:21.967ex; height:3.509ex;" alt="{\displaystyle \textstyle {\frac {1}{z-a}}=-{\frac {1}{a}}\sum _{n=0}^{\infty }\left({\tfrac {z}{a}}\right)^{n}}"/></span> for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |z|&lt;|a|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>z</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&lt;</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>a</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |z|&lt;|a|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b4418831c8b34a00bae909566ee06ab94ce8776b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.004ex; height:2.843ex;" alt="{\displaystyle |z|&lt;|a|}"/></span>.
+</p>
+<ul><li>The second series is defined on the middle annulus where 1&#160;&lt; |<i>z</i>|&#160;&lt;&#160;2, caught between the two singularities,</li></ul>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)={\frac {1+2i}{5}}\left(\sum _{n=1}^{\infty }z^{-n}+\sum _{n=0}^{\infty }{\frac {1}{(2i)^{n+1}}}z^{n}\right).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>1</mn>
+              <mo>+</mo>
+              <mn>2</mn>
+              <mi>i</mi>
+            </mrow>
+            <mn>5</mn>
+          </mfrac>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <munderover>
+              <mo>&#x2211;<!-- ∑ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+              </mrow>
+            </munderover>
+            <msup>
+              <mi>z</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>n</mi>
+              </mrow>
+            </msup>
+            <mo>+</mo>
+            <munderover>
+              <mo>&#x2211;<!-- ∑ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>=</mo>
+                <mn>0</mn>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+              </mrow>
+            </munderover>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mrow>
+                  <mo stretchy="false">(</mo>
+                  <mn>2</mn>
+                  <mi>i</mi>
+                  <msup>
+                    <mo stretchy="false">)</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>+</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msup>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <msup>
+              <mi>z</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msup>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)={\frac {1+2i}{5}}\left(\sum _{n=1}^{\infty }z^{-n}+\sum _{n=0}^{\infty }{\frac {1}{(2i)^{n+1}}}z^{n}\right).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/db64ea70e2dfab24ea22006ccbb79a86e1e5d037" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:43.331ex; height:7.509ex;" alt="{\displaystyle f(z)={\frac {1+2i}{5}}\left(\sum _{n=1}^{\infty }z^{-n}+\sum _{n=0}^{\infty }{\frac {1}{(2i)^{n+1}}}z^{n}\right).}"/></span></dd></dl>
+<p>Here, we use the alternative form of the geometric series summation, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \textstyle {\frac {1}{z-a}}={\frac {1}{z}}\sum _{n=0}^{\infty }\left({\tfrac {a}{z}}\right)^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="false" scriptlevel="0">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>1</mn>
+              <mrow>
+                <mi>z</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>a</mi>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>=</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>1</mn>
+              <mi>z</mi>
+            </mfrac>
+          </mrow>
+          <munderover>
+            <mo>&#x2211;<!-- ∑ --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>n</mi>
+              <mo>=</mo>
+              <mn>0</mn>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+            </mrow>
+          </munderover>
+          <msup>
+            <mrow>
+              <mo>(</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mstyle displaystyle="false" scriptlevel="0">
+                  <mfrac>
+                    <mi>a</mi>
+                    <mi>z</mi>
+                  </mfrac>
+                </mstyle>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>n</mi>
+            </mrow>
+          </msup>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \textstyle {\frac {1}{z-a}}={\frac {1}{z}}\sum _{n=0}^{\infty }\left({\tfrac {a}{z}}\right)^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8c2bc4039569d9b724457319051e4db4c5588ca2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:20.111ex; height:3.509ex;" alt="{\displaystyle \textstyle {\frac {1}{z-a}}={\frac {1}{z}}\sum _{n=0}^{\infty }\left({\tfrac {a}{z}}\right)^{n}}"/></span>  for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |a|&lt;|z|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>a</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&lt;</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>z</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |a|&lt;|z|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7b7e8bc6bd57876c36be589ed834ecee9d7f94fa" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.004ex; height:2.843ex;" alt="{\displaystyle |a|&lt;|z|}"/></span>.
+</p>
+<ul><li>The third series is defined on the infinite outer annulus where 2&#160;&lt; |<i>z</i>|&#160;&lt;&#160;∞,</li></ul>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)={\frac {1+2i}{5}}\sum _{n=1}^{\infty }(1-(2i)^{n-1})z^{-n}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>1</mn>
+              <mo>+</mo>
+              <mn>2</mn>
+              <mi>i</mi>
+            </mrow>
+            <mn>5</mn>
+          </mfrac>
+        </mrow>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>&#x2212;<!-- − --></mo>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mi>i</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)={\frac {1+2i}{5}}\sum _{n=1}^{\infty }(1-(2i)^{n-1})z^{-n}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b006695937620b1029a152b37e76b20865aba73b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:34.96ex; height:6.843ex;" alt="{\displaystyle f(z)={\frac {1+2i}{5}}\sum _{n=1}^{\infty }(1-(2i)^{n-1})z^{-n}.}"/></span></dd></dl>
+<p>This series can be derived using geometric series as before, or by performing polynomial long division of 1 by (<i>x</i>&#8722;1)(<i>x</i>&#8722;2i), not stopping with a remainder but continuing into <i>x</i><sup>&#8722;<i>n</i></sup> terms; indeed, the "outer" Laurent series of a rational function is analogous to the decimal form of a fraction. (The "inner" Taylor series expansion can be obtained similarly, just reversing the <a href="/wiki/Monomial_order" title="Monomial order">term order</a> in the division algorithm.)
+</p><p>The case <i>r</i>&#160;=&#160;0; i.e., a holomorphic function <i>f</i>(<i>z</i>) which may be undefined at a single point <i>c</i>, is especially important.
+</p><p>The coefficient <i>a</i><sub>−1</sub> of the Laurent expansion of such a function is called the <a href="/wiki/Residue_(complex_analysis)" title="Residue (complex analysis)">residue</a> of <i>f</i>(<i>z</i>) at the singularity <i>c</i>; it plays a prominent role in the <a href="/wiki/Residue_theorem" title="Residue theorem">residue theorem</a>.
+</p><p>For an example of this, consider
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)={e^{z} \over z}+e^{\frac {1}{z}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>z</mi>
+              </mrow>
+            </msup>
+            <mi>z</mi>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>1</mn>
+              <mi>z</mi>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)={e^{z} \over z}+e^{\frac {1}{z}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/19c9b1d89906a497143a658270086b96ff8306fa" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:16.502ex; height:5.176ex;" alt="f(z)={e^{z} \over z}+e^{\frac {1}{z}}."/></span></dd></dl>
+<p>This function is holomorphic everywhere except at <i>z</i>&#160;=&#160;0.
+To determine the Laurent expansion about <i>c</i>&#160;=&#160;0, we use our knowledge of the Taylor series of the <a href="/wiki/Exponential_function" title="Exponential function">exponential function</a>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)=\cdots +\left({1 \over 3!}\right)z^{-3}+\left({1 \over 2!}\right)z^{-2}+2z^{-1}+2+\left({1 \over 2!}\right)z+\left({1 \over 3!}\right)z^{2}+\left({1 \over 4!}\right)z^{3}+\cdots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo>&#x22EF;<!-- ⋯ --></mo>
+        <mo>+</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>1</mn>
+              <mrow>
+                <mn>3</mn>
+                <mo>!</mo>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>1</mn>
+              <mrow>
+                <mn>2</mn>
+                <mo>!</mo>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>2</mn>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>2</mn>
+        <mo>+</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>1</mn>
+              <mrow>
+                <mn>2</mn>
+                <mo>!</mo>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mi>z</mi>
+        <mo>+</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>1</mn>
+              <mrow>
+                <mn>3</mn>
+                <mo>!</mo>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>1</mn>
+              <mrow>
+                <mn>4</mn>
+                <mo>!</mo>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mo>&#x22EF;<!-- ⋯ --></mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)=\cdots +\left({1 \over 3!}\right)z^{-3}+\left({1 \over 2!}\right)z^{-2}+2z^{-1}+2+\left({1 \over 2!}\right)z+\left({1 \over 3!}\right)z^{2}+\left({1 \over 4!}\right)z^{3}+\cdots }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1c6cee4998151650fc65178cb05f4c21f69d4940" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:85.684ex; height:6.176ex;" alt="f(z)=\cdots +\left({1 \over 3!}\right)z^{-3}+\left({1 \over 2!}\right)z^{-2}+2z^{-1}+2+\left({1 \over 2!}\right)z+\left({1 \over 3!}\right)z^{2}+\left({1 \over 4!}\right)z^{3}+\cdots "/></span></dd></dl>
+<p>and we find that the residue is&#160;2.
+</p>
+<h2><span class="mw-headline" id="Uniqueness">Uniqueness</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laurent_series&amp;action=edit&amp;section=2" title="Edit section: Uniqueness">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Suppose a function <i>f</i>(<i>z</i>) holomorphic on the annulus  <i>r</i> &lt; |<i>z</i> − <i>c</i>| &lt; <i>R</i> has two Laurent series:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)=\sum _{n=-\infty }^{\infty }a_{n}\left(z-c\right)^{n}=\sum _{n=-\infty }^{\infty }b_{n}\left(z-c\right)^{n}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mi>z</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>c</mi>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mi>z</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>c</mi>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)=\sum _{n=-\infty }^{\infty }a_{n}\left(z-c\right)^{n}=\sum _{n=-\infty }^{\infty }b_{n}\left(z-c\right)^{n}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/58d9a830a8a701740aaae5fb3a8c778f73773087" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:42.757ex; height:6.843ex;" alt="f(z)=\sum _{n=-\infty }^{\infty }a_{n}\left(z-c\right)^{n}=\sum _{n=-\infty }^{\infty }b_{n}\left(z-c\right)^{n}."/></span></dd></dl>
+<p>Multiply both sides with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \left(z-c\right)^{-k-1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mi>z</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>c</mi>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>k</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left(z-c\right)^{-k-1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/77b324d608273792ded740469607614656e51d22" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.212ex; height:3.343ex;" alt="\left(z-c\right)^{-k-1}"/></span>, where k is an arbitrary integer, and integrate on a path γ inside the annulus,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \oint _{\gamma }\sum _{n=-\infty }^{\infty }a_{n}\left(z-c\right)^{n-k-1}\mathrm {d} z=\oint _{\gamma }\sum _{n=-\infty }^{\infty }b_{n}\left(z-c\right)^{n-k-1}\mathrm {d} z.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+            <mrow class="MJX-TeXAtom-VCENTER">
+              <mstyle mathsize="2.07em">
+                <mtext>&#x222E;<!-- ∮ --></mtext>
+                <mspace width="thinmathspace" />
+              </mstyle>
+            </mrow>
+            <mspace width="thinmathspace" />
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B3;<!-- γ --></mi>
+          </mrow>
+        </msub>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mi>z</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>c</mi>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>k</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>z</mi>
+        <mo>=</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+            <mrow class="MJX-TeXAtom-VCENTER">
+              <mstyle mathsize="2.07em">
+                <mtext>&#x222E;<!-- ∮ --></mtext>
+                <mspace width="thinmathspace" />
+              </mstyle>
+            </mrow>
+            <mspace width="thinmathspace" />
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B3;<!-- γ --></mi>
+          </mrow>
+        </msub>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mi>z</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>c</mi>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>k</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>z</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \oint _{\gamma }\sum _{n=-\infty }^{\infty }a_{n}\left(z-c\right)^{n-k-1}\mathrm {d} z=\oint _{\gamma }\sum _{n=-\infty }^{\infty }b_{n}\left(z-c\right)^{n-k-1}\mathrm {d} z.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3dd66682e89530e0fc413cbd827d3e495a181bf3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:59.158ex; height:6.843ex;" alt="\oint _{\gamma }\sum _{n=-\infty }^{\infty }a_{n}\left(z-c\right)^{n-k-1}\mathrm {d} z=\oint _{\gamma }\sum _{n=-\infty }^{\infty }b_{n}\left(z-c\right)^{n-k-1}\mathrm {d} z."/></span></dd></dl>
+<p>The series converges uniformly on <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle r+\epsilon \leq |z-c|\leq R-\epsilon }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>r</mi>
+        <mo>+</mo>
+        <mi>&#x03F5;<!-- ϵ --></mi>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>z</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>c</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mi>R</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>&#x03F5;<!-- ϵ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle r+\epsilon \leq |z-c|\leq R-\epsilon }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cc6c4dde3895d5dccc144f72cc3c664836bf32b3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:22.808ex; height:2.843ex;" alt="r+\epsilon \leq |z-c|\leq R-\epsilon "/></span>, where ε is a positive number small enough for γ to be contained in the constricted closed annulus, so the integration and summation can be interchanged. Substituting the identity
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \oint _{\gamma }(z-c)^{n-k-1}dz=2\pi i\delta _{nk}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+            <mrow class="MJX-TeXAtom-VCENTER">
+              <mstyle mathsize="2.07em">
+                <mtext>&#x222E;<!-- ∮ --></mtext>
+                <mspace width="thinmathspace" />
+              </mstyle>
+            </mrow>
+            <mspace width="thinmathspace" />
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B3;<!-- γ --></mi>
+          </mrow>
+        </msub>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>c</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>k</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mi>&#x03C0;<!-- π --></mi>
+        <mi>i</mi>
+        <msub>
+          <mi>&#x03B4;<!-- δ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \oint _{\gamma }(z-c)^{n-k-1}dz=2\pi i\delta _{nk}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e6abaae366b160b74c8fde3aa3023d82cc56460c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.838ex; width:28.84ex; height:6.343ex;" alt="\oint _{\gamma }(z-c)^{n-k-1}dz=2\pi i\delta _{nk}"/></span></dd></dl>
+<p>into the summation yields
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a_{k}=b_{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{k}=b_{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0d7138236d191e820eade34900cfaf749bd7716c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.503ex; height:2.509ex;" alt="a_{k}=b_{k}"/></span></dd></dl>
+<p>Hence the Laurent series is unique.
+</p>
+<h2><span class="mw-headline" id="Laurent_polynomials">Laurent polynomials</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laurent_series&amp;action=edit&amp;section=3" title="Edit section: Laurent polynomials">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Laurent_polynomial" title="Laurent polynomial">Laurent polynomial</a></div>
+<p>A <b>Laurent polynomial</b> is a Laurent series in which only finitely many coefficients are non-zero. Laurent polynomials differ from ordinary <a href="/wiki/Polynomial" title="Polynomial">polynomials</a> in that they may have terms of negative degree.
+</p>
+<h2><span class="mw-headline" id="Principal_part">Principal part</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laurent_series&amp;action=edit&amp;section=4" title="Edit section: Principal part">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <b>principal part</b> of a Laurent series is the series of terms with negative degree, that is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum _{k=-\infty }^{-1}a_{k}(z-c)^{k}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>c</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{k=-\infty }^{-1}a_{k}(z-c)^{k}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/df235dc109f1afb87f013acfc87b26a6c5ce11f3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:16.243ex; height:7.509ex;" alt="\sum _{k=-\infty }^{-1}a_{k}(z-c)^{k}."/></span></dd></dl>
+<p>If the principal part of <i>f</i> is a finite sum, then <i>f</i> has a <a href="/wiki/Pole_(complex_analysis)" class="mw-redirect" title="Pole (complex analysis)">pole</a> at <i>c</i> of order equal to (negative) the degree of the highest term; on the other hand, if <i>f</i> has an <a href="/wiki/Essential_singularity" title="Essential singularity">essential singularity</a> at <i>c</i>, the principal part is an infinite sum (meaning it has infinitely many non-zero terms).
+</p><p>If the inner radius of convergence of the Laurent series for <i>f</i> is 0, then <i>f</i> has an essential singularity at <i>c</i> if and only if the principal part is an infinite sum, and has a pole otherwise.
+</p><p>If the inner radius of convergence is positive, <i>f</i> may have infinitely many negative terms but still be regular at <i>c</i>, as in the example above, in which case it is represented by a <i>different</i> Laurent series in a disk about&#160;<i>c</i>.
+</p><p>Laurent series with only finitely many negative terms are well-behaved—they are a power series divided by <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle z^{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle z^{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/152bec16756f5bbf6fa6038d8f8d022923cb7b06" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.179ex; height:2.676ex;" alt="z^{k}"/></span>, and can be analyzed similarly—while Laurent series with infinitely many negative terms have complicated behavior on the inner circle of convergence.
+</p>
+<h3><span class="mw-headline" id="Multiplication">Multiplication</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laurent_series&amp;action=edit&amp;section=5" title="Edit section: Multiplication">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Laurent series cannot in general be multiplied.
+Algebraically, the expression for the terms of the product may involve infinite sums which need not converge (one cannot take the <a href="/wiki/Convolution" title="Convolution">convolution</a> of integer sequences).
+Geometrically, the two Laurent series may have non-overlapping annuli of convergence.
+</p><p>Two Laurent series with only <i>finitely</i> many negative terms can be multiplied: algebraically, the sums are all finite; geometrically, these have poles at <i>c</i>, and inner radius of convergence 0, so they both converge on an overlapping annulus.
+</p><p>Thus when defining <a href="/wiki/Formal_power_series#Formal_Laurent_series" title="Formal power series">formal Laurent series</a>, one requires Laurent series with only finitely many negative terms.
+</p><p>Similarly, the sum of two convergent Laurent series need not converge, though it is always defined formally, but the sum of two bounded below Laurent series (or any Laurent series on a punctured disk) has a non-empty annulus of convergence.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laurent_series&amp;action=edit&amp;section=6" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Puiseux_series" title="Puiseux series">Puiseux series</a></li>
+<li><a href="/wiki/Mittag-Leffler%27s_theorem" title="Mittag-Leffler&#39;s theorem">Mittag-Leffler's theorem</a></li>
+<li><a href="/wiki/Formal_Laurent_series" class="mw-redirect" title="Formal Laurent series">Formal Laurent series</a> &#8212; Laurent series considered <i>formally</i>, with coefficients from an arbitrary <a href="/wiki/Commutative_ring" title="Commutative ring">commutative ring</a>, without regard for convergence, and with only <i>finitely</i> many negative terms, so that multiplication is always defined.</li>
+<li><a href="/wiki/Z-transform" title="Z-transform">Z-transform</a> &#8212; the special case where the Laurent series is taken about zero has much use in time series analysis.</li>
+<li><a href="/wiki/Fourier_series" title="Fourier series">Fourier series</a> &#8212; the substitution <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle z=e^{\pi iw}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>z</mi>
+        <mo>=</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03C0;<!-- π --></mi>
+            <mi>i</mi>
+            <mi>w</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle z=e^{\pi iw}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fdd55b6e87f3738d2c7d6a6016e87422e9f50930" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:8.188ex; height:2.676ex;" alt="z=e^{\pi iw}"/></span> transforms a Laurent series into a Fourier series, or conversely. This is used in the <i>q</i>-series expansion of the <a href="/wiki/J-invariant" title="J-invariant"><i>j</i>-invariant</a>.</li>
+<li><a href="/wiki/Pad%C3%A9_approximant" title="Padé approximant">Padé approximant</a> &#8212; Another technique used when a <a href="/wiki/Taylor_series" title="Taylor series">Taylor series</a> is not viable</li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laurent_series&amp;action=edit&amp;section=7" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite id="CITEREFRodriguezKraGilman2012" class="citation">Rodriguez, Rubi; Kra, Irwin; <a href="/wiki/Jane_Piore_Gilman" title="Jane Piore Gilman">Gilman, Jane P.</a> (2012), <a rel="nofollow" class="external text" href="https://books.google.com/books?id=fZbf629lTy0C&amp;pg=PA12"><i>Complex Analysis: In the Spirit of Lipman Bers</i></a>, Graduate Texts in Mathematics, <b>245</b>, Springer, p.&#160;12, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9781441973238" title="Special:BookSources/9781441973238"><bdi>9781441973238</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Complex+Analysis%3A+In+the+Spirit+of+Lipman+Bers&amp;rft.series=Graduate+Texts+in+Mathematics&amp;rft.pages=12&amp;rft.pub=Springer&amp;rft.date=2012&amp;rft.isbn=9781441973238&amp;rft.aulast=Rodriguez&amp;rft.aufirst=Rubi&amp;rft.au=Kra%2C+Irwin&amp;rft.au=Gilman%2C+Jane+P.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DfZbf629lTy0C%26pg%3DPA12&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALaurent+series" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style>.</span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Laurent_series&amp;action=edit&amp;section=8" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><cite id="CITEREFHazewinkel2001" class="citation"><a href="/wiki/Michiel_Hazewinkel" title="Michiel Hazewinkel">Hazewinkel, Michiel</a>, ed. (2001) [1994], <a rel="nofollow" class="external text" href="https://www.encyclopediaofmath.org/index.php?title=p/l057690">"Laurent series"</a>, <i><a href="/wiki/Encyclopedia_of_Mathematics" title="Encyclopedia of Mathematics">Encyclopedia of Mathematics</a></i>, Springer Science+Business Media B.V. / Kluwer Academic Publishers, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-55608-010-4" title="Special:BookSources/978-1-55608-010-4"><bdi>978-1-55608-010-4</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Laurent+series&amp;rft.btitle=Encyclopedia+of+Mathematics&amp;rft.pub=Springer+Science%2BBusiness+Media+B.V.+%2F+Kluwer+Academic+Publishers&amp;rft.date=2001&amp;rft.isbn=978-1-55608-010-4&amp;rft_id=https%3A%2F%2Fwww.encyclopediaofmath.org%2Findex.php%3Ftitle%3Dp%2Fl057690&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALaurent+series" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite class="citation"><a href="/wiki/John_J._O%27Connor_(mathematician)" class="mw-redirect" title="John J. O&#39;Connor (mathematician)">O'Connor, John J.</a>; <a href="/wiki/Edmund_F._Robertson" title="Edmund F. Robertson">Robertson, Edmund F.</a>, <a rel="nofollow" class="external text" href="http://www-history.mcs.st-andrews.ac.uk/Biographies/Laurent_Pierre.html">"Laurent series"</a>, <i><a href="/wiki/MacTutor_History_of_Mathematics_archive" title="MacTutor History of Mathematics archive">MacTutor History of Mathematics archive</a></i>, <a href="/wiki/University_of_St_Andrews" title="University of St Andrews">University of St Andrews</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Laurent+series&amp;rft.btitle=MacTutor+History+of+Mathematics+archive&amp;rft.pub=University+of+St+Andrews&amp;rft.aulast=O%27Connor&amp;rft.aufirst=John+J.&amp;rft.au=Robertson%2C+Edmund+F.&amp;rft_id=http%3A%2F%2Fwww-history.mcs.st-andrews.ac.uk%2FBiographies%2FLaurent_Pierre.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALaurent+series" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/>.</li>
+<li><span class="citation mathworld" id="Reference-Mathworld-Laurent_Series"><cite class="citation web"><a href="/wiki/Eric_W._Weisstein" title="Eric W. Weisstein">Weisstein, Eric W.</a> <a rel="nofollow" class="external text" href="http://mathworld.wolfram.com/LaurentSeries.html">"Laurent Series"</a>. <i><a href="/wiki/MathWorld" title="MathWorld">MathWorld</a></i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=MathWorld&amp;rft.atitle=Laurent+Series&amp;rft.au=Weisstein%2C+Eric+W.&amp;rft_id=http%3A%2F%2Fmathworld.wolfram.com%2FLaurentSeries.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALaurent+series" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span></li>
+<li><a rel="nofollow" class="external text" href="http://www.mrob.com/pub/muency/laurentseries.html">Laurent Series and Mandelbrot set by Robert Munafo</a></li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1248
+Cached time: 20190805112657
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.256 seconds
+Real time usage: 0.366 seconds
+Preprocessor visited node count: 634/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 10762/2097152 bytes
+Template argument size: 303/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 0/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 10308/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.095/10.000 seconds
+Lua memory usage: 2.63 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  212.037      1 -total
+ 46.57%   98.746      1 Template:Reflist
+ 44.93%   95.266      3 Template:Citation
+ 18.26%   38.714      1 Template:Short_description
+ 16.47%   34.925      1 Template:Pagetype
+  9.36%   19.844      1 Template:Springer
+  7.48%   15.856      1 Template:MacTutor_Biography
+  6.59%   13.966      1 Template:About
+  6.35%   13.469      1 Template:MathWorld
+  4.61%    9.780      1 Template:Cite_web
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:61213-0!canonical!math=5 and timestamp 20190805112656 and revision id 890438602
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Laurent_series&amp;oldid=890438602">https://en.wikipedia.org/w/index.php?title=Laurent_series&amp;oldid=890438602</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Complex_analysis" title="Category:Complex analysis">Complex analysis</a></li><li><a href="/wiki/Category:Series_expansions" title="Category:Series expansions">Series expansions</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Laurent+series" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Laurent+series" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Laurent_series" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Laurent_series" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Laurent_series">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Laurent_series&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Laurent_series&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Laurent_series" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Laurent_series" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Laurent_series&amp;oldid=890438602" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Laurent_series&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q425432" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Laurent_series&amp;id=890438602" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Laurent+series">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Laurent+series&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Laurent_series&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D9%85%D8%AA%D8%B3%D9%84%D8%B3%D9%84%D8%A9_%D9%84%D9%88%D8%B1%D9%86%D8%AA" title="متسلسلة لورنت – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-be"><a href="https://be.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B4_%D0%9B%D0%B0%D1%80%D0%B0%D0%BD%D0%B0" title="Рад Ларана – Belarusian" lang="be" hreflang="be" class="interlanguage-link-target">Беларуская</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/S%C3%A8rie_de_Laurent" title="Sèrie de Laurent – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Laurentova_%C5%99ada" title="Laurentova řada – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Laurent-Reihe" title="Laurent-Reihe – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-et"><a href="https://et.wikipedia.org/wiki/Laurent%27i_rida" title="Laurent&#039;i rida – Estonian" lang="et" hreflang="et" class="interlanguage-link-target">Eesti</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Serie_de_Laurent" title="Serie de Laurent – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eo"><a href="https://eo.wikipedia.org/wiki/Serio_de_Laurent" title="Serio de Laurent – Esperanto" lang="eo" hreflang="eo" class="interlanguage-link-target">Esperanto</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%B3%D8%B1%DB%8C_%D9%84%D9%88%D8%B1%D8%A7%D9%86" title="سری لوران – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/S%C3%A9rie_de_Laurent" title="Série de Laurent – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EB%A1%9C%EB%9E%91_%EA%B8%89%EC%88%98" title="로랑 급수 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Serie_di_Laurent" title="Serie di Laurent – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%98%D7%95%D7%A8_%D7%9C%D7%95%D7%A8%D7%9F" title="טור לורן – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-lt"><a href="https://lt.wikipedia.org/wiki/Lorano_eilut%C4%97" title="Lorano eilutė – Lithuanian" lang="lt" hreflang="lt" class="interlanguage-link-target">Lietuvių</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/Laurent-sor" title="Laurent-sor – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Laurentreeks" title="Laurentreeks – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%B3%E7%B4%9A%E6%95%B0" title="ローラン級数 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Szereg_Laurenta" title="Szereg Laurenta – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/S%C3%A9rie_de_Laurent" title="Série de Laurent – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%A0%D1%8F%D0%B4_%D0%9B%D0%BE%D1%80%D0%B0%D0%BD%D0%B0" title="Ряд Лорана – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sl"><a href="https://sl.wikipedia.org/wiki/Laurentova_vrsta" title="Laurentova vrsta – Slovenian" lang="sl" hreflang="sl" class="interlanguage-link-target">Slovenščina</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/%D0%9B%D0%BE%D1%80%D0%B0%D0%BD%D0%BE%D0%B2_%D1%80%D0%B5%D0%B4" title="Лоранов ред – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Laurentin_sarja" title="Laurentin sarja – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Laurentserie" title="Laurentserie – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-tt"><a href="https://tt.wikipedia.org/wiki/%D0%9B%D0%BE%D1%80%D0%B0%D0%BD_%D1%80%D3%99%D1%82%D0%B5" title="Лоран рәте – Tatar" lang="tt" hreflang="tt" class="interlanguage-link-target">Татарча/tatarça</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Laurent_serisi" title="Laurent serisi – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%A0%D1%8F%D0%B4_%D0%9B%D0%BE%D1%80%D0%B0%D0%BD%D0%B0" title="Ряд Лорана – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/Chu%E1%BB%97i_Laurent" title="Chuỗi Laurent – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E6%B4%9B%E6%9C%97%E7%BA%A7%E6%95%B0" title="洛朗级数 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q425432#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 1 April 2019, at 10:46<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Laurent_series&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.256","walltime":"0.366","ppvisitednodes":{"value":634,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":10762,"limit":2097152},"templateargumentsize":{"value":303,"limit":2097152},"expansiondepth":{"value":7,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":10308,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  212.037      1 -total"," 46.57%   98.746      1 Template:Reflist"," 44.93%   95.266      3 Template:Citation"," 18.26%   38.714      1 Template:Short_description"," 16.47%   34.925      1 Template:Pagetype","  9.36%   19.844      1 Template:Springer","  7.48%   15.856      1 Template:MacTutor_Biography","  6.59%   13.966      1 Template:About","  6.35%   13.469      1 Template:MathWorld","  4.61%    9.780      1 Template:Cite_web"]},"scribunto":{"limitreport-timeusage":{"value":"0.095","limit":"10.000"},"limitreport-memusage":{"value":2759459,"limit":52428800}},"cachereport":{"origin":"mw1248","timestamp":"20190805112657","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Laurent series","url":"https:\/\/en.wikipedia.org\/wiki\/Laurent_series","sameAs":"http:\/\/www.wikidata.org\/entity\/Q425432","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q425432","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-07-09T23:08:28Z","dateModified":"2019-04-01T10:46:06Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/5\/5a\/Laurent_series.svg","headline":"power series generalized to allow negative powers"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":88,"wgHostname":"mw1330"});});</script>
+</body>
+</html>

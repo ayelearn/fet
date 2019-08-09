@@ -1,0 +1,1 @@
+major_stratigraphic_divisions_of_India

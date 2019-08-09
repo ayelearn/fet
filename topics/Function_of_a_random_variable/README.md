@@ -1,0 +1,1 @@
+Function_of_a_random_variable

@@ -1,0 +1,1 @@
+vapor-compression_refrigeration_cycle

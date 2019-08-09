@@ -1,0 +1,1 @@
+types_of_transducers_and_their_characteristics

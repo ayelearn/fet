@@ -1,0 +1,1 @@
+direct_and_vector-mediated

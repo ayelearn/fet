@@ -1,0 +1,1 @@
+Relationship_of_transition_moment_integral_with_molar_extinction_coefficient_and_oscillator_strength

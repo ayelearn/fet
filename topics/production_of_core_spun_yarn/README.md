@@ -1,0 +1,1 @@
+production_of_core_spun_yarn

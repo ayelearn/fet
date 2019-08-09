@@ -1,0 +1,2932 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Conditional probability - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Conditional_probability","wgTitle":"Conditional probability","wgCurRevisionId":908157342,"wgRevisionId":908157342,"wgArticleId":24104134,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Commons category link from Wikidata","Conditional probability","Invalid proofs","Statistical ratios"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+"wgRelevantPageName":"Conditional_probability","wgRelevantArticleId":24104134,"wgRequestId":"XUw04wpAAEUAACvIqtMAAABH","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q327069","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":
+"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.math.scripts","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups",
+"ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Conditional_probability"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Conditional_probability&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Conditional_probability&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Conditional_probability"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Conditional_probability rootpage-Conditional_probability skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Conditional probability</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table class="vertical-navbox nowraplinks hlist" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%"><tbody><tr><td style="padding-top:0.4em;line-height:1.2em">Part of a series on <a href="/wiki/Statistics" title="Statistics">statistics</a></td></tr><tr><th style="padding:0.2em 0.4em 0.2em;padding-top:0;font-size:145%;line-height:1.2em"><a href="/wiki/Probability_theory" title="Probability theory">Probability theory</a></th></tr><tr><td style="padding:0.2em 0 0.4em"><a href="/wiki/File:Nuvola_apps_atlantik.png" class="image"><img alt="Nuvola apps atlantik.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/77/Nuvola_apps_atlantik.png/100px-Nuvola_apps_atlantik.png" decoding="async" width="100" height="100" srcset="//upload.wikimedia.org/wikipedia/commons/7/77/Nuvola_apps_atlantik.png 1.5x" data-file-width="128" data-file-height="128" /></a></td></tr><tr><td style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Probability_axioms" title="Probability axioms">Probability axioms</a></li></ul></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Probability_space" title="Probability space">Probability space</a></li>
+<li><a href="/wiki/Sample_space" title="Sample space">Sample space</a></li>
+<li><a href="/wiki/Elementary_event" title="Elementary event">Elementary event</a></li>
+<li><a href="/wiki/Event_(probability_theory)" title="Event (probability theory)">Event</a></li>
+<li><a href="/wiki/Random_variable" title="Random variable">Random variable</a></li>
+<li><a href="/wiki/Probability_measure" title="Probability measure">Probability measure</a></li></ul></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Complementary_event" title="Complementary event">Complementary event</a></li>
+<li><a href="/wiki/Joint_probability_distribution" title="Joint probability distribution">Joint probability</a></li>
+<li><a href="/wiki/Marginal_distribution" title="Marginal distribution">Marginal probability</a></li>
+<li><a class="mw-selflink selflink">Conditional probability</a></li></ul></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Independence_(probability_theory)" title="Independence (probability theory)">Independence</a></li>
+<li><a href="/wiki/Conditional_independence" title="Conditional independence">Conditional independence</a></li>
+<li><a href="/wiki/Law_of_total_probability" title="Law of total probability">Law of total probability</a></li>
+<li><a href="/wiki/Law_of_large_numbers" title="Law of large numbers">Law of large numbers</a></li>
+<li><a href="/wiki/Bayes%27_theorem" title="Bayes&#39; theorem">Bayes' theorem</a></li>
+<li><a href="/wiki/Boole%27s_inequality" title="Boole&#39;s inequality">Boole's inequality</a></li></ul></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Venn_diagram" title="Venn diagram">Venn diagram</a></li>
+<li><a href="/wiki/Tree_diagram_(probability_theory)" title="Tree diagram (probability theory)">Tree diagram</a></li></ul></td>
+</tr><tr><td style="text-align:right;font-size:115%"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="/wiki/Template:Probability_fundamentals" title="Template:Probability fundamentals"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Probability_fundamentals" title="Template talk:Probability fundamentals"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Probability_fundamentals&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p>In <a href="/wiki/Probability_theory" title="Probability theory">probability theory</a>, <b>conditional probability</b> is a measure of the <a href="/wiki/Probability" title="Probability">probability</a> of an <a href="/wiki/Event_(probability_theory)" title="Event (probability theory)">event</a> occurring given that another event has occurred.<sup id="cite_ref-Allan_Gut_2013_1-0" class="reference"><a href="#cite_note-Allan_Gut_2013-1">&#91;1&#93;</a></sup> If the event of interest is <i>A</i> and the event <i>B</i> is known or assumed to have occurred, "the conditional probability of <i>A</i> given <i>B</i>", or "the probability of <i>A</i> under the condition <i>B</i>", is usually written as P(<i>A</i>&#160;|&#160;<i>B</i>), or sometimes <i>P</i><sub><i>B</i></sub>(<i>A</i>) or P(<i>A</i>&#160;/&#160;<i>B</i>). For example, the probability that any given person has a cough on any given day may be only 5%. But if we know or assume that the person has a <a href="/wiki/Common_cold" title="Common cold">cold</a>, then they are much more likely to be coughing. The conditional probability of coughing by the unwell might be 75%, then: P(Cough)&#160;=&#160;5%; P(Cough&#160;|&#160;Sick)&#160;=&#160;75%
+</p><p>The concept of conditional probability is one of the most fundamental and one of the most important in probability theory.<sup id="cite_ref-Sheldon_Ross_2010_2-0" class="reference"><a href="#cite_note-Sheldon_Ross_2010-2">&#91;2&#93;</a></sup> But conditional probabilities can be quite slippery and require careful interpretation.<sup id="cite_ref-Casella_and_Berger_2002_3-0" class="reference"><a href="#cite_note-Casella_and_Berger_2002-3">&#91;3&#93;</a></sup>  For example, there need not be a causal relationship between <i>A</i> and <i>B</i>, and they don't have to occur simultaneously.
+</p><p>P(<i>A</i>&#160;|&#160;<i>B</i>) may or may not be equal to P(<i>A</i>) (the unconditional probability of <i>A</i>).  If P(<i>A</i>&#160;|&#160;<i>B</i>) = P(<i>A</i>), then events <i>A</i> and <i>B</i> are said to be <a href="/wiki/Independence_(probability_theory)#Two_events" title="Independence (probability theory)">"independent"</a>: in such a case, knowledge about either event does not give <a href="/wiki/Information" title="Information">information</a> on the other. P(<i>A</i>&#160;|&#160;<i>B</i>) (the conditional probability of A given B) typically differs from P(<i>B</i>&#160;|&#160;<i>A</i>). For example, if a person has <a href="/wiki/Dengue" class="mw-redirect" title="Dengue">dengue</a>, they might have a 90% chance of testing positive for dengue.  In this case what is being measured is that if event <i>B</i> ("having dengue") has occurred, the probability of <i>A</i> (<i>test is positive</i>) given that <i>B</i> (<i>having dengue</i>) occurred is 90%: that is, P(<i>A</i>&#160;|&#160;<i>B</i>) = 90%.  Alternatively, if a person tests positive for dengue they may have only a 15% chance of actually having this rare disease because the <a href="/wiki/False_positive" class="mw-redirect" title="False positive">false positive</a> rate for the test may be high. In this case what is being measured is the probability of the event  <i>B</i> (<i>having dengue</i>) given that the event <i>A</i> (<i>test is positive</i>) has occurred: P(<i>B</i>&#160;|&#160;<i>A</i>) = 15%. Falsely equating the two probabilities causes various errors of reasoning such as the <a href="/wiki/Base_rate_fallacy" title="Base rate fallacy">base rate fallacy</a>. Conditional probabilities can be reversed using <a href="/wiki/Bayes%27_theorem" title="Bayes&#39; theorem">Bayes' theorem</a>.
+</p><p>Conditional probabilities can be displayed in a <a href="/wiki/Conditional_probability_table" title="Conditional probability table">conditional probability table</a>.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Definition"><span class="tocnumber">1</span> <span class="toctext">Definition</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Conditioning_on_an_event"><span class="tocnumber">1.1</span> <span class="toctext">Conditioning on an event</span></a>
+<ul>
+<li class="toclevel-3 tocsection-3"><a href="#Kolmogorov_definition"><span class="tocnumber">1.1.1</span> <span class="toctext">Kolmogorov definition</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="#As_an_axiom_of_probability"><span class="tocnumber">1.1.2</span> <span class="toctext">As an axiom of probability</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#As_the_probability_of_a_conditional_event"><span class="tocnumber">1.1.3</span> <span class="toctext">As the probability of a conditional event</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-6"><a href="#Measure-theoretic_definition"><span class="tocnumber">1.2</span> <span class="toctext">Measure-theoretic definition</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Conditioning_on_a_random_variable"><span class="tocnumber">1.3</span> <span class="toctext">Conditioning on a random variable</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Partial_conditional_probability"><span class="tocnumber">1.4</span> <span class="toctext">Partial conditional probability</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Use_in_inference"><span class="tocnumber">3</span> <span class="toctext">Use in inference</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Statistical_independence"><span class="tocnumber">4</span> <span class="toctext">Statistical independence</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Common_fallacies"><span class="tocnumber">5</span> <span class="toctext">Common fallacies</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="#Assuming_conditional_probability_is_of_similar_size_to_its_inverse"><span class="tocnumber">5.1</span> <span class="toctext">Assuming conditional probability is of similar size to its inverse</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Assuming_marginal_and_conditional_probabilities_are_of_similar_size"><span class="tocnumber">5.2</span> <span class="toctext">Assuming marginal and conditional probabilities are of similar size</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Over-_or_under-weighting_priors"><span class="tocnumber">5.3</span> <span class="toctext">Over- or under-weighting priors</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#Formal_derivation"><span class="tocnumber">6</span> <span class="toctext">Formal derivation</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Definition">Definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Conditional_probability&amp;action=edit&amp;section=1" title="Edit section: Definition">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:Conditional_probability.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Conditional_probability.svg/220px-Conditional_probability.svg.png" decoding="async" width="220" height="156" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Conditional_probability.svg/330px-Conditional_probability.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Conditional_probability.svg/440px-Conditional_probability.svg.png 2x" data-file-width="815" data-file-height="578" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Conditional_probability.svg" class="internal" title="Enlarge"></a></div>Illustration of conditional probabilities with an <a href="/wiki/Euler_diagram" title="Euler diagram">Euler diagram</a>. The unconditional <a href="/wiki/Probability" title="Probability">probability</a> P(<i>A</i>) = 0.30 + 0.10 + 0.12 = 0.52. However, the conditional probability <i>P</i>(<i>A</i>&#124;<i>B</i><sub>1</sub>) = 1, <i>P</i>(<i>A</i>&#124;<i>B</i><sub>2</sub>) = 0.12 ÷ (0.12 + 0.04) = 0.75, and P(<i>A</i>&#124;<i>B</i><sub>3</sub>) = 0.</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:Probability_tree_diagram.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Probability_tree_diagram.svg/220px-Probability_tree_diagram.svg.png" decoding="async" width="220" height="151" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Probability_tree_diagram.svg/330px-Probability_tree_diagram.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Probability_tree_diagram.svg/440px-Probability_tree_diagram.svg.png 2x" data-file-width="424" data-file-height="291" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Probability_tree_diagram.svg" class="internal" title="Enlarge"></a></div>On a <a href="/wiki/Tree_diagram_(probability_theory)" title="Tree diagram (probability theory)">tree diagram</a>, branch probabilities are conditional on the event associated with the parent node. (Here the overbars indicate that the event does not occur.)</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:Venn_Pie_Chart_describing_Bayes%27_law.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/86/Venn_Pie_Chart_describing_Bayes%27_law.png/220px-Venn_Pie_Chart_describing_Bayes%27_law.png" decoding="async" width="220" height="180" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/86/Venn_Pie_Chart_describing_Bayes%27_law.png/330px-Venn_Pie_Chart_describing_Bayes%27_law.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/86/Venn_Pie_Chart_describing_Bayes%27_law.png/440px-Venn_Pie_Chart_describing_Bayes%27_law.png 2x" data-file-width="883" data-file-height="724" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Venn_Pie_Chart_describing_Bayes%27_law.png" class="internal" title="Enlarge"></a></div>Venn Pie Chart describing conditional probabilities</div></div></div>
+<h3><span class="mw-headline" id="Conditioning_on_an_event">Conditioning on an event</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Conditional_probability&amp;action=edit&amp;section=2" title="Edit section: Conditioning on an event">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h4><span class="mw-headline" id="Kolmogorov_definition">Kolmogorov definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Conditional_probability&amp;action=edit&amp;section=3" title="Edit section: Kolmogorov definition">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Given two <a href="/wiki/Event_(probability_theory)" title="Event (probability theory)">events</a> <i>A</i> and <i>B</i>, from the <a href="/wiki/Sigma-field" class="mw-redirect" title="Sigma-field">sigma-field</a> of a probability space, with the <a href="/wiki/Marginal_probability" class="mw-redirect" title="Marginal probability">unconditional probability</a> of B (that is, of the event <i>B</i> occurring ) being greater than zero, <i>P</i>(<i>B</i>)&#160;&gt;&#160;0,  the conditional probability of <i>A</i> given <i>B</i> is defined as the <a href="/wiki/Quotient" title="Quotient">quotient</a> of the probability of the joint of events <i>A</i> and <i>B</i>, and the <a href="/wiki/Probability" title="Probability">probability</a> of <i>B</i>:<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A\mid B)={\frac {P(A\cap B)}{P(B)}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>P</mi>
+              <mo stretchy="false">(</mo>
+              <mi>A</mi>
+              <mo>&#x2229;<!-- ∩ --></mo>
+              <mi>B</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi>P</mi>
+              <mo stretchy="false">(</mo>
+              <mi>B</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A\mid B)={\frac {P(A\cap B)}{P(B)}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/74cbddb93db29a62d522cd6ab266531ae295a0fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:23.225ex; height:6.509ex;" alt="{\displaystyle P(A\mid B)={\frac {P(A\cap B)}{P(B)}},}"/></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A\cap B)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2229;<!-- ∩ --></mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A\cap B)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f22276bc48d131dadc7e4dacbf38cee3ed05d536" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.644ex; height:2.843ex;" alt="P(A\cap B)"/></span> is the probability that both events <i>A</i> and <i>B</i> occur. This may be visualized as restricting the sample space to situations in which <i>B</i> occurs. The logic behind this equation is that if the possible outcomes for <i>A</i> and <i>B</i> are restricted to  those in which <i>B</i> occurs, this set serves as the new sample space.
+</p><p>Note that this is a definition but not a theoretical result. We just denote the quantity <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {P(A\cap B)}{P(B)}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>P</mi>
+              <mo stretchy="false">(</mo>
+              <mi>A</mi>
+              <mo>&#x2229;<!-- ∩ --></mo>
+              <mi>B</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi>P</mi>
+              <mo stretchy="false">(</mo>
+              <mi>B</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {P(A\cap B)}{P(B)}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7ab59c72658b1b3b15a26d192bcefd2ae802f3d7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:10.481ex; height:6.509ex;" alt="{\displaystyle {\frac {P(A\cap B)}{P(B)}}}"/></span> as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A\mid B)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A\mid B)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8f8f30f4da85b53901e0871eb41ed8827f511bb7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.999ex; height:2.843ex;" alt="P(A\mid B)"/></span> and call it the conditional probability of <i>A</i> given <i>B</i>.
+</p>
+<h4><span class="mw-headline" id="As_an_axiom_of_probability">As an axiom of probability</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Conditional_probability&amp;action=edit&amp;section=4" title="Edit section: As an axiom of probability">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Some authors, such as <a href="/wiki/Bruno_de_Finetti" title="Bruno de Finetti">de Finetti</a>, prefer to introduce conditional probability as an <a href="/wiki/Probability_axioms" title="Probability axioms">axiom of probability</a>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A\cap B)=P(A\mid B)P(B)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2229;<!-- ∩ --></mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A\cap B)=P(A\mid B)P(B)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e3bb215824bee38fc66af7e90168657facbccb5d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:27.061ex; height:2.843ex;" alt="{\displaystyle P(A\cap B)=P(A\mid B)P(B)}"/></span></dd></dl>
+<p>Although mathematically equivalent, this may be preferred philosophically; under major <a href="/wiki/Probability_interpretations" title="Probability interpretations">probability interpretations</a> such as the <a href="/wiki/Subjective_probability" class="mw-redirect" title="Subjective probability">subjective theory</a>, conditional probability is considered a primitive entity. Further, this "multiplication axiom" introduces a symmetry with the summation axiom for <a href="/wiki/Mutually_exclusive_events" class="mw-redirect" title="Mutually exclusive events">mutually exclusive events</a>:<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A\cup B)=P(A)+P(B)-{\cancelto {0}{P(A\cap B)}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x222A;<!-- ∪ --></mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msup>
+            <menclose notation="updiagonalstrike updiagonalarrow">
+              <mi>P</mi>
+              <mo stretchy="false">(</mo>
+              <mi>A</mi>
+              <mo>&#x2229;<!-- ∩ --></mo>
+              <mi>B</mi>
+              <mo stretchy="false">)</mo>
+            </menclose>
+            <mpadded height="+.1em" depth="-.1em" voffset=".1em">
+              <mn>0</mn>
+            </mpadded>
+          </msup>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A\cup B)=P(A)+P(B)-{\cancelto {0}{P(A\cap B)}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/26cc8a8d33d4745cbc03467658c21d7672ec7378" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.505ex; width:41.016ex; height:5.009ex;" alt="P(A\cup B)=P(A)+P(B)-{\cancelto {0}{P(A\cap B)}}"/></span></dd></dl>
+<h4><span class="mw-headline" id="As_the_probability_of_a_conditional_event">As the probability of a conditional event</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Conditional_probability&amp;action=edit&amp;section=5" title="Edit section: As the probability of a conditional event">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Conditional probability can be defined as the probability of a conditional event 
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A_{B}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>B</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A_{B}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/40c23902854ca17ed340b014fda4b3e6adc02b46" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.223ex; height:2.509ex;" alt="A_B"/></span>.<sup id="cite_ref-Draheim2017c_6-0" class="reference"><a href="#cite_note-Draheim2017c-6">&#91;6&#93;</a></sup> Assuming that the experiment underlying the events <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="A"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle B}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>B</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle B}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/47136aad860d145f75f3eed3022df827cee94d7a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.764ex; height:2.176ex;" alt="B"/></span> is repeated, the 
+<a href="/wiki/Goodman%E2%80%93Nguyen%E2%80%93van_Fraassen_algebra" title="Goodman–Nguyen–van Fraassen algebra">Goodman–Nguyen–van Fraassen</a>
+conditional event can be defined as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A_{B}=\bigcup _{i\geq 1}\left(\bigcap _{j&lt;i}{\overline {B}}_{j},A_{i}B_{i}\right).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>B</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <munder>
+          <mo>&#x22C3;<!-- ⋃ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>&#x2265;<!-- ≥ --></mo>
+            <mn>1</mn>
+          </mrow>
+        </munder>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <munder>
+              <mo>&#x22C2;<!-- ⋂ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>j</mi>
+                <mo>&lt;</mo>
+                <mi>i</mi>
+              </mrow>
+            </munder>
+            <msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mover>
+                  <mi>B</mi>
+                  <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                </mover>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>j</mi>
+              </mrow>
+            </msub>
+            <mo>,</mo>
+            <msub>
+              <mi>A</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>B</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A_{B}=\bigcup _{i\geq 1}\left(\bigcap _{j&lt;i}{\overline {B}}_{j},A_{i}B_{i}\right).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4d6f70a472510d40ec9955af8f2692c4efec3223" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:25.989ex; height:7.676ex;" alt="{\displaystyle A_{B}=\bigcup _{i\geq 1}\left(\bigcap _{j&lt;i}{\overline {B}}_{j},A_{i}B_{i}\right).}"/></span></dd></dl>
+<p>It can be shown that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A_{B})={\frac {P(A\cap B)}{P(B)}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>B</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>P</mi>
+              <mo stretchy="false">(</mo>
+              <mi>A</mi>
+              <mo>&#x2229;<!-- ∩ --></mo>
+              <mi>B</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi>P</mi>
+              <mo stretchy="false">(</mo>
+              <mi>B</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A_{B})={\frac {P(A\cap B)}{P(B)}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a0d80f5483f719c116d479b3d89cf2817e4368fe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:20.356ex; height:6.509ex;" alt="{\displaystyle P(A_{B})={\frac {P(A\cap B)}{P(B)}}}"/></span></dd></dl>
+<p>which meets the Kolmogorov definition of conditional probability. Note that the equation 
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A_{B})=P(A\cap B)/P(B)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>B</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2229;<!-- ∩ --></mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A_{B})=P(A\cap B)/P(B)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4d91a1af05e83fa42155fd01ddf45ecc872dae04" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:26.001ex; height:2.843ex;" alt="{\displaystyle P(A_{B})=P(A\cap B)/P(B)}"/></span> is a theoretical result and not a definition. 
+The definition via conditional events can be understood directly in terms of the <a href="/wiki/Probability_axioms" title="Probability axioms">Kolmogorov axioms</a> and is particularly close to the Kolmogorov <a href="/wiki/Probability_interpretations" title="Probability interpretations">interpretation of probability</a> in terms of experimental data. For example, conditional events can be repeated themselves leading to a generalized notion of conditional event 
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A_{B(n)}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>B</mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A_{B(n)}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/92ec94a26ab01b0771ad0208ca4feb16900afcc1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:5.488ex; height:3.009ex;" alt="{\displaystyle A_{B(n)}}"/></span>. It can be shown<sup id="cite_ref-Draheim2017c_6-1" class="reference"><a href="#cite_note-Draheim2017c-6">&#91;6&#93;</a></sup> that the sequence 
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (A_{B(n)})_{n\geq 1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>B</mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msub>
+        <msub>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>&#x2265;<!-- ≥ --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (A_{B(n)})_{n\geq 1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4526dbe9e4c18bac174b96c7f038e8aa8178274a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:10.617ex; height:3.176ex;" alt="{\displaystyle (A_{B(n)})_{n\geq 1}}"/></span> is <a href="/wiki/Independent_and_identically_distributed_random_variables" title="Independent and identically distributed random variables">i.i.d.</a>, which yields a <a href="/wiki/Law_of_large_numbers" title="Law of large numbers">strong law of large numbers</a> for conditional probability:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P\left(\lim _{n\to \infty }{\overline {A}}_{B}^{n}=P(A\mid B)\right)=100\%}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <munder>
+              <mo movablelimits="true" form="prefix">lim</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo stretchy="false">&#x2192;<!-- → --></mo>
+                <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+              </mrow>
+            </munder>
+            <msubsup>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mover>
+                  <mi>A</mi>
+                  <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                </mover>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>B</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msubsup>
+            <mo>=</mo>
+            <mi>P</mi>
+            <mo stretchy="false">(</mo>
+            <mi>A</mi>
+            <mo>&#x2223;<!-- ∣ --></mo>
+            <mi>B</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mn>100</mn>
+        <mi mathvariant="normal">&#x0025;<!-- % --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P\left(\lim _{n\to \infty }{\overline {A}}_{B}^{n}=P(A\mid B)\right)=100\%}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f35691127bca8dfe38e1787ab9798f10f78955d2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:33.524ex; height:4.843ex;" alt="{\displaystyle P\left(\lim _{n\to \infty }{\overline {A}}_{B}^{n}=P(A\mid B)\right)=100\%}"/></span></dd></dl>
+<h3><span class="mw-headline" id="Measure-theoretic_definition">Measure-theoretic definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Conditional_probability&amp;action=edit&amp;section=6" title="Edit section: Measure-theoretic definition">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>If <i>P</i>(<i>B</i>)&#160;=&#160;0, then according to the simple definition, <i>P</i>(<i>A</i>|<i>B</i>) is <a href="/wiki/Defined_and_undefined" class="mw-redirect" title="Defined and undefined">undefined</a>. However, it is possible to define a conditional probability with respect to a <a href="/wiki/Sigma_algebra" class="mw-redirect" title="Sigma algebra">σ-algebra</a> of such events (such as those arising from a <a href="/wiki/Continuous_random_variable" class="mw-redirect" title="Continuous random variable">continuous random variable</a>).
+</p><p>For example, if <i>X</i> and <i>Y</i> are non-degenerate and jointly continuous random variables with density <i>ƒ</i><sub><i>X</i>,<i>Y</i></sub>(<i>x</i>,&#160;<i>y</i>) then, if <i>B</i> has positive <a href="/wiki/Measure_(mathematics)" title="Measure (mathematics)">measure</a>,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(X\in A\mid Y\in B)={\frac {\int _{y\in B}\int _{x\in A}f_{X,Y}(x,y)\,dx\,dy}{\int _{y\in B}\int _{x\in \mathbb {R} }f_{X,Y}(x,y)\,dx\,dy}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>X</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <mi>Y</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mo>&#x222B;<!-- ∫ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>y</mi>
+                  <mo>&#x2208;<!-- ∈ --></mo>
+                  <mi>B</mi>
+                </mrow>
+              </msub>
+              <msub>
+                <mo>&#x222B;<!-- ∫ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>x</mi>
+                  <mo>&#x2208;<!-- ∈ --></mo>
+                  <mi>A</mi>
+                </mrow>
+              </msub>
+              <msub>
+                <mi>f</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>X</mi>
+                  <mo>,</mo>
+                  <mi>Y</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>,</mo>
+              <mi>y</mi>
+              <mo stretchy="false">)</mo>
+              <mspace width="thinmathspace" />
+              <mi>d</mi>
+              <mi>x</mi>
+              <mspace width="thinmathspace" />
+              <mi>d</mi>
+              <mi>y</mi>
+            </mrow>
+            <mrow>
+              <msub>
+                <mo>&#x222B;<!-- ∫ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>y</mi>
+                  <mo>&#x2208;<!-- ∈ --></mo>
+                  <mi>B</mi>
+                </mrow>
+              </msub>
+              <msub>
+                <mo>&#x222B;<!-- ∫ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>x</mi>
+                  <mo>&#x2208;<!-- ∈ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">R</mi>
+                  </mrow>
+                </mrow>
+              </msub>
+              <msub>
+                <mi>f</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>X</mi>
+                  <mo>,</mo>
+                  <mi>Y</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>,</mo>
+              <mi>y</mi>
+              <mo stretchy="false">)</mo>
+              <mspace width="thinmathspace" />
+              <mi>d</mi>
+              <mi>x</mi>
+              <mspace width="thinmathspace" />
+              <mi>d</mi>
+              <mi>y</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(X\in A\mid Y\in B)={\frac {\int _{y\in B}\int _{x\in A}f_{X,Y}(x,y)\,dx\,dy}{\int _{y\in B}\int _{x\in \mathbb {R} }f_{X,Y}(x,y)\,dx\,dy}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/75f18f24beba197289547a3dede017878252c721" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:48.381ex; height:7.843ex;" alt="{\displaystyle P(X\in A\mid Y\in B)={\frac {\int _{y\in B}\int _{x\in A}f_{X,Y}(x,y)\,dx\,dy}{\int _{y\in B}\int _{x\in \mathbb {R} }f_{X,Y}(x,y)\,dx\,dy}}.}"/></span></dd></dl>
+<p>The case where <i>B</i> has zero measure is problematic. For the case that <i>B</i>&#160;=&#160;{<i>y</i><sub>0</sub>}, representing a single point, the conditional probability could be defined as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(X\in A\mid Y=y_{0})={\frac {\int _{x\in A}f_{X,Y}(x,y_{0})\,dx}{\int _{x\in \mathbb {R} }f_{X,Y}(x,y_{0})\,dx}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>X</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <mi>Y</mi>
+        <mo>=</mo>
+        <msub>
+          <mi>y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mo>&#x222B;<!-- ∫ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>x</mi>
+                  <mo>&#x2208;<!-- ∈ --></mo>
+                  <mi>A</mi>
+                </mrow>
+              </msub>
+              <msub>
+                <mi>f</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>X</mi>
+                  <mo>,</mo>
+                  <mi>Y</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>,</mo>
+              <msub>
+                <mi>y</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>0</mn>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+              <mspace width="thinmathspace" />
+              <mi>d</mi>
+              <mi>x</mi>
+            </mrow>
+            <mrow>
+              <msub>
+                <mo>&#x222B;<!-- ∫ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>x</mi>
+                  <mo>&#x2208;<!-- ∈ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">R</mi>
+                  </mrow>
+                </mrow>
+              </msub>
+              <msub>
+                <mi>f</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>X</mi>
+                  <mo>,</mo>
+                  <mi>Y</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>,</mo>
+              <msub>
+                <mi>y</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>0</mn>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+              <mspace width="thinmathspace" />
+              <mi>d</mi>
+              <mi>x</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(X\in A\mid Y=y_{0})={\frac {\int _{x\in A}f_{X,Y}(x,y_{0})\,dx}{\int _{x\in \mathbb {R} }f_{X,Y}(x,y_{0})\,dx}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a9870ef12eb371ca223fcc63df2f2177656bd0fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:42.47ex; height:7.176ex;" alt="{\displaystyle P(X\in A\mid Y=y_{0})={\frac {\int _{x\in A}f_{X,Y}(x,y_{0})\,dx}{\int _{x\in \mathbb {R} }f_{X,Y}(x,y_{0})\,dx}},}"/></span></dd></dl>
+<p>however this approach leads to the <a href="/wiki/Borel%E2%80%93Kolmogorov_paradox" title="Borel–Kolmogorov paradox">Borel–Kolmogorov paradox</a>. The more general case of zero measure is even more problematic, as can be seen by noting that the limit, as all <i>δy</i><sub><i>i</i></sub> approach zero, of
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(X\in A\mid Y\in \bigcup _{i}[y_{i},y_{i}+\delta y_{i}])\approxeq {\frac {\sum _{i}\int _{x\in A}f_{X,Y}(x,y_{i})\,dx\,\delta y_{i}}{\sum _{i}\int _{x\in \mathbb {R} }f_{X,Y}(x,y_{i})\,dx\,\delta y_{i}}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>X</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <mi>Y</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <munder>
+          <mo>&#x22C3;<!-- ⋃ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </munder>
+        <mo stretchy="false">[</mo>
+        <msub>
+          <mi>y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mi>&#x03B4;<!-- δ --></mi>
+        <msub>
+          <mi>y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">]</mo>
+        <mo stretchy="false">)</mo>
+        <mo>&#x224A;<!-- ≊ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <munder>
+                <mo>&#x2211;<!-- ∑ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                </mrow>
+              </munder>
+              <msub>
+                <mo>&#x222B;<!-- ∫ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>x</mi>
+                  <mo>&#x2208;<!-- ∈ --></mo>
+                  <mi>A</mi>
+                </mrow>
+              </msub>
+              <msub>
+                <mi>f</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>X</mi>
+                  <mo>,</mo>
+                  <mi>Y</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>,</mo>
+              <msub>
+                <mi>y</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+              <mspace width="thinmathspace" />
+              <mi>d</mi>
+              <mi>x</mi>
+              <mspace width="thinmathspace" />
+              <mi>&#x03B4;<!-- δ --></mi>
+              <msub>
+                <mi>y</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                </mrow>
+              </msub>
+            </mrow>
+            <mrow>
+              <munder>
+                <mo>&#x2211;<!-- ∑ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                </mrow>
+              </munder>
+              <msub>
+                <mo>&#x222B;<!-- ∫ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>x</mi>
+                  <mo>&#x2208;<!-- ∈ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">R</mi>
+                  </mrow>
+                </mrow>
+              </msub>
+              <msub>
+                <mi>f</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>X</mi>
+                  <mo>,</mo>
+                  <mi>Y</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>,</mo>
+              <msub>
+                <mi>y</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+              <mspace width="thinmathspace" />
+              <mi>d</mi>
+              <mi>x</mi>
+              <mspace width="thinmathspace" />
+              <mi>&#x03B4;<!-- δ --></mi>
+              <msub>
+                <mi>y</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                </mrow>
+              </msub>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(X\in A\mid Y\in \bigcup _{i}[y_{i},y_{i}+\delta y_{i}])\approxeq {\frac {\sum _{i}\int _{x\in A}f_{X,Y}(x,y_{i})\,dx\,\delta y_{i}}{\sum _{i}\int _{x\in \mathbb {R} }f_{X,Y}(x,y_{i})\,dx\,\delta y_{i}}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/26f127ee4281f3096623f1808477d47e2d60ad01" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:61.394ex; height:7.176ex;" alt="{\displaystyle P(X\in A\mid Y\in \bigcup _{i}[y_{i},y_{i}+\delta y_{i}])\approxeq {\frac {\sum _{i}\int _{x\in A}f_{X,Y}(x,y_{i})\,dx\,\delta y_{i}}{\sum _{i}\int _{x\in \mathbb {R} }f_{X,Y}(x,y_{i})\,dx\,\delta y_{i}}},}"/></span></dd></dl>
+<p>depends on their relationship as they approach zero. See <a href="/wiki/Conditional_expectation" title="Conditional expectation">conditional expectation</a> for more information.
+</p>
+<h3><span class="mw-headline" id="Conditioning_on_a_random_variable">Conditioning on a random variable</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Conditional_probability&amp;action=edit&amp;section=7" title="Edit section: Conditioning on a random variable">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Let <i>X</i> be a random variable; we assume for the sake of presentation that <i>X</i> is discrete, that is, <i>X</i> takes on only finitely many values <i>x</i>. Let <i>A</i> be an event. The conditional probability of <i>A</i> given <i>X</i> is defined as the random variable, written <i>P</i>(<i>A</i>|<i>X</i>)<i>, that takes on the value</i>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A\mid X=x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <mi>X</mi>
+        <mo>=</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A\mid X=x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dd6b8412e824c6d82068bd113f2d4ee24b1a19f7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:13.643ex; height:2.843ex;" alt="P(A\mid X=x)"/></span></dd></dl>
+<p>whenever
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle X=x.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>X</mi>
+        <mo>=</mo>
+        <mi>x</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle X=x.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ee8cfff8dc4965329415ed464421ec2868a2b2a7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:7.055ex; height:2.176ex;" alt="X=x."/></span></dd></dl>
+<p>More formally,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A\mid X)(\omega )=P(A\mid X=X(\omega )).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <mi>X</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03C9;<!-- ω --></mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <mi>X</mi>
+        <mo>=</mo>
+        <mi>X</mi>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03C9;<!-- ω --></mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A\mid X)(\omega )=P(A\mid X=X(\omega )).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e903e4bae93ebb5be383ba621da27f8109a371d8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:33.764ex; height:2.843ex;" alt="{\displaystyle P(A\mid X)(\omega )=P(A\mid X=X(\omega )).}"/></span></dd></dl>
+<p>The conditional probability <i>P</i>(<i>A</i>|<i>X</i>) is a function of <i>X</i>: e.g., if the function <i>g</i> is defined as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle g(x)=P(A\mid X=x),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <mi>X</mi>
+        <mo>=</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g(x)=P(A\mid X=x),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/168c5a2268cd2a417496a5dc0a82c20d0d842e43" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.643ex; height:2.843ex;" alt="{\displaystyle g(x)=P(A\mid X=x),}"/></span></dd></dl>
+<p>then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A\mid X)=g\circ X.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <mi>X</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>g</mi>
+        <mo>&#x2218;<!-- ∘ --></mo>
+        <mi>X</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A\mid X)=g\circ X.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8484991710d10f523c1e339e88ec7ba5f3b8a289" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.251ex; height:2.843ex;" alt="{\displaystyle P(A\mid X)=g\circ X.}"/></span></dd></dl>
+<p>Note that <i>P</i>(<i>A</i>|<i>X</i>) and <i>X</i> are now both <a href="/wiki/Random_variable" title="Random variable">random variables</a>. From the <a href="/wiki/Law_of_total_probability" title="Law of total probability">law of total probability</a>, the <a href="/wiki/Expected_value" title="Expected value">expected value</a> of <i>P</i>(<i>A</i>|<i>X</i>) is equal to the unconditional <a href="/wiki/Probability" title="Probability">probability</a> of <i>A</i>.
+</p>
+<h3><span class="mw-headline" id="Partial_conditional_probability">Partial conditional probability</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Conditional_probability&amp;action=edit&amp;section=8" title="Edit section: Partial conditional probability">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The partial conditional probability
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A\mid B_{1}\equiv b_{1},\ldots ,B_{m}\equiv b_{m})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2261;<!-- ≡ --></mo>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>&#x2026;<!-- … --></mo>
+        <mo>,</mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2261;<!-- ≡ --></mo>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A\mid B_{1}\equiv b_{1},\ldots ,B_{m}\equiv b_{m})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/05c97de1c22ea065bbf0a3f76552849a36e64541" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:29.592ex; height:2.843ex;" alt="{\displaystyle P(A\mid B_{1}\equiv b_{1},\ldots ,B_{m}\equiv b_{m})}"/></span>
+is about the probability of event 
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="A"/></span> given that each of the condition events
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle B_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle B_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/82cda0578ec6b48774c541ecb9bee4a90176e62f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.564ex; height:2.509ex;" alt="B_{i}"/></span> has occurred to a degree
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle b_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/40a8c2db2990a53c683e75961826167c5adac7c3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.797ex; height:2.509ex;" alt="b_{i}"/></span> (degree of belief, degree of experience) that might be different from 100%. Frequentistically, partial conditional probability makes sense, if the conditions are tested in experiment repetitions of appropriate length 
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"/></span>
+.<sup id="cite_ref-Draheim2017b_7-0" class="reference"><a href="#cite_note-Draheim2017b-7">&#91;7&#93;</a></sup> Such 
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"/></span>-bounded partial conditional probability can be defined as the <a href="/wiki/Conditional_expectation" title="Conditional expectation">conditionally expected</a> average occurrence of event
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="A"/></span> in testbeds of length 
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"/></span> that adhere to all of the probability specifications
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle B_{i}\equiv b_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2261;<!-- ≡ --></mo>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle B_{i}\equiv b_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/650c84e7950a304e564c16bb37e64ae5b6ad1b4d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.459ex; height:2.509ex;" alt="{\displaystyle B_{i}\equiv b_{i}}"/></span>, i.e.:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P^{n}(A\mid B_{1}\equiv b_{1},\ldots ,B_{m}\equiv b_{m})=\operatorname {E} ({\overline {A}}^{n}\mid {\overline {B}}_{1}^{n}=b_{1},\ldots ,{\overline {B}}_{m}^{n}=b_{m})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2261;<!-- ≡ --></mo>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>&#x2026;<!-- … --></mo>
+        <mo>,</mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2261;<!-- ≡ --></mo>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi mathvariant="normal">E</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>A</mi>
+              <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+            </mover>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <msubsup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>B</mi>
+              <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+            </mover>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msubsup>
+        <mo>=</mo>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>&#x2026;<!-- … --></mo>
+        <mo>,</mo>
+        <msubsup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>B</mi>
+              <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+            </mover>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msubsup>
+        <mo>=</mo>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P^{n}(A\mid B_{1}\equiv b_{1},\ldots ,B_{m}\equiv b_{m})=\operatorname {E} ({\overline {A}}^{n}\mid {\overline {B}}_{1}^{n}=b_{1},\ldots ,{\overline {B}}_{m}^{n}=b_{m})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/48ec68dad933211b3caa712a96ef2fce518bd898" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:65.142ex; height:3.676ex;" alt="{\displaystyle P^{n}(A\mid B_{1}\equiv b_{1},\ldots ,B_{m}\equiv b_{m})=\operatorname {E} ({\overline {A}}^{n}\mid {\overline {B}}_{1}^{n}=b_{1},\ldots ,{\overline {B}}_{m}^{n}=b_{m})}"/></span><sup id="cite_ref-Draheim2017b_7-1" class="reference"><a href="#cite_note-Draheim2017b-7">&#91;7&#93;</a></sup></dd></dl>
+<p>Based on that,  partial conditional probability can be defined as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A\mid B_{1}\equiv b_{1},\ldots ,B_{m}\equiv b_{m})=\lim _{n\to \infty }P^{n}(A\mid B_{1}\equiv b_{1},\ldots ,B_{m}\equiv b_{m}),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2261;<!-- ≡ --></mo>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>&#x2026;<!-- … --></mo>
+        <mo>,</mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2261;<!-- ≡ --></mo>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <msup>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2261;<!-- ≡ --></mo>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>&#x2026;<!-- … --></mo>
+        <mo>,</mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2261;<!-- ≡ --></mo>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A\mid B_{1}\equiv b_{1},\ldots ,B_{m}\equiv b_{m})=\lim _{n\to \infty }P^{n}(A\mid B_{1}\equiv b_{1},\ldots ,B_{m}\equiv b_{m}),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f390641658cbe23d3c8f35dd20a2b25abf2a218d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:68.883ex; height:3.843ex;" alt="{\displaystyle P(A\mid B_{1}\equiv b_{1},\ldots ,B_{m}\equiv b_{m})=\lim _{n\to \infty }P^{n}(A\mid B_{1}\equiv b_{1},\ldots ,B_{m}\equiv b_{m}),}"/></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle b_{i}n\in \mathbb {N} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mi>n</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b_{i}n\in \mathbb {N} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f3486b4ace6f08a6b994ea9f6ab9db29efc33a1e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.711ex; height:2.509ex;" alt="{\displaystyle b_{i}n\in \mathbb {N} }"/></span>
+<sup id="cite_ref-Draheim2017b_7-2" class="reference"><a href="#cite_note-Draheim2017b-7">&#91;7&#93;</a></sup>
+</p><p><a href="/wiki/Radical_probabilism" title="Radical probabilism">Jeffrey conditionalization</a>
+<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup>
+<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup>
+is a special case of partial conditional probability in which the condition events must form a <a href="/wiki/Partition_of_a_set" title="Partition of a set">partition</a>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A\mid B_{1}\equiv b_{1},\ldots ,B_{m}\equiv b_{m})=\sum _{i=1}^{m}b_{i}P(A\mid B_{i})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2261;<!-- ≡ --></mo>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>&#x2026;<!-- … --></mo>
+        <mo>,</mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2261;<!-- ≡ --></mo>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A\mid B_{1}\equiv b_{1},\ldots ,B_{m}\equiv b_{m})=\sum _{i=1}^{m}b_{i}P(A\mid B_{i})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3892fe1569a9027396036dd703da94b8a6bbb5e1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:48.028ex; height:6.843ex;" alt="{\displaystyle P(A\mid B_{1}\equiv b_{1},\ldots ,B_{m}\equiv b_{m})=\sum _{i=1}^{m}b_{i}P(A\mid B_{i})}"/></span></dd></dl>
+<h2><span class="mw-headline" id="Example">Example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Conditional_probability&amp;action=edit&amp;section=9" title="Edit section: Example">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Suppose that somebody secretly rolls two fair six-sided <a href="/wiki/Dice" title="Dice">dice</a>, and we wish to compute the probability that the face-up value of the first one is 2, given the information that their sum is no greater than 5.
+</p>
+<ul><li>Let <i>D</i><sub>1</sub> be the value rolled on <a href="/wiki/Dice" title="Dice">die</a> 1.</li>
+<li>Let <i>D</i><sub>2</sub> be the value rolled on <a href="/wiki/Dice" title="Dice">die</a> 2.</li></ul>
+<p><b><i>Probability that</i> <i>D</i><sub>1</sub>&#160;=&#160;2</b><i></i>
+</p><p>Table 1 shows the <a href="/wiki/Sample_space" title="Sample space">sample space</a> of 36 combinations of rolled values of the two dice, each of which occurs with probability 1/36, with the numbers displayed in the red and dark gray cells being <i>D</i><sub>1</sub> + <i>D</i><sub>2</sub>.
+</p><p><i>D</i><sub>1</sub>&#160;=&#160;2 in exactly 6 of the 36 outcomes; thus <i>P</i>(<i>D</i><sub>1</sub> = 2)&#160;=&#160;&#x200b;<span class="frac nowrap"><sup>6</sup>&#8260;<sub>36</sub></span>&#160;=&#160;&#x200b;<span class="frac nowrap"><sup>1</sup>&#8260;<sub>6</sub></span>:
+</p>
+<dl><dd><table class="wikitable" border="1" style="background:silver; text-align:center; width:300px">
+<caption>Table 1
+</caption>
+<tbody><tr>
+<th rowspan="2" colspan="2">+
+</th>
+<th colspan="6">D2
+</th></tr>
+<tr>
+<th scope="col">1
+</th>
+<th scope="col">2
+</th>
+<th scope="col">3
+</th>
+<th scope="col">4
+</th>
+<th scope="col">5
+</th>
+<th scope="col">6
+</th></tr>
+<tr>
+<th rowspan="6" scope="row"><i>D</i><sub>1</sub>
+</th>
+<th scope="row">1
+</th>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7
+</td></tr>
+<tr style="background: red;">
+<th scope="row">2
+</th>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8
+</td></tr>
+<tr>
+<th scope="row">3
+</th>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9
+</td></tr>
+<tr>
+<th scope="row">4
+</th>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10
+</td></tr>
+<tr>
+<th scope="row">5
+</th>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11
+</td></tr>
+<tr>
+<th scope="row">6
+</th>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12
+</td></tr></tbody></table></dd></dl>
+<p><b><i>Probability that</i> <i>D</i><sub>1</sub>&#160;+&#160;<i>D</i><sub>2</sub>&#160;≤&#160;5</b><i></i>
+</p><p>Table 2 shows that <i>D</i><sub>1</sub>&#160;+&#160;<i>D</i><sub>2</sub>&#160;≤&#160;5 for exactly 10 of the 36 outcomes, thus <i>P</i>(<i>D</i><sub>1</sub>&#160;+&#160;<i>D</i><sub>2</sub>&#160;≤&#160;5)&#160;=&#160;&#x200b;<span class="frac nowrap"><sup>10</sup>&#8260;<sub>36</sub></span>:
+</p>
+<dl><dd><table class="wikitable" border="1" style="background:silver; text-align:center; width:300px">
+<caption>Table 2
+</caption>
+<tbody><tr>
+<th rowspan="2" colspan="2">+
+</th>
+<th colspan="6"><i>D</i><sub>2</sub>
+</th></tr>
+<tr>
+<th scope="col">1
+</th>
+<th scope="col">2
+</th>
+<th scope="col">3
+</th>
+<th scope="col">4
+</th>
+<th scope="col">5
+</th>
+<th scope="col">6
+</th></tr>
+<tr>
+<th rowspan="6" scope="row"><i>D</i><sub>1</sub>
+</th>
+<th>1
+</th>
+<td style="background:red;">2</td>
+<td style="background:red;">3</td>
+<td style="background:red;">4</td>
+<td style="background:red;">5</td>
+<td>6</td>
+<td>7
+</td></tr>
+<tr>
+<th scope="row">2
+</th>
+<td style="background:red;">3</td>
+<td style="background:red;">4</td>
+<td style="background:red;">5</td>
+<td>6</td>
+<td>7</td>
+<td>8
+</td></tr>
+<tr>
+<th scope="row">3
+</th>
+<td style="background:red;">4</td>
+<td style="background:red;">5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9
+</td></tr>
+<tr>
+<th scope="row">4
+</th>
+<td style="background:red;">5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10
+</td></tr>
+<tr>
+<th scope="row">5
+</th>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11
+</td></tr>
+
+<tr>
+<th scope="row">6
+</th>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12
+</td></tr>
+</tbody></table></dd></dl>
+<p><b><i>Probability that</i> <i>D</i><sub>1</sub>&#160;=&#160;2 <i>given that</i> <i>D</i><sub>1</sub>&#160;+&#160;<i>D</i><sub>2</sub>&#160;≤&#160;5 </b><i></i>
+</p><p>Table 3 shows that for 3 of these 10 outcomes, <i>D</i><sub>1</sub>&#160;=&#160;2.
+</p><p>Thus, the conditional probability P(<i>D</i><sub>1</sub>&#160;=&#160;2&#160;|&#160;<i>D</i><sub>1</sub>+<i>D</i><sub>2</sub>&#160;≤&#160;5)&#160;=&#160;&#x200b;<span class="frac nowrap"><sup>3</sup>&#8260;<sub>10</sub></span>&#160;=&#160;0.3:
+</p>
+<dl><dd><table class="wikitable" border="1" style="text-align:center; width:300px">
+<caption>Table 3
+</caption>
+<tbody><tr>
+<th rowspan="2" colspan="2">+
+</th>
+<th colspan="6"><i>D</i><sub>2</sub>
+</th></tr>
+<tr>
+<th scope="col">1
+</th>
+<th scope="col">2
+</th>
+<th scope="col">3
+</th>
+<th scope="col">4
+</th>
+<th scope="col">5
+</th>
+<th scope="col">6
+</th></tr>
+<tr>
+<th rowspan="6" scope="row"><i>D</i><sub>1</sub>
+</th>
+<th>1
+</th>
+<td style="background:silver;">2</td>
+<td style="background:silver;">3</td>
+<td style="background:silver;">4</td>
+<td style="background:silver;">5</td>
+<td>6</td>
+<td>7
+</td></tr>
+<tr>
+<th scope="row">2
+</th>
+<td style="background:red;">3</td>
+<td style="background:red;">4</td>
+<td style="background:red;">5</td>
+<td>6</td>
+<td>7</td>
+<td>8
+</td></tr>
+<tr>
+<th scope="row">3
+</th>
+<td style="background:silver;">4</td>
+<td style="background:silver;">5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9
+</td></tr>
+<tr>
+<th scope="row">4
+</th>
+<td style="background:silver;">5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10
+</td></tr>
+<tr>
+<th scope="row">5
+</th>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11
+</td></tr>
+<tr>
+<th scope="row">6
+</th>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12
+</td></tr></tbody></table></dd></dl>
+<p>Here, in the earlier notation for the definition of conditional probability, the conditioning event <i>B</i> is that <i>D</i><sub>1</sub>&#160;+&#160;<i>D</i><sub>2</sub>&#160;≤&#160;5, and the event <i>A</i> is <i>D</i><sub>1</sub>&#160;=&#160;2. We have <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A\mid B)={\tfrac {P(A\cap B)}{P(B)}}={\tfrac {3/36}{10/36}}={\tfrac {3}{10}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mrow>
+                <mi>P</mi>
+                <mo stretchy="false">(</mo>
+                <mi>A</mi>
+                <mo>&#x2229;<!-- ∩ --></mo>
+                <mi>B</mi>
+                <mo stretchy="false">)</mo>
+              </mrow>
+              <mrow>
+                <mi>P</mi>
+                <mo stretchy="false">(</mo>
+                <mi>B</mi>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mrow>
+                <mn>3</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo>/</mo>
+                </mrow>
+                <mn>36</mn>
+              </mrow>
+              <mrow>
+                <mn>10</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo>/</mo>
+                </mrow>
+                <mn>36</mn>
+              </mrow>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>3</mn>
+              <mn>10</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A\mid B)={\tfrac {P(A\cap B)}{P(B)}}={\tfrac {3/36}{10/36}}={\tfrac {3}{10}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0bba14e08f26b78169b71e8a0d6fb1e44dc2725e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:33.293ex; height:4.843ex;" alt="{\displaystyle P(A\mid B)={\tfrac {P(A\cap B)}{P(B)}}={\tfrac {3/36}{10/36}}={\tfrac {3}{10}},}"/></span> as seen in the table.
+</p>
+<h2><span class="mw-headline" id="Use_in_inference">Use in inference</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Conditional_probability&amp;action=edit&amp;section=10" title="Edit section: Use in inference">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In <a href="/wiki/Statistical_inference" title="Statistical inference">statistical inference</a>, the conditional probability is an update of the probability of an <a href="/wiki/Event_(probability_theory)" title="Event (probability theory)">event</a> based on new information.<sup id="cite_ref-Casella_and_Berger_2002_3-1" class="reference"><a href="#cite_note-Casella_and_Berger_2002-3">&#91;3&#93;</a></sup> Incorporating the new information can be done as follows:<sup id="cite_ref-Allan_Gut_2013_1-1" class="reference"><a href="#cite_note-Allan_Gut_2013-1">&#91;1&#93;</a></sup>
+</p>
+<ul><li>Let <i>A</i>, the event of interest, be in the <a href="/wiki/Sample_space" title="Sample space">sample space</a>, say (<i>X</i>,<i>P</i>).</li>
+<li>The occurrence of the event <i>A</i> knowing that event <i>B</i> has or will have occurred,  means the occurrence of  <i>A</i> as it is restricted to <i>B</i>, i.e. <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A\cap B}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo>&#x2229;<!-- ∩ --></mo>
+        <mi>B</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A\cap B}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bb27b38cf9eac6060e67b61f66cd9beec5067f81" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.09ex; height:2.176ex;" alt="A\cap B"/></span>.</li>
+<li>Without the knowledge of the occurrence of <i>B</i>, the information about the occurrence of <i>A</i> would simply be <i>P</i>(<i>A</i>)</li>
+<li>The probability of <i>A</i> knowing that event <i>B</i> has or will have occurred, will be the probability of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A\cap B}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo>&#x2229;<!-- ∩ --></mo>
+        <mi>B</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A\cap B}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bb27b38cf9eac6060e67b61f66cd9beec5067f81" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.09ex; height:2.176ex;" alt="A\cap B"/></span> relative to <i>P</i>(<i>B</i>), the probability that <i>B</i> has occurred.</li>
+<li>This results in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle P(A|B)=P(A\cap B)/P(B)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2229;<!-- ∩ --></mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle P(A|B)=P(A\cap B)/P(B)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d6c5a9db4e3c3054726c2135bf0ed65a436fe941" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:26.933ex; height:2.843ex;" alt="{\textstyle P(A|B)=P(A\cap B)/P(B)}"/></span> whenever <i>P</i>(<i>B</i>)&#160;&gt;&#160;0 and 0 otherwise.</li></ul>
+<p>This approach results in a probability measure that is consistent with the original probability measure and satisfies all the <a href="/wiki/Probability_axioms" title="Probability axioms">Kolmogorov axioms</a>.  This conditional probability measure also could have resulted by assuming that the relative magnitude of the probability of <i>A</i> with respect to <i>X</i> will be preserved with respect to <i>B</i> (cf. <a href="#Formal_derivation">a Formal Derivation</a> below).
+</p><p>The wording "evidence" or "information" is generally used in the <a href="/wiki/Bayesian_probability" title="Bayesian probability">Bayesian interpretation of probability</a>. The conditioning event is interpreted as evidence for the conditioned event. That is, <i>P</i>(<i>A</i>) is the probability of <i>A</i> before accounting for evidence <i>E</i>, and <i>P</i>(<i>A</i>|<i>E</i>) is the probability of <i>A</i> after having accounted for evidence <i>E</i> or after having updated <i>P</i>(<i>A</i>). This is consistent with the frequentist interpretation, which is the first definition given above.
+</p>
+<h2><span class="mw-headline" id="Statistical_independence">Statistical independence</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Conditional_probability&amp;action=edit&amp;section=11" title="Edit section: Statistical independence">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Independence_(probability_theory)" title="Independence (probability theory)">Independence (probability theory)</a></div>
+<p>Events <i>A</i> and <i>B</i> are defined to be <a href="/wiki/Independence_(probability_theory)" title="Independence (probability theory)">statistically independent</a> if
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A\cap B)=P(A)P(B).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2229;<!-- ∩ --></mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A\cap B)=P(A)P(B).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fd349a98748a1e64afd94e53e11e5cc1e3996d4e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:24.006ex; height:2.843ex;" alt="{\displaystyle P(A\cap B)=P(A)P(B).}"/></span></dd></dl>
+<p>If <i>P</i>(<i>B</i>) is not zero, then this is equivalent to the statement that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A\mid B)=P(A).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A\mid B)=P(A).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/18a7b372ba40bc5fae8c0b4d5bc1273b7da03ed6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.042ex; height:2.843ex;" alt="{\displaystyle P(A\mid B)=P(A).}"/></span></dd></dl>
+<p>Similarly, if <i>P</i>(<i>A</i>) is not zero, then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(B\mid A)=P(B)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>B</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(B\mid A)=P(B)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1a0edff4ef418d05f4a201eadf7366dfea89dd62" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.416ex; height:2.843ex;" alt="{\displaystyle P(B\mid A)=P(B)}"/></span></dd></dl>
+<p>is also equivalent. Although the derived forms may seem more intuitive, they are not the preferred definition as the conditional probabilities may be undefined, and the preferred definition is symmetrical in <i>A</i> and <i>B</i>.
+</p><p><b>Independent events vs. mutually exclusive events</b>
+</p><p>The concepts of mutually independent events and <a href="/wiki/Mutually_exclusive_events" class="mw-redirect" title="Mutually exclusive events">mutually exclusive events</a> are separate and distinct. The following table contrasts results for the two cases (provided the probability of the conditioning event is not zero).
+</p>
+<table class="wikitable">
+<caption>
+</caption>
+<tbody><tr>
+<th>
+</th>
+<th><b>If statistically independent</b>
+</th>
+<th><b>If mutually exclusive</b>
+</th></tr>
+<tr>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A\mid B)=}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A\mid B)=}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4c63be82071102f54c239faa9f2c08792d4b06a5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.452ex; height:2.843ex;" alt="{\displaystyle P(A\mid B)=}"/></span>
+</td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4f264d19e21604793c6dc54f8044df454db82744" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.298ex; height:2.843ex;" alt="P(A)"/></span>
+</td>
+<td>0
+</td></tr>
+<tr>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(B\mid A)=}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>B</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(B\mid A)=}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/65d46515045d32f2ffbd6a402704eba410489e65" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.452ex; height:2.843ex;" alt="{\displaystyle P(B\mid A)=}"/></span>
+</td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(B)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(B)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e593d180a26fd68657ea50368dbfe1a661e652aa" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.319ex; height:2.843ex;" alt="P(B)"/></span>
+</td>
+<td>0
+</td></tr>
+<tr>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A\cap B)=}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2229;<!-- ∩ --></mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A\cap B)=}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dfec9cd0cabd8ca06b10dd72776f527c0b09e8d8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.098ex; height:2.843ex;" alt="{\displaystyle P(A\cap B)=}"/></span>
+</td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A)P(B)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A)P(B)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/daaeb05cb4bee7cd38a9afcff5945d01149adb02" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.617ex; height:2.843ex;" alt="{\displaystyle P(A)P(B)}"/></span>
+</td>
+<td>0
+</td></tr></tbody></table>
+<p>In fact, mutually exclusive events cannot be statistically independent (unless they both are impossible), since knowing that one occurs gives information about the other (specifically, that it certainly does not occur).
+</p>
+<h2><span class="mw-headline" id="Common_fallacies">Common fallacies</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Conditional_probability&amp;action=edit&amp;section=12" title="Edit section: Common fallacies">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<dl><dd><i>These fallacies should not be confused with Robert K. Shope's 1978 <a rel="nofollow" class="external text" href="http://lesswrong.com/r/discussion/lw/9om/the_conditional_fallacy_in_contemporary_philosophy/">"conditional fallacy"</a>, which deals with counterfactual examples that <a href="/wiki/Beg_the_question" class="mw-redirect" title="Beg the question">beg the question</a>.</i></dd></dl>
+<h3><span class="mw-headline" id="Assuming_conditional_probability_is_of_similar_size_to_its_inverse">Assuming conditional probability is of similar size to its inverse</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Conditional_probability&amp;action=edit&amp;section=13" title="Edit section: Assuming conditional probability is of similar size to its inverse">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Confusion_of_the_inverse" title="Confusion of the inverse">Confusion of the inverse</a></div>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/File:Bayes_theorem_visualisation.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Bayes_theorem_visualisation.svg/300px-Bayes_theorem_visualisation.svg.png" decoding="async" width="300" height="450" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Bayes_theorem_visualisation.svg/450px-Bayes_theorem_visualisation.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Bayes_theorem_visualisation.svg/600px-Bayes_theorem_visualisation.svg.png 2x" data-file-width="512" data-file-height="768" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Bayes_theorem_visualisation.svg" class="internal" title="Enlarge"></a></div>A geometric visualisation of Bayes' theorem. In the table, the values 2, 3, 6 and 9 give the relative weights of each corresponding condition and case. The figures denote the cells of the table involved in each metric, the probability being the fraction of each figure that is shaded. This shows that P(A|B) P(B) = P(B|A) P(A) i.e. P(A|B) = <span class="sfrac nowrap" style="display:inline-block; vertical-align:-0.5em; font-size:85%; text-align:center;"><span style="display:block; line-height:1em; margin:0 0.1em;">P(B|A) P(A)</span><span class="visualhide">/</span><span style="display:block; line-height:1em; margin:0 0.1em; border-top:1px solid;">P(B)</span></span> . Similar reasoning can be used to show that P(Ā|B) = <span class="sfrac nowrap" style="display:inline-block; vertical-align:-0.5em; font-size:85%; text-align:center;"><span style="display:block; line-height:1em; margin:0 0.1em;">P(B|Ā) P(Ā)</span><span class="visualhide">/</span><span style="display:block; line-height:1em; margin:0 0.1em; border-top:1px solid;">P(B)</span></span> etc.</div></div></div>
+<p>In general, it cannot be assumed that <i>P</i>(<i>A</i>|<i>B</i>)&#160;≈&#160;<i>P</i>(<i>B</i>|<i>A</i>). This can be an insidious error, even for those who are highly conversant with statistics.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup> The relationship between <i>P</i>(<i>A</i>|<i>B</i>) and <i>P</i>(<i>B</i>|<i>A</i>) is given by <a href="/wiki/Bayes%27_theorem" title="Bayes&#39; theorem">Bayes' theorem</a>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}P(B\mid A)&amp;={\frac {P(A\mid B)P(B)}{P(A)}}\\\Leftrightarrow {\frac {P(B\mid A)}{P(A\mid B)}}&amp;={\frac {P(B)}{P(A)}}\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mi>P</mi>
+                <mo stretchy="false">(</mo>
+                <mi>B</mi>
+                <mo>&#x2223;<!-- ∣ --></mo>
+                <mi>A</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi>P</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>A</mi>
+                      <mo>&#x2223;<!-- ∣ --></mo>
+                      <mi>B</mi>
+                      <mo stretchy="false">)</mo>
+                      <mi>P</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>B</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mrow>
+                      <mi>P</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>A</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mo stretchy="false">&#x21D4;<!-- ⇔ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi>P</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>B</mi>
+                      <mo>&#x2223;<!-- ∣ --></mo>
+                      <mi>A</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mrow>
+                      <mi>P</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>A</mi>
+                      <mo>&#x2223;<!-- ∣ --></mo>
+                      <mi>B</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi>P</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>B</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mrow>
+                      <mi>P</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>A</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}P(B\mid A)&amp;={\frac {P(A\mid B)P(B)}{P(A)}}\\\Leftrightarrow {\frac {P(B\mid A)}{P(A\mid B)}}&amp;={\frac {P(B)}{P(A)}}\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8ad7da1d40536a442e8839bfd462c60a225cc08d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -6.005ex; width:31.808ex; height:13.176ex;" alt="{\displaystyle {\begin{aligned}P(B\mid A)&amp;={\frac {P(A\mid B)P(B)}{P(A)}}\\\Leftrightarrow {\frac {P(B\mid A)}{P(A\mid B)}}&amp;={\frac {P(B)}{P(A)}}\end{aligned}}}"/></span></dd></dl>
+<p>That is, P(<i>A</i>|<i>B</i>)&#160;≈&#160;P(<i>B</i>|<i>A</i>) only if <i>P</i>(<i>B</i>)/<i>P</i>(<i>A</i>)&#160;≈&#160;1, or equivalently, <i>P</i>(<i>A</i>)&#160;≈&#160;<i>P</i>(<i>B</i>).
+</p>
+<h3><span class="mw-headline" id="Assuming_marginal_and_conditional_probabilities_are_of_similar_size">Assuming marginal and conditional probabilities are of similar size</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Conditional_probability&amp;action=edit&amp;section=14" title="Edit section: Assuming marginal and conditional probabilities are of similar size">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In general, it cannot be assumed that <i>P</i>(<i>A</i>)&#160;≈&#160;<i>P</i>(<i>A</i>|<i>B</i>). These probabilities are linked through the  <a href="/wiki/Law_of_total_probability" title="Law of total probability">law of total probability</a>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(A)=\sum _{n}P(A\cap B_{n})=\sum _{n}P(A\mid B_{n})P(B_{n}).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munder>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2229;<!-- ∩ --></mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munder>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2223;<!-- ∣ --></mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(A)=\sum _{n}P(A\cap B_{n})=\sum _{n}P(A\mid B_{n})P(B_{n}).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/50568702b5ae072ac87106f849366eae59f95088" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:47.243ex; height:5.509ex;" alt="{\displaystyle P(A)=\sum _{n}P(A\cap B_{n})=\sum _{n}P(A\mid B_{n})P(B_{n}).}"/></span></dd></dl>
+<p>where the events <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (B_{n})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (B_{n})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bc23382987746e5ad84e68441c9eee4de8bf32a1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.792ex; height:2.843ex;" alt="(B_{n})"/></span> form a countable <a href="/wiki/Partition_of_a_set" title="Partition of a set">partition</a> of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Omega }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x03A9;<!-- Ω --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Omega }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/24b0d5ca6f381068d756f6337c08e0af9d1eeb6f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.678ex; height:2.176ex;" alt="\Omega "/></span>.
+</p><p>This fallacy may arise through <a href="/wiki/Selection_bias" title="Selection bias">selection bias</a>.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup> For example, in the context of a medical claim, let <i>S</i><sub><i>C</i></sub> be the event that a <a href="/wiki/Sequelae" class="mw-redirect" title="Sequelae">sequela</a> (chronic disease) <i>S</i> occurs as a consequence of circumstance (acute condition) <i>C</i>. Let <i>H</i> be the event that an individual seeks medical help. Suppose that in most cases, <i>C</i> does not cause <i>S</i> so <i>P</i>(<i>S</i><sub><i>C</i></sub>) is low. Suppose also that medical attention is only sought if <i>S</i> has occurred due to <i>C</i>. From experience of patients, a doctor may therefore erroneously conclude that <i>P</i>(<i>S</i><sub><i>C</i></sub>) is high. The actual probability observed by the doctor is <i>P</i>(<i>S</i><sub><i>C</i></sub>|<i>H</i>).
+</p>
+<h3><span class="mw-headline" id="Over-_or_under-weighting_priors">Over- or under-weighting priors</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Conditional_probability&amp;action=edit&amp;section=15" title="Edit section: Over- or under-weighting priors">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Not taking prior probability into account partially or completely is called <i><a href="/wiki/Base_rate_neglect" class="mw-redirect" title="Base rate neglect">base rate neglect</a></i>. The reverse, insufficient adjustment from the prior probability is <i><a href="/wiki/Conservatism_(Bayesian)" class="mw-redirect" title="Conservatism (Bayesian)">conservatism</a>.</i>
+</p>
+<h2><span class="mw-headline" id="Formal_derivation">Formal derivation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Conditional_probability&amp;action=edit&amp;section=16" title="Edit section: Formal derivation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Formally, <i>P</i>(<i>A</i>&#160;|&#160;<i>B</i>) is defined as the probability of <i>A</i> according to a new probability function on the sample space, such that outcomes not in <i>B</i> have probability 0 and that it is consistent with all original <a href="/wiki/Probability_measure" title="Probability measure">probability measures</a>.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup><sup id="cite_ref-grinstead_13-0" class="reference"><a href="#cite_note-grinstead-13">&#91;13&#93;</a></sup>
+</p><p>Let Ω be a <a href="/wiki/Sample_space" title="Sample space">sample space</a> with <a href="/wiki/Elementary_event" title="Elementary event">elementary events</a> {<i>ω</i>}. Suppose we are told the event <i>B</i>&#160;⊆&#160;Ω has occurred. A new probability distribution (denoted by the conditional notation) is to be assigned on {<i>ω</i>} to reflect this. For events in <i>B</i>, it is reasonable to assume that the relative magnitudes of the probabilities will be preserved. For some constant scale factor <i>α</i>, the new distribution will therefore satisfy:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}&amp;{\text{1. }}\omega \in B:P(\omega \mid B)=\alpha P(\omega )\\&amp;{\text{2. }}\omega \notin B:P(\omega \mid B)=0\\&amp;{\text{3. }}\sum _{\omega \in \Omega }{P(\omega \mid B)}=1.\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd />
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext>1.&#xA0;</mtext>
+                </mrow>
+                <mi>&#x03C9;<!-- ω --></mi>
+                <mo>&#x2208;<!-- ∈ --></mo>
+                <mi>B</mi>
+                <mo>:</mo>
+                <mi>P</mi>
+                <mo stretchy="false">(</mo>
+                <mi>&#x03C9;<!-- ω --></mi>
+                <mo>&#x2223;<!-- ∣ --></mo>
+                <mi>B</mi>
+                <mo stretchy="false">)</mo>
+                <mo>=</mo>
+                <mi>&#x03B1;<!-- α --></mi>
+                <mi>P</mi>
+                <mo stretchy="false">(</mo>
+                <mi>&#x03C9;<!-- ω --></mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext>2.&#xA0;</mtext>
+                </mrow>
+                <mi>&#x03C9;<!-- ω --></mi>
+                <mo>&#x2209;<!-- ∉ --></mo>
+                <mi>B</mi>
+                <mo>:</mo>
+                <mi>P</mi>
+                <mo stretchy="false">(</mo>
+                <mi>&#x03C9;<!-- ω --></mi>
+                <mo>&#x2223;<!-- ∣ --></mo>
+                <mi>B</mi>
+                <mo stretchy="false">)</mo>
+                <mo>=</mo>
+                <mn>0</mn>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext>3.&#xA0;</mtext>
+                </mrow>
+                <munder>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>&#x03C9;<!-- ω --></mi>
+                    <mo>&#x2208;<!-- ∈ --></mo>
+                    <mi mathvariant="normal">&#x03A9;<!-- Ω --></mi>
+                  </mrow>
+                </munder>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>P</mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>&#x03C9;<!-- ω --></mi>
+                  <mo>&#x2223;<!-- ∣ --></mo>
+                  <mi>B</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mo>=</mo>
+                <mn>1.</mn>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}&amp;{\text{1. }}\omega \in B:P(\omega \mid B)=\alpha P(\omega )\\&amp;{\text{2. }}\omega \notin B:P(\omega \mid B)=0\\&amp;{\text{3. }}\sum _{\omega \in \Omega }{P(\omega \mid B)}=1.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/54f5e302d8b03d10638623aa5e17ef86aca2455c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -5.338ex; width:29.417ex; height:11.843ex;" alt="{\displaystyle {\begin{aligned}&amp;{\text{1. }}\omega \in B:P(\omega \mid B)=\alpha P(\omega )\\&amp;{\text{2. }}\omega \notin B:P(\omega \mid B)=0\\&amp;{\text{3. }}\sum _{\omega \in \Omega }{P(\omega \mid B)}=1.\end{aligned}}}"/></span></dd></dl>
+<p>Substituting 1 and 2 into 3 to select <i>α</i>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}1&amp;=\sum _{\omega \in \Omega }{P(\omega \mid B)}\\&amp;=\sum _{\omega \in B}{P(\omega \mid B)}+{\cancelto {0}{\sum _{\omega \notin B}P(\omega \mid B)}}\\&amp;=\alpha \sum _{\omega \in B}{P(\omega )}\\[5pt]&amp;=\alpha \cdot P(B)\\[5pt]\Rightarrow \alpha &amp;={\frac {1}{P(B)}}\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt 0.3em 0.8em 0.8em 0.3em" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mn>1</mn>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munder>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>&#x03C9;<!-- ω --></mi>
+                    <mo>&#x2208;<!-- ∈ --></mo>
+                    <mi mathvariant="normal">&#x03A9;<!-- Ω --></mi>
+                  </mrow>
+                </munder>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>P</mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>&#x03C9;<!-- ω --></mi>
+                  <mo>&#x2223;<!-- ∣ --></mo>
+                  <mi>B</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munder>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>&#x03C9;<!-- ω --></mi>
+                    <mo>&#x2208;<!-- ∈ --></mo>
+                    <mi>B</mi>
+                  </mrow>
+                </munder>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>P</mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>&#x03C9;<!-- ω --></mi>
+                  <mo>&#x2223;<!-- ∣ --></mo>
+                  <mi>B</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mo>+</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <msup>
+                    <menclose notation="updiagonalstrike updiagonalarrow">
+                      <munder>
+                        <mo>&#x2211;<!-- ∑ --></mo>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>&#x03C9;<!-- ω --></mi>
+                          <mo>&#x2209;<!-- ∉ --></mo>
+                          <mi>B</mi>
+                        </mrow>
+                      </munder>
+                      <mi>P</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>&#x03C9;<!-- ω --></mi>
+                      <mo>&#x2223;<!-- ∣ --></mo>
+                      <mi>B</mi>
+                      <mo stretchy="false">)</mo>
+                    </menclose>
+                    <mpadded height="+.1em" depth="-.1em" voffset=".1em">
+                      <mn>0</mn>
+                    </mpadded>
+                  </msup>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>&#x03B1;<!-- α --></mi>
+                <munder>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>&#x03C9;<!-- ω --></mi>
+                    <mo>&#x2208;<!-- ∈ --></mo>
+                    <mi>B</mi>
+                  </mrow>
+                </munder>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>P</mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>&#x03C9;<!-- ω --></mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>&#x03B1;<!-- α --></mi>
+                <mo>&#x22C5;<!-- ⋅ --></mo>
+                <mi>P</mi>
+                <mo stretchy="false">(</mo>
+                <mi>B</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                <mi>&#x03B1;<!-- α --></mi>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <mrow>
+                      <mi>P</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>B</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}1&amp;=\sum _{\omega \in \Omega }{P(\omega \mid B)}\\&amp;=\sum _{\omega \in B}{P(\omega \mid B)}+{\cancelto {0}{\sum _{\omega \notin B}P(\omega \mid B)}}\\&amp;=\alpha \sum _{\omega \in B}{P(\omega )}\\[5pt]&amp;=\alpha \cdot P(B)\\[5pt]\Rightarrow \alpha &amp;={\frac {1}{P(B)}}\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bc21b49c38af5566aeb4794016be9ee06b40458c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -15.005ex; width:38.388ex; height:31.176ex;" alt="{\displaystyle {\begin{aligned}1&amp;=\sum _{\omega \in \Omega }{P(\omega \mid B)}\\&amp;=\sum _{\omega \in B}{P(\omega \mid B)}+{\cancelto {0}{\sum _{\omega \notin B}P(\omega \mid B)}}\\&amp;=\alpha \sum _{\omega \in B}{P(\omega )}\\[5pt]&amp;=\alpha \cdot P(B)\\[5pt]\Rightarrow \alpha &amp;={\frac {1}{P(B)}}\end{aligned}}}"/></span></dd></dl>
+<p>So the new probability distribution is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}{\text{1. }}\omega \in B&amp;:P(\omega \mid B)={\frac {P(\omega )}{P(B)}}\\{\text{2. }}\omega \notin B&amp;:P(\omega \mid B)=0\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext>1.&#xA0;</mtext>
+                </mrow>
+                <mi>&#x03C9;<!-- ω --></mi>
+                <mo>&#x2208;<!-- ∈ --></mo>
+                <mi>B</mi>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>:</mo>
+                <mi>P</mi>
+                <mo stretchy="false">(</mo>
+                <mi>&#x03C9;<!-- ω --></mi>
+                <mo>&#x2223;<!-- ∣ --></mo>
+                <mi>B</mi>
+                <mo stretchy="false">)</mo>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi>P</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>&#x03C9;<!-- ω --></mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mrow>
+                      <mi>P</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>B</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext>2.&#xA0;</mtext>
+                </mrow>
+                <mi>&#x03C9;<!-- ω --></mi>
+                <mo>&#x2209;<!-- ∉ --></mo>
+                <mi>B</mi>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>:</mo>
+                <mi>P</mi>
+                <mo stretchy="false">(</mo>
+                <mi>&#x03C9;<!-- ω --></mi>
+                <mo>&#x2223;<!-- ∣ --></mo>
+                <mi>B</mi>
+                <mo stretchy="false">)</mo>
+                <mo>=</mo>
+                <mn>0</mn>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}{\text{1. }}\omega \in B&amp;:P(\omega \mid B)={\frac {P(\omega )}{P(B)}}\\{\text{2. }}\omega \notin B&amp;:P(\omega \mid B)=0\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2784002eea0b133dd51e5894380f2004930ec462" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.171ex; width:29.084ex; height:9.509ex;" alt="{\displaystyle {\begin{aligned}{\text{1. }}\omega \in B&amp;:P(\omega \mid B)={\frac {P(\omega )}{P(B)}}\\{\text{2. }}\omega \notin B&amp;:P(\omega \mid B)=0\end{aligned}}}"/></span></dd></dl>
+<p>Now for a general event <i>A</i>,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}P(A\mid B)&amp;=\sum _{\omega \in A\cap B}{P(\omega \mid B)}+{\cancelto {0}{\sum _{\omega \in A\cap B^{c}}P(\omega \mid B)}}\\&amp;=\sum _{\omega \in A\cap B}{\frac {P(\omega )}{P(B)}}\\[5pt]&amp;={\frac {P(A\cap B)}{P(B)}}\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt 0.8em 0.3em" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mi>P</mi>
+                <mo stretchy="false">(</mo>
+                <mi>A</mi>
+                <mo>&#x2223;<!-- ∣ --></mo>
+                <mi>B</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munder>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>&#x03C9;<!-- ω --></mi>
+                    <mo>&#x2208;<!-- ∈ --></mo>
+                    <mi>A</mi>
+                    <mo>&#x2229;<!-- ∩ --></mo>
+                    <mi>B</mi>
+                  </mrow>
+                </munder>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>P</mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>&#x03C9;<!-- ω --></mi>
+                  <mo>&#x2223;<!-- ∣ --></mo>
+                  <mi>B</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mo>+</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <msup>
+                    <menclose notation="updiagonalstrike updiagonalarrow">
+                      <munder>
+                        <mo>&#x2211;<!-- ∑ --></mo>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>&#x03C9;<!-- ω --></mi>
+                          <mo>&#x2208;<!-- ∈ --></mo>
+                          <mi>A</mi>
+                          <mo>&#x2229;<!-- ∩ --></mo>
+                          <msup>
+                            <mi>B</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>c</mi>
+                            </mrow>
+                          </msup>
+                        </mrow>
+                      </munder>
+                      <mi>P</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>&#x03C9;<!-- ω --></mi>
+                      <mo>&#x2223;<!-- ∣ --></mo>
+                      <mi>B</mi>
+                      <mo stretchy="false">)</mo>
+                    </menclose>
+                    <mpadded height="+.1em" depth="-.1em" voffset=".1em">
+                      <mn>0</mn>
+                    </mpadded>
+                  </msup>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munder>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>&#x03C9;<!-- ω --></mi>
+                    <mo>&#x2208;<!-- ∈ --></mo>
+                    <mi>A</mi>
+                    <mo>&#x2229;<!-- ∩ --></mo>
+                    <mi>B</mi>
+                  </mrow>
+                </munder>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi>P</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>&#x03C9;<!-- ω --></mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mrow>
+                      <mi>P</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>B</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi>P</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>A</mi>
+                      <mo>&#x2229;<!-- ∩ --></mo>
+                      <mi>B</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mrow>
+                      <mi>P</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>B</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}P(A\mid B)&amp;=\sum _{\omega \in A\cap B}{P(\omega \mid B)}+{\cancelto {0}{\sum _{\omega \in A\cap B^{c}}P(\omega \mid B)}}\\&amp;=\sum _{\omega \in A\cap B}{\frac {P(\omega )}{P(B)}}\\[5pt]&amp;={\frac {P(A\cap B)}{P(B)}}\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4f6e98f9200e5cf74a15231fc3c753ccfeb8d1c6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -10.671ex; width:48.33ex; height:22.509ex;" alt="{\displaystyle {\begin{aligned}P(A\mid B)&amp;=\sum _{\omega \in A\cap B}{P(\omega \mid B)}+{\cancelto {0}{\sum _{\omega \in A\cap B^{c}}P(\omega \mid B)}}\\&amp;=\sum _{\omega \in A\cap B}{\frac {P(\omega )}{P(B)}}\\[5pt]&amp;={\frac {P(A\cap B)}{P(B)}}\end{aligned}}}"/></span></dd></dl>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Conditional_probability&amp;action=edit&amp;section=17" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><a href="/wiki/File:Nuvola_apps_edu_mathematics_blue-p.svg" class="image"><img alt="icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nuvola_apps_edu_mathematics_blue-p.svg/28px-Nuvola_apps_edu_mathematics_blue-p.svg.png" decoding="async" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nuvola_apps_edu_mathematics_blue-p.svg/42px-Nuvola_apps_edu_mathematics_blue-p.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nuvola_apps_edu_mathematics_blue-p.svg/56px-Nuvola_apps_edu_mathematics_blue-p.svg.png 2x" data-file-width="128" data-file-height="128" /></a></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Mathematics" title="Portal:Mathematics">Mathematics portal</a></span></li></ul></div>
+<div class="div-col columns column-width" style="-moz-column-width: 20em; -webkit-column-width: 20em; column-width: 20em;">
+<ul><li><a href="/wiki/Borel%E2%80%93Kolmogorov_paradox" title="Borel–Kolmogorov paradox">Borel–Kolmogorov paradox</a></li>
+<li><a href="/wiki/Chain_rule_(probability)" title="Chain rule (probability)">Chain rule (probability)</a></li>
+<li><a href="/wiki/Class_membership_probabilities" class="mw-redirect" title="Class membership probabilities">Class membership probabilities</a></li>
+<li><a href="/wiki/Conditional_probability_distribution" title="Conditional probability distribution">Conditional probability distribution</a></li>
+<li><a href="/wiki/Conditioning_(probability)" title="Conditioning (probability)">Conditioning (probability)</a></li>
+<li><a href="/wiki/Joint_probability_distribution" title="Joint probability distribution">Joint probability distribution</a></li>
+<li><a href="/wiki/Monty_Hall_problem" title="Monty Hall problem">Monty Hall problem</a></li>
+<li><a href="/wiki/Posterior_probability" title="Posterior probability">Posterior probability</a></li>
+<li><a href="/wiki/Bayes%27_theorem" title="Bayes&#39; theorem">Bayes' theorem</a></li></ul>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Conditional_probability&amp;action=edit&amp;section=18" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-Allan_Gut_2013-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-Allan_Gut_2013_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Allan_Gut_2013_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation book">Gut, Allan (2013). <i>Probability: A Graduate Course</i> (Second ed.). New York, NY: Springer. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-4614-4707-8" title="Special:BookSources/978-1-4614-4707-8"><bdi>978-1-4614-4707-8</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Probability%3A+A+Graduate+Course&amp;rft.place=New+York%2C+NY&amp;rft.edition=Second&amp;rft.pub=Springer&amp;rft.date=2013&amp;rft.isbn=978-1-4614-4707-8&amp;rft.aulast=Gut&amp;rft.aufirst=Allan&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConditional+probability" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></span>
+</li>
+<li id="cite_note-Sheldon_Ross_2010-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-Sheldon_Ross_2010_2-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Ross, Sheldon (2010). <i>A First Course in Probability</i> (8th ed.). Pearson Prentice Hall. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-13-603313-4" title="Special:BookSources/978-0-13-603313-4"><bdi>978-0-13-603313-4</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=A+First+Course+in+Probability&amp;rft.edition=8th&amp;rft.pub=Pearson+Prentice+Hall&amp;rft.date=2010&amp;rft.isbn=978-0-13-603313-4&amp;rft.aulast=Ross&amp;rft.aufirst=Sheldon&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConditional+probability" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Casella_and_Berger_2002-3"><span class="mw-cite-backlink">^ <a href="#cite_ref-Casella_and_Berger_2002_3-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Casella_and_Berger_2002_3-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation book">Casella, George; Berger, Roger L. (2002). <i>Statistical Inference</i>. Duxbury Press. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-534-24312-6" title="Special:BookSources/0-534-24312-6"><bdi>0-534-24312-6</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Statistical+Inference&amp;rft.pub=Duxbury+Press&amp;rft.date=2002&amp;rft.isbn=0-534-24312-6&amp;rft.aulast=Casella&amp;rft.aufirst=George&amp;rft.au=Berger%2C+Roger+L.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConditional+probability" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite id="CITEREFKolmogorov1956" class="citation">Kolmogorov, Andrey (1956), <i>Foundations of the Theory of Probability</i>, Chelsea</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Foundations+of+the+Theory+of+Probability&amp;rft.pub=Chelsea&amp;rft.date=1956&amp;rft.aulast=Kolmogorov&amp;rft.aufirst=Andrey&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConditional+probability" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text">Gillies, Donald (2000); "Philosophical Theories of Probability"; Routledge; Chapter 4 "The subjective theory"</span>
+</li>
+<li id="cite_note-Draheim2017c-6"><span class="mw-cite-backlink">^ <a href="#cite_ref-Draheim2017c_6-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Draheim2017c_6-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">Draheim, Dirk (2017). <a rel="nofollow" class="external text" href="https://www.researchgate.net/publication/322117507_An_Operational_Semantics_of_Conditional_Probabilities_that_Fully_Adheres_to_Kolmogorov&#39;s_Explication_of_Probability_Theory">"An Operational Semantics of Conditional Probabilities that Fully Adheres to Kolmogorov's Explication of Probability Theory"</a>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.13140%2FRG.2.2.10050.48323%2F3">10.13140/RG.2.2.10050.48323/3</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=An+Operational+Semantics+of+Conditional+Probabilities+that+Fully+Adheres+to+Kolmogorov%27s+Explication+of+Probability+Theory&amp;rft.date=2017&amp;rft_id=info%3Adoi%2F10.13140%2FRG.2.2.10050.48323%2F3&amp;rft.aulast=Draheim&amp;rft.aufirst=Dirk&amp;rft_id=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F322117507_An_Operational_Semantics_of_Conditional_Probabilities_that_Fully_Adheres_to_Kolmogorov%27s_Explication_of_Probability_Theory&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConditional+probability" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Draheim2017b-7"><span class="mw-cite-backlink">^ <a href="#cite_ref-Draheim2017b_7-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Draheim2017b_7-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Draheim2017b_7-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">Draheim, Dirk (2017). <a rel="nofollow" class="external text" href="http://fpc.formcharts.org">"Generalized Jeffrey Conditionalization (A Frequentist Semantics of Partial Conditionalization)"</a>. Springer<span class="reference-accessdate">. Retrieved <span class="nowrap">December 19,</span> 2017</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Generalized+Jeffrey+Conditionalization+%28A+Frequentist+Semantics+of+Partial+Conditionalization%29&amp;rft.pub=Springer&amp;rft.date=2017&amp;rft.aulast=Draheim&amp;rft.aufirst=Dirk&amp;rft_id=http%3A%2F%2Ffpc.formcharts.org&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConditional+probability" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite id="CITEREFJeffrey1983" class="citation">Jeffrey, Richard C. (1983), <a rel="nofollow" class="external text" href="https://books.google.com/books?id=geJ-SwTcmyEC&amp;printsec=frontcover#v=snippet&amp;q=%22conditional%20probability%22&amp;f=false"><i>The Logic of Decision, 2nd edition</i></a>, University of Chicago Press</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Logic+of+Decision%2C+2nd+edition&amp;rft.pub=University+of+Chicago+Press&amp;rft.date=1983&amp;rft.aulast=Jeffrey&amp;rft.aufirst=Richard+C.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DgeJ-SwTcmyEC%26printsec%3Dfrontcover%23v%3Dsnippet%26q%3D%2522conditional%2520probability%2522%26f%3Dfalse&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConditional+probability" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://plato.stanford.edu/entries/epistemology-bayesian/">"Bayesian Epistemology"</a>. Stanford Encyclopedia of Philosophy. 2017<span class="reference-accessdate">. Retrieved <span class="nowrap">December 29,</span> 2017</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Bayesian+Epistemology&amp;rft.pub=Stanford+Encyclopedia+of+Philosophy&amp;rft.date=2017&amp;rft_id=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fepistemology-bayesian%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConditional+probability" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text">Paulos, J.A. (1988) <i>Innumeracy: Mathematical Illiteracy and its Consequences</i>, Hill and Wang. <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-8090-7447-8" title="Special:BookSources/0-8090-7447-8">0-8090-7447-8</a> (p. 63 <i>et seq.</i>)</span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text">Thomas Bruss, F; Der Wyatt Earp Effekt; Spektrum der Wissenschaft; March 2007</span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text">George Casella and Roger L. Berger (1990), <i>Statistical Inference</i>, Duxbury Press, <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-534-11958-1" title="Special:BookSources/0-534-11958-1">0-534-11958-1</a> (p. 18 <i>et seq.</i>)</span>
+</li>
+<li id="cite_note-grinstead-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-grinstead_13-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://math.dartmouth.edu/~prob/prob/prob.pdf">Grinstead and Snell's Introduction to Probability</a>, p. 134</span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Conditional_probability&amp;action=edit&amp;section=19" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="background-color:#f9f9f9;border:1px solid #aaa;color:#000">
+<tbody><tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" decoding="async" width="30" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></td>
+<td class="mbox-text plainlist">Wikimedia Commons has media related to <i><b><a href="https://commons.wikimedia.org/wiki/Category:Conditional_probability" class="extiw" title="commons:Category:Conditional probability">Conditional probability</a></b></i>.</td></tr>
+</tbody></table>
+<ul><li><span class="citation mathworld" id="Reference-Mathworld-Conditional_Probability"><cite class="citation web"><a href="/wiki/Eric_W._Weisstein" title="Eric W. Weisstein">Weisstein, Eric W.</a> <a rel="nofollow" class="external text" href="http://mathworld.wolfram.com/ConditionalProbability.html">"Conditional Probability"</a>. <i><a href="/wiki/MathWorld" title="MathWorld">MathWorld</a></i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=MathWorld&amp;rft.atitle=Conditional+Probability&amp;rft.au=Weisstein%2C+Eric+W.&amp;rft_id=http%3A%2F%2Fmathworld.wolfram.com%2FConditionalProbability.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConditional+probability" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span></li>
+<li><a href="/wiki/F._Thomas_Bruss" class="mw-redirect" title="F. Thomas Bruss">F. Thomas Bruss</a> Der Wyatt-Earp-Effekt oder die betörende Macht kleiner Wahrscheinlichkeiten (in German), Spektrum der Wissenschaft (German Edition of Scientific American), Vol 2, 110–113, (2007).</li>
+<li><a rel="nofollow" class="external text" href="http://setosa.io/conditional/">Visual explanation of conditional probability</a></li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1274
+Cached time: 20190808144244
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.468 seconds
+Real time usage: 0.745 seconds
+Preprocessor visited node count: 1732/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 28703/2097152 bytes
+Template argument size: 1598/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 2/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 34288/5000000 bytes
+Number of Wikibase entities loaded: 2/400
+Lua time usage: 0.176/10.000 seconds
+Lua memory usage: 4.28 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  438.982      1 -total
+ 54.91%  241.028      1 Template:Reflist
+ 22.82%  100.177      3 Template:Cite_book
+ 15.39%   67.573      1 Template:Commonscat
+ 12.01%   52.726      2 Template:ISBN
+ 11.45%   50.271      4 Template:Cite_web
+ 11.27%   49.486      1 Template:Commons
+ 10.70%   46.966      1 Template:Sister_project
+  9.79%   42.962      1 Template:Side_box
+  8.31%   36.461      1 Template:Probability_fundamentals
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:24104134-0!canonical!math=5 and timestamp 20190808144243 and revision id 908157342
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Conditional_probability&amp;oldid=908157342">https://en.wikipedia.org/w/index.php?title=Conditional_probability&amp;oldid=908157342</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Conditional_probability" title="Category:Conditional probability">Conditional probability</a></li><li><a href="/wiki/Category:Invalid_proofs" title="Category:Invalid proofs">Invalid proofs</a></li><li><a href="/wiki/Category:Statistical_ratios" title="Category:Statistical ratios">Statistical ratios</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Commons_category_link_from_Wikidata" title="Category:Commons category link from Wikidata">Commons category link from Wikidata</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Conditional+probability" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Conditional+probability" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Conditional_probability" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Conditional_probability" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Conditional_probability">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Conditional_probability&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Conditional_probability&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Conditional_probability" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Conditional_probability" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Conditional_probability&amp;oldid=908157342" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Conditional_probability&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q327069" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Conditional_probability&amp;id=908157342" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-wikibase-otherprojects" aria-labelledby="p-wikibase-otherprojects-label">
+			<h3 id="p-wikibase-otherprojects-label">In other projects</h3>
+			<div class="body">
+								<ul>
+					<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:Conditional_probability" hreflang="en">Wikimedia Commons</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Conditional+probability">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Conditional+probability&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Conditional_probability&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84_%D8%B4%D8%B1%D8%B7%D9%8A" title="احتمال شرطي – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-bg"><a href="https://bg.wikipedia.org/wiki/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0_%D0%B2%D0%B5%D1%80%D0%BE%D1%8F%D1%82%D0%BD%D0%BE%D1%81%D1%82" title="Условна вероятност – Bulgarian" lang="bg" hreflang="bg" class="interlanguage-link-target">Български</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Probabilitat_condicionada" title="Probabilitat condicionada – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cy"><a href="https://cy.wikipedia.org/wiki/Tebygolrwydd_amodol" title="Tebygolrwydd amodol – Welsh" lang="cy" hreflang="cy" class="interlanguage-link-target">Cymraeg</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Bedingte_Wahrscheinlichkeit" title="Bedingte Wahrscheinlichkeit – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Probabilidad_condicionada" title="Probabilidad condicionada – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eu"><a href="https://eu.wikipedia.org/wiki/Baldintzapeko_probabilitate" title="Baldintzapeko probabilitate – Basque" lang="eu" hreflang="eu" class="interlanguage-link-target">Euskara</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84_%D8%B4%D8%B1%D8%B7%DB%8C" title="احتمال شرطی – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Probabilit%C3%A9_conditionnelle" title="Probabilité conditionnelle – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EC%A1%B0%EA%B1%B4%EB%B6%80_%ED%99%95%EB%A5%A0" title="조건부 확률 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-is"><a href="https://is.wikipedia.org/wiki/Skilyrtar_l%C3%ADkur" title="Skilyrtar líkur – Icelandic" lang="is" hreflang="is" class="interlanguage-link-target">Íslenska</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Probabilit%C3%A0_condizionata" title="Probabilità condizionata – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%94%D7%A1%D7%AA%D7%91%D7%A8%D7%95%D7%AA_%D7%9E%D7%95%D7%AA%D7%A0%D7%99%D7%AA" title="הסתברות מותנית – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/Felt%C3%A9teles_val%C3%B3sz%C3%ADn%C5%B1s%C3%A9g" title="Feltételes valószínűség – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Voorwaardelijke_kans" title="Voorwaardelijke kans – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E6%9D%A1%E4%BB%B6%E4%BB%98%E3%81%8D%E7%A2%BA%E7%8E%87" title="条件付き確率 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/Betinget_sannsynlighet" title="Betinget sannsynlighet – Norwegian" lang="no" hreflang="no" class="interlanguage-link-target">Norsk</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Prawdopodobie%C5%84stwo_warunkowe" title="Prawdopodobieństwo warunkowe – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Probabilidade_condicionada" title="Probabilidade condicionada – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0%D1%8F_%D0%B2%D0%B5%D1%80%D0%BE%D1%8F%D1%82%D0%BD%D0%BE%D1%81%D1%82%D1%8C" title="Условная вероятность – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sl"><a href="https://sl.wikipedia.org/wiki/Pogojna_verjetnost" title="Pogojna verjetnost – Slovenian" lang="sl" hreflang="sl" class="interlanguage-link-target">Slovenščina</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0_%D0%B2%D0%B5%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D0%BD%D0%BE%D1%9B%D0%B0" title="Условна вероватноћа – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Ehdollinen_todenn%C3%A4k%C3%B6isyys" title="Ehdollinen todennäköisyys – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Betingad_sannolikhet" title="Betingad sannolikhet – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-th"><a href="https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B8%88%E0%B8%B0%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82" title="ความน่าจะเป็นมีเงื่อนไข – Thai" lang="th" hreflang="th" class="interlanguage-link-target">ไทย</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Ko%C5%9Fullu_olas%C4%B1l%C4%B1k" title="Koşullu olasılık – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%A3%D0%BC%D0%BE%D0%B2%D0%BD%D0%B0_%D0%B9%D0%BC%D0%BE%D0%B2%D1%96%D1%80%D0%BD%D1%96%D1%81%D1%82%D1%8C" title="Умовна ймовірність – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-ur"><a href="https://ur.wikipedia.org/wiki/%D9%85%D8%B4%D8%B1%D9%88%D8%B7_%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84" title="مشروط احتمال – Urdu" lang="ur" hreflang="ur" class="interlanguage-link-target">اردو</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/X%C3%A1c_su%E1%BA%A5t_c%C3%B3_%C4%91i%E1%BB%81u_ki%E1%BB%87n" title="Xác suất có điều kiện – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87" title="条件概率 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q327069#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 27 July 2019, at 21:01<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Conditional_probability&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.468","walltime":"0.745","ppvisitednodes":{"value":1732,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":28703,"limit":2097152},"templateargumentsize":{"value":1598,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":34288,"limit":5000000},"entityaccesscount":{"value":2,"limit":400},"timingprofile":["100.00%  438.982      1 -total"," 54.91%  241.028      1 Template:Reflist"," 22.82%  100.177      3 Template:Cite_book"," 15.39%   67.573      1 Template:Commonscat"," 12.01%   52.726      2 Template:ISBN"," 11.45%   50.271      4 Template:Cite_web"," 11.27%   49.486      1 Template:Commons"," 10.70%   46.966      1 Template:Sister_project","  9.79%   42.962      1 Template:Side_box","  8.31%   36.461      1 Template:Probability_fundamentals"]},"scribunto":{"limitreport-timeusage":{"value":"0.176","limit":"10.000"},"limitreport-memusage":{"value":4488754,"limit":52428800}},"cachereport":{"origin":"mw1274","timestamp":"20190808144244","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Conditional probability","url":"https:\/\/en.wikipedia.org\/wiki\/Conditional_probability","sameAs":"http:\/\/www.wikidata.org\/entity\/Q327069","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q327069","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2001-06-08T18:58:46Z","dateModified":"2019-07-27T21:01:40Z"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":883,"wgHostname":"mw1274"});});</script>
+</body>
+</html>

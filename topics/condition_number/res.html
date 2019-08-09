@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Condition number - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Condition_number","wgTitle":"Condition number","wgCurRevisionId":904598566,"wgRevisionId":904598566,"wgArticleId":6934,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Wikipedia articles needing clarification from October 2014","Numerical analysis","Matrices"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Condition_number",
+"wgRelevantArticleId":6934,"wgRequestId":"XUlxdQpAME4AAJzP2E0AAACK","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q1147936","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready",
+"ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["ext.math.scripts","ext.cite.ux-enhancements","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader",
+"ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Condition_number"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Condition_number&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Condition_number&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Condition_number"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Condition_number rootpage-Condition_number skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Condition number</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>In the field of <a href="/wiki/Numerical_analysis" title="Numerical analysis">numerical analysis</a>, the <b>condition number</b> of a function measures how much the output value of the function can change for a small change in the input argument. This is used to measure how <a href="/wiki/Sensitivity_analysis" title="Sensitivity analysis">sensitive</a> a function is to changes or errors in the input, and how much error in the output results from an error in the input. Very frequently, one is solving the inverse problem – given <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x)=y,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>y</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)=y,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cccc04a8c310cc7a356bbba88e8fb884e925aceb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.318ex; height:2.843ex;" alt="f(x) = y,"/></span> one is solving for <i>x,</i> and thus the condition number of the (local) inverse must be used. In <a href="/wiki/Linear_regression" title="Linear regression">linear regression</a> the condition number of the <a href="/wiki/Moment_matrix" title="Moment matrix">moment matrix</a> can be used as a diagnostic for <a href="/wiki/Multicollinearity" title="Multicollinearity">multicollinearity</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p><p>The condition number is an application of the derivative, and is formally defined as the value of the asymptotic worst-case relative change in output for a relative change in input. The "function" is the solution of a problem and the "arguments" are the data in the problem. The condition number is frequently applied to questions in linear algebra, in which case the derivative is straightforward but the error could be in many different directions, and is thus computed from the geometry of the matrix. More generally, condition numbers can be defined for non-linear functions in several variables.
+</p><p>A problem with a low condition number is said to be <b>well-conditioned</b>, while a problem with a high condition number is said to be <b>ill-conditioned</b>. The condition number is a property of the problem.  Paired with the problem are any number of algorithms that can be used to solve the problem, that is, to calculate the solution.  Some algorithms have a property called <b><a href="/wiki/Numerical_stability" title="Numerical stability">backward stability</a></b>. In general, a backward stable algorithm can be expected to accurately solve well-conditioned problems. Numerical analysis textbooks give formulas for the condition numbers of problems and identify known backward stable algorithms.
+</p><p>As a rule of thumb, if the condition number <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \kappa (A)=10^{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03BA;<!-- κ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mn>10</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \kappa (A)=10^{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/badf4fba0b778d73e22b71492a153fe05cd5ac35" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.403ex; height:3.176ex;" alt="\kappa(A) = 10^k"/></span>, then you may lose up to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle k}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3c9a2c7b599b37105512c5d570edc034056dd40" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.211ex; height:2.176ex;" alt="k"/></span> digits of accuracy on top of what would be lost to the numerical method due to loss of precision from arithmetic methods.<sup id="cite_ref-Numerical_Mathematics_and_Computing,_by_Cheney_and_Kincaid_3-0" class="reference"><a href="#cite_note-Numerical_Mathematics_and_Computing,_by_Cheney_and_Kincaid-3">&#91;3&#93;</a></sup> However, the condition number does not give the exact value of the maximum inaccuracy that may occur in the algorithm. It generally just bounds it with an estimate (whose computed value depends on the choice of the norm to measure the inaccuracy).
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#General_definition_in_the_context_of_error_analysis"><span class="tocnumber">1</span> <span class="toctext">General definition in the context of error analysis</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Matrices"><span class="tocnumber">2</span> <span class="toctext">Matrices</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Nonlinear"><span class="tocnumber">3</span> <span class="toctext">Nonlinear</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#One_variable"><span class="tocnumber">3.1</span> <span class="toctext">One variable</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Several_variables"><span class="tocnumber">3.2</span> <span class="toctext">Several variables</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#External_links"><span class="tocnumber">6</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="General_definition_in_the_context_of_error_analysis">General definition in the context of error analysis</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Condition_number&amp;action=edit&amp;section=1" title="Edit section: General definition in the context of error analysis">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Given a problem <i>f</i> and an algorithm <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\tilde {f}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>f</mi>
+              <mo stretchy="false">&#x007E;<!-- ~ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tilde {f}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f6cb99679a4b79cb5ca3c242811bd91220c91f2e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.699ex; height:3.009ex;" alt="{\tilde {f}}"/></span> with an input <i>x</i>, the <i>absolute</i> error is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \left\|f(x)-{\tilde {f}}(x)\right\|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo symmetric="true">&#x2016;</mo>
+          <mrow>
+            <mi>f</mi>
+            <mo stretchy="false">(</mo>
+            <mi>x</mi>
+            <mo stretchy="false">)</mo>
+            <mo>&#x2212;<!-- − --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mrow class="MJX-TeXAtom-ORD">
+                <mover>
+                  <mi>f</mi>
+                  <mo stretchy="false">&#x007E;<!-- ~ --></mo>
+                </mover>
+              </mrow>
+            </mrow>
+            <mo stretchy="false">(</mo>
+            <mi>x</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mo symmetric="true">&#x2016;</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left\|f(x)-{\tilde {f}}(x)\right\|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a233cf5cf8979ff068a34151fd53e29fb2c0176c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:14.421ex; height:3.509ex;" alt="{\displaystyle \left\|f(x)-{\tilde {f}}(x)\right\|}"/></span> and the <i>relative</i> error is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \left\|f(x)-{\tilde {f}}(x)\right\|/\left\|f(x)\right\|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo symmetric="true">&#x2016;</mo>
+          <mrow>
+            <mi>f</mi>
+            <mo stretchy="false">(</mo>
+            <mi>x</mi>
+            <mo stretchy="false">)</mo>
+            <mo>&#x2212;<!-- − --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mrow class="MJX-TeXAtom-ORD">
+                <mover>
+                  <mi>f</mi>
+                  <mo stretchy="false">&#x007E;<!-- ~ --></mo>
+                </mover>
+              </mrow>
+            </mrow>
+            <mo stretchy="false">(</mo>
+            <mi>x</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mo symmetric="true">&#x2016;</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mrow>
+          <mo symmetric="true">&#x2016;</mo>
+          <mrow>
+            <mi>f</mi>
+            <mo stretchy="false">(</mo>
+            <mi>x</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mo symmetric="true">&#x2016;</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left\|f(x)-{\tilde {f}}(x)\right\|/\left\|f(x)\right\|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e62072e382b3d97cfe2c49e1a61f75cf1d357ba7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:23.1ex; height:3.509ex;" alt="{\displaystyle \left\|f(x)-{\tilde {f}}(x)\right\|/\left\|f(x)\right\|}"/></span>.
+</p><p>In this context, the <i>absolute</i> condition number of a problem <i>f</i> is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{\varepsilon \rightarrow 0}\sup _{\|\delta x\|\leq \varepsilon }{\frac {\|\delta f\|}{\|\delta x\|}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B5;<!-- ε --></mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mn>0</mn>
+          </mrow>
+        </munder>
+        <munder>
+          <mo movablelimits="true" form="prefix">sup</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+            <mi>&#x03B4;<!-- δ --></mi>
+            <mi>x</mi>
+            <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+            <mo>&#x2264;<!-- ≤ --></mo>
+            <mi>&#x03B5;<!-- ε --></mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+              <mi>&#x03B4;<!-- δ --></mi>
+              <mi>f</mi>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+            </mrow>
+            <mrow>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+              <mi>&#x03B4;<!-- δ --></mi>
+              <mi>x</mi>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{\varepsilon \rightarrow 0}\sup _{\|\delta x\|\leq \varepsilon }{\frac {\|\delta f\|}{\|\delta x\|}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/69387fc28f1fb4edc60ad68935ddc9793a73afcf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:14.915ex; height:6.843ex;" alt="{\displaystyle \lim _{\varepsilon \rightarrow 0}\sup _{\|\delta x\|\leq \varepsilon }{\frac {\|\delta f\|}{\|\delta x\|}}}"/></span></dd></dl>
+<p>and the <i>relative</i> condition number is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{\varepsilon \rightarrow 0}\sup _{\|\delta x\|\leq \varepsilon }{\frac {\|\delta f(x)\|/\|f(x)\|}{\|\delta x\|/\|x\|}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B5;<!-- ε --></mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mn>0</mn>
+          </mrow>
+        </munder>
+        <munder>
+          <mo movablelimits="true" form="prefix">sup</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+            <mi>&#x03B4;<!-- δ --></mi>
+            <mi>x</mi>
+            <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+            <mo>&#x2264;<!-- ≤ --></mo>
+            <mi>&#x03B5;<!-- ε --></mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+              <mi>&#x03B4;<!-- δ --></mi>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>/</mo>
+              </mrow>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+            </mrow>
+            <mrow>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+              <mi>&#x03B4;<!-- δ --></mi>
+              <mi>x</mi>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>/</mo>
+              </mrow>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+              <mi>x</mi>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{\varepsilon \rightarrow 0}\sup _{\|\delta x\|\leq \varepsilon }{\frac {\|\delta f(x)\|/\|f(x)\|}{\|\delta x\|/\|x\|}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/613bce563088d5e506597b022fb9b09461e39199" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:25.908ex; height:6.843ex;" alt="{\displaystyle \lim _{\varepsilon \rightarrow 0}\sup _{\|\delta x\|\leq \varepsilon }{\frac {\|\delta f(x)\|/\|f(x)\|}{\|\delta x\|/\|x\|}}}"/></span></dd></dl>
+<h2><span class="mw-headline" id="Matrices">Matrices</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Condition_number&amp;action=edit&amp;section=2" title="Edit section: Matrices">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>For example, the condition number associated with the <a href="/wiki/Linear_equation" title="Linear equation">linear equation</a>
+<i>Ax</i>&#160;=&#160;<i>b</i> gives a bound on how inaccurate the solution <i>x</i> will be after approximation. Note that this is before the effects of <a href="/wiki/Round-off_error" title="Round-off error">round-off error</a> are taken into account; conditioning is a property of the matrix, not the <a href="/wiki/Algorithm" title="Algorithm">algorithm</a> or <a href="/wiki/Floating_point" class="mw-redirect" title="Floating point">floating point</a> accuracy of the computer used to solve the corresponding system. In particular, one should think of the condition number as being (very roughly) the rate at which the solution, <i>x</i>, will change with respect to a change in <i>b</i>.  Thus, if the condition number is large, even a small error in <i>b</i> may cause a large error in <i>x</i>. On the other hand, if the condition number is small then the error in <i>x</i> will not be much bigger than the error in <i>b</i>.
+</p><p>The condition number is defined more precisely to be the maximum ratio of the <a href="/wiki/Relative_error" class="mw-redirect" title="Relative error">relative error</a> in <i>x</i> to the relative error in <i>b</i>.
+</p><p>Let <i>e</i> be the error in <i>b</i>. Assuming that <i>A</i> is a nonsingular matrix, the error in the solution <i>A</i><sup>−1</sup><i>b</i> is <i>A</i><sup>−1</sup><i>e</i>. The ratio of the relative error in the solution to the relative error in <i>b</i> is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {\frac {\left\|A^{-1}e\right\|}{\left\|A^{-1}b\right\|}}{\frac {\|e\|}{\|b\|}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mfrac>
+              <mrow>
+                <mo symmetric="true">&#x2016;</mo>
+                <mrow>
+                  <msup>
+                    <mi>A</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msup>
+                  <mi>e</mi>
+                </mrow>
+                <mo symmetric="true">&#x2016;</mo>
+              </mrow>
+              <mrow>
+                <mo symmetric="true">&#x2016;</mo>
+                <mrow>
+                  <msup>
+                    <mi>A</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msup>
+                  <mi>b</mi>
+                </mrow>
+                <mo symmetric="true">&#x2016;</mo>
+              </mrow>
+            </mfrac>
+            <mfrac>
+              <mrow>
+                <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                <mi>e</mi>
+                <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+              </mrow>
+              <mrow>
+                <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                <mi>b</mi>
+                <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+              </mrow>
+            </mfrac>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\frac {\left\|A^{-1}e\right\|}{\left\|A^{-1}b\right\|}}{\frac {\|e\|}{\|b\|}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/943a9bf997cdf13587a0887285b0e6398dc9d190" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.505ex; width:7.184ex; height:11.509ex;" alt="{\displaystyle {\frac {\frac {\left\|A^{-1}e\right\|}{\left\|A^{-1}b\right\|}}{\frac {\|e\|}{\|b\|}}}}"/></span></dd></dl>
+<p>This is easily transformed to
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {\left\|A^{-1}e\right\|}{\|e\|}}{\frac {\|b\|}{\left\|A^{-1}b\right\|}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo symmetric="true">&#x2016;</mo>
+              <mrow>
+                <msup>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <mi>e</mi>
+              </mrow>
+              <mo symmetric="true">&#x2016;</mo>
+            </mrow>
+            <mrow>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+              <mi>e</mi>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+              <mi>b</mi>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+            </mrow>
+            <mrow>
+              <mo symmetric="true">&#x2016;</mo>
+              <mrow>
+                <msup>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <mi>b</mi>
+              </mrow>
+              <mo symmetric="true">&#x2016;</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\left\|A^{-1}e\right\|}{\|e\|}}{\frac {\|b\|}{\left\|A^{-1}b\right\|}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4ae89ecf16accc772113f91d6d69ea908b7c4643" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:17.202ex; height:6.843ex;" alt="{\displaystyle {\frac {\left\|A^{-1}e\right\|}{\|e\|}}{\frac {\|b\|}{\left\|A^{-1}b\right\|}}.}"/></span></dd></dl>
+<p>The maximum value (for nonzero <i>b</i> and <i>e</i>) is then seen to be the product of the two <a href="/wiki/Operator_norm" title="Operator norm">operator norms</a> as follows:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}\max _{e,b\neq 0}\left\{{\frac {\left\|A^{-1}e\right\|}{\|e\|}}{\frac {\|b\|}{\left\|A^{-1}b\right\|}}\right\}&amp;=\max _{e\neq 0}\left\{{\frac {\left\|A^{-1}e\right\|}{\|e\|}}\right\}\,\max _{b\neq 0}\left\{{\frac {\|b\|}{\left\|A^{-1}b\right\|}}\right\}\\&amp;=\max _{e\neq 0}\left\{{\frac {\left\|A^{-1}e\right\|}{\|e\|}}\right\}\,\max _{x\neq 0}\left\{{\frac {\|Ax\|}{\|x\|}}\right\}\\&amp;=\left\|A^{-1}\right\|\,\|A\|\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <munder>
+                  <mo movablelimits="true" form="prefix">max</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>e</mi>
+                    <mo>,</mo>
+                    <mi>b</mi>
+                    <mo>&#x2260;<!-- ≠ --></mo>
+                    <mn>0</mn>
+                  </mrow>
+                </munder>
+                <mrow>
+                  <mo>{</mo>
+                  <mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <mo symmetric="true">&#x2016;</mo>
+                          <mrow>
+                            <msup>
+                              <mi>A</mi>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mo>&#x2212;<!-- − --></mo>
+                                <mn>1</mn>
+                              </mrow>
+                            </msup>
+                            <mi>e</mi>
+                          </mrow>
+                          <mo symmetric="true">&#x2016;</mo>
+                        </mrow>
+                        <mrow>
+                          <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                          <mi>e</mi>
+                          <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                          <mi>b</mi>
+                          <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                        </mrow>
+                        <mrow>
+                          <mo symmetric="true">&#x2016;</mo>
+                          <mrow>
+                            <msup>
+                              <mi>A</mi>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mo>&#x2212;<!-- − --></mo>
+                                <mn>1</mn>
+                              </mrow>
+                            </msup>
+                            <mi>b</mi>
+                          </mrow>
+                          <mo symmetric="true">&#x2016;</mo>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                  </mrow>
+                  <mo>}</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munder>
+                  <mo movablelimits="true" form="prefix">max</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>e</mi>
+                    <mo>&#x2260;<!-- ≠ --></mo>
+                    <mn>0</mn>
+                  </mrow>
+                </munder>
+                <mrow>
+                  <mo>{</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mrow>
+                        <mo symmetric="true">&#x2016;</mo>
+                        <mrow>
+                          <msup>
+                            <mi>A</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mo>&#x2212;<!-- − --></mo>
+                              <mn>1</mn>
+                            </mrow>
+                          </msup>
+                          <mi>e</mi>
+                        </mrow>
+                        <mo symmetric="true">&#x2016;</mo>
+                      </mrow>
+                      <mrow>
+                        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                        <mi>e</mi>
+                        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                      </mrow>
+                    </mfrac>
+                  </mrow>
+                  <mo>}</mo>
+                </mrow>
+                <mspace width="thinmathspace" />
+                <munder>
+                  <mo movablelimits="true" form="prefix">max</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>b</mi>
+                    <mo>&#x2260;<!-- ≠ --></mo>
+                    <mn>0</mn>
+                  </mrow>
+                </munder>
+                <mrow>
+                  <mo>{</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mrow>
+                        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                        <mi>b</mi>
+                        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                      </mrow>
+                      <mrow>
+                        <mo symmetric="true">&#x2016;</mo>
+                        <mrow>
+                          <msup>
+                            <mi>A</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mo>&#x2212;<!-- − --></mo>
+                              <mn>1</mn>
+                            </mrow>
+                          </msup>
+                          <mi>b</mi>
+                        </mrow>
+                        <mo symmetric="true">&#x2016;</mo>
+                      </mrow>
+                    </mfrac>
+                  </mrow>
+                  <mo>}</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munder>
+                  <mo movablelimits="true" form="prefix">max</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>e</mi>
+                    <mo>&#x2260;<!-- ≠ --></mo>
+                    <mn>0</mn>
+                  </mrow>
+                </munder>
+                <mrow>
+                  <mo>{</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mrow>
+                        <mo symmetric="true">&#x2016;</mo>
+                        <mrow>
+                          <msup>
+                            <mi>A</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mo>&#x2212;<!-- − --></mo>
+                              <mn>1</mn>
+                            </mrow>
+                          </msup>
+                          <mi>e</mi>
+                        </mrow>
+                        <mo symmetric="true">&#x2016;</mo>
+                      </mrow>
+                      <mrow>
+                        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                        <mi>e</mi>
+                        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                      </mrow>
+                    </mfrac>
+                  </mrow>
+                  <mo>}</mo>
+                </mrow>
+                <mspace width="thinmathspace" />
+                <munder>
+                  <mo movablelimits="true" form="prefix">max</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>x</mi>
+                    <mo>&#x2260;<!-- ≠ --></mo>
+                    <mn>0</mn>
+                  </mrow>
+                </munder>
+                <mrow>
+                  <mo>{</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mrow>
+                        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                        <mi>A</mi>
+                        <mi>x</mi>
+                        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                      </mrow>
+                      <mrow>
+                        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                        <mi>x</mi>
+                        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                      </mrow>
+                    </mfrac>
+                  </mrow>
+                  <mo>}</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow>
+                  <mo symmetric="true">&#x2016;</mo>
+                  <msup>
+                    <mi>A</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msup>
+                  <mo symmetric="true">&#x2016;</mo>
+                </mrow>
+                <mspace width="thinmathspace" />
+                <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                <mi>A</mi>
+                <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}\max _{e,b\neq 0}\left\{{\frac {\left\|A^{-1}e\right\|}{\|e\|}}{\frac {\|b\|}{\left\|A^{-1}b\right\|}}\right\}&amp;=\max _{e\neq 0}\left\{{\frac {\left\|A^{-1}e\right\|}{\|e\|}}\right\}\,\max _{b\neq 0}\left\{{\frac {\|b\|}{\left\|A^{-1}b\right\|}}\right\}\\&amp;=\max _{e\neq 0}\left\{{\frac {\left\|A^{-1}e\right\|}{\|e\|}}\right\}\,\max _{x\neq 0}\left\{{\frac {\|Ax\|}{\|x\|}}\right\}\\&amp;=\left\|A^{-1}\right\|\,\|A\|\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c81031afad6e18fd1a7cff4b0942415c257ed8a5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -8.838ex; width:62.852ex; height:18.843ex;" alt="{\displaystyle {\begin{aligned}\max _{e,b\neq 0}\left\{{\frac {\left\|A^{-1}e\right\|}{\|e\|}}{\frac {\|b\|}{\left\|A^{-1}b\right\|}}\right\}&amp;=\max _{e\neq 0}\left\{{\frac {\left\|A^{-1}e\right\|}{\|e\|}}\right\}\,\max _{b\neq 0}\left\{{\frac {\|b\|}{\left\|A^{-1}b\right\|}}\right\}\\&amp;=\max _{e\neq 0}\left\{{\frac {\left\|A^{-1}e\right\|}{\|e\|}}\right\}\,\max _{x\neq 0}\left\{{\frac {\|Ax\|}{\|x\|}}\right\}\\&amp;=\left\|A^{-1}\right\|\,\|A\|\end{aligned}}}"/></span></dd></dl>
+<p>The same definition is used for any consistent <a href="/wiki/Matrix_norm" title="Matrix norm">norm</a>, i.e. one that satisfies
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \kappa (A)=\left\|A^{-1}\right\|\,\left\|A\right\|\geq \left\|A^{-1}A\right\|=1.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03BA;<!-- κ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow>
+          <mo symmetric="true">&#x2016;</mo>
+          <msup>
+            <mi>A</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>1</mn>
+            </mrow>
+          </msup>
+          <mo symmetric="true">&#x2016;</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mrow>
+          <mo symmetric="true">&#x2016;</mo>
+          <mi>A</mi>
+          <mo symmetric="true">&#x2016;</mo>
+        </mrow>
+        <mo>&#x2265;<!-- ≥ --></mo>
+        <mrow>
+          <mo symmetric="true">&#x2016;</mo>
+          <mrow>
+            <msup>
+              <mi>A</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>1</mn>
+              </mrow>
+            </msup>
+            <mi>A</mi>
+          </mrow>
+          <mo symmetric="true">&#x2016;</mo>
+        </mrow>
+        <mo>=</mo>
+        <mn>1.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \kappa (A)=\left\|A^{-1}\right\|\,\left\|A\right\|\geq \left\|A^{-1}A\right\|=1.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7b2230029e1fb96c05a4349afb5d4af927d004c7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:35.383ex; height:3.509ex;" alt="{\displaystyle \kappa (A)=\left\|A^{-1}\right\|\,\left\|A\right\|\geq \left\|A^{-1}A\right\|=1.}"/></span></dd></dl>
+<p>When the condition number is exactly one (which can only happen if <i>A</i> is a  scalar multiple of a <a href="/wiki/Isometry#Linear_isometry" title="Isometry">linear isometry</a>), then a solution algorithm can  find (in principle, meaning if the algorithm introduces no errors of its own) an approximation of the solution whose precision is no worse than that of the data.
+</p><p>However, it does not mean that the algorithm will converge rapidly to this solution, just that it won't diverge arbitrarily because of inaccuracy on the source data (backward error), provided that the forward error introduced by the algorithm does not diverge as well because of accumulating intermediate rounding errors.<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify"><span title="The text near this tag may need clarification or removal of jargon. (October 2014)">clarification needed</span></a></i>&#93;</sup>
+</p><p>The condition number may also be infinite, but this implies that the problem is <a href="/wiki/Well-posed_problem" title="Well-posed problem">ill-posed</a> (does not possess a unique, well-defined solution for each choice of data; that is, the matrix is not invertible), and no algorithm can be expected to reliably find a solution.
+</p><p>The definition of the condition number depends on the choice of norm, as can be illustrated by two examples.
+</p><p>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \|\cdot \|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \|\cdot \|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/113f0d8fe6108fc1c5e9802f7c3f634f5480b3d1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.004ex; height:2.843ex;" alt="{\displaystyle \|\cdot \|}"/></span> is the <a href="/wiki/Matrix_norm" title="Matrix norm">norm</a> defined in the square-summable <a href="/wiki/Sequence_space" title="Sequence space">sequence space</a> <a href="/wiki/Lp_space" title="Lp space">ℓ<sup>2</sup></a> (which matches the usual distance in a standard Euclidean space and is usually noted as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \|\cdot \|_{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <msub>
+          <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \|\cdot \|_{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b3a8e44a2eb980f856968a6357e3d0a7c22c905f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.058ex; height:2.843ex;" alt="{\displaystyle \|\cdot \|_{2}}"/></span>), then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \kappa (A)={\frac {\sigma _{\max }(A)}{\sigma _{\min }(A)}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03BA;<!-- κ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>&#x03C3;<!-- σ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo movablelimits="true" form="prefix">max</mo>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>A</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <msub>
+                <mi>&#x03C3;<!-- σ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo movablelimits="true" form="prefix">min</mo>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>A</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \kappa (A)={\frac {\sigma _{\max }(A)}{\sigma _{\min }(A)}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7ebca37908b5dd5d675cb46f0881b59b8a701deb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:17.644ex; height:6.509ex;" alt="{\displaystyle \kappa (A)={\frac {\sigma _{\max }(A)}{\sigma _{\min }(A)}},}"/></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sigma _{\max }(A)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03C3;<!-- σ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo movablelimits="true" form="prefix">max</mo>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sigma _{\max }(A)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fedff4684673eaf18c2ea0d67dfca855a85ab3d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.171ex; height:2.843ex;" alt=" \sigma_{\max}(A)"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sigma _{\min }(A)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03C3;<!-- σ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo movablelimits="true" form="prefix">min</mo>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sigma _{\min }(A)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f054ddd854af02be8e1e47eb48a845976940e3f7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.852ex; height:2.843ex;" alt="{\displaystyle \sigma _{\min }(A)}"/></span> are maximal and minimal <a href="/wiki/Singular_value" title="Singular value">singular values</a> of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="A"/></span> respectively. Hence
+</p>
+<ul><li>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="A"/></span> is <a href="/wiki/Normal_matrix" title="Normal matrix">normal</a> then</li></ul>
+<dl><dd><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \kappa (A)={\frac {\left|\lambda _{\max }(A)\right|}{\left|\lambda _{\min }(A)\right|}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03BA;<!-- κ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo>|</mo>
+              <mrow>
+                <msub>
+                  <mi>&#x03BB;<!-- λ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo movablelimits="true" form="prefix">max</mo>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>A</mi>
+                <mo stretchy="false">)</mo>
+              </mrow>
+              <mo>|</mo>
+            </mrow>
+            <mrow>
+              <mo>|</mo>
+              <mrow>
+                <msub>
+                  <mi>&#x03BB;<!-- λ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo movablelimits="true" form="prefix">min</mo>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>A</mi>
+                <mo stretchy="false">)</mo>
+              </mrow>
+              <mo>|</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \kappa (A)={\frac {\left|\lambda _{\max }(A)\right|}{\left|\lambda _{\min }(A)\right|}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d6abc1b0d87841f49d19096668c83e200511db2a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:18.965ex; height:6.509ex;" alt="{\displaystyle \kappa (A)={\frac {\left|\lambda _{\max }(A)\right|}{\left|\lambda _{\min }(A)\right|}},}"/></span></dd></dl></dd>
+<dd>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lambda _{\max }(A)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03BB;<!-- λ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo movablelimits="true" form="prefix">max</mo>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda _{\max }(A)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/614fe873cf86e4fb326a53516084443445019f22" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.199ex; height:2.843ex;" alt="{\displaystyle \lambda _{\max }(A)}"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lambda _{\min }(A)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03BB;<!-- λ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo movablelimits="true" form="prefix">min</mo>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda _{\min }(A)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3c2db94655fd4d134e7aa6067eb385f9b3f7c44c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.88ex; height:2.843ex;" alt="\lambda_{\min}(A) "/></span> are maximal and minimal (by moduli) <a href="/wiki/Eigenvalue" class="mw-redirect" title="Eigenvalue">eigenvalues</a> of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="A"/></span> respectively.</dd></dl>
+<ul><li>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="A"/></span> is <a href="/wiki/Unitary_matrix" title="Unitary matrix">unitary</a> then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \kappa (A)=1.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03BA;<!-- κ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>1.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \kappa (A)=1.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e8ad7daf61fb1bda8b8152998c381082cf8ff71f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.799ex; height:2.843ex;" alt="{\displaystyle \kappa (A)=1.}"/></span></li></ul>
+<p>The condition number with respect to <i>L</i><sup>2</sup> arises so often in numerical <a href="/wiki/Linear_algebra" title="Linear algebra">linear algebra</a> that it is given a name, the <b>condition number of a matrix</b>.
+</p><p>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \|\cdot \|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \|\cdot \|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/113f0d8fe6108fc1c5e9802f7c3f634f5480b3d1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.004ex; height:2.843ex;" alt="\|\cdot \|"/></span> is the <a href="/wiki/Matrix_norm" title="Matrix norm">norm</a> defined in the <a href="/wiki/Sequence_space" title="Sequence space">sequence space</a> <a href="/wiki/Lp_space" title="Lp space">ℓ<sup>∞</sup></a> of all <a href="/wiki/Bounded_operator" title="Bounded operator">bounded</a> sequences (which matches the maximum of distances measured on projections into the base subspaces and is usually denoted by <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \|\cdot \|_{\infty }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <msub>
+          <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \|\cdot \|_{\infty }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b723232adf7317abb1fc1c1326e1e4f79616a7e4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.879ex; height:2.843ex;" alt="{\displaystyle \|\cdot \|_{\infty }}"/></span>), and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="A"/></span> is <a href="/wiki/Triangular_matrix" title="Triangular matrix">lower triangular</a> non-singular (i.e., <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \forall i,a_{ii}\neq 0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2200;<!-- ∀ --></mi>
+        <mi>i</mi>
+        <mo>,</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2260;<!-- ≠ --></mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall i,a_{ii}\neq 0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4a2b28ea5bcd01c3d1fc4be632193a062e15068a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.987ex; height:2.676ex;" alt="{\displaystyle \forall i,a_{ii}\neq 0}"/></span>) then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \kappa (A)\geq {\frac {\max _{i}(|a_{ii}|)}{\min _{i}(|a_{ii}|)}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03BA;<!-- κ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2265;<!-- ≥ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <munder>
+                <mo movablelimits="true" form="prefix">max</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                </mrow>
+              </munder>
+              <mo stretchy="false">(</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <msub>
+                <mi>a</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                  <mi>i</mi>
+                </mrow>
+              </msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <munder>
+                <mo movablelimits="true" form="prefix">min</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                </mrow>
+              </munder>
+              <mo stretchy="false">(</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <msub>
+                <mi>a</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                  <mi>i</mi>
+                </mrow>
+              </msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \kappa (A)\geq {\frac {\max _{i}(|a_{ii}|)}{\min _{i}(|a_{ii}|)}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/db72cb96f1e48fe589740032afdf3a79a70656ad" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:20.298ex; height:6.509ex;" alt=" \kappa(A) \geq \frac{\max_i(|a_{ii}|)}{\min_i(|a_{ii}|)} ."/></span></dd></dl>
+<p>The condition number computed with this norm is generally larger than the condition number computed with square-summable sequences, but it can be evaluated more easily (and this is often the only practicably computable condition number, when the problem to solve involves a <i>non-linear algebra</i><sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify"><span title="The text near this tag may need clarification or removal of jargon. (October 2014)">clarification needed</span></a></i>&#93;</sup>, for example when approximating irrational and transcendental functions or numbers with numerical methods).
+</p><p>If the condition number is not too much larger than one, the matrix is well conditioned which means its inverse can be computed with good accuracy. If the condition number is very large, then the matrix is said to be ill-conditioned. Practically, such a matrix is almost singular, and the computation of its inverse, or solution of a linear system of equations is prone to large numerical errors. A matrix that is not invertible has condition number equal to infinity.
+</p>
+<h2><span class="mw-headline" id="Nonlinear">Nonlinear</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Condition_number&amp;action=edit&amp;section=3" title="Edit section: Nonlinear">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Condition numbers can also be defined for nonlinear functions, and can be computed using calculus. The condition number varies with the point; in some cases one can use the maximum (or supremum) condition number over the domain of the function or domain of the question as an overall condition number, while in other cases the condition number at a particular point is of more interest.
+</p>
+<h3><span class="mw-headline" id="One_variable">One variable</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Condition_number&amp;action=edit&amp;section=4" title="Edit section: One variable">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Significance_arithmetic#Transcendental_functions" title="Significance arithmetic">Significance arithmetic §&#160;Transcendental functions</a></div>
+<p>The condition number of a differentiable function <i>f</i> in one variable as a function is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \left|xf'/f\right|.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>|</mo>
+          <mrow>
+            <mi>x</mi>
+            <msup>
+              <mi>f</mi>
+              <mo>&#x2032;</mo>
+            </msup>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mi>f</mi>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left|xf'/f\right|.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3f170dc97d8982d0f9ff4e60ce2c7779558ea2f9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.104ex; height:3.009ex;" alt="{\displaystyle \left|xf&#039;/f\right|.}"/></span> Evaluated at a point <i>x</i> this is:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \left|{\frac {xf'(x)}{f(x)}}\right|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>|</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>x</mi>
+                <msup>
+                  <mi>f</mi>
+                  <mo>&#x2032;</mo>
+                </msup>
+                <mo stretchy="false">(</mo>
+                <mi>x</mi>
+                <mo stretchy="false">)</mo>
+              </mrow>
+              <mrow>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <mi>x</mi>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left|{\frac {xf'(x)}{f(x)}}\right|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7a83531d0e3422840af07a0e83277c2bff46a20e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:8.604ex; height:6.509ex;" alt="{\displaystyle \left|{\frac {xf&#039;(x)}{f(x)}}\right|}"/></span></dd></dl>
+<p>Most elegantly, this can be understood as (the absolute value of) the ratio of the <a href="/wiki/Logarithmic_derivative" title="Logarithmic derivative">logarithmic derivative</a> of <i>f,</i> which is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (\log f)'=f'/f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>log</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi>f</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo>=</mo>
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\log f)'=f'/f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e864f76a67fda7ae16b5048cde01f93769e76035" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:14.676ex; height:3.009ex;" alt="(\log f)&#039; = f&#039;/f"/></span> and the logarithmic derivative of <i>x,</i> which is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (\log x)'=x'/x=1/x,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>log</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi>x</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo>=</mo>
+        <msup>
+          <mi>x</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>x</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>x</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\log x)'=x'/x=1/x,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/efb17101bb00ff8a9059f3037ad669b23e14061b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:22.187ex; height:3.009ex;" alt="(\log x)&#039; = x&#039;/x = 1/x,"/></span> yielding a ratio of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle xf'/f.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle xf'/f.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/94fa77246bf4594663a8724d718f571757c76412" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.423ex; height:3.009ex;" alt="xf&#039;/f."/></span> This is because the logarithmic derivative is the infinitesimal rate of relative change in a function: it is the derivative <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f'}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f'}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/258eaada38956fb69b8cb1a2eef46bcb97d3126b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.005ex; height:2.843ex;" alt="f&#039;"/></span> scaled by the value of <i>f.</i> Note that if a function has a zero at a point, its condition number at the point is infinite, as infinitesimal changes in the input can change the output from zero to positive or negative, yielding a ratio with zero in the denominator, hence infinite relative change.
+</p><p>More directly, given a small change <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Delta x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Delta x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f3890eb866b6258d7a304fc34c70ee3fb3a81a70" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:3.266ex; height:2.176ex;" alt="\Delta x"/></span> in <i>x,</i> the relative change in <i>x</i> is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle [(x+\Delta x)-x]/x=(\Delta x)/x,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>x</mi>
+        <mo stretchy="false">]</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>x</mi>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>x</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [(x+\Delta x)-x]/x=(\Delta x)/x,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a97f4acf32f11c0f26fad711362fefd1f9811963" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:28.513ex; height:2.843ex;" alt="[(x + \Delta x) - x]/x = (\Delta x)/x,"/></span> while the relative change in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/202945cce41ecebb6f643f31d119c514bec7a074" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.418ex; height:2.843ex;" alt="f(x)"/></span> is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle [f(x+\Delta x)-f(x)]/f(x).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">]</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [f(x+\Delta x)-f(x)]/f(x).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5cdde8be7bd2bc8b08a83c39eb4f98eeed1bf0d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:25.302ex; height:2.843ex;" alt="[f(x + \Delta x) - f(x)]/f(x)."/></span> Taking the ratio yields:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {[f(x+\Delta x)-f(x)]/f(x)}{(\Delta x)/x}}={\frac {x}{f(x)}}{\frac {f(x+\Delta x)-f(x)}{(x+\Delta x)-x}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">[</mo>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>+</mo>
+              <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+              <mo stretchy="false">]</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>/</mo>
+              </mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>/</mo>
+              </mrow>
+              <mi>x</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>x</mi>
+            <mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>+</mo>
+              <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>+</mo>
+              <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>x</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {[f(x+\Delta x)-f(x)]/f(x)}{(\Delta x)/x}}={\frac {x}{f(x)}}{\frac {f(x+\Delta x)-f(x)}{(x+\Delta x)-x}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/48898c0b7c7bd4f9267880aa724a63912ac33e56" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:53.108ex; height:6.509ex;" alt="{\displaystyle {\frac {[f(x+\Delta x)-f(x)]/f(x)}{(\Delta x)/x}}={\frac {x}{f(x)}}{\frac {f(x+\Delta x)-f(x)}{(x+\Delta x)-x}}.}"/></span></dd></dl>
+<p>The last term is the <a href="/wiki/Difference_quotient" title="Difference quotient">difference quotient</a> (the slope of the secant line), and taking the limit yields the derivative.
+</p><p>Condition numbers of common <a href="/wiki/Elementary_function" title="Elementary function">elementary functions</a> are particularly important in computing <a href="/wiki/Significant_figures" title="Significant figures">significant figures</a>, and can be computed immediately from the derivative; see <a href="/wiki/Significance_arithmetic#Transcendental_functions" title="Significance arithmetic">significance arithmetic of transcendental functions</a>. A few important ones are given below:
+</p>
+<table class="wikitable"><tbody><tr style="vertical-align:top"><th scope="col" style="text-align:right; vertical-align:middle;"> Name</th><th scope="col" style="text-align:right; vertical-align:middle;"> Symbol</th><th scope="col"> Condition number</th></tr><tr style="vertical-align:top"><td style="text-align:right; vertical-align:middle;"> Exponential function</td><td style="text-align:right; vertical-align:middle;"> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle e^{x}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle e^{x}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/841c0d168e64191c45a45e54c7e447defd17ec6a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.256ex; height:2.343ex;" alt="e^{x}"/></span></td><td> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="x"/></span></td></tr><tr style="vertical-align:top"><td style="text-align:right; vertical-align:middle;"> Natural logarithm function</td><td style="text-align:right; vertical-align:middle;"> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \ln(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ln</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \ln(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0df055b8e294310e6785701c1c67105e109191d8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.078ex; height:2.843ex;" alt="\ln(x)"/></span></td><td> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {1}{\ln(x)}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mi>ln</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{\ln(x)}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/623d78fdeda58268feac545ca67cd3ed2a75515a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:5.914ex; height:6.009ex;" alt="\frac{1}{\ln(x)}"/></span></td></tr><tr style="vertical-align:top"><td style="text-align:right; vertical-align:middle;"> Sine function</td><td style="text-align:right; vertical-align:middle;"> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sin(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>sin</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sin(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3a990a5545cac26c1c6821dca95d898bc80fe3a8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.995ex; height:2.843ex;" alt="\sin(x)"/></span></td><td> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x\cot(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mi>cot</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x\cot(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b24b6c2ee349b0159ce4950a8c08c86a1e33463a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.955ex; height:2.843ex;" alt="x\cot(x)"/></span></td></tr><tr style="vertical-align:top"><td style="text-align:right; vertical-align:middle;"> Cosine function</td><td style="text-align:right; vertical-align:middle;"> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \cos(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>cos</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \cos(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eb9af7ed6f44822021b74bb82b431022c7fd66b3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.25ex; height:2.843ex;" alt="\cos(x)"/></span></td><td> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x\tan(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mi>tan</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x\tan(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dd262fee816759b3ff24ad91ad04f02735da5f0c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.215ex; height:2.843ex;" alt="x\tan(x)"/></span></td></tr><tr style="vertical-align:top"><td style="text-align:right; vertical-align:middle;"> Tangent function</td><td style="text-align:right; vertical-align:middle;"> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \tan(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>tan</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \tan(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/398da5ded10e1ab022cfc8c3f4a4a87b46cd8c46" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.499ex; height:2.843ex;" alt="\tan(x)"/></span></td><td> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x(\tan(x)+\cot(x))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo stretchy="false">(</mo>
+        <mi>tan</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>cot</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x(\tan(x)+\cot(x))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/04fa3644fa5970981e473a0b9f1db62ecb2a35dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.716ex; height:2.843ex;" alt="x(\tan(x)+\cot(x))"/></span></td></tr><tr style="vertical-align:top"><td style="text-align:right; vertical-align:middle;"> Inverse sine function</td><td style="text-align:right; vertical-align:middle;"> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \arcsin(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>arcsin</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \arcsin(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f111f8c1e5de2f92ee17eeabd64c4ea1bcd55196" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.101ex; height:2.843ex;" alt="\arcsin(x)"/></span></td><td> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {x}{{\sqrt {1-x^{2}}}\arcsin(x)}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>x</mi>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <msqrt>
+                  <mn>1</mn>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msup>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                </msqrt>
+              </mrow>
+              <mi>arcsin</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {x}{{\sqrt {1-x^{2}}}\arcsin(x)}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0685388087125d5b5597c4a0c68189f252a7407f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:19.035ex; height:6.009ex;" alt="\frac{x}{\sqrt{1-x^2}\arcsin(x)}"/></span></td></tr><tr style="vertical-align:top"><td style="text-align:right; vertical-align:middle;"> Inverse cosine function</td><td style="text-align:right; vertical-align:middle;"> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \arccos(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>arccos</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \arccos(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3baa15507445b7175a6143e9d16ba98a9849374c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.357ex; height:2.843ex;" alt="\arccos(x)"/></span></td><td> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {x}{{\sqrt {1-x^{2}}}\arccos(x)}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>x</mi>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <msqrt>
+                  <mn>1</mn>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msup>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                </msqrt>
+              </mrow>
+              <mi>arccos</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {x}{{\sqrt {1-x^{2}}}\arccos(x)}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0f20f5230d0c193159e92a760ff46723d0bcc745" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:19.29ex; height:6.009ex;" alt="\frac{x}{\sqrt{1-x^2}\arccos(x)}"/></span></td></tr><tr style="vertical-align:top"><td style="text-align:right; vertical-align:middle;"> Inverse tangent function</td><td style="text-align:right; vertical-align:middle;"> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \arctan(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>arctan</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \arctan(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ec2ee2a040ba3b62484ca1518869f51e2c3e5e5a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.605ex; height:2.843ex;" alt="\arctan(x)"/></span></td><td> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {x}{(1+x^{2})\arctan(x)}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>x</mi>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mn>1</mn>
+              <mo>+</mo>
+              <msup>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo stretchy="false">)</mo>
+              <mi>arctan</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {x}{(1+x^{2})\arctan(x)}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/00e38c93d4fa95e271512ddda903d26ef3e26a52" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:19.024ex; height:5.509ex;" alt="\frac{x}{(1+x^2)\arctan(x)}"/></span></td></tr></tbody></table>
+<h3><span class="mw-headline" id="Several_variables">Several variables</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Condition_number&amp;action=edit&amp;section=5" title="Edit section: Several variables">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Condition numbers can be defined for any function <i>f</i> mapping its data from some <a href="/wiki/Function_domain" class="mw-redirect" title="Function domain">domain</a> (e.g. an <i>m</i>-tuple of real numbers <i>x</i>) into some <a href="/wiki/Codomain" title="Codomain">codomain</a> [e.g. an <i>n</i>-tuple of real numbers <i>f</i>(<i>x</i>)], where both the domain and codomain are <a href="/wiki/Banach_space" title="Banach space">Banach spaces</a>.  They express how sensitive that function is to small changes (or small errors) in its arguments.  This is crucial in assessing the sensitivity and potential accuracy difficulties of numerous computational problems, for example <a href="/wiki/Polynomial" title="Polynomial">polynomial</a> <a href="/wiki/Root_finding" class="mw-redirect" title="Root finding">root finding</a> or computing <a href="/wiki/Eigenvalue" class="mw-redirect" title="Eigenvalue">eigenvalues</a>.
+</p><p>The condition number of <i>f</i> at a point <i>x</i> (specifically, its <b>relative condition number</b><sup id="cite_ref-TrefethenBau_4-0" class="reference"><a href="#cite_note-TrefethenBau-4">&#91;4&#93;</a></sup>) is then defined to be the maximum ratio of the fractional change in <i>f</i>(<i>x</i>) to any fractional change in <i>x</i>, in the limit where the change δ<i>x</i> in <i>x</i> becomes infinitesimally small:<sup id="cite_ref-TrefethenBau_4-1" class="reference"><a href="#cite_note-TrefethenBau-4">&#91;4&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{\varepsilon \to 0^{+}}\sup _{\|\delta x\|\leq \varepsilon }\left[\left.{\frac {\left\|f(x+\delta x)-f(x)\right\|}{\|f(x)\|}}\right/{\frac {\|\delta x\|}{\|x\|}}\right],}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B5;<!-- ε --></mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <msup>
+              <mn>0</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>+</mo>
+              </mrow>
+            </msup>
+          </mrow>
+        </munder>
+        <munder>
+          <mo movablelimits="true" form="prefix">sup</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+            <mi>&#x03B4;<!-- δ --></mi>
+            <mi>x</mi>
+            <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+            <mo>&#x2264;<!-- ≤ --></mo>
+            <mi>&#x03B5;<!-- ε --></mi>
+          </mrow>
+        </munder>
+        <mrow>
+          <mo>[</mo>
+          <mrow>
+            <mrow>
+              <mo fence="true" stretchy="true" symmetric="true"></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac>
+                  <mrow>
+                    <mo symmetric="true">&#x2016;</mo>
+                    <mrow>
+                      <mi>f</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>x</mi>
+                      <mo>+</mo>
+                      <mi>&#x03B4;<!-- δ --></mi>
+                      <mi>x</mi>
+                      <mo stretchy="false">)</mo>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mi>f</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>x</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mo symmetric="true">&#x2016;</mo>
+                  </mrow>
+                  <mrow>
+                    <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                    <mi>f</mi>
+                    <mo stretchy="false">(</mo>
+                    <mi>x</mi>
+                    <mo stretchy="false">)</mo>
+                    <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                  </mrow>
+                </mfrac>
+              </mrow>
+              <mo fence="true" stretchy="true" symmetric="true">/</mo>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                  <mi>&#x03B4;<!-- δ --></mi>
+                  <mi>x</mi>
+                  <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                </mrow>
+                <mrow>
+                  <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                  <mi>x</mi>
+                  <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{\varepsilon \to 0^{+}}\sup _{\|\delta x\|\leq \varepsilon }\left[\left.{\frac {\left\|f(x+\delta x)-f(x)\right\|}{\|f(x)\|}}\right/{\frac {\|\delta x\|}{\|x\|}}\right],}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8e17a2f92e4bf11b2337a7916777ac56ee949570" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:42.475ex; height:6.843ex;" alt="{\displaystyle \lim _{\varepsilon \to 0^{+}}\sup _{\|\delta x\|\leq \varepsilon }\left[\left.{\frac {\left\|f(x+\delta x)-f(x)\right\|}{\|f(x)\|}}\right/{\frac {\|\delta x\|}{\|x\|}}\right],}"/></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \|\cdot \|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \|\cdot \|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/113f0d8fe6108fc1c5e9802f7c3f634f5480b3d1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.004ex; height:2.843ex;" alt="\|\cdot \|"/></span> is a <a href="/wiki/Norm_(mathematics)" title="Norm (mathematics)">norm</a> on the domain/codomain of <i>f</i>(<i>x</i>).
+</p><p>If <i>f</i> is differentiable, this is equivalent to:<sup id="cite_ref-TrefethenBau_4-2" class="reference"><a href="#cite_note-TrefethenBau-4">&#91;4&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {\|J(x)\|}{\|f(x)\|/\|x\|}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+              <mi>J</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+            </mrow>
+            <mrow>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>/</mo>
+              </mrow>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+              <mi>x</mi>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\|J(x)\|}{\|f(x)\|/\|x\|}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c13715f2347b85887922bf965de78c7c109542c5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:13.042ex; height:6.509ex;" alt="{\displaystyle {\frac {\|J(x)\|}{\|f(x)\|/\|x\|}},}"/></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle J(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>J</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle J(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/40fcaf0063846d508ceeb126a7a2bc1b0229a0ba" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.61ex; height:2.843ex;" alt="J(x)"/></span> denotes the <a href="/wiki/Jacobian_matrix" class="mw-redirect" title="Jacobian matrix">Jacobian matrix</a> of <a href="/wiki/Partial_derivative" title="Partial derivative">partial derivatives</a> of <i>f</i> at <i>x</i> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \|J(x)\|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+        <mi>J</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \|J(x)\|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5b96d7c7f92a1fe0a64b0c16d5529a2a0782ee18" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.935ex; height:2.843ex;" alt="{\displaystyle \|J(x)\|}"/></span> is the <a href="/wiki/Induced_norm" class="mw-redirect" title="Induced norm">induced norm</a> on the matrix.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Condition_number&amp;action=edit&amp;section=6" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Numerical_methods_for_linear_least_squares" title="Numerical methods for linear least squares">Numerical methods for linear least squares</a></li>
+<li><a href="/wiki/Ill-posed_problem" class="mw-redirect" title="Ill-posed problem">Ill-posed problem</a></li>
+<li><a href="/wiki/Singular_value" title="Singular value">Singular value</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Condition_number&amp;action=edit&amp;section=7" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation book">Belsley, David A.; <a href="/wiki/Edwin_Kuh" title="Edwin Kuh">Kuh, Edwin</a>; Welsch, Roy E. (1980). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=GECBEUJVNe0C&amp;pg=PA100">"The Condition Number"</a>. <i>Regression Diagnostics: Identifying Influential Data and Sources of Collinearity</i>. New York: John Wiley &amp; Sons. pp.&#160;100–104. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-471-05856-4" title="Special:BookSources/0-471-05856-4"><bdi>0-471-05856-4</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=The+Condition+Number&amp;rft.btitle=Regression+Diagnostics%3A+Identifying+Influential+Data+and+Sources+of+Collinearity&amp;rft.place=New+York&amp;rft.pages=100-104&amp;rft.pub=John+Wiley+%26+Sons&amp;rft.date=1980&amp;rft.isbn=0-471-05856-4&amp;rft.aulast=Belsley&amp;rft.aufirst=David+A.&amp;rft.au=Kuh%2C+Edwin&amp;rft.au=Welsch%2C+Roy+E.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DGECBEUJVNe0C%26pg%3DPA100&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACondition+number" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation book"><a href="/wiki/M._Hashem_Pesaran" title="M. Hashem Pesaran">Pesaran, M. Hashem</a> (2015). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=7RokCwAAQBAJ&amp;pg=PA70">"The Multicollinearity Problem"</a>. <i>Time Series and Panel Data Econometrics</i>. New York: Oxford University Press. pp.&#160;67–72 [p. 70]. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-19-875998-0" title="Special:BookSources/978-0-19-875998-0"><bdi>978-0-19-875998-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=The+Multicollinearity+Problem&amp;rft.btitle=Time+Series+and+Panel+Data+Econometrics&amp;rft.place=New+York&amp;rft.pages=67-72+p.+70&amp;rft.pub=Oxford+University+Press&amp;rft.date=2015&amp;rft.isbn=978-0-19-875998-0&amp;rft.aulast=Pesaran&amp;rft.aufirst=M.+Hashem&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D7RokCwAAQBAJ%26pg%3DPA70&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACondition+number" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Numerical_Mathematics_and_Computing,_by_Cheney_and_Kincaid-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-Numerical_Mathematics_and_Computing,_by_Cheney_and_Kincaid_3-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Cheney; Kincaid (2007-08-03). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=ZUfVZELlrMEC&amp;pg=PA321"><i>Numerical Mathematics and Computing</i></a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-495-11475-8" title="Special:BookSources/978-0-495-11475-8"><bdi>978-0-495-11475-8</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Numerical+Mathematics+and+Computing&amp;rft.date=2007-08-03&amp;rft.isbn=978-0-495-11475-8&amp;rft.au=Cheney&amp;rft.au=Kincaid&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DZUfVZELlrMEC%26pg%3DPA321&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACondition+number" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-TrefethenBau-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-TrefethenBau_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-TrefethenBau_4-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-TrefethenBau_4-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><cite class="citation book">Trefethen, L. N.; Bau, D. (1997). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=JaPtxOytY7kC&amp;printsec=frontcover&amp;dq=978-0898713619#v=onepage&amp;q&amp;f=false"><i>Numerical Linear Algebra</i></a>. SIAM. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-89871-361-9" title="Special:BookSources/978-0-89871-361-9"><bdi>978-0-89871-361-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Numerical+Linear+Algebra&amp;rft.pub=SIAM&amp;rft.date=1997&amp;rft.isbn=978-0-89871-361-9&amp;rft.aulast=Trefethen&amp;rft.aufirst=L.+N.&amp;rft.au=Bau%2C+D.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DJaPtxOytY7kC%26printsec%3Dfrontcover%26dq%3D978-0898713619%23v%3Donepage%26q%26f%3Dfalse&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACondition+number" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Condition_number&amp;action=edit&amp;section=8" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20070121001740/http://numericalmethods.eng.usf.edu/mws/gen/04sle/mws_gen_sle_spe_adequacy.pdf">Condition Number of a Matrix</a> at <i>Holistic Numerical Methods Institute</i></li>
+<li><cite class="citation web"><a rel="nofollow" class="external text" href="http://planetmath.org/?op=getobj&amp;from=objects&amp;id=3480">"Matrix condition number"</a>. <i><a href="/wiki/PlanetMath" title="PlanetMath">PlanetMath</a></i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=PlanetMath&amp;rft.atitle=Matrix+condition+number&amp;rft_id=http%3A%2F%2Fplanetmath.org%2F%3Fop%3Dgetobj%26amp%3Bfrom%3Dobjects%26amp%3Bid%3D3480&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACondition+number" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><a rel="nofollow" class="external text" href="http://www.mathworks.in/help/techdoc/ref/cond.html">MATLAB library function to determine condition number</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.encyclopediaofmath.org/index.php/Condition_number">Condition number – Encyclopedia of Mathematics</a></li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1251
+Cached time: 20190802062710
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.436 seconds
+Real time usage: 0.674 seconds
+Preprocessor visited node count: 1007/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 17870/2097152 bytes
+Template argument size: 1065/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 1/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 17277/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.189/10.000 seconds
+Lua memory usage: 2.88 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  405.489      1 -total
+ 43.09%  174.728      1 Template:Reflist
+ 36.18%  146.697      4 Template:Cite_book
+ 34.61%  140.347      2 Template:Fix-span
+ 33.48%  135.760      1 Template:Clarify
+ 16.77%   67.984      4 Template:Category_handler
+ 16.00%   64.877      2 Template:Replace
+ 10.81%   43.842      2 Template:Delink
+  7.73%   31.327      1 Template:What?
+  4.82%   19.529      1 Template:See_also
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:6934-0!canonical!math=5 and timestamp 20190802062709 and revision id 904598566
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Condition_number&amp;oldid=904598566">https://en.wikipedia.org/w/index.php?title=Condition_number&amp;oldid=904598566</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Numerical_analysis" title="Category:Numerical analysis">Numerical analysis</a></li><li><a href="/wiki/Category:Matrices" title="Category:Matrices">Matrices</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Wikipedia_articles_needing_clarification_from_October_2014" title="Category:Wikipedia articles needing clarification from October 2014">Wikipedia articles needing clarification from October 2014</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Condition+number" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Condition+number" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Condition_number" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Condition_number" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Condition_number">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Condition_number&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Condition_number&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Condition_number" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Condition_number" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Condition_number&amp;oldid=904598566" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Condition_number&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1147936" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Condition_number&amp;id=904598566" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Condition+number">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Condition+number&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Condition_number&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Nombre_de_condici%C3%B3" title="Nombre de condició – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Podm%C3%ADn%C4%9Bnost_matice" title="Podmíněnost matice – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Kondition_(Mathematik)" title="Kondition (Mathematik) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/N%C3%BAmero_de_condici%C3%B3n" title="Número de condición – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Conditionnement_(analyse_num%C3%A9rique)" title="Conditionnement (analyse numérique) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EC%A1%B0%EA%B1%B4%EC%88%98" title="조건수 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Condizionamento_(matematica)" title="Condizionamento (matematica) – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E6%9D%A1%E4%BB%B6%E6%95%B0" title="条件数 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Wska%C5%BAnik_uwarunkowania" title="Wskaźnik uwarunkowania – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/N%C3%BAmero_de_condicionamento" title="Número de condicionamento – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%BE_%D0%BE%D0%B1%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="Число обусловленности – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/H%C3%A4iri%C3%B6alttius_(matematiikka)" title="Häiriöalttius (matematiikka) – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Konditionstal" title="Konditionstal – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%BE_%D0%BE%D0%B1%D1%83%D0%BC%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE%D1%81%D1%82%D1%96" title="Число обумовленості – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E6%9D%A1%E4%BB%B6%E6%95%B0" title="条件数 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1147936#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 3 July 2019, at 06:21<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Condition_number&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.436","walltime":"0.674","ppvisitednodes":{"value":1007,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":17870,"limit":2097152},"templateargumentsize":{"value":1065,"limit":2097152},"expansiondepth":{"value":11,"limit":40},"expensivefunctioncount":{"value":1,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":17277,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  405.489      1 -total"," 43.09%  174.728      1 Template:Reflist"," 36.18%  146.697      4 Template:Cite_book"," 34.61%  140.347      2 Template:Fix-span"," 33.48%  135.760      1 Template:Clarify"," 16.77%   67.984      4 Template:Category_handler"," 16.00%   64.877      2 Template:Replace"," 10.81%   43.842      2 Template:Delink","  7.73%   31.327      1 Template:What?","  4.82%   19.529      1 Template:See_also"]},"scribunto":{"limitreport-timeusage":{"value":"0.189","limit":"10.000"},"limitreport-memusage":{"value":3017285,"limit":52428800}},"cachereport":{"origin":"mw1251","timestamp":"20190802062710","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Condition number","url":"https:\/\/en.wikipedia.org\/wiki\/Condition_number","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1147936","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1147936","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2001-10-29T00:24:54Z","dateModified":"2019-07-03T06:21:39Z","headline":"function K of the input x of a well-posed problem which describes how much its variation influences the variation of the output g(x)"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":96,"wgHostname":"mw1243"});});</script>
+</body>
+</html>

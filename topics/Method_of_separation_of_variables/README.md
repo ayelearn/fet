@@ -1,0 +1,1 @@
+Method_of_separation_of_variables

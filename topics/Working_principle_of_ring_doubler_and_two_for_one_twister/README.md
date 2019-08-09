@@ -1,0 +1,1 @@
+Working_principle_of_ring_doubler_and_two_for_one_twister

@@ -1,0 +1,1 @@
+magnitude_and_intensity

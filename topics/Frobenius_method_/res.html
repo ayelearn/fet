@@ -1,0 +1,3422 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Frobenius method - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Frobenius_method","wgTitle":"Frobenius method","wgCurRevisionId":852249145,"wgRevisionId":852249145,"wgArticleId":998446,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Ordinary differential equations"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Frobenius_method","wgRelevantArticleId":998446,"wgRequestId":
+"XUnbyApAADoAABdghSoAAADQ","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q1340153","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready",
+"user.options":"ready","user.tokens":"loading","ext.math.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["ext.math.scripts","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface",
+"ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Frobenius_method"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Frobenius_method&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Frobenius_method&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Frobenius_method"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Frobenius_method rootpage-Frobenius_method skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Frobenius method</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>In <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>, the <b>method of Frobenius</b>, named after <a href="/wiki/Ferdinand_Georg_Frobenius" title="Ferdinand Georg Frobenius">Ferdinand Georg Frobenius</a>, is a way to find an <a href="/wiki/Infinite_series" class="mw-redirect" title="Infinite series">infinite series</a> solution for a second-order <a href="/wiki/Ordinary_differential_equation" title="Ordinary differential equation">ordinary differential equation</a> of the form
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle z^{2}u''+p(z)zu'+q(z)u=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <msup>
+          <mi>u</mi>
+          <mo>&#x2033;</mo>
+        </msup>
+        <mo>+</mo>
+        <mi>p</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mi>z</mi>
+        <msup>
+          <mi>u</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo>+</mo>
+        <mi>q</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mi>u</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle z^{2}u''+p(z)zu'+q(z)u=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1c5c703737b29b531171ed59fc61b8e19dec94cb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:27.019ex; height:3.176ex;" alt="z^{2}u&#039;&#039;+p(z)zu&#039;+q(z)u=0"/></span></dd></dl>
+<p>with
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle u'\equiv {{du} \over {dz}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>u</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo>&#x2261;<!-- ≡ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>d</mi>
+              <mi>u</mi>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>d</mi>
+              <mi>z</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u'\equiv {{du} \over {dz}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4cd50797882bd98fd729108f237559b882f143fc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:8.495ex; height:5.509ex;" alt="u&#039;\equiv {{du} \over {dz}}"/></span> <span style="padding-left:1em;">&#160;</span> and <span style="padding-left:1em;">&#160;</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle u''\equiv {{d^{2}u} \over {dz^{2}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>u</mi>
+          <mo>&#x2033;</mo>
+        </msup>
+        <mo>&#x2261;<!-- ≡ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msup>
+                <mi>d</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mi>u</mi>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>d</mi>
+              <msup>
+                <mi>z</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u''\equiv {{d^{2}u} \over {dz^{2}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8e7c5b9f73fa78258800e490a63aa5c69bca673a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:10.003ex; height:6.009ex;" alt="u&#039;&#039;\equiv {{d^{2}u} \over {dz^{2}}}"/></span></dd></dl>
+<p>in the vicinity of the <a href="/wiki/Regular_singular_point" title="Regular singular point">regular singular point</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle z=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>z</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle z=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b92bfc06485cc90286474b14a516a68d8bfdd7b3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.349ex; height:2.176ex;" alt="z=0"/></span>. One can divide by <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle z^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle z^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f23e4338924d253cd2f3ed83a7082fb07243d08e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.145ex; height:2.676ex;" alt="z^2"/></span> to obtain a differential equation of the form
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle u''+{p(z) \over z}u'+{q(z) \over z^{2}}u=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>u</mi>
+          <mo>&#x2033;</mo>
+        </msup>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>p</mi>
+              <mo stretchy="false">(</mo>
+              <mi>z</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mi>z</mi>
+          </mfrac>
+        </mrow>
+        <msup>
+          <mi>u</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>q</mi>
+              <mo stretchy="false">(</mo>
+              <mi>z</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <msup>
+              <mi>z</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mi>u</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u''+{p(z) \over z}u'+{q(z) \over z^{2}}u=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/27ea866ba997d4285d0982d6b1ca3d9f2cfb1d11" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:25.459ex; height:6.009ex;" alt="u&#039;&#039;+{p(z) \over z}u&#039;+{q(z) \over z^{2}}u=0"/></span></dd></dl>
+<p>which will not be solvable with regular <a href="/wiki/Power_series_solution_of_differential_equations" title="Power series solution of differential equations">power series methods</a> if either <i>p</i>(<i>z</i>)/<i>z</i> or <i>q</i>(<i>z</i>)/<i>z</i><sup>2</sup> are not <a href="/wiki/Analytic_function" title="Analytic function">analytic</a> at&#160;<i>z</i>&#160;=&#160;0.  The Frobenius method enables one to create a power series solution to such a differential equation, provided that <i>p</i>(<i>z</i>) and <i>q</i>(<i>z</i>) are themselves analytic at 0 or, being analytic elsewhere, both their limits at 0 exist (and are finite).
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Explanation"><span class="tocnumber">1</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Roots_separated_by_an_integer"><span class="tocnumber">3</span> <span class="toctext">Roots separated by an integer</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Explanation">Explanation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Frobenius_method&amp;action=edit&amp;section=1" title="Edit section: Explanation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The method of Frobenius is to seek a power series solution of the form
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle u(z)=\sum _{k=0}^{\infty }A_{k}z^{k+r},\qquad (A_{0}\neq 0)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>u</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+        <mspace width="2em" />
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2260;<!-- ≠ --></mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u(z)=\sum _{k=0}^{\infty }A_{k}z^{k+r},\qquad (A_{0}\neq 0)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6f46753d30e83b2272dd6a7be2aae79138d8cd05" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:32.645ex; height:7.009ex;" alt="u(z)=\sum _{{k=0}}^{\infty }A_{k}z^{{k+r}},\qquad (A_{0}\neq 0)"/></span></dd></dl>
+<p>Differentiating:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle u'(z)=\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>u</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo>+</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u'(z)=\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/24e10ab169a25baf1c39bb544f618ee6500f067f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:27.406ex; height:7.009ex;" alt="u&#039;(z)=\sum _{{k=0}}^{\infty }(k+r)A_{k}z^{{k+r-1}}"/></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle u''(z)=\sum _{k=0}^{\infty }(k+r-1)(k+r)A_{k}z^{k+r-2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>u</mi>
+          <mo>&#x2033;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo>+</mo>
+        <mi>r</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo>+</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u''(z)=\sum _{k=0}^{\infty }(k+r-1)(k+r)A_{k}z^{k+r-2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b00a1939f6abf1607bb7ec90122e9635d55eeab7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:38.771ex; height:7.009ex;" alt="u&#039;&#039;(z)=\sum _{{k=0}}^{\infty }(k+r-1)(k+r)A_{k}z^{{k+r-2}}"/></span></dd></dl>
+<p>Substituting:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle z^{2}\sum _{k=0}^{\infty }(k+r-1)(k+r)A_{k}z^{k+r-2}+zp(z)\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-1}+q(z)\sum _{k=0}^{\infty }A_{k}z^{k+r}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo>+</mo>
+        <mi>r</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo>+</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mi>z</mi>
+        <mi>p</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo>+</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mi>q</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle z^{2}\sum _{k=0}^{\infty }(k+r-1)(k+r)A_{k}z^{k+r-2}+zp(z)\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-1}+q(z)\sum _{k=0}^{\infty }A_{k}z^{k+r}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a82561d6e36b55f3a800814630580dddd80ef91f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:78.586ex; height:7.009ex;" alt="z^{2}\sum _{{k=0}}^{\infty }(k+r-1)(k+r)A_{k}z^{{k+r-2}}+zp(z)\sum _{{k=0}}^{\infty }(k+r)A_{k}z^{{k+r-1}}+q(z)\sum _{{k=0}}^{\infty }A_{k}z^{{k+r}}"/></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle =\sum _{k=0}^{\infty }(k+r-1)(k+r)A_{k}z^{k+r}+p(z)\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r}+q(z)\sum _{k=0}^{\infty }A_{k}z^{k+r}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo>+</mo>
+        <mi>r</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo>+</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mi>p</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo>+</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mi>q</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle =\sum _{k=0}^{\infty }(k+r-1)(k+r)A_{k}z^{k+r}+p(z)\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r}+q(z)\sum _{k=0}^{\infty }A_{k}z^{k+r}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0775faeeb0e96dd13bd9deca390e2c51f00ed901" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:73.219ex; height:7.009ex;" alt="=\sum _{{k=0}}^{\infty }(k+r-1)(k+r)A_{k}z^{{k+r}}+p(z)\sum _{{k=0}}^{\infty }(k+r)A_{k}z^{{k+r}}+q(z)\sum _{{k=0}}^{\infty }A_{k}z^{{k+r}}"/></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle =\sum _{k=0}^{\infty }[(k+r-1)(k+r)A_{k}z^{k+r}+p(z)(k+r)A_{k}z^{k+r}+q(z)A_{k}z^{k+r}]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mo stretchy="false">[</mo>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo>+</mo>
+        <mi>r</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo>+</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mi>p</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo>+</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mi>q</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle =\sum _{k=0}^{\infty }[(k+r-1)(k+r)A_{k}z^{k+r}+p(z)(k+r)A_{k}z^{k+r}+q(z)A_{k}z^{k+r}]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/065172b889a50aa3bbde4a4cb920f074b4a36c6f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:66.641ex; height:7.009ex;" alt="=\sum _{{k=0}}^{\infty }[(k+r-1)(k+r)A_{k}z^{{k+r}}+p(z)(k+r)A_{k}z^{{k+r}}+q(z)A_{k}z^{{k+r}}]"/></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle =\sum _{k=0}^{\infty }\left[(k+r-1)(k+r)+p(z)(k+r)+q(z)\right]A_{k}z^{k+r}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mrow>
+          <mo>[</mo>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+            <mo stretchy="false">)</mo>
+            <mo stretchy="false">(</mo>
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+            <mo stretchy="false">)</mo>
+            <mo>+</mo>
+            <mi>p</mi>
+            <mo stretchy="false">(</mo>
+            <mi>z</mi>
+            <mo stretchy="false">)</mo>
+            <mo stretchy="false">(</mo>
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+            <mo stretchy="false">)</mo>
+            <mo>+</mo>
+            <mi>q</mi>
+            <mo stretchy="false">(</mo>
+            <mi>z</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle =\sum _{k=0}^{\infty }\left[(k+r-1)(k+r)+p(z)(k+r)+q(z)\right]A_{k}z^{k+r}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2381baa7c1ada8e2d5d9a60e73102738f5555d29" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:53.353ex; height:7.009ex;" alt="=\sum _{{k=0}}^{\infty }\left[(k+r-1)(k+r)+p(z)(k+r)+q(z)\right]A_{k}z^{{k+r}}"/></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle =\left[r(r-1)+p(z)r+q(z)\right]A_{0}z^{r}+\sum _{k=1}^{\infty }\left[(k+r-1)(k+r)+p(z)(k+r)+q(z)\right]A_{k}z^{k+r}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>=</mo>
+        <mrow>
+          <mo>[</mo>
+          <mrow>
+            <mi>r</mi>
+            <mo stretchy="false">(</mo>
+            <mi>r</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+            <mo stretchy="false">)</mo>
+            <mo>+</mo>
+            <mi>p</mi>
+            <mo stretchy="false">(</mo>
+            <mi>z</mi>
+            <mo stretchy="false">)</mo>
+            <mi>r</mi>
+            <mo>+</mo>
+            <mi>q</mi>
+            <mo stretchy="false">(</mo>
+            <mi>z</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mrow>
+          <mo>[</mo>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+            <mo stretchy="false">)</mo>
+            <mo stretchy="false">(</mo>
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+            <mo stretchy="false">)</mo>
+            <mo>+</mo>
+            <mi>p</mi>
+            <mo stretchy="false">(</mo>
+            <mi>z</mi>
+            <mo stretchy="false">)</mo>
+            <mo stretchy="false">(</mo>
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+            <mo stretchy="false">)</mo>
+            <mo>+</mo>
+            <mi>q</mi>
+            <mo stretchy="false">(</mo>
+            <mi>z</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle =\left[r(r-1)+p(z)r+q(z)\right]A_{0}z^{r}+\sum _{k=1}^{\infty }\left[(k+r-1)(k+r)+p(z)(k+r)+q(z)\right]A_{k}z^{k+r}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4f1bfdce407fd53c3f6def6ec9a8fda607a024fd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:85.409ex; height:6.843ex;" alt="=\left[r(r-1)+p(z)r+q(z)\right]A_{0}z^{r}+\sum _{{k=1}}^{\infty }\left[(k+r-1)(k+r)+p(z)(k+r)+q(z)\right]A_{k}z^{{k+r}}"/></span></dd></dl>
+<p>The expression
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle r\left(r-1\right)+p\left(0\right)r+q\left(0\right)=I(r)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>r</mi>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mi>r</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>+</mo>
+        <mi>p</mi>
+        <mrow>
+          <mo>(</mo>
+          <mn>0</mn>
+          <mo>)</mo>
+        </mrow>
+        <mi>r</mi>
+        <mo>+</mo>
+        <mi>q</mi>
+        <mrow>
+          <mo>(</mo>
+          <mn>0</mn>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mi>I</mi>
+        <mo stretchy="false">(</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle r\left(r-1\right)+p\left(0\right)r+q\left(0\right)=I(r)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8801e73a24180158c64ea126f2991c60fac7cd78" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:31.498ex; height:2.843ex;" alt="r\left(r-1\right)+p\left(0\right)r+q\left(0\right)=I(r)"/></span></dd></dl>
+<p>is known as the <i>indicial polynomial</i>, which is quadratic in&#160;<i>r</i>. The general definition of the <i>indicial polynomial</i> is the coefficient of the lowest power of <i>z</i> in the infinite series. In this case it happens to be that this is the <i>r</i>th coefficient but, it is possible for the lowest possible exponent to be <i>r</i>&#160;−&#160;2, <i>r</i>&#160;−&#160;1 or, something else depending on the given differential equation. This detail is important to keep in mind. In the process of synchronizing all the series of the differential equation to start at the same index value (which in the above expression is&#160;<i>k</i>&#160;=&#160;1), one can end up with complicated expressions.  However, in solving for the indicial roots attention is focused only on the coefficient of the lowest power of&#160;<i>z</i>.
+</p><p>Using this, the general expression of the coefficient of <i>z</i><sup><i>k</i>&#160;+&#160;<i>r</i></sup> is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle I(k+r)A_{k}+\sum _{j=0}^{k-1}{(j+r)p^{(k-j)}(0)+q^{(k-j)}(0) \over (k-j)!}A_{j}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>I</mi>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo>+</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>j</mi>
+              <mo>+</mo>
+              <mi>r</mi>
+              <mo stretchy="false">)</mo>
+              <msup>
+                <mi>p</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">(</mo>
+                  <mi>k</mi>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mi>j</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </msup>
+              <mo stretchy="false">(</mo>
+              <mn>0</mn>
+              <mo stretchy="false">)</mo>
+              <mo>+</mo>
+              <msup>
+                <mi>q</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">(</mo>
+                  <mi>k</mi>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mi>j</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </msup>
+              <mo stretchy="false">(</mo>
+              <mn>0</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>k</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>j</mi>
+              <mo stretchy="false">)</mo>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle I(k+r)A_{k}+\sum _{j=0}^{k-1}{(j+r)p^{(k-j)}(0)+q^{(k-j)}(0) \over (k-j)!}A_{j}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fdc463c8b843f335ed81ba38b68e92abb4274217" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:47.322ex; height:7.676ex;" alt="I(k+r)A_{k}+\sum _{{j=0}}^{{k-1}}{(j+r)p^{{(k-j)}}(0)+q^{{(k-j)}}(0) \over (k-j)!}A_{j}"/></span>,</dd></dl>
+<p>These coefficients must be zero, since they should be solutions of the differential equation, so
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle I(k+r)A_{k}+\sum _{j=0}^{k-1}{(j+r)p^{(k-j)}(0)+q^{(k-j)}(0) \over (k-j)!}A_{j}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>I</mi>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo>+</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>j</mi>
+              <mo>+</mo>
+              <mi>r</mi>
+              <mo stretchy="false">)</mo>
+              <msup>
+                <mi>p</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">(</mo>
+                  <mi>k</mi>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mi>j</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </msup>
+              <mo stretchy="false">(</mo>
+              <mn>0</mn>
+              <mo stretchy="false">)</mo>
+              <mo>+</mo>
+              <msup>
+                <mi>q</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">(</mo>
+                  <mi>k</mi>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mi>j</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </msup>
+              <mo stretchy="false">(</mo>
+              <mn>0</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>k</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>j</mi>
+              <mo stretchy="false">)</mo>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle I(k+r)A_{k}+\sum _{j=0}^{k-1}{(j+r)p^{(k-j)}(0)+q^{(k-j)}(0) \over (k-j)!}A_{j}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5cc461f65a58fe1aa0ce7a98603b454dde2463ee" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:51.583ex; height:7.676ex;" alt="I(k+r)A_{k}+\sum _{{j=0}}^{{k-1}}{(j+r)p^{{(k-j)}}(0)+q^{{(k-j)}}(0) \over (k-j)!}A_{j}=0"/></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum _{j=0}^{k-1}{(j+r)p^{(k-j)}(0)+q^{(k-j)}(0) \over (k-j)!}A_{j}=-I(k+r)A_{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>j</mi>
+              <mo>+</mo>
+              <mi>r</mi>
+              <mo stretchy="false">)</mo>
+              <msup>
+                <mi>p</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">(</mo>
+                  <mi>k</mi>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mi>j</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </msup>
+              <mo stretchy="false">(</mo>
+              <mn>0</mn>
+              <mo stretchy="false">)</mo>
+              <mo>+</mo>
+              <msup>
+                <mi>q</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">(</mo>
+                  <mi>k</mi>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mi>j</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </msup>
+              <mo stretchy="false">(</mo>
+              <mn>0</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>k</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>j</mi>
+              <mo stretchy="false">)</mo>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>I</mi>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo>+</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{j=0}^{k-1}{(j+r)p^{(k-j)}(0)+q^{(k-j)}(0) \over (k-j)!}A_{j}=-I(k+r)A_{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9885b70c31478a852e1b352c7777dab98f0d44db" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:49.388ex; height:7.676ex;" alt="\sum _{{j=0}}^{{k-1}}{(j+r)p^{{(k-j)}}(0)+q^{{(k-j)}}(0) \over (k-j)!}A_{j}=-I(k+r)A_{k}"/></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {1 \over -I(k+r)}\sum _{j=0}^{k-1}{(j+r)p^{(k-j)}(0)+q^{(k-j)}(0) \over (k-j)!}A_{j}=A_{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>I</mi>
+              <mo stretchy="false">(</mo>
+              <mi>k</mi>
+              <mo>+</mo>
+              <mi>r</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>j</mi>
+              <mo>+</mo>
+              <mi>r</mi>
+              <mo stretchy="false">)</mo>
+              <msup>
+                <mi>p</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">(</mo>
+                  <mi>k</mi>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mi>j</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </msup>
+              <mo stretchy="false">(</mo>
+              <mn>0</mn>
+              <mo stretchy="false">)</mo>
+              <mo>+</mo>
+              <msup>
+                <mi>q</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">(</mo>
+                  <mi>k</mi>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mi>j</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </msup>
+              <mo stretchy="false">(</mo>
+              <mn>0</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>k</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>j</mi>
+              <mo stretchy="false">)</mo>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {1 \over -I(k+r)}\sum _{j=0}^{k-1}{(j+r)p^{(k-j)}(0)+q^{(k-j)}(0) \over (k-j)!}A_{j}=A_{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/86bf95cf750924749c3a9f19d95328c10d365290" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:50.611ex; height:7.676ex;" alt="{1 \over -I(k+r)}\sum _{{j=0}}^{{k-1}}{(j+r)p^{{(k-j)}}(0)+q^{{(k-j)}}(0) \over (k-j)!}A_{j}=A_{k}"/></span></dd></dl>
+<p>The series solution with <i>A</i><sub><i>k</i></sub> above, 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle U_{r}(z)=\sum _{k=0}^{\infty }A_{k}z^{k+r}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle U_{r}(z)=\sum _{k=0}^{\infty }A_{k}z^{k+r}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3af0279517f1fdd5143a56a950c9bd09c8d1d09d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:19.33ex; height:7.009ex;" alt="U_{{r}}(z)=\sum _{{k=0}}^{{\infty }}A_{k}z^{{k+r}}"/></span></dd></dl>
+<p>satisfies
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle z^{2}U_{r}(z)''+p(z)zU_{r}(z)'+q(z)U_{r}(z)=I(r)z^{r}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mo>&#x2033;</mo>
+        </msup>
+        <mo>+</mo>
+        <mi>p</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mi>z</mi>
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo>+</mo>
+        <mi>q</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>I</mi>
+        <mo stretchy="false">(</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle z^{2}U_{r}(z)''+p(z)zU_{r}(z)'+q(z)U_{r}(z)=I(r)z^{r}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9320c89c9bf2ddbd3031a41bc7dc5247d7ad1e8c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:44.338ex; height:3.176ex;" alt="z^{2}U_{{r}}(z)&#039;&#039;+p(z)zU_{{r}}(z)&#039;+q(z)U_{{r}}(z)=I(r)z^{r}"/></span></dd></dl>
+<p>If we choose one of the roots to the indicial polynomial for <i>r</i> in <i>U</i><sub><i>r</i></sub>(<i>z</i>), we gain a solution to the differential equation. If the difference between the roots is not an integer, we get another, linearly independent solution in the other root.
+</p>
+<h2><span class="mw-headline" id="Example">Example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Frobenius_method&amp;action=edit&amp;section=2" title="Edit section: Example">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Let us solve 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle z^{2}f''-zf'+(1-z)f=0\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2033;</mo>
+        </msup>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>z</mi>
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo>+</mo>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mi>f</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle z^{2}f''-zf'+(1-z)f=0\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/22ea81ecfbf7c93086254fae1851fdb8c283fa6f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:26.203ex; height:3.176ex;" alt="z^{2}f&#039;&#039;-zf&#039;+(1-z)f=0\,"/></span></dd></dl>
+<p>Divide throughout by <i>z</i><sup>2</sup> to give
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f''-{1 \over z}f'+{1-z \over z^{2}}f=f''-{1 \over z}f'+\left({1 \over z^{2}}-{1 \over z}\right)f=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2033;</mo>
+        </msup>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>z</mi>
+          </mfrac>
+        </mrow>
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>1</mn>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>z</mi>
+            </mrow>
+            <msup>
+              <mi>z</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mi>f</mi>
+        <mo>=</mo>
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2033;</mo>
+        </msup>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>z</mi>
+          </mfrac>
+        </mrow>
+        <msup>
+          <mi>f</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo>+</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+              </mfrac>
+            </mrow>
+            <mo>&#x2212;<!-- − --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mi>z</mi>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f''-{1 \over z}f'+{1-z \over z^{2}}f=f''-{1 \over z}f'+\left({1 \over z^{2}}-{1 \over z}\right)f=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3055ca25ecdacccced7e59ac8ca0ec31f6208b94" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:51.756ex; height:6.176ex;" alt="f&#039;&#039;-{1 \over z}f&#039;+{1-z \over z^{2}}f=f&#039;&#039;-{1 \over z}f&#039;+\left({1 \over z^{2}}-{1 \over z}\right)f=0"/></span></dd></dl>
+<p>which has the requisite singularity at&#160;<i>z</i>&#160;=&#160;0.
+</p><p>Use the series solution
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}f&amp;=\sum _{k=0}^{\infty }A_{k}z^{k+r}\\f'&amp;=\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-1}\\f''&amp;=\sum _{k=0}^{\infty }(k+r)(k+r-1)A_{k}z^{k+r-2}\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mi>f</mi>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msup>
+                  <mi>f</mi>
+                  <mo>&#x2032;</mo>
+                </msup>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <mo stretchy="false">(</mo>
+                <mi>k</mi>
+                <mo>+</mo>
+                <mi>r</mi>
+                <mo stretchy="false">)</mo>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msup>
+                  <mi>f</mi>
+                  <mo>&#x2033;</mo>
+                </msup>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <mo stretchy="false">(</mo>
+                <mi>k</mi>
+                <mo>+</mo>
+                <mi>r</mi>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">(</mo>
+                <mi>k</mi>
+                <mo>+</mo>
+                <mi>r</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}f&amp;=\sum _{k=0}^{\infty }A_{k}z^{k+r}\\f'&amp;=\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-1}\\f''&amp;=\sum _{k=0}^{\infty }(k+r)(k+r-1)A_{k}z^{k+r-2}\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5d2814c05bf74e87755f9bf9a57c9759e1796eb4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -10.171ex; width:36.616ex; height:21.343ex;" alt="{\begin{aligned}f&amp;=\sum _{{k=0}}^{\infty }A_{k}z^{{k+r}}\\f&#039;&amp;=\sum _{{k=0}}^{\infty }(k+r)A_{k}z^{{k+r-1}}\\f&#039;&#039;&amp;=\sum _{{k=0}}^{\infty }(k+r)(k+r-1)A_{k}z^{{k+r-2}}\end{aligned}}"/></span></dd></dl>
+<p>Now, substituting
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}\sum _{k=0}^{\infty }&amp;(k+r)(k+r-1)A_{k}z^{k+r-2}-{\frac {1}{z}}\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-1}+\left({\frac {1}{z^{2}}}-{\frac {1}{z}}\right)\sum _{k=0}^{\infty }A_{k}z^{k+r}\\&amp;=\sum _{k=0}^{\infty }(k+r)(k+r-1)A_{k}z^{k+r-2}-{\frac {1}{z}}\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-1}+{\frac {1}{z^{2}}}\sum _{k=0}^{\infty }A_{k}z^{k+r}-{\frac {1}{z}}\sum _{k=0}^{\infty }A_{k}z^{k+r}\\&amp;=\sum _{k=0}^{\infty }(k+r)(k+r-1)A_{k}z^{k+r-2}-\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-2}+\sum _{k=0}^{\infty }A_{k}z^{k+r-2}-\sum _{k=0}^{\infty }A_{k}z^{k+r-1}\\&amp;=\sum _{k=0}^{\infty }(k+r)(k+r-1)A_{k}z^{k+r-2}-\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-2}+\sum _{k=0}^{\infty }A_{k}z^{k+r-2}-\sum _{k-1=0}^{\infty }A_{k-1}z^{k-1+r-1}\\&amp;=\sum _{k=0}^{\infty }(k+r)(k+r-1)A_{k}z^{k+r-2}-\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-2}+\sum _{k=0}^{\infty }A_{k}z^{k+r-2}-\sum _{k=1}^{\infty }A_{k-1}z^{k+r-2}\\&amp;=\left\{\sum _{k=0}^{\infty }\left((k+r)(k+r-1)-(k+r)+1\right)A_{k}z^{k+r-2}\right\}-\sum _{k=1}^{\infty }A_{k-1}z^{k+r-2}\\&amp;=\left\{\left(r(r-1)-r+1\right)A_{0}z^{r-2}+\sum _{k=1}^{\infty }\left((k+r)(k+r-1)-(k+r)+1\right)A_{k}z^{k+r-2}\right\}-\sum _{k=1}^{\infty }A_{k-1}z^{k+r-2}\\&amp;=(r-1)^{2}A_{0}z^{r-2}+\left\{\sum _{k=1}^{\infty }(k+r-1)^{2}A_{k}z^{k+r-2}-\sum _{k=1}^{\infty }A_{k-1}z^{k+r-2}\right\}\\&amp;=(r-1)^{2}A_{0}z^{r-2}+\sum _{k=1}^{\infty }\left((k+r-1)^{2}A_{k}-A_{k-1}\right)z^{k+r-2}\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo stretchy="false">(</mo>
+                <mi>k</mi>
+                <mo>+</mo>
+                <mi>r</mi>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">(</mo>
+                <mi>k</mi>
+                <mo>+</mo>
+                <mi>r</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>&#x2212;<!-- − --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <mi>z</mi>
+                  </mfrac>
+                </mrow>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <mo stretchy="false">(</mo>
+                <mi>k</mi>
+                <mo>+</mo>
+                <mi>r</mi>
+                <mo stretchy="false">)</mo>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mn>1</mn>
+                        <msup>
+                          <mi>z</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mn>2</mn>
+                          </mrow>
+                        </msup>
+                      </mfrac>
+                    </mrow>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mn>1</mn>
+                        <mi>z</mi>
+                      </mfrac>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <mo stretchy="false">(</mo>
+                <mi>k</mi>
+                <mo>+</mo>
+                <mi>r</mi>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">(</mo>
+                <mi>k</mi>
+                <mo>+</mo>
+                <mi>r</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>&#x2212;<!-- − --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <mi>z</mi>
+                  </mfrac>
+                </mrow>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <mo stretchy="false">(</mo>
+                <mi>k</mi>
+                <mo>+</mo>
+                <mi>r</mi>
+                <mo stretchy="false">)</mo>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <msup>
+                      <mi>z</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                  </mfrac>
+                </mrow>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                  </mrow>
+                </msup>
+                <mo>&#x2212;<!-- − --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <mi>z</mi>
+                  </mfrac>
+                </mrow>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <mo stretchy="false">(</mo>
+                <mi>k</mi>
+                <mo>+</mo>
+                <mi>r</mi>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">(</mo>
+                <mi>k</mi>
+                <mo>+</mo>
+                <mi>r</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>&#x2212;<!-- − --></mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <mo stretchy="false">(</mo>
+                <mi>k</mi>
+                <mo>+</mo>
+                <mi>r</mi>
+                <mo stretchy="false">)</mo>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>&#x2212;<!-- − --></mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <mo stretchy="false">(</mo>
+                <mi>k</mi>
+                <mo>+</mo>
+                <mi>r</mi>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">(</mo>
+                <mi>k</mi>
+                <mo>+</mo>
+                <mi>r</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>&#x2212;<!-- − --></mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <mo stretchy="false">(</mo>
+                <mi>k</mi>
+                <mo>+</mo>
+                <mi>r</mi>
+                <mo stretchy="false">)</mo>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>&#x2212;<!-- − --></mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <mo stretchy="false">(</mo>
+                <mi>k</mi>
+                <mo>+</mo>
+                <mi>r</mi>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">(</mo>
+                <mi>k</mi>
+                <mo>+</mo>
+                <mi>r</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>&#x2212;<!-- − --></mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <mo stretchy="false">(</mo>
+                <mi>k</mi>
+                <mo>+</mo>
+                <mi>r</mi>
+                <mo stretchy="false">)</mo>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>&#x2212;<!-- − --></mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow>
+                  <mo>{</mo>
+                  <mrow>
+                    <munderover>
+                      <mo>&#x2211;<!-- ∑ --></mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>k</mi>
+                        <mo>=</mo>
+                        <mn>0</mn>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                      </mrow>
+                    </munderover>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <mo stretchy="false">(</mo>
+                        <mi>k</mi>
+                        <mo>+</mo>
+                        <mi>r</mi>
+                        <mo stretchy="false">)</mo>
+                        <mo stretchy="false">(</mo>
+                        <mi>k</mi>
+                        <mo>+</mo>
+                        <mi>r</mi>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mn>1</mn>
+                        <mo stretchy="false">)</mo>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mo stretchy="false">(</mo>
+                        <mi>k</mi>
+                        <mo>+</mo>
+                        <mi>r</mi>
+                        <mo stretchy="false">)</mo>
+                        <mo>+</mo>
+                        <mn>1</mn>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                    <msub>
+                      <mi>A</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>k</mi>
+                      </mrow>
+                    </msub>
+                    <msup>
+                      <mi>z</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>k</mi>
+                        <mo>+</mo>
+                        <mi>r</mi>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                  </mrow>
+                  <mo>}</mo>
+                </mrow>
+                <mo>&#x2212;<!-- − --></mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow>
+                  <mo>{</mo>
+                  <mrow>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <mi>r</mi>
+                        <mo stretchy="false">(</mo>
+                        <mi>r</mi>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mn>1</mn>
+                        <mo stretchy="false">)</mo>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mi>r</mi>
+                        <mo>+</mo>
+                        <mn>1</mn>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                    <msub>
+                      <mi>A</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>0</mn>
+                      </mrow>
+                    </msub>
+                    <msup>
+                      <mi>z</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>r</mi>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mo>+</mo>
+                    <munderover>
+                      <mo>&#x2211;<!-- ∑ --></mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>k</mi>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                      </mrow>
+                    </munderover>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <mo stretchy="false">(</mo>
+                        <mi>k</mi>
+                        <mo>+</mo>
+                        <mi>r</mi>
+                        <mo stretchy="false">)</mo>
+                        <mo stretchy="false">(</mo>
+                        <mi>k</mi>
+                        <mo>+</mo>
+                        <mi>r</mi>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mn>1</mn>
+                        <mo stretchy="false">)</mo>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mo stretchy="false">(</mo>
+                        <mi>k</mi>
+                        <mo>+</mo>
+                        <mi>r</mi>
+                        <mo stretchy="false">)</mo>
+                        <mo>+</mo>
+                        <mn>1</mn>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                    <msub>
+                      <mi>A</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>k</mi>
+                      </mrow>
+                    </msub>
+                    <msup>
+                      <mi>z</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>k</mi>
+                        <mo>+</mo>
+                        <mi>r</mi>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                  </mrow>
+                  <mo>}</mo>
+                </mrow>
+                <mo>&#x2212;<!-- − --></mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo stretchy="false">(</mo>
+                <mi>r</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>1</mn>
+                <msup>
+                  <mo stretchy="false">)</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+                <mrow>
+                  <mo>{</mo>
+                  <mrow>
+                    <munderover>
+                      <mo>&#x2211;<!-- ∑ --></mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>k</mi>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                      </mrow>
+                    </munderover>
+                    <mo stretchy="false">(</mo>
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                    <msup>
+                      <mo stretchy="false">)</mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <msub>
+                      <mi>A</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>k</mi>
+                      </mrow>
+                    </msub>
+                    <msup>
+                      <mi>z</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>k</mi>
+                        <mo>+</mo>
+                        <mi>r</mi>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <munderover>
+                      <mo>&#x2211;<!-- ∑ --></mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>k</mi>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                      </mrow>
+                    </munderover>
+                    <msub>
+                      <mi>A</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>k</mi>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <msup>
+                      <mi>z</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>k</mi>
+                        <mo>+</mo>
+                        <mi>r</mi>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                  </mrow>
+                  <mo>}</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo stretchy="false">(</mo>
+                <mi>r</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>1</mn>
+                <msup>
+                  <mo stretchy="false">)</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msub>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munderover>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mo stretchy="false">(</mo>
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                    <msup>
+                      <mo stretchy="false">)</mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <msub>
+                      <mi>A</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>k</mi>
+                      </mrow>
+                    </msub>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <msub>
+                      <mi>A</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>k</mi>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>+</mo>
+                    <mi>r</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}\sum _{k=0}^{\infty }&amp;(k+r)(k+r-1)A_{k}z^{k+r-2}-{\frac {1}{z}}\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-1}+\left({\frac {1}{z^{2}}}-{\frac {1}{z}}\right)\sum _{k=0}^{\infty }A_{k}z^{k+r}\\&amp;=\sum _{k=0}^{\infty }(k+r)(k+r-1)A_{k}z^{k+r-2}-{\frac {1}{z}}\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-1}+{\frac {1}{z^{2}}}\sum _{k=0}^{\infty }A_{k}z^{k+r}-{\frac {1}{z}}\sum _{k=0}^{\infty }A_{k}z^{k+r}\\&amp;=\sum _{k=0}^{\infty }(k+r)(k+r-1)A_{k}z^{k+r-2}-\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-2}+\sum _{k=0}^{\infty }A_{k}z^{k+r-2}-\sum _{k=0}^{\infty }A_{k}z^{k+r-1}\\&amp;=\sum _{k=0}^{\infty }(k+r)(k+r-1)A_{k}z^{k+r-2}-\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-2}+\sum _{k=0}^{\infty }A_{k}z^{k+r-2}-\sum _{k-1=0}^{\infty }A_{k-1}z^{k-1+r-1}\\&amp;=\sum _{k=0}^{\infty }(k+r)(k+r-1)A_{k}z^{k+r-2}-\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-2}+\sum _{k=0}^{\infty }A_{k}z^{k+r-2}-\sum _{k=1}^{\infty }A_{k-1}z^{k+r-2}\\&amp;=\left\{\sum _{k=0}^{\infty }\left((k+r)(k+r-1)-(k+r)+1\right)A_{k}z^{k+r-2}\right\}-\sum _{k=1}^{\infty }A_{k-1}z^{k+r-2}\\&amp;=\left\{\left(r(r-1)-r+1\right)A_{0}z^{r-2}+\sum _{k=1}^{\infty }\left((k+r)(k+r-1)-(k+r)+1\right)A_{k}z^{k+r-2}\right\}-\sum _{k=1}^{\infty }A_{k-1}z^{k+r-2}\\&amp;=(r-1)^{2}A_{0}z^{r-2}+\left\{\sum _{k=1}^{\infty }(k+r-1)^{2}A_{k}z^{k+r-2}-\sum _{k=1}^{\infty }A_{k-1}z^{k+r-2}\right\}\\&amp;=(r-1)^{2}A_{0}z^{r-2}+\sum _{k=1}^{\infty }\left((k+r-1)^{2}A_{k}-A_{k-1}\right)z^{k+r-2}\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c8edc10286496907b04cac2ec9a39a9927ceac35" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -32.139ex; margin-bottom: -0.199ex; width:103.211ex; height:65.843ex;" alt="{\displaystyle {\begin{aligned}\sum _{k=0}^{\infty }&amp;(k+r)(k+r-1)A_{k}z^{k+r-2}-{\frac {1}{z}}\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-1}+\left({\frac {1}{z^{2}}}-{\frac {1}{z}}\right)\sum _{k=0}^{\infty }A_{k}z^{k+r}\\&amp;=\sum _{k=0}^{\infty }(k+r)(k+r-1)A_{k}z^{k+r-2}-{\frac {1}{z}}\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-1}+{\frac {1}{z^{2}}}\sum _{k=0}^{\infty }A_{k}z^{k+r}-{\frac {1}{z}}\sum _{k=0}^{\infty }A_{k}z^{k+r}\\&amp;=\sum _{k=0}^{\infty }(k+r)(k+r-1)A_{k}z^{k+r-2}-\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-2}+\sum _{k=0}^{\infty }A_{k}z^{k+r-2}-\sum _{k=0}^{\infty }A_{k}z^{k+r-1}\\&amp;=\sum _{k=0}^{\infty }(k+r)(k+r-1)A_{k}z^{k+r-2}-\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-2}+\sum _{k=0}^{\infty }A_{k}z^{k+r-2}-\sum _{k-1=0}^{\infty }A_{k-1}z^{k-1+r-1}\\&amp;=\sum _{k=0}^{\infty }(k+r)(k+r-1)A_{k}z^{k+r-2}-\sum _{k=0}^{\infty }(k+r)A_{k}z^{k+r-2}+\sum _{k=0}^{\infty }A_{k}z^{k+r-2}-\sum _{k=1}^{\infty }A_{k-1}z^{k+r-2}\\&amp;=\left\{\sum _{k=0}^{\infty }\left((k+r)(k+r-1)-(k+r)+1\right)A_{k}z^{k+r-2}\right\}-\sum _{k=1}^{\infty }A_{k-1}z^{k+r-2}\\&amp;=\left\{\left(r(r-1)-r+1\right)A_{0}z^{r-2}+\sum _{k=1}^{\infty }\left((k+r)(k+r-1)-(k+r)+1\right)A_{k}z^{k+r-2}\right\}-\sum _{k=1}^{\infty }A_{k-1}z^{k+r-2}\\&amp;=(r-1)^{2}A_{0}z^{r-2}+\left\{\sum _{k=1}^{\infty }(k+r-1)^{2}A_{k}z^{k+r-2}-\sum _{k=1}^{\infty }A_{k-1}z^{k+r-2}\right\}\\&amp;=(r-1)^{2}A_{0}z^{r-2}+\sum _{k=1}^{\infty }\left((k+r-1)^{2}A_{k}-A_{k-1}\right)z^{k+r-2}\end{aligned}}}"/></span></dd></dl>
+<p>From (<i>r</i>&#160;−&#160;1)<sup>2</sup>&#160;=&#160;0 we get a double root of 1. Using this root, we set the coefficient of <i>z</i><sup><i>k</i>&#160;+&#160;<i>r</i>&#160;−&#160;2</sup> to be zero (for it to be a solution), which gives us:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (k+1-1)^{2}A_{k}-A_{k-1}=k^{2}A_{k}-A_{k-1}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msup>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (k+1-1)^{2}A_{k}-A_{k-1}=k^{2}A_{k}-A_{k-1}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fdcecaf3c0788dbba2609e95c34b07090e8d036c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:42.914ex; height:3.176ex;" alt="(k+1-1)^{2}A_{k}-A_{{k-1}}=k^{2}A_{k}-A_{{k-1}}=0"/></span></dd></dl>
+<p>hence we have the recurrence relation:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A_{k}={\frac {A_{k-1}}{k^{2}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>A</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <msup>
+              <mi>k</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A_{k}={\frac {A_{k-1}}{k^{2}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/72b07a97117330221a0b9defcbcc9bea98132e38" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:11.699ex; height:5.843ex;" alt="A_{k}={\frac  {A_{{k-1}}}{k^{2}}}"/></span></dd></dl>
+<p>Given some initial conditions, we can either solve the recurrence entirely or obtain a solution in power series form.
+</p><p>Since the ratio of coefficients <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A_{k}/A_{k-1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A_{k}/A_{k-1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b57aba6d1f279317f8820d59efc6cfbb45735f08" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.927ex; height:2.843ex;" alt="A_{k}/A_{{k-1}}"/></span> is a <a href="/wiki/Rational_function" title="Rational function">rational function</a>, the power series can be written as a <a href="/wiki/Generalized_hypergeometric_series" class="mw-redirect" title="Generalized hypergeometric series">generalized hypergeometric series</a>.
+</p>
+<h2><span class="mw-headline" id="Roots_separated_by_an_integer">Roots separated by an integer</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Frobenius_method&amp;action=edit&amp;section=3" title="Edit section: Roots separated by an integer">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The previous example involved an indicial polynomial with a repeated root, which gives only one solution to the given differential equation.  In general, the Frobenius method gives two independent solutions provided that the indicial equation's roots are not separated by an integer (including zero).
+</p><p>If the root is repeated or the roots differ by an integer, then the second solution can be found using:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle y_{2}=Cy_{1}\ln x+\sum _{k=0}^{\infty }B_{k}x^{k+r_{2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>C</mi>
+        <msub>
+          <mi>y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mi>ln</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>+</mo>
+            <msub>
+              <mi>r</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle y_{2}=Cy_{1}\ln x+\sum _{k=0}^{\infty }B_{k}x^{k+r_{2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/871b94f2ce9a66ade7759e90eed32103f0de1e14" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:28ex; height:7.009ex;" alt="y_{2}=Cy_{1}\ln x+\sum _{{k=0}}^{\infty }B_{k}x^{{k+r_{2}}}"/></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle y_{1}(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle y_{1}(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3a1668ee520fe2d1e065ef0354d0b8ca4298bb9f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.332ex; height:2.843ex;" alt="y_{1}(x)"/></span> is the first solution (based on the larger root in the case of unequal roots), <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle r_{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>r</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle r_{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4cbe9b0b294fdd6fadbf9a7249813f016dcbc44f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.103ex; height:2.009ex;" alt="r_{2}"/></span> is the smaller root, and the constant <span class="texhtml mvar" style="font-style:italic;">C</span> and the coefficients <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle B_{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle B_{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6a6457760e36cf45e1471e33bcc1536cb4802fb9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.853ex; height:2.509ex;" alt="B_{k}"/></span> are to be determined. Once <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle B_{0}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle B_{0}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/03a3f39a56ba486e7c6ec89b99f5ae2a21fa75b6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.818ex; height:2.509ex;" alt="B_{0}"/></span> is chosen (for example by setting it to 1) then <span class="texhtml mvar" style="font-style:italic;">C</span> and the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle B_{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle B_{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6a6457760e36cf45e1471e33bcc1536cb4802fb9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.853ex; height:2.509ex;" alt="B_{k}"/></span> are determined up to but not including <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle B_{r_{1}-r_{2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>r</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <mo>&#x2212;<!-- − --></mo>
+            <msub>
+              <mi>r</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle B_{r_{1}-r_{2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/73468b80833e9717517075965bd4390e5e4262d8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:6.421ex; height:2.843ex;" alt="{\displaystyle B_{r_{1}-r_{2}}}"/></span>, which can be set arbitrarily. This then determines the rest of the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle B_{k}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle B_{k}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8abcb9c8ec60acb23dc41e69aa9e4539c709aa5c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.5ex; height:2.509ex;" alt="{\displaystyle B_{k}.}"/></span> In some cases the constant <span class="texhtml mvar" style="font-style:italic;">C</span> must be zero. For example, consider the following differential equation (<a href="/wiki/Kummer%27s_equation" class="mw-redirect" title="Kummer&#39;s equation">Kummer's equation</a> with <span class="texhtml"><i>a</i> = 1</span> and <span class="texhtml"><i>b</i> = 2</span>):
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle zu''+(2-z)u'-u=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>z</mi>
+        <msup>
+          <mi>u</mi>
+          <mo>&#x2033;</mo>
+        </msup>
+        <mo>+</mo>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <msup>
+          <mi>u</mi>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>u</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle zu''+(2-z)u'-u=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7410a5dfa0d57f199fdd852b84ddf025c1b6a5e4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:23.741ex; height:3.009ex;" alt="{\displaystyle zu&#039;&#039;+(2-z)u&#039;-u=0}"/></span></dd></dl>
+<p>The roots of the indicial equation are −1 and 0. Two independent solutions are <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 1/z}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>z</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1/z}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eacfefd515fe6e44387f58670893730b20ed8604" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:3.413ex; height:2.843ex;" alt="1/z"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (e^{z})/z,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>z</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>z</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (e^{z})/z,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b5aecf0100b8a098b3a5a0a9c290211018414aea" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.792ex; height:2.843ex;" alt="{\displaystyle (e^{z})/z,}"/></span> so we see that the logarithm does not appear in any solution. The solution <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (e^{z}-1)/z}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>z</mi>
+          </mrow>
+        </msup>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>z</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (e^{z}-1)/z}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eacb46ae30cda8e64c5fbeae4390468b884797eb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.148ex; height:2.843ex;" alt="{\displaystyle (e^{z}-1)/z}"/></span> has a power series starting with the power zero. In a power series starting with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle z^{-1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle z^{-1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6fc4dd3169138645591f7b5c58da48a99af5f072" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:3.423ex; height:2.676ex;" alt="z^{-1}"/></span> the recurrence relation places no restriction on the coefficient for the term <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle z^{0},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle z^{0},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/798bd1a1db4f95761e061c428b6c926bf4fa0e7e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.791ex; height:3.009ex;" alt="{\displaystyle z^{0},}"/></span> which can be set arbitrarily. If it is set to zero then with this differential equation all the other coefficients will be zero and we obtain the solution 1/<span class="texhtml mvar" style="font-style:italic;">z</span>.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Frobenius_method&amp;action=edit&amp;section=4" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Fuchs%27_theorem" title="Fuchs&#39; theorem">Fuchs' theorem</a></li>
+<li><a href="/wiki/Regular_singular_point" title="Regular singular point">Regular singular point</a></li>
+<li><a href="/wiki/Complex_differential_equation" title="Complex differential equation">Complex differential equation</a></li>
+<li><a href="/wiki/Laurent_series" title="Laurent series">Laurent series</a></li></ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Frobenius_method&amp;action=edit&amp;section=5" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><span class="citation mathworld" id="Reference-Mathworld-Frobenius_Method"><cite class="citation web"><a href="/wiki/Eric_W._Weisstein" title="Eric W. Weisstein">Weisstein, Eric W.</a> <a rel="nofollow" class="external text" href="http://mathworld.wolfram.com/FrobeniusMethod.html">"Frobenius Method"</a>. <i><a href="/wiki/MathWorld" title="MathWorld">MathWorld</a></i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=MathWorld&amp;rft.atitle=Frobenius+Method&amp;rft.au=Weisstein%2C+Eric+W.&amp;rft_id=http%3A%2F%2Fmathworld.wolfram.com%2FFrobeniusMethod.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFrobenius+method" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></span></li>
+<li><cite class="citation book"><a href="/wiki/Gerald_Teschl" title="Gerald Teschl">Teschl, Gerald</a> (2012). <a rel="nofollow" class="external text" href="http://www.mat.univie.ac.at/~gerald/ftp/book-ode/"><i>Ordinary Differential Equations and Dynamical Systems</i></a>. <a href="/wiki/Providence,_Rhode_Island" title="Providence, Rhode Island">Providence</a>: <a href="/wiki/American_Mathematical_Society" title="American Mathematical Society">American Mathematical Society</a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-8218-8328-0" title="Special:BookSources/978-0-8218-8328-0"><bdi>978-0-8218-8328-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Ordinary+Differential+Equations+and+Dynamical+Systems&amp;rft.place=Providence&amp;rft.pub=American+Mathematical+Society&amp;rft.date=2012&amp;rft.isbn=978-0-8218-8328-0&amp;rft.aulast=Teschl&amp;rft.aufirst=Gerald&amp;rft_id=http%3A%2F%2Fwww.mat.univie.ac.at%2F~gerald%2Fftp%2Fbook-ode%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFrobenius+method" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/> (Draft version available online at <a rel="nofollow" class="external free" href="http://www.mat.univie.ac.at/~gerald/ftp/book-ode/">http://www.mat.univie.ac.at/~gerald/ftp/book-ode/</a>). Chapter 4 contains the full method including proofs.</li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1320
+Cached time: 20190805131816
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.168 seconds
+Real time usage: 0.235 seconds
+Preprocessor visited node count: 377/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 3831/2097152 bytes
+Template argument size: 75/2097152 bytes
+Highest expansion depth: 5/40
+Expensive parser function count: 0/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 5256/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.055/10.000 seconds
+Lua memory usage: 1.44 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  105.705      1 -total
+ 81.15%   85.784      1 Template:Mathworld
+ 75.42%   79.723      1 Template:Cite_web
+  7.49%    7.917      1 Template:Cite_book
+  3.05%    3.229      4 Template:Mvar
+  2.84%    3.005      2 Template:Math
+  2.44%    2.582      2 Template:Pad
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:998446-0!canonical!math=5 and timestamp 20190805131815 and revision id 852249145
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Frobenius_method&amp;oldid=852249145">https://en.wikipedia.org/w/index.php?title=Frobenius_method&amp;oldid=852249145</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Ordinary_differential_equations" title="Category:Ordinary differential equations">Ordinary differential equations</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Frobenius+method" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Frobenius+method" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Frobenius_method" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Frobenius_method" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Frobenius_method">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Frobenius_method&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Frobenius_method&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Frobenius_method" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Frobenius_method" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Frobenius_method&amp;oldid=852249145" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Frobenius_method&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1340153" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Frobenius_method&amp;id=852249145" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Frobenius+method">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Frobenius+method&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Frobenius_method&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Frobeniova_metoda" title="Frobeniova metoda – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Frobenius-Methode" title="Frobenius-Methode – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/M%C3%A9todo_de_Frobenius" title="Método de Frobenius – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Frobenius" title="Méthode de Frobenius – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EB%B2%A0%EB%8B%88%EC%9A%B0%EC%8A%A4_%EB%B0%A9%EB%B2%95" title="프로베니우스 방법 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Metodo_di_Frobenius" title="Metodo di Frobenius – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Methode_van_Frobenius" title="Methode van Frobenius – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-km"><a href="https://km.wikipedia.org/wiki/%E1%9E%9C%E1%9E%B7%E1%9E%92%E1%9E%B8%E1%9E%9F%E1%9E%B6%E1%9E%9F%E1%9F%92%E1%9E%9A%E1%9F%92%E1%9E%8F%E1%9E%A0%E1%9F%92%E1%9E%9A%E1%9F%92%E1%9E%9C%E1%9E%BC%E1%9E%94%E1%9F%81%E1%9E%93%E1%9F%80%E1%9E%9F" title="វិធីសាស្រ្តហ្រ្វូបេនៀស – Khmer" lang="km" hreflang="km" class="interlanguage-link-target">ភាសាខ្មែរ</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/M%C3%A9todo_de_Frobenius" title="Método de Frobenius – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%A4%D1%80%D0%BE%D0%B1%D0%B5%D0%BD%D0%B8%D1%83%D1%81%D0%B0" title="Метод Фробениуса – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/%D0%A4%D1%80%D0%BE%D0%B1%D0%B5%D0%BD%D0%B8%D1%98%D1%83%D1%81%D0%BE%D0%B2_%D0%BC%D0%B5%D1%82%D0%BE%D0%B4" title="Фробенијусов метод – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-th"><a href="https://th.wikipedia.org/wiki/%E0%B8%82%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B9%82%E0%B8%9F%E0%B8%A3%E0%B9%80%E0%B8%9A%E0%B8%99%E0%B8%B5%E0%B8%AD%E0%B8%B8%E0%B8%AA" title="ขั้นตอนวิธีโฟรเบนีอุส – Thai" lang="th" hreflang="th" class="interlanguage-link-target">ไทย</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1340153#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 27 July 2018, at 16:16<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Frobenius_method&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.168","walltime":"0.235","ppvisitednodes":{"value":377,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":3831,"limit":2097152},"templateargumentsize":{"value":75,"limit":2097152},"expansiondepth":{"value":5,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":5256,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  105.705      1 -total"," 81.15%   85.784      1 Template:Mathworld"," 75.42%   79.723      1 Template:Cite_web","  7.49%    7.917      1 Template:Cite_book","  3.05%    3.229      4 Template:Mvar","  2.84%    3.005      2 Template:Math","  2.44%    2.582      2 Template:Pad"]},"scribunto":{"limitreport-timeusage":{"value":"0.055","limit":"10.000"},"limitreport-memusage":{"value":1504767,"limit":52428800}},"cachereport":{"origin":"mw1320","timestamp":"20190805131816","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Frobenius method","url":"https:\/\/en.wikipedia.org\/wiki\/Frobenius_method","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1340153","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1340153","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-09-19T11:13:35Z","dateModified":"2018-07-27T16:16:17Z"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":108,"wgHostname":"mw1263"});});</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+tensile_strength_and_modulus_of_elasticity

@@ -1,0 +1,1 @@
+_B__Importing_tractors_into_Germany_will_eliminate_twenty_percent_of_the_manufacturing_jobs_in_Germany

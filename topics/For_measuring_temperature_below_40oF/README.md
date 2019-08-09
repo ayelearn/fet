@@ -1,0 +1,1 @@
+For_measuring_temperature_below_40oF

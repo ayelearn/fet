@@ -1,0 +1,1 @@
+quantity_of_characteristics_of_domestic_wastewater

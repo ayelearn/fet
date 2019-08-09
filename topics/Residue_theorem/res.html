@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Residue theorem - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Residue_theorem","wgTitle":"Residue theorem","wgCurRevisionId":895353981,"wgRevisionId":895353981,"wgArticleId":73390,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Theorems in complex analysis","Analytic functions"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Residue_theorem","wgRelevantArticleId":73390,"wgRequestId":
+"XUV8zwpAICAAABff550AAABL","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q830513","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready",
+"user.options":"ready","user.tokens":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["ext.math.scripts","ext.cite.ux-enhancements","ext.scribunto.logs","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader",
+"ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Gamma_abs_3D.png/1200px-Gamma_abs_3D.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Residue_theorem"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Residue_theorem&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Residue_theorem&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Residue_theorem"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Residue_theorem rootpage-Residue_theorem skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Residue theorem</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table class="vertical-navbox nowraplinks hlist" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%"><tbody><tr><td style="padding-top:0.4em;line-height:1.2em"><span style="font-size: 8pt; font-weight: none"><a href="/wiki/Mathematical_analysis" title="Mathematical analysis">Mathematical analysis</a> → <b>Complex analysis</b></span></td></tr><tr><th style="padding:0.2em 0.4em 0.2em;padding-top:0;font-size:145%;line-height:1.2em"><a href="/wiki/Complex_analysis" title="Complex analysis">Complex analysis</a></th></tr><tr><td style="padding:0.2em 0 0.4em"><a href="/wiki/File:Gamma_abs_3D.png" class="image"><img alt="Gamma abs 3D.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/33/Gamma_abs_3D.png/200px-Gamma_abs_3D.png" decoding="async" width="200" height="156" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/33/Gamma_abs_3D.png/300px-Gamma_abs_3D.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/33/Gamma_abs_3D.png/400px-Gamma_abs_3D.png 2x" data-file-width="1280" data-file-height="1000" /></a></td></tr><tr><th style="padding:0.1em">
+<a href="/wiki/Complex_number" title="Complex number">Complex numbers</a></th></tr><tr><td style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Real_number" title="Real number">Real number</a></li>
+<li><a href="/wiki/Imaginary_number" title="Imaginary number">Imaginary number</a></li>
+<li><a href="/wiki/Complex_plane" title="Complex plane">Complex plane</a></li>
+<li><a href="/wiki/Complex_conjugate" title="Complex conjugate">Complex conjugate</a></li>
+<li><a href="/wiki/Unit_complex_number" class="mw-redirect" title="Unit complex number">Unit complex number</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+<a href="/wiki/Complex_functions" class="mw-redirect" title="Complex functions">Complex functions</a></th></tr><tr><td style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Complex-valued_function" class="mw-redirect" title="Complex-valued function">Complex-valued function</a></li>
+<li><a href="/wiki/Analytic_function" title="Analytic function">Analytic function</a></li>
+<li><a href="/wiki/Holomorphic_function" title="Holomorphic function">Holomorphic function</a></li>
+<li><a href="/wiki/Cauchy%E2%80%93Riemann_equations" title="Cauchy–Riemann equations">Cauchy–Riemann equations</a></li>
+<li><a href="/wiki/Formal_power_series" title="Formal power series">Formal power series</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+<a href="/wiki/Complex_analysis#Major_results" title="Complex analysis">Basic Theory</a></th></tr><tr><td style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Zeros_and_poles" title="Zeros and poles">Zeros and poles</a></li>
+<li><a href="/wiki/Cauchy%27s_integral_theorem" title="Cauchy&#39;s integral theorem">Cauchy's integral theorem</a></li>
+<li><a href="/wiki/Antiderivative_(complex_analysis)" title="Antiderivative (complex analysis)">Local primitive</a></li>
+<li><a href="/wiki/Cauchy%27s_integral_formula" title="Cauchy&#39;s integral formula">Cauchy's integral formula</a></li>
+<li><a href="/wiki/Winding_number" title="Winding number">Winding number</a></li>
+<li><a href="/wiki/Laurent_series" title="Laurent series">Laurent series</a></li>
+<li><a href="/wiki/Isolated_singularity" title="Isolated singularity">Isolated singularity</a></li>
+<li><a class="mw-selflink selflink">Residue theorem</a></li>
+<li><a href="/wiki/Conformal_map" title="Conformal map">Conformal map</a></li>
+<li><a href="/wiki/Schwarz_lemma" title="Schwarz lemma">Schwarz lemma</a></li>
+<li><a href="/wiki/Harmonic_function" title="Harmonic function">Harmonic function</a></li>
+<li><a href="/wiki/Laplace%27s_equation" title="Laplace&#39;s equation">Laplace's equation</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+<a href="/wiki/Geometric_function_theory" title="Geometric function theory">Geometric function theory</a></th></tr><tr><th style="padding:0.1em">
+<a href="/wiki/Complex_analysis#History" title="Complex analysis">People</a></th></tr><tr><td style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Augustin-Louis_Cauchy" title="Augustin-Louis Cauchy">Augustin-Louis Cauchy</a></li>
+<li><a href="/wiki/Leonhard_Euler" title="Leonhard Euler">Leonhard Euler</a></li>
+<li><a href="/wiki/Carl_Friedrich_Gauss" title="Carl Friedrich Gauss">Carl Friedrich Gauss</a></li>
+<li><a href="/wiki/Jacques_Hadamard" title="Jacques Hadamard">Jacques Hadamard</a></li>
+<li><a href="/wiki/Kiyoshi_Oka" title="Kiyoshi Oka">Kiyoshi Oka</a></li>
+<li><a href="/wiki/Bernhard_Riemann" title="Bernhard Riemann">Bernhard Riemann</a></li>
+<li><a href="/wiki/Karl_Weierstrass" title="Karl Weierstrass">Karl Weierstrass</a></li></ul></td>
+</tr><tr><td style="padding:0.3em 0.4em 0.3em;font-weight:bold">
+<ul><li><a href="/wiki/File:Nuvola_apps_kmplot.svg" class="image"><img alt="Nuvola apps kmplot.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Nuvola_apps_kmplot.svg/16px-Nuvola_apps_kmplot.svg.png" decoding="async" width="16" height="16" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Nuvola_apps_kmplot.svg/24px-Nuvola_apps_kmplot.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Nuvola_apps_kmplot.svg/32px-Nuvola_apps_kmplot.svg.png 2x" data-file-width="400" data-file-height="400" /></a> <a href="/wiki/Portal:Analysis" class="mw-redirect" title="Portal:Analysis">Analysis&#32;portal</a></li></ul></td></tr><tr><td style="text-align:right;font-size:115%"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="/wiki/Template:Complex_analysis_sidebar" title="Template:Complex analysis sidebar"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Complex_analysis_sidebar" title="Template talk:Complex analysis sidebar"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Complex_analysis_sidebar&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p>In <a href="/wiki/Complex_analysis" title="Complex analysis">complex analysis</a>, a discipline within mathematics, the <b>residue theorem</b>, sometimes called <b>Cauchy's residue theorem</b>, is a powerful tool to evaluate <a href="/wiki/Line_integral" title="Line integral">line integrals</a> of <a href="/wiki/Analytic_function" title="Analytic function">analytic functions</a> over closed curves; it can often be used to compute real integrals and <a href="/wiki/Infinite_series" class="mw-redirect" title="Infinite series">infinite series</a> as well. It generalizes the <a href="/wiki/Cauchy_integral_theorem" class="mw-redirect" title="Cauchy integral theorem">Cauchy integral theorem</a> and <a href="/wiki/Cauchy%27s_integral_formula" title="Cauchy&#39;s integral formula">Cauchy's integral formula</a>.  From a geometrical perspective, it is a special case of the <a href="/wiki/Stokes%27_theorem" title="Stokes&#39; theorem">generalized Stokes' theorem</a>.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Statement"><span class="tocnumber">1</span> <span class="toctext">Statement</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Examples"><span class="tocnumber">2</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#An_integral_along_the_real_axis"><span class="tocnumber">2.1</span> <span class="toctext">An integral along the real axis</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#An_infinite_sum"><span class="tocnumber">2.2</span> <span class="toctext">An infinite sum</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Statement">Statement</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Residue_theorem&amp;action=edit&amp;section=1" title="Edit section: Statement">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The statement is as follows:
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:252px;"><a href="/wiki/File:Residue_theorem_illustration.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/19/Residue_theorem_illustration.png/250px-Residue_theorem_illustration.png" decoding="async" width="250" height="250" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/19/Residue_theorem_illustration.png/375px-Residue_theorem_illustration.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/19/Residue_theorem_illustration.png/500px-Residue_theorem_illustration.png 2x" data-file-width="600" data-file-height="600" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Residue_theorem_illustration.png" class="internal" title="Enlarge"></a></div>Illustration of the setting.</div></div></div>
+<p>Let <span class="texhtml mvar" style="font-style:italic;">U</span> be a <a href="/wiki/Simply_connected" class="mw-redirect" title="Simply connected">simply connected</a> <a href="/wiki/Open_subset" class="mw-redirect" title="Open subset">open subset</a> of the <a href="/wiki/Complex_plane" title="Complex plane">complex plane</a> containing a finite list of points <span class="texhtml"><i>a</i><sub>1</sub>, ..., <i>a</i><sub><i>n</i></sub></span>,  and <span class="texhtml mvar" style="font-style:italic;">f</span> a function defined and <a href="/wiki/Holomorphic_function" title="Holomorphic function">holomorphic</a> on <span class="texhtml"><i>U</i> \{<i>a</i><sub>1</sub>, ..., <i>a</i><sub><i>n</i></sub>}</span>. Let <span class="texhtml mvar" style="font-style:italic;">γ</span> be a closed <a href="/wiki/Rectifiable_curve" class="mw-redirect" title="Rectifiable curve">rectifiable curve</a> in <span class="texhtml mvar" style="font-style:italic;">U</span> which does not meet any of the <span class="texhtml"><i>a</i><sub><i>k</i></sub></span>, and denote the <a href="/wiki/Winding_number" title="Winding number">winding number</a> of <span class="texhtml mvar" style="font-style:italic;">γ</span> around <span class="texhtml"><i>a</i><sub><i>k</i></sub></span> by <span class="texhtml">I(<i>γ</i>, <i>a</i><sub><i>k</i></sub>)</span>. The line integral of <span class="texhtml mvar" style="font-style:italic;">f</span> around <span class="texhtml mvar" style="font-style:italic;">γ</span> is equal to <span class="texhtml">2<span class="texhtml">π</span><i>i</i></span> times the sum of <a href="/wiki/Residue_(complex_analysis)" title="Residue (complex analysis)">residues</a> of <span class="texhtml mvar" style="font-style:italic;">f</span> at the points, each counted as many times as <span class="texhtml mvar" style="font-style:italic;">γ</span> winds around the point:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \oint _{\gamma }f(z)\,dz=2\pi i\sum _{k=1}^{n}\operatorname {I} (\gamma ,a_{k})\operatorname {Res} (f,a_{k}).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+            <mrow class="MJX-TeXAtom-VCENTER">
+              <mstyle mathsize="2.07em">
+                <mtext>&#x222E;<!-- ∮ --></mtext>
+                <mspace width="thinmathspace" />
+              </mstyle>
+            </mrow>
+            <mspace width="thinmathspace" />
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B3;<!-- γ --></mi>
+          </mrow>
+        </msub>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mi>&#x03C0;<!-- π --></mi>
+        <mi>i</mi>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <mi mathvariant="normal">I</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03B3;<!-- γ --></mi>
+        <mo>,</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mi>Res</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>,</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \oint _{\gamma }f(z)\,dz=2\pi i\sum _{k=1}^{n}\operatorname {I} (\gamma ,a_{k})\operatorname {Res} (f,a_{k}).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d6308b3568edef0ca286eea192c8a0c7600db8a4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:41.01ex; height:6.843ex;" alt="{\displaystyle \oint _{\gamma }f(z)\,dz=2\pi i\sum _{k=1}^{n}\operatorname {I} (\gamma ,a_{k})\operatorname {Res} (f,a_{k}).}"/></span></dd></dl>
+<p>If <span class="texhtml mvar" style="font-style:italic;">γ</span> is a <a href="/wiki/Curve_orientation" title="Curve orientation">positively oriented</a> <a href="/wiki/Jordan_curve" class="mw-redirect" title="Jordan curve">simple closed curve</a>, <span class="texhtml">I(<i>γ</i>, <i>a</i><sub><i>k</i></sub>) = 1</span> if <span class="texhtml"><i>a</i><sub><i>k</i></sub></span> is in the interior of <span class="texhtml mvar" style="font-style:italic;">γ</span>, and 0 if not, so
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \oint _{\gamma }f(z)\,dz=2\pi i\sum \operatorname {Res} (f,a_{k})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+            <mrow class="MJX-TeXAtom-VCENTER">
+              <mstyle mathsize="2.07em">
+                <mtext>&#x222E;<!-- ∮ --></mtext>
+                <mspace width="thinmathspace" />
+              </mstyle>
+            </mrow>
+            <mspace width="thinmathspace" />
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B3;<!-- γ --></mi>
+          </mrow>
+        </msub>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mi>&#x03C0;<!-- π --></mi>
+        <mi>i</mi>
+        <mo>&#x2211;<!-- ∑ --></mo>
+        <mi>Res</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>,</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \oint _{\gamma }f(z)\,dz=2\pi i\sum \operatorname {Res} (f,a_{k})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/56bd97647c868b1c01e92831b55dbadb2d55e1ca" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.838ex; width:32.713ex; height:6.343ex;" alt="{\displaystyle \oint _{\gamma }f(z)\,dz=2\pi i\sum \operatorname {Res} (f,a_{k})}"/></span></dd></dl>
+<p>with the sum over those <span class="texhtml"><i>a</i><sub><i>k</i></sub></span> inside <span class="texhtml mvar" style="font-style:italic;">γ</span>.
+</p><p>The relationship of the residue theorem to Stokes' theorem is given by the <a href="/wiki/Jordan_curve_theorem" title="Jordan curve theorem">Jordan curve theorem</a>.  The general <a href="/wiki/Plane_curve" title="Plane curve">plane curve</a> <span class="texhtml mvar" style="font-style:italic;">γ</span> must first be reduced to a set of simple closed curves <span class="texhtml">{<i>γ</i><sub><i>i</i></sub>}</span> whose total is equivalent to <span class="texhtml mvar" style="font-style:italic;">γ</span> for integration purposes; this reduces the problem to finding the integral of <span class="texhtml"><i>f</i> <i>dz</i></span> along a Jordan curve <span class="texhtml"><i>γ</i><sub><i>i</i></sub></span> with interior <span class="texhtml mvar" style="font-style:italic;">V</span>. The requirement that <span class="texhtml mvar" style="font-style:italic;">f</span> be holomorphic on <span class="texhtml"><i>U</i><sub>0</sub> = <i>U</i> \ {<i>a</i><sub><i>k</i></sub>}</span> is equivalent to the statement that the <a href="/wiki/Exterior_derivative" title="Exterior derivative">exterior derivative</a> <span class="texhtml"><i>d</i>(<i>f</i> <i>dz</i>) = 0</span> on <span class="texhtml"><i>U</i><sub>0</sub></span>.  Thus if two planar regions <span class="texhtml mvar" style="font-style:italic;">V</span> and <span class="texhtml mvar" style="font-style:italic;">W</span> of <span class="texhtml mvar" style="font-style:italic;">U</span> enclose the same subset <span class="texhtml">{<i>a</i><sub><i>j</i></sub>}</span> of <span class="texhtml">{<i>a</i><sub><i>k</i></sub>}</span>, the regions <span class="texhtml"><i>V</i> \ <i>W</i></span> and <span class="texhtml"><i>W</i> \ <i>V</i></span> lie entirely in <span class="texhtml"><i>U</i><sub>0</sub></span>, and hence
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{V\smallsetminus W}d(f\,dz)-\int _{W\smallsetminus V}d(f\,dz)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>V</mi>
+            <mo>&#x2216;<!-- ∖ --></mo>
+            <mi>W</mi>
+          </mrow>
+        </msub>
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>W</mi>
+            <mo>&#x2216;<!-- ∖ --></mo>
+            <mi>V</mi>
+          </mrow>
+        </msub>
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{V\smallsetminus W}d(f\,dz)-\int _{W\smallsetminus V}d(f\,dz)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/22f423d864ed7ff3fcf05b3d6145888f8fca1fb9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:29.182ex; height:5.676ex;" alt="{\displaystyle \int _{V\smallsetminus W}d(f\,dz)-\int _{W\smallsetminus V}d(f\,dz)}"/></span></dd></dl>
+<p>is well-defined and equal to zero. Consequently, the contour integral of <span class="texhtml"><i>f</i> <i>dz</i></span> along <span class="texhtml"><i>γ</i><sub><i>j</i></sub> = ∂V</span> is equal to the sum of a set of integrals along paths <span class="texhtml"><i>λ</i><sub><i>j</i></sub></span>, each enclosing an arbitrarily small region around a single <span class="texhtml"><i>a</i><sub><i>j</i></sub></span> — the residues of <span class="texhtml mvar" style="font-style:italic;">f</span> (up to the conventional factor <span class="texhtml">2<span class="texhtml">π</span><i>i</i></span>) at <span class="texhtml">{<i>a</i><sub><i>j</i></sub>}</span>. Summing over <span class="texhtml">{<i>γ</i><sub><i>j</i></sub>}</span>, we recover the final expression of the contour integral in terms of the winding numbers <span class="texhtml">{I(<i>γ</i>, <i>a</i><sub><i>k</i></sub>)}</span>.
+</p><p>In order to evaluate real integrals, the residue theorem is used in the following manner: the integrand is extended to the complex plane and its residues are computed (which is usually easy), and a part of the real axis is extended to a closed curve by attaching a half-circle in the upper or lower half-plane, forming a semicircle. The integral over this curve can then be computed using the residue theorem. Often, the half-circle part of the integral will tend towards zero as the radius of the half-circle grows, leaving only the real-axis part of the integral, the one we were originally interested in.
+</p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Residue_theorem&amp;action=edit&amp;section=2" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="An_integral_along_the_real_axis">An integral along the real axis</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Residue_theorem&amp;action=edit&amp;section=3" title="Edit section: An integral along the real axis">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The integral
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{-\infty }^{\infty }{\frac {e^{itx}}{x^{2}+1}}\,dx}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </msubsup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+                <mi>t</mi>
+                <mi>x</mi>
+              </mrow>
+            </msup>
+            <mrow>
+              <msup>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{-\infty }^{\infty }{\frac {e^{itx}}{x^{2}+1}}\,dx}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c555271abb07c7d5b1c0721d86358e4c6d1a930f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:14.989ex; height:6.343ex;" alt="{\displaystyle \int _{-\infty }^{\infty }{\frac {e^{itx}}{x^{2}+1}}\,dx}"/></span></dd></dl>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/File:Contour_example.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Contour_example.svg/300px-Contour_example.svg.png" decoding="async" width="300" height="166" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Contour_example.svg/450px-Contour_example.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Contour_example.svg/600px-Contour_example.svg.png 2x" data-file-width="182" data-file-height="101" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Contour_example.svg" class="internal" title="Enlarge"></a></div>The contour <span class="texhtml mvar" style="font-style:italic;">C</span>.</div></div></div>
+<p>arises in <a href="/wiki/Probability_theory" title="Probability theory">probability theory</a> when calculating the <a href="/wiki/Characteristic_function_(probability_theory)" title="Characteristic function (probability theory)">characteristic function</a> of the <a href="/wiki/Cauchy_distribution" title="Cauchy distribution">Cauchy distribution</a>. It resists the techniques of elementary <a href="/wiki/Calculus" title="Calculus">calculus</a> but can be evaluated by expressing it as a limit of <a href="/wiki/Contour_integral" class="mw-redirect" title="Contour integral">contour integrals</a>.
+</p><p>Suppose <span class="texhtml"><i>t</i> &gt; 0</span> and define the contour <span class="texhtml mvar" style="font-style:italic;">C</span> that goes along the <a href="/wiki/Real_number" title="Real number">real</a> line from <span class="texhtml">−<i>a</i></span> to <span class="texhtml mvar" style="font-style:italic;">a</span> and then counterclockwise along a semicircle centered at 0 from <span class="texhtml mvar" style="font-style:italic;">a</span> to <span class="texhtml">−<i>a</i></span>. Take <span class="texhtml mvar" style="font-style:italic;">a</span> to be greater than 1, so that the <a href="/wiki/Imaginary_number" title="Imaginary number">imaginary</a> unit <span class="texhtml mvar" style="font-style:italic;">i</span> is enclosed within the curve.  Now consider the contour integral
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{C}{f(z)}\,dz=\int _{C}{\frac {e^{itz}}{z^{2}+1}}\,dz.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>C</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>f</mi>
+          <mo stretchy="false">(</mo>
+          <mi>z</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>C</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+                <mi>t</mi>
+                <mi>z</mi>
+              </mrow>
+            </msup>
+            <mrow>
+              <msup>
+                <mi>z</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{C}{f(z)}\,dz=\int _{C}{\frac {e^{itz}}{z^{2}+1}}\,dz.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3ab4554a28f03c46fc28301e38a0dd95de7fc070" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:26.609ex; height:6.176ex;" alt="{\displaystyle \int _{C}{f(z)}\,dz=\int _{C}{\frac {e^{itz}}{z^{2}+1}}\,dz.}"/></span></dd></dl>
+<p>Since <span class="texhtml"><i>e</i><sup><i>itz</i></sup></span> is an <a href="/wiki/Entire_function" title="Entire function">entire function</a> (having no <a href="/wiki/Mathematical_singularity" class="mw-redirect" title="Mathematical singularity">singularities</a> at any point in the complex plane), this function has singularities only where the denominator <span class="texhtml"><i>z</i><sup>2</sup> + 1</span> is zero. Since <span class="texhtml"><i>z</i><sup>2</sup> + 1 = (<i>z</i> + <i>i</i>)(<i>z</i> − <i>i</i>)</span>, that happens only where <span class="texhtml"><i>z</i> = <i>i</i></span> or <span class="texhtml"><i>z</i> = −<i>i</i></span>. Only one of those points is in the region bounded by this contour. Because <span class="texhtml"><i>f</i>(<i>z</i>)</span> is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}{\frac {e^{itz}}{z^{2}+1}}&amp;={\frac {e^{itz}}{2i}}\left({\frac {1}{z-i}}-{\frac {1}{z+i}}\right)\\&amp;={\frac {e^{itz}}{2i(z-i)}}-{\frac {e^{itz}}{2i(z+i)}},\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <msup>
+                      <mi>e</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>i</mi>
+                        <mi>t</mi>
+                        <mi>z</mi>
+                      </mrow>
+                    </msup>
+                    <mrow>
+                      <msup>
+                        <mi>z</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>2</mn>
+                        </mrow>
+                      </msup>
+                      <mo>+</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <msup>
+                      <mi>e</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>i</mi>
+                        <mi>t</mi>
+                        <mi>z</mi>
+                      </mrow>
+                    </msup>
+                    <mrow>
+                      <mn>2</mn>
+                      <mi>i</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mn>1</mn>
+                        <mrow>
+                          <mi>z</mi>
+                          <mo>&#x2212;<!-- − --></mo>
+                          <mi>i</mi>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mn>1</mn>
+                        <mrow>
+                          <mi>z</mi>
+                          <mo>+</mo>
+                          <mi>i</mi>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <msup>
+                      <mi>e</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>i</mi>
+                        <mi>t</mi>
+                        <mi>z</mi>
+                      </mrow>
+                    </msup>
+                    <mrow>
+                      <mn>2</mn>
+                      <mi>i</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>z</mi>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mi>i</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo>&#x2212;<!-- − --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <msup>
+                      <mi>e</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>i</mi>
+                        <mi>t</mi>
+                        <mi>z</mi>
+                      </mrow>
+                    </msup>
+                    <mrow>
+                      <mn>2</mn>
+                      <mi>i</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>z</mi>
+                      <mo>+</mo>
+                      <mi>i</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}{\frac {e^{itz}}{z^{2}+1}}&amp;={\frac {e^{itz}}{2i}}\left({\frac {1}{z-i}}-{\frac {1}{z+i}}\right)\\&amp;={\frac {e^{itz}}{2i(z-i)}}-{\frac {e^{itz}}{2i(z+i)}},\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b79b933acee9a0cbe36a144fa05e235a214d7551" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -5.838ex; width:33.003ex; height:12.843ex;" alt="{\begin{aligned}{\frac {e^{itz}}{z^{2}+1}}&amp;={\frac {e^{itz}}{2i}}\left({\frac {1}{z-i}}-{\frac {1}{z+i}}\right)\\&amp;={\frac {e^{itz}}{2i(z-i)}}-{\frac {e^{itz}}{2i(z+i)}},\end{aligned}}"/></span></dd></dl>
+<p>the <a href="/wiki/Residue_(complex_analysis)" title="Residue (complex analysis)">residue</a> of <span class="texhtml"><i>f</i>(<i>z</i>)</span> at <span class="texhtml"><i>z</i> = <i>i</i></span> is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \operatorname {Res} \limits _{z=i}f(z)={\frac {e^{-t}}{2i}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>Res</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>z</mi>
+            <mo>=</mo>
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>t</mi>
+              </mrow>
+            </msup>
+            <mrow>
+              <mn>2</mn>
+              <mi>i</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {Res} \limits _{z=i}f(z)={\frac {e^{-t}}{2i}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aa9bfa823d9dce9b019be0969e36338885cba5c0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:18.839ex; height:5.509ex;" alt="{\displaystyle \operatorname {Res} \limits _{z=i}f(z)={\frac {e^{-t}}{2i}}.}"/></span></dd></dl>
+<p>According to the residue theorem, then, we have
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{C}f(z)\,dz=2\pi i\cdot \operatorname {Res} \limits _{z=i}f(z)=2\pi i{\frac {e^{-t}}{2i}}=\pi e^{-t}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>C</mi>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mi>&#x03C0;<!-- π --></mi>
+        <mi>i</mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <msub>
+          <mi>Res</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>z</mi>
+            <mo>=</mo>
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mi>&#x03C0;<!-- π --></mi>
+        <mi>i</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>t</mi>
+              </mrow>
+            </msup>
+            <mrow>
+              <mn>2</mn>
+              <mi>i</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mi>&#x03C0;<!-- π --></mi>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>t</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{C}f(z)\,dz=2\pi i\cdot \operatorname {Res} \limits _{z=i}f(z)=2\pi i{\frac {e^{-t}}{2i}}=\pi e^{-t}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/36d12a8694522e2d74b9fd53ec20617c67474ef1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:47.857ex; height:6.009ex;" alt="{\displaystyle \int _{C}f(z)\,dz=2\pi i\cdot \operatorname {Res} \limits _{z=i}f(z)=2\pi i{\frac {e^{-t}}{2i}}=\pi e^{-t}.}"/></span></dd></dl>
+<p>The contour <span class="texhtml mvar" style="font-style:italic;">C</span> may be split into a straight part and a curved arc, so that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{\mathrm {straight} }f(z)\,dz+\int _{\mathrm {arc} }f(z)\,dz=\pi e^{-t}\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">s</mi>
+              <mi mathvariant="normal">t</mi>
+              <mi mathvariant="normal">r</mi>
+              <mi mathvariant="normal">a</mi>
+              <mi mathvariant="normal">i</mi>
+              <mi mathvariant="normal">g</mi>
+              <mi mathvariant="normal">h</mi>
+              <mi mathvariant="normal">t</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>+</mo>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">a</mi>
+              <mi mathvariant="normal">r</mi>
+              <mi mathvariant="normal">c</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <mi>&#x03C0;<!-- π --></mi>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>t</mi>
+          </mrow>
+        </msup>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{\mathrm {straight} }f(z)\,dz+\int _{\mathrm {arc} }f(z)\,dz=\pi e^{-t}\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/583b2e5c171efdfe02e14d1f171ed41930eefe44" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:36.188ex; height:6.009ex;" alt="\int _{\mathrm {straight} }f(z)\,dz+\int _{\mathrm {arc} }f(z)\,dz=\pi e^{-t}\,"/></span></dd></dl>
+<p>and thus
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{-a}^{a}f(z)\,dz=\pi e^{-t}-\int _{\mathrm {arc} }f(z)\,dz.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>a</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>a</mi>
+          </mrow>
+        </msubsup>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <mi>&#x03C0;<!-- π --></mi>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>t</mi>
+          </mrow>
+        </msup>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">a</mi>
+              <mi mathvariant="normal">r</mi>
+              <mi mathvariant="normal">c</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{-a}^{a}f(z)\,dz=\pi e^{-t}-\int _{\mathrm {arc} }f(z)\,dz.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/deb00671798bfe9925dfc5dc0234055028fedc6d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:33.008ex; height:6.009ex;" alt="\int _{-a}^{a}f(z)\,dz=\pi e^{-t}-\int _{\mathrm {arc} }f(z)\,dz."/></span></dd></dl>
+<p>Using some <a href="/wiki/Estimation_lemma" title="Estimation lemma">estimations</a>, we have
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \left|\int _{\mathrm {arc} }{\frac {e^{itz}}{z^{2}+1}}\,dz\right|\leq \pi a\cdot \sup _{\text{arc}}\left|{\frac {e^{itz}}{z^{2}+1}}\right|\leq \pi a\cdot \sup _{\text{arc}}{\frac {1}{|z^{2}+1|}}\leq {\frac {\pi a}{a^{2}-1}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>|</mo>
+          <mrow>
+            <msub>
+              <mo>&#x222B;<!-- ∫ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">a</mi>
+                  <mi mathvariant="normal">r</mi>
+                  <mi mathvariant="normal">c</mi>
+                </mrow>
+              </mrow>
+            </msub>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <msup>
+                  <mi>e</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                    <mi>t</mi>
+                    <mi>z</mi>
+                  </mrow>
+                </msup>
+                <mrow>
+                  <msup>
+                    <mi>z</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <mspace width="thinmathspace" />
+            <mi>d</mi>
+            <mi>z</mi>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mi>&#x03C0;<!-- π --></mi>
+        <mi>a</mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">sup</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>arc</mtext>
+          </mrow>
+        </munder>
+        <mrow>
+          <mo>|</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <msup>
+                <mi>e</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                  <mi>t</mi>
+                  <mi>z</mi>
+                </mrow>
+              </msup>
+              <mrow>
+                <msup>
+                  <mi>z</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+                <mn>1</mn>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mi>&#x03C0;<!-- π --></mi>
+        <mi>a</mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">sup</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>arc</mtext>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <msup>
+                <mi>z</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>+</mo>
+              <mn>1</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>&#x03C0;<!-- π --></mi>
+              <mi>a</mi>
+            </mrow>
+            <mrow>
+              <msup>
+                <mi>a</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left|\int _{\mathrm {arc} }{\frac {e^{itz}}{z^{2}+1}}\,dz\right|\leq \pi a\cdot \sup _{\text{arc}}\left|{\frac {e^{itz}}{z^{2}+1}}\right|\leq \pi a\cdot \sup _{\text{arc}}{\frac {1}{|z^{2}+1|}}\leq {\frac {\pi a}{a^{2}-1}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7c07d6a27cd521b4ec31c718950458ee62191d02" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:64.955ex; height:6.509ex;" alt="{\displaystyle \left|\int _{\mathrm {arc} }{\frac {e^{itz}}{z^{2}+1}}\,dz\right|\leq \pi a\cdot \sup _{\text{arc}}\left|{\frac {e^{itz}}{z^{2}+1}}\right|\leq \pi a\cdot \sup _{\text{arc}}{\frac {1}{|z^{2}+1|}}\leq {\frac {\pi a}{a^{2}-1}},}"/></span></dd></dl>
+<p>and 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{a\to \infty }{\frac {\pi a}{a^{2}-1}}=0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>a</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>&#x03C0;<!-- π --></mi>
+              <mi>a</mi>
+            </mrow>
+            <mrow>
+              <msup>
+                <mi>a</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{a\to \infty }{\frac {\pi a}{a^{2}-1}}=0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7e9342e489babecc58ae479ae8374530e257f8f2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:16.574ex; height:5.176ex;" alt="{\displaystyle \lim _{a\to \infty }{\frac {\pi a}{a^{2}-1}}=0.}"/></span></dd></dl>
+<p>The estimate on the numerator follows since <span class="texhtml"><i>t</i> &gt; 0</span>, and for complex numbers <span class="texhtml mvar" style="font-style:italic;">z</span> along the arc (which lies in the upper halfplane), the argument <span class="texhtml mvar" style="font-style:italic;">φ</span> of <span class="texhtml mvar" style="font-style:italic;">z</span> lies between 0 and <span class="texhtml">π</span>.  So,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \left|e^{itz}\right|=\left|e^{it|z|(\cos \phi +i\sin \phi )}\right|=\left|e^{-t|z|\sin \phi +it|z|\cos \phi }\right|=e^{-t|z|\sin \phi }\leq 1.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>|</mo>
+          <msup>
+            <mi>e</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>i</mi>
+              <mi>t</mi>
+              <mi>z</mi>
+            </mrow>
+          </msup>
+          <mo>|</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>|</mo>
+          <msup>
+            <mi>e</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>i</mi>
+              <mi>t</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mi>z</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mo stretchy="false">(</mo>
+              <mi>cos</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mi>&#x03D5;<!-- ϕ --></mi>
+              <mo>+</mo>
+              <mi>i</mi>
+              <mi>sin</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mi>&#x03D5;<!-- ϕ --></mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </msup>
+          <mo>|</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>|</mo>
+          <msup>
+            <mi>e</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>t</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mi>z</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mi>sin</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mi>&#x03D5;<!-- ϕ --></mi>
+              <mo>+</mo>
+              <mi>i</mi>
+              <mi>t</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mi>z</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mi>cos</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mi>&#x03D5;<!-- ϕ --></mi>
+            </mrow>
+          </msup>
+          <mo>|</mo>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>t</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo stretchy="false">|</mo>
+            </mrow>
+            <mi>z</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo stretchy="false">|</mo>
+            </mrow>
+            <mi>sin</mi>
+            <mo>&#x2061;<!-- ⁡ --></mo>
+            <mi>&#x03D5;<!-- ϕ --></mi>
+          </mrow>
+        </msup>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mn>1.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left|e^{itz}\right|=\left|e^{it|z|(\cos \phi +i\sin \phi )}\right|=\left|e^{-t|z|\sin \phi +it|z|\cos \phi }\right|=e^{-t|z|\sin \phi }\leq 1.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/da386e7a80cdccc9d89179ea1740e06df95f3f6f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.338ex; width:61.325ex; height:3.843ex;" alt="\left|e^{itz}\right|=\left|e^{it|z|(\cos \phi +i\sin \phi )}\right|=\left|e^{-t|z|\sin \phi +it|z|\cos \phi }\right|=e^{-t|z|\sin \phi }\leq 1."/></span></dd></dl>
+<p>Therefore,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{-\infty }^{\infty }{\frac {e^{itz}}{z^{2}+1}}\,dz=\pi e^{-t}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </msubsup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+                <mi>t</mi>
+                <mi>z</mi>
+              </mrow>
+            </msup>
+            <mrow>
+              <msup>
+                <mi>z</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <mi>&#x03C0;<!-- π --></mi>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>t</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{-\infty }^{\infty }{\frac {e^{itz}}{z^{2}+1}}\,dz=\pi e^{-t}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/080ca8ec036289831e7ef5a145f158d03bbe7e2d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:22.774ex; height:6.343ex;" alt="{\displaystyle \int _{-\infty }^{\infty }{\frac {e^{itz}}{z^{2}+1}}\,dz=\pi e^{-t}.}"/></span></dd></dl>
+<p>If <span class="texhtml"><i>t</i> &lt; 0</span> then a similar argument with an arc <span class="texhtml"><i>C</i><span class="nowrap" style="padding-left:0.1em;">′</span></span> that winds around <span class="texhtml">−<i>i</i></span> rather than <span class="texhtml"><i>i</i></span> shows that
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/File:Contour_example_2.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Contour_example_2.svg/300px-Contour_example_2.svg.png" decoding="async" width="300" height="166" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Contour_example_2.svg/450px-Contour_example_2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Contour_example_2.svg/600px-Contour_example_2.svg.png 2x" data-file-width="182" data-file-height="101" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Contour_example_2.svg" class="internal" title="Enlarge"></a></div>The contour <span class="texhtml"><i>C</i><span class="nowrap" style="padding-left:0.1em;">′</span></span>.</div></div></div>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{-\infty }^{\infty }{\frac {e^{itz}}{z^{2}+1}}\,dz=\pi e^{t},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </msubsup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+                <mi>t</mi>
+                <mi>z</mi>
+              </mrow>
+            </msup>
+            <mrow>
+              <msup>
+                <mi>z</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <mi>&#x03C0;<!-- π --></mi>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>t</mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{-\infty }^{\infty }{\frac {e^{itz}}{z^{2}+1}}\,dz=\pi e^{t},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/62792c970f892f164119679b8ba3983f8450513d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:21.495ex; height:6.343ex;" alt="{\displaystyle \int _{-\infty }^{\infty }{\frac {e^{itz}}{z^{2}+1}}\,dz=\pi e^{t},}"/></span></dd></dl>
+<p>and finally we have
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{-\infty }^{\infty }{\frac {e^{itz}}{z^{2}+1}}\,dz=\pi e^{-\left|t\right|}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </msubsup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+                <mi>t</mi>
+                <mi>z</mi>
+              </mrow>
+            </msup>
+            <mrow>
+              <msup>
+                <mi>z</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <mi>&#x03C0;<!-- π --></mi>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mrow>
+              <mo>|</mo>
+              <mi>t</mi>
+              <mo>|</mo>
+            </mrow>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{-\infty }^{\infty }{\frac {e^{itz}}{z^{2}+1}}\,dz=\pi e^{-\left|t\right|}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a84fc9e615a9733fbe62a80a77c0ebe363e34478" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:23.688ex; height:6.343ex;" alt="{\displaystyle \int _{-\infty }^{\infty }{\frac {e^{itz}}{z^{2}+1}}\,dz=\pi e^{-\left|t\right|}.}"/></span></dd></dl>
+<p>(If <span class="texhtml"><i>t</i> = 0</span> then the integral yields immediately to elementary calculus methods and its value is <span class="texhtml">π</span>.)
+</p>
+<h3><span class="mw-headline" id="An_infinite_sum">An infinite sum</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Residue_theorem&amp;action=edit&amp;section=4" title="Edit section: An infinite sum">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The fact that <span class="texhtml">π cot(π<i>z</i>)</span> has simple poles with residue 1 at each integer can be used to compute the sum
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \displaystyle \sum _{n=-\infty }^{\infty }f(n).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="true" scriptlevel="0">
+          <munderover>
+            <mo>&#x2211;<!-- ∑ --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>n</mi>
+              <mo>=</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+            </mrow>
+          </munderover>
+          <mi>f</mi>
+          <mo stretchy="false">(</mo>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+          <mo>.</mo>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \displaystyle \sum _{n=-\infty }^{\infty }f(n).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/45e0460f0625440f218b57e0e9d35b78a04cddf3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:10.703ex; height:6.843ex;" alt="{\displaystyle \displaystyle \sum _{n=-\infty }^{\infty }f(n).}"/></span></dd></dl>
+<p>Consider, for example, <span class="texhtml"><i>f</i>(<i>z</i>) = <i>z</i><sup>−2</sup></span>. Let <span class="texhtml mvar" style="font-style:italic;">Γ<sub>N</sub></span> be the rectangle that is the boundary of <span class="texhtml">[−<i>N</i> − <span class="sfrac nowrap" style="display:inline-block; vertical-align:-0.5em; font-size:85%; text-align:center;"><span style="display:block; line-height:1em; margin:0 0.1em;">1</span><span class="visualhide">/</span><span style="display:block; line-height:1em; margin:0 0.1em; border-top:1px solid;">2</span></span>, <i>N</i> + <span class="sfrac nowrap" style="display:inline-block; vertical-align:-0.5em; font-size:85%; text-align:center;"><span style="display:block; line-height:1em; margin:0 0.1em;">1</span><span class="visualhide">/</span><span style="display:block; line-height:1em; margin:0 0.1em; border-top:1px solid;">2</span></span>]<sup>2</sup></span> with positive orientation, with an integer <span class="texhtml mvar" style="font-style:italic;">N</span>. By the residue formula,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {1}{2\pi i}}\int _{\Gamma _{N}}f(z)\pi \cot(\pi z)\,dz=\operatorname {Res} \limits _{z=0}+\sum _{n=-N \atop n\neq 0}^{N}n^{-2}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mn>2</mn>
+              <mi>&#x03C0;<!-- π --></mi>
+              <mi>i</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi mathvariant="normal">&#x0393;<!-- Γ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>N</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mi>&#x03C0;<!-- π --></mi>
+        <mi>cot</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03C0;<!-- π --></mi>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <msub>
+          <mi>Res</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>z</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac linethickness="0">
+              <mrow>
+                <mi>n</mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>N</mi>
+              </mrow>
+              <mrow>
+                <mi>n</mi>
+                <mo>&#x2260;<!-- ≠ --></mo>
+                <mn>0</mn>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </munderover>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{2\pi i}}\int _{\Gamma _{N}}f(z)\pi \cot(\pi z)\,dz=\operatorname {Res} \limits _{z=0}+\sum _{n=-N \atop n\neq 0}^{N}n^{-2}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f01c773fd7c0b0b133eacd67a6163a3cad92574a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.671ex; width:46.546ex; height:9.009ex;" alt="{\displaystyle {\frac {1}{2\pi i}}\int _{\Gamma _{N}}f(z)\pi \cot(\pi z)\,dz=\operatorname {Res} \limits _{z=0}+\sum _{n=-N \atop n\neq 0}^{N}n^{-2}.}"/></span></dd></dl>
+<p>The left-hand side goes to zero as <span class="texhtml"><i>N</i> → ∞</span> since the integrand has order <span class="texhtml"><i>O</i>(<i>N</i><sup>−2</sup>)</span>. On the other hand,<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {z}{2}}\cot \left({\frac {z}{2}}\right)=1-B_{2}{\frac {z^{2}}{2!}}+\cdots ;\qquad B_{2}={\frac {1}{6}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>z</mi>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mi>cot</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>z</mi>
+              <mn>2</mn>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>z</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+            <mrow>
+              <mn>2</mn>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mo>&#x22EF;<!-- ⋯ --></mo>
+        <mo>;</mo>
+        <mspace width="2em" />
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>6</mn>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {z}{2}}\cot \left({\frac {z}{2}}\right)=1-B_{2}{\frac {z^{2}}{2!}}+\cdots ;\qquad B_{2}={\frac {1}{6}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a198b2b2b65ddb8d5702f3431165dfb63bccb1b2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:43.352ex; height:5.843ex;" alt="{\displaystyle {\frac {z}{2}}\cot \left({\frac {z}{2}}\right)=1-B_{2}{\frac {z^{2}}{2!}}+\cdots ;\qquad B_{2}={\frac {1}{6}}.}"/></span></dd></dl>
+<p>(In fact, <span class="texhtml"><span class="sfrac nowrap" style="display:inline-block; vertical-align:-0.5em; font-size:85%; text-align:center;"><span style="display:block; line-height:1em; margin:0 0.1em;"><i>z</i></span><span class="visualhide">/</span><span style="display:block; line-height:1em; margin:0 0.1em; border-top:1px solid;">2</span></span> cot(<span class="sfrac nowrap" style="display:inline-block; vertical-align:-0.5em; font-size:85%; text-align:center;"><span style="display:block; line-height:1em; margin:0 0.1em;"><i>z</i></span><span class="visualhide">/</span><span style="display:block; line-height:1em; margin:0 0.1em; border-top:1px solid;">2</span></span>) = <span class="sfrac nowrap" style="display:inline-block; vertical-align:-0.5em; font-size:85%; text-align:center;"><span style="display:block; line-height:1em; margin:0 0.1em;"><i>iz</i></span><span class="visualhide">/</span><span style="display:block; line-height:1em; margin:0 0.1em; border-top:1px solid;">1 − <i>e</i><sup>−<i>iz</i></sup></span></span> − <span class="sfrac nowrap" style="display:inline-block; vertical-align:-0.5em; font-size:85%; text-align:center;"><span style="display:block; line-height:1em; margin:0 0.1em;"><i>iz</i></span><span class="visualhide">/</span><span style="display:block; line-height:1em; margin:0 0.1em; border-top:1px solid;">2</span></span></span>.) Thus, the residue <span class="texhtml"><span class="sfrac nowrap"><span style="display:none;display:inline-block; vertical-align:top; text-align:center;"><span style="display:block;padding:0 0.1em;">Res</span><span style="display:block; font-size:70%; line-height:1em;padding:0 0.1em;"><span style="position:relative; line-height:1em; margin-top:-0.5em; top:-0.5em;"><i>z</i> = 0</span></span></span></span></span> is <span class="texhtml">−<span class="sfrac nowrap" style="display:inline-block; vertical-align:-0.5em; font-size:85%; text-align:center;"><span style="display:block; line-height:1em; margin:0 0.1em;">π<sup>2</sup></span><span class="visualhide">/</span><span style="display:block; line-height:1em; margin:0 0.1em; border-top:1px solid;">3</span></span></span>. We conclude:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum _{n=1}^{\infty }{\frac {1}{n^{2}}}={\frac {\pi ^{2}}{6}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msup>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>&#x03C0;<!-- π --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+            <mn>6</mn>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{n=1}^{\infty }{\frac {1}{n^{2}}}={\frac {\pi ^{2}}{6}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/26a915462f991c41d6da8e006e857aed0ee427cf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:13.35ex; height:6.843ex;" alt="{\displaystyle \sum _{n=1}^{\infty }{\frac {1}{n^{2}}}={\frac {\pi ^{2}}{6}}}"/></span></dd></dl>
+<p>which is a proof of the <a href="/wiki/Basel_problem" title="Basel problem">Basel problem</a>.
+</p><p>The same trick can be used to establish
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \pi \cot(\pi z)=\lim _{N\to \infty }\sum _{n=-N}^{N}(z-n)^{-1},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03C0;<!-- π --></mi>
+        <mi>cot</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03C0;<!-- π --></mi>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>N</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </munderover>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>n</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \pi \cot(\pi z)=\lim _{N\to \infty }\sum _{n=-N}^{N}(z-n)^{-1},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0d8c8585deeb6ac66bb1a65e7f2385965d59fe11" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:32.394ex; height:7.509ex;" alt="{\displaystyle \pi \cot(\pi z)=\lim _{N\to \infty }\sum _{n=-N}^{N}(z-n)^{-1},}"/></span></dd></dl>
+<p>that is, the <a href="/wiki/Eisenstein_series" title="Eisenstein series">Eisenstein series</a>.
+</p><p>We take <span class="texhtml"><i>f</i>(<i>z</i>) = (<i>w</i> − <i>z</i>)<sup>−1</sup></span> with <span class="texhtml mvar" style="font-style:italic;">w</span> a non-integer and we shall show the above for <span class="texhtml mvar" style="font-style:italic;">w</span>. The difficulty in this case is to show the vanishing of the contour integral at infinity. We have:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{\Gamma _{N}}{\frac {\pi \cot(\pi z)}{z}}\,dz=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi mathvariant="normal">&#x0393;<!-- Γ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>N</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>&#x03C0;<!-- π --></mi>
+              <mi>cot</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mo stretchy="false">(</mo>
+              <mi>&#x03C0;<!-- π --></mi>
+              <mi>z</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mi>z</mi>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{\Gamma _{N}}{\frac {\pi \cot(\pi z)}{z}}\,dz=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/545fdab43d2ce3e769d329570f39a9a2476d0ba7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:21.124ex; height:6.509ex;" alt="{\displaystyle \int _{\Gamma _{N}}{\frac {\pi \cot(\pi z)}{z}}\,dz=0}"/></span></dd></dl>
+<p>since the integrand is an even function and so the contributions from the contour in the left-half plane and the contour in the right cancel each other out. Thus,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{\Gamma _{N}}f(z)\pi \cot(\pi z)\,dz=\int _{\Gamma _{N}}\left({\frac {1}{w-z}}+{\frac {1}{z}}\right)\pi \cot(\pi z)\,dz}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi mathvariant="normal">&#x0393;<!-- Γ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>N</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mi>&#x03C0;<!-- π --></mi>
+        <mi>cot</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03C0;<!-- π --></mi>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi mathvariant="normal">&#x0393;<!-- Γ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>N</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mrow>
+                  <mi>w</mi>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mi>z</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mi>z</mi>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mi>&#x03C0;<!-- π --></mi>
+        <mi>cot</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03C0;<!-- π --></mi>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{\Gamma _{N}}f(z)\pi \cot(\pi z)\,dz=\int _{\Gamma _{N}}\left({\frac {1}{w-z}}+{\frac {1}{z}}\right)\pi \cot(\pi z)\,dz}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0f337f19c55f5be4ee43806483a1617cb801ac95" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:54.405ex; height:6.343ex;" alt="{\displaystyle \int _{\Gamma _{N}}f(z)\pi \cot(\pi z)\,dz=\int _{\Gamma _{N}}\left({\frac {1}{w-z}}+{\frac {1}{z}}\right)\pi \cot(\pi z)\,dz}"/></span></dd></dl>
+<p>goes to zero as <span class="texhtml"><i>N</i> → ∞</span>.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Residue_theorem&amp;action=edit&amp;section=5" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Cauchy%27s_integral_formula" title="Cauchy&#39;s integral formula">Cauchy's integral formula</a></li>
+<li><a href="/wiki/Glasser%27s_master_theorem" title="Glasser&#39;s master theorem">Glasser's master theorem</a></li>
+<li><a href="/wiki/Jordan%27s_lemma" title="Jordan&#39;s lemma">Jordan's lemma</a></li>
+<li><a href="/wiki/Methods_of_contour_integration" class="mw-redirect" title="Methods of contour integration">Methods of contour integration</a></li>
+<li><a href="/wiki/Morera%27s_theorem" title="Morera&#39;s theorem">Morera's theorem</a></li>
+<li><a href="/wiki/Nachbin%27s_theorem" title="Nachbin&#39;s theorem">Nachbin's theorem</a></li>
+<li><a href="/wiki/Residue_at_infinity" title="Residue at infinity">Residue at infinity</a></li>
+<li><a href="/wiki/Logarithmic_form" title="Logarithmic form">Logarithmic form</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Residue_theorem&amp;action=edit&amp;section=6" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation book"><a href="/wiki/E._T._Whittaker" title="E. T. Whittaker">Whittaker, E. T.</a>; <a href="/wiki/G._N._Watson" title="G. N. Watson">Watson, G. N.</a> (1902). <i><a href="/wiki/A_Course_of_Modern_Analysis" title="A Course of Modern Analysis">A Course of Modern Analysis</a></i>. Cambridge University Press. § 7.2.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=A+Course+of+Modern+Analysis&amp;rft.pages=%C2%A7+7.2&amp;rft.pub=Cambridge+University+Press&amp;rft.date=1902&amp;rft.aulast=Whittaker&amp;rft.aufirst=E.+T.&amp;rft.au=Watson%2C+G.+N.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AResidue+theorem" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></span>
+</li>
+</ol></div></div>
+<style data-mw-deduplicate="TemplateStyles:r886047268">.mw-parser-output .refbegin{font-size:90%;margin-bottom:0.5em}.mw-parser-output .refbegin-hanging-indents>ul{list-style-type:none;margin-left:0}.mw-parser-output .refbegin-hanging-indents>ul>li,.mw-parser-output .refbegin-hanging-indents>dl>dd{margin-left:0;padding-left:3.2em;text-indent:-3.2em;list-style:none}.mw-parser-output .refbegin-100{font-size:100%}</style><div class="refbegin" style="">
+<ul><li><cite id="CITEREFAhlfors1979" class="citation"><a href="/wiki/Lars_Ahlfors" title="Lars Ahlfors">Ahlfors, Lars</a> (1979), <i>Complex Analysis</i>, McGraw Hill, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-07-085008-9" title="Special:BookSources/0-07-085008-9"><bdi>0-07-085008-9</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Complex+Analysis&amp;rft.pub=McGraw+Hill&amp;rft.date=1979&amp;rft.isbn=0-07-085008-9&amp;rft.aulast=Ahlfors&amp;rft.aufirst=Lars&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AResidue+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFMitronivićKečkić1984" class="citation">Mitronivić, Dragoslav; Kečkić, Jovan (1984), <i>The Cauchy method of residues: Theory and applications</i>, D. Reidel Publishing Company, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/90-277-1623-4" title="Special:BookSources/90-277-1623-4"><bdi>90-277-1623-4</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Cauchy+method+of+residues%3A+Theory+and+applications&amp;rft.pub=D.+Reidel+Publishing+Company&amp;rft.date=1984&amp;rft.isbn=90-277-1623-4&amp;rft.aulast=Mitronivi%C4%87&amp;rft.aufirst=Dragoslav&amp;rft.au=Ke%C4%8Dki%C4%87%2C+Jovan&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AResidue+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFLindelöf1905" class="citation"><a href="/wiki/Ernst_Leonard_Lindel%C3%B6f" title="Ernst Leonard Lindelöf">Lindelöf, Ernst</a> (1905), <i>Le calcul des résidus et ses applications à la théorie des fonctions</i>, Editions Jacques Gabay (published 1989), <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/2-87647-060-8" title="Special:BookSources/2-87647-060-8"><bdi>2-87647-060-8</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Le+calcul+des+r%C3%A9sidus+et+ses+applications+%C3%A0+la+th%C3%A9orie+des+fonctions&amp;rft.pub=Editions+Jacques+Gabay&amp;rft.date=1905&amp;rft.isbn=2-87647-060-8&amp;rft.aulast=Lindel%C3%B6f&amp;rft.aufirst=Ernst&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AResidue+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li></ul>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Residue_theorem&amp;action=edit&amp;section=7" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><cite id="CITEREFHazewinkel2001" class="citation"><a href="/wiki/Michiel_Hazewinkel" title="Michiel Hazewinkel">Hazewinkel, Michiel</a>, ed. (2001) [1994], <a rel="nofollow" class="external text" href="https://www.encyclopediaofmath.org/index.php?title=p/c020900">"Cauchy integral theorem"</a>, <i><a href="/wiki/Encyclopedia_of_Mathematics" title="Encyclopedia of Mathematics">Encyclopedia of Mathematics</a></i>, Springer Science+Business Media B.V. / Kluwer Academic Publishers, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-55608-010-4" title="Special:BookSources/978-1-55608-010-4"><bdi>978-1-55608-010-4</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Cauchy+integral+theorem&amp;rft.btitle=Encyclopedia+of+Mathematics&amp;rft.pub=Springer+Science%2BBusiness+Media+B.V.+%2F+Kluwer+Academic+Publishers&amp;rft.date=2001&amp;rft.isbn=978-1-55608-010-4&amp;rft_id=https%3A%2F%2Fwww.encyclopediaofmath.org%2Findex.php%3Ftitle%3Dp%2Fc020900&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AResidue+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><a rel="nofollow" class="external text" href="http://mathworld.wolfram.com/ResidueTheorem.html">Residue theorem</a> in <a href="/wiki/MathWorld" title="MathWorld">MathWorld</a></li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1328
+Cached time: 20190803084331
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.296 seconds
+Real time usage: 0.402 seconds
+Preprocessor visited node count: 2022/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 26959/2097152 bytes
+Template argument size: 4249/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 1/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 11506/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.108/10.000 seconds
+Lua memory usage: 2.74 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  247.957      1 -total
+ 39.77%   98.619      1 Template:Reflist
+ 34.71%   86.073      1 Template:Cite_book
+ 20.68%   51.274     57 Template:Math
+ 16.37%   40.583      1 Template:Complex_analysis_sidebar
+ 10.08%   24.996      4 Template:Citation
+  6.96%   17.269      2 Template:Prime
+  5.91%   14.655      7 Template:Sfrac
+  5.15%   12.766      1 Template:Portal-inline
+  5.06%   12.547      2 Template:Italics_correction/calc
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:73390-0!canonical!math=5 and timestamp 20190803084330 and revision id 895353981
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Residue_theorem&amp;oldid=895353981">https://en.wikipedia.org/w/index.php?title=Residue_theorem&amp;oldid=895353981</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Theorems_in_complex_analysis" title="Category:Theorems in complex analysis">Theorems in complex analysis</a></li><li><a href="/wiki/Category:Analytic_functions" title="Category:Analytic functions">Analytic functions</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Residue+theorem" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Residue+theorem" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Residue_theorem" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Residue_theorem" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Residue_theorem">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Residue_theorem&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Residue_theorem&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Residue_theorem" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Residue_theorem" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Residue_theorem&amp;oldid=895353981" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Residue_theorem&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q830513" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Residue_theorem&amp;id=895353981" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Residue+theorem">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Residue+theorem&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Residue_theorem&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Residuensatz" title="Residuensatz – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Teorema_de_los_residuos" title="Teorema de los residuos – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%82%D8%B6%DB%8C%D9%87_%D9%85%D8%A7%D9%86%D8%AF%D9%87" title="قضیه مانده – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_des_r%C3%A9sidus" title="Théorème des résidus – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-hi"><a href="https://hi.wikipedia.org/wiki/%E0%A4%85%E0%A4%B5%E0%A4%B6%E0%A5%87%E0%A4%B7_%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AE%E0%A5%87%E0%A4%AF" title="अवशेष प्रमेय – Hindi" lang="hi" hreflang="hi" class="interlanguage-link-target">हिन्दी</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Teorema_dei_residui" title="Teorema dei residui – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%A4%D7%98_%D7%94%D7%A9%D7%90%D7%A8%D7%99%D7%95%D7%AA" title="משפט השאריות – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-kk"><a href="https://kk.wikipedia.org/wiki/%D2%9A%D0%B0%D0%BB%D1%8B%D0%BD%D0%B4%D1%8B_%D1%82%D1%83%D1%80%D0%B0%D0%BB%D1%8B_%D0%BD%D0%B5%D0%B3%D1%96%D0%B7%D0%B3%D1%96_%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0" title="Қалынды туралы негізгі теорема – Kazakh" lang="kk" hreflang="kk" class="interlanguage-link-target">Қазақша</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/Reziduumt%C3%A9tel" title="Reziduumtétel – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Residustelling" title="Residustelling – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Twierdzenie_o_residuach" title="Twierdzenie o residuach – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Teorema_dos_res%C3%ADduos" title="Teorema dos resíduos – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0%D1%8F_%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%BE_%D0%B2%D1%8B%D1%87%D0%B5%D1%82%D0%B0%D1%85" title="Основная теорема о вычетах – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/%D0%9A%D0%BE%D1%88%D0%B8%D1%98%D0%B5%D0%B2%D0%B0_%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%BE_%D1%80%D0%B5%D0%B7%D0%B8%D0%B4%D1%83%D0%BC%D1%83" title="Кошијева теорема о резидуму – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Residylause" title="Residylause – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Residysatsen" title="Residysatsen – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Kal%C4%B1nt%C4%B1_teoremi" title="Kalıntı teoremi – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0_%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%BF%D1%80%D0%BE_%D0%BB%D0%B8%D1%88%D0%BA%D0%B8" title="Основна теорема про лишки – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E7%95%99%E6%95%B0%E5%AE%9A%E7%90%86" title="留数定理 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q830513#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 3 May 2019, at 17:35<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Residue_theorem&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.296","walltime":"0.402","ppvisitednodes":{"value":2022,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":26959,"limit":2097152},"templateargumentsize":{"value":4249,"limit":2097152},"expansiondepth":{"value":7,"limit":40},"expensivefunctioncount":{"value":1,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":11506,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  247.957      1 -total"," 39.77%   98.619      1 Template:Reflist"," 34.71%   86.073      1 Template:Cite_book"," 20.68%   51.274     57 Template:Math"," 16.37%   40.583      1 Template:Complex_analysis_sidebar"," 10.08%   24.996      4 Template:Citation","  6.96%   17.269      2 Template:Prime","  5.91%   14.655      7 Template:Sfrac","  5.15%   12.766      1 Template:Portal-inline","  5.06%   12.547      2 Template:Italics_correction/calc"]},"scribunto":{"limitreport-timeusage":{"value":"0.108","limit":"10.000"},"limitreport-memusage":{"value":2876882,"limit":52428800},"limitreport-logs":"table#1 {\n  [\"size\"] = \"tiny\",\n}\n"},"cachereport":{"origin":"mw1328","timestamp":"20190803084331","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Residue theorem","url":"https:\/\/en.wikipedia.org\/wiki\/Residue_theorem","sameAs":"http:\/\/www.wikidata.org\/entity\/Q830513","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q830513","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-08-19T19:05:43Z","dateModified":"2019-05-03T17:35:26Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/3\/33\/Gamma_abs_3D.png","headline":"the theorem that complex contour integrals are simply the sums of residues of singularities contained within the contour"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":116,"wgHostname":"mw1330"});});</script>
+</body>
+</html>

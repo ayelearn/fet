@@ -1,0 +1,1 @@
+maximum_and_minimum_temperature_and_fog

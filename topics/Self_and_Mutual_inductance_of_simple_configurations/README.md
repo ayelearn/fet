@@ -1,0 +1,1 @@
+Self_and_Mutual_inductance_of_simple_configurations

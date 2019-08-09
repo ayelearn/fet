@@ -1,0 +1,2184 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Ampère's circuital law - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Ampère's_circuital_law","wgTitle":"Ampère's circuital law","wgCurRevisionId":908639836,"wgRevisionId":908639836,"wgArticleId":199304,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Electrostatics","Magnetostatics","Maxwell's equations"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Ampère's_circuital_law",
+"wgRelevantArticleId":199304,"wgRequestId":"XUu4pQpAICAAAKYJXF8AAAAI","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Amperes_Law","wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgInternalRedirectTargetUrl":"/wiki/Amp%C3%A8re%27s_circuital_law","wgWikibaseItemId":"Q51500","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready",
+"site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","ext.cite.ux-enhancements","ext.math.scripts","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher",
+"ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/VFPt_Solenoid_correct2.svg/1200px-VFPt_Solenoid_correct2.svg.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Amp%C3%A8re%27s_circuital_law"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Amp%C3%A8re%27s_circuital_law"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Ampère_s_circuital_law rootpage-Ampère_s_circuital_law skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Ampère's circuital law</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"><span class="mw-redirectedfrom">&#160;&#160;(Redirected from <a href="/w/index.php?title=Amperes_Law&amp;redirect=no" class="mw-redirect" title="Amperes Law">Amperes Law</a>)</span></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div role="note" class="hatnote navigation-not-searchable">"Ampère's law" redirects here. For the law describing forces between current-carrying wires, see <a href="/wiki/Amp%C3%A8re%27s_force_law" title="Ampère&#39;s force law">Ampère's force law</a>.</div>
+<table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%"><tbody><tr><td style="padding-top:0.4em;line-height:1.2em">Part of a series of articles about</td></tr><tr><th style="padding:0.2em 0.4em 0.2em;padding-top:0;font-size:145%;line-height:1.2em"><a href="/wiki/Electromagnetism" title="Electromagnetism">Electromagnetism</a></th></tr><tr><td style="padding:0.2em 0 0.4em"><a href="/wiki/File:VFPt_Solenoid_correct2.svg" class="image" title="Solenoid"><img alt="Solenoid" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0d/VFPt_Solenoid_correct2.svg/190px-VFPt_Solenoid_correct2.svg.png" decoding="async" width="190" height="78" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/0d/VFPt_Solenoid_correct2.svg/285px-VFPt_Solenoid_correct2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/0d/VFPt_Solenoid_correct2.svg/380px-VFPt_Solenoid_correct2.svg.png 2x" data-file-width="490" data-file-height="200" /></a></td></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Electricity" title="Electricity">Electricity</a></li>
+<li><a href="/wiki/Magnetism" title="Magnetism">Magnetism</a></li></ul></td>
+</tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left"><a href="/wiki/Electrostatics" title="Electrostatics">Electrostatics</a></div><div class="NavContent hlist" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center">
+<ul><li><a href="/wiki/Electrical_conductor" title="Electrical conductor">Conductor</a></li>
+<li><a href="/wiki/Coulomb%27s_law" title="Coulomb&#39;s law">Coulomb's law</a></li>
+<li><a href="/wiki/Electric_charge" title="Electric charge">Electric charge</a></li>
+<li><a href="/wiki/Electric_dipole_moment" title="Electric dipole moment">Electric dipole moment</a></li>
+<li><a href="/wiki/Electric_field" title="Electric field">Electric field</a></li>
+<li><a href="/wiki/Electric_flux" title="Electric flux">Electric flux</a>&#160;/&#32;<a href="/wiki/Electric_potential_energy" title="Electric potential energy">potential energy</a></li>
+<li><a href="/wiki/Electrostatic_discharge" title="Electrostatic discharge">Electrostatic discharge</a></li>
+<li><a href="/wiki/Gauss%27s_law" title="Gauss&#39;s law">Gauss's law</a></li>
+<li><a href="/wiki/Electrostatic_induction" title="Electrostatic induction">Induction</a></li>
+<li><a href="/wiki/Insulator_(electricity)" title="Insulator (electricity)">Insulator</a></li>
+<li><a href="/wiki/Polarization_density" title="Polarization density">Polarization density</a></li>
+<li><a href="/wiki/Static_electricity" title="Static electricity">Static electricity</a></li>
+<li><a href="/wiki/Triboelectric_effect" title="Triboelectric effect">Triboelectricity</a></li></ul></div></div></td>
+</tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<div class="NavFrame" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left"><a href="/wiki/Magnetostatics" title="Magnetostatics">Magnetostatics</a></div><div class="NavContent hlist" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center">
+<ul><li><a class="mw-selflink selflink">Ampère's law</a></li>
+<li><a href="/wiki/Biot%E2%80%93Savart_law" title="Biot–Savart law">Biot–Savart law</a></li>
+<li><a href="/wiki/Gauss%27s_law_for_magnetism" title="Gauss&#39;s law for magnetism">Gauss's law for magnetism</a></li>
+<li><a href="/wiki/Magnetic_field" title="Magnetic field">Magnetic field</a></li>
+<li><a href="/wiki/Magnetic_flux" title="Magnetic flux">Magnetic flux</a></li>
+<li><a href="/wiki/Magnetic_moment" title="Magnetic moment">Magnetic dipole moment</a></li>
+<li><a href="/wiki/Magnetization" title="Magnetization">Magnetization</a></li>
+<li><a href="/wiki/Magnetomotive_force" title="Magnetomotive force">Magnetomotive force</a></li></ul></div></div></td>
+</tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left"><a href="/wiki/Classical_electromagnetism" title="Classical electromagnetism">Electrodynamics</a></div><div class="NavContent hlist" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center">
+<ul><li><a href="/wiki/Lorentz_force" title="Lorentz force">Lorentz force law</a></li>
+<li><a href="/wiki/Electromagnetic_induction" title="Electromagnetic induction">Electromagnetic induction</a></li>
+<li><a href="/wiki/Faraday%27s_law_of_induction" title="Faraday&#39;s law of induction">Faraday's law</a></li>
+<li><a href="/wiki/Lenz%27s_law" title="Lenz&#39;s law">Lenz's law</a></li>
+<li><a href="/wiki/Displacement_current" title="Displacement current">Displacement current</a></li>
+<li><a href="/wiki/Magnetic_potential" title="Magnetic potential">Magnetic potential</a></li>
+<li><a href="/wiki/Maxwell%27s_equations" title="Maxwell&#39;s equations">Maxwell's equations</a></li>
+<li><a href="/wiki/Electromagnetic_field" title="Electromagnetic field">Electromagnetic field</a></li>
+<li><a href="/wiki/Electromagnetic_pulse" title="Electromagnetic pulse">Electromagnetic pulse</a></li>
+<li><a href="/wiki/Electromagnetic_radiation" title="Electromagnetic radiation">Electromagnetic radiation</a></li>
+<li><a href="/wiki/Maxwell_stress_tensor" title="Maxwell stress tensor">Maxwell tensor</a></li>
+<li><a href="/wiki/Poynting_vector" title="Poynting vector">Poynting vector</a></li>
+<li><a href="/wiki/Li%C3%A9nard%E2%80%93Wiechert_potential" title="Liénard–Wiechert potential">Liénard–Wiechert potential</a></li>
+<li><a href="/wiki/Jefimenko%27s_equations" title="Jefimenko&#39;s equations">Jefimenko's equations</a></li>
+<li><a href="/wiki/Eddy_current" title="Eddy current">Eddy current</a></li>
+<li><a href="/wiki/London_equations" title="London equations">London equations</a></li></ul>
+<ul><li><div style="padding:0.2em 0.4em; line-height:1.2em;"><a href="/wiki/Mathematical_descriptions_of_the_electromagnetic_field" title="Mathematical descriptions of the electromagnetic field">Mathematical descriptions of the electromagnetic field</a></div></li></ul></div></div></td>
+</tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left"><a href="/wiki/Electrical_network" title="Electrical network">Electrical network</a></div><div class="NavContent hlist" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center">
+<ul><li><a href="/wiki/Alternating_current" title="Alternating current">Alternating current</a></li>
+<li><a href="/wiki/Capacitance" title="Capacitance">Capacitance</a></li>
+<li><a href="/wiki/Direct_current" title="Direct current">Direct current</a></li>
+<li><a href="/wiki/Electric_current" title="Electric current">Electric current</a></li>
+<li><a href="/wiki/Electric_potential" title="Electric potential">Electric potential</a></li>
+<li><a href="/wiki/Electromotive_force" title="Electromotive force">Electromotive force</a></li>
+<li><a href="/wiki/Electrical_impedance" title="Electrical impedance">Impedance</a></li>
+<li><a href="/wiki/Inductance" title="Inductance">Inductance</a></li>
+<li><a href="/wiki/Ohm%27s_law" title="Ohm&#39;s law">Ohm's law</a></li>
+<li><a href="/wiki/Series_and_parallel_circuits#Parallel_circuits" title="Series and parallel circuits">Parallel circuit</a></li>
+<li><a href="/wiki/Electrical_resistance_and_conductance" title="Electrical resistance and conductance">Resistance</a></li>
+<li><a href="/wiki/Resonator#Electromagnetic" title="Resonator">Resonant cavities</a></li>
+<li><a href="/wiki/Series_and_parallel_circuits#Series_circuits" title="Series and parallel circuits">Series circuit</a></li>
+<li><a href="/wiki/Voltage" title="Voltage">Voltage</a></li>
+<li><a href="/wiki/Waveguide_(electromagnetism)" title="Waveguide (electromagnetism)">Waveguides</a></li></ul></div></div></td>
+</tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left"><a href="/wiki/Covariant_formulation_of_classical_electromagnetism" title="Covariant formulation of classical electromagnetism">Covariant formulation</a></div><div class="NavContent hlist" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center">
+<ul><li><div style="padding:0.2em 0.4em; line-height:1.2em;"><a href="/wiki/Electromagnetic_tensor" title="Electromagnetic tensor">Electromagnetic tensor</a><br />(<a href="/wiki/Electromagnetic_stress%E2%80%93energy_tensor" title="Electromagnetic stress–energy tensor">stress–energy tensor</a>)</div></li></ul>
+<ul><li><a href="/wiki/Four-current" title="Four-current">Four-current</a></li>
+<li><a href="/wiki/Electromagnetic_four-potential" title="Electromagnetic four-potential">Electromagnetic four-potential</a></li></ul></div></div></td>
+</tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left">Scientists</div><div class="NavContent hlist" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center">
+<ul><li><a href="/wiki/Andr%C3%A9-Marie_Amp%C3%A8re" title="André-Marie Ampère">Ampère</a></li>
+<li><a href="/wiki/Jean-Baptiste_Biot" title="Jean-Baptiste Biot">Biot</a></li>
+<li><a href="/wiki/Charles-Augustin_de_Coulomb" title="Charles-Augustin de Coulomb">Coulomb</a></li>
+<li><a href="/wiki/Michael_Faraday" title="Michael Faraday">Faraday</a></li>
+<li><a href="/wiki/Carl_Friedrich_Gauss" title="Carl Friedrich Gauss">Gauss</a></li>
+<li><a href="/wiki/Oliver_Heaviside" title="Oliver Heaviside">Heaviside</a></li>
+<li><a href="/wiki/Joseph_Henry" title="Joseph Henry">Henry</a></li>
+<li><a href="/wiki/Heinrich_Hertz" title="Heinrich Hertz">Hertz</a></li>
+<li><a href="/wiki/Emil_Lenz" title="Emil Lenz">Lenz</a></li>
+<li><a href="/wiki/Hendrik_Lorentz" title="Hendrik Lorentz">Lorentz</a></li>
+<li><a href="/wiki/James_Clerk_Maxwell" title="James Clerk Maxwell">Maxwell</a></li>
+<li><a href="/wiki/Hans_Christian_%C3%98rsted" title="Hans Christian Ørsted">Ørsted</a></li>
+<li><a href="/wiki/F%C3%A9lix_Savart" title="Félix Savart">Savart</a></li>
+<li><a href="/wiki/Nikola_Tesla" title="Nikola Tesla">Tesla</a></li>
+<li><a href="/wiki/Alessandro_Volta" title="Alessandro Volta">Volta</a></li>
+<li><a href="/wiki/Wilhelm_Eduard_Weber" title="Wilhelm Eduard Weber">Weber</a></li>
+<li class="mw-empty-elt"></li></ul></div></div></td>
+</tr><tr><td style="text-align:right;font-size:115%;padding-top: 0.6em;"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="/wiki/Template:Electromagnetism" title="Template:Electromagnetism"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Electromagnetism" title="Template talk:Electromagnetism"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Electromagnetism&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p>In <a href="/wiki/Classical_electromagnetism" title="Classical electromagnetism">classical electromagnetism</a>, <b>Ampère's circuital law</b> (not to be confused with <a href="/wiki/Amp%C3%A8re%27s_force_law" title="Ampère&#39;s force law">Ampère's force law</a> that <a href="/wiki/Andr%C3%A9-Marie_Amp%C3%A8re" title="André-Marie Ampère">André-Marie Ampère</a> discovered in 1823)<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> relates the <a href="/wiki/Line_integral" title="Line integral">integrated</a> <a href="/wiki/Magnetic_field" title="Magnetic field">magnetic field</a> around a closed loop to the <a href="/wiki/Electric_current" title="Electric current">electric current</a> passing through the loop. <a href="/wiki/James_Clerk_Maxwell" title="James Clerk Maxwell">James Clerk Maxwell</a> (not Ampère) derived it using <a href="/wiki/Fluid_dynamics" title="Fluid dynamics">hydrodynamics</a> in his 1861 paper "<a href="/wiki/File:On_Physical_Lines_of_Force.pdf" title="File:On Physical Lines of Force.pdf">On Physical Lines of Force</a>"<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> and it is now one of the <a href="/wiki/Maxwell_equations" class="mw-redirect" title="Maxwell equations">Maxwell equations</a>, which form the basis of <a href="/wiki/Classical_physics" title="Classical physics">classical</a> <a href="/wiki/Electromagnetism" title="Electromagnetism">electromagnetism</a>.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Maxwell&#39;s_original_circuital_law"><span class="tocnumber">1</span> <span class="toctext">Maxwell's original circuital law</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Equivalent_forms"><span class="tocnumber">1.1</span> <span class="toctext">Equivalent forms</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Explanation"><span class="tocnumber">1.2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Ambiguities_and_sign_conventions"><span class="tocnumber">1.3</span> <span class="toctext">Ambiguities and sign conventions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Free_current_versus_bound_current"><span class="tocnumber">2</span> <span class="toctext">Free current versus bound current</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Shortcomings_of_the_original_formulation_of_the_circuital_law"><span class="tocnumber">3</span> <span class="toctext">Shortcomings of the original formulation of the circuital law</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Displacement_current"><span class="tocnumber">3.1</span> <span class="toctext">Displacement current</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Extending_the_original_law:_the_Maxwell–Ampère_equation"><span class="tocnumber">4</span> <span class="toctext">Extending the original law: the Maxwell–Ampère equation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Proof_of_equivalence"><span class="tocnumber">4.1</span> <span class="toctext">Proof of equivalence</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Ampère&#39;s_circuital_law_in_cgs_units"><span class="tocnumber">5</span> <span class="toctext">Ampère's circuital law in cgs units</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Notes"><span class="tocnumber">7</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Further_reading"><span class="tocnumber">8</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span id="Maxwell.27s_original_circuital_law"></span><span class="mw-headline" id="Maxwell's_original_circuital_law">Maxwell's original circuital law</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;action=edit&amp;section=1" title="Edit section: Maxwell&#039;s original circuital law">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The original form of Maxwell's circuital law, which he derived in his 1855 paper "On Faraday's Lines of Force"<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup> based on an analogy to hydrodynamics, relates <a href="/wiki/Magnetic_fields" class="mw-redirect" title="Magnetic fields">magnetic fields</a> to <a href="/wiki/Electric_currents" class="mw-redirect" title="Electric currents">electric currents</a> that produce them. It determines the magnetic field associated with a given current, or the current associated with a given magnetic field.
+</p><p>The original circuital law is only a correct law of physics in a <a href="/wiki/Magnetostatics" title="Magnetostatics">magnetostatic</a> situation, where the system is static except possibly for continuous steady currents within closed loops. For systems with electric fields that change over time, the original law (as given in this section) must be modified to include a term known as Maxwell's correction (see below).
+</p>
+<h3><span class="mw-headline" id="Equivalent_forms">Equivalent forms</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;action=edit&amp;section=2" title="Edit section: Equivalent forms">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The original circuital law can be written in several different forms, which are all ultimately equivalent:
+</p>
+<ul><li>An "integral form" and a "differential form". The forms are exactly equivalent, and related by the <a href="/wiki/Kelvin%E2%80%93Stokes_theorem" title="Kelvin–Stokes theorem">Kelvin–Stokes theorem</a>.(see the "<a href="#Proof_of_equivalence">proof</a>" section below)</li>
+<li>Forms using <a href="/wiki/SI_units" class="mw-redirect" title="SI units">SI units</a>, and those using <a href="/wiki/Cgs_units" class="mw-redirect" title="Cgs units">cgs units</a>. Other units are possible, but rare. This section will use SI units, with cgs units discussed later.</li>
+<li>Forms using either <a href="/wiki/Magnetic_field" title="Magnetic field"><span class="texhtml"><b>B</b></span> or <span class="texhtml"><b>H</b></span> magnetic fields</a>. These two forms use the total current density and free current density, respectively. The <span class="texhtml"><b>B</b></span> and <span class="texhtml"><b>H</b></span> fields are related by the <a href="/wiki/Constitutive_equation" title="Constitutive equation">constitutive equation</a>: <span class="texhtml"><b>B</b> = <i>μ</i><sub>0</sub><b>H</b></span> where <span class="texhtml"><i>μ</i><sub>0</sub></span> is the <a href="/wiki/Magnetic_constant" class="mw-redirect" title="Magnetic constant">magnetic constant</a>.</li></ul>
+<h3><span class="mw-headline" id="Explanation">Explanation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;action=edit&amp;section=3" title="Edit section: Explanation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The integral form of the original circuital law is a <a href="/wiki/Line_integral" title="Line integral">line integral</a> of the <a href="/wiki/Magnetic_field" title="Magnetic field">magnetic field</a> around some <a href="/wiki/Closed_curve" class="mw-redirect" title="Closed curve">closed curve</a> <span class="texhtml mvar" style="font-style:italic;">C</span> (arbitrary but must be closed). The curve <span class="texhtml mvar" style="font-style:italic;">C</span> in turn bounds both a <a href="/wiki/Surface_(topology)" title="Surface (topology)">surface</a> <span class="texhtml mvar" style="font-style:italic;">S</span> which the <a href="/wiki/Electric_current" title="Electric current">electric current</a> passes through (again arbitrary but not closed—since no <a href="/wiki/Three-dimensional_space" title="Three-dimensional space">three-dimensional</a> <a href="/wiki/Volume" title="Volume">volume</a> is enclosed by <span class="texhtml mvar" style="font-style:italic;">S</span>), and encloses the current. The mathematical statement of the law is a relation between the total amount of magnetic field around some path (line integral) due to the current which passes through that enclosed path (surface integral).<sup id="cite_ref-Knoepfel_4-0" class="reference"><a href="#cite_note-Knoepfel-4">&#91;4&#93;</a></sup><sup id="cite_ref-Owen_5-0" class="reference"><a href="#cite_note-Owen-5">&#91;5&#93;</a></sup>
+</p><p>In terms of total <a href="/wiki/Electric_current" title="Electric current">current</a>, (which is the sum of both free current and bound current) the line integral of the <a href="/wiki/Magnetic_field" title="Magnetic field">magnetic <span class="texhtml"><b>B</b></span>-field</a> (in <a href="/wiki/Tesla_(unit)" title="Tesla (unit)">teslas</a>, T) around closed curve <span class="texhtml mvar" style="font-style:italic;">C</span> is proportional to the total current <span class="texhtml"><i>I</i><sub>enc</sub></span> passing through a surface <span class="texhtml mvar" style="font-style:italic;">S</span> (enclosed by <span class="texhtml mvar" style="font-style:italic;">C</span>). In terms of free current, the line integral of the <a href="/wiki/Magnetic_field" title="Magnetic field">magnetic <span class="texhtml"><b>H</b></span>-field</a> (in <a href="/wiki/Ampere" title="Ampere">amperes</a> per <a href="/wiki/Metre" title="Metre">metre</a>, A·m<sup>−1</sup>) around closed curve <span class="texhtml mvar" style="font-style:italic;">C</span> equals the free current <span class="texhtml"><i>I</i><sub>f,enc</sub></span> through a surface <span class="texhtml mvar" style="font-style:italic;">S</span>.
+</p>
+<dl><dd><table class="wikitable" style="text-align: center;">
+<caption>Forms of the original circuital law written in SI units
+</caption>
+<tbody><tr>
+<th scope="col" style="width: 15em;">
+</th>
+<th scope="col"><a href="/wiki/Integral" title="Integral">Integral</a> form
+</th>
+<th scope="col"><a href="/wiki/Partial_differential_equation" title="Partial differential equation">Differential</a> form
+</th></tr>
+<tr>
+<td>Using <span class="texhtml"><b>B</b></span>-field and total current
+</td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \oint _{C}\mathbf {B} \cdot \mathrm {d} {\boldsymbol {l}}=\mu _{0}\iint _{S}\mathbf {J} \cdot \mathrm {d} \mathbf {S} =\mu _{0}I_{\mathrm {enc} }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+            <mrow class="MJX-TeXAtom-VCENTER">
+              <mstyle mathsize="2.07em">
+                <mtext>&#x222E;<!-- ∮ --></mtext>
+                <mspace width="thinmathspace" />
+              </mstyle>
+            </mrow>
+            <mspace width="thinmathspace" />
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>C</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">B</mi>
+        </mrow>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold-italic">l</mi>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mi>&#x03BC;<!-- μ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mo>&#x222C;<!-- ∬ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">J</mi>
+        </mrow>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">S</mi>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mi>&#x03BC;<!-- μ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>I</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">e</mi>
+              <mi mathvariant="normal">n</mi>
+              <mi mathvariant="normal">c</mi>
+            </mrow>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \oint _{C}\mathbf {B} \cdot \mathrm {d} {\boldsymbol {l}}=\mu _{0}\iint _{S}\mathbf {J} \cdot \mathrm {d} \mathbf {S} =\mu _{0}I_{\mathrm {enc} }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/490c264a64e44d7dd31713dd6a7fa3c0c1e520aa" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:36.421ex; height:6.009ex;" alt="{\displaystyle \oint _{C}\mathbf {B} \cdot \mathrm {d} {\boldsymbol {l}}=\mu _{0}\iint _{S}\mathbf {J} \cdot \mathrm {d} \mathbf {S} =\mu _{0}I_{\mathrm {enc} }}"/></span>
+</td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {\nabla } \times \mathbf {B} =\mu _{0}\mathbf {J} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        </mrow>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">B</mi>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mi>&#x03BC;<!-- μ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">J</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {\nabla } \times \mathbf {B} =\mu _{0}\mathbf {J} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/027ecf4f0b32b44818a62e32d730608d7219aad4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:13.612ex; height:2.676ex;" alt="\mathbf{\nabla} \times \mathbf{B} = \mu_0 \mathbf{J} "/></span>
+</td></tr>
+<tr>
+<td>Using <span class="texhtml"><b>H</b></span>-field and free current
+</td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \oint _{C}\mathbf {H} \cdot \mathrm {d} {\boldsymbol {l}}=\iint _{S}\mathbf {J} _{\mathrm {f} }\cdot \mathrm {d} \mathbf {S} =I_{\mathrm {f,enc} }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+            <mrow class="MJX-TeXAtom-VCENTER">
+              <mstyle mathsize="2.07em">
+                <mtext>&#x222E;<!-- ∮ --></mtext>
+                <mspace width="thinmathspace" />
+              </mstyle>
+            </mrow>
+            <mspace width="thinmathspace" />
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>C</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">H</mi>
+        </mrow>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold-italic">l</mi>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mo>&#x222C;<!-- ∬ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">J</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">f</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">S</mi>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mi>I</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">f</mi>
+              <mo>,</mo>
+              <mi mathvariant="normal">e</mi>
+              <mi mathvariant="normal">n</mi>
+              <mi mathvariant="normal">c</mi>
+            </mrow>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \oint _{C}\mathbf {H} \cdot \mathrm {d} {\boldsymbol {l}}=\iint _{S}\mathbf {J} _{\mathrm {f} }\cdot \mathrm {d} \mathbf {S} =I_{\mathrm {f,enc} }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ed190ac02d248161f9181e70e8456e8eede516b9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:33.226ex; height:6.009ex;" alt="{\displaystyle \oint _{C}\mathbf {H} \cdot \mathrm {d} {\boldsymbol {l}}=\iint _{S}\mathbf {J} _{\mathrm {f} }\cdot \mathrm {d} \mathbf {S} =I_{\mathrm {f,enc} }}"/></span>
+</td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {\nabla } \times \mathbf {H} =\mathbf {J} _{\mathrm {f} }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        </mrow>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">H</mi>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">J</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">f</mi>
+            </mrow>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {\nabla } \times \mathbf {H} =\mathbf {J} _{\mathrm {f} }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c127f9841a74d5cac48210eb67662d946f61cc4a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:12.191ex; height:2.509ex;" alt="{\displaystyle \mathbf {\nabla } \times \mathbf {H} =\mathbf {J} _{\mathrm {f} }}"/></span>
+</td></tr></tbody></table></dd></dl>
+<ul><li><span class="texhtml"><b>J</b></span> is the total <a href="/wiki/Current_density" title="Current density">current density</a> (in <a href="/wiki/Ampere" title="Ampere">amperes</a> per square <a href="/wiki/Metre" title="Metre">metre</a>, A·m<sup>−2</sup>),</li>
+<li><span class="texhtml"><b>J</b><sub>f</sub></span> is the free current density only,</li>
+<li><span class="texhtml">∮<sub><i>C</i></sub></span> is the closed <a href="/wiki/Line_integral" title="Line integral">line integral</a> around the closed curve <span class="texhtml mvar" style="font-style:italic;">C</span>,</li>
+<li><span class="texhtml">∬<sub><i>S</i></sub></span> denotes a 2-D <a href="/wiki/Surface_integral" title="Surface integral">surface integral</a> over <span class="texhtml mvar" style="font-style:italic;">S</span> enclosed by <span class="texhtml mvar" style="font-style:italic;">C</span>,</li>
+<li><span class="texhtml">·</span> is the vector <a href="/wiki/Dot_product" title="Dot product">dot product</a>,</li>
+<li><span class="texhtml">d<i><b>l</b></i></span> is an <a href="/wiki/Infinitesimal" title="Infinitesimal">infinitesimal</a> element (a <a href="/wiki/Differential_(infinitesimal)" title="Differential (infinitesimal)">differential</a>) of the curve <span class="texhtml mvar" style="font-style:italic;">C</span> (i.e. a vector with magnitude equal to the length of the infinitesimal line element, and direction given by the tangent to the curve <span class="texhtml mvar" style="font-style:italic;">C</span>)</li>
+<li><span class="texhtml">d<b>S</b></span> is the <a href="/wiki/Vector_area" title="Vector area">vector area</a> of an <a href="/wiki/Infinitesimal" title="Infinitesimal">infinitesimal</a> element of surface <span class="texhtml mvar" style="font-style:italic;">S</span> (that is, a vector with magnitude equal to the area of the infinitesimal surface element, and direction normal to surface <span class="texhtml mvar" style="font-style:italic;">S</span>. The direction of the normal must correspond with the orientation of <span class="texhtml mvar" style="font-style:italic;">C</span> by the right hand rule), see below for further explanation of the curve <span class="texhtml mvar" style="font-style:italic;">C</span> and surface <span class="texhtml mvar" style="font-style:italic;">S</span>.</li>
+<li><span class="texhtml">∇ ×</span> is the <a href="/wiki/Curl_(mathematics)" title="Curl (mathematics)">curl</a> operator.</li></ul>
+<h3><span class="mw-headline" id="Ambiguities_and_sign_conventions">Ambiguities and sign conventions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;action=edit&amp;section=4" title="Edit section: Ambiguities and sign conventions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>There are a number of ambiguities in the above definitions that require clarification and a choice of convention.
+</p>
+<ol><li>First, three of these terms are associated with sign ambiguities: the line integral <span class="texhtml">∮<sub><i>C</i></sub></span> could go around the loop in either direction (clockwise or counterclockwise); the vector area <span class="texhtml">d<b>S</b></span> could point in either of the two directions <a href="/wiki/Surface_normal" class="mw-redirect" title="Surface normal">normal</a> to the surface; and <span class="texhtml"><i>I</i><sub>enc</sub></span> is the net current passing through the surface <span class="texhtml mvar" style="font-style:italic;">S</span>, meaning the current passing through in one direction, minus the current in the other direction—but either direction could be chosen as positive. These ambiguities are resolved by the <a href="/wiki/Right-hand_rule" title="Right-hand rule">right-hand rule</a>: With the palm of the right-hand toward the area of integration, and the index-finger pointing along the direction of line-integration, the outstretched thumb points in the direction that must be chosen for the vector area <span class="texhtml">d<b>S</b></span>. Also the current passing in the same direction as <span class="texhtml">d<b>S</b></span> must be counted as positive. The <a href="/wiki/Right_hand_grip_rule" class="mw-redirect" title="Right hand grip rule">right hand grip rule</a> can also be used to determine the signs.</li>
+<li>Second, there are infinitely many possible surfaces <span class="texhtml mvar" style="font-style:italic;">S</span> that have the curve <span class="texhtml mvar" style="font-style:italic;">C</span> as their border. (Imagine a soap film on a wire loop, which can be deformed by moving the wire). Which of those surfaces is to be chosen? If the loop does not lie in a single plane, for example, there is no one obvious choice.  The answer is that it does not matter; by <a href="/wiki/Stokes%27_theorem" title="Stokes&#39; theorem">Stoke's theorem</a>, the integral is the same for any surface with boundary <span class="texhtml mvar" style="font-style:italic;">C</span>, since the integrand is the curl of a smooth field (i.e. <a href="/wiki/Closed_and_exact_differential_forms" title="Closed and exact differential forms">exact</a>). In practice, one usually chooses the most convenient surface (with the given boundary) to integrate over.</li></ol>
+<h2><span class="mw-headline" id="Free_current_versus_bound_current">Free current versus bound current</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;action=edit&amp;section=5" title="Edit section: Free current versus bound current">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The electric current that arises in the simplest textbook situations would be classified as "free current"—for example, the current that passes through a wire or <a href="/wiki/Battery_(electricity)" class="mw-redirect" title="Battery (electricity)">battery</a>. In contrast, "bound current" arises in the context of bulk materials that can be <a href="/wiki/Magnetization" title="Magnetization">magnetized</a> and/or <a href="/wiki/Polarization_density" title="Polarization density">polarized</a>. (All materials can to some extent.)
+</p><p>When a material is magnetized (for example, by placing it in an external magnetic field), the electrons remain bound to their respective atoms, but behave as if they were orbiting the nucleus in a particular direction, creating a microscopic current. When the currents from all these atoms are put together, they create the same effect as a macroscopic current, circulating perpetually around the magnetized object. This <a href="/wiki/Magnetization_current#Magnetization_current" class="mw-redirect" title="Magnetization current">magnetization current</a> <span class="texhtml"><b>J</b><sub>M</sub></span> is one contribution to "bound current".
+</p><p>The other source of bound current is <a href="/wiki/Bound_charge" class="mw-redirect" title="Bound charge">bound charge</a>. When an electric field is applied, the positive and negative bound charges can separate over atomic distances in <a href="/wiki/Polarization_density" title="Polarization density">polarizable materials</a>, and when the bound charges move, the polarization changes, creating another contribution to the "bound current", the polarization current <span class="texhtml"><b>J</b><sub>P</sub></span>.
+</p><p>The total current density <span class="texhtml"><b>J</b></span> due to free and bound charges is then:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {J} =\mathbf {J} _{\mathrm {f} }+\mathbf {J} _{\mathrm {M} }+\mathbf {J} _{\mathrm {P} }\,,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">J</mi>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">J</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">f</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">J</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">M</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">J</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">P</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {J} =\mathbf {J} _{\mathrm {f} }+\mathbf {J} _{\mathrm {M} }+\mathbf {J} _{\mathrm {P} }\,,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1de0b48d9e0ca8c1b3a89dce62171ab9e3f08baa" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:19.271ex; height:2.509ex;" alt="{\displaystyle \mathbf {J} =\mathbf {J} _{\mathrm {f} }+\mathbf {J} _{\mathrm {M} }+\mathbf {J} _{\mathrm {P} }\,,}"/></span></dd></dl>
+<p>with <span class="texhtml"><b>J</b><sub>f</sub></span>&#8201; the "free" or "conduction" current density.
+</p><p>All current is fundamentally the same, microscopically. Nevertheless, there are often practical reasons for wanting to treat bound current differently from free current. For example, the bound current usually originates over atomic dimensions, and one may wish to take advantage of a simpler theory intended for larger dimensions. The result is that the more microscopic Ampère's circuital law, expressed in terms of <span class="texhtml"><b>B</b></span> and the microscopic current (which includes free, magnetization and polarization currents), is sometimes put into the equivalent form below in terms of <span class="texhtml"><b><a href="/wiki/Magnetic_field" title="Magnetic field">H</a></b></span> and the free current only. For a detailed definition of free current and bound current, and the proof that the two formulations are equivalent, see the "<a href="#Proof_of_equivalence">proof</a>" section below.
+</p>
+<h2><span class="mw-headline" id="Shortcomings_of_the_original_formulation_of_the_circuital_law">Shortcomings of the original formulation of the circuital law</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;action=edit&amp;section=6" title="Edit section: Shortcomings of the original formulation of the circuital law">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There are two important issues regarding the circuital law that require closer scrutiny. First, there is an issue regarding the <a href="/wiki/Continuity_equation" title="Continuity equation">continuity equation</a> for electrical charge.  In vector calculus, the identity for the <a href="/wiki/Vector_calculus_identities#Divergence_of_the_curl" title="Vector calculus identities">divergence of a curl</a> states that the divergence of the curl of a vector field must always be zero. Hence
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \cdot (\nabla \times \mathbf {B} )=0\,,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">B</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mspace width="thinmathspace" />
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \cdot (\nabla \times \mathbf {B} )=0\,,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8b7fc4760758f4c9da3b5d97b26ee1eb86c5a1a2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.396ex; height:2.843ex;" alt="{\displaystyle \nabla \cdot (\nabla \times \mathbf {B} )=0\,,}"/></span></dd></dl>
+<p>and so the original Ampère's circuital law implies that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \cdot \mathbf {J} =0\,.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">J</mi>
+        </mrow>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mspace width="thinmathspace" />
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \cdot \mathbf {J} =0\,.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1fca4c132240c18855872d19a3c21a17a7274eac" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:10.291ex; height:2.176ex;" alt="{\displaystyle \nabla \cdot \mathbf {J} =0\,.}"/></span></dd></dl>
+<p>But in general, reality follows the <a href="/wiki/Continuity_equation#Electromagnetism" title="Continuity equation">continuity equation for electric charge</a>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \cdot \mathbf {J} =-{\frac {\partial \rho }{\partial t}}\,,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">J</mi>
+        </mrow>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>&#x03C1;<!-- ρ --></mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \cdot \mathbf {J} =-{\frac {\partial \rho }{\partial t}}\,,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f0738953f0df0715a2fd0d1c1948f101d9ad1a93" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:14.292ex; height:5.676ex;" alt="{\displaystyle \nabla \cdot \mathbf {J} =-{\frac {\partial \rho }{\partial t}}\,,}"/></span></dd></dl>
+<p>which is nonzero for a time-varying charge density. An example occurs in a capacitor circuit where time-varying charge densities exist on the plates.<sup id="cite_ref-Jackson_6-0" class="reference"><a href="#cite_note-Jackson-6">&#91;6&#93;</a></sup><sup id="cite_ref-Griffiths_7-0" class="reference"><a href="#cite_note-Griffiths-7">&#91;7&#93;</a></sup><sup id="cite_ref-Owen0_8-0" class="reference"><a href="#cite_note-Owen0-8">&#91;8&#93;</a></sup><sup id="cite_ref-King_9-0" class="reference"><a href="#cite_note-King-9">&#91;9&#93;</a></sup><sup id="cite_ref-Slater_10-0" class="reference"><a href="#cite_note-Slater-10">&#91;10&#93;</a></sup>
+</p><p>Second, there is an issue regarding the propagation of electromagnetic waves. For example, in <a href="/wiki/Free_space" class="mw-redirect" title="Free space">free space</a>, where
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {J} =\mathbf {0} \,.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">J</mi>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mn mathvariant="bold">0</mn>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {J} =\mathbf {0} \,.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/600d122eb18b816ba3913ed84083d70d6b417c23" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.85ex; height:2.176ex;" alt="{\displaystyle \mathbf {J} =\mathbf {0} \,.}"/></span></dd></dl>
+<p>The circuital law implies that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \times \mathbf {B} =\mathbf {0} \,,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">B</mi>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mn mathvariant="bold">0</mn>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \times \mathbf {B} =\mathbf {0} \,,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0ecf5f7a5f7c001a375107bb813affb82e0602b8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:12.146ex; height:2.509ex;" alt="{\displaystyle \nabla \times \mathbf {B} =\mathbf {0} \,,}"/></span></dd></dl>
+<p>but to maintain consistency with the <a href="/wiki/Continuity_equation#Electromagnetism" title="Continuity equation">continuity equation for electric charge</a>, we must have
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \times \mathbf {B} ={\frac {1}{c^{2}}}{\frac {\partial \mathbf {E} }{\partial t}}\,.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">B</mi>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msup>
+              <mi>c</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">E</mi>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \times \mathbf {B} ={\frac {1}{c^{2}}}{\frac {\partial \mathbf {E} }{\partial t}}\,.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5a8b79c866ac27e92f1c4bde77fe0517d854cbf4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:17.618ex; height:5.676ex;" alt="{\displaystyle \nabla \times \mathbf {B} ={\frac {1}{c^{2}}}{\frac {\partial \mathbf {E} }{\partial t}}\,.}"/></span></dd></dl>
+<p>To treat these situations, the contribution of <a href="/wiki/Displacement_current" title="Displacement current">displacement current</a> must be added to the current term in the circuital law.
+</p><p><a href="/wiki/James_Clerk_Maxwell" title="James Clerk Maxwell">James Clerk Maxwell</a> conceived of displacement current as a polarization current in the dielectric vortex sea, which he used to model the magnetic field hydrodynamically and mechanically.<sup id="cite_ref-Siegel_11-0" class="reference"><a href="#cite_note-Siegel-11">&#91;11&#93;</a></sup> He added this <a href="/wiki/Displacement_current" title="Displacement current">displacement current</a> to Ampère's circuital law at equation 112 in his 1861 paper "<a href="/wiki/File:On_Physical_Lines_of_Force.pdf" title="File:On Physical Lines of Force.pdf">On Physical Lines of Force</a>".<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Displacement_current">Displacement current</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;action=edit&amp;section=7" title="Edit section: Displacement current">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Displacement_current" title="Displacement current">Displacement current</a></div>
+<p>In <a href="/wiki/Free_space" class="mw-redirect" title="Free space">free space</a>, the displacement current is related to the time rate of change of electric field.
+</p><p>In a dielectric the above contribution to displacement current is present too, but a major contribution to the displacement current is related to the polarization of the individual molecules of the dielectric material. Even though charges cannot flow freely in a dielectric, the charges in molecules can move a little under the influence of an electric field. The positive and negative charges in molecules separate under the applied field, causing an increase in the state of polarization, expressed as the <a href="/wiki/Polarization_density" title="Polarization density">polarization density</a> <span class="texhtml"><b>P</b></span>.  A changing state of polarization is equivalent to a current.
+</p><p>Both contributions to the displacement current are combined by defining the displacement current as:<sup id="cite_ref-Jackson_6-1" class="reference"><a href="#cite_note-Jackson-6">&#91;6&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {J} _{\mathrm {D} }={\frac {\partial }{\partial t}}\mathbf {D} (\mathbf {r} ,\,t)\,,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">J</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">D</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">D</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo>,</mo>
+        <mspace width="thinmathspace" />
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {J} _{\mathrm {D} }={\frac {\partial }{\partial t}}\mathbf {D} (\mathbf {r} ,\,t)\,,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3c722eebaaa9b20501f3f0ce86dc3e995eb4f0d2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:17.217ex; height:5.509ex;" alt="{\displaystyle \mathbf {J} _{\mathrm {D} }={\frac {\partial }{\partial t}}\mathbf {D} (\mathbf {r} ,\,t)\,,}"/></span></dd></dl>
+<p>where the <a href="/wiki/Electric_displacement_field" title="Electric displacement field">electric displacement field</a> is defined as:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {D} =\varepsilon _{0}\mathbf {E} +\mathbf {P} =\varepsilon _{0}\varepsilon _{\mathrm {r} }\mathbf {E} \,,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">D</mi>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mi>&#x03B5;<!-- ε --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">E</mi>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">P</mi>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mi>&#x03B5;<!-- ε --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>&#x03B5;<!-- ε --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">r</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">E</mi>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {D} =\varepsilon _{0}\mathbf {E} +\mathbf {P} =\varepsilon _{0}\varepsilon _{\mathrm {r} }\mathbf {E} \,,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/454a1dc3b2e37239e37bb1343fd5065b8adc134f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:23.698ex; height:2.509ex;" alt="{\displaystyle \mathbf {D} =\varepsilon _{0}\mathbf {E} +\mathbf {P} =\varepsilon _{0}\varepsilon _{\mathrm {r} }\mathbf {E} \,,}"/></span></dd></dl>
+<p>where <span class="texhtml"><i>ε</i><sub>0</sub></span> is the <a href="/wiki/Electric_constant" class="mw-redirect" title="Electric constant">electric constant</a>, <span class="texhtml"><i>ε</i><sub>r</sub></span> the <a href="/wiki/Relative_static_permittivity" class="mw-redirect" title="Relative static permittivity">relative static permittivity</a>, and <span class="texhtml"><b>P</b></span> is the <a href="/wiki/Polarization_density" title="Polarization density">polarization density</a>. Substituting this form for <span class="texhtml"><b>D</b></span> in the expression for displacement current, it has two components:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {J} _{\mathrm {D} }=\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}+{\frac {\partial \mathbf {P} }{\partial t}}\,.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">J</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">D</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>&#x03B5;<!-- ε --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">E</mi>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">P</mi>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {J} _{\mathrm {D} }=\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}+{\frac {\partial \mathbf {P} }{\partial t}}\,.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8cba25916930c7b31391e35cd4e55f63cb1b05d8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:19.871ex; height:5.509ex;" alt="{\displaystyle \mathbf {J} _{\mathrm {D} }=\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}+{\frac {\partial \mathbf {P} }{\partial t}}\,.}"/></span></dd></dl>
+<p>The first term on the right hand side is present everywhere, even in a vacuum. It doesn't involve any actual movement of charge, but it nevertheless has an associated magnetic field, as if it were an actual current. Some authors apply the name <i>displacement current</i> to only this contribution.<sup id="cite_ref-Griffiths1_13-0" class="reference"><a href="#cite_note-Griffiths1-13">&#91;13&#93;</a></sup>
+</p><p>The second term on the right hand side is the displacement current as originally conceived by Maxwell, associated with the polarization of the individual molecules of the dielectric material.
+</p><p>Maxwell's original explanation for displacement current focused upon the situation that occurs in dielectric media. In the modern post-aether era, the concept has been extended to apply to situations with no material media present, for example, to the vacuum between the plates of a charging <a href="/wiki/Vacuum_capacitor" class="mw-redirect" title="Vacuum capacitor">vacuum capacitor</a>. The displacement current is justified today because it serves several requirements of an electromagnetic theory:  correct prediction of magnetic fields in regions where no free current flows; prediction of wave propagation of electromagnetic fields; and conservation of electric charge in cases where charge density is time-varying. For greater discussion see <a href="/wiki/Displacement_current" title="Displacement current">Displacement current</a>.
+</p>
+<h2><span id="Extending_the_original_law:_the_Maxwell.E2.80.93Amp.C3.A8re_equation"></span><span class="mw-headline" id="Extending_the_original_law:_the_Maxwell–Ampère_equation">Extending the original law: the Maxwell–Ampère equation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;action=edit&amp;section=8" title="Edit section: Extending the original law: the Maxwell–Ampère equation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Next, the circuital equation is extended by including the polarization current, thereby remedying the limited applicability of the original circuital law.
+</p><p>Treating free charges separately from bound charges, The equation including Maxwell's correction in terms of the <span class="texhtml"><b>H</b></span>-field is (the <span class="texhtml"><b>H</b></span>-field is used because it includes the magnetization currents, so <span class="texhtml"><b>J</b><sub>M</sub></span> does not appear explicitly, see <a href="/wiki/Magnetic_Field#Physical_interpretation_of_the_H_field" class="mw-redirect" title="Magnetic Field"><span class="texhtml"><b>H</b></span>-field</a> and also <a href="#Note_on_free_current_versus_bound_current">Note</a>):<sup id="cite_ref-Palmer_14-0" class="reference"><a href="#cite_note-Palmer-14">&#91;14&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \oint _{C}\mathbf {H} \cdot \mathrm {d} {\boldsymbol {l}}=\iint _{S}\left(\mathbf {J} _{\mathrm {f} }+{\frac {\partial \mathbf {D} }{\partial t}}\right)\cdot \mathrm {d} \mathbf {S} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+            <mrow class="MJX-TeXAtom-VCENTER">
+              <mstyle mathsize="2.07em">
+                <mtext>&#x222E;<!-- ∮ --></mtext>
+                <mspace width="thinmathspace" />
+              </mstyle>
+            </mrow>
+            <mspace width="thinmathspace" />
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>C</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">H</mi>
+        </mrow>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold-italic">l</mi>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mo>&#x222C;<!-- ∬ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">J</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">f</mi>
+                </mrow>
+              </mrow>
+            </msub>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">D</mi>
+                  </mrow>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">S</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \oint _{C}\mathbf {H} \cdot \mathrm {d} {\boldsymbol {l}}=\iint _{S}\left(\mathbf {J} _{\mathrm {f} }+{\frac {\partial \mathbf {D} }{\partial t}}\right)\cdot \mathrm {d} \mathbf {S} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f7d88e22e8666e598140ba68926a42b87efb284c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:35.894ex; height:6.176ex;" alt="{\displaystyle \oint _{C}\mathbf {H} \cdot \mathrm {d} {\boldsymbol {l}}=\iint _{S}\left(\mathbf {J} _{\mathrm {f} }+{\frac {\partial \mathbf {D} }{\partial t}}\right)\cdot \mathrm {d} \mathbf {S} }"/></span></dd></dl>
+<p>(integral form), where <span class="texhtml"><b>H</b></span> is the <a href="/wiki/Magnetic_field" title="Magnetic field">magnetic <span class="texhtml"><b>H</b></span> field</a> (also called "auxiliary magnetic field", "magnetic field intensity", or just "magnetic field"), <span class="texhtml"><b>D</b></span> is the <a href="/wiki/Electric_displacement_field" title="Electric displacement field">electric displacement field</a>, and <span class="texhtml"><b>J</b><sub>f</sub></span> is the enclosed conduction current or <a href="/wiki/Free_current" class="mw-redirect" title="Free current">free current</a> density. In differential form,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {\nabla } \times \mathbf {H} =\mathbf {J} _{\mathrm {f} }+{\frac {\partial \mathbf {D} }{\partial t}}\,.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        </mrow>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">H</mi>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">J</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">f</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">D</mi>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {\nabla } \times \mathbf {H} =\mathbf {J} _{\mathrm {f} }+{\frac {\partial \mathbf {D} }{\partial t}}\,.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4722699c09550bf9ef9a3b68187613839f90d5ee" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:20.269ex; height:5.509ex;" alt="{\displaystyle \mathbf {\nabla } \times \mathbf {H} =\mathbf {J} _{\mathrm {f} }+{\frac {\partial \mathbf {D} }{\partial t}}\,.}"/></span></dd></dl>
+<p>On the other hand, treating all charges on the same footing (disregarding whether they are bound or free charges), the generalized Ampère's equation, also called the Maxwell–Ampère equation, is in integral form (see the "<a href="#Proof_of_equivalence">proof</a>" section below):
+</p>
+<div class="equation-box" style="margin: 0 0 0 1.6em;padding: 5px; border-width:2px; border-style: solid; border-color: #50C878; background-color: #ECFCF4; text-align: center; display: table">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \oint _{C}\mathbf {B} \cdot \mathrm {d} {\boldsymbol {l}}=\iint _{S}\left(\mu _{0}\mathbf {J} +\mu _{0}\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}\right)\cdot \mathrm {d} \mathbf {S} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+            <mrow class="MJX-TeXAtom-VCENTER">
+              <mstyle mathsize="2.07em">
+                <mtext>&#x222E;<!-- ∮ --></mtext>
+                <mspace width="thinmathspace" />
+              </mstyle>
+            </mrow>
+            <mspace width="thinmathspace" />
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>C</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">B</mi>
+        </mrow>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold-italic">l</mi>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mo>&#x222C;<!-- ∬ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <msub>
+              <mi>&#x03BC;<!-- μ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+            </msub>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="bold">J</mi>
+            </mrow>
+            <mo>+</mo>
+            <msub>
+              <mi>&#x03BC;<!-- μ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>&#x03B5;<!-- ε --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+            </msub>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">E</mi>
+                  </mrow>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">S</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \oint _{C}\mathbf {B} \cdot \mathrm {d} {\boldsymbol {l}}=\iint _{S}\left(\mu _{0}\mathbf {J} +\mu _{0}\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}\right)\cdot \mathrm {d} \mathbf {S} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2526f39c75b664d6b1769e9e14116e22c3303410" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:41.617ex; height:6.176ex;" alt="{\displaystyle \oint _{C}\mathbf {B} \cdot \mathrm {d} {\boldsymbol {l}}=\iint _{S}\left(\mu _{0}\mathbf {J} +\mu _{0}\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}\right)\cdot \mathrm {d} \mathbf {S} }"/></span>
+</p>
+</div>
+<p>In differential form,
+</p>
+<div class="equation-box" style="margin: 0 0 0 1.6em;padding: 5px; border-width:2px; border-style: solid; border-color: #0073CF; background-color: #F5FFFA; text-align: center; display: table">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {\nabla } \times \mathbf {B} =\mu _{0}\mathbf {J} +\mu _{0}\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        </mrow>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">B</mi>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mi>&#x03BC;<!-- μ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">J</mi>
+        </mrow>
+        <mo>+</mo>
+        <msub>
+          <mi>&#x03BC;<!-- μ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>&#x03B5;<!-- ε --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">E</mi>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {\nabla } \times \mathbf {B} =\mu _{0}\mathbf {J} +\mu _{0}\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/982011cfb0cc1476e742a3661d2c3fbfefb11ccc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:24.958ex; height:5.509ex;" alt="{\displaystyle \mathbf {\nabla } \times \mathbf {B} =\mu _{0}\mathbf {J} +\mu _{0}\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}}"/></span>
+</p>
+</div>
+<p>In both forms <span class="texhtml"><b>J</b></span> includes <a href="/wiki/Magnetization_current#Magnetization_current" class="mw-redirect" title="Magnetization current">magnetization current</a> density<sup id="cite_ref-Palmer2_15-0" class="reference"><a href="#cite_note-Palmer2-15">&#91;15&#93;</a></sup> as well as conduction and polarization current densities. That is, the current density on the right side of the Ampère–Maxwell equation is:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {J} _{\mathrm {f} }+\mathbf {J} _{\mathrm {D} }+\mathbf {J} _{\mathrm {M} }=\mathbf {J} _{\mathrm {f} }+\mathbf {J} _{\mathrm {P} }+\mathbf {J} _{\mathrm {M} }+\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}=\mathbf {J} +\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}\,,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">J</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">f</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">J</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">D</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">J</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">M</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">J</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">f</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">J</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">P</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">J</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">M</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>&#x03B5;<!-- ε --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">E</mi>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">J</mi>
+        </mrow>
+        <mo>+</mo>
+        <msub>
+          <mi>&#x03B5;<!-- ε --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">E</mi>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {J} _{\mathrm {f} }+\mathbf {J} _{\mathrm {D} }+\mathbf {J} _{\mathrm {M} }=\mathbf {J} _{\mathrm {f} }+\mathbf {J} _{\mathrm {P} }+\mathbf {J} _{\mathrm {M} }+\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}=\mathbf {J} +\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}\,,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ae1e2c9cdd285a3aa4e4592112b4ad8ab4e98646" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:54.042ex; height:5.509ex;" alt="{\displaystyle \mathbf {J} _{\mathrm {f} }+\mathbf {J} _{\mathrm {D} }+\mathbf {J} _{\mathrm {M} }=\mathbf {J} _{\mathrm {f} }+\mathbf {J} _{\mathrm {P} }+\mathbf {J} _{\mathrm {M} }+\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}=\mathbf {J} +\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}\,,}"/></span></dd></dl>
+<p>where current density <span class="texhtml"><b>J</b><sub>D</sub></span> is the <i>displacement current</i>, and <span class="texhtml"><b>J</b></span> is the current density contribution actually due to movement of charges, both free and bound. Because <span class="texhtml">∇ ⋅ <b>D</b> = <i>ρ</i></span>, the charge continuity issue with Ampère's original formulation is no longer a problem.<sup id="cite_ref-curl_16-0" class="reference"><a href="#cite_note-curl-16">&#91;16&#93;</a></sup> Because of the term in <span class="texhtml"><i>ε</i><sub>0</sub><span class="sfrac nowrap" style="display:inline-block; vertical-align:-0.5em; font-size:85%; text-align:center;"><span style="display:block; line-height:1em; margin:0 0.1em;">∂<b>E</b></span><span class="visualhide">/</span><span style="display:block; line-height:1em; margin:0 0.1em; border-top:1px solid;">∂<i>t</i></span></span></span>, wave propagation in free space now is possible.
+</p><p>With the addition of the displacement current, Maxwell was able to hypothesize (correctly) that light was a form of <a href="/wiki/Electromagnetic_wave" class="mw-redirect" title="Electromagnetic wave">electromagnetic wave</a>. See <a href="/wiki/Electromagnetic_wave_equation" title="Electromagnetic wave equation">electromagnetic wave equation</a> for a discussion of this important discovery.
+</p>
+<h3><span class="mw-headline" id="Proof_of_equivalence">Proof of equivalence</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;action=edit&amp;section=9" title="Edit section: Proof of equivalence">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<dl><dd><table class="toccolours collapsible collapsed" width="80%" style="text-align:left">
+<tbody><tr>
+<th>Proof that the formulations of the circuital law in terms of free current are equivalent to the formulations involving total current.
+</th></tr>
+<tr>
+<td>In this proof, we will show that the equation
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \times \mathbf {H} =\mathbf {J} _{\mathrm {f} }+{\frac {\partial \mathbf {D} }{\partial t}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">H</mi>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">J</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">f</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">D</mi>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \times \mathbf {H} =\mathbf {J} _{\mathrm {f} }+{\frac {\partial \mathbf {D} }{\partial t}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/380d5f3b42edfb0c7dcb8d6b4b4a060b9b5e126a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:19.235ex; height:5.509ex;" alt="{\displaystyle \nabla \times \mathbf {H} =\mathbf {J} _{\mathrm {f} }+{\frac {\partial \mathbf {D} }{\partial t}}}"/></span></dd></dl>
+<p>is equivalent to the equation
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {1}{\mu _{0}}}(\mathbf {\nabla } \times \mathbf {B} )=\mathbf {J} +\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}\,.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msub>
+              <mi>&#x03BC;<!-- μ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        </mrow>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">B</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">J</mi>
+        </mrow>
+        <mo>+</mo>
+        <msub>
+          <mi>&#x03B5;<!-- ε --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">E</mi>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{\mu _{0}}}(\mathbf {\nabla } \times \mathbf {B} )=\mathbf {J} +\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}\,.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ab4aa6247d7e9209616bfd025631b825a4771b23" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:26.181ex; height:5.843ex;" alt="{\displaystyle {\frac {1}{\mu _{0}}}(\mathbf {\nabla } \times \mathbf {B} )=\mathbf {J} +\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}\,.}"/></span></dd></dl>
+<p>Note that we are only dealing with the differential forms, not the integral forms, but that is sufficient since the differential and integral forms are equivalent in each case, by the <a href="/wiki/Kelvin%E2%80%93Stokes_theorem" title="Kelvin–Stokes theorem">Kelvin–Stokes theorem</a>.
+</p><p>We introduce the <a href="/wiki/Polarization_density" title="Polarization density">polarization density</a> <span class="texhtml"><b>P</b></span>, which has the following relation to <span class="texhtml"><b>E</b></span> and <span class="texhtml"><b>D</b></span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {D} =\varepsilon _{0}\mathbf {E} +\mathbf {P} \,.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">D</mi>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mi>&#x03B5;<!-- ε --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">E</mi>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">P</mi>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {D} =\varepsilon _{0}\mathbf {E} +\mathbf {P} \,.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/682c919841fba3c35b09530d014e3f264be44b92" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:14.744ex; height:2.509ex;" alt="{\displaystyle \mathbf {D} =\varepsilon _{0}\mathbf {E} +\mathbf {P} \,.}"/></span></dd></dl>
+<p>Next, we introduce the <a href="/wiki/Magnetization" title="Magnetization">magnetization density</a> <span class="texhtml"><b>M</b></span>, which has the following relation to <span class="texhtml"><b>B</b></span> and <span class="texhtml"><b>H</b></span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {1}{\mu _{0}}}\mathbf {B} =\mathbf {H} +\mathbf {M} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msub>
+              <mi>&#x03BC;<!-- μ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">B</mi>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">H</mi>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">M</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{\mu _{0}}}\mathbf {B} =\mathbf {H} +\mathbf {M} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/43c06d1459f6474b7588820b3252969364526814" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:15.761ex; height:5.676ex;" alt="{\displaystyle {\frac {1}{\mu _{0}}}\mathbf {B} =\mathbf {H} +\mathbf {M} }"/></span></dd></dl>
+<p>and the following relation to the bound current:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}\mathbf {J} _{\mathrm {bound} }&amp;=\nabla \times \mathbf {M} +{\frac {\partial \mathbf {P} }{\partial t}}\\&amp;=\mathbf {J} _{\mathrm {M} }+\mathbf {J} _{\mathrm {P} }\,,\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">J</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="normal">b</mi>
+                      <mi mathvariant="normal">o</mi>
+                      <mi mathvariant="normal">u</mi>
+                      <mi mathvariant="normal">n</mi>
+                      <mi mathvariant="normal">d</mi>
+                    </mrow>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                <mo>&#x00D7;<!-- × --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="bold">M</mi>
+                </mrow>
+                <mo>+</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="bold">P</mi>
+                      </mrow>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">J</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="normal">M</mi>
+                    </mrow>
+                  </mrow>
+                </msub>
+                <mo>+</mo>
+                <msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">J</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="normal">P</mi>
+                    </mrow>
+                  </mrow>
+                </msub>
+                <mspace width="thinmathspace" />
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}\mathbf {J} _{\mathrm {bound} }&amp;=\nabla \times \mathbf {M} +{\frac {\partial \mathbf {P} }{\partial t}}\\&amp;=\mathbf {J} _{\mathrm {M} }+\mathbf {J} _{\mathrm {P} }\,,\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e1a2246d0d9c19a65d3cfb24788e321c63f2dfac" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.671ex; width:24.076ex; height:8.509ex;" alt="{\displaystyle {\begin{aligned}\mathbf {J} _{\mathrm {bound} }&amp;=\nabla \times \mathbf {M} +{\frac {\partial \mathbf {P} }{\partial t}}\\&amp;=\mathbf {J} _{\mathrm {M} }+\mathbf {J} _{\mathrm {P} }\,,\end{aligned}}}"/></span></dd></dl>
+<p>where
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {J} _{\mathrm {M} }=\nabla \times \mathbf {M} \,,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">J</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">M</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">M</mi>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {J} _{\mathrm {M} }=\nabla \times \mathbf {M} \,,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b0c1ce908ce79762644789aa7359ab16ab28c7a4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:14.566ex; height:2.509ex;" alt="{\displaystyle \mathbf {J} _{\mathrm {M} }=\nabla \times \mathbf {M} \,,}"/></span></dd></dl>
+<p>is called the <a href="/wiki/Magnetization_current#Magnetization_current" class="mw-redirect" title="Magnetization current">magnetization current</a> density, and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {J} _{\mathrm {P} }={\frac {\partial \mathbf {P} }{\partial t}}\,,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">J</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">P</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">P</mi>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {J} _{\mathrm {P} }={\frac {\partial \mathbf {P} }{\partial t}}\,,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6f72690930eb0cb56d426a537295bfccd08a6c51" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:10.846ex; height:5.509ex;" alt="{\displaystyle \mathbf {J} _{\mathrm {P} }={\frac {\partial \mathbf {P} }{\partial t}}\,,}"/></span></dd></dl>
+<p>is the polarization current density. Taking the equation for <span class="texhtml"><b>B</b></span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}{\frac {1}{\mu _{0}}}(\mathbf {\nabla } \times \mathbf {B} )&amp;=\mathbf {\nabla } \times \left(\mathbf {H} +\mathbf {M} \right)\\&amp;=\mathbf {\nabla } \times \mathbf {H} +\mathbf {J} _{\mathrm {M} }\\&amp;=\mathbf {J} _{\mathrm {f} }+\mathbf {J} _{\mathrm {P} }+\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}+\mathbf {J} _{\mathrm {M} }\,.\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <msub>
+                      <mi>&#x03BC;<!-- μ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>0</mn>
+                      </mrow>
+                    </msub>
+                  </mfrac>
+                </mrow>
+                <mo stretchy="false">(</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                </mrow>
+                <mo>&#x00D7;<!-- × --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="bold">B</mi>
+                </mrow>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                </mrow>
+                <mo>&#x00D7;<!-- × --></mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="bold">H</mi>
+                    </mrow>
+                    <mo>+</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="bold">M</mi>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                </mrow>
+                <mo>&#x00D7;<!-- × --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="bold">H</mi>
+                </mrow>
+                <mo>+</mo>
+                <msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">J</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="normal">M</mi>
+                    </mrow>
+                  </mrow>
+                </msub>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">J</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="normal">f</mi>
+                    </mrow>
+                  </mrow>
+                </msub>
+                <mo>+</mo>
+                <msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">J</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="normal">P</mi>
+                    </mrow>
+                  </mrow>
+                </msub>
+                <mo>+</mo>
+                <msub>
+                  <mi>&#x03B5;<!-- ε --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msub>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="bold">E</mi>
+                      </mrow>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo>+</mo>
+                <msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">J</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="normal">M</mi>
+                    </mrow>
+                  </mrow>
+                </msub>
+                <mspace width="thinmathspace" />
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}{\frac {1}{\mu _{0}}}(\mathbf {\nabla } \times \mathbf {B} )&amp;=\mathbf {\nabla } \times \left(\mathbf {H} +\mathbf {M} \right)\\&amp;=\mathbf {\nabla } \times \mathbf {H} +\mathbf {J} _{\mathrm {M} }\\&amp;=\mathbf {J} _{\mathrm {f} }+\mathbf {J} _{\mathrm {P} }+\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}+\mathbf {J} _{\mathrm {M} }\,.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b2a19867752fc11e1851dd2ad4487afa0f008e19" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -6.384ex; margin-bottom: -0.287ex; width:39.31ex; height:14.509ex;" alt="{\displaystyle {\begin{aligned}{\frac {1}{\mu _{0}}}(\mathbf {\nabla } \times \mathbf {B} )&amp;=\mathbf {\nabla } \times \left(\mathbf {H} +\mathbf {M} \right)\\&amp;=\mathbf {\nabla } \times \mathbf {H} +\mathbf {J} _{\mathrm {M} }\\&amp;=\mathbf {J} _{\mathrm {f} }+\mathbf {J} _{\mathrm {P} }+\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}+\mathbf {J} _{\mathrm {M} }\,.\end{aligned}}}"/></span></dd></dl>
+<p>Consequently, referring to the definition of the bound current:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}{\frac {1}{\mu _{0}}}(\mathbf {\nabla } \times \mathbf {B} )&amp;=\mathbf {J} _{\mathrm {f} }+\mathbf {J} _{\mathrm {bound} }+\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}\\&amp;=\mathbf {J} +\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}\,,\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <msub>
+                      <mi>&#x03BC;<!-- μ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>0</mn>
+                      </mrow>
+                    </msub>
+                  </mfrac>
+                </mrow>
+                <mo stretchy="false">(</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                </mrow>
+                <mo>&#x00D7;<!-- × --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="bold">B</mi>
+                </mrow>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">J</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="normal">f</mi>
+                    </mrow>
+                  </mrow>
+                </msub>
+                <mo>+</mo>
+                <msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">J</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="normal">b</mi>
+                      <mi mathvariant="normal">o</mi>
+                      <mi mathvariant="normal">u</mi>
+                      <mi mathvariant="normal">n</mi>
+                      <mi mathvariant="normal">d</mi>
+                    </mrow>
+                  </mrow>
+                </msub>
+                <mo>+</mo>
+                <msub>
+                  <mi>&#x03B5;<!-- ε --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msub>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="bold">E</mi>
+                      </mrow>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="bold">J</mi>
+                </mrow>
+                <mo>+</mo>
+                <msub>
+                  <mi>&#x03B5;<!-- ε --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msub>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="bold">E</mi>
+                      </mrow>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mspace width="thinmathspace" />
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}{\frac {1}{\mu _{0}}}(\mathbf {\nabla } \times \mathbf {B} )&amp;=\mathbf {J} _{\mathrm {f} }+\mathbf {J} _{\mathrm {bound} }+\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}\\&amp;=\mathbf {J} +\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}\,,\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/172dc884bef78ff5602495f3349971c4a4f65b64" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -5.171ex; width:35.674ex; height:11.509ex;" alt="{\displaystyle {\begin{aligned}{\frac {1}{\mu _{0}}}(\mathbf {\nabla } \times \mathbf {B} )&amp;=\mathbf {J} _{\mathrm {f} }+\mathbf {J} _{\mathrm {bound} }+\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}\\&amp;=\mathbf {J} +\varepsilon _{0}{\frac {\partial \mathbf {E} }{\partial t}}\,,\end{aligned}}}"/></span></dd></dl>
+<p>as was to be shown.
+</p>
+</td></tr></tbody></table></dd></dl>
+<h2><span id="Amp.C3.A8re.27s_circuital_law_in_cgs_units"></span><span class="mw-headline" id="Ampère's_circuital_law_in_cgs_units">Ampère's circuital law in cgs units</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;action=edit&amp;section=10" title="Edit section: Ampère&#039;s circuital law in cgs units">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In <a href="/wiki/Gaussian_units" title="Gaussian units">cgs</a> units, the integral form of the equation, including Maxwell's correction, reads
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \oint _{C}\mathbf {B} \cdot \mathrm {d} {\boldsymbol {l}}={\frac {1}{c}}\iint _{S}\left(4\pi \mathbf {J} +{\frac {\partial \mathbf {E} }{\partial t}}\right)\cdot \mathrm {d} \mathbf {S} \,,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+            <mrow class="MJX-TeXAtom-VCENTER">
+              <mstyle mathsize="2.07em">
+                <mtext>&#x222E;<!-- ∮ --></mtext>
+                <mspace width="thinmathspace" />
+              </mstyle>
+            </mrow>
+            <mspace width="thinmathspace" />
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>C</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">B</mi>
+        </mrow>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold-italic">l</mi>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>c</mi>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mo>&#x222C;<!-- ∬ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mn>4</mn>
+            <mi>&#x03C0;<!-- π --></mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="bold">J</mi>
+            </mrow>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">E</mi>
+                  </mrow>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">S</mi>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \oint _{C}\mathbf {B} \cdot \mathrm {d} {\boldsymbol {l}}={\frac {1}{c}}\iint _{S}\left(4\pi \mathbf {J} +{\frac {\partial \mathbf {E} }{\partial t}}\right)\cdot \mathrm {d} \mathbf {S} \,,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e2869c691f75519323725ca9a8678988b71b1ecc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:40.481ex; height:6.176ex;" alt="{\displaystyle \oint _{C}\mathbf {B} \cdot \mathrm {d} {\boldsymbol {l}}={\frac {1}{c}}\iint _{S}\left(4\pi \mathbf {J} +{\frac {\partial \mathbf {E} }{\partial t}}\right)\cdot \mathrm {d} \mathbf {S} \,,}"/></span></dd></dl>
+<p>where <span class="texhtml mvar" style="font-style:italic;">c</span> is the <a href="/wiki/Speed_of_light" title="Speed of light">speed of light</a>.
+</p><p>The differential form of the equation (again, including Maxwell's correction) is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {\nabla } \times \mathbf {B} ={\frac {1}{c}}\left(4\pi \mathbf {J} +{\frac {\partial \mathbf {E} }{\partial t}}\right)\,.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        </mrow>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">B</mi>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>c</mi>
+          </mfrac>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mn>4</mn>
+            <mi>&#x03C0;<!-- π --></mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="bold">J</mi>
+            </mrow>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">E</mi>
+                  </mrow>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {\nabla } \times \mathbf {B} ={\frac {1}{c}}\left(4\pi \mathbf {J} +{\frac {\partial \mathbf {E} }{\partial t}}\right)\,.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/364a68e1233678d165deac3e9eb14da194dc3670" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:27.631ex; height:6.176ex;" alt="{\displaystyle \mathbf {\nabla } \times \mathbf {B} ={\frac {1}{c}}\left(4\pi \mathbf {J} +{\frac {\partial \mathbf {E} }{\partial t}}\right)\,.}"/></span></dd></dl>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;action=edit&amp;section=11" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div>
+
+&#32;
+<table class="multicol" role="presentation" style="border-collapse: collapse; padding: 0; border: 0; background:transparent; width:100%;"><tbody><tr>
+<td style="text-align: left; vertical-align: top;">
+<ul><li><a href="/wiki/Biot%E2%80%93Savart_law" title="Biot–Savart law">Biot–Savart law</a></li>
+<li><a href="/wiki/Displacement_current" title="Displacement current">Displacement current</a></li>
+<li><a href="/wiki/Capacitance" title="Capacitance">Capacitance</a></li>
+<li><a href="/wiki/Magnet#Two_models_for_magnets:_magnetic_poles_and_atomic_currents" title="Magnet">Ampèrian magnetic dipole model</a></li>
+<li><a href="/wiki/Electromagnetic_wave_equation" title="Electromagnetic wave equation">Electromagnetic wave equation</a></li>
+<li><a href="/wiki/Maxwell%27s_equations" title="Maxwell&#39;s equations">Maxwell's equations</a></li></ul>
+<p>&#32;
+</p>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<table role="presentation" class="metadata mbox-small" style="background-color:#f9f9f9;border:1px solid #aaa;color:#000">
+<tbody><tr>
+<td class="mbox-image"><img alt="icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Office-book.svg/30px-Office-book.svg.png" decoding="async" width="30" height="30" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Office-book.svg/45px-Office-book.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Office-book.svg/60px-Office-book.svg.png 2x" data-file-width="48" data-file-height="48" /></td>
+<td class="mbox-text plainlist"><ul style="font-weight: bold">
+<li><a href="/wiki/Book:Maxwell%27s_equations" title="Book:Maxwell&#39;s equations">Book: Maxwell's equations</a></li>
+</ul></td></tr>
+</tbody></table>
+<ul><li><a href="/wiki/Faraday%27s_law_of_induction" title="Faraday&#39;s law of induction">Faraday's law of induction</a></li>
+<li><a href="/wiki/Bound_charge" class="mw-redirect" title="Bound charge">Bound charge</a></li>
+<li><a href="/wiki/Electric_current" title="Electric current">Electric current</a></li>
+<li><a href="/wiki/Vector_calculus" title="Vector calculus">Vector calculus</a></li>
+<li><a href="/wiki/Stokes%27_theorem" title="Stokes&#39; theorem">Stokes' theorem</a></li></ul>
+<p>&#32;
+</p>
+</td></tr></tbody></table></div>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;action=edit&amp;section=12" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">Ampère never utilized the field concept in any of his works; cf. <cite class="citation book">Assis, André Koch Torres; Chaib, J. P. M. C; Ampère, André-Marie (2015). <a rel="nofollow" class="external text" href="http://www.ifi.unicamp.br/~assis/Amperes-Electrodynamics.pdf"><i>Ampère's electrodynamics: analysis of the meaning and evolution of Ampère's force between current elements, together with a complete translation of his masterpiece: Theory of electrodynamic phenomena, uniquely deduced from experience</i></a> <span class="cs1-format">(PDF)</span>. Montreal, QC: Apeiron. ch. 15 p. 221. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-987980-03-5" title="Special:BookSources/978-1-987980-03-5"><bdi>978-1-987980-03-5</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Amp%C3%A8re%27s+electrodynamics%3A+analysis+of+the+meaning+and+evolution+of+Amp%C3%A8re%27s+force+between+current+elements%2C+together+with+a+complete+translation+of+his+masterpiece%3A+Theory+of+electrodynamic+phenomena%2C+uniquely+deduced+from+experience&amp;rft.place=Montreal%2C+QC&amp;rft.pages=ch.+15+p.+221&amp;rft.pub=Apeiron&amp;rft.date=2015&amp;rft.isbn=978-1-987980-03-5&amp;rft.aulast=Assis&amp;rft.aufirst=Andr%C3%A9+Koch+Torres&amp;rft.au=Chaib%2C+J.+P.+M.+C&amp;rft.au=Amp%C3%A8re%2C+Andr%C3%A9-Marie&amp;rft_id=http%3A%2F%2Fwww.ifi.unicamp.br%2F~assis%2FAmperes-Electrodynamics.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAmp%C3%A8re%27s+circuital+law" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style> The "Ampère circuital law" is thus more properly termed the "Ampère–Maxwell law." It is named after Ampère because of his contributions to understanding electric current. Maxwell does not take <a href="/wiki/Amp%C3%A8re%27s_force_law" title="Ampère&#39;s force law">Ampère's force law</a> as a starting point in deriving any of his equations, although he mentions <a href="/wiki/Amp%C3%A8re%27s_force_law" title="Ampère&#39;s force law">Ampère's force law</a> in his <i><a href="/wiki/A_Treatise_on_Electricity_and_Magnetism" title="A Treatise on Electricity and Magnetism">A Treatise on Electricity and Magnetism</a></i> vol. 2, part 4, ch. 2 (§§502-527) &amp; 23 (§§845-866).</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web">Clerk Maxwell, James. <a rel="nofollow" class="external text" href="https://archive.org/stream/scientificpapers01maxw#page/450/mode/2up">"On Physical Lines of Force"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=On+Physical+Lines+of+Force&amp;rft.aulast=Clerk+Maxwell&amp;rft.aufirst=James&amp;rft_id=https%3A%2F%2Farchive.org%2Fstream%2Fscientificpapers01maxw%23page%2F450%2Fmode%2F2up&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAmp%C3%A8re%27s+circuital+law" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web">Clerk Maxwell, James. <a rel="nofollow" class="external text" href="https://archive.org/stream/scientificpapers01maxw#page/n193/mode/2up">"On Faraday's Lines of Force"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=On+Faraday%27s+Lines+of+Force&amp;rft.aulast=Clerk+Maxwell&amp;rft.aufirst=James&amp;rft_id=https%3A%2F%2Farchive.org%2Fstream%2Fscientificpapers01maxw%23page%2Fn193%2Fmode%2F2up&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAmp%C3%A8re%27s+circuital+law" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Knoepfel-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-Knoepfel_4-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Knoepfel, Heinz E. (2000). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=1n7NPasgh0sC&amp;pg=PA210&amp;dq=isbn=0-471-32205-9#PPA4,M1"><i>Magnetic Fields: A comprehensive theoretical treatise for practical use</i></a>. Wiley. p.&#160;4. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-471-32205-9" title="Special:BookSources/0-471-32205-9"><bdi>0-471-32205-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Magnetic+Fields%3A+A+comprehensive+theoretical+treatise+for+practical+use&amp;rft.pages=4&amp;rft.pub=Wiley&amp;rft.date=2000&amp;rft.isbn=0-471-32205-9&amp;rft.aulast=Knoepfel&amp;rft.aufirst=Heinz+E.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D1n7NPasgh0sC%26pg%3DPA210%26dq%3Disbn%3D0-471-32205-9%23PPA4%2CM1&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAmp%C3%A8re%27s+circuital+law" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Owen-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-Owen_5-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Owen, George E. (2003). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=VLm_dqhZUOYC&amp;pg=PA213&amp;dq=%22Ampere%27s+circuital+law%22"><i>Electromagnetic Theory</i></a> (Reprint of 1963 ed.). Courier-Dover Publications. p.&#160;213. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-486-42830-3" title="Special:BookSources/0-486-42830-3"><bdi>0-486-42830-3</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Electromagnetic+Theory&amp;rft.pages=213&amp;rft.edition=Reprint+of+1963&amp;rft.pub=Courier-Dover+Publications&amp;rft.date=2003&amp;rft.isbn=0-486-42830-3&amp;rft.aulast=Owen&amp;rft.aufirst=George+E.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DVLm_dqhZUOYC%26pg%3DPA213%26dq%3D%2522Ampere%2527s%2Bcircuital%2Blaw%2522&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAmp%C3%A8re%27s+circuital+law" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Jackson-6"><span class="mw-cite-backlink">^ <a href="#cite_ref-Jackson_6-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Jackson_6-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation book">Jackson, John David (1999). <i>Classical Electrodynamics</i> (3rd ed.). Wiley. p.&#160;238. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-471-30932-X" title="Special:BookSources/0-471-30932-X"><bdi>0-471-30932-X</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Classical+Electrodynamics&amp;rft.pages=238&amp;rft.edition=3rd&amp;rft.pub=Wiley&amp;rft.date=1999&amp;rft.isbn=0-471-30932-X&amp;rft.aulast=Jackson&amp;rft.aufirst=John+David&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAmp%C3%A8re%27s+circuital+law" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Griffiths-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-Griffiths_7-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Griffiths, David J. (1999). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=w0YgJgAACAAJ&amp;dq=isbn=0-13-805326-X"><i>Introduction to Electrodynamics</i></a> (3rd ed.). Pearson/Addison-Wesley. pp.&#160;322–323. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-13-805326-X" title="Special:BookSources/0-13-805326-X"><bdi>0-13-805326-X</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Introduction+to+Electrodynamics&amp;rft.pages=322-323&amp;rft.edition=3rd&amp;rft.pub=Pearson%2FAddison-Wesley&amp;rft.date=1999&amp;rft.isbn=0-13-805326-X&amp;rft.aulast=Griffiths&amp;rft.aufirst=David+J.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3Dw0YgJgAACAAJ%26dq%3Disbn%3D0-13-805326-X&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAmp%C3%A8re%27s+circuital+law" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Owen0-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-Owen0_8-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Owen, George E. (2003). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=VLm_dqhZUOYC&amp;pg=PA213&amp;dq=%22Ampere%27s+circuital+law%22"><i>Electromagnetic Theory</i></a>. Mineola, NY: Dover Publications. p.&#160;285. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-486-42830-3" title="Special:BookSources/0-486-42830-3"><bdi>0-486-42830-3</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Electromagnetic+Theory&amp;rft.place=Mineola%2C+NY&amp;rft.pages=285&amp;rft.pub=Dover+Publications&amp;rft.date=2003&amp;rft.isbn=0-486-42830-3&amp;rft.aulast=Owen&amp;rft.aufirst=George+E.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DVLm_dqhZUOYC%26pg%3DPA213%26dq%3D%2522Ampere%2527s%2Bcircuital%2Blaw%2522&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAmp%C3%A8re%27s+circuital+law" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-King-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-King_9-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Billingham, J.; King, A. C. (2006). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=bNePaHM20LQC&amp;pg=PA179&amp;dq=displacement+%22ampere%27s+law%22"><i>Wave Motion</i></a>. Cambridge University Press. p.&#160;179. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-521-63450-4" title="Special:BookSources/0-521-63450-4"><bdi>0-521-63450-4</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Wave+Motion&amp;rft.pages=179&amp;rft.pub=Cambridge+University+Press&amp;rft.date=2006&amp;rft.isbn=0-521-63450-4&amp;rft.aulast=Billingham&amp;rft.aufirst=J.&amp;rft.au=King%2C+A.+C.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DbNePaHM20LQC%26pg%3DPA179%26dq%3Ddisplacement%2B%2522ampere%2527s%2Blaw%2522&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAmp%C3%A8re%27s+circuital+law" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Slater-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-Slater_10-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Slater, J. C.; Frank, N. H. (1969). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=GYsphnFwUuUC&amp;pg=PA83&amp;dq=displacement+%22ampere%27s+law%22"><i>Electromagnetism</i></a> (Reprint of 1947 ed.). Courier Dover Publications. p.&#160;83. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-486-62263-0" title="Special:BookSources/0-486-62263-0"><bdi>0-486-62263-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Electromagnetism&amp;rft.pages=83&amp;rft.edition=Reprint+of+1947&amp;rft.pub=Courier+Dover+Publications&amp;rft.date=1969&amp;rft.isbn=0-486-62263-0&amp;rft.aulast=Slater&amp;rft.aufirst=J.+C.&amp;rft.au=Frank%2C+N.+H.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DGYsphnFwUuUC%26pg%3DPA83%26dq%3Ddisplacement%2B%2522ampere%2527s%2Blaw%2522&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAmp%C3%A8re%27s+circuital+law" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Siegel-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-Siegel_11-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Siegel, Daniel M. (2003). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=AbQq85U8K0gC&amp;pg=PA97&amp;dq=Ampere%27s+circuital+law+%22displacement+current%22"><i>Innovation in Maxwell's Electromagnetic Theory: Molecular Vortices, Displacement Current, and Light</i></a>. Cambridge University Press. pp.&#160;96–98. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-521-53329-5" title="Special:BookSources/0-521-53329-5"><bdi>0-521-53329-5</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Innovation+in+Maxwell%27s+Electromagnetic+Theory%3A+Molecular+Vortices%2C+Displacement+Current%2C+and+Light&amp;rft.pages=96-98&amp;rft.pub=Cambridge+University+Press&amp;rft.date=2003&amp;rft.isbn=0-521-53329-5&amp;rft.aulast=Siegel&amp;rft.aufirst=Daniel+M.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DAbQq85U8K0gC%26pg%3DPA97%26dq%3DAmpere%2527s%2Bcircuital%2Blaw%2B%2522displacement%2Bcurrent%2522&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAmp%C3%A8re%27s+circuital+law" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation journal">Clerk Maxwell, James (1861). <a class="external text" href="https://upload.wikimedia.org/wikipedia/commons/b/b8/On_Physical_Lines_of_Force.pdf">"On Physical Lines of Force"</a> <span class="cs1-format">(PDF)</span>. <i>Philosophical Magazine and Journal of Science</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Philosophical+Magazine+and+Journal+of+Science&amp;rft.atitle=On+Physical+Lines+of+Force&amp;rft.date=1861&amp;rft.aulast=Clerk+Maxwell&amp;rft.aufirst=James&amp;rft_id=http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fb8%2FOn_Physical_Lines_of_Force.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAmp%C3%A8re%27s+circuital+law" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Griffiths1-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-Griffiths1_13-0">^</a></b></span> <span class="reference-text">For example, see <cite class="citation book"><a href="/wiki/David_J._Griffiths" title="David J. Griffiths">Griffiths, David J.</a> (1999). <i>Introduction to Electrodynamics</i>. Upper Saddle River, NJ: Prentice Hall. p.&#160;323. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-13-805326-X" title="Special:BookSources/0-13-805326-X"><bdi>0-13-805326-X</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Introduction+to+Electrodynamics&amp;rft.place=Upper+Saddle+River%2C+NJ&amp;rft.pages=323&amp;rft.pub=Prentice+Hall&amp;rft.date=1999&amp;rft.isbn=0-13-805326-X&amp;rft.aulast=Griffiths&amp;rft.aufirst=David+J.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAmp%C3%A8re%27s+circuital+law" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/> and <cite class="citation book">Tai L. Chow (2006). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=dpnpMhw1zo8C&amp;pg=PA153&amp;dq=isbn=0-7637-3827-1#PPA204,M1"><i>Introduction to Electromagnetic Theory</i></a>. Jones &amp; Bartlett. p.&#160;204. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-7637-3827-1" title="Special:BookSources/0-7637-3827-1"><bdi>0-7637-3827-1</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Introduction+to+Electromagnetic+Theory&amp;rft.pages=204&amp;rft.pub=Jones+%26+Bartlett&amp;rft.date=2006&amp;rft.isbn=0-7637-3827-1&amp;rft.au=Tai+L.+Chow&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DdpnpMhw1zo8C%26pg%3DPA153%26dq%3Disbn%3D0-7637-3827-1%23PPA204%2CM1&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAmp%C3%A8re%27s+circuital+law" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Palmer-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-Palmer_14-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Rogalski, Mircea S.; Palmer, Stuart B. (2006). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=rW95PWh3YbkC&amp;pg=PA266&amp;dq=displacement+%22Ampere%27s+circuital+law%22"><i>Advanced University Physics</i></a>. CRC Press. p.&#160;267. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/1-58488-511-4" title="Special:BookSources/1-58488-511-4"><bdi>1-58488-511-4</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Advanced+University+Physics&amp;rft.pages=267&amp;rft.pub=CRC+Press&amp;rft.date=2006&amp;rft.isbn=1-58488-511-4&amp;rft.aulast=Rogalski&amp;rft.aufirst=Mircea+S.&amp;rft.au=Palmer%2C+Stuart+B.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DrW95PWh3YbkC%26pg%3DPA266%26dq%3Ddisplacement%2B%2522Ampere%2527s%2Bcircuital%2Blaw%2522&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAmp%C3%A8re%27s+circuital+law" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Palmer2-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-Palmer2_15-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Rogalski, Mircea S.; Palmer, Stuart B. (2006). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=rW95PWh3YbkC&amp;printsec=frontcover#PPA251,M1"><i>Advanced University Physics</i></a>. CRC Press. p.&#160;251. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/1-58488-511-4" title="Special:BookSources/1-58488-511-4"><bdi>1-58488-511-4</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Advanced+University+Physics&amp;rft.pages=251&amp;rft.pub=CRC+Press&amp;rft.date=2006&amp;rft.isbn=1-58488-511-4&amp;rft.aulast=Rogalski&amp;rft.aufirst=Mircea+S.&amp;rft.au=Palmer%2C+Stuart+B.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DrW95PWh3YbkC%26printsec%3Dfrontcover%23PPA251%2CM1&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAmp%C3%A8re%27s+circuital+law" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-curl-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-curl_16-0">^</a></b></span> <span class="reference-text">The magnetization current can be expressed as the <i>curl</i> of the magnetization, so its divergence is zero and it does not contribute to the continuity equation. See <a href="/wiki/Magnetization_current#Magnetization_current" class="mw-redirect" title="Magnetization current">magnetization current</a>.</span>
+</li>
+</ol></div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;action=edit&amp;section=13" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><cite class="citation book">Griffiths, David J. (1998). <i>Introduction to Electrodynamics (3rd ed.)</i>. Prentice Hall. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-13-805326-X" title="Special:BookSources/0-13-805326-X"><bdi>0-13-805326-X</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Introduction+to+Electrodynamics+%283rd+ed.%29&amp;rft.pub=Prentice+Hall&amp;rft.date=1998&amp;rft.isbn=0-13-805326-X&amp;rft.aulast=Griffiths&amp;rft.aufirst=David+J.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAmp%C3%A8re%27s+circuital+law" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite class="citation book">Tipler, Paul (2004). <i>Physics for Scientists and Engineers: Electricity, Magnetism, Light, and Elementary Modern Physics (5th ed.)</i>. W. H. Freeman. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-7167-0810-8" title="Special:BookSources/0-7167-0810-8"><bdi>0-7167-0810-8</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Physics+for+Scientists+and+Engineers%3A+Electricity%2C+Magnetism%2C+Light%2C+and+Elementary+Modern+Physics+%285th+ed.%29&amp;rft.pub=W.+H.+Freeman&amp;rft.date=2004&amp;rft.isbn=0-7167-0810-8&amp;rft.aulast=Tipler&amp;rft.aufirst=Paul&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAmp%C3%A8re%27s+circuital+law" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li></ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;action=edit&amp;section=14" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://www.physnet.org/modules/pdf_modules/m138.pdf"><small>MISN-0-138</small> <i>Ampere's Law</i></a> (<a href="/wiki/Portable_Document_Format" class="mw-redirect" title="Portable Document Format">PDF file</a>) by Kirby Morgan for <a rel="nofollow" class="external text" href="http://www.physnet.org">Project PHYSNET</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://www.physnet.org/modules/pdf_modules/m145.pdf"><small>MISN-0-145</small> <i>The Ampere–Maxwell Equation; Displacement Current</i></a> (PDF file) by J.S. Kovacs for Project PHYSNET.</li>
+<li><a class="external text" href="https://upload.wikimedia.org/wikipedia/commons/1/19/A_Dynamical_Theory_of_the_Electromagnetic_Field.pdf"><i>A Dynamical Theory of the Electromagnetic Field</i></a>  Maxwell's paper of 1864</li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1297
+Cached time: 20190731005830
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.420 seconds
+Real time usage: 0.546 seconds
+Preprocessor visited node count: 2199/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 55408/2097152 bytes
+Template argument size: 1472/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 1/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 55063/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.155/10.000 seconds
+Lua memory usage: 4.03 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  354.028      1 -total
+ 53.85%  190.636      1 Template:Reflist
+ 40.65%  143.921     15 Template:Cite_book
+ 13.00%   46.037      1 Template:Redirect
+  7.96%   28.198      1 Template:Electromagnetism
+  6.66%   23.563      1 Template:Sidebar_with_collapsible_lists
+  6.10%   21.583     56 Template:Math
+  4.64%   16.422      2 Template:Cite_web
+  3.08%   10.894      1 Template:Wikipedia_books
+  2.37%    8.406      1 Template:Main_article
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:199304-0!canonical!math=5 and timestamp 20190731005829 and revision id 908639836
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Ampère%27s_circuital_law&amp;oldid=908639836">https://en.wikipedia.org/w/index.php?title=Ampère%27s_circuital_law&amp;oldid=908639836</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Electrostatics" title="Category:Electrostatics">Electrostatics</a></li><li><a href="/wiki/Category:Magnetostatics" title="Category:Magnetostatics">Magnetostatics</a></li><li><a href="/wiki/Category:Maxwell%27s_equations" title="Category:Maxwell&#039;s equations">Maxwell's equations</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Amp%C3%A8re%27s+circuital+law" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Amp%C3%A8re%27s+circuital+law" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Amp%C3%A8re%27s_circuital_law" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Amp%C3%A8re%27s_circuital_law" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Amp%C3%A8re%27s_circuital_law">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Amp%C3%A8re%27s_circuital_law" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Amp%C3%A8re%27s_circuital_law" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;oldid=908639836" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q51500" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Amp%C3%A8re%27s_circuital_law&amp;id=908639836" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Amp%C3%A8re%27s+circuital+law">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Amp%C3%A8re%27s+circuital+law&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%A3%D9%85%D8%A8%D9%8A%D8%B1" title="قانون أمبير – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-ast"><a href="https://ast.wikipedia.org/wiki/Llei_d%27Amp%C3%A8re" title="Llei d&#039;Ampère – Asturian" lang="ast" hreflang="ast" class="interlanguage-link-target">Asturianu</a></li><li class="interlanguage-link interwiki-bn"><a href="https://bn.wikipedia.org/wiki/%E0%A6%85%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A7%87%E0%A6%AF%E0%A6%BC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0_%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%A8%E0%A7%80_%E0%A6%B8%E0%A7%82%E0%A6%A4%E0%A7%8D%E0%A6%B0" title="অম্পেয়্যারের বর্তনী সূত্র – Bangla" lang="bn" hreflang="bn" class="interlanguage-link-target">বাংলা</a></li><li class="interlanguage-link interwiki-be"><a href="https://be.wikipedia.org/wiki/%D0%A2%D1%8D%D0%B0%D1%80%D1%8D%D0%BC%D0%B0_%D0%B0%D0%B1_%D1%86%D1%8B%D1%80%D0%BA%D1%83%D0%BB%D1%8F%D1%86%D1%8B%D1%96_%D0%BC%D0%B0%D0%B3%D0%BD%D1%96%D1%82%D0%BD%D0%B0%D0%B3%D0%B0_%D0%BF%D0%BE%D0%BB%D1%8F" title="Тэарэма аб цыркуляцыі магнітнага поля – Belarusian" lang="be" hreflang="be" class="interlanguage-link-target">Беларуская</a></li><li class="interlanguage-link interwiki-bg"><a href="https://bg.wikipedia.org/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D0%BD%D0%B0_%D0%90%D0%BC%D0%BF%D0%B5%D1%80" title="Закон на Ампер – Bulgarian" lang="bg" hreflang="bg" class="interlanguage-link-target">Български</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Llei_d%27Amp%C3%A8re" title="Llei d&#039;Ampère – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Amp%C3%A9r%C5%AFv_z%C3%A1kon" title="Ampérův zákon – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Amp%C3%A8resches_Gesetz" title="Ampèresches Gesetz – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-et"><a href="https://et.wikipedia.org/wiki/Amp%C3%A8re%27i_seadus" title="Ampère&#039;i seadus – Estonian" lang="et" hreflang="et" class="interlanguage-link-target">Eesti</a></li><li class="interlanguage-link interwiki-el"><a href="https://el.wikipedia.org/wiki/%CE%9D%CF%8C%CE%BC%CE%BF%CF%82_%CF%84%CE%BF%CF%85_%CE%91%CE%BC%CF%80%CE%AD%CF%81" title="Νόμος του Αμπέρ – Greek" lang="el" hreflang="el" class="interlanguage-link-target">Ελληνικά</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Ley_de_Amp%C3%A8re" title="Ley de Ampère – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eo"><a href="https://eo.wikipedia.org/wiki/Ampera_cirkvita_le%C4%9Do" title="Ampera cirkvita leĝo – Esperanto" lang="eo" hreflang="eo" class="interlanguage-link-target">Esperanto</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%A2%D9%85%D9%BE%D8%B1" title="قانون آمپر – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_d%27Amp%C3%A8re" title="Théorème d&#039;Ampère – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EC%95%99%ED%8E%98%EB%A5%B4_%ED%9A%8C%EB%A1%9C_%EB%B2%95%EC%B9%99" title="앙페르 회로 법칙 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-hi"><a href="https://hi.wikipedia.org/wiki/%E0%A4%8F%E0%A4%AE%E0%A5%8D%E0%A4%AA%E0%A5%80%E0%A4%AF%E0%A4%B0_%E0%A4%95%E0%A4%BE_%E0%A4%A8%E0%A4%BF%E0%A4%AF%E0%A4%AE" title="एम्पीयर का नियम – Hindi" lang="hi" hreflang="hi" class="interlanguage-link-target">हिन्दी</a></li><li class="interlanguage-link interwiki-hr"><a href="https://hr.wikipedia.org/wiki/Amp%C3%A8reov_zakon" title="Ampèreov zakon – Croatian" lang="hr" hreflang="hr" class="interlanguage-link-target">Hrvatski</a></li><li class="interlanguage-link interwiki-is"><a href="https://is.wikipedia.org/wiki/L%C3%B6gm%C3%A1l_Amperes" title="Lögmál Amperes – Icelandic" lang="is" hreflang="is" class="interlanguage-link-target">Íslenska</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Legge_di_Amp%C3%A8re" title="Legge di Ampère – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%97%D7%95%D7%A7_%D7%90%D7%9E%D7%A4%D7%A8" title="חוק אמפר – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-ka"><a href="https://ka.wikipedia.org/wiki/%E1%83%90%E1%83%9B%E1%83%9E%E1%83%94%E1%83%A0%E1%83%98%E1%83%A1_%E1%83%99%E1%83%90%E1%83%9C%E1%83%9D%E1%83%9C%E1%83%98" title="ამპერის კანონი – Georgian" lang="ka" hreflang="ka" class="interlanguage-link-target">ქართული</a></li><li class="interlanguage-link interwiki-kk"><a href="https://kk.wikipedia.org/wiki/%D0%90%D0%BC%D0%BF%D0%B5%D1%80_%D0%B7%D0%B0%D2%A3%D1%8B" title="Ампер заңы – Kazakh" lang="kk" hreflang="kk" class="interlanguage-link-target">Қазақша</a></li><li class="interlanguage-link interwiki-lv"><a href="https://lv.wikipedia.org/wiki/Magn%C4%93tisk%C4%81s_indukcijas_cirkul%C4%81cija" title="Magnētiskās indukcijas cirkulācija – Latvian" lang="lv" hreflang="lv" class="interlanguage-link-target">Latviešu</a></li><li class="interlanguage-link interwiki-lt"><a href="https://lt.wikipedia.org/wiki/Ampero_d%C4%97snis" title="Ampero dėsnis – Lithuanian" lang="lt" hreflang="lt" class="interlanguage-link-target">Lietuvių</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/Amp%C3%A8re-t%C3%B6rv%C3%A9ny" title="Ampère-törvény – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-mk"><a href="https://mk.wikipedia.org/wiki/%D0%90%D0%BC%D0%BF%D0%B5%D1%80%D0%BE%D0%B2_%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD" title="Амперов закон – Macedonian" lang="mk" hreflang="mk" class="interlanguage-link-target">Македонски</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Wet_van_Amp%C3%A8re" title="Wet van Ampère – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ne"><a href="https://ne.wikipedia.org/wiki/%E0%A4%8F%E0%A4%AE%E0%A5%8D%E0%A4%AA%E0%A5%80%E0%A4%AF%E0%A4%B0%E0%A4%95%E0%A5%8B_%E0%A4%A8%E0%A4%BF%E0%A4%AF%E0%A4%AE" title="एम्पीयरको नियम – Nepali" lang="ne" hreflang="ne" class="interlanguage-link-target">नेपाली</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87" title="アンペールの法則 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/Amp%C3%A8res_sirkulasjonslov" title="Ampères sirkulasjonslov – Norwegian" lang="no" hreflang="no" class="interlanguage-link-target">Norsk</a></li><li class="interlanguage-link interwiki-km"><a href="https://km.wikipedia.org/wiki/%E1%9E%85%E1%9F%92%E1%9E%94%E1%9E%B6%E1%9E%94%E1%9F%8B%E1%9E%A2%E1%9F%86%E1%9E%96%E1%9F%82%E1%9E%9A" title="ច្បាប់អំពែរ – Khmer" lang="km" hreflang="km" class="interlanguage-link-target">ភាសាខ្មែរ</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Prawo_Amp%C3%A8re%E2%80%99a" title="Prawo Ampère’a – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Lei_de_Amp%C3%A8re" title="Lei de Ampère – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%BE_%D1%86%D0%B8%D1%80%D0%BA%D1%83%D0%BB%D1%8F%D1%86%D0%B8%D0%B8_%D0%BC%D0%B0%D0%B3%D0%BD%D0%B8%D1%82%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BF%D0%BE%D0%BB%D1%8F" title="Теорема о циркуляции магнитного поля – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sco"><a href="https://sco.wikipedia.org/wiki/Amp%C3%A8re%27s_circuital_law" title="Ampère&#039;s circuital law – Scots" lang="sco" hreflang="sco" class="interlanguage-link-target">Scots</a></li><li class="interlanguage-link interwiki-sq"><a href="https://sq.wikipedia.org/wiki/Ligji_i_Amperit" title="Ligji i Amperit – Albanian" lang="sq" hreflang="sq" class="interlanguage-link-target">Shqip</a></li><li class="interlanguage-link interwiki-simple"><a href="https://simple.wikipedia.org/wiki/Amp%C3%A8re%27s_circuital_law" title="Ampère&#039;s circuital law – Simple English" lang="en-simple" hreflang="en-simple" class="interlanguage-link-target">Simple English</a></li><li class="interlanguage-link interwiki-sk"><a href="https://sk.wikipedia.org/wiki/Amp%C3%A9rov_z%C3%A1kon" title="Ampérov zákon – Slovak" lang="sk" hreflang="sk" class="interlanguage-link-target">Slovenčina</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/%D0%90%D0%BC%D0%BF%D0%B5%D1%80%D0%BE%D0%B2_%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD" title="Амперов закон – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-sh"><a href="https://sh.wikipedia.org/wiki/Amp%C3%A8reov_zakon" title="Ampèreov zakon – Serbo-Croatian" lang="sh" hreflang="sh" class="interlanguage-link-target">Srpskohrvatski / српскохрватски</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Amp%C3%A8ren_laki" title="Ampèren laki – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Amp%C3%A8res_lag" title="Ampères lag – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-tl"><a href="https://tl.wikipedia.org/wiki/Batas_na_pang-sirkito_ni_Amp%C3%A8re" title="Batas na pang-sirkito ni Ampère – Tagalog" lang="tl" hreflang="tl" class="interlanguage-link-target">Tagalog</a></li><li class="interlanguage-link interwiki-ta"><a href="https://ta.wikipedia.org/wiki/%E0%AE%86%E0%AE%AE%E0%AF%8D%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%BF%E0%AE%AF%E0%AE%B0%E0%AF%8D_%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AE%BF" title="ஆம்ப்பியர் விதி – Tamil" lang="ta" hreflang="ta" class="interlanguage-link-target">தமிழ்</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Amp%C3%A8re_yasas%C4%B1" title="Ampère yasası – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D0%90%D0%BC%D0%BF%D0%B5%D1%80%D0%B0_%D0%B4%D0%BB%D1%8F_%D1%86%D0%B8%D1%80%D0%BA%D1%83%D0%BB%D1%8F%D1%86%D1%96%D1%97_%D0%BC%D0%B0%D0%B3%D0%BD%D1%96%D1%82%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BF%D0%BE%D0%BB%D1%8F" title="Закон Ампера для циркуляції магнітного поля – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-ur"><a href="https://ur.wikipedia.org/wiki/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%A7%DB%8C%D9%85%D9%BE%DB%8C%D8%A6%D8%B1" title="قانون ایمپیئر – Urdu" lang="ur" hreflang="ur" class="interlanguage-link-target">اردو</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/%C4%90%E1%BB%8Bnh_lu%E1%BA%ADt_Amp%C3%A8re" title="Định luật Ampère – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-wuu"><a href="https://wuu.wikipedia.org/wiki/%E5%AE%89%E5%9F%B9%E5%AE%9A%E5%BE%8B" title="安培定律 – Wu Chinese" lang="wuu" hreflang="wuu" class="interlanguage-link-target">吴语</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E5%AE%89%E5%9F%B9%E5%AE%9A%E5%BE%8B" title="安培定律 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q51500#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 31 July 2019, at 00:58<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Amp%C3%A8re%27s_circuital_law&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.420","walltime":"0.546","ppvisitednodes":{"value":2199,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":55408,"limit":2097152},"templateargumentsize":{"value":1472,"limit":2097152},"expansiondepth":{"value":7,"limit":40},"expensivefunctioncount":{"value":1,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":55063,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  354.028      1 -total"," 53.85%  190.636      1 Template:Reflist"," 40.65%  143.921     15 Template:Cite_book"," 13.00%   46.037      1 Template:Redirect","  7.96%   28.198      1 Template:Electromagnetism","  6.66%   23.563      1 Template:Sidebar_with_collapsible_lists","  6.10%   21.583     56 Template:Math","  4.64%   16.422      2 Template:Cite_web","  3.08%   10.894      1 Template:Wikipedia_books","  2.37%    8.406      1 Template:Main_article"]},"scribunto":{"limitreport-timeusage":{"value":"0.155","limit":"10.000"},"limitreport-memusage":{"value":4226845,"limit":52428800}},"cachereport":{"origin":"mw1297","timestamp":"20190731005830","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Amp\u00e8re's circuital law","url":"https:\/\/en.wikipedia.org\/wiki\/Amp%C3%A8re%27s_circuital_law","sameAs":"http:\/\/www.wikidata.org\/entity\/Q51500","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q51500","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2003-03-20T23:44:01Z","dateModified":"2019-07-31T00:58:26Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/0\/0d\/VFPt_Solenoid_correct2.svg","headline":"relates the integrated magnetic field around a closed loop to the electric current passing through the loop"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":103,"wgHostname":"mw1330"});});</script>
+</body>
+</html>

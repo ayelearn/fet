@@ -1,0 +1,1 @@
+Nyquist_frequency

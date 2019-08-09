@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Kirchhoff's circuit laws - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Kirchhoff's_circuit_laws","wgTitle":"Kirchhoff's circuit laws","wgCurRevisionId":908246444,"wgRevisionId":908246444,"wgArticleId":591253,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles lacking in-text citations from November 2017","All articles lacking in-text citations","Commons category link is on Wikidata","Circuit theorems","Conservation equations","Linear electronic circuits","Voltage","1845 in science","Gustav Kirchhoff"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August",
+"September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Kirchhoff's_circuit_laws","wgRelevantArticleId":591253,"wgRequestId":"XUrKYQpAADoAADuI2PYAAAAA","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"KVL","wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgInternalRedirectTargetUrl":"/wiki/Kirchhoff%27s_circuit_laws#Kirchhoff's_voltage_law_(KVL)","wgWikibaseItemId":
+"Q187672","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","jquery.makeCollapsible.styles":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","ext.cite.ux-enhancements","ext.math.scripts","site","mediawiki.page.startup","mediawiki.page.ready",
+"jquery.makeCollapsible","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Kirchhoff%27s_circuit_laws#Kirchhoff&#039;s_voltage_law_(KVL)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Kirchhoff%27s_circuit_laws&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Kirchhoff%27s_circuit_laws&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Kirchhoff%27s_circuit_laws#Kirchhoff&#039;s_voltage_law_(KVL)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Kirchhoff_s_circuit_laws rootpage-Kirchhoff_s_circuit_laws skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Kirchhoff's circuit laws</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"><span class="mw-redirectedfrom">&#160;&#160;(Redirected from <a href="/w/index.php?title=KVL&amp;redirect=no" class="mw-redirect" title="KVL">KVL</a>)</span></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div role="note" class="hatnote navigation-not-searchable">For other laws named after Gustav Kirchhoff, see <a href="/wiki/Kirchhoff%27s_laws_(disambiguation)" class="mw-redirect mw-disambig" title="Kirchhoff&#39;s laws (disambiguation)">Kirchhoff's laws (disambiguation)</a>.</div>
+<table class="box-More_footnotes plainlinks metadata ambox ambox-style ambox-More_footnotes" role="presentation"><tbody><tr><td class="mbox-image"><div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" decoding="async" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x" data-file-width="48" data-file-height="48" /></div></td><td class="mbox-text"><div class="mbox-text-span">This article includes a <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">list of references</a>, but <b>its sources remain unclear</b> because it has <b>insufficient <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">inline citations</a></b>.<span class="hide-when-compact"> Please help to <a href="/wiki/Wikipedia:WikiProject_Fact_and_Reference_Check" class="mw-redirect" title="Wikipedia:WikiProject Fact and Reference Check">improve</a> this article by <a href="/wiki/Wikipedia:When_to_cite" title="Wikipedia:When to cite">introducing</a> more precise citations.</span>  <small class="date-container"><i>(<span class="date">November 2017</span>)</i></small><small class="hide-when-compact"><i> (<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></div></td></tr></tbody></table>
+<p><b>Kirchhoff's laws</b> are two <a href="/wiki/Equality_(mathematics)" title="Equality (mathematics)">equalities</a> that deal with the <a href="/wiki/Electric_current" title="Electric current">current</a> and <a href="/wiki/Potential_difference" class="mw-redirect" title="Potential difference">potential difference</a> (commonly known as voltage) in the <a href="/wiki/Lumped_element_model" title="Lumped element model">lumped element model</a> of <a href="/wiki/Electrical_circuit" class="mw-redirect" title="Electrical circuit">electrical circuits</a>. They were first described in 1845 by German physicist <a href="/wiki/Gustav_Kirchhoff" title="Gustav Kirchhoff">Gustav Kirchhoff</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> This generalized the work of <a href="/wiki/Georg_Ohm" title="Georg Ohm">Georg Ohm</a> and preceded the work of <a href="/wiki/James_Clerk_Maxwell" title="James Clerk Maxwell">James Clerk Maxwell</a>. Widely used in <a href="/wiki/Electrical_engineering" title="Electrical engineering">electrical engineering</a>, they are also called <b>Kirchhoff's rules</b> or simply <b>Kirchhoff's laws</b>. These laws can be applied in time and frequency domains and form the basis for <a href="/wiki/Network_analysis_(electrical_circuits)" title="Network analysis (electrical circuits)">network analysis</a>.
+</p><p>Both of Kirchhoff's laws can be understood as corollaries of <a href="/wiki/Maxwell%27s_equations" title="Maxwell&#39;s equations">Maxwell's equations</a> in the low-frequency limit. They are accurate for DC circuits, and for AC circuits at frequencies where the wavelengths of electromagnetic radiation are very large compared to the circuits.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Kirchhoff&#39;s_current_law_(KCL)"><span class="tocnumber">1</span> <span class="toctext">Kirchhoff's current law (KCL)</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Uses"><span class="tocnumber">1.1</span> <span class="toctext">Uses</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Kirchhoff&#39;s_voltage_law_(KVL)"><span class="tocnumber">2</span> <span class="toctext">Kirchhoff's voltage law (KVL)</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Generalization"><span class="tocnumber">2.1</span> <span class="toctext">Generalization</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Limitations"><span class="tocnumber">3</span> <span class="toctext">Limitations</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span id="Kirchhoff.27s_current_law_.28KCL.29"></span><span class="mw-headline" id="Kirchhoff's_current_law_(KCL)">Kirchhoff's current law (KCL)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kirchhoff%27s_circuit_laws&amp;action=edit&amp;section=1" title="Edit section: Kirchhoff&#039;s current law (KCL)">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:KCL_-_Kirchhoff%27s_circuit_laws.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/46/KCL_-_Kirchhoff%27s_circuit_laws.svg/220px-KCL_-_Kirchhoff%27s_circuit_laws.svg.png" decoding="async" width="220" height="214" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/46/KCL_-_Kirchhoff%27s_circuit_laws.svg/330px-KCL_-_Kirchhoff%27s_circuit_laws.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/46/KCL_-_Kirchhoff%27s_circuit_laws.svg/440px-KCL_-_Kirchhoff%27s_circuit_laws.svg.png 2x" data-file-width="294" data-file-height="286" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:KCL_-_Kirchhoff%27s_circuit_laws.svg" class="internal" title="Enlarge"></a></div>The current entering any junction is equal to the current leaving that junction. <i>i</i><sub>2</sub> + <i>i</i><sub>3</sub> = <i>i</i><sub>1</sub> + <i>i</i><sub>4</sub></div></div></div>
+<p>This law is also called <b>Kirchhoff's first law</b>, <b>Kirchhoff's point rule</b>, or <b>Kirchhoff's junction rule</b> (or <b>nodal rule</b>).
+</p><p>
+This law states that, for any node (junction) in an <a href="/wiki/Electrical_circuit" class="mw-redirect" title="Electrical circuit">electrical circuit</a>, the sum of <a href="/wiki/Current_(electricity)" class="mw-redirect" title="Current (electricity)">currents</a> flowing into that node is equal to the sum of currents flowing out of that node; or equivalently:</p><blockquote><p><b>The algebraic sum of currents in a network of conductors meeting at a point is zero</b>.</p></blockquote><p>Recalling that current is a signed (positive or negative) quantity reflecting direction towards or away from a node, this principle can be succinctly stated as:
+</p><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum _{k=1}^{n}{I}_{k}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>I</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{k=1}^{n}{I}_{k}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5853ae68466ca5383cc37e706a68a503e01daeb7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:10.115ex; height:6.843ex;" alt="\sum _{k=1}^{n}{I}_{k}=0"/></span></dd></dl>
+<p>where <i>n</i> is the total number of branches with currents flowing towards or away from the node.
+</p><p>The law is based on the conservation of charge where the charge (measured in coulombs) is the product of the current (in amperes) and the time (in seconds). If the net charge in a region is constant, the KCL will hold on the boundaries of the region.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup><sup id="cite_ref-:0_3-0" class="reference"><a href="#cite_note-:0-3">&#91;3&#93;</a></sup> This means that KCL relies on the fact that the net charge in the wires and components is constant.
+</p>
+<h3><span class="mw-headline" id="Uses">Uses</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kirchhoff%27s_circuit_laws&amp;action=edit&amp;section=2" title="Edit section: Uses">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A <a href="/wiki/Matrix_(mathematics)" title="Matrix (mathematics)">matrix</a> version of Kirchhoff's current law is the basis of most <a href="/wiki/Electronic_circuit_simulation" title="Electronic circuit simulation">circuit simulation software</a>, such as <a href="/wiki/SPICE" title="SPICE">SPICE</a>. Kirchhoff's current law is used with <a href="/wiki/Ohm%27s_law" title="Ohm&#39;s law">Ohm's law</a> to perform <a href="/wiki/Nodal_analysis" title="Nodal analysis">nodal analysis</a>.
+</p><p>KCL is applicable to any lumped network irrespective of the nature of the network; whether unilateral or bilateral, active or passive, linear or non-linear.
+</p>
+<h2><span id="Kirchhoff.27s_voltage_law_.28KVL.29"></span><span class="mw-headline" id="Kirchhoff's_voltage_law_(KVL)">Kirchhoff's voltage law (KVL)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kirchhoff%27s_circuit_laws&amp;action=edit&amp;section=3" title="Edit section: Kirchhoff&#039;s voltage law (KVL)">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/wiki/File:Kirchhoff_voltage_law.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/40/Kirchhoff_voltage_law.svg/200px-Kirchhoff_voltage_law.svg.png" decoding="async" width="200" height="175" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/40/Kirchhoff_voltage_law.svg/300px-Kirchhoff_voltage_law.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/40/Kirchhoff_voltage_law.svg/400px-Kirchhoff_voltage_law.svg.png 2x" data-file-width="800" data-file-height="700" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Kirchhoff_voltage_law.svg" class="internal" title="Enlarge"></a></div>The sum of all the voltages around a loop is equal to zero. <br /> v<sub>1</sub> + v<sub>2</sub> + v<sub>3</sub> +v<sub>4</sub> = 0</div></div></div>
+<p>This law is also called <b>Kirchhoff's second law</b>, <b>Kirchhoff's loop</b> (or <b>mesh</b>) <b>rule</b>, and <b>Kirchhoff's second rule</b>.
+</p><p>
+This law states that</p><blockquote><p><b>The directed sum of the <a href="/wiki/Potential_difference" class="mw-redirect" title="Potential difference">potential differences</a> (voltages) around any closed loop is zero.</b></p></blockquote>
+<p>Similarly to KCL, it can be stated as:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum _{k=1}^{n}V_{k}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{k=1}^{n}V_{k}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/76a79b431ccea80f87b3a61cd6665576915641a2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:10.447ex; height:6.843ex;" alt="\sum _{k=1}^{n}V_{k}=0"/></span></dd></dl>
+<p>Here, <i>n</i> is the total number of voltages measured.
+</p>
+<table class="wikitable mw-collapsible mw-collapsed">
+<tbody><tr>
+<th>Derivation of Kirchhoff's voltage law
+</th></tr>
+<tr>
+<td>A similar derivation can be found in <i>The Feynman Lectures on Physics, Volume II, Chapter 22: AC Circuits</i>.<sup id="cite_ref-:0_3-1" class="reference"><a href="#cite_note-:0-3">&#91;3&#93;</a></sup>
+<p><br />
+</p><p>Consider some arbitrary circuit. Approximate the circuit with lumped elements, so that (time-varying) magnetic fields are contained to each component and the field in the region exterior to the circuit is negligible. Based on this assumption, the <a href="/wiki/Faraday%27s_law_of_induction" title="Faraday&#39;s law of induction">Maxwell-Faraday equation</a> reveals that
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \times \mathbf {E} =-{\frac {\partial \mathbf {B} }{\partial t}}=\mathbf {0} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">E</mi>
+        </mrow>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">B</mi>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mn mathvariant="bold">0</mn>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \times \mathbf {E} =-{\frac {\partial \mathbf {B} }{\partial t}}=\mathbf {0} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/33aa0c6e0c89e1b40adf6e7c9dd1ba27c4af5424" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:19.93ex; height:5.509ex;" alt="{\displaystyle \nabla \times \mathbf {E} =-{\frac {\partial \mathbf {B} }{\partial t}}=\mathbf {0} }"/></span>
+</p><p>in the exterior region. If each of the components have a finite volume, then the exterior region is <a href="/wiki/Simply_connected_space" title="Simply connected space">simply connected</a>, and thus the electric field is <a href="/wiki/Conservative_force" title="Conservative force">conservative</a> in that region. Therefore, for any loop in the circuit, we find that
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum V_{i}=-\sum \int _{{\mathcal {P}}_{i}}\mathbf {E} \cdot \mathrm {d} \mathbf {l} =\oint \mathbf {E} \cdot \mathrm {d} \mathbf {l} =0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>&#x2211;<!-- ∑ --></mo>
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mo>&#x2211;<!-- ∑ --></mo>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi class="MJX-tex-caligraphic" mathvariant="script">P</mi>
+                </mrow>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">E</mi>
+        </mrow>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">l</mi>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+          <mrow class="MJX-TeXAtom-VCENTER">
+            <mstyle mathsize="2.07em">
+              <mtext>&#x222E;<!-- ∮ --></mtext>
+              <mspace width="thinmathspace" />
+            </mstyle>
+          </mrow>
+          <mspace width="thinmathspace" />
+        </mrow>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">E</mi>
+        </mrow>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">l</mi>
+        </mrow>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum V_{i}=-\sum \int _{{\mathcal {P}}_{i}}\mathbf {E} \cdot \mathrm {d} \mathbf {l} =\oint \mathbf {E} \cdot \mathrm {d} \mathbf {l} =0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/41df58c214457007c5bd8e7a89100f5cf5752ca6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:41.011ex; height:6.176ex;" alt="{\displaystyle \sum V_{i}=-\sum \int _{{\mathcal {P}}_{i}}\mathbf {E} \cdot \mathrm {d} \mathbf {l} =\oint \mathbf {E} \cdot \mathrm {d} \mathbf {l} =0}"/></span>
+</p><p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle {\mathcal {P}}_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi class="MJX-tex-caligraphic" mathvariant="script">P</mi>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle {\mathcal {P}}_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5f5764fdc64d299c8587b147de22e02789434f4b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.417ex; height:2.509ex;" alt="{\textstyle {\mathcal {P}}_{i}}"/></span> are paths around the <i>exterior</i> of each of the components, from one terminal to another.
+</p>
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Generalization">Generalization</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kirchhoff%27s_circuit_laws&amp;action=edit&amp;section=4" title="Edit section: Generalization">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In the low-frequency limit, the voltage drop around any loop is zero. This includes imaginary loops arranged arbitrarily in space – not limited to the loops delineated by the circuit elements and conductors. In the low-frequency limit, this is a corollary of <a href="/wiki/Faraday%27s_law_of_induction" title="Faraday&#39;s law of induction">Faraday's law of induction</a> (which is one of <a href="/wiki/Maxwell%27s_equations" title="Maxwell&#39;s equations">Maxwell's equations</a>).
+</p><p>This has practical application in situations involving "<a href="/wiki/Static_electricity" title="Static electricity">static electricity</a>".
+</p>
+<h2><span class="mw-headline" id="Limitations">Limitations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kirchhoff%27s_circuit_laws&amp;action=edit&amp;section=5" title="Edit section: Limitations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>KCL and KVL both depend on the <a href="/wiki/Lumped_element_model" title="Lumped element model">lumped element model</a> being applicable to the circuit in question. When the model is not applicable, the laws do not apply. KCL and KVL result from the assumptions of the lumped element model.
+</p><p>KCL is dependent on the assumption that the net charge in any wire, junction or lumped component is constant. Whenever the electric field between parts of the circuit is non-negligible, such as when two wires are <a href="/wiki/Capacitive_coupling" title="Capacitive coupling">capacitively coupled</a>, this may not be the case. This occurs in high-frequency AC circuits, where the lumped element model is no longer applicable.<sup id="cite_ref-GSTI_4-0" class="reference"><a href="#cite_note-GSTI-4">&#91;4&#93;</a></sup> For example, in a <a href="/wiki/Transmission_line" title="Transmission line">transmission line</a>, the charge density in the conductor will constantly be oscillating.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/File:Transmission_line_animation3.gif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/f/fd/Transmission_line_animation3.gif" decoding="async" width="300" height="60" class="thumbimage" data-file-width="300" data-file-height="60" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Transmission_line_animation3.gif" class="internal" title="Enlarge"></a></div>In a transmission line, the net charge in different parts of the conductor changes with time. In the direct physical sense, this violates KCL.</div></div></div>
+<p>On the other hand, KVL relies on the fact that the action of time-varying magnetic fields are confined to individual components, such as inductors. In reality, the induced electric field produced by an inductor is not confined, but the leaked fields are often negligible.
+</p><p><b>Modelling real circuits with lumped elements</b>
+</p><p>The lumped element approximation for a circuit is accurate at low enough frequencies. At higher frequencies, leaked fluxes and varying charge densities in conductors become significant. To an extent, it is possible to still model such circuits using <a href="/wiki/Parasitic_element_(electrical_networks)" title="Parasitic element (electrical networks)">parasitic components</a>. If frequencies are too high, it may be more appropriate to simulate the fields directly using <a href="/wiki/Finite_element_method" title="Finite element method">finite element modelling</a> or <a href="/wiki/Computational_electromagnetics" title="Computational electromagnetics">other techniques</a>.
+</p><p>To model circuits so that KVL and KCL can still be used, it's important to understand the distinction between <i>physical</i> circuit elements and the <i>ideal</i> lumped elements. For example, a wire is not an ideal conductor. Unlike an ideal conductor, wires can inductively and capacitively couple to each other (and to themselves), and have a finite propagation delay. Real conductors can be modeled in terms of lumped elements by considering <a href="/wiki/Parasitic_capacitance" title="Parasitic capacitance">parasitic capacitances</a> distributed between the conductors to model capacitive coupling, or <a href="/wiki/Parasitic_inductance" class="mw-redirect" title="Parasitic inductance">parasitic (mutual) inductances</a> to model inductive coupling.<sup id="cite_ref-GSTI_4-1" class="reference"><a href="#cite_note-GSTI-4">&#91;4&#93;</a></sup> Wires also have some self-inductance, which is the reason that <a href="/wiki/Decoupling_capacitor" title="Decoupling capacitor">decoupling capacitors</a> are necessary.
+</p>
+<h2><span class="mw-headline" id="Example">Example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kirchhoff%27s_circuit_laws&amp;action=edit&amp;section=6" title="Edit section: Example">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="floatright"><a href="/wiki/File:Kirshhoff-example.svg" class="image"><img alt="Kirshhoff-example.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/77/Kirshhoff-example.svg/280px-Kirshhoff-example.svg.png" decoding="async" width="280" height="249" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/77/Kirshhoff-example.svg/420px-Kirshhoff-example.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/77/Kirshhoff-example.svg/560px-Kirshhoff-example.svg.png 2x" data-file-width="520" data-file-height="462" /></a></div>
+<p>Assume an electric network consisting of two voltage sources and three resistors.
+</p><p>According to the first law we have
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle i_{1}-i_{2}-i_{3}=0\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle i_{1}-i_{2}-i_{3}=0\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/93c6c79b0ecad9602d606fd1b57d69b14f9f3b5e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:15.899ex; height:2.509ex;" alt="i_{1}-i_{2}-i_{3}=0\,"/></span></dd></dl>
+<p>The second law applied to the closed circuit <i>s</i><sub>1</sub> gives
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle -R_{2}i_{2}+{\mathcal {E}}_{1}-R_{1}i_{1}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>R</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi class="MJX-tex-caligraphic" mathvariant="script">E</mi>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>R</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -R_{2}i_{2}+{\mathcal {E}}_{1}-R_{1}i_{1}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8714e33c52b773a513105fb1c713074a45f387db" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:23.381ex; height:2.509ex;" alt="-R_{2}i_{2}+{\mathcal {E}}_{1}-R_{1}i_{1}=0"/></span></dd></dl>
+<p>The second law applied to the closed circuit <i>s</i><sub>2</sub> gives
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle -R_{3}i_{3}-{\mathcal {E}}_{2}-{\mathcal {E}}_{1}+R_{2}i_{2}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>R</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi class="MJX-tex-caligraphic" mathvariant="script">E</mi>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi class="MJX-tex-caligraphic" mathvariant="script">E</mi>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>R</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -R_{3}i_{3}-{\mathcal {E}}_{2}-{\mathcal {E}}_{1}+R_{2}i_{2}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f0b8c0f5d829ab0c8c56409fd8f0ec559e23e709" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:28.504ex; height:2.509ex;" alt="-R_{3}i_{3}-{\mathcal {E}}_{2}-{\mathcal {E}}_{1}+R_{2}i_{2}=0"/></span></dd></dl>
+<p>Thus we get a <a href="/wiki/System_of_linear_equations" title="System of linear equations">system of linear equations</a> in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle i_{1},i_{2},i_{3}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle i_{1},i_{2},i_{3}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5e8fcaeccd9516e7790dc89235ec0b39e9f096b0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.638ex; height:2.509ex;" alt="i_{1},i_{2},i_{3}"/></span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{cases}i_{1}-i_{2}-i_{3}&amp;=0\\-R_{2}i_{2}+{\mathcal {E}}_{1}-R_{1}i_{1}&amp;=0\\-R_{3}i_{3}-{\mathcal {E}}_{2}-{\mathcal {E}}_{1}+R_{2}i_{2}&amp;=0\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>i</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mi>i</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mi>i</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>3</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>=</mo>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mi>R</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                  <msub>
+                    <mi>i</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <msub>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi class="MJX-tex-caligraphic" mathvariant="script">E</mi>
+                      </mrow>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mi>R</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <msub>
+                    <mi>i</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>=</mo>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mi>R</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>3</mn>
+                    </mrow>
+                  </msub>
+                  <msub>
+                    <mi>i</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>3</mn>
+                    </mrow>
+                  </msub>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi class="MJX-tex-caligraphic" mathvariant="script">E</mi>
+                      </mrow>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi class="MJX-tex-caligraphic" mathvariant="script">E</mi>
+                      </mrow>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <msub>
+                    <mi>R</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                  <msub>
+                    <mi>i</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>=</mo>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{cases}i_{1}-i_{2}-i_{3}&amp;=0\\-R_{2}i_{2}+{\mathcal {E}}_{1}-R_{1}i_{1}&amp;=0\\-R_{3}i_{3}-{\mathcal {E}}_{2}-{\mathcal {E}}_{1}+R_{2}i_{2}&amp;=0\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9c2c994111ce1bbc7fc6c4d850bef42a642551a6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.671ex; width:32.998ex; height:8.509ex;" alt="{\begin{cases}i_{1}-i_{2}-i_{3}&amp;=0\\-R_{2}i_{2}+{\mathcal {E}}_{1}-R_{1}i_{1}&amp;=0\\-R_{3}i_{3}-{\mathcal {E}}_{2}-{\mathcal {E}}_{1}+R_{2}i_{2}&amp;=0\end{cases}}"/></span></dd></dl>
+<p>Which is equivalent to
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{cases}i_{1}+(-i_{2})+(-i_{3})&amp;=0\\R_{1}i_{1}+R_{2}i_{2}+0i_{3}&amp;={\mathcal {E}}_{1}\\0i_{1}+R_{2}i_{2}-R_{3}i_{3}&amp;={\mathcal {E}}_{1}+{\mathcal {E}}_{2}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>i</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <mo stretchy="false">(</mo>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mi>i</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                  <mo>+</mo>
+                  <mo stretchy="false">(</mo>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mi>i</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>3</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+                <mtd>
+                  <mo>=</mo>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>R</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <msub>
+                    <mi>i</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <msub>
+                    <mi>R</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                  <msub>
+                    <mi>i</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <mn>0</mn>
+                  <msub>
+                    <mi>i</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>3</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>=</mo>
+                  <msub>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi class="MJX-tex-caligraphic" mathvariant="script">E</mi>
+                      </mrow>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                  <msub>
+                    <mi>i</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <msub>
+                    <mi>R</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                  <msub>
+                    <mi>i</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mi>R</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>3</mn>
+                    </mrow>
+                  </msub>
+                  <msub>
+                    <mi>i</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>3</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>=</mo>
+                  <msub>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi class="MJX-tex-caligraphic" mathvariant="script">E</mi>
+                      </mrow>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <msub>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi class="MJX-tex-caligraphic" mathvariant="script">E</mi>
+                      </mrow>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{cases}i_{1}+(-i_{2})+(-i_{3})&amp;=0\\R_{1}i_{1}+R_{2}i_{2}+0i_{3}&amp;={\mathcal {E}}_{1}\\0i_{1}+R_{2}i_{2}-R_{3}i_{3}&amp;={\mathcal {E}}_{1}+{\mathcal {E}}_{2}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d1b7ad192510db9b4850f2a13db9bebd329f8af7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.671ex; width:33.483ex; height:8.509ex;" alt="{\displaystyle {\begin{cases}i_{1}+(-i_{2})+(-i_{3})&amp;=0\\R_{1}i_{1}+R_{2}i_{2}+0i_{3}&amp;={\mathcal {E}}_{1}\\0i_{1}+R_{2}i_{2}-R_{3}i_{3}&amp;={\mathcal {E}}_{1}+{\mathcal {E}}_{2}\end{cases}}}"/></span></dd></dl>
+<p>Assuming
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle R_{1}=100\Omega ,\ R_{2}=200\Omega ,\ R_{3}=300\Omega }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>R</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>100</mn>
+        <mi mathvariant="normal">&#x03A9;<!-- Ω --></mi>
+        <mo>,</mo>
+        <mtext>&#xA0;</mtext>
+        <msub>
+          <mi>R</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>200</mn>
+        <mi mathvariant="normal">&#x03A9;<!-- Ω --></mi>
+        <mo>,</mo>
+        <mtext>&#xA0;</mtext>
+        <msub>
+          <mi>R</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>300</mn>
+        <mi mathvariant="normal">&#x03A9;<!-- Ω --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle R_{1}=100\Omega ,\ R_{2}=200\Omega ,\ R_{3}=300\Omega }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5bb932df5074cf1ede3c7289395ca48a10ad3b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:36.476ex; height:2.509ex;" alt="{\displaystyle R_{1}=100\Omega ,\ R_{2}=200\Omega ,\ R_{3}=300\Omega }"/></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathcal {E}}_{1}=3{\text{V}},{\mathcal {E}}_{2}=4{\text{V}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi class="MJX-tex-caligraphic" mathvariant="script">E</mi>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>3</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>V</mtext>
+        </mrow>
+        <mo>,</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi class="MJX-tex-caligraphic" mathvariant="script">E</mi>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>4</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>V</mtext>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {E}}_{1}=3{\text{V}},{\mathcal {E}}_{2}=4{\text{V}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/10d9ee00012c85cecd1e557a3b3187f2008dadfe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:17.605ex; height:2.509ex;" alt="{\displaystyle {\mathcal {E}}_{1}=3{\text{V}},{\mathcal {E}}_{2}=4{\text{V}}}"/></span></dd></dl>
+<p>the solution is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{cases}i_{1}={\frac {1}{1100}}{\text{A}}\\[6pt]i_{2}={\frac {4}{275}}{\text{A}}\\[6pt]i_{3}=-{\frac {3}{220}}{\text{A}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing="0.8em 0.8em 0.2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>i</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mn>1100</mn>
+                    </mfrac>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>A</mtext>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>i</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>4</mn>
+                      <mn>275</mn>
+                    </mfrac>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>A</mtext>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>i</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>3</mn>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>3</mn>
+                      <mn>220</mn>
+                    </mfrac>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>A</mtext>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{cases}i_{1}={\frac {1}{1100}}{\text{A}}\\[6pt]i_{2}={\frac {4}{275}}{\text{A}}\\[6pt]i_{3}=-{\frac {3}{220}}{\text{A}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cfd39f5713de745cd55eb5f6bcb6d3cc7ba6783c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -6.338ex; width:14.626ex; height:13.843ex;" alt="{\displaystyle {\begin{cases}i_{1}={\frac {1}{1100}}{\text{A}}\\[6pt]i_{2}={\frac {4}{275}}{\text{A}}\\[6pt]i_{3}=-{\frac {3}{220}}{\text{A}}\end{cases}}}"/></span></dd></dl>
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle i_{3}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle i_{3}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4afd50c00cffe87eba89c8f9cebeefc7c0412e63" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.857ex; height:2.509ex;" alt="i_{3}"/></span> has a negative sign, which means that the direction of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle i_{3}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle i_{3}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4afd50c00cffe87eba89c8f9cebeefc7c0412e63" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.857ex; height:2.509ex;" alt="i_{3}"/></span> is opposite to the assumed direction i.e. <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle i_{3}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle i_{3}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4afd50c00cffe87eba89c8f9cebeefc7c0412e63" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.857ex; height:2.509ex;" alt="i_{3}"/></span> is directed upwards.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kirchhoff%27s_circuit_laws&amp;action=edit&amp;section=7" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><a href="/wiki/File:Nuvola_apps_ksim.png" class="image"><img alt="icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Nuvola_apps_ksim.png/28px-Nuvola_apps_ksim.png" decoding="async" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Nuvola_apps_ksim.png/42px-Nuvola_apps_ksim.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Nuvola_apps_ksim.png/56px-Nuvola_apps_ksim.png 2x" data-file-width="128" data-file-height="128" /></a></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Electronics" title="Portal:Electronics">Electronics portal</a></span></li></ul></div>
+<ul><li><a href="/wiki/Faraday%27s_law_of_induction" title="Faraday&#39;s law of induction">Faraday's law of induction</a></li>
+<li><a href="/wiki/Lumped_matter_discipline" class="mw-redirect" title="Lumped matter discipline">Lumped matter discipline</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kirchhoff%27s_circuit_laws&amp;action=edit&amp;section=8" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation thesis">Oldham, Kalil T. Swain (2008). <i>The doctrine of description: Gustav Kirchhoff, classical physics, and the "purpose of all science" in 19th-century Germany</i> (Ph. D.). University of California, Berkeley. p.&#160;52. Docket 3331743.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adissertation&amp;rft.title=The+doctrine+of+description%3A+Gustav+Kirchhoff%2C+classical+physics%2C+and+the+%22purpose+of+all+science%22+in+19th-century+Germany&amp;rft.inst=University+of+California%2C+Berkeley&amp;rft.date=2008&amp;rft.aulast=Oldham&amp;rft.aufirst=Kalil+T.+Swain&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKirchhoff%27s+circuit+laws" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web">Athavale, Prashant. <a rel="nofollow" class="external text" href="http://www.ams.jhu.edu/~prashant/KCL_KVL.pdf">"Kirchoff's current law and Kirchoff's voltage law"</a> <span class="cs1-format">(PDF)</span>. <i>Johns Hopkins University</i><span class="reference-accessdate">. Retrieved <span class="nowrap">6 December</span> 2018</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Johns+Hopkins+University&amp;rft.atitle=Kirchoff%27s+current+law+and+Kirchoff%27s+voltage+law&amp;rft.aulast=Athavale&amp;rft.aufirst=Prashant&amp;rft_id=http%3A%2F%2Fwww.ams.jhu.edu%2F~prashant%2FKCL_KVL.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKirchhoff%27s+circuit+laws" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-:0-3"><span class="mw-cite-backlink">^ <a href="#cite_ref-:0_3-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:0_3-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.feynmanlectures.caltech.edu/II_22.html">"The Feynman Lectures on Physics Vol. II Ch. 22: AC Circuits"</a>. <i>www.feynmanlectures.caltech.edu</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2018-12-06</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.feynmanlectures.caltech.edu&amp;rft.atitle=The+Feynman+Lectures+on+Physics+Vol.+II+Ch.+22%3A+AC+Circuits&amp;rft_id=http%3A%2F%2Fwww.feynmanlectures.caltech.edu%2FII_22.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKirchhoff%27s+circuit+laws" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-GSTI-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-GSTI_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-GSTI_4-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Ralph Morrison, <i>Grounding and Shielding Techniques in Instrumentation</i> Wiley-Interscience (1986) <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0471838055" title="Special:BookSources/0471838055">0471838055</a></span>
+</li>
+</ol></div></div>
+<style data-mw-deduplicate="TemplateStyles:r886047268">.mw-parser-output .refbegin{font-size:90%;margin-bottom:0.5em}.mw-parser-output .refbegin-hanging-indents>ul{list-style-type:none;margin-left:0}.mw-parser-output .refbegin-hanging-indents>ul>li,.mw-parser-output .refbegin-hanging-indents>dl>dd{margin-left:0;padding-left:3.2em;text-indent:-3.2em;list-style:none}.mw-parser-output .refbegin-100{font-size:100%}</style><div class="refbegin" style="">
+<ul><li><cite class="citation book">Paul, Clayton R. (2001). <i>Fundamentals of Electric Circuit Analysis</i>. John Wiley &amp; Sons. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-471-37195-5" title="Special:BookSources/0-471-37195-5"><bdi>0-471-37195-5</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Fundamentals+of+Electric+Circuit+Analysis&amp;rft.pub=John+Wiley+%26+Sons&amp;rft.date=2001&amp;rft.isbn=0-471-37195-5&amp;rft.au=Paul%2C+Clayton+R.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKirchhoff%27s+circuit+laws" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite class="citation book">Serway, Raymond A.; Jewett, John W. (2004). <i>Physics for Scientists and Engineers (6th ed.)</i>. Brooks/Cole. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-534-40842-7" title="Special:BookSources/0-534-40842-7"><bdi>0-534-40842-7</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Physics+for+Scientists+and+Engineers+%286th+ed.%29&amp;rft.pub=Brooks%2FCole&amp;rft.date=2004&amp;rft.isbn=0-534-40842-7&amp;rft.au=Serway%2C+Raymond+A.&amp;rft.au=Jewett%2C+John+W.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKirchhoff%27s+circuit+laws" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite class="citation book">Tipler, Paul (2004). <i>Physics for Scientists and Engineers: Electricity, Magnetism, Light, and Elementary Modern Physics (5th ed.)</i>. W. H. Freeman. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-7167-0810-8" title="Special:BookSources/0-7167-0810-8"><bdi>0-7167-0810-8</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Physics+for+Scientists+and+Engineers%3A+Electricity%2C+Magnetism%2C+Light%2C+and+Elementary+Modern+Physics+%285th+ed.%29&amp;rft.pub=W.+H.+Freeman&amp;rft.date=2004&amp;rft.isbn=0-7167-0810-8&amp;rft.au=Tipler%2C+Paul&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKirchhoff%27s+circuit+laws" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite class="citation book">Graham, Howard Johnson, Martin (2002). <i>High-speed signal propagation&#160;: advanced black magic</i> (10. printing. ed.). Upper Saddle River, NJ: Prentice Hall PTR. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-13-084408-X" title="Special:BookSources/0-13-084408-X"><bdi>0-13-084408-X</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=High-speed+signal+propagation+%3A+advanced+black+magic&amp;rft.place=Upper+Saddle+River%2C+NJ&amp;rft.edition=10.+printing.&amp;rft.pub=Prentice+Hall+PTR&amp;rft.date=2002&amp;rft.isbn=0-13-084408-X&amp;rft.aulast=Graham&amp;rft.aufirst=Howard+Johnson%2C+Martin&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKirchhoff%27s+circuit+laws" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li></ul>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kirchhoff%27s_circuit_laws&amp;action=edit&amp;section=9" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="background-color:#f9f9f9;border:1px solid #aaa;color:#000">
+<tbody><tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" decoding="async" width="30" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></td>
+<td class="mbox-text plainlist">Wikimedia Commons has media related to <i><b><a href="https://commons.wikimedia.org/wiki/Category:Kirchhoff%27s_circuit_laws" class="extiw" title="commons:Category:Kirchhoff&#39;s circuit laws">Kirchhoff's circuit laws</a></b></i>.</td></tr>
+</tbody></table>
+<ul><li><a rel="nofollow" class="external text" href="http://www.ibiblio.org/kuphaldt/electricCircuits/DC/DC_6.html"><i>Divider Circuits and Kirchhoff's Laws</i></a> chapter from <a rel="nofollow" class="external text" href="http://www.ibiblio.org/kuphaldt/electricCircuits/DC/index.html"><i>Lessons In Electric Circuits Vol 1 DC</i></a> free ebook and <a rel="nofollow" class="external text" href="http://www.ibiblio.org/kuphaldt/electricCircuits/"><i>Lessons In Electric Circuits</i></a> series.</li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1269
+Cached time: 20190731023035
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.312 seconds
+Real time usage: 0.513 seconds
+Preprocessor visited node count: 959/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 20101/2097152 bytes
+Template argument size: 989/2097152 bytes
+Highest expansion depth: 15/40
+Expensive parser function count: 2/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 20021/5000000 bytes
+Number of Wikibase entities loaded: 1/400
+Lua time usage: 0.140/10.000 seconds
+Lua memory usage: 3.98 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  344.114      1 -total
+ 45.37%  156.113      1 Template:Reflist
+ 27.45%   94.472      1 Template:Cite_thesis
+ 15.02%   51.671      1 Template:More_footnotes
+ 14.16%   48.743      1 Template:Commons_category
+ 11.40%   39.231      1 Template:Ambox
+  9.40%   32.358      1 Template:ISBN
+  8.69%   29.893      1 Template:For
+  6.44%   22.156      4 Template:Cite_book
+  4.09%   14.064      1 Template:Refbegin
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:591253-0!canonical!math=5 and timestamp 20190731023035 and revision id 908246444
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Kirchhoff%27s_circuit_laws&amp;oldid=908246444#Kirchhoff's_voltage_law_(KVL)">https://en.wikipedia.org/w/index.php?title=Kirchhoff%27s_circuit_laws&amp;oldid=908246444#Kirchhoff's_voltage_law_(KVL)</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Circuit_theorems" title="Category:Circuit theorems">Circuit theorems</a></li><li><a href="/wiki/Category:Conservation_equations" title="Category:Conservation equations">Conservation equations</a></li><li><a href="/wiki/Category:Linear_electronic_circuits" title="Category:Linear electronic circuits">Linear electronic circuits</a></li><li><a href="/wiki/Category:Voltage" title="Category:Voltage">Voltage</a></li><li><a href="/wiki/Category:1845_in_science" title="Category:1845 in science">1845 in science</a></li><li><a href="/wiki/Category:Gustav_Kirchhoff" title="Category:Gustav Kirchhoff">Gustav Kirchhoff</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_lacking_in-text_citations_from_November_2017" title="Category:Articles lacking in-text citations from November 2017">Articles lacking in-text citations from November 2017</a></li><li><a href="/wiki/Category:All_articles_lacking_in-text_citations" title="Category:All articles lacking in-text citations">All articles lacking in-text citations</a></li><li><a href="/wiki/Category:Commons_category_link_is_on_Wikidata" title="Category:Commons category link is on Wikidata">Commons category link is on Wikidata</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Kirchhoff%27s+circuit+laws" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Kirchhoff%27s+circuit+laws" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Kirchhoff%27s_circuit_laws" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Kirchhoff%27s_circuit_laws" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Kirchhoff%27s_circuit_laws">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Kirchhoff%27s_circuit_laws&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Kirchhoff%27s_circuit_laws&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Kirchhoff%27s_circuit_laws" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Kirchhoff%27s_circuit_laws" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Kirchhoff%27s_circuit_laws&amp;oldid=908246444" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Kirchhoff%27s_circuit_laws&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q187672" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Kirchhoff%27s_circuit_laws&amp;id=908246444" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-wikibase-otherprojects" aria-labelledby="p-wikibase-otherprojects-label">
+			<h3 id="p-wikibase-otherprojects-label">In other projects</h3>
+			<div class="body">
+								<ul>
+					<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:Kirchhoff%27s_circuit_laws" hreflang="en">Wikimedia Commons</a></li><li class="wb-otherproject-link wb-otherproject-wikibooks"><a href="https://en.wikibooks.org/wiki/Circuit_Theory/Kirchhoff%27s_Law" hreflang="en">Wikibooks</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Kirchhoff%27s+circuit+laws">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Kirchhoff%27s+circuit+laws&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Kirchhoff%27s_circuit_laws&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-am"><a href="https://am.wikipedia.org/wiki/%E1%8B%A8%E1%8A%AA%E1%88%AD%E1%8A%AE%E1%8D%8D_%E1%8C%85%E1%88%A8%E1%89%B5_%E1%88%85%E1%8C%8D" title="የኪርኮፍ ጅረት ህግ – Amharic" lang="am" hreflang="am" class="interlanguage-link-target">አማርኛ</a></li><li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D9%86%D9%88%D9%86%D8%A7_%D9%83%D9%8A%D8%B1%D8%B4%D9%88%D9%81" title="قانونا كيرشوف – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-ast"><a href="https://ast.wikipedia.org/wiki/Lleis_de_Kirchhoff" title="Lleis de Kirchhoff – Asturian" lang="ast" hreflang="ast" class="interlanguage-link-target">Asturianu</a></li><li class="interlanguage-link interwiki-bn"><a href="https://bn.wikipedia.org/wiki/%E0%A6%95%E0%A6%BF%E0%A6%B0%E0%A6%95%E0%A7%8B%E0%A6%AB%E0%A7%87%E0%A6%B0_%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%A8%E0%A7%80%E0%A6%B0_%E0%A6%B8%E0%A6%AE%E0%A7%80%E0%A6%95%E0%A6%B0%E0%A6%A3%E0%A6%B8%E0%A6%AE%E0%A7%82%E0%A6%B9" title="কিরকোফের বর্তনীর সমীকরণসমূহ – Bangla" lang="bn" hreflang="bn" class="interlanguage-link-target">বাংলা</a></li><li class="interlanguage-link interwiki-be"><a href="https://be.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%B2%D1%96%D0%BB%D1%8B_%D0%9A%D1%96%D1%80%D1%85%D0%B3%D0%BE%D1%84%D0%B0" title="Правілы Кірхгофа – Belarusian" lang="be" hreflang="be" class="interlanguage-link-target">Беларуская</a></li><li class="interlanguage-link interwiki-bg"><a href="https://bg.wikipedia.org/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD%D0%B8_%D0%BD%D0%B0_%D0%9A%D0%B8%D1%80%D1%85%D0%BE%D1%84" title="Закони на Кирхоф – Bulgarian" lang="bg" hreflang="bg" class="interlanguage-link-target">Български</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Lleis_de_Kirchhoff" title="Lleis de Kirchhoff – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Kirchhoffovy_z%C3%A1kony" title="Kirchhoffovy zákony – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/Kirchhoffs_love_(elektriske_kredsl%C3%B8b)" title="Kirchhoffs love (elektriske kredsløb) – Danish" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Kirchhoffsche_Regeln" title="Kirchhoffsche Regeln – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-et"><a href="https://et.wikipedia.org/wiki/Kirchhoffi_seadused" title="Kirchhoffi seadused – Estonian" lang="et" hreflang="et" class="interlanguage-link-target">Eesti</a></li><li class="interlanguage-link interwiki-el"><a href="https://el.wikipedia.org/wiki/%CE%9A%CE%B1%CE%BD%CF%8C%CE%BD%CE%B5%CF%82_%CF%84%CE%BF%CF%85_%CE%9A%CE%AF%CF%81%CF%87%CE%BF%CF%86" title="Κανόνες του Κίρχοφ – Greek" lang="el" hreflang="el" class="interlanguage-link-target">Ελληνικά</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Leyes_de_Kirchhoff" title="Leyes de Kirchhoff – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eo"><a href="https://eo.wikipedia.org/wiki/Le%C4%9Doj_de_Kirchhoff_pri_cirkvitoj" title="Leĝoj de Kirchhoff pri cirkvitoj – Esperanto" lang="eo" hreflang="eo" class="interlanguage-link-target">Esperanto</a></li><li class="interlanguage-link interwiki-eu"><a href="https://eu.wikipedia.org/wiki/Kirchhoffen_zirkuituen_legeak" title="Kirchhoffen zirkuituen legeak – Basque" lang="eu" hreflang="eu" class="interlanguage-link-target">Euskara</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%82%D8%A7%D9%86%D9%88%D9%86%E2%80%8C%D9%87%D8%A7%DB%8C_%D9%85%D8%AF%D8%A7%D8%B1%DB%8C_%DA%A9%DB%8C%D8%B1%D8%B4%D9%87%D9%81" title="قانون‌های مداری کیرشهف – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Lois_de_Kirchhoff" title="Lois de Kirchhoff – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ga"><a href="https://ga.wikipedia.org/wiki/Dl%C3%ADthe_Kirchhoff" title="Dlíthe Kirchhoff – Irish" lang="ga" hreflang="ga" class="interlanguage-link-target">Gaeilge</a></li><li class="interlanguage-link interwiki-gl"><a href="https://gl.wikipedia.org/wiki/Leis_de_Kirchhoff" title="Leis de Kirchhoff – Galician" lang="gl" hreflang="gl" class="interlanguage-link-target">Galego</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%ED%82%A4%EB%A5%B4%ED%9E%88%ED%98%B8%ED%94%84%EC%9D%98_%EC%A0%84%EA%B8%B0%ED%9A%8C%EB%A1%9C_%EB%B2%95%EC%B9%99" title="키르히호프의 전기회로 법칙 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-hy"><a href="https://hy.wikipedia.org/wiki/%D4%BF%D5%AB%D6%80%D5%AD%D5%B0%D5%B8%D6%86%D5%AB_%D5%AF%D5%A1%D5%B6%D5%B8%D5%B6%D5%B6%D5%A5%D6%80" title="Կիրխհոֆի կանոններ – Armenian" lang="hy" hreflang="hy" class="interlanguage-link-target">Հայերեն</a></li><li class="interlanguage-link interwiki-hi"><a href="https://hi.wikipedia.org/wiki/%E0%A4%95%E0%A4%BF%E0%A4%B0%E0%A4%9A%E0%A5%89%E0%A4%AB_%E0%A4%95%E0%A5%87_%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%AA%E0%A4%A5_%E0%A4%95%E0%A5%87_%E0%A4%A8%E0%A4%BF%E0%A4%AF%E0%A4%AE" title="किरचॉफ के परिपथ के नियम – Hindi" lang="hi" hreflang="hi" class="interlanguage-link-target">हिन्दी</a></li><li class="interlanguage-link interwiki-hr"><a href="https://hr.wikipedia.org/wiki/Kirchhoffovi_zakoni_o_struji_i_naponu" title="Kirchhoffovi zakoni o struji i naponu – Croatian" lang="hr" hreflang="hr" class="interlanguage-link-target">Hrvatski</a></li><li class="interlanguage-link interwiki-id"><a href="https://id.wikipedia.org/wiki/Hukum_sirkuit_Kirchhoff" title="Hukum sirkuit Kirchhoff – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Leggi_di_Kirchhoff" title="Leggi di Kirchhoff – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%97%D7%95%D7%A7%D7%99_%D7%A7%D7%99%D7%A8%D7%9B%D7%94%D7%95%D7%A3" title="חוקי קירכהוף – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-kk"><a href="https://kk.wikipedia.org/wiki/%D0%9A%D0%B8%D1%80%D1%85%D0%B3%D1%80%D0%BE%D1%84_%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%BB%D0%B5%D1%80%D1%96" title="Кирхгроф ережелері – Kazakh" lang="kk" hreflang="kk" class="interlanguage-link-target">Қазақша</a></li><li class="interlanguage-link interwiki-lv"><a href="https://lv.wikipedia.org/wiki/Kirhofa_likumi_elektriskajai_%C4%B7%C4%93dei" title="Kirhofa likumi elektriskajai ķēdei – Latvian" lang="lv" hreflang="lv" class="interlanguage-link-target">Latviešu</a></li><li class="interlanguage-link interwiki-li"><a href="https://li.wikipedia.org/wiki/Wette_van_Kirchhoff" title="Wette van Kirchhoff – Limburgish" lang="li" hreflang="li" class="interlanguage-link-target">Limburgs</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/Kirchhoff-t%C3%B6rv%C3%A9nyek" title="Kirchhoff-törvények – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-mk"><a href="https://mk.wikipedia.org/wiki/%D0%9A%D0%B8%D1%80%D1%85%D0%BE%D1%84%D0%BE%D0%B2%D0%B8_%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD%D0%B8_%D0%B7%D0%B0_%D1%81%D1%82%D1%80%D1%83%D1%98%D0%BD%D0%BE%D1%82%D0%BE_%D0%BA%D0%BE%D0%BB%D0%BE" title="Кирхофови закони за струјното коло – Macedonian" lang="mk" hreflang="mk" class="interlanguage-link-target">Македонски</a></li><li class="interlanguage-link interwiki-arz"><a href="https://arz.wikipedia.org/wiki/%D9%82%D9%88%D8%A7%D9%86%D9%8A%D9%86_%D9%83%D9%8A%D8%B1%D8%B4%D9%87%D9%88%D9%81" title="قوانين كيرشهوف – Egyptian Arabic" lang="arz" hreflang="arz" class="interlanguage-link-target">مصرى</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Elektriciteitswetten_van_Kirchhoff" title="Elektriciteitswetten van Kirchhoff – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%AB%E3%83%92%E3%83%9B%E3%83%83%E3%83%95%E3%81%AE%E6%B3%95%E5%89%87_(%E9%9B%BB%E6%B0%97%E5%9B%9E%E8%B7%AF)" title="キルヒホッフの法則 (電気回路) – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/Kirchhoffs_lover" title="Kirchhoffs lover – Norwegian" lang="no" hreflang="no" class="interlanguage-link-target">Norsk</a></li><li class="interlanguage-link interwiki-nn"><a href="https://nn.wikipedia.org/wiki/Kirchhoff-lovane" title="Kirchhoff-lovane – Norwegian Nynorsk" lang="nn" hreflang="nn" class="interlanguage-link-target">Norsk nynorsk</a></li><li class="interlanguage-link interwiki-uz"><a href="https://uz.wikipedia.org/wiki/Kirxgof_qoidalari" title="Kirxgof qoidalari – Uzbek" lang="uz" hreflang="uz" class="interlanguage-link-target">Oʻzbekcha/ўзбекча</a></li><li class="interlanguage-link interwiki-pms"><a href="https://pms.wikipedia.org/wiki/R%C3%A9gole_%C3%ABd_Kirchhoff" title="Régole ëd Kirchhoff – Piedmontese" lang="pms" hreflang="pms" class="interlanguage-link-target">Piemontèis</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Leis_de_Kirchhoff" title="Leis de Kirchhoff – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="https://ro.wikipedia.org/wiki/Legile_lui_Kirchhoff" title="Legile lui Kirchhoff – Romanian" lang="ro" hreflang="ro" class="interlanguage-link-target">Română</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0_%D0%9A%D0%B8%D1%80%D1%85%D0%B3%D0%BE%D1%84%D0%B0" title="Правила Кирхгофа – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sc"><a href="https://sc.wikipedia.org/wiki/Leges_de_Kirchhoff" title="Leges de Kirchhoff – Sardinian" lang="sc" hreflang="sc" class="interlanguage-link-target">Sardu</a></li><li class="interlanguage-link interwiki-si"><a href="https://si.wikipedia.org/wiki/%E0%B6%9A(%E0%B6%BB%E0%B7%8A)%E0%B6%A0%E0%B7%9C%E0%B7%86%E0%B7%8A%E0%B6%9C%E0%B7%9A_%E0%B6%B0%E0%B7%8F%E0%B6%BB%E0%B7%8F_%E0%B6%B1%E0%B7%92%E0%B6%BA%E0%B6%B8%E0%B6%BA" title="ක(ර්)චොෆ්ගේ ධාරා නියමය – Sinhala" lang="si" hreflang="si" class="interlanguage-link-target">සිංහල</a></li><li class="interlanguage-link interwiki-simple"><a href="https://simple.wikipedia.org/wiki/Kirchhoff%27s_circuit_laws" title="Kirchhoff&#039;s circuit laws – Simple English" lang="en-simple" hreflang="en-simple" class="interlanguage-link-target">Simple English</a></li><li class="interlanguage-link interwiki-sk"><a href="https://sk.wikipedia.org/wiki/Kirchhoffove_z%C3%A1kony" title="Kirchhoffove zákony – Slovak" lang="sk" hreflang="sk" class="interlanguage-link-target">Slovenčina</a></li><li class="interlanguage-link interwiki-sl"><a href="https://sl.wikipedia.org/wiki/Kirchhoffova_zakona" title="Kirchhoffova zakona – Slovenian" lang="sl" hreflang="sl" class="interlanguage-link-target">Slovenščina</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/%D0%9A%D0%B8%D1%80%D1%85%D0%BE%D1%84%D0%BE%D0%B2%D0%B8_%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD%D0%B8" title="Кирхофови закони – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-sh"><a href="https://sh.wikipedia.org/wiki/Kirchhoffovi_zakoni_o_struji_i_naponu" title="Kirchhoffovi zakoni o struji i naponu – Serbo-Croatian" lang="sh" hreflang="sh" class="interlanguage-link-target">Srpskohrvatski / српскохрватски</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Kirchhoffin_piirilait" title="Kirchhoffin piirilait – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Kirchhoffs_lagar" title="Kirchhoffs lagar – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-tl"><a href="https://tl.wikipedia.org/wiki/Mga_batas_ng_sirkito_ni_Kirchhoff" title="Mga batas ng sirkito ni Kirchhoff – Tagalog" lang="tl" hreflang="tl" class="interlanguage-link-target">Tagalog</a></li><li class="interlanguage-link interwiki-ta"><a href="https://ta.wikipedia.org/wiki/%E0%AE%95%E0%AE%BF%E0%AE%B0%E0%AF%8D%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%BE%E0%AE%83%E0%AE%AA%E0%AE%BF%E0%AE%A9%E0%AF%8D_%E0%AE%AE%E0%AE%BF%E0%AE%A9%E0%AF%8D%E0%AE%9A%E0%AF%81%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AF%81_%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%B3%E0%AF%8D" title="கிர்க்காஃபின் மின்சுற்று விதிகள் – Tamil" lang="ta" hreflang="ta" class="interlanguage-link-target">தமிழ்</a></li><li class="interlanguage-link interwiki-tt"><a href="https://tt.wikipedia.org/wiki/%D0%9A%D0%B8%D1%80%D1%85%D0%B3%D0%BE%D1%84_%D0%BA%D0%B0%D0%B3%D1%8B%D0%B9%D0%B4%D3%99%D0%BB%D3%99%D1%80%D0%B5" title="Кирхгоф кагыйдәләре – Tatar" lang="tt" hreflang="tt" class="interlanguage-link-target">Татарча/tatarça</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Kirchhoff_kanunlar%C4%B1" title="Kirchhoff kanunları – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0_%D0%9A%D1%96%D1%80%D1%85%D0%B3%D0%BE%D1%84%D0%B0" title="Правила Кірхгофа – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/%C4%90%E1%BB%8Bnh_lu%E1%BA%ADt_Kirchhoff" title="Định luật Kirchhoff – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E5%9F%BA%E7%88%BE%E9%9C%8D%E5%A4%AB%E9%9B%BB%E8%B7%AF%E5%AE%9A%E5%BE%8B" title="基爾霍夫電路定律 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q187672#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 28 July 2019, at 13:19<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Kirchhoff%27s_circuit_laws&amp;mobileaction=toggle_view_mobile#Kirchhoff&#039;s_voltage_law_(KVL)" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.312","walltime":"0.513","ppvisitednodes":{"value":959,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":20101,"limit":2097152},"templateargumentsize":{"value":989,"limit":2097152},"expansiondepth":{"value":15,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":20021,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  344.114      1 -total"," 45.37%  156.113      1 Template:Reflist"," 27.45%   94.472      1 Template:Cite_thesis"," 15.02%   51.671      1 Template:More_footnotes"," 14.16%   48.743      1 Template:Commons_category"," 11.40%   39.231      1 Template:Ambox","  9.40%   32.358      1 Template:ISBN","  8.69%   29.893      1 Template:For","  6.44%   22.156      4 Template:Cite_book","  4.09%   14.064      1 Template:Refbegin"]},"scribunto":{"limitreport-timeusage":{"value":"0.140","limit":"10.000"},"limitreport-memusage":{"value":4177154,"limit":52428800}},"cachereport":{"origin":"mw1269","timestamp":"20190731023035","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Kirchhoff's circuit laws","url":"https:\/\/en.wikipedia.org\/wiki\/Kirchhoff%27s_circuit_laws#Kirchhoff's_voltage_law_(KVL)","sameAs":"http:\/\/www.wikidata.org\/entity\/Q187672","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q187672","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-04-12T02:28:44Z","dateModified":"2019-07-28T13:19:47Z"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":122,"wgHostname":"mw1263"});});</script>
+</body>
+</html>

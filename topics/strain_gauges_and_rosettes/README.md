@@ -1,0 +1,1 @@
+strain_gauges_and_rosettes

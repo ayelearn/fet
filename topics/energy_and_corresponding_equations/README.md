@@ -1,0 +1,1 @@
+energy_and_corresponding_equations

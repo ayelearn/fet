@@ -1,0 +1,1 @@
+spectroscopic_term_symbols

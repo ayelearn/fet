@@ -1,0 +1,1 @@
+light_and_rubbing_fastness

@@ -1,0 +1,1 @@
+twist_strength_relationship_in_spun_yarns

@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Boltzmann distribution - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Boltzmann_distribution","wgTitle":"Boltzmann distribution","wgCurRevisionId":907922101,"wgRevisionId":907922101,"wgArticleId":4107,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Use American English from March 2019","All Wikipedia articles written in American English","Articles with short description","All articles with unsourced statements","Articles with unsourced statements from December 2018","Statistical mechanics"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September",
+"October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Boltzmann_distribution","wgRelevantArticleId":4107,"wgRequestId":"XTqdAwpAMFEAAHnWUF4AAABP","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q834200","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready",
+"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.math.scripts","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar",
+"ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.15"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Boltzmann_distribution_graph.svg/1200px-Boltzmann_distribution_graph.svg.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Boltzmann_distribution"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Boltzmann_distribution&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Boltzmann_distribution&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Boltzmann_distribution"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Boltzmann_distribution rootpage-Boltzmann_distribution skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Boltzmann distribution</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p class="mw-empty-elt">
+</p>
+<div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Probability distribution of energy states of a system</div>
+<div role="note" class="hatnote navigation-not-searchable">This article is about system energy states. For particle energy levels and velocities, see <a href="/wiki/Maxwell%E2%80%93Boltzmann_distribution" title="Maxwell–Boltzmann distribution">Maxwell–Boltzmann distribution</a>.</div>
+<div class="thumb tright"><div class="thumbinner" style="width:392px;"><a href="/wiki/File:Boltzmann_distribution_graph.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Boltzmann_distribution_graph.svg/390px-Boltzmann_distribution_graph.svg.png" decoding="async" width="390" height="272" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Boltzmann_distribution_graph.svg/585px-Boltzmann_distribution_graph.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Boltzmann_distribution_graph.svg/780px-Boltzmann_distribution_graph.svg.png 2x" data-file-width="488" data-file-height="340" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Boltzmann_distribution_graph.svg" class="internal" title="Enlarge"></a></div>Boltzmann factor <i>p<sub>i</sub></i>&#160;/&#160;<i>p<sub>j</sub></i> (vertical axis) as a function of temperature <i>T</i> for several energy differences <i>ε<sub>i</sub></i>&#160;−&#160;<i>ε<sub>j</sub></i>.</div></div></div>
+<p>In <a href="/wiki/Statistical_mechanics" title="Statistical mechanics">statistical mechanics</a> and <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>, a <b>Boltzmann distribution</b> (also called <b>Gibbs distribution</b><sup id="cite_ref-landau_1-0" class="reference"><a href="#cite_note-landau-1">&#91;1&#93;</a></sup>) is a <a href="/wiki/Probability_distribution" title="Probability distribution">probability distribution</a> or <a href="/wiki/Probability_measure" title="Probability measure">probability measure</a> that gives the probability that a system will be in a certain <a href="/wiki/Microstate_(statistical_mechanics)" title="Microstate (statistical mechanics)">state</a> as a function of that state's energy and the temperature of the system. <span class="citation-needed-content" style="padding-left:0.1em; padding-right:0.1em; color:#595959; border:1px solid #DDD;">It is also a <a href="/wiki/Frequency_distribution" title="Frequency distribution">frequency distribution</a> of particles in a system.</span><sup class="noprint Inline-Template Template-Fact" style="margin-left:0.1em; white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (December 2018)">citation needed</span></a></i>&#93;</sup> The distribution is expressed in the form:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle p_{i}\propto e^{-{\frac {\varepsilon _{i}}{kT}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>&#x221D;<!-- ∝ --></mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <msub>
+                  <mi>&#x03B5;<!-- ε --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                  </mrow>
+                </msub>
+                <mrow>
+                  <mi>k</mi>
+                  <mi>T</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{i}\propto e^{-{\frac {\varepsilon _{i}}{kT}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f5e5008a4278603b25700765d9b7f0a68d0fd895" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:10.222ex; height:4.009ex;" alt="{\displaystyle p_{i}\propto e^{-{\frac {\varepsilon _{i}}{kT}}}}"/></span></dd></dl>
+<p>where <span class="texhtml mvar" style="font-style:italic;">p<sub>i</sub></span> is the probability of the system being in state <span class="texhtml mvar" style="font-style:italic;">i</span>, <span class="texhtml mvar" style="font-style:italic;">ε<sub>i</sub></span> is the energy of that state, and a constant <span class="texhtml mvar" style="font-style:italic;">kT</span> of the distribution is the product of <a href="/wiki/Boltzmann%27s_constant" class="mw-redirect" title="Boltzmann&#39;s constant">Boltzmann's constant</a> <span class="texhtml mvar" style="font-style:italic;">k</span> and <a href="/wiki/Thermodynamic_temperature" title="Thermodynamic temperature">thermodynamic temperature</a> <span class="texhtml mvar" style="font-style:italic;">T</span>. The symbol <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle \propto }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mo>&#x221D;<!-- ∝ --></mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle \propto }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4ddcdc1779a726be27007b9ef99ea3eb66680216" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.808ex; height:1.676ex;" alt="{\textstyle \propto }"/></span> denotes <a href="/wiki/Proportionality_(mathematics)" title="Proportionality (mathematics)">proportionality</a> (see <a href="#The_distribution">§&#160;The distribution</a> for the proportionality constant).
+</p><p>The term system here has a very wide meaning; it can range from a single atom to a macroscopic system such as a <a href="/wiki/Natural_gas_storage" title="Natural gas storage">natural gas storage tank</a>. Because of this the Boltzmann distribution can be used to solve a very wide variety of problems. The distribution shows that states with lower energy will always have a higher probability of being occupied .
+</p><p>The <i>ratio</i> of probabilities of two states is known as the <b>Boltzmann factor</b> and characteristically only depends on the states' energy difference:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {p_{i}}{p_{j}}}=e^{\frac {\varepsilon _{j}-\varepsilon _{i}}{kT}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>p</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>p</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>j</mi>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <msub>
+                  <mi>&#x03B5;<!-- ε --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>j</mi>
+                  </mrow>
+                </msub>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>&#x03B5;<!-- ε --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                  </mrow>
+                </msub>
+              </mrow>
+              <mrow>
+                <mi>k</mi>
+                <mi>T</mi>
+              </mrow>
+            </mfrac>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {p_{i}}{p_{j}}}=e^{\frac {\varepsilon _{j}-\varepsilon _{i}}{kT}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1a12551f434b52b72ba931d3ee7d57dc6344a36f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:11.725ex; height:6.343ex;" alt="{\displaystyle {\frac {p_{i}}{p_{j}}}=e^{\frac {\varepsilon _{j}-\varepsilon _{i}}{kT}}}"/></span></dd></dl>
+<p>The Boltzmann distribution is named after <a href="/wiki/Ludwig_Boltzmann" title="Ludwig Boltzmann">Ludwig Boltzmann</a> who first formulated it in 1868 during his studies of the <a href="/wiki/Statistical_mechanics" title="Statistical mechanics">statistical mechanics</a> of gases in thermal equilibrium. Boltzmann's statistical work is borne out in his paper “On the Relationship between the Second Fundamental Theorem of the Mechanical Theory of Heat and Probability Calculations Regarding the Conditions for Thermal Equilibrium"<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+The distribution was later investigated extensively, in its modern generic form, by <a href="/wiki/Josiah_Willard_Gibbs" title="Josiah Willard Gibbs">Josiah Willard Gibbs</a> in 1902.<sup id="cite_ref-gibbs_3-0" class="reference"><a href="#cite_note-gibbs-3">&#91;3&#93;</a></sup><sup class="reference" style="white-space:nowrap;">:<span>Ch.IV</span></sup>
+</p><p>The generalized Boltzmann distribution is a sufficient and necessary condition for the equivalence between the statistical mechanics definition of entropy (The <a href="/wiki/Entropy_(statistical_thermodynamics)#Gibbs_entropy_formula" title="Entropy (statistical thermodynamics)"> Gibbs entropy formula</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle S=-k_{\mathrm {B} }\sum _{i}p_{i}\log p_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">B</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <munder>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mi>log</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S=-k_{\mathrm {B} }\sum _{i}p_{i}\log p_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6f26f2f90291743460b57559472c94a4a154cf7b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:20.826ex; height:5.509ex;" alt="{\displaystyle S=-k_{\mathrm {B} }\sum _{i}p_{i}\log p_{i}}"/></span>) and the thermodynamic definition of entropy (<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle dS={\frac {\delta Q_{\text{rev}}}{T}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mi>S</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>&#x03B4;<!-- δ --></mi>
+              <msub>
+                <mi>Q</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext>rev</mtext>
+                </mrow>
+              </msub>
+            </mrow>
+            <mi>T</mi>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle dS={\frac {\delta Q_{\text{rev}}}{T}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d0da4b310ff00bb37b716ac167074324383046fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:12.012ex; height:5.343ex;" alt="{\displaystyle dS={\frac {\delta Q_{\text{rev}}}{T}}}"/></span>, and the <a href="/wiki/Fundamental_thermodynamic_relation" title="Fundamental thermodynamic relation">fundamental thermodynamic relation</a>)<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup>.
+</p><p>The Boltzmann distribution should not be confused with the <a href="/wiki/Maxwell%E2%80%93Boltzmann_distribution" title="Maxwell–Boltzmann distribution">Maxwell–Boltzmann distribution</a>. The former gives the probability that a system will be in a certain state as a function of that state's energy;<sup id="cite_ref-Atkins,_P._W._2010_5-0" class="reference"><a href="#cite_note-Atkins,_P._W._2010-5">&#91;5&#93;</a></sup> in contrast, the latter is used to describe particle speeds in idealized gases.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#The_distribution"><span class="tocnumber">1</span> <span class="toctext">The distribution</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#In_statistical_mechanics"><span class="tocnumber">2</span> <span class="toctext">In statistical mechanics</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#In_mathematics"><span class="tocnumber">3</span> <span class="toctext">In mathematics</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#In_economics"><span class="tocnumber">4</span> <span class="toctext">In economics</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="The_distribution">The distribution</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Boltzmann_distribution&amp;action=edit&amp;section=1" title="Edit section: The distribution">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Boltzmann distribution is a <a href="/wiki/Probability_distribution" title="Probability distribution">probability distribution</a> that gives the probability of a certain state as a function of that state's energy and  temperature of the <a href="/wiki/System" title="System">system</a> to which the distribution is applied.<sup id="cite_ref-McQuarrie,_A._2000_6-0" class="reference"><a href="#cite_note-McQuarrie,_A._2000-6">&#91;6&#93;</a></sup> It is given as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle p_{i}={\frac {1}{Q}}}{e^{-{\varepsilon }_{i}/kT}={\frac {e^{-{\varepsilon }_{i}/kT}}{\sum _{j=1}^{M}{e^{-{\varepsilon }_{j}/kT}}}}}">
+  <semantics>
+    <mrow>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mstyle displaystyle="true" scriptlevel="0">
+          <msub>
+            <mi>p</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>i</mi>
+            </mrow>
+          </msub>
+          <mo>=</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>1</mn>
+              <mi>Q</mi>
+            </mfrac>
+          </mrow>
+        </mstyle>
+      </mrow>
+      <mrow class="MJX-TeXAtom-ORD">
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>&#x03B5;<!-- ε --></mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mi>k</mi>
+            <mi>T</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>&#x03B5;<!-- ε --></mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                  </mrow>
+                </msub>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo>/</mo>
+                </mrow>
+                <mi>k</mi>
+                <mi>T</mi>
+              </mrow>
+            </msup>
+            <mrow>
+              <munderover>
+                <mo>&#x2211;<!-- ∑ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>j</mi>
+                  <mo>=</mo>
+                  <mn>1</mn>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>M</mi>
+                </mrow>
+              </munderover>
+              <mrow class="MJX-TeXAtom-ORD">
+                <msup>
+                  <mi>e</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>&#x2212;<!-- − --></mo>
+                    <msub>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>&#x03B5;<!-- ε --></mi>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>j</mi>
+                      </mrow>
+                    </msub>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mo>/</mo>
+                    </mrow>
+                    <mi>k</mi>
+                    <mi>T</mi>
+                  </mrow>
+                </msup>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mrow>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{i}={\frac {1}{Q}}}{e^{-{\varepsilon }_{i}/kT}={\frac {e^{-{\varepsilon }_{i}/kT}}{\sum _{j=1}^{M}{e^{-{\varepsilon }_{j}/kT}}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ce2e9676bce19fffc47b75159c54360d75b09eb3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; margin-left: -0.089ex; width:31.348ex; height:7.343ex;" alt="{\displaystyle p_{i}={\frac {1}{Q}}}{e^{-{\varepsilon }_{i}/kT}={\frac {e^{-{\varepsilon }_{i}/kT}}{\sum _{j=1}^{M}{e^{-{\varepsilon }_{j}/kT}}}}}"/></span></dd></dl>
+<p>where <i>p<sub>i</sub></i> is the probability of state <i>i</i>, <i>ε<sub>i</sub></i> the energy of state <i>i</i>, <i>k</i> the Boltzmann constant, <i>T</i> the temperature of the system and <i>M</i> is the number of all states accessible to the system of interest.<sup id="cite_ref-McQuarrie,_A._2000_6-1" class="reference"><a href="#cite_note-McQuarrie,_A._2000-6">&#91;6&#93;</a></sup><sup id="cite_ref-Atkins,_P._W._2010_5-1" class="reference"><a href="#cite_note-Atkins,_P._W._2010-5">&#91;5&#93;</a></sup> Implied parentheses around the denominator <i>kT</i> are omitted for brevity. The normalization denominator <i>Q</i> (denoted by some authors by <i>Z</i>) is the <a href="/wiki/Canonical_partition_function" class="mw-redirect" title="Canonical partition function">canonical partition function</a>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Q={\sum _{i=1}^{M}{e^{-{\varepsilon }_{i}/kT}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Q</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <munderover>
+            <mo>&#x2211;<!-- ∑ --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>i</mi>
+              <mo>=</mo>
+              <mn>1</mn>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>M</mi>
+            </mrow>
+          </munderover>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msup>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>&#x03B5;<!-- ε --></mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                  </mrow>
+                </msub>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo>/</mo>
+                </mrow>
+                <mi>k</mi>
+                <mi>T</mi>
+              </mrow>
+            </msup>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q={\sum _{i=1}^{M}{e^{-{\varepsilon }_{i}/kT}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b5ff7161af8cbfcf7471a6cb2233bd0c93f637bf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:15.5ex; height:7.343ex;" alt="Q={\sum _{{i=1}}^{{M}}{e^{{-{\varepsilon }_{i}/kT}}}}"/></span></dd></dl>
+<p>It results from the constraint that the probabilities of all accessible states must add up to 1.
+</p><p>The Boltzmann distribution is the distribution that maximizes the <a href="/wiki/Entropy" title="Entropy">entropy</a>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle H(p_{1},p_{2},\cdots ,p_{M})=-\sum _{i=1}^{M}p_{i}\log _{2}p_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>H</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>&#x22EF;<!-- ⋯ --></mo>
+        <mo>,</mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>M</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>M</mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>log</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle H(p_{1},p_{2},\cdots ,p_{M})=-\sum _{i=1}^{M}p_{i}\log _{2}p_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7e666e84d1aeb5a23138b69f1a5f40d7a7c14e97" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:35.435ex; height:7.343ex;" alt="{\displaystyle H(p_{1},p_{2},\cdots ,p_{M})=-\sum _{i=1}^{M}p_{i}\log _{2}p_{i}}"/></span></dd></dl>
+<p>subject to the constraint that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle {\sum {p_{i}{\varepsilon }_{i}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>p</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+            <msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>&#x03B5;<!-- ε --></mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle {\sum {p_{i}{\varepsilon }_{i}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d0a523d569cdae1dd950c99ead3cf898a9618b0f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.693ex; height:2.843ex;" alt="{\textstyle {\sum {p_{i}{\varepsilon }_{i}}}}"/></span> equals a particular mean energy value (which can be proven using <a href="/wiki/Lagrange_multipliers" class="mw-redirect" title="Lagrange multipliers">Lagrange multipliers</a>).
+</p><p>The partition function can be calculated if we know the energies of the states accessible to the system of interest. For atoms the partition function values can be found in the NIST Atomic Spectra Database.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
+</p><p>The distribution shows that states with lower energy will always have a higher probability of being occupied than the states with higher energy. It can also give us the quantitative relationship between the probabilities of the two states being occupied. The ratio of probabilities for states <i>i</i> and <i>j</i> is given as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {p_{i}}{p_{j}}}=e^{({\varepsilon }_{j}-{\varepsilon }_{i})/kT}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>p</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>p</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>j</mi>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>&#x03B5;<!-- ε --></mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>j</mi>
+              </mrow>
+            </msub>
+            <mo>&#x2212;<!-- − --></mo>
+            <msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>&#x03B5;<!-- ε --></mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+            <mo stretchy="false">)</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mi>k</mi>
+            <mi>T</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {p_{i}}{p_{j}}}=e^{({\varepsilon }_{j}-{\varepsilon }_{i})/kT}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ec6743d43a6fd93c56577cc42e8d6700de7c58b1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:15.594ex; height:5.509ex;" alt="{{\frac  {p_{i}}{p_{j}}}}=e^{{({\varepsilon }_{j}-{\varepsilon }_{i})/kT}}"/></span></dd></dl>
+<p>where <i>p<sub>i</sub></i> is the probability of state <i>i</i>,  <i>p<sub>j</sub></i> the probability of state <i>j</i>, and <i>ε<sub>i</sub></i> and <i>ε<sub>j</sub></i> are the energies of states <i>i</i> and <i>j</i>, respectively.
+</p><p>The Boltzmann distribution is often used to describe the distribution of particles, such as atoms or molecules, over energy states accessible to them. If we have a system consisting of many particles, the probability of a particle being in state <i>i</i> is practically the probability that, if we pick a random particle from that system and check what state it is in, we will find it is in state <i>i</i>. This probability is equal to the number of particles in state <i>i</i> divided by the total number of particles in the system, that is the fraction of particles that occupy state <i>i</i>.
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle p_{i}={\frac {N_{i}}{N}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>N</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+            <mi>N</mi>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{i}={\frac {N_{i}}{N}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/070b73bfce39fc38087a02ce97c1a66551a3741d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; margin-left: -0.089ex; width:8.659ex; height:5.176ex;" alt="p_{i}={{\frac  {N_{i}}{N}}}"/></span></dd></dl>
+<p>where <i>N<sub>i</sub></i> is the number of particles in state <i>i</i> and <i>N</i> is the total number of particles in the system. We may use the Boltzmann distribution to find this probability that is, as we have seen, equal to the fraction of particles that are in state i. So the equation that gives the fraction of particles in state <i>i</i> as a function of the energy of that state is  <sup id="cite_ref-Atkins,_P._W._2010_5-2" class="reference"><a href="#cite_note-Atkins,_P._W._2010-5">&#91;5&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {N_{i}}{N}}={\frac {e^{-{\varepsilon }_{i}/kT}}{\sum _{j=1}^{M}{e^{-{\varepsilon }_{j}/kT}}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>N</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+            <mi>N</mi>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>&#x03B5;<!-- ε --></mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                  </mrow>
+                </msub>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo>/</mo>
+                </mrow>
+                <mi>k</mi>
+                <mi>T</mi>
+              </mrow>
+            </msup>
+            <mrow>
+              <munderover>
+                <mo>&#x2211;<!-- ∑ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>j</mi>
+                  <mo>=</mo>
+                  <mn>1</mn>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>M</mi>
+                </mrow>
+              </munderover>
+              <mrow class="MJX-TeXAtom-ORD">
+                <msup>
+                  <mi>e</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>&#x2212;<!-- − --></mo>
+                    <msub>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>&#x03B5;<!-- ε --></mi>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>j</mi>
+                      </mrow>
+                    </msub>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mo>/</mo>
+                    </mrow>
+                    <mi>k</mi>
+                    <mi>T</mi>
+                  </mrow>
+                </msup>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {N_{i}}{N}}={\frac {e^{-{\varepsilon }_{i}/kT}}{\sum _{j=1}^{M}{e^{-{\varepsilon }_{j}/kT}}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d361b87499612708d8a442633dcb4616c3fd9e2e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:20.198ex; height:7.343ex;" alt="{\displaystyle {\frac {N_{i}}{N}}={\frac {e^{-{\varepsilon }_{i}/kT}}{\sum _{j=1}^{M}{e^{-{\varepsilon }_{j}/kT}}}}}"/></span></dd></dl>
+<p>This equation is of great importance to <a href="/wiki/Spectroscopy" title="Spectroscopy">spectroscopy</a>. In spectroscopy we observe a <a href="/wiki/Spectral_line" title="Spectral line">spectral line</a> of atoms or molecules that we are interested in going from one state to another.<sup id="cite_ref-Atkins,_P._W._2010_5-3" class="reference"><a href="#cite_note-Atkins,_P._W._2010-5">&#91;5&#93;</a></sup><sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup> In order for this to be possible, there must be some particles in the first state to undergo the transition. We may find that this condition is fulfilled by finding the fraction of particles in the first state. If it is negligible, the transition is very likely not to be observed at the temperature for which the calculation was done. In general, a larger fraction of molecules in the first state means a higher number of transitions to the second state.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup> This gives a stronger spectral line. However, there are other factors that influence the intensity of a spectral line, such as whether it is caused by an allowed or a <a href="/wiki/Forbidden_transition" class="mw-redirect" title="Forbidden transition">forbidden transition</a>.
+</p><p>The Boltzmann distribution is related to the <a href="/wiki/Softmax_function" title="Softmax function">softmax function</a> commonly used in machine learning.
+</p>
+<h2><span class="mw-headline" id="In_statistical_mechanics">In statistical mechanics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Boltzmann_distribution&amp;action=edit&amp;section=2" title="Edit section: In statistical mechanics">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">Main articles: <a href="/wiki/Canonical_ensemble" title="Canonical ensemble">Canonical ensemble</a> and <a href="/wiki/Maxwell%E2%80%93Boltzmann_statistics" title="Maxwell–Boltzmann statistics">Maxwell–Boltzmann statistics</a></div>
+<p>The Boltzmann distribution appears in <a href="/wiki/Statistical_mechanics" title="Statistical mechanics">statistical mechanics</a> when considering isolated (or nearly-isolated) systems of fixed composition that are in <a href="/wiki/Thermal_equilibrium" title="Thermal equilibrium">thermal equilibrium</a> (equilibrium with respect to energy exchange). The most general case is the probability distribution for the canonical ensemble, but also some special cases (derivable from the canonical ensemble) also show the Boltzmann distribution in different aspects:
+</p>
+<dl><dt><a href="/wiki/Canonical_ensemble" title="Canonical ensemble">Canonical ensemble</a> (general case)</dt>
+<dd>The <a href="/wiki/Canonical_ensemble" title="Canonical ensemble">canonical ensemble</a> gives the <a href="/wiki/Probabilities" class="mw-redirect" title="Probabilities">probabilities</a> of the various possible states of a closed system of fixed volume, in thermal equilibrium with a <a href="/wiki/Heat_bath" class="mw-redirect" title="Heat bath">heat bath</a>. The canonical ensemble is a probability distribution with the Boltzmann form.</dd>
+<dt>Statistical frequencies of subsystems' states (in a non-interacting collection)</dt>
+<dd>When the system of interest is a collection of many non-interacting copies of a smaller subsystem, it is sometimes useful to find the <a href="/wiki/Statistical_frequency" class="mw-redirect" title="Statistical frequency">statistical frequency</a> of a given subsystem state, among the collection. The canonical ensemble has the property of separability when applied to such a collection: as long as the non-interacting subsystems have fixed composition, then each subsystem's state is independent of the others and is also characterized by a canonical ensemble. As a result, the <a href="/wiki/Expectation_value" class="mw-redirect" title="Expectation value">expected</a> statistical frequency distribution of subsystem states has the Boltzmann form.</dd>
+<dt><a href="/wiki/Maxwell%E2%80%93Boltzmann_statistics" title="Maxwell–Boltzmann statistics">Maxwell–Boltzmann statistics</a> of classical gases (systems of non-interacting particles)</dt>
+<dd>In particle systems, many particles share the same space and regularly change places with each other; the single-particle state space they occupy is a shared space. <a href="/wiki/Maxwell%E2%80%93Boltzmann_statistics" title="Maxwell–Boltzmann statistics">Maxwell–Boltzmann statistics</a> give the expected number of particles found in a given single-particle state, in a <a href="/wiki/Classical_mechanics" title="Classical mechanics">classical</a> gas of non-interacting particles at equilibrium. This expected number distribution has the Boltzmann form.</dd></dl>
+<p>Although these cases have strong similarities, it is helpful to distinguish them as they generalize in different ways when the crucial assumptions are changed:
+</p>
+<ul><li>When a system is in thermodynamic equilibrium with respect to both energy exchange <i>and particle exchange</i>, the requirement of fixed composition is relaxed and a <a href="/wiki/Grand_canonical_ensemble" title="Grand canonical ensemble">grand canonical ensemble</a> is obtained rather than canonical ensemble. On the other hand, if both composition and energy are fixed, then a <a href="/wiki/Microcanonical_ensemble" title="Microcanonical ensemble">microcanonical ensemble</a> applies instead.</li>
+<li>If the subsystems within a collection <i>do</i> interact with each other, then the expected frequencies of subsystem states no longer follow a Boltzmann distribution, and even may not have an <a href="/wiki/Analytical_solution" class="mw-redirect" title="Analytical solution">analytical solution</a>.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup> The canonical ensemble can however still be applied to the <i>collective</i> states of the entire system considered as a whole, provided the entire system is isolated and in thermal equilibrium.</li>
+<li>With <i><a href="/wiki/Quantum_mechanics" title="Quantum mechanics">quantum</a></i> gases of non-interacting particles in equilibrium, the number of particles found in a given single-particle state does not follow Maxwell–Boltzmann statistics, and there is no simple closed form expression for quantum gases in the canonical ensemble. In the grand canonical ensemble the state-filling statistics of quantum gases are described by <a href="/wiki/Fermi%E2%80%93Dirac_statistics" title="Fermi–Dirac statistics">Fermi–Dirac statistics</a> or <a href="/wiki/Bose%E2%80%93Einstein_statistics" title="Bose–Einstein statistics">Bose–Einstein statistics</a>, depending on whether the particles are <a href="/wiki/Fermion" title="Fermion">fermions</a> or <a href="/wiki/Boson" title="Boson">bosons</a> respectively.</li></ul>
+<h2><span class="mw-headline" id="In_mathematics">In mathematics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Boltzmann_distribution&amp;action=edit&amp;section=3" title="Edit section: In mathematics">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">Main articles: <a href="/wiki/Gibbs_measure" title="Gibbs measure">Gibbs measure</a>, <a href="/wiki/Log-linear_model" title="Log-linear model">Log-linear model</a>, and <a href="/wiki/Boltzmann_machine" title="Boltzmann machine">Boltzmann machine</a></div>
+<p>In more general mathematical settings, the Boltzmann distribution is also known as the <a href="/wiki/Gibbs_measure" title="Gibbs measure">Gibbs measure</a>. In <a href="/wiki/Statistics" title="Statistics">statistics</a> and <a href="/wiki/Machine_learning" title="Machine learning">machine learning</a>, it is called a <a href="/wiki/Log-linear_model" title="Log-linear model">log-linear model</a>. In <a href="/wiki/Deep_learning" title="Deep learning">deep learning</a>, the Boltzmann distribution is used in the <a href="/wiki/Sampling_distribution" title="Sampling distribution">sampling distribution</a> of <a href="/wiki/Stochastic_neural_network" title="Stochastic neural network">stochastic neural networks</a> such as the <a href="/wiki/Boltzmann_machine" title="Boltzmann machine">Boltzmann machine</a> , <a href="/wiki/Restricted_Boltzmann_machine" title="Restricted Boltzmann machine">Restricted Boltzmann machine</a> and <a href="/wiki/Deep_Boltzmann_Machine" class="mw-redirect" title="Deep Boltzmann Machine">deep Boltzmann machine</a>.
+</p>
+<h2><span class="mw-headline" id="In_economics">In economics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Boltzmann_distribution&amp;action=edit&amp;section=4" title="Edit section: In economics">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Boltzmann distribution can be introduced to allocate permits in emissions trading.<sup id="cite_ref-Park,_J.-W._2012_11-0" class="reference"><a href="#cite_note-Park,_J.-W._2012-11">&#91;11&#93;</a></sup><sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup> The new allocation method using the Boltzmann distribution can describe the most probable, natural, and unbiased distribution of emissions permits among multiple countries. Simple and versatile, this new method holds potential for many economic and environmental applications.
+</p><p>The Boltzmann distribution has the same form as the <a href="/wiki/Multinomial_logistic_regression" title="Multinomial logistic regression">multinomial logit</a> model. As a <a href="/wiki/Discrete_choice" title="Discrete choice">discrete choice</a> model, this is very well known in economics since <a href="/wiki/Daniel_McFadden" title="Daniel McFadden">Daniel McFadden</a> made the connection to random utility maximization.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Boltzmann_distribution&amp;action=edit&amp;section=5" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Bose%E2%80%93Einstein_statistics" title="Bose–Einstein statistics">Bose–Einstein statistics</a></li>
+<li><a href="/wiki/Fermi%E2%80%93Dirac_statistics" title="Fermi–Dirac statistics">Fermi–Dirac statistics</a></li>
+<li><a href="/wiki/Negative_temperature" title="Negative temperature">Negative temperature</a></li>
+<li><a href="/wiki/Softmax_function" title="Softmax function">Softmax function</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Boltzmann_distribution&amp;action=edit&amp;section=6" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-landau-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-landau_1-0">^</a></b></span> <span class="reference-text"><cite class="citation book"><a href="/wiki/Lev_Landau" title="Lev Landau">Landau, Lev Davidovich</a> &amp; <a href="/wiki/Evgeny_Lifshitz" title="Evgeny Lifshitz">Lifshitz, Evgeny Mikhailovich</a> (1980) [1976]. <i>Statistical Physics</i>. Course of Theoretical Physics. <b>5</b> (3 ed.). Oxford: Pergamon Press. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-7506-3372-7" title="Special:BookSources/0-7506-3372-7"><bdi>0-7506-3372-7</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Statistical+Physics&amp;rft.place=Oxford&amp;rft.series=Course+of+Theoretical+Physics&amp;rft.edition=3&amp;rft.pub=Pergamon+Press&amp;rft.date=1980&amp;rft.isbn=0-7506-3372-7&amp;rft.au=Landau%2C+Lev+Davidovich&amp;rft.au=Lifshitz%2C+Evgeny+Mikhailovich&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoltzmann+distribution" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style> Translated by J.B. Sykes and M.J. Kearsley. See section 28</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://crystal.med.upenn.edu/sharp-lab-pdfs/2015SharpMatschinsky_Boltz1877_Entropy17.pdf">http://crystal.med.upenn.edu/sharp-lab-pdfs/2015SharpMatschinsky_Boltz1877_Entropy17.pdf</a></span>
+</li>
+<li id="cite_note-gibbs-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-gibbs_3-0">^</a></b></span> <span class="reference-text"><cite class="citation book"><a href="/wiki/Josiah_Willard_Gibbs" title="Josiah Willard Gibbs">Gibbs, Josiah Willard</a> (1902). <i><a href="/wiki/Elementary_Principles_in_Statistical_Mechanics" title="Elementary Principles in Statistical Mechanics">Elementary Principles in Statistical Mechanics</a></i>. New York: <a href="/wiki/Charles_Scribner%27s_Sons" title="Charles Scribner&#39;s Sons">Charles Scribner's Sons</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Elementary+Principles+in+Statistical+Mechanics&amp;rft.place=New+York&amp;rft.pub=Charles+Scribner%27s+Sons&amp;rft.date=1902&amp;rft.aulast=Gibbs&amp;rft.aufirst=Josiah+Willard&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoltzmann+distribution" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation journal">Gao, Xiang; Gallicchio, Emilio; Roitberg, Adrian (2019). <a rel="nofollow" class="external text" href="https://aip.scitation.org/doi/abs/10.1063/1.5111333">"The generalized Boltzmann distribution is the only distribution in which the Gibbs-Shannon entropy equals the thermodynamic entropy"</a>. <i>The Journal of Chemical Physics</i>. <b>151</b> (3): 034113. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1063%2F1.5111333">10.1063/1.5111333</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=The+Journal+of+Chemical+Physics&amp;rft.atitle=The+generalized+Boltzmann+distribution+is+the+only+distribution+in+which+the+Gibbs-Shannon+entropy+equals+the+thermodynamic+entropy&amp;rft.volume=151&amp;rft.issue=3&amp;rft.pages=034113&amp;rft.date=2019&amp;rft_id=info%3Adoi%2F10.1063%2F1.5111333&amp;rft.aulast=Gao&amp;rft.aufirst=Xiang&amp;rft.au=Gallicchio%2C+Emilio&amp;rft.au=Roitberg%2C+Adrian&amp;rft_id=https%3A%2F%2Faip.scitation.org%2Fdoi%2Fabs%2F10.1063%2F1.5111333&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoltzmann+distribution" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Atkins,_P._W._2010-5"><span class="mw-cite-backlink">^ <a href="#cite_ref-Atkins,_P._W._2010_5-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Atkins,_P._W._2010_5-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Atkins,_P._W._2010_5-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-Atkins,_P._W._2010_5-3"><sup><i><b>d</b></i></sup></a></span> <span class="reference-text">Atkins, P. W. (2010) Quanta, W. H. Freeman and Company, New York</span>
+</li>
+<li id="cite_note-McQuarrie,_A._2000-6"><span class="mw-cite-backlink">^ <a href="#cite_ref-McQuarrie,_A._2000_6-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-McQuarrie,_A._2000_6-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">McQuarrie, A. (2000) Statistical Mechanics, University Science Books, California</span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://physics.nist.gov/PhysRefData/ASD/levels_form.html">NIST Atomic Spectra Database Levels Form</a> at nist.gov</span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text">Atkins, P. W.; de Paula J. (2009) Physical Chemistry, 9th edition, Oxford University Press, Oxford, UK</span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text">Skoog, D. A.; Holler, F. J.; Crouch, S. R. (2006) Principles of Instrumental Analysis, Brooks/Cole, Boston, MA</span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text">A classic example of this is <a href="/wiki/Magnetic_ordering" class="mw-redirect" title="Magnetic ordering">magnetic ordering</a>. Systems of non-interacting <a href="/wiki/Spin_(physics)" title="Spin (physics)">spins</a> show <a href="/wiki/Paramagnetic" class="mw-redirect" title="Paramagnetic">paramagnetic</a> behaviour that can be understood with a single-particle canonical ensemble (resulting in the <a href="/wiki/Brillouin_function" class="mw-redirect" title="Brillouin function">Brillouin function</a>). Systems of <i>interacting</i> spins can show much more complex behaviour such as <a href="/wiki/Ferromagnetism" title="Ferromagnetism">ferromagnetism</a> or <a href="/wiki/Antiferromagnetism" title="Antiferromagnetism">antiferromagnetism</a>.</span>
+</li>
+<li id="cite_note-Park,_J.-W._2012-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-Park,_J.-W._2012_11-0">^</a></b></span> <span class="reference-text">Park, J.-W., Kim, C. U. and Isard, W. (2012) Permit allocation in emissions trading using the Boltzmann distribution. Physica A 391: 4883–4890</span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.technologyreview.com/view/425051/the-thorny-problem-of-fair-allocation/">The Thorny Problem Of Fair Allocation</a>. <i>Technology Review</i> blog. August 17, 2011. Cites and summarizes Park, Kim and Isard (2012).</span>
+</li>
+</ol></div>
+<style data-mw-deduplicate="TemplateStyles:r886047268">.mw-parser-output .refbegin{font-size:90%;margin-bottom:0.5em}.mw-parser-output .refbegin-hanging-indents>ul{list-style-type:none;margin-left:0}.mw-parser-output .refbegin-hanging-indents>ul>li,.mw-parser-output .refbegin-hanging-indents>dl>dd{margin-left:0;padding-left:3.2em;text-indent:-3.2em;list-style:none}.mw-parser-output .refbegin-100{font-size:100%}</style><div class="refbegin" style="">
+<ul><li><cite class="citation journal"><a href="/wiki/Ludwig_Boltzmann" title="Ludwig Boltzmann">Boltzmann, Ludwig</a> (1868). "Studien über das Gleichgewicht der lebendigen Kraft zwischen bewegten materiellen Punkten" &#91;Studies on the balance of living force between moving material points&#93;. <i>Wiener Berichte</i>. <b>58</b>: 517–560.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Wiener+Berichte&amp;rft.atitle=Studien+%C3%BCber+das+Gleichgewicht+der+lebendigen+Kraft+zwischen+bewegten+materiellen+Punkten&amp;rft.volume=58&amp;rft.pages=517-560&amp;rft.date=1868&amp;rft.aulast=Boltzmann&amp;rft.aufirst=Ludwig&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoltzmann+distribution" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite class="citation book"><a href="/wiki/Josiah_Willard_Gibbs" title="Josiah Willard Gibbs">Gibbs, Josiah Willard</a> (1902). <i><a href="/wiki/Elementary_Principles_in_Statistical_Mechanics" title="Elementary Principles in Statistical Mechanics">Elementary Principles in Statistical Mechanics</a></i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Elementary+Principles+in+Statistical+Mechanics&amp;rft.date=1902&amp;rft.aulast=Gibbs&amp;rft.aufirst=Josiah+Willard&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoltzmann+distribution" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li></ul>
+</div>
+<!-- 
+NewPP limit report
+Parsed by mw1347
+Cached time: 20190726062513
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.260 seconds
+Real time usage: 0.390 seconds
+Preprocessor visited node count: 899/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 14365/2097152 bytes
+Template argument size: 1341/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 3/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 18254/5000000 bytes
+Number of Wikibase entities loaded: 1/400
+Lua time usage: 0.122/10.000 seconds
+Lua memory usage: 3.38 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  312.364      1 -total
+ 46.04%  143.812      1 Template:Reflist
+ 29.71%   92.792      3 Template:Cite_book
+ 12.85%   40.134      1 Template:Cn_span
+ 11.22%   35.045      1 Template:Fix-span
+ 10.34%   32.287      2 Template:Cite_journal
+  9.66%   30.184      1 Template:Use_American_English
+  9.13%   28.527      1 Template:Short_description
+  8.33%   26.015      1 Template:Pagetype
+  7.37%   23.015      2 Template:Category_handler
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:4107-0!canonical!math=5 and timestamp 20190726062557 and revision id 907922101
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Boltzmann_distribution&amp;oldid=907922101">https://en.wikipedia.org/w/index.php?title=Boltzmann_distribution&amp;oldid=907922101</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Statistical_mechanics" title="Category:Statistical mechanics">Statistical mechanics</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Use_American_English_from_March_2019" title="Category:Use American English from March 2019">Use American English from March 2019</a></li><li><a href="/wiki/Category:All_Wikipedia_articles_written_in_American_English" title="Category:All Wikipedia articles written in American English">All Wikipedia articles written in American English</a></li><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_December_2018" title="Category:Articles with unsourced statements from December 2018">Articles with unsourced statements from December 2018</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Boltzmann+distribution" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Boltzmann+distribution" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Boltzmann_distribution" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Boltzmann_distribution" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Boltzmann_distribution">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Boltzmann_distribution&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Boltzmann_distribution&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Boltzmann_distribution" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Boltzmann_distribution" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Boltzmann_distribution&amp;oldid=907922101" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Boltzmann_distribution&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q834200" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Boltzmann_distribution&amp;id=907922101" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Boltzmann+distribution">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Boltzmann+distribution&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Boltzmann_distribution&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%AA%D9%88%D8%B2%D9%8A%D8%B9_%D8%A8%D9%88%D9%84%D8%AA%D8%B2%D9%85%D8%A7%D9%86" title="توزيع بولتزمان – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Distribuci%C3%B3_de_Boltzmann" title="Distribució de Boltzmann – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Boltzmann-Statistik" title="Boltzmann-Statistik – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Distribuci%C3%B3n_Boltzmann" title="Distribución Boltzmann – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%AA%D9%88%D8%B2%DB%8C%D8%B9_%D8%A8%D9%88%D9%84%D8%AA%D8%B3%D9%85%D8%A7%D9%86" title="توزیع بولتسمان – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Distribution_de_Boltzmann" title="Distribution de Boltzmann – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-id"><a href="https://id.wikipedia.org/wiki/Distribusi_Boltzmann" title="Distribusi Boltzmann – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Distribuzione_di_Boltzmann" title="Distribuzione di Boltzmann – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%94%D7%AA%D7%A4%D7%9C%D7%92%D7%95%D7%AA_%D7%91%D7%95%D7%9C%D7%A6%D7%9E%D7%9F" title="התפלגות בולצמן – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/Boltzmann-eloszl%C3%A1s" title="Boltzmann-eloszlás – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Boltzmann-verdeling" title="Boltzmann-verdeling – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E3%83%9C%E3%83%AB%E3%83%84%E3%83%9E%E3%83%B3%E5%88%86%E5%B8%83" title="ボルツマン分布 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Rozk%C5%82ad_Boltzmanna" title="Rozkład Boltzmanna – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Distribui%C3%A7%C3%A3o_de_Boltzmann" title="Distribuição de Boltzmann – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-sk"><a href="https://sk.wikipedia.org/wiki/Boltzmannova_rovnica" title="Boltzmannova rovnica – Slovak" lang="sk" hreflang="sk" class="interlanguage-link-target">Slovenčina</a></li><li class="interlanguage-link interwiki-sh"><a href="https://sh.wikipedia.org/wiki/Bolcmanov_zakon_raspodele" title="Bolcmanov zakon raspodele – Serbo-Croatian" lang="sh" hreflang="sh" class="interlanguage-link-target">Srpskohrvatski / српскохрватски</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Boltzmannf%C3%B6rdelning" title="Boltzmannfördelning – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Boltzmann_da%C4%9F%C4%B1l%C4%B1m%C4%B1" title="Boltzmann dağılımı – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E7%8E%BB%E5%B0%94%E5%85%B9%E6%9B%BC%E5%88%86%E5%B8%83" title="玻尔兹曼分布 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q834200#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 26 July 2019, at 06:25<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Boltzmann_distribution&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.260","walltime":"0.390","ppvisitednodes":{"value":899,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":14365,"limit":2097152},"templateargumentsize":{"value":1341,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":3,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":18254,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  312.364      1 -total"," 46.04%  143.812      1 Template:Reflist"," 29.71%   92.792      3 Template:Cite_book"," 12.85%   40.134      1 Template:Cn_span"," 11.22%   35.045      1 Template:Fix-span"," 10.34%   32.287      2 Template:Cite_journal","  9.66%   30.184      1 Template:Use_American_English","  9.13%   28.527      1 Template:Short_description","  8.33%   26.015      1 Template:Pagetype","  7.37%   23.015      2 Template:Category_handler"]},"scribunto":{"limitreport-timeusage":{"value":"0.122","limit":"10.000"},"limitreport-memusage":{"value":3539438,"limit":52428800}},"cachereport":{"origin":"mw1347","timestamp":"20190726062513","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Boltzmann distribution","url":"https:\/\/en.wikipedia.org\/wiki\/Boltzmann_distribution","sameAs":"http:\/\/www.wikidata.org\/entity\/Q834200","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q834200","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2001-08-31T06:53:27Z","dateModified":"2019-07-26T06:25:57Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/b\/bd\/Boltzmann_distribution_graph.svg"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":106,"wgHostname":"mw1246"});});</script>
+</body>
+</html>

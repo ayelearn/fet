@@ -1,0 +1,2739 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Line integral - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Line_integral","wgTitle":"Line integral","wgCurRevisionId":900864888,"wgRevisionId":900864888,"wgArticleId":21245414,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Complex analysis","Vector calculus"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Line_integral","wgRelevantArticleId":21245414,"wgRequestId":
+"XUpR5gpAMFsAAHV2p0IAAAAT","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q467699","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready",
+"user.options":"ready","user.tokens":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.math.scripts","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging",
+"ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Line_integral"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Line_integral&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Line_integral&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Line_integral"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Line_integral rootpage-Line_integral skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Line integral</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table class="vertical-navbox nowraplinks plainlist" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%"><tbody><tr><td style="padding-top:0.4em;line-height:1.2em">Part of a series of articles about</td></tr><tr><th style="padding:0.2em 0.4em 0.2em;padding-top:0;font-size:145%;line-height:1.2em;padding-bottom:0.25em;"><a href="/wiki/Calculus" title="Calculus">Calculus</a></th></tr><tr><td style="padding:0.3em 0.4em 0.3em;font-weight:bold;border-top: 1px solid #aaa; border-bottom: 1px solid #aaa;padding:0.15em 0.25em 0.3em;font-weight:normal;">
+<ul><li><a href="/wiki/Fundamental_theorem_of_calculus" title="Fundamental theorem of calculus">Fundamental theorem</a></li></ul>
+<div class="hlist">
+<ul><li><a href="/wiki/Limit_of_a_function" title="Limit of a function">Limits of functions</a></li>
+<li><a href="/wiki/Continuous_function" title="Continuous function">Continuity</a></li></ul>
+</div><div class="hlist">
+<ul><li><a href="/wiki/Mean_value_theorem" title="Mean value theorem">Mean value theorem</a></li>
+<li><a href="/wiki/Rolle%27s_theorem" title="Rolle&#39;s theorem">Rolle's theorem</a></li></ul>
+</div></td></tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;;display:block;margin-top:0.65em;"><span style="font-size:110%;"><a href="/wiki/Differential_calculus" title="Differential calculus">Differential</a></span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none"><tbody><tr><th style="padding:0.1em">
+Definitions</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Derivative" title="Derivative">Derivative</a>&#160;(<a href="/wiki/Generalizations_of_the_derivative" title="Generalizations of the derivative">generalizations</a>)</li></ul>
+<div class="hlist" style="padding:0.1em 0;line-height:1.2em;">
+<ul><li><a href="/wiki/Differential_(mathematics)" title="Differential (mathematics)">Differential</a>
+<ul><li><a href="/wiki/Differential_(infinitesimal)" title="Differential (infinitesimal)">infinitesimal</a></li>
+<li><a href="/wiki/Differential_of_a_function" title="Differential of a function">of a function</a></li>
+<li><a href="/wiki/Total_differential" class="mw-redirect" title="Total differential">total</a></li></ul></li></ul>
+</div></td>
+</tr><tr><th style="padding:0.1em">
+Concepts</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<div class="hlist">
+<ul><li><a href="/wiki/Notation_for_differentiation" title="Notation for differentiation">Differentiation notation</a></li>
+<li><a href="/wiki/Second_derivative" title="Second derivative">Second derivative</a></li>
+<li><a href="/wiki/Third_derivative" title="Third derivative">Third derivative</a></li>
+<li><a href="/wiki/Change_of_variables" title="Change of variables">Change of variables</a></li>
+<li><a href="/wiki/Implicit_function" title="Implicit function">Implicit differentiation</a></li>
+<li><a href="/wiki/Related_rates" title="Related rates">Related rates</a></li>
+<li><a href="/wiki/Taylor%27s_theorem" title="Taylor&#39;s theorem">Taylor's theorem</a></li></ul>
+</div></td>
+</tr><tr><th style="padding:0.1em">
+<a href="/wiki/Differentiation_rules" title="Differentiation rules">Rules and identities</a></th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<div class="hlist">
+<ul><li><a href="/wiki/Sum_rule_in_differentiation" title="Sum rule in differentiation">Sum</a></li>
+<li><a href="/wiki/Product_rule" title="Product rule">Product</a></li>
+<li><a href="/wiki/Chain_rule" title="Chain rule">Chain</a></li>
+<li><a href="/wiki/Power_rule" title="Power rule">Power</a></li>
+<li><a href="/wiki/Quotient_rule" title="Quotient rule">Quotient</a></li>
+<li><a href="/wiki/Inverse_functions_and_differentiation" title="Inverse functions and differentiation">Inverse</a></li>
+<li><a href="/wiki/General_Leibniz_rule" title="General Leibniz rule">General Leibniz</a></li>
+<li><a href="/wiki/Fa%C3%A0_di_Bruno%27s_formula" title="Faà di Bruno&#39;s formula">Faà di Bruno's formula</a></li></ul>
+</div></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;"><span style="font-size:110%;"><a href="/wiki/Integral" title="Integral">Integral</a></span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none"><tbody><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Lists_of_integrals" title="Lists of integrals">Lists of integrals</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+Definitions</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Antiderivative" title="Antiderivative">Antiderivative</a></li>
+<li><a href="/wiki/Integral" title="Integral">Integral</a>&#160;(<a href="/wiki/Improper_integral" title="Improper integral">improper</a>)</li>
+<li><a href="/wiki/Riemann_integral" title="Riemann integral">Riemann integral</a></li>
+<li><a href="/wiki/Lebesgue_integration" title="Lebesgue integration">Lebesgue integration</a></li>
+<li><a href="/wiki/Contour_integration" title="Contour integration">Contour integration</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+Integration by</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Integration_by_parts" title="Integration by parts">Parts</a></li>
+<li><a href="/wiki/Disc_integration" title="Disc integration">Discs</a></li>
+<li><a href="/wiki/Shell_integration" title="Shell integration">Cylindrical shells</a></li>
+<li><a href="/wiki/Integration_by_substitution" title="Integration by substitution">Substitution</a>&#160;(<a href="/wiki/Trigonometric_substitution" title="Trigonometric substitution">trigonometric</a>)</li>
+<li><a href="/wiki/Partial_fractions_in_integration" class="mw-redirect" title="Partial fractions in integration">Partial fractions</a></li>
+<li><a href="/wiki/Order_of_integration_(calculus)" title="Order of integration (calculus)">Order</a></li>
+<li><a href="/wiki/Integration_by_reduction_formulae" title="Integration by reduction formulae">Reduction formulae</a></li></ul></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;"><span style="font-size:110%;"><a href="/wiki/Series_(mathematics)" title="Series (mathematics)">Series</a></span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none"><tbody><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Geometric_series" title="Geometric series">Geometric</a>&#160;(<a href="/wiki/Arithmetico%E2%80%93geometric_sequence" title="Arithmetico–geometric sequence">arithmetico-geometric</a>)</li>
+<li><a href="/wiki/Harmonic_series_(mathematics)" title="Harmonic series (mathematics)">Harmonic</a></li>
+<li><a href="/wiki/Alternating_series" title="Alternating series">Alternating</a></li>
+<li><a href="/wiki/Power_series" title="Power series">Power</a></li>
+<li><a href="/wiki/Binomial_series" title="Binomial series">Binomial</a></li>
+<li><a href="/wiki/Taylor_series" title="Taylor series">Taylor</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+<a href="/wiki/Convergence_tests" title="Convergence tests">Convergence tests</a></th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Term_test" title="Term test">Summand limit (term test)</a></li>
+<li><a href="/wiki/Ratio_test" title="Ratio test">Ratio</a></li>
+<li><a href="/wiki/Root_test" title="Root test">Root</a></li>
+<li><a href="/wiki/Integral_test_for_convergence" title="Integral test for convergence">Integral</a></li>
+<li><a href="/wiki/Direct_comparison_test" title="Direct comparison test">Direct comparison</a></li>
+<li><br /><a href="/wiki/Limit_comparison_test" title="Limit comparison test">Limit comparison</a></li>
+<li><a href="/wiki/Alternating_series_test" title="Alternating series test">Alternating series</a></li>
+<li><a href="/wiki/Cauchy_condensation_test" title="Cauchy condensation test">Cauchy condensation</a></li>
+<li><a href="/wiki/Dirichlet%27s_test" title="Dirichlet&#39;s test">Dirichlet</a></li>
+<li><a href="/wiki/Abel%27s_test" title="Abel&#39;s test">Abel</a></li></ul></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;"><span style="font-size:110%;"><a href="/wiki/Vector_calculus" title="Vector calculus">Vector</a></span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none"><tbody><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Gradient" title="Gradient">Gradient</a></li>
+<li><a href="/wiki/Divergence" title="Divergence">Divergence</a></li>
+<li><a href="/wiki/Curl_(mathematics)" title="Curl (mathematics)">Curl</a></li>
+<li><a href="/wiki/Laplace_operator" title="Laplace operator">Laplacian</a></li>
+<li><a href="/wiki/Directional_derivative" title="Directional derivative">Directional derivative</a></li>
+<li><a href="/wiki/Vector_calculus_identities" title="Vector calculus identities">Identities</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+Theorems</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Divergence_theorem" title="Divergence theorem">Divergence</a></li>
+<li><a href="/wiki/Gradient_theorem" title="Gradient theorem">Gradient</a></li>
+<li><a href="/wiki/Green%27s_theorem" title="Green&#39;s theorem">Green's</a></li>
+<li><a href="/wiki/Kelvin%E2%80%93Stokes_theorem" title="Kelvin–Stokes theorem">Kelvin–Stokes</a></li>
+<li><a href="/wiki/Stokes%27_theorem" title="Stokes&#39; theorem">Stokes</a></li></ul></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;"><span style="font-size:110%;"><a href="/wiki/Multivariable_calculus" title="Multivariable calculus">Multivariable</a></span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none"><tbody><tr><th style="padding:0.1em">
+Formalisms</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Matrix_calculus" title="Matrix calculus">Matrix</a></li>
+<li><a href="/wiki/Tensor_calculus" title="Tensor calculus">Tensor</a></li>
+<li><a href="/wiki/Exterior_derivative" title="Exterior derivative">Exterior</a></li>
+<li><a href="/wiki/Geometric_calculus" title="Geometric calculus">Geometric</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+Definitions</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Partial_derivative" title="Partial derivative">Partial derivative</a></li>
+<li><a href="/wiki/Multiple_integral" title="Multiple integral">Multiple integral</a></li>
+<li><a class="mw-selflink selflink">Line integral</a></li>
+<li><a href="/wiki/Surface_integral" title="Surface integral">Surface integral</a></li>
+<li><a href="/wiki/Volume_integral" title="Volume integral">Volume integral</a></li>
+<li><a href="/wiki/Jacobian_matrix_and_determinant" title="Jacobian matrix and determinant">Jacobian</a></li>
+<li><a href="/wiki/Hessian_matrix" title="Hessian matrix">Hessian</a></li></ul></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;"><span style="font-size:110%;">Specialized</span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><div class="hlist">
+<ul><li><a href="/wiki/Fractional_calculus" title="Fractional calculus">Fractional</a></li>
+<li><a href="/wiki/Malliavin_calculus" title="Malliavin calculus">Malliavin</a></li>
+<li><a href="/wiki/Stochastic_calculus" title="Stochastic calculus">Stochastic</a></li>
+<li><a href="/wiki/Calculus_of_variations" title="Calculus of variations">Variations</a></li></ul>
+</div></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;"><span style="font-size:110%;"><a href="/wiki/Glossary_of_calculus" title="Glossary of calculus">Glossary of calculus</a></span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><div class="hlist">
+<ul><li><a href="/wiki/Glossary_of_calculus" title="Glossary of calculus">Glossary of calculus</a></li></ul>
+</div></div></div></td>
+</tr><tr><td style="text-align:right;font-size:115%;padding-top: 0.6em;"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="/wiki/Template:Calculus" title="Template:Calculus"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Calculus" title="Template talk:Calculus"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Calculus&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p>In <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>, a <b>line integral</b> is an <a href="/wiki/Integral" title="Integral">integral</a> where the <a href="/wiki/Function_(mathematics)" title="Function (mathematics)">function</a> to be integrated is evaluated along a <a href="/wiki/Curve" title="Curve">curve</a>.<sup id="cite_ref-Tang2006_1-0" class="reference"><a href="#cite_note-Tang2006-1">&#91;1&#93;</a></sup>  The terms <b>path integral</b>, <b>curve integral</b>, and <b>curvilinear integral</b> are also used; <a href="/wiki/Contour_integral" class="mw-redirect" title="Contour integral">contour integral</a> as well, although that is typically reserved for <a href="#Complex_line_integral">line integrals in the complex plane</a>.
+</p><p>The function to be integrated may be a <a href="/wiki/Scalar_field" title="Scalar field">scalar field</a> or a <a href="/wiki/Vector_field" title="Vector field">vector field</a>. The value of the line integral is the sum of values of the field at all points on the curve, weighted by some scalar function on the curve (commonly <a href="/wiki/Arc_length" title="Arc length">arc length</a> or, for a vector field, the <a href="/wiki/Dot_product" title="Dot product">scalar product</a> of the vector field with a <a href="/wiki/Differential_(infinitesimal)" title="Differential (infinitesimal)">differential</a> vector in the curve). This weighting distinguishes the line integral from simpler integrals defined on <a href="/wiki/Interval_(mathematics)" title="Interval (mathematics)">intervals</a>. Many simple formulae in physics (for example, <span class="texhtml"><i>W</i> = <b>F</b> · <b>s</b></span>) have natural continuous analogs in terms of line integrals (<span class="texhtml"><i>W</i> = ∫<sub><i>C</i></sub> <b>F</b> · d<b>s</b></span>). The line integral finds the <a href="/wiki/Mechanical_work" class="mw-redirect" title="Mechanical work">work</a> done on an object moving through an electric or gravitational field, for example.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Vector_calculus"><span class="tocnumber">1</span> <span class="toctext">Vector calculus</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Line_integral_of_a_scalar_field"><span class="tocnumber">1.1</span> <span class="toctext">Line integral of a scalar field</span></a>
+<ul>
+<li class="toclevel-3 tocsection-3"><a href="#Definition"><span class="tocnumber">1.1.1</span> <span class="toctext">Definition</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="#Derivation"><span class="tocnumber">1.1.2</span> <span class="toctext">Derivation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-5"><a href="#Line_integral_of_a_vector_field"><span class="tocnumber">1.2</span> <span class="toctext">Line integral of a vector field</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="#Definition_2"><span class="tocnumber">1.2.1</span> <span class="toctext">Definition</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Derivation_2"><span class="tocnumber">1.2.2</span> <span class="toctext">Derivation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a href="#Path_independence"><span class="tocnumber">1.3</span> <span class="toctext">Path independence</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Applications"><span class="tocnumber">1.4</span> <span class="toctext">Applications</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Flow_across_a_curve"><span class="tocnumber">2</span> <span class="toctext">Flow across a curve</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Complex_line_integral"><span class="tocnumber">3</span> <span class="toctext">Complex line integral</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Relation_between_the_line_integral_of_a_vector_field_and_the_complex_line_integral"><span class="tocnumber">3.2</span> <span class="toctext">Relation between the line integral of a vector field and the complex line integral</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#Geometric_Line_integral"><span class="tocnumber">4</span> <span class="toctext">Geometric Line integral</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#Quantum_mechanics"><span class="tocnumber">5</span> <span class="toctext">Quantum mechanics</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Vector_calculus">Vector calculus</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Line_integral&amp;action=edit&amp;section=1" title="Edit section: Vector calculus">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In qualitative terms, a line integral in vector calculus can be thought of as a measure of the total effect of a given <a href="/wiki/Tensor_field" title="Tensor field">tensor field</a> along a given curve. For example, the line integral over a scalar field (rank 0 tensor) can be interpreted as the area under the field carved out by a particular curve. This can be visualized as the surface created by <i>z</i> = <i>f</i>(<i>x</i>,<i>y</i>) and a curve <i>C</i> in the <i>x</i>-<i>y</i> plane. The line integral of <i>f</i> would be the area of the "curtain" created when the points of the surface that are directly over <i>C</i> are carved out.
+</p>
+<h3><span class="mw-headline" id="Line_integral_of_a_scalar_field">Line integral of a scalar field</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Line_integral&amp;action=edit&amp;section=2" title="Edit section: Line integral of a scalar field">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:402px;"><a href="/wiki/File:Line_integral_of_scalar_field.gif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/4/42/Line_integral_of_scalar_field.gif" decoding="async" width="400" height="300" class="thumbimage" data-file-width="400" data-file-height="300" /></a>  <div class="thumbcaption">The line integral over a scalar field <i>f</i> can be thought of as the area under the curve <i>C</i> along a surface <i>z</i> = <i>f</i>(<i>x</i>,<i>y</i>), described by the field.</div></div></div>
+<h4><span class="mw-headline" id="Definition">Definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Line_integral&amp;action=edit&amp;section=3" title="Edit section: Definition">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>For some <a href="/wiki/Scalar_field" title="Scalar field">scalar field</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f:\mathbb {U} \subseteq \mathbb {R} ^{n}\rightarrow \mathbb {R} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">U</mi>
+        </mrow>
+        <mo>&#x2286;<!-- ⊆ --></mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">R</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">R</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:\mathbb {U} \subseteq \mathbb {R} ^{n}\rightarrow \mathbb {R} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9c5b26dffb0adac12f0e551ef177fb5a6eb86b98" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:16.181ex; height:2.676ex;" alt="{\displaystyle f:\mathbb {U} \subseteq \mathbb {R} ^{n}\rightarrow \mathbb {R} }"/></span>, the line integral along a <a href="/wiki/Piecewise_smooth" class="mw-redirect" title="Piecewise smooth">piecewise smooth</a> <a href="/wiki/Curve" title="Curve">curve</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathcal {C}}\subset \mathbb {U} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">C</mi>
+          </mrow>
+        </mrow>
+        <mo>&#x2282;<!-- ⊂ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">U</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {C}}\subset \mathbb {U} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3a98259115b9d4de3921b7458f4505ca8f71fa6f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.016ex; height:2.176ex;" alt="{\displaystyle {\mathcal {C}}\subset \mathbb {U} }"/></span> is defined as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{\mathcal {C}}f(\mathbf {r} )\,ds=\int _{a}^{b}f\left(\mathbf {r} (t)\right)|\mathbf {r} '(t)|\,dt.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi class="MJX-tex-caligraphic" mathvariant="script">C</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>s</mi>
+        <mo>=</mo>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>a</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>b</mi>
+          </mrow>
+        </msubsup>
+        <mi>f</mi>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="bold">r</mi>
+            </mrow>
+            <mo stretchy="false">(</mo>
+            <mi>t</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">r</mi>
+          </mrow>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>t</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{\mathcal {C}}f(\mathbf {r} )\,ds=\int _{a}^{b}f\left(\mathbf {r} (t)\right)|\mathbf {r} '(t)|\,dt.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/88ad96ea38835b00af51b0dc68cfcce34c1c9fea" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:32.991ex; height:6.343ex;" alt="{\displaystyle \int _{\mathcal {C}}f(\mathbf {r} )\,ds=\int _{a}^{b}f\left(\mathbf {r} (t)\right)|\mathbf {r} &#039;(t)|\,dt.}"/></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {r} :[a,b]\rightarrow {\mathcal {C}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo>:</mo>
+        <mo stretchy="false">[</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">]</mo>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">C</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {r} :[a,b]\rightarrow {\mathcal {C}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a3ea25aa11d4b0bb9d79839cd11a07a72c69d24a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.447ex; height:2.843ex;" alt="{\displaystyle \mathbf {r} :[a,b]\rightarrow {\mathcal {C}}}"/></span> is an arbitrary <a href="/wiki/Bijective" class="mw-redirect" title="Bijective">bijective</a> <a href="/wiki/Parametric_equation" title="Parametric equation">parametrization</a> of the curve <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathcal {C}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">C</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {C}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e7b3edab7022ca9e2976651bc59c489513ee9019" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.239ex; height:2.176ex;" alt="{\mathcal {C}}"/></span> such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {r} (a)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {r} (a)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a33961c093c1fd3636fcd1f9a54ae2b370dd3138" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.141ex; height:2.843ex;" alt="{\displaystyle \mathbf {r} (a)}"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {r} (b)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {r} (b)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/16e5f0587ec4a4ab631c61e3af13b955283973f8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:3.909ex; height:2.843ex;" alt="{\displaystyle \mathbf {r} (b)}"/></span> give the endpoints of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathcal {C}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">C</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {C}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e7b3edab7022ca9e2976651bc59c489513ee9019" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.239ex; height:2.176ex;" alt="{\mathcal {C}}"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a&lt;b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>&lt;</mo>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a&lt;b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/91a7698e4c7401bb321f97888b872b583a9e4642" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.326ex; height:2.176ex;" alt="a&lt;b"/></span>.  Here, and in the rest of the article, the absolute value bars denote the <a href="/wiki/Euclidean_distance" title="Euclidean distance">standard (euclidean) norm</a> of a vector.
+</p><p>The function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"/></span> is called the integrand, the curve <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathcal {C}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">C</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {C}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e7b3edab7022ca9e2976651bc59c489513ee9019" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.239ex; height:2.176ex;" alt="{\mathcal {C}}"/></span> is the domain of integration, and the symbol <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle ds}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mi>s</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle ds}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5f0fb36e4308227d3e4a1f809c2571ec02527100" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.306ex; height:2.176ex;" alt="ds"/></span> may be intuitively interpreted as an elementary <a href="/wiki/Arc_length" title="Arc length">arc length</a>. Line integrals of scalar fields over a curve <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathcal {C}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">C</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {C}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e7b3edab7022ca9e2976651bc59c489513ee9019" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.239ex; height:2.176ex;" alt="{\mathcal {C}}"/></span> do not depend on the chosen parametrization <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {r} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {r} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eca0f46511c4c986c48b254073732c0bd98ae0c1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.102ex; height:1.676ex;" alt="\mathbf {r} "/></span> of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathcal {C}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">C</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {C}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e7b3edab7022ca9e2976651bc59c489513ee9019" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.239ex; height:2.176ex;" alt="{\mathcal {C}}"/></span>.
+</p><p>Geometrically, when the scalar field <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"/></span> is defined over a plane <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (n=2)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (n=2)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b321005be9f1e34bdc13cb7ad823d3899b0bd9ca" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.465ex; height:2.843ex;" alt="{\displaystyle (n=2)}"/></span>, its graph is a surface <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle z=f(x,y)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>z</mi>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle z=f(x,y)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1eefb2840000f404c8c0f3f5d6d72f2624854591" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.794ex; height:2.843ex;" alt="z=f(x,y)"/></span> in space, and the line integral gives the (signed) <a href="/wiki/Cross-section_(geometry)" class="mw-redirect" title="Cross-section (geometry)">cross-sectional</a> area bounded by the curve <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathcal {C}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">C</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {C}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e7b3edab7022ca9e2976651bc59c489513ee9019" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.239ex; height:2.176ex;" alt="{\mathcal {C}}"/></span> and the graph of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"/></span>. See the animation to the right.
+</p>
+<h4><span class="mw-headline" id="Derivation">Derivation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Line_integral&amp;action=edit&amp;section=4" title="Edit section: Derivation">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>For a line integral over a scalar field, the integral can be constructed from a <a href="/wiki/Riemann_sum" title="Riemann sum">Riemann sum</a> using the above definitions of <i>f</i>, <i>C</i> and a parametrization <b>r</b> of <i>C</i>. This can be done by partitioning the <a href="/wiki/Interval_(mathematics)" title="Interval (mathematics)">interval</a> [<i>a</i>,<i>b</i>] into <i>n</i> sub-intervals [<i>t</i><sub><i>i-1</i></sub>, <i>t</i><sub><i>i</i></sub>] of length Δ<i>t</i> = (<i>b</i> − <i>a</i>)/<i>n</i>, then <b>r</b>(<i>t</i><sub><i>i</i></sub>) denotes some point, call it a sample point, on the curve <i>C</i>. We can use the set of sample points {<b>r</b>(<i>t</i><sub><i>i</i></sub>)&#160;: 1 ≤ i ≤ n} to approximate the curve <i>C</i> by a <a href="/wiki/Polygonal_path" class="mw-redirect" title="Polygonal path">polygonal path</a> by introducing a straight line piece between each of the sample points <b>r</b>(<i>t</i><sub><i>i-1</i></sub>) and <b>r</b>(<i>t</i><sub><i>i</i></sub>). We then label the distance between each of the sample points on the curve as Δ<i>s</i><sub><i>i</i></sub>. The product of <i>f</i>(<b>r</b>(<i>t</i><sub><i>i</i></sub>)) and Δ<i>s</i><sub><i>i</i></sub> can be associated with the signed area of a rectangle with a height and width of <i>f</i>(<b>r</b>(<i>t</i><sub><i>i</i></sub>)) and Δ<i>s</i><sub><i>i</i></sub> respectively. Taking the <a href="/wiki/Limit_of_a_sequence" title="Limit of a sequence">limit</a> of the <a href="/wiki/Summation" title="Summation">sum</a> of the terms as the length of the partitions approaches zero gives us
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle I=\lim _{\Delta s_{i}\rightarrow 0}\sum _{i=1}^{n}f(\mathbf {r} (t_{i}))\,\Delta s_{i}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>I</mi>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+            <msub>
+              <mi>s</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mn>0</mn>
+          </mrow>
+        </munder>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <msub>
+          <mi>s</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle I=\lim _{\Delta s_{i}\rightarrow 0}\sum _{i=1}^{n}f(\mathbf {r} (t_{i}))\,\Delta s_{i}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2e11de6d5a8558377d3d6a4be59c3e5664df8aa1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:26.128ex; height:6.843ex;" alt="{\displaystyle I=\lim _{\Delta s_{i}\rightarrow 0}\sum _{i=1}^{n}f(\mathbf {r} (t_{i}))\,\Delta s_{i}.}"/></span></dd></dl>
+<p>We note that, by the <a href="/wiki/Mean_value_theorem" title="Mean value theorem">mean value theorem</a>, the distance between subsequent points on the curve, is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Delta s_{i}=|\mathbf {r} (t_{i}+\Delta t)-\mathbf {r} (t_{i})|\approx |\mathbf {r} '(t_{i})|\,\Delta t.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <msub>
+          <mi>s</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&#x2248;<!-- ≈ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">r</mi>
+          </mrow>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <mi>t</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Delta s_{i}=|\mathbf {r} (t_{i}+\Delta t)-\mathbf {r} (t_{i})|\approx |\mathbf {r} '(t_{i})|\,\Delta t.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3ea51b296b157293e858da1dd2f39c671708a9f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:39.213ex; height:3.009ex;" alt="{\displaystyle \Delta s_{i}=|\mathbf {r} (t_{i}+\Delta t)-\mathbf {r} (t_{i})|\approx |\mathbf {r} &#039;(t_{i})|\,\Delta t.}"/></span></dd></dl>
+<p>Substituting this in the above Riemann sum yields
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle I=\lim _{\Delta t\rightarrow 0}\sum _{i=1}^{n}f(\mathbf {r} (t_{i}))|\mathbf {r} '(t_{i})|\,\Delta t}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>I</mi>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+            <mi>t</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mn>0</mn>
+          </mrow>
+        </munder>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">r</mi>
+          </mrow>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <mi>t</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle I=\lim _{\Delta t\rightarrow 0}\sum _{i=1}^{n}f(\mathbf {r} (t_{i}))|\mathbf {r} '(t_{i})|\,\Delta t}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/193c5bbf44b16a55ac963b1c78021203d2a2afcf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:30.157ex; height:6.843ex;" alt="{\displaystyle I=\lim _{\Delta t\rightarrow 0}\sum _{i=1}^{n}f(\mathbf {r} (t_{i}))|\mathbf {r} &#039;(t_{i})|\,\Delta t}"/></span></dd></dl>
+<p>which is the Riemann sum for the integral
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle I=\int _{a}^{b}f(\mathbf {r} (t))|\mathbf {r} '(t)|\,dt.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>I</mi>
+        <mo>=</mo>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>a</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>b</mi>
+          </mrow>
+        </msubsup>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">r</mi>
+          </mrow>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>t</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle I=\int _{a}^{b}f(\mathbf {r} (t))|\mathbf {r} '(t)|\,dt.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e87bf4c013662c7026f836ef61fbc29f0ce9f45a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:23.717ex; height:6.343ex;" alt="I=\int _{a}^{b}f(\mathbf {r} (t))|\mathbf {r} &#039;(t)|\,dt."/></span></dd></dl>
+<h3><span class="mw-headline" id="Line_integral_of_a_vector_field">Line integral of a vector field</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Line_integral&amp;action=edit&amp;section=5" title="Edit section: Line integral of a vector field">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h4><span class="mw-headline" id="Definition_2">Definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Line_integral&amp;action=edit&amp;section=6" title="Edit section: Definition">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>For a <a href="/wiki/Vector_field" title="Vector field">vector field</a> <b>F</b>&#160;: <i>U</i> ⊆ <b>R</b><sup><i>n</i></sup> → <b>R</b><sup><i>n</i></sup>, the line integral along a <a href="/wiki/Piecewise_smooth" class="mw-redirect" title="Piecewise smooth">piecewise smooth</a> <a href="/wiki/Curve" title="Curve">curve</a> <i>C</i> ⊂ <i>U</i>, in the direction of <b>r</b>, is defined as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{C}\mathbf {F} (\mathbf {r} )\cdot \,d\mathbf {r} =\int _{a}^{b}\mathbf {F} (\mathbf {r} (t))\cdot \mathbf {r} '(t)\,dt.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>C</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">F</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo>=</mo>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>a</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>b</mi>
+          </mrow>
+        </msubsup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">F</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">r</mi>
+          </mrow>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>t</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{C}\mathbf {F} (\mathbf {r} )\cdot \,d\mathbf {r} =\int _{a}^{b}\mathbf {F} (\mathbf {r} (t))\cdot \mathbf {r} '(t)\,dt.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/60dfca576518d80a3559c78a9fbf6bfc2b7eecb3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:35.474ex; height:6.343ex;" alt="{\displaystyle \int _{C}\mathbf {F} (\mathbf {r} )\cdot \,d\mathbf {r} =\int _{a}^{b}\mathbf {F} (\mathbf {r} (t))\cdot \mathbf {r} &#039;(t)\,dt.}"/></span></dd></dl>
+<p>where · is the <a href="/wiki/Dot_product" title="Dot product">dot product</a> and <b>r</b>: [a, b] → <i>C</i> is a <a href="/wiki/Bijective" class="mw-redirect" title="Bijective">bijective</a> <a href="/wiki/Parametric_equation" title="Parametric equation">parametrization</a> of the curve <i>C</i> such that <b>r</b>(<i>a</i>) and <b>r</b>(<i>b</i>) give the endpoints of <i>C</i>.
+</p><p>A line integral of a scalar field is thus a line integral of a vector field where the vectors are always <a href="/wiki/Tangential" class="mw-redirect" title="Tangential">tangential</a> to the line.
+</p><p>Line integrals of vector fields are independent of the parametrization <b>r</b> in <a href="/wiki/Absolute_value" title="Absolute value">absolute value</a>, but they do depend on its <a href="/wiki/Curve_orientation" title="Curve orientation">orientation</a>. Specifically, a reversal in the orientation of the parametrization changes the sign of the line integral.
+</p><p>From the viewpoint of <a href="/wiki/Differential_geometry" title="Differential geometry">differential geometry</a>, the line integral of a vector field along a curve is the integral of the corresponding 1-form under the <a href="/wiki/Musical_isomorphism" title="Musical isomorphism">musical isomorphism</a> (which takes the vector field to the corresponding <a href="/wiki/Covector" class="mw-redirect" title="Covector">covector</a> field) over the curve considered as an <a href="/wiki/Immersion_(mathematics)" title="Immersion (mathematics)">immersed</a> 1-manifold.
+</p>
+<h4><span class="mw-headline" id="Derivation_2">Derivation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Line_integral&amp;action=edit&amp;section=7" title="Edit section: Derivation">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<div class="thumb tright"><div class="thumbinner" style="width:452px;"><a href="/wiki/File:Line_integral_of_vector_field.gif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/b/b0/Line_integral_of_vector_field.gif" decoding="async" width="450" height="410" class="thumbimage" data-file-width="450" data-file-height="410" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Line_integral_of_vector_field.gif" class="internal" title="Enlarge"></a></div>The trajectory of a particle (in red) along a curve inside a vector field. Starting from <i>a</i>, the particle traces the path <i>C</i> along the vector field <i>F</i>. The dot product (green line) of its tangent vector (red arrow) and the field vector (blue arrow) defines an area under a curve, which is equivalent to the path's line integral. (Click on image for a detailed description.)</div></div></div>
+<p>The line integral of a vector field can be derived in a manner very similar to the case of a scalar field, but this time with the inclusion of a dot product. Again using the above definitions of <b>F</b>, <i>C</i> and its parametrization <b>r</b>(<i>t</i>), we construct the integral from a <a href="/wiki/Riemann_sum" title="Riemann sum">Riemann sum</a>. We partition the <a href="/wiki/Interval_(mathematics)" title="Interval (mathematics)">interval</a> [<i>a</i>,<i>b</i>] (which is the range of the values of the <a href="/wiki/Parameter" title="Parameter">parameter</a> t) into <i>n</i> intervals of length Δ<i>t</i> = (<i>b</i> − <i>a</i>)/<i>n</i>. Letting <i>t<sub>i</sub></i> be the <i>i</i>th  point on [<i>a</i>,<i>b</i>], then <b>r</b>(<i>t</i><sub><i>i</i></sub>) gives us the position of the <i>i</i>th point on the curve. However, instead of calculating up the distances between subsequent points, we need to calculate their <a href="/wiki/Displacement_(vector)" title="Displacement (vector)">displacement</a> vectors, Δ<b>r</b><sub><i>i</i></sub>. As before, evaluating <b>F</b> at all the points on the curve and taking the dot product with each displacement vector gives us the <a href="/wiki/Infinitesimal" title="Infinitesimal">infinitesimal</a> contribution of each partition of <b>F</b> on <i>C</i>. Letting the size of the partitions go to zero gives us a sum
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle I=\lim _{\Delta t\rightarrow 0}\sum _{i=1}^{n}\mathbf {F} (\mathbf {r} (t_{i}))\cdot \Delta \mathbf {r} _{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>I</mi>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+            <mi>t</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mn>0</mn>
+          </mrow>
+        </munder>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">F</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">r</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle I=\lim _{\Delta t\rightarrow 0}\sum _{i=1}^{n}\mathbf {F} (\mathbf {r} (t_{i}))\cdot \Delta \mathbf {r} _{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/949668da44b4d667086321c67468f197805f17a4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:26.386ex; height:6.843ex;" alt="I=\lim _{\Delta t\rightarrow 0}\sum _{i=1}^{n}\mathbf {F} (\mathbf {r} (t_{i}))\cdot \Delta \mathbf {r} _{i}"/></span></dd></dl>
+<p>By the <a href="/wiki/Mean_value_theorem" title="Mean value theorem">mean value theorem</a>, we see that the displacement vector between adjacent points on the curve is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Delta \mathbf {r} _{i}=\mathbf {r} (t_{i}+\Delta t)-\mathbf {r} (t_{i})\approx \mathbf {r} '(t_{i})\,\Delta t}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">r</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2248;<!-- ≈ --></mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">r</mi>
+          </mrow>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <mi>t</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Delta \mathbf {r} _{i}=\mathbf {r} (t_{i}+\Delta t)-\mathbf {r} (t_{i})\approx \mathbf {r} '(t_{i})\,\Delta t}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b695a2951f828646830100bb6b130e05cc8db638" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:35.99ex; height:3.009ex;" alt="{\displaystyle \Delta \mathbf {r} _{i}=\mathbf {r} (t_{i}+\Delta t)-\mathbf {r} (t_{i})\approx \mathbf {r} &#039;(t_{i})\,\Delta t}"/></span></dd></dl>
+<p>Substituting this in the above Riemann sum yields
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle I=\lim _{\Delta t\rightarrow 0}\sum _{i=1}^{n}\mathbf {F} (\mathbf {r} (t_{i}))\cdot \mathbf {r} '(t_{i})\,\Delta t}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>I</mi>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+            <mi>t</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mn>0</mn>
+          </mrow>
+        </munder>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">F</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">r</mi>
+          </mrow>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <mi>t</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle I=\lim _{\Delta t\rightarrow 0}\sum _{i=1}^{n}\mathbf {F} (\mathbf {r} (t_{i}))\cdot \mathbf {r} '(t_{i})\,\Delta t}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b8f06ac1ec3eff04045836ec10816f1345124582" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:30.947ex; height:6.843ex;" alt="{\displaystyle I=\lim _{\Delta t\rightarrow 0}\sum _{i=1}^{n}\mathbf {F} (\mathbf {r} (t_{i}))\cdot \mathbf {r} &#039;(t_{i})\,\Delta t}"/></span></dd></dl>
+<p>which is the Riemann sum for the integral defined above.
+</p>
+<h3><span class="mw-headline" id="Path_independence">Path independence</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Line_integral&amp;action=edit&amp;section=8" title="Edit section: Path independence">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Gradient_theorem" title="Gradient theorem">Gradient theorem</a></div>
+<p>If a vector field <b>F</b> is the <a href="/wiki/Gradient" title="Gradient">gradient</a> of a <a href="/wiki/Scalar_field" title="Scalar field">scalar field</a> <i>G</i> (i.e. if <b>F</b> is conservative), that is,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla G=\mathbf {F} ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mi>G</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">F</mi>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla G=\mathbf {F} ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d8cc95b357d90e0eb14bb6ac8f02e8d8e88ec83b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:9.191ex; height:2.509ex;" alt="\nabla G=\mathbf {F} ,"/></span></dd></dl>
+<p>then the <a href="/wiki/Derivative" title="Derivative">derivative</a> of the <a href="/wiki/Function_composition" title="Function composition">composition</a> of <i>G</i> and <b>r</b>(<i>t</i>) is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {dG(\mathbf {r} (t))}{dt}}=\nabla G(\mathbf {r} (t))\cdot \mathbf {r} '(t)=\mathbf {F} (\mathbf {r} (t))\cdot \mathbf {r} '(t)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>d</mi>
+              <mi>G</mi>
+              <mo stretchy="false">(</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">r</mi>
+              </mrow>
+              <mo stretchy="false">(</mo>
+              <mi>t</mi>
+              <mo stretchy="false">)</mo>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi>d</mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mi>G</mi>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">r</mi>
+          </mrow>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">F</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">r</mi>
+          </mrow>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {dG(\mathbf {r} (t))}{dt}}=\nabla G(\mathbf {r} (t))\cdot \mathbf {r} '(t)=\mathbf {F} (\mathbf {r} (t))\cdot \mathbf {r} '(t)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a594ef5792d8090938048752b9458568c7797471" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:44.431ex; height:5.843ex;" alt="{\frac {dG(\mathbf {r} (t))}{dt}}=\nabla G(\mathbf {r} (t))\cdot \mathbf {r} &#039;(t)=\mathbf {F} (\mathbf {r} (t))\cdot \mathbf {r} &#039;(t)"/></span></dd></dl>
+<p>which happens to be the integrand for the line integral of <b>F</b> on <b>r</b>(<i>t</i>). It follows, given a path <i>C </i>, that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{C}\mathbf {F} (\mathbf {r} )\cdot \,d\mathbf {r} =\int _{a}^{b}\mathbf {F} (\mathbf {r} (t))\cdot \mathbf {r} '(t)\,dt=\int _{a}^{b}{\frac {dG(\mathbf {r} (t))}{dt}}\,dt=G(\mathbf {r} (b))-G(\mathbf {r} (a)).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>C</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">F</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo>=</mo>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>a</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>b</mi>
+          </mrow>
+        </msubsup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">F</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">r</mi>
+          </mrow>
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>t</mi>
+        <mo>=</mo>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>a</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>b</mi>
+          </mrow>
+        </msubsup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>d</mi>
+              <mi>G</mi>
+              <mo stretchy="false">(</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">r</mi>
+              </mrow>
+              <mo stretchy="false">(</mo>
+              <mi>t</mi>
+              <mo stretchy="false">)</mo>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi>d</mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>t</mi>
+        <mo>=</mo>
+        <mi>G</mi>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>G</mi>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{C}\mathbf {F} (\mathbf {r} )\cdot \,d\mathbf {r} =\int _{a}^{b}\mathbf {F} (\mathbf {r} (t))\cdot \mathbf {r} '(t)\,dt=\int _{a}^{b}{\frac {dG(\mathbf {r} (t))}{dt}}\,dt=G(\mathbf {r} (b))-G(\mathbf {r} (a)).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/99796d6084ff2b065fd25ea6819605a96492b6f3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:75.504ex; height:6.343ex;" alt="\int _{C}\mathbf {F} (\mathbf {r} )\cdot \,d\mathbf {r} =\int _{a}^{b}\mathbf {F} (\mathbf {r} (t))\cdot \mathbf {r} &#039;(t)\,dt=\int _{a}^{b}{\frac {dG(\mathbf {r} (t))}{dt}}\,dt=G(\mathbf {r} (b))-G(\mathbf {r} (a))."/></span></dd></dl>
+<p>In other words, the integral of <b>F</b> over <i>C</i> depends solely on the values of <i>G</i> at the points <b>r</b>(<i>b</i>) and <b>r</b>(<i>a</i>) and is thus independent of the path between them.  For this reason, a line integral of a conservative vector field is called <i>path independent</i>.
+</p>
+<h3><span class="mw-headline" id="Applications">Applications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Line_integral&amp;action=edit&amp;section=9" title="Edit section: Applications">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The line integral has many uses in physics. For example, the <a href="/wiki/Work_(physics)" title="Work (physics)">work</a> done on a particle traveling on a curve <i>C</i> inside a force field represented as a vector field <b>F</b> is the line integral of <b>F</b> on <i>C</i>.
+</p>
+<h2><span class="mw-headline" id="Flow_across_a_curve">Flow across a curve</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Line_integral&amp;action=edit&amp;section=10" title="Edit section: Flow across a curve">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>For a <a href="/wiki/Vector_field" title="Vector field">vector field</a> <b>F</b>&#160;: <i>U</i> ⊆ <b>R</b><sup><i>2</i></sup> → <b>R</b><sup><i>2</i></sup>, such as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle F(x,y)=(P(x,y),Q(x,y))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>F</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F(x,y)=(P(x,y),Q(x,y))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/40cd01eab8209dcce6e18b15c37a307929e720f8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:27.251ex; height:2.843ex;" alt="F(x,y)=(P(x,y),Q(x,y))"/></span> the line integral <b>across</b> a <a href="/wiki/Piecewise_smooth" class="mw-redirect" title="Piecewise smooth">piecewise smooth</a> <a href="/wiki/Curve" title="Curve">curve</a> <i>C</i> ⊂ <i>U</i>, is defined as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{C}\mathbf {F} (\mathbf {r} )\cdot \,d\mathbf {r} ^{t}=\int _{a}^{b}-Q(x,y)\,dx+P(x,y)\,dy=\int _{a}^{b}(P(\mathbf {r} (t)),Q(\mathbf {r} (t)))\cdot (r'_{2}(t),-r'_{1}(t))\,dt.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>C</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">F</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">r</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>t</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>a</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>b</mi>
+          </mrow>
+        </msubsup>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>Q</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>y</mi>
+        <mo>=</mo>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>a</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>b</mi>
+          </mrow>
+        </msubsup>
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mo stretchy="false">(</mo>
+        <msubsup>
+          <mi>r</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+          <mo>&#x2032;</mo>
+        </msubsup>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <msubsup>
+          <mi>r</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mo>&#x2032;</mo>
+        </msubsup>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>t</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{C}\mathbf {F} (\mathbf {r} )\cdot \,d\mathbf {r} ^{t}=\int _{a}^{b}-Q(x,y)\,dx+P(x,y)\,dy=\int _{a}^{b}(P(\mathbf {r} (t)),Q(\mathbf {r} (t)))\cdot (r'_{2}(t),-r'_{1}(t))\,dt.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e4c79aaa109e4fa8b14d318a99ad01e5f14452ef" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:87.404ex; height:6.343ex;" alt="{\displaystyle \int _{C}\mathbf {F} (\mathbf {r} )\cdot \,d\mathbf {r} ^{t}=\int _{a}^{b}-Q(x,y)\,dx+P(x,y)\,dy=\int _{a}^{b}(P(\mathbf {r} (t)),Q(\mathbf {r} (t)))\cdot (r&#039;_{2}(t),-r&#039;_{1}(t))\,dt.}"/></span></dd></dl>
+<p>where · is the <a href="/wiki/Dot_product" title="Dot product">dot product</a> and <b>r</b>&#160;: [<i>a</i>, <i>b</i>] → <i>C</i>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle r(t)=(r_{1}(t),r_{2}(t))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>r</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>r</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <msub>
+          <mi>r</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle r(t)=(r_{1}(t),r_{2}(t))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3ca24a00e59cc251bd39ee9080f3a2199faeb0d3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.143ex; height:2.843ex;" alt="r(t)=(r_{1}(t),r_{2}(t))"/></span> is a <a href="/wiki/Bijective" class="mw-redirect" title="Bijective">bijective</a> <a href="/wiki/Parametric_equation" title="Parametric equation">parametrization</a> of the curve <i>C</i> such that <b>r</b>(<i>a</i>) and <b>r</b>(<i>b</i>) give the endpoints of <i>C</i>.
+</p>
+<h2><span class="mw-headline" id="Complex_line_integral">Complex line integral</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Line_integral&amp;action=edit&amp;section=11" title="Edit section: Complex line integral">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In <a href="/wiki/Complex_analysis" title="Complex analysis">complex analysis</a>, the line integral is defined in terms of <a href="/wiki/Complex_number#Multiplication_and_division" title="Complex number">multiplication</a> and <a href="/wiki/Complex_number#Addition_and_subtraction" title="Complex number">addition</a> of complex numbers.  Suppose <i>U</i> is an <a href="/wiki/Open_subset" class="mw-redirect" title="Open subset">open subset</a> of the <a href="/wiki/Complex_plane" title="Complex plane">complex plane</a> <b>C</b>, <i>f</i>&#160;: <i>U</i> → <b>C</b> is a function, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle L\subset U}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>L</mi>
+        <mo>&#x2282;<!-- ⊂ --></mo>
+        <mi>U</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle L\subset U}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/38ccc5e372e3f9b86bbfb6a0bac51f2f7b274ea6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.464ex; height:2.176ex;" alt="L\subset U"/></span> is a curve of finite length, parametrized by <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \gamma :[a,b]\to L}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B3;<!-- γ --></mi>
+        <mo>:</mo>
+        <mo stretchy="false">[</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">]</mo>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mi>L</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gamma :[a,b]\to L}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6286a9dc849e9a137330757030408cc8e2a71baf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.951ex; height:2.843ex;" alt="\gamma :[a,b]\to L"/></span>, where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \gamma (t)=x(t)+iy(t).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B3;<!-- γ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>x</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>i</mi>
+        <mi>y</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gamma (t)=x(t)+iy(t).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bf075c7efba319acc298aea43107693cd45dd27d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.082ex; height:2.843ex;" alt="\gamma (t)=x(t)+iy(t)."/></span> The line integral
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{L}f(z)\,dz}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>L</mi>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{L}f(z)\,dz}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d6687361b95b6d95787ecd4f1ce97d8d34c8a6fe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:9.898ex; height:5.676ex;" alt="\int _{L}f(z)\,dz"/></span></dd></dl>
+<p>may be defined by subdividing the <a href="/wiki/Interval_(mathematics)" title="Interval (mathematics)">interval</a> [<i>a</i>, <i>b</i>] into <i>a</i> = <i>t</i><sub>0</sub> &lt; <i>t</i><sub>1</sub> &lt; ... &lt;  <i>t</i><sub><i>n</i></sub> = <i>b</i> and considering the expression
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum _{k=1}^{n}f(\gamma (t_{k}))[\gamma (t_{k})-\gamma (t_{k-1})]=\sum _{k=1}^{n}f(\gamma _{k})\,\Delta \gamma _{k}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03B3;<!-- γ --></mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">[</mo>
+        <mi>&#x03B3;<!-- γ --></mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>&#x03B3;<!-- γ --></mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">]</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>&#x03B3;<!-- γ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi mathvariant="normal">&#x0394;<!-- Δ --></mi>
+        <msub>
+          <mi>&#x03B3;<!-- γ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{k=1}^{n}f(\gamma (t_{k}))[\gamma (t_{k})-\gamma (t_{k-1})]=\sum _{k=1}^{n}f(\gamma _{k})\,\Delta \gamma _{k}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a0ffd705bcd0a80d686d4da024f4b6fcfebf5dba" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:45.549ex; height:6.843ex;" alt="{\displaystyle \sum _{k=1}^{n}f(\gamma (t_{k}))[\gamma (t_{k})-\gamma (t_{k-1})]=\sum _{k=1}^{n}f(\gamma _{k})\,\Delta \gamma _{k}.}"/></span></dd></dl>
+<p>The integral is then the limit of this <a href="/wiki/Riemann_sum" title="Riemann sum">Riemann sum</a> as the lengths of the subdivision intervals approach zero.
+</p><p>If the parametrization <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \gamma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B3;<!-- γ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gamma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a223c880b0ce3da8f64ee33c4f0010beee400b1a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:1.262ex; height:2.176ex;" alt="\gamma "/></span> is <a href="/wiki/Differentiable_function#Differentiability_classes" title="Differentiable function">continuously differentiable</a>, the line integral can be evaluated as an integral of a function of a real variable:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{L}f(z)\,dz=\int _{a}^{b}f(\gamma (t))\,\gamma \,'(t)\,dt.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>L</mi>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>a</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>b</mi>
+          </mrow>
+        </msubsup>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03B3;<!-- γ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>&#x03B3;<!-- γ --></mi>
+        <msup>
+          <mspace width="thinmathspace" />
+          <mo>&#x2032;</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>t</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{L}f(z)\,dz=\int _{a}^{b}f(\gamma (t))\,\gamma \,'(t)\,dt.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dff036602efb69c5133eef45782213a8192b939a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:32.244ex; height:6.343ex;" alt="\int _{L}f(z)\,dz=\int _{a}^{b}f(\gamma (t))\,\gamma \,&#039;(t)\,dt."/></span></dd></dl>
+<p>When <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle L}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>L</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle L}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/103168b86f781fe6e9a4a87b8ea1cebe0ad4ede8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.583ex; height:2.176ex;" alt="L"/></span> is a closed curve, that is, its initial and final points coincide, the notation
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \oint _{L}f(z)\,dz}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+            <mrow class="MJX-TeXAtom-VCENTER">
+              <mstyle mathsize="2.07em">
+                <mtext>&#x222E;<!-- ∮ --></mtext>
+                <mspace width="thinmathspace" />
+              </mstyle>
+            </mrow>
+            <mspace width="thinmathspace" />
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>L</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \oint _{L}f(z)\,dz}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8ea05379e49dc7131f57831b6981076ed1f10179" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:12.315ex; height:6.009ex;" alt="\oint _{L}f(z)\,dz"/></span></dd></dl>
+<p>is often used for the line integral of <i>f</i> along <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle L}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>L</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle L}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/103168b86f781fe6e9a4a87b8ea1cebe0ad4ede8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.583ex; height:2.176ex;" alt="L"/></span>.
+A closed curve line integral is sometimes referred to as a cyclic integral in engineering applications.
+</p><p>The line integral with respect to the conjugate complex differential <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\overline {dz}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <mrow>
+              <mi>d</mi>
+              <mi>z</mi>
+            </mrow>
+            <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+          </mover>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\overline {dz}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f89d5d601573e933f7f08769e6a8e7ca78692436" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.424ex; height:3.009ex;" alt="{\overline {dz}}"/></span> is defined<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> to be
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{L}f\,{\overline {dz}}:={\overline {\int _{L}{\overline {f}}\,dz}}=\int _{a}^{b}f(\gamma (t))\,{\overline {\gamma '(t)}}\,dt.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>L</mi>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <mrow>
+              <mi>d</mi>
+              <mi>z</mi>
+            </mrow>
+            <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+          </mover>
+        </mrow>
+        <mo>:=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <mrow>
+              <msub>
+                <mo>&#x222B;<!-- ∫ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>L</mi>
+                </mrow>
+              </msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mover>
+                  <mi>f</mi>
+                  <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                </mover>
+              </mrow>
+              <mspace width="thinmathspace" />
+              <mi>d</mi>
+              <mi>z</mi>
+            </mrow>
+            <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+          </mover>
+        </mrow>
+        <mo>=</mo>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>a</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>b</mi>
+          </mrow>
+        </msubsup>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03B3;<!-- γ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <mrow>
+              <msup>
+                <mi>&#x03B3;<!-- γ --></mi>
+                <mo>&#x2032;</mo>
+              </msup>
+              <mo stretchy="false">(</mo>
+              <mi>t</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+          </mover>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>t</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{L}f\,{\overline {dz}}:={\overline {\int _{L}{\overline {f}}\,dz}}=\int _{a}^{b}f(\gamma (t))\,{\overline {\gamma '(t)}}\,dt.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2f20dc2ed442e23e5775bc18f6c729b619a8d33f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:40.283ex; height:6.509ex;" alt="{\displaystyle \int _{L}f\,{\overline {dz}}:={\overline {\int _{L}{\overline {f}}\,dz}}=\int _{a}^{b}f(\gamma (t))\,{\overline {\gamma &#039;(t)}}\,dt.}"/></span></dd></dl>
+<p>The line integrals of complex functions can be evaluated using a number of techniques: the integral may be split into real and imaginary parts reducing the problem to that of evaluating two real-valued line integrals, the <a href="/wiki/Cauchy_integral_formula" class="mw-redirect" title="Cauchy integral formula">Cauchy integral formula</a> may be used in other circumstances. If the line integral is a closed curve in a region where the function is <a href="/wiki/Analytic_function" title="Analytic function">analytic</a> and containing no <a href="/wiki/Mathematical_singularity" class="mw-redirect" title="Mathematical singularity">singularities</a>, then the value of the integral is simply zero; this is a consequence of the <a href="/wiki/Cauchy_integral_theorem" class="mw-redirect" title="Cauchy integral theorem">Cauchy integral theorem</a>. The <a href="/wiki/Residue_theorem" title="Residue theorem">residue theorem</a> allows contour integrals to be used in the complex plane to find integrals of real-valued functions of a real variable (see <a href="/wiki/Residue_theorem" title="Residue theorem">residue theorem</a> for an example).
+</p>
+<h3><span class="mw-headline" id="Example">Example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Line_integral&amp;action=edit&amp;section=12" title="Edit section: Example">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Consider the function <i>f</i>(<i>z</i>)=1/<i>z</i>, and let the contour <i>L</i> be the <a href="/wiki/Unit_circle" title="Unit circle">unit circle</a> about 0, parametrized by z(<i>t</i>)=<i>e</i><sup><i>it</i></sup> with <i>t</i> in [0, 2π] (which generates the circle counterclockwise). Substituting, we find
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}\oint _{L}f(z)\,dz&amp;=\int _{0}^{2\pi }{1 \over e^{it}}ie^{it}\,dt=i\int _{0}^{2\pi }e^{-it}e^{it}\,dt\\&amp;=i\int _{0}^{2\pi }\,dt=i(2\pi -0)=2\pi i.\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+                    <mrow class="MJX-TeXAtom-VCENTER">
+                      <mstyle mathsize="2.07em">
+                        <mtext>&#x222E;<!-- ∮ --></mtext>
+                        <mspace width="thinmathspace" />
+                      </mstyle>
+                    </mrow>
+                    <mspace width="thinmathspace" />
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>L</mi>
+                  </mrow>
+                </msub>
+                <mo>&#x2061;<!-- ⁡ --></mo>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <mi>z</mi>
+                <mo stretchy="false">)</mo>
+                <mspace width="thinmathspace" />
+                <mi>d</mi>
+                <mi>z</mi>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msubsup>
+                  <mo>&#x222B;<!-- ∫ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                    <mi>&#x03C0;<!-- π --></mi>
+                  </mrow>
+                </msubsup>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <msup>
+                      <mi>e</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>i</mi>
+                        <mi>t</mi>
+                      </mrow>
+                    </msup>
+                  </mfrac>
+                </mrow>
+                <mi>i</mi>
+                <msup>
+                  <mi>e</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                    <mi>t</mi>
+                  </mrow>
+                </msup>
+                <mspace width="thinmathspace" />
+                <mi>d</mi>
+                <mi>t</mi>
+                <mo>=</mo>
+                <mi>i</mi>
+                <msubsup>
+                  <mo>&#x222B;<!-- ∫ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                    <mi>&#x03C0;<!-- π --></mi>
+                  </mrow>
+                </msubsup>
+                <msup>
+                  <mi>e</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mi>i</mi>
+                    <mi>t</mi>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mi>e</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                    <mi>t</mi>
+                  </mrow>
+                </msup>
+                <mspace width="thinmathspace" />
+                <mi>d</mi>
+                <mi>t</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>i</mi>
+                <msubsup>
+                  <mo>&#x222B;<!-- ∫ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                    <mi>&#x03C0;<!-- π --></mi>
+                  </mrow>
+                </msubsup>
+                <mspace width="thinmathspace" />
+                <mi>d</mi>
+                <mi>t</mi>
+                <mo>=</mo>
+                <mi>i</mi>
+                <mo stretchy="false">(</mo>
+                <mn>2</mn>
+                <mi>&#x03C0;<!-- π --></mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>0</mn>
+                <mo stretchy="false">)</mo>
+                <mo>=</mo>
+                <mn>2</mn>
+                <mi>&#x03C0;<!-- π --></mi>
+                <mi>i</mi>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}\oint _{L}f(z)\,dz&amp;=\int _{0}^{2\pi }{1 \over e^{it}}ie^{it}\,dt=i\int _{0}^{2\pi }e^{-it}e^{it}\,dt\\&amp;=i\int _{0}^{2\pi }\,dt=i(2\pi -0)=2\pi i.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/69b085712d4c5453a9c38e0b75ec71b7c861b4bd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -5.546ex; margin-bottom: -0.292ex; width:47.857ex; height:12.843ex;" alt="{\begin{aligned}\oint _{L}f(z)\,dz&amp;=\int _{0}^{2\pi }{1 \over e^{it}}ie^{it}\,dt=i\int _{0}^{2\pi }e^{-it}e^{it}\,dt\\&amp;=i\int _{0}^{2\pi }\,dt=i(2\pi -0)=2\pi i.\end{aligned}}"/></span></dd></dl>
+<p>Here we have used the fact that any complex number <i>z</i> can be written as <i>re<sup>it</sup></i> where <i>r</i> is the <a href="/wiki/Absolute_value" title="Absolute value">modulus</a> of <i>z</i>. On the unit circle this is fixed to 1, so the only variable left is the angle, which is denoted by <i>t</i>. This answer can be also verified by <a href="/wiki/Cauchy%27s_integral_formula" title="Cauchy&#39;s integral formula">Cauchy's integral formula</a>.
+</p>
+<h3><span class="mw-headline" id="Relation_between_the_line_integral_of_a_vector_field_and_the_complex_line_integral">Relation between the line integral of a vector field and the complex line integral</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Line_integral&amp;action=edit&amp;section=13" title="Edit section: Relation between the line integral of a vector field and the complex line integral">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Viewing complex numbers as 2-dimensional <a href="/wiki/Euclidean_vector" title="Euclidean vector">vectors</a>, the line integral of a 2-dimensional vector field corresponds to the real part of the line integral of the <a href="/wiki/Complex_conjugate" title="Complex conjugate">conjugate</a> of the corresponding complex function of a complex variable. More specifically, if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {r} (t)=(x(t),y(t))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {r} (t)=(x(t),y(t))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/00cd8d50d7668a850c7fa784958009e08ab87eb3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.476ex; height:2.843ex;" alt="\mathbf {r} (t)=(x(t),y(t))"/></span> is a parameterization of <i>L</i> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(z)=u(z)+iv(z)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>u</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>i</mi>
+        <mi>v</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)=u(z)+iv(z)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aadcde493bbff896c524f30d2b09a14cb5f0523f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.169ex; height:2.843ex;" alt="f(z)=u(z)+iv(z)"/></span>, then:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{L}{\overline {f(z)}}\,dz=\int _{L}{\bar {f}}\,dx+i\int _{L}{\bar {f}}\,dy=\int _{L}(u,v)\cdot d\mathbf {r} +i\int _{L}(-v,u)\cdot d\mathbf {r} ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>L</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>z</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+          </mover>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+        <mo>=</mo>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>L</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>f</mi>
+              <mo stretchy="false">&#x00AF;<!-- ¯ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>i</mi>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>L</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>f</mi>
+              <mo stretchy="false">&#x00AF;<!-- ¯ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>y</mi>
+        <mo>=</mo>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>L</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo>,</mo>
+        <mi>v</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mi>d</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo>+</mo>
+        <mi>i</mi>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>L</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>v</mi>
+        <mo>,</mo>
+        <mi>u</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mi>d</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{L}{\overline {f(z)}}\,dz=\int _{L}{\bar {f}}\,dx+i\int _{L}{\bar {f}}\,dy=\int _{L}(u,v)\cdot d\mathbf {r} +i\int _{L}(-v,u)\cdot d\mathbf {r} ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cb358c53f3fd72a93d1fbded668145d988b64300" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:65.76ex; height:5.676ex;" alt="\int _{L}{\overline {f(z)}}\,dz=\int _{L}{\bar {f}}\,dx+i\int _{L}{\bar {f}}\,dy=\int _{L}(u,v)\cdot d\mathbf {r} +i\int _{L}(-v,u)\cdot d\mathbf {r} ,"/></span></dd></dl>
+<p>provided that both integrals on the right hand side exist, and that the parametrization <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \gamma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B3;<!-- γ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gamma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a223c880b0ce3da8f64ee33c4f0010beee400b1a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:1.262ex; height:2.176ex;" alt="\gamma "/></span> of <i>L</i> has the same orientation as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {r} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {r} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eca0f46511c4c986c48b254073732c0bd98ae0c1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.102ex; height:1.676ex;" alt="\mathbf {r} "/></span> (just expand the Riemann sum for the lefthand integral and take the limit).
+</p><p>By <a href="/wiki/Green%27s_theorem" title="Green&#39;s theorem">Green's theorem</a>, the area of a region enclosed by a smooth, closed, positively oriented curve <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle L}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>L</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle L}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/103168b86f781fe6e9a4a87b8ea1cebe0ad4ede8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.583ex; height:2.176ex;" alt="L"/></span> is given by the integral
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {1}{2i}}\int _{L}{\overline {z}}\;dz}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mn>2</mn>
+              <mi>i</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>L</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <mi>z</mi>
+            <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+          </mover>
+        </mrow>
+        <mspace width="thickmathspace" />
+        <mi>d</mi>
+        <mi>z</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{2i}}\int _{L}{\overline {z}}\;dz}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/472e68446ed4bf8e5a2c92b52bc26fdbac714ace" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:10.376ex; height:5.676ex;" alt="{\frac {1}{2i}}\int _{L}{\overline {z}}\;dz"/></span></dd></dl>
+<p>This fact is used, for example, in the proof of the <a href="/wiki/Area_theorem_(conformal_mapping)" title="Area theorem (conformal mapping)">area theorem</a>.
+</p><p>Due to the <a href="/wiki/Cauchy%E2%80%93Riemann_equations" title="Cauchy–Riemann equations">Cauchy–Riemann equations</a> the <a href="/wiki/Curl_(mathematics)" title="Curl (mathematics)">curl</a> of the vector field corresponding to the conjugate of a <a href="/wiki/Holomorphic_function" title="Holomorphic function">holomorphic function</a> is zero. This relates through <a href="/wiki/Stokes%27_theorem" title="Stokes&#39; theorem">Stokes' theorem</a> both types of line integral being zero.
+</p>
+<h2><span class="mw-headline" id="Geometric_Line_integral">Geometric Line integral</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Line_integral&amp;action=edit&amp;section=14" title="Edit section: Geometric Line integral">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A curve <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \gamma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B3;<!-- γ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gamma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a223c880b0ce3da8f64ee33c4f0010beee400b1a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:1.262ex; height:2.176ex;" alt="\gamma "/></span> embedded in some vectorspace <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle V}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>V</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/af0f6064540e84211d0ffe4dac72098adfa52845" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.787ex; height:2.176ex;" alt="V"/></span> is a pure geometric object, hence it does not need a specific coordinate representation to exist. Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle F}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>F</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/545fd099af8541605f7ee55f08225526be88ce57" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.741ex; height:2.176ex;" alt="F"/></span> be a one form (for example force) or a linear function on <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle V}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>V</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/af0f6064540e84211d0ffe4dac72098adfa52845" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.787ex; height:2.176ex;" alt="V"/></span> that takes vectors <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>v</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e07b00e7fc0847fbd16391c778d65bc25c452597" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.128ex; height:1.676ex;" alt="v"/></span> from <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle V}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>V</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/af0f6064540e84211d0ffe4dac72098adfa52845" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.787ex; height:2.176ex;" alt="V"/></span> and maps them into the reals. Then one can integrate F along a one dimensional object like that curve <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \gamma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B3;<!-- γ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gamma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a223c880b0ce3da8f64ee33c4f0010beee400b1a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:1.262ex; height:2.176ex;" alt="\gamma "/></span>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{\gamma }F}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B3;<!-- γ --></mi>
+          </mrow>
+        </msub>
+        <mi>F</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{\gamma }F}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e981fa89bd951d030b8a686e6cb8974038fa1d3a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:4.545ex; height:6.009ex;" alt="{\displaystyle \int _{\gamma }F}"/></span></dd></dl>
+<p>Intuitively one feeds this linear function with all the infinitesimal tangent vectors that are attached at each point of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \gamma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B3;<!-- γ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gamma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a223c880b0ce3da8f64ee33c4f0010beee400b1a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:1.262ex; height:2.176ex;" alt="\gamma "/></span>. In coordinates <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x^{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x^{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/be8cd88951c7c0e3b181f956531b0a878bbed203" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.129ex; height:2.676ex;" alt="{\displaystyle x^{i}}"/></span> the one form has the representation (Note that one <a href="/wiki/Einstein_notation" title="Einstein notation">sums over repeated indices</a>)
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{\gamma }F=\int _{\gamma }f_{i}(x)dx^{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B3;<!-- γ --></mi>
+          </mrow>
+        </msub>
+        <mi>F</mi>
+        <mo>=</mo>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B3;<!-- γ --></mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mi>d</mi>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{\gamma }F=\int _{\gamma }f_{i}(x)dx^{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0ba92d2e2f24c3d8a2750bb98c34452effabb6c6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:18.871ex; height:6.009ex;" alt="{\displaystyle \int _{\gamma }F=\int _{\gamma }f_{i}(x)dx^{i}}"/></span></dd></dl>
+<p>If one parametrizes the curve by some parameter <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle t\in [0,1]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>t</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mo stretchy="false">[</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle t\in [0,1]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/31a5c18739ff04858eecc8fec2f53912c348e0e5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.333ex; height:2.843ex;" alt="{\displaystyle t\in [0,1]}"/></span>, by pullback one arrives at the well known line integral form
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{0}^{1}f_{i}(x(t)){\frac {\partial x^{i}}{\partial t}}dt}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msubsup>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <msup>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                </mrow>
+              </msup>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mi>d</mi>
+        <mi>t</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{0}^{1}f_{i}(x(t)){\frac {\partial x^{i}}{\partial t}}dt}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7980fb491dd5b710dbdfae040701905152a9348d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:17.971ex; height:6.176ex;" alt="{\displaystyle \int _{0}^{1}f_{i}(x(t)){\frac {\partial x^{i}}{\partial t}}dt}"/></span></dd></dl>
+<p>Note that we made no use of any scalar product hence it is possible to define line integrals without the use of a metric. Of course with a scalar product in hand, the metric induces a map that identifies vectors with 1 forms and one would arrive at the usual definition of line integrals from vector calculus.
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{0}^{1}\langle {\textbf {F}},{\frac {\partial {\textbf {x}}}{\partial t}}\rangle dt}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msubsup>
+        <mo fence="false" stretchy="false">&#x27E8;<!-- ⟨ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext mathvariant="bold">F</mtext>
+          </mrow>
+        </mrow>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext mathvariant="bold">x</mtext>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo fence="false" stretchy="false">&#x27E9;<!-- ⟩ --></mo>
+        <mi>d</mi>
+        <mi>t</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{0}^{1}\langle {\textbf {F}},{\frac {\partial {\textbf {x}}}{\partial t}}\rangle dt}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7a37ec216cb5922245f17f4613ab02c9ef88206c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:13.665ex; height:6.176ex;" alt="{\displaystyle \int _{0}^{1}\langle {\textbf {F}},{\frac {\partial {\textbf {x}}}{\partial t}}\rangle dt}"/></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\textbf {F}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext mathvariant="bold">F</mtext>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\textbf {F}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ae8dfd3569cacb065e8fe86487cfddefd5bfda8c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.683ex; height:2.176ex;" alt="{\displaystyle {\textbf {F}}}"/></span> is the vector such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle F=\langle {\textbf {F}},\cdot \rangle }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>F</mi>
+        <mo>=</mo>
+        <mo fence="false" stretchy="false">&#x27E8;<!-- ⟨ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext mathvariant="bold">F</mtext>
+          </mrow>
+        </mrow>
+        <mo>,</mo>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mo fence="false" stretchy="false">&#x27E9;<!-- ⟩ --></mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F=\langle {\textbf {F}},\cdot \rangle }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c7eb4ac004a58033ad3e3e3b45191ff65d7469ff" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.012ex; height:2.843ex;" alt="{\displaystyle F=\langle {\textbf {F}},\cdot \rangle }"/></span>
+</p>
+<h2><span class="mw-headline" id="Quantum_mechanics">Quantum mechanics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Line_integral&amp;action=edit&amp;section=15" title="Edit section: Quantum mechanics">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <a href="/wiki/Path_integral_formulation" title="Path integral formulation">path integral formulation</a> of <a href="/wiki/Quantum_mechanics" title="Quantum mechanics">quantum mechanics</a> actually refers not to path integrals in this sense but to <a href="/wiki/Functional_integration" title="Functional integration">functional integrals</a>, that is, integrals over a space of paths, of a function <i>of</i> a possible path. However, path integrals in the sense of this article are important in quantum mechanics; for example, complex contour integration is often used in evaluating <a href="/wiki/Probability_amplitude" title="Probability amplitude">probability amplitudes</a> in quantum <a href="/wiki/Scattering" title="Scattering">scattering</a> theory.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Line_integral&amp;action=edit&amp;section=16" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="div-col columns column-width" style="-moz-column-width: 25em; -webkit-column-width: 25em; column-width: 25em;">
+<ul><li><a href="/wiki/Divergence_theorem" title="Divergence theorem">Divergence theorem</a></li>
+<li><a href="/wiki/Gradient_theorem" title="Gradient theorem">Gradient theorem</a></li>
+<li><a href="/wiki/Methods_of_contour_integration" class="mw-redirect" title="Methods of contour integration">Methods of contour integration</a></li>
+<li><a href="/wiki/Nachbin%27s_theorem" title="Nachbin&#39;s theorem">Nachbin's theorem</a></li>
+<li><a href="/wiki/Surface_integral" title="Surface integral">Surface integral</a></li>
+<li><a href="/wiki/Volume_element" title="Volume element">Volume element</a></li>
+<li><a href="/wiki/Volume_integral" title="Volume integral">Volume integral</a></li></ul>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Line_integral&amp;action=edit&amp;section=17" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-Tang2006-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-Tang2006_1-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Kwong-Tin Tang (30 November 2006). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=kR8TqQRxbeoC&amp;printsec=frontcover#v=onepage&amp;q=%22line%20integral%22&amp;f=false"><i>Mathematical Methods for Engineers and Scientists 2: Vector Analysis, Ordinary Differential Equations and Laplace Transforms</i></a>. Springer Science &amp; Business Media. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-3-540-30268-1" title="Special:BookSources/978-3-540-30268-1"><bdi>978-3-540-30268-1</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Mathematical+Methods+for+Engineers+and+Scientists+2%3A+Vector+Analysis%2C+Ordinary+Differential+Equations+and+Laplace+Transforms&amp;rft.pub=Springer+Science+%26+Business+Media&amp;rft.date=2006-11-30&amp;rft.isbn=978-3-540-30268-1&amp;rft.au=Kwong-Tin+Tang&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DkR8TqQRxbeoC%26printsec%3Dfrontcover%23v%3Donepage%26q%3D%2522line%2520integral%2522%26f%3Dfalse&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALine+integral" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation book">Ahlfors, Lars (1966). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=RfYK28TcZEwC&amp;pg=PA103"><i>Complex Analysis</i></a> (2nd ed.). New York: McGraw-Hill. p.&#160;103.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Complex+Analysis&amp;rft.place=New+York&amp;rft.pages=103&amp;rft.edition=2nd&amp;rft.pub=McGraw-Hill&amp;rft.date=1966&amp;rft.aulast=Ahlfors&amp;rft.aufirst=Lars&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DRfYK28TcZEwC%26pg%3DPA103&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALine+integral" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Line_integral&amp;action=edit&amp;section=18" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><cite id="CITEREFHazewinkel2001" class="citation"><a href="/wiki/Michiel_Hazewinkel" title="Michiel Hazewinkel">Hazewinkel, Michiel</a>, ed. (2001) [1994], <a rel="nofollow" class="external text" href="https://www.encyclopediaofmath.org/index.php?title=p/i051570">"Integral over trajectories"</a>, <i><a href="/wiki/Encyclopedia_of_Mathematics" title="Encyclopedia of Mathematics">Encyclopedia of Mathematics</a></i>, Springer Science+Business Media B.V. / Kluwer Academic Publishers, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-55608-010-4" title="Special:BookSources/978-1-55608-010-4"><bdi>978-1-55608-010-4</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Integral+over+trajectories&amp;rft.btitle=Encyclopedia+of+Mathematics&amp;rft.pub=Springer+Science%2BBusiness+Media+B.V.+%2F+Kluwer+Academic+Publishers&amp;rft.date=2001&amp;rft.isbn=978-1-55608-010-4&amp;rft_id=https%3A%2F%2Fwww.encyclopediaofmath.org%2Findex.php%3Ftitle%3Dp%2Fi051570&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALine+integral" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><a href="/wiki/Khan_Academy" title="Khan Academy">Khan Academy</a> modules:
+<ul><li><a rel="nofollow" class="external text" href="http://www.khanacademy.org/video/introduction-to-the-line-integral?playlist=Calculus">"Introduction to the Line Integral"</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.khanacademy.org/video/line-integral-example-1?playlist=Calculus">"Line Integral Example 1"</a></li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20111219141618/http://www.khanacademy.org/video/line-integral-example-2--part-1?playlist=Calculus">"Line Integral Example 2 (part 1)"</a></li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20111219142026/http://www.khanacademy.org/video/line-integral-example-2--part-2?playlist=Calculus">"Line Integral Example 2 (part 2)"</a></li></ul></li>
+<li><a rel="nofollow" class="external text" href="https://planetmath.org/LineIntegral">Path integral</a> at <a href="/wiki/PlanetMath" title="PlanetMath">PlanetMath.org</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://mathinsight.org/line_integral_vector_field_introduction">Line integral of a vector field – Interactive</a></li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1256
+Cached time: 20190807042158
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.324 seconds
+Real time usage: 0.490 seconds
+Preprocessor visited node count: 1226/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 42492/2097152 bytes
+Template argument size: 958/2097152 bytes
+Highest expansion depth: 8/40
+Expensive parser function count: 0/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 10626/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.086/10.000 seconds
+Lua memory usage: 2.07 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  220.036      1 -total
+ 40.81%   89.786      1 Template:Reflist
+ 37.10%   81.630      2 Template:Cite_book
+ 32.08%   70.581      1 Template:Calculus
+  7.71%   16.965      5 Template:Sidebar
+  7.08%   15.585      1 Template:Springer
+  5.66%   12.461      1 Template:Main
+  5.54%   12.191      1 Template:Div_col
+  3.97%    8.730      1 Template:Citation
+  3.80%    8.363      7 Template:Bigger
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:21245414-0!canonical!math=5 and timestamp 20190807042158 and revision id 900864888
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Line_integral&amp;oldid=900864888">https://en.wikipedia.org/w/index.php?title=Line_integral&amp;oldid=900864888</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Complex_analysis" title="Category:Complex analysis">Complex analysis</a></li><li><a href="/wiki/Category:Vector_calculus" title="Category:Vector calculus">Vector calculus</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Line+integral" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Line+integral" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Line_integral" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Line_integral" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Line_integral">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Line_integral&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Line_integral&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Line_integral" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Line_integral" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Line_integral&amp;oldid=900864888" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Line_integral&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q467699" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Line_integral&amp;id=900864888" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Line+integral">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Line+integral&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Line_integral&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%AA%D9%83%D8%A7%D9%85%D9%84_%D8%AE%D8%B7%D9%8A" title="تكامل خطي – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-bg"><a href="https://bg.wikipedia.org/wiki/%D0%9A%D1%80%D0%B8%D0%B2%D0%BE%D0%BB%D0%B8%D0%BD%D0%B5%D0%B5%D0%BD_%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB" title="Криволинеен интеграл – Bulgarian" lang="bg" hreflang="bg" class="interlanguage-link-target">Български</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Integral_curvil%C3%ADnia" title="Integral curvilínia – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cv"><a href="https://cv.wikipedia.org/wiki/%D0%99%C4%95%D1%80_%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%C4%95" title="Йĕр интегралĕ – Chuvash" lang="cv" hreflang="cv" class="interlanguage-link-target">Чӑвашла</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/K%C5%99ivkov%C3%BD_integr%C3%A1l" title="Křivkový integrál – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/Kurveintegral" title="Kurveintegral – Danish" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Kurvenintegral" title="Kurvenintegral – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Integral_de_l%C3%ADnea" title="Integral de línea – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eo"><a href="https://eo.wikipedia.org/wiki/Kurba_integralo" title="Kurba integralo – Esperanto" lang="eo" hreflang="eo" class="interlanguage-link-target">Esperanto</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%A7%D9%86%D8%AA%DA%AF%D8%B1%D8%A7%D9%84_%D8%AE%D8%B7%DB%8C" title="انتگرال خطی – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Int%C3%A9grale_curviligne" title="Intégrale curviligne – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EC%84%A0%EC%A0%81%EB%B6%84" title="선적분 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-hy"><a href="https://hy.wikipedia.org/wiki/%D4%BF%D5%B8%D6%80%D5%A1%D5%A3%D5%AB%D5%AE_%D5%AB%D5%B6%D5%BF%D5%A5%D5%A3%D6%80%D5%A1%D5%AC" title="Կորագիծ ինտեգրալ – Armenian" lang="hy" hreflang="hy" class="interlanguage-link-target">Հայերեն</a></li><li class="interlanguage-link interwiki-id"><a href="https://id.wikipedia.org/wiki/Integral_garis" title="Integral garis – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-is"><a href="https://is.wikipedia.org/wiki/Ferilheildi" title="Ferilheildi – Icelandic" lang="is" hreflang="is" class="interlanguage-link-target">Íslenska</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Integrale_di_linea" title="Integrale di linea – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%A0%D7%98%D7%92%D7%A8%D7%9C_%D7%A7%D7%95%D7%95%D7%99" title="אינטגרל קווי – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Lijnintegraal" title="Lijnintegraal – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E7%B7%9A%E7%A9%8D%E5%88%86" title="線積分 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pa"><a href="https://pa.wikipedia.org/wiki/%E0%A8%B2%E0%A8%BE%E0%A8%88%E0%A8%A8_%E0%A8%87%E0%A9%B0%E0%A8%9F%E0%A8%97%E0%A9%8D%E0%A8%B0%E0%A8%B2" title="ਲਾਈਨ ਇੰਟਗ੍ਰਲ – Punjabi" lang="pa" hreflang="pa" class="interlanguage-link-target">ਪੰਜਾਬੀ</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Ca%C5%82ka_krzywoliniowa" title="Całka krzywoliniowa – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Integral_de_linha" title="Integral de linha – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="https://ro.wikipedia.org/wiki/Integral%C4%83_curbilinie" title="Integrală curbilinie – Romanian" lang="ro" hreflang="ro" class="interlanguage-link-target">Română</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B8%D0%B2%D0%BE%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9_%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB" title="Криволинейный интеграл – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sq"><a href="https://sq.wikipedia.org/wiki/Integrali_kurbolinear" title="Integrali kurbolinear – Albanian" lang="sq" hreflang="sq" class="interlanguage-link-target">Shqip</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/%D0%9A%D1%80%D0%B8%D0%B2%D0%BE%D0%BB%D0%B8%D0%BD%D0%B8%D1%98%D1%81%D0%BA%D0%B8_%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB" title="Криволинијски интеграл – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Viivaintegraali" title="Viivaintegraali – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Kurvintegral" title="Kurvintegral – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/%C3%87izgi_integrali" title="Çizgi integrali – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%9A%D1%80%D0%B8%D0%B2%D0%BE%D0%BB%D1%96%D0%BD%D1%96%D0%B9%D0%BD%D0%B8%D0%B9_%D1%96%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB" title="Криволінійний інтеграл – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/T%C3%ADch_ph%C3%A2n_%C4%91%C6%B0%E1%BB%9Dng" title="Tích phân đường – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86" title="曲线积分 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q467699#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 8 June 2019, at 02:48<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Line_integral&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.324","walltime":"0.490","ppvisitednodes":{"value":1226,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":42492,"limit":2097152},"templateargumentsize":{"value":958,"limit":2097152},"expansiondepth":{"value":8,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":10626,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  220.036      1 -total"," 40.81%   89.786      1 Template:Reflist"," 37.10%   81.630      2 Template:Cite_book"," 32.08%   70.581      1 Template:Calculus","  7.71%   16.965      5 Template:Sidebar","  7.08%   15.585      1 Template:Springer","  5.66%   12.461      1 Template:Main","  5.54%   12.191      1 Template:Div_col","  3.97%    8.730      1 Template:Citation","  3.80%    8.363      7 Template:Bigger"]},"scribunto":{"limitreport-timeusage":{"value":"0.086","limit":"10.000"},"limitreport-memusage":{"value":2167794,"limit":52428800}},"cachereport":{"origin":"mw1256","timestamp":"20190807042158","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Line integral","url":"https:\/\/en.wikipedia.org\/wiki\/Line_integral","sameAs":"http:\/\/www.wikidata.org\/entity\/Q467699","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q467699","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-10-25T20:53:00Z","dateModified":"2019-06-08T02:48:04Z","headline":"definite integral of a vector function along a (curved) line"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":621,"wgHostname":"mw1256"});});</script>
+</body>
+</html>

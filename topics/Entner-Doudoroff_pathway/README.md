@@ -1,0 +1,1 @@
+Entner-Doudoroff_pathway

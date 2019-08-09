@@ -1,0 +1,1 @@
+thermometers_filled_with_alcohol_are_used

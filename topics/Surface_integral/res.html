@@ -1,0 +1,1987 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Surface integral - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Surface_integral","wgTitle":"Surface integral","wgCurRevisionId":878778288,"wgRevisionId":878778288,"wgArticleId":528867,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles needing additional references from January 2017","All articles needing additional references","Multivariable calculus","Area","Surfaces"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct"
+,"Nov","Dec"],"wgRelevantPageName":"Surface_integral","wgRelevantArticleId":528867,"wgRequestId":"XUlVbQpAMFcAAEiYi5EAAABP","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q598146","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready",
+"user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["ext.math.scripts","ext.cite.ux-enhancements","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups"
+,"ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Surface_integral_illustration.svg/1200px-Surface_integral_illustration.svg.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Surface_integral"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Surface_integral&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Surface_integral&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Surface_integral"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Surface_integral rootpage-Surface_integral skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Surface integral</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table class="vertical-navbox nowraplinks plainlist" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%"><tbody><tr><td style="padding-top:0.4em;line-height:1.2em">Part of a series of articles about</td></tr><tr><th style="padding:0.2em 0.4em 0.2em;padding-top:0;font-size:145%;line-height:1.2em;padding-bottom:0.25em;"><a href="/wiki/Calculus" title="Calculus">Calculus</a></th></tr><tr><td style="padding:0.3em 0.4em 0.3em;font-weight:bold;border-top: 1px solid #aaa; border-bottom: 1px solid #aaa;padding:0.15em 0.25em 0.3em;font-weight:normal;">
+<ul><li><a href="/wiki/Fundamental_theorem_of_calculus" title="Fundamental theorem of calculus">Fundamental theorem</a></li></ul>
+<div class="hlist">
+<ul><li><a href="/wiki/Limit_of_a_function" title="Limit of a function">Limits of functions</a></li>
+<li><a href="/wiki/Continuous_function" title="Continuous function">Continuity</a></li></ul>
+</div><div class="hlist">
+<ul><li><a href="/wiki/Mean_value_theorem" title="Mean value theorem">Mean value theorem</a></li>
+<li><a href="/wiki/Rolle%27s_theorem" title="Rolle&#39;s theorem">Rolle's theorem</a></li></ul>
+</div></td></tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;;display:block;margin-top:0.65em;"><span style="font-size:110%;"><a href="/wiki/Differential_calculus" title="Differential calculus">Differential</a></span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none"><tbody><tr><th style="padding:0.1em">
+Definitions</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Derivative" title="Derivative">Derivative</a>&#160;(<a href="/wiki/Generalizations_of_the_derivative" title="Generalizations of the derivative">generalizations</a>)</li></ul>
+<div class="hlist" style="padding:0.1em 0;line-height:1.2em;">
+<ul><li><a href="/wiki/Differential_(mathematics)" title="Differential (mathematics)">Differential</a>
+<ul><li><a href="/wiki/Differential_(infinitesimal)" title="Differential (infinitesimal)">infinitesimal</a></li>
+<li><a href="/wiki/Differential_of_a_function" title="Differential of a function">of a function</a></li>
+<li><a href="/wiki/Total_differential" class="mw-redirect" title="Total differential">total</a></li></ul></li></ul>
+</div></td>
+</tr><tr><th style="padding:0.1em">
+Concepts</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<div class="hlist">
+<ul><li><a href="/wiki/Notation_for_differentiation" title="Notation for differentiation">Differentiation notation</a></li>
+<li><a href="/wiki/Second_derivative" title="Second derivative">Second derivative</a></li>
+<li><a href="/wiki/Third_derivative" title="Third derivative">Third derivative</a></li>
+<li><a href="/wiki/Change_of_variables" title="Change of variables">Change of variables</a></li>
+<li><a href="/wiki/Implicit_function" title="Implicit function">Implicit differentiation</a></li>
+<li><a href="/wiki/Related_rates" title="Related rates">Related rates</a></li>
+<li><a href="/wiki/Taylor%27s_theorem" title="Taylor&#39;s theorem">Taylor's theorem</a></li></ul>
+</div></td>
+</tr><tr><th style="padding:0.1em">
+<a href="/wiki/Differentiation_rules" title="Differentiation rules">Rules and identities</a></th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<div class="hlist">
+<ul><li><a href="/wiki/Sum_rule_in_differentiation" title="Sum rule in differentiation">Sum</a></li>
+<li><a href="/wiki/Product_rule" title="Product rule">Product</a></li>
+<li><a href="/wiki/Chain_rule" title="Chain rule">Chain</a></li>
+<li><a href="/wiki/Power_rule" title="Power rule">Power</a></li>
+<li><a href="/wiki/Quotient_rule" title="Quotient rule">Quotient</a></li>
+<li><a href="/wiki/Inverse_functions_and_differentiation" title="Inverse functions and differentiation">Inverse</a></li>
+<li><a href="/wiki/General_Leibniz_rule" title="General Leibniz rule">General Leibniz</a></li>
+<li><a href="/wiki/Fa%C3%A0_di_Bruno%27s_formula" title="Faà di Bruno&#39;s formula">Faà di Bruno's formula</a></li></ul>
+</div></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;"><span style="font-size:110%;"><a href="/wiki/Integral" title="Integral">Integral</a></span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none"><tbody><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Lists_of_integrals" title="Lists of integrals">Lists of integrals</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+Definitions</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Antiderivative" title="Antiderivative">Antiderivative</a></li>
+<li><a href="/wiki/Integral" title="Integral">Integral</a>&#160;(<a href="/wiki/Improper_integral" title="Improper integral">improper</a>)</li>
+<li><a href="/wiki/Riemann_integral" title="Riemann integral">Riemann integral</a></li>
+<li><a href="/wiki/Lebesgue_integration" title="Lebesgue integration">Lebesgue integration</a></li>
+<li><a href="/wiki/Contour_integration" title="Contour integration">Contour integration</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+Integration by</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Integration_by_parts" title="Integration by parts">Parts</a></li>
+<li><a href="/wiki/Disc_integration" title="Disc integration">Discs</a></li>
+<li><a href="/wiki/Shell_integration" title="Shell integration">Cylindrical shells</a></li>
+<li><a href="/wiki/Integration_by_substitution" title="Integration by substitution">Substitution</a>&#160;(<a href="/wiki/Trigonometric_substitution" title="Trigonometric substitution">trigonometric</a>)</li>
+<li><a href="/wiki/Partial_fractions_in_integration" class="mw-redirect" title="Partial fractions in integration">Partial fractions</a></li>
+<li><a href="/wiki/Order_of_integration_(calculus)" title="Order of integration (calculus)">Order</a></li>
+<li><a href="/wiki/Integration_by_reduction_formulae" title="Integration by reduction formulae">Reduction formulae</a></li></ul></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;"><span style="font-size:110%;"><a href="/wiki/Series_(mathematics)" title="Series (mathematics)">Series</a></span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none"><tbody><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Geometric_series" title="Geometric series">Geometric</a>&#160;(<a href="/wiki/Arithmetico%E2%80%93geometric_sequence" title="Arithmetico–geometric sequence">arithmetico-geometric</a>)</li>
+<li><a href="/wiki/Harmonic_series_(mathematics)" title="Harmonic series (mathematics)">Harmonic</a></li>
+<li><a href="/wiki/Alternating_series" title="Alternating series">Alternating</a></li>
+<li><a href="/wiki/Power_series" title="Power series">Power</a></li>
+<li><a href="/wiki/Binomial_series" title="Binomial series">Binomial</a></li>
+<li><a href="/wiki/Taylor_series" title="Taylor series">Taylor</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+<a href="/wiki/Convergence_tests" title="Convergence tests">Convergence tests</a></th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Term_test" title="Term test">Summand limit (term test)</a></li>
+<li><a href="/wiki/Ratio_test" title="Ratio test">Ratio</a></li>
+<li><a href="/wiki/Root_test" title="Root test">Root</a></li>
+<li><a href="/wiki/Integral_test_for_convergence" title="Integral test for convergence">Integral</a></li>
+<li><a href="/wiki/Direct_comparison_test" title="Direct comparison test">Direct comparison</a></li>
+<li><br /><a href="/wiki/Limit_comparison_test" title="Limit comparison test">Limit comparison</a></li>
+<li><a href="/wiki/Alternating_series_test" title="Alternating series test">Alternating series</a></li>
+<li><a href="/wiki/Cauchy_condensation_test" title="Cauchy condensation test">Cauchy condensation</a></li>
+<li><a href="/wiki/Dirichlet%27s_test" title="Dirichlet&#39;s test">Dirichlet</a></li>
+<li><a href="/wiki/Abel%27s_test" title="Abel&#39;s test">Abel</a></li></ul></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;"><span style="font-size:110%;"><a href="/wiki/Vector_calculus" title="Vector calculus">Vector</a></span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none"><tbody><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Gradient" title="Gradient">Gradient</a></li>
+<li><a href="/wiki/Divergence" title="Divergence">Divergence</a></li>
+<li><a href="/wiki/Curl_(mathematics)" title="Curl (mathematics)">Curl</a></li>
+<li><a href="/wiki/Laplace_operator" title="Laplace operator">Laplacian</a></li>
+<li><a href="/wiki/Directional_derivative" title="Directional derivative">Directional derivative</a></li>
+<li><a href="/wiki/Vector_calculus_identities" title="Vector calculus identities">Identities</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+Theorems</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Divergence_theorem" title="Divergence theorem">Divergence</a></li>
+<li><a href="/wiki/Gradient_theorem" title="Gradient theorem">Gradient</a></li>
+<li><a href="/wiki/Green%27s_theorem" title="Green&#39;s theorem">Green's</a></li>
+<li><a href="/wiki/Kelvin%E2%80%93Stokes_theorem" title="Kelvin–Stokes theorem">Kelvin–Stokes</a></li>
+<li><a href="/wiki/Stokes%27_theorem" title="Stokes&#39; theorem">Stokes</a></li></ul></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;"><span style="font-size:110%;"><a href="/wiki/Multivariable_calculus" title="Multivariable calculus">Multivariable</a></span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none"><tbody><tr><th style="padding:0.1em">
+Formalisms</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Matrix_calculus" title="Matrix calculus">Matrix</a></li>
+<li><a href="/wiki/Tensor_calculus" title="Tensor calculus">Tensor</a></li>
+<li><a href="/wiki/Exterior_derivative" title="Exterior derivative">Exterior</a></li>
+<li><a href="/wiki/Geometric_calculus" title="Geometric calculus">Geometric</a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+Definitions</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Partial_derivative" title="Partial derivative">Partial derivative</a></li>
+<li><a href="/wiki/Multiple_integral" title="Multiple integral">Multiple integral</a></li>
+<li><a href="/wiki/Line_integral" title="Line integral">Line integral</a></li>
+<li><a class="mw-selflink selflink">Surface integral</a></li>
+<li><a href="/wiki/Volume_integral" title="Volume integral">Volume integral</a></li>
+<li><a href="/wiki/Jacobian_matrix_and_determinant" title="Jacobian matrix and determinant">Jacobian</a></li>
+<li><a href="/wiki/Hessian_matrix" title="Hessian matrix">Hessian</a></li></ul></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;"><span style="font-size:110%;">Specialized</span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><div class="hlist">
+<ul><li><a href="/wiki/Fractional_calculus" title="Fractional calculus">Fractional</a></li>
+<li><a href="/wiki/Malliavin_calculus" title="Malliavin calculus">Malliavin</a></li>
+<li><a href="/wiki/Stochastic_calculus" title="Stochastic calculus">Stochastic</a></li>
+<li><a href="/wiki/Calculus_of_variations" title="Calculus of variations">Variations</a></li></ul>
+</div></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;text-align:center;"><span style="font-size:110%;"><a href="/wiki/Glossary_of_calculus" title="Glossary of calculus">Glossary of calculus</a></span></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center;border-top:1px solid #aaa;padding-top:0.15em;border-bottom:1px solid #aaa;"><div class="hlist">
+<ul><li><a href="/wiki/Glossary_of_calculus" title="Glossary of calculus">Glossary of calculus</a></li></ul>
+</div></div></div></td>
+</tr><tr><td style="text-align:right;font-size:115%;padding-top: 0.6em;"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="/wiki/Template:Calculus" title="Template:Calculus"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Calculus" title="Template talk:Calculus"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Calculus&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<table class="box-More_citations_needed plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation"><tbody><tr><td class="mbox-image"><div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" decoding="async" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div></td><td class="mbox-text"><div class="mbox-text-span">This article <b>needs additional citations for <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>.<span class="hide-when-compact"> Please help <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Surface_integral&amp;action=edit">improve this article</a> by <a href="/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.<br /><small><span class="plainlinks"><i>Find sources:</i>&#160;<a rel="nofollow" class="external text" href="//www.google.com/search?as_eq=wikipedia&amp;q=%22Surface+integral%22">"Surface integral"</a>&#160;–&#160;<a rel="nofollow" class="external text" href="//www.google.com/search?tbm=nws&amp;q=%22Surface+integral%22+-wikipedia">news</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//www.google.com/search?&amp;q=%22Surface+integral%22+site:news.google.com/newspapers&amp;source=newspapers">newspapers</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//www.google.com/search?tbs=bks:1&amp;q=%22Surface+integral%22+-wikipedia">books</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//scholar.google.com/scholar?q=%22Surface+integral%22">scholar</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="https://www.jstor.org/action/doBasicSearch?Query=%22Surface+integral%22&amp;acc=on&amp;wc=on">JSTOR</a></span></small></span>  <small class="date-container"><i>(<span class="date">January 2017</span>)</i></small><small class="hide-when-compact"><i> (<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></div></td></tr></tbody></table>
+<p>In <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>, a <b>surface integral</b>  is a generalization of <a href="/wiki/Multiple_integral" title="Multiple integral">multiple integrals</a> to integration over <a href="/wiki/Surface_(differential_geometry)" class="mw-redirect" title="Surface (differential geometry)">surfaces</a>. It can be thought of as the <a href="/wiki/Double_integral" class="mw-redirect" title="Double integral">double integral</a> analogue of the <a href="/wiki/Line_integral" title="Line integral">line integral</a>.  Given a surface, one may integrate over its <a href="/wiki/Scalar_field" title="Scalar field">scalar fields</a> (that is, <a href="/wiki/Function_(mathematics)" title="Function (mathematics)">functions</a> which return <a href="/wiki/Scalar_(mathematics)" title="Scalar (mathematics)">scalars</a> as values), and <a href="/wiki/Vector_field" title="Vector field">vector fields</a> (that is, functions which return <a href="/wiki/Vector_(geometric)" class="mw-redirect" title="Vector (geometric)">vectors</a> as values).
+</p><p>Surface integrals have applications in <a href="/wiki/Physics" title="Physics">physics</a>, particularly with the theories of <a href="/wiki/Classical_electromagnetism" title="Classical electromagnetism">classical electromagnetism</a>.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:Surface_integral_illustration.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Surface_integral_illustration.svg/220px-Surface_integral_illustration.svg.png" decoding="async" width="220" height="150" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Surface_integral_illustration.svg/330px-Surface_integral_illustration.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/72/Surface_integral_illustration.svg/440px-Surface_integral_illustration.svg.png 2x" data-file-width="512" data-file-height="348" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Surface_integral_illustration.svg" class="internal" title="Enlarge"></a></div>The definition of surface integral relies on splitting the surface into small surface elements.</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:Surface_integral1.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/87/Surface_integral1.svg/220px-Surface_integral1.svg.png" decoding="async" width="220" height="218" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/87/Surface_integral1.svg/330px-Surface_integral1.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/87/Surface_integral1.svg/440px-Surface_integral1.svg.png 2x" data-file-width="429" data-file-height="425" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Surface_integral1.svg" class="internal" title="Enlarge"></a></div>An illustration of a single surface element. These elements are made infinitesimally small, by the limiting process, so as to approximate the surface.</div></div></div>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Surface_integrals_of_scalar_fields"><span class="tocnumber">1</span> <span class="toctext">Surface integrals of scalar fields</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Surface_integrals_of_vector_fields"><span class="tocnumber">2</span> <span class="toctext">Surface integrals of vector fields</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Surface_integrals_of_differential_2-forms"><span class="tocnumber">3</span> <span class="toctext">Surface integrals of differential 2-forms</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Theorems_involving_surface_integrals"><span class="tocnumber">4</span> <span class="toctext">Theorems involving surface integrals</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Advanced_issues"><span class="tocnumber">5</span> <span class="toctext">Advanced issues</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Surface_integrals_of_scalar_fields">Surface integrals of scalar fields</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Surface_integral&amp;action=edit&amp;section=1" title="Edit section: Surface integrals of scalar fields">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>To find an explicit formula for the surface integral, we need to <a href="/wiki/Coordinate_system" title="Coordinate system">parameterize</a> the surface of interest, <i>S</i>, by considering a system of <a href="/wiki/Curvilinear_coordinates" title="Curvilinear coordinates">curvilinear coordinates</a> on <i>S</i>, like the <a href="/wiki/Geographic_coordinate_system" title="Geographic coordinate system">latitude and longitude</a> on a <a href="/wiki/Sphere" title="Sphere">sphere</a>. Let such a parameterization be <b>x</b>(<i>s</i>, <i>t</i>), where (<i>s</i>, <i>t</i>) varies in some region <i>T</i> in the <a href="/wiki/Cartesian_coordinate_system#Cartesian_coordinates_in_two_dimensions" title="Cartesian coordinate system">plane</a>. Then, the surface integral is given by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \iint \limits _{S}f\,\mathrm {d} S=\iint \limits _{T}f(\mathbf {x} (s,t))\left\|{\partial \mathbf {x}  \over \partial s}\times {\partial \mathbf {x}  \over \partial t}\right\|\mathrm {d} s\,\mathrm {d} t}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo>&#x222C;<!-- ∬ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </munder>
+        <mi>f</mi>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>S</mi>
+        <mo>=</mo>
+        <munder>
+          <mo>&#x222C;<!-- ∬ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>T</mi>
+          </mrow>
+        </munder>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">x</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mrow>
+          <mo symmetric="true">&#x2016;</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">x</mi>
+                  </mrow>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>s</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <mo>&#x00D7;<!-- × --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">x</mi>
+                  </mrow>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo symmetric="true">&#x2016;</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>s</mi>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>t</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \iint \limits _{S}f\,\mathrm {d} S=\iint \limits _{T}f(\mathbf {x} (s,t))\left\|{\partial \mathbf {x}  \over \partial s}\times {\partial \mathbf {x}  \over \partial t}\right\|\mathrm {d} s\,\mathrm {d} t}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/516e1b96392e9a546905cb2ed94fa46cb96d7771" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.005ex; width:42.414ex; height:7.509ex;" alt="{\displaystyle \iint \limits _{S}f\,\mathrm {d} S=\iint \limits _{T}f(\mathbf {x} (s,t))\left\|{\partial \mathbf {x}  \over \partial s}\times {\partial \mathbf {x}  \over \partial t}\right\|\mathrm {d} s\,\mathrm {d} t}"/></span></dd></dl>
+<p>where the expression between bars on the right-hand side is the <a href="/wiki/Magnitude_(mathematics)" title="Magnitude (mathematics)">magnitude</a> of the <a href="/wiki/Cross_product" title="Cross product">cross product</a> of the <a href="/wiki/Partial_derivative" title="Partial derivative">partial derivatives</a> of <b>x</b>(<i>s</i>, <i>t</i>), and is known as the surface <a href="/wiki/Volume_element#Area_element_of_a_surface" title="Volume element">element</a>.  The surface integral can also be expressed in the equivalent form
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \iint \limits _{S}f\,\mathrm {d} \Sigma =\iint \limits _{T}f(\mathbf {x} (s,t)){\sqrt {g}}\,\mathrm {d} s\,\mathrm {d} t}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo>&#x222C;<!-- ∬ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </munder>
+        <mi>f</mi>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi mathvariant="normal">&#x03A3;<!-- Σ --></mi>
+        <mo>=</mo>
+        <munder>
+          <mo>&#x222C;<!-- ∬ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>T</mi>
+          </mrow>
+        </munder>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">x</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mi>g</mi>
+          </msqrt>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>s</mi>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>t</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \iint \limits _{S}f\,\mathrm {d} \Sigma =\iint \limits _{T}f(\mathbf {x} (s,t)){\sqrt {g}}\,\mathrm {d} s\,\mathrm {d} t}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7272edeb205db092e53ffb62d1cb597335daed10" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.005ex; width:32.962ex; height:7.343ex;" alt="{\displaystyle \iint \limits _{S}f\,\mathrm {d} \Sigma =\iint \limits _{T}f(\mathbf {x} (s,t)){\sqrt {g}}\,\mathrm {d} s\,\mathrm {d} t}"/></span></dd></dl>
+<p>where <i>g</i> is the determinant of the <a href="/wiki/First_fundamental_form" title="First fundamental form">first fundamental form</a> of the surface mapping <b>x</b>(<i>s</i>, <i>t</i>).<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p><p>For example, if we want to find the <a href="/wiki/Surface_area" title="Surface area">surface area</a> of the graph of some scalar function, say <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle z=f\,(x,y)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>z</mi>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mspace width="thinmathspace" />
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle z=f\,(x,y)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/62adf9fa58af89d695c0ec37abdd3e7a4ff27175" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.181ex; height:2.843ex;" alt="z=f\,(x,y)"/></span>, we have
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A=\iint \limits _{S}\,\mathrm {d} \Sigma =\iint \limits _{T}\left\|{\partial \mathbf {r}  \over \partial x}\times {\partial \mathbf {r}  \over \partial y}\right\|\mathrm {d} x\,\mathrm {d} y}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo>=</mo>
+        <munder>
+          <mo>&#x222C;<!-- ∬ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </munder>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi mathvariant="normal">&#x03A3;<!-- Σ --></mi>
+        <mo>=</mo>
+        <munder>
+          <mo>&#x222C;<!-- ∬ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>T</mi>
+          </mrow>
+        </munder>
+        <mrow>
+          <mo symmetric="true">&#x2016;</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">r</mi>
+                  </mrow>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>x</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <mo>&#x00D7;<!-- × --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">r</mi>
+                  </mrow>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>y</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo symmetric="true">&#x2016;</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>x</mi>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>y</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A=\iint \limits _{S}\,\mathrm {d} \Sigma =\iint \limits _{T}\left\|{\partial \mathbf {r}  \over \partial x}\times {\partial \mathbf {r}  \over \partial y}\right\|\mathrm {d} x\,\mathrm {d} y}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c02aacf5591b3bf9d3c5289e9867e06323cb6297" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.005ex; width:36.715ex; height:7.676ex;" alt="{\displaystyle A=\iint \limits _{S}\,\mathrm {d} \Sigma =\iint \limits _{T}\left\|{\partial \mathbf {r}  \over \partial x}\times {\partial \mathbf {r}  \over \partial y}\right\|\mathrm {d} x\,\mathrm {d} y}"/></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {r} =(x,y,z)=(x,y,f(x,y))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {r} =(x,y,z)=(x,y,f(x,y))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/641d4b3a45e9eef7f6a1564b4aa18fd425283d76" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:27.719ex; height:2.843ex;" alt="\mathbf{r}=(x, y, z)=(x, y, f(x,y))"/></span>.  So that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\partial \mathbf {r}  \over \partial x}=(1,0,f_{x}(x,y))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">r</mi>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>x</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\partial \mathbf {r}  \over \partial x}=(1,0,f_{x}(x,y))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/42c3d92ff69f21c2fb6fca515e35b27dd4335f1f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:20.425ex; height:5.509ex;" alt="{\partial \mathbf{r} \over \partial x}=(1, 0, f_x(x,y))"/></span>, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\partial \mathbf {r}  \over \partial y}=(0,1,f_{y}(x,y))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">r</mi>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>y</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\partial \mathbf {r}  \over \partial y}=(0,1,f_{y}(x,y))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9d236c6d3a8e2795b7f4dc0d8feee4756429ca61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:20.127ex; height:6.009ex;" alt="{\partial \mathbf{r} \over \partial y}=(0, 1, f_y(x,y))"/></span>.  So,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}A&amp;{}=\iint \limits _{T}\left\|\left(1,0,{\partial f \over \partial x}\right)\times \left(0,1,{\partial f \over \partial y}\right)\right\|\mathrm {d} x\,\mathrm {d} y\\&amp;{}=\iint \limits _{T}\left\|\left(-{\partial f \over \partial x},-{\partial f \over \partial y},1\right)\right\|\mathrm {d} x\,\mathrm {d} y\\&amp;{}=\iint \limits _{T}{\sqrt {\left({\partial f \over \partial x}\right)^{2}+\left({\partial f \over \partial y}\right)^{2}+1}}\,\,\mathrm {d} x\,\mathrm {d} y\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mi>A</mi>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+
+                </mrow>
+                <mo>=</mo>
+                <munder>
+                  <mo>&#x222C;<!-- ∬ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>T</mi>
+                  </mrow>
+                </munder>
+                <mrow>
+                  <mo symmetric="true">&#x2016;</mo>
+                  <mrow>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <mn>1</mn>
+                        <mo>,</mo>
+                        <mn>0</mn>
+                        <mo>,</mo>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mfrac>
+                            <mrow>
+                              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                              <mi>f</mi>
+                            </mrow>
+                            <mrow>
+                              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                              <mi>x</mi>
+                            </mrow>
+                          </mfrac>
+                        </mrow>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                    <mo>&#x00D7;<!-- × --></mo>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <mn>0</mn>
+                        <mo>,</mo>
+                        <mn>1</mn>
+                        <mo>,</mo>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mfrac>
+                            <mrow>
+                              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                              <mi>f</mi>
+                            </mrow>
+                            <mrow>
+                              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                              <mi>y</mi>
+                            </mrow>
+                          </mfrac>
+                        </mrow>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                  </mrow>
+                  <mo symmetric="true">&#x2016;</mo>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">d</mi>
+                </mrow>
+                <mi>x</mi>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">d</mi>
+                </mrow>
+                <mi>y</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+
+                </mrow>
+                <mo>=</mo>
+                <munder>
+                  <mo>&#x222C;<!-- ∬ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>T</mi>
+                  </mrow>
+                </munder>
+                <mrow>
+                  <mo symmetric="true">&#x2016;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mfrac>
+                          <mrow>
+                            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                            <mi>f</mi>
+                          </mrow>
+                          <mrow>
+                            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                            <mi>x</mi>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                      <mo>,</mo>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mfrac>
+                          <mrow>
+                            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                            <mi>f</mi>
+                          </mrow>
+                          <mrow>
+                            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                            <mi>y</mi>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                      <mo>,</mo>
+                      <mn>1</mn>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                  <mo symmetric="true">&#x2016;</mo>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">d</mi>
+                </mrow>
+                <mi>x</mi>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">d</mi>
+                </mrow>
+                <mi>y</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+
+                </mrow>
+                <mo>=</mo>
+                <munder>
+                  <mo>&#x222C;<!-- ∬ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>T</mi>
+                  </mrow>
+                </munder>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <msqrt>
+                    <msup>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mfrac>
+                            <mrow>
+                              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                              <mi>f</mi>
+                            </mrow>
+                            <mrow>
+                              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                              <mi>x</mi>
+                            </mrow>
+                          </mfrac>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mo>+</mo>
+                    <msup>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mfrac>
+                            <mrow>
+                              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                              <mi>f</mi>
+                            </mrow>
+                            <mrow>
+                              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                              <mi>y</mi>
+                            </mrow>
+                          </mfrac>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                  </msqrt>
+                </mrow>
+                <mspace width="thinmathspace" />
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">d</mi>
+                </mrow>
+                <mi>x</mi>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">d</mi>
+                </mrow>
+                <mi>y</mi>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}A&amp;{}=\iint \limits _{T}\left\|\left(1,0,{\partial f \over \partial x}\right)\times \left(0,1,{\partial f \over \partial y}\right)\right\|\mathrm {d} x\,\mathrm {d} y\\&amp;{}=\iint \limits _{T}\left\|\left(-{\partial f \over \partial x},-{\partial f \over \partial y},1\right)\right\|\mathrm {d} x\,\mathrm {d} y\\&amp;{}=\iint \limits _{T}{\sqrt {\left({\partial f \over \partial x}\right)^{2}+\left({\partial f \over \partial y}\right)^{2}+1}}\,\,\mathrm {d} x\,\mathrm {d} y\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eb458de7c592fc57e59d67defa440a196363c626" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -11.505ex; width:42.954ex; height:24.176ex;" alt="{\displaystyle {\begin{aligned}A&amp;{}=\iint \limits _{T}\left\|\left(1,0,{\partial f \over \partial x}\right)\times \left(0,1,{\partial f \over \partial y}\right)\right\|\mathrm {d} x\,\mathrm {d} y\\&amp;{}=\iint \limits _{T}\left\|\left(-{\partial f \over \partial x},-{\partial f \over \partial y},1\right)\right\|\mathrm {d} x\,\mathrm {d} y\\&amp;{}=\iint \limits _{T}{\sqrt {\left({\partial f \over \partial x}\right)^{2}+\left({\partial f \over \partial y}\right)^{2}+1}}\,\,\mathrm {d} x\,\mathrm {d} y\end{aligned}}}"/></span></dd></dl>
+<p>which is the standard formula for the area of a surface described this way.  One can recognize the vector in the second line above as the <a href="/wiki/Surface_normal" class="mw-redirect" title="Surface normal">normal vector</a> to the surface.
+</p><p>Note that because of the presence of the cross product, the above formulas only work for surfaces embedded in three-dimensional space.
+</p><p>This can be seen as integrating a <a href="/wiki/Riemannian_volume_form" class="mw-redirect" title="Riemannian volume form">Riemannian volume form</a> on the parameterized surface, where the <a href="/wiki/Metric_tensor" title="Metric tensor">metric tensor</a> is given by the <a href="/wiki/First_fundamental_form" title="First fundamental form">first fundamental form</a> of the surface.
+</p>
+<h2><span class="mw-headline" id="Surface_integrals_of_vector_fields">Surface integrals of vector fields</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Surface_integral&amp;action=edit&amp;section=2" title="Edit section: Surface integrals of vector fields">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/File:Surface_vectors.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Surface_vectors.png/300px-Surface_vectors.png" decoding="async" width="300" height="166" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Surface_vectors.png/450px-Surface_vectors.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Surface_vectors.png/600px-Surface_vectors.png 2x" data-file-width="1455" data-file-height="807" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Surface_vectors.png" class="internal" title="Enlarge"></a></div>A vector field on a surface</div></div></div>
+<p>Consider a vector field <b>v</b> on <i>S</i>, that is, for each <b>x</b> in <i>S</i>, <b>v</b>(<b>x</b>) is a vector.
+</p><p>The surface integral can be defined component-wise according to the definition of the surface integral of a scalar field; the result is a vector. This applies for example in the expression of the electric field at some fixed point due to an electrically charged surface, or the gravity at some fixed point due to a sheet of material.
+</p><p>Alternatively, if we integrate the <a href="/wiki/Normal_component" class="mw-redirect" title="Normal component">normal component</a> of the vector field, the result is a scalar. Imagine that we have a fluid flowing through <i>S</i>, such that <b>v</b>(<b>x</b>) determines the velocity of the fluid at <b>x</b>. The <a href="/wiki/Flux" title="Flux">flux</a> is defined as the quantity of fluid flowing through <i>S</i> per unit time.
+</p><p>This illustration implies that if the vector field is <a href="/wiki/Tangent" title="Tangent">tangent</a> to <i>S</i> at each point, then the flux is zero because the fluid just flows in <a href="/wiki/Parallel_(geometry)" title="Parallel (geometry)">parallel</a> to <i>S</i>, and neither in nor out. This also implies that if <b>v</b> does not just flow along <i>S</i>, that is, if <b>v</b> has both a tangential and a normal component, then only the normal component contributes to the flux. Based on this reasoning, to find the flux, we need to take the <a href="/wiki/Dot_product" title="Dot product">dot product</a> of  <b>v</b> with the unit <a href="/wiki/Surface_normal" class="mw-redirect" title="Surface normal">surface normal</a> <b>n</b> to <i>S</i> at each point, which will give us a scalar field, and integrate the obtained field as above. We find the formula
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}\iint \limits _{S}{\mathbf {v} }\cdot \mathrm {d} {\mathbf {\Sigma } }&amp;=\iint \limits _{S}\left({\mathbf {v} }\cdot {\mathbf {n} }\right)\,\mathrm {d} \Sigma \\&amp;{}=\iint \limits _{T}\left({\mathbf {v} }(\mathbf {x} (s,t))\cdot {\left({\partial \mathbf {x}  \over \partial s}\times {\partial \mathbf {x}  \over \partial t}\right) \over \left\|\left({\partial \mathbf {x}  \over \partial s}\times {\partial \mathbf {x}  \over \partial t}\right)\right\|}\right)\left\|\left({\partial \mathbf {x}  \over \partial s}\times {\partial \mathbf {x}  \over \partial t}\right)\right\|\mathrm {d} s\,\mathrm {d} t\\&amp;{}=\iint \limits _{T}{\mathbf {v} }(\mathbf {x} (s,t))\cdot \left({\partial \mathbf {x}  \over \partial s}\times {\partial \mathbf {x}  \over \partial t}\right)\mathrm {d} s\,\mathrm {d} t.\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <munder>
+                  <mo>&#x222C;<!-- ∬ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>S</mi>
+                  </mrow>
+                </munder>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">v</mi>
+                  </mrow>
+                </mrow>
+                <mo>&#x22C5;<!-- ⋅ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">d</mi>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">&#x03A3;<!-- Σ --></mi>
+                  </mrow>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munder>
+                  <mo>&#x222C;<!-- ∬ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>S</mi>
+                  </mrow>
+                </munder>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="bold">v</mi>
+                      </mrow>
+                    </mrow>
+                    <mo>&#x22C5;<!-- ⋅ --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="bold">n</mi>
+                      </mrow>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">d</mi>
+                </mrow>
+                <mi mathvariant="normal">&#x03A3;<!-- Σ --></mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+
+                </mrow>
+                <mo>=</mo>
+                <munder>
+                  <mo>&#x222C;<!-- ∬ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>T</mi>
+                  </mrow>
+                </munder>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="bold">v</mi>
+                      </mrow>
+                    </mrow>
+                    <mo stretchy="false">(</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="bold">x</mi>
+                    </mrow>
+                    <mo stretchy="false">(</mo>
+                    <mi>s</mi>
+                    <mo>,</mo>
+                    <mi>t</mi>
+                    <mo stretchy="false">)</mo>
+                    <mo stretchy="false">)</mo>
+                    <mo>&#x22C5;<!-- ⋅ --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <mo>(</mo>
+                          <mrow>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mfrac>
+                                <mrow>
+                                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                                  <mrow class="MJX-TeXAtom-ORD">
+                                    <mi mathvariant="bold">x</mi>
+                                  </mrow>
+                                </mrow>
+                                <mrow>
+                                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                                  <mi>s</mi>
+                                </mrow>
+                              </mfrac>
+                            </mrow>
+                            <mo>&#x00D7;<!-- × --></mo>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mfrac>
+                                <mrow>
+                                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                                  <mrow class="MJX-TeXAtom-ORD">
+                                    <mi mathvariant="bold">x</mi>
+                                  </mrow>
+                                </mrow>
+                                <mrow>
+                                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                                  <mi>t</mi>
+                                </mrow>
+                              </mfrac>
+                            </mrow>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                        <mrow>
+                          <mo symmetric="true">&#x2016;</mo>
+                          <mrow>
+                            <mo>(</mo>
+                            <mrow>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mfrac>
+                                  <mrow>
+                                    <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                                    <mrow class="MJX-TeXAtom-ORD">
+                                      <mi mathvariant="bold">x</mi>
+                                    </mrow>
+                                  </mrow>
+                                  <mrow>
+                                    <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                                    <mi>s</mi>
+                                  </mrow>
+                                </mfrac>
+                              </mrow>
+                              <mo>&#x00D7;<!-- × --></mo>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mfrac>
+                                  <mrow>
+                                    <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                                    <mrow class="MJX-TeXAtom-ORD">
+                                      <mi mathvariant="bold">x</mi>
+                                    </mrow>
+                                  </mrow>
+                                  <mrow>
+                                    <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                                    <mi>t</mi>
+                                  </mrow>
+                                </mfrac>
+                              </mrow>
+                            </mrow>
+                            <mo>)</mo>
+                          </mrow>
+                          <mo symmetric="true">&#x2016;</mo>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mo symmetric="true">&#x2016;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mfrac>
+                          <mrow>
+                            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi mathvariant="bold">x</mi>
+                            </mrow>
+                          </mrow>
+                          <mrow>
+                            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                            <mi>s</mi>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                      <mo>&#x00D7;<!-- × --></mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mfrac>
+                          <mrow>
+                            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi mathvariant="bold">x</mi>
+                            </mrow>
+                          </mrow>
+                          <mrow>
+                            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                            <mi>t</mi>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                  <mo symmetric="true">&#x2016;</mo>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">d</mi>
+                </mrow>
+                <mi>s</mi>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">d</mi>
+                </mrow>
+                <mi>t</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+
+                </mrow>
+                <mo>=</mo>
+                <munder>
+                  <mo>&#x222C;<!-- ∬ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>T</mi>
+                  </mrow>
+                </munder>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">v</mi>
+                  </mrow>
+                </mrow>
+                <mo stretchy="false">(</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="bold">x</mi>
+                </mrow>
+                <mo stretchy="false">(</mo>
+                <mi>s</mi>
+                <mo>,</mo>
+                <mi>t</mi>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">)</mo>
+                <mo>&#x22C5;<!-- ⋅ --></mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi mathvariant="bold">x</mi>
+                          </mrow>
+                        </mrow>
+                        <mrow>
+                          <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                          <mi>s</mi>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                    <mo>&#x00D7;<!-- × --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi mathvariant="bold">x</mi>
+                          </mrow>
+                        </mrow>
+                        <mrow>
+                          <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                          <mi>t</mi>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">d</mi>
+                </mrow>
+                <mi>s</mi>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">d</mi>
+                </mrow>
+                <mi>t</mi>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}\iint \limits _{S}{\mathbf {v} }\cdot \mathrm {d} {\mathbf {\Sigma } }&amp;=\iint \limits _{S}\left({\mathbf {v} }\cdot {\mathbf {n} }\right)\,\mathrm {d} \Sigma \\&amp;{}=\iint \limits _{T}\left({\mathbf {v} }(\mathbf {x} (s,t))\cdot {\left({\partial \mathbf {x}  \over \partial s}\times {\partial \mathbf {x}  \over \partial t}\right) \over \left\|\left({\partial \mathbf {x}  \over \partial s}\times {\partial \mathbf {x}  \over \partial t}\right)\right\|}\right)\left\|\left({\partial \mathbf {x}  \over \partial s}\times {\partial \mathbf {x}  \over \partial t}\right)\right\|\mathrm {d} s\,\mathrm {d} t\\&amp;{}=\iint \limits _{T}{\mathbf {v} }(\mathbf {x} (s,t))\cdot \left({\partial \mathbf {x}  \over \partial s}\times {\partial \mathbf {x}  \over \partial t}\right)\mathrm {d} s\,\mathrm {d} t.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/28ec1cdacc27aec5013ddf3fcf09fa50f7442367" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -12.171ex; width:68.63ex; height:25.509ex;" alt="{\displaystyle {\begin{aligned}\iint \limits _{S}{\mathbf {v} }\cdot \mathrm {d} {\mathbf {\Sigma } }&amp;=\iint \limits _{S}\left({\mathbf {v} }\cdot {\mathbf {n} }\right)\,\mathrm {d} \Sigma \\&amp;{}=\iint \limits _{T}\left({\mathbf {v} }(\mathbf {x} (s,t))\cdot {\left({\partial \mathbf {x}  \over \partial s}\times {\partial \mathbf {x}  \over \partial t}\right) \over \left\|\left({\partial \mathbf {x}  \over \partial s}\times {\partial \mathbf {x}  \over \partial t}\right)\right\|}\right)\left\|\left({\partial \mathbf {x}  \over \partial s}\times {\partial \mathbf {x}  \over \partial t}\right)\right\|\mathrm {d} s\,\mathrm {d} t\\&amp;{}=\iint \limits _{T}{\mathbf {v} }(\mathbf {x} (s,t))\cdot \left({\partial \mathbf {x}  \over \partial s}\times {\partial \mathbf {x}  \over \partial t}\right)\mathrm {d} s\,\mathrm {d} t.\end{aligned}}}"/></span></dd></dl>
+<p>The cross product on the right-hand side of this expression is a (not necessarily unital) surface normal determined by the parametrization.
+</p><p>This formula <i>defines</i> the integral on the left (note the dot and the vector notation for the surface element).
+</p><p>We may also interpret this as a special case of integrating 2-forms, where we identify the vector field with a 1-form, and then integrate its <a href="/wiki/Hodge_dual" class="mw-redirect" title="Hodge dual">Hodge dual</a> over the surface.
+This is equivalent to integrating <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \langle \mathbf {v} ,\mathbf {n} \rangle \;\mathrm {d} \Sigma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">&#x27E8;<!-- ⟨ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">v</mi>
+        </mrow>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">n</mi>
+        </mrow>
+        <mo fence="false" stretchy="false">&#x27E9;<!-- ⟩ --></mo>
+        <mspace width="thickmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi mathvariant="normal">&#x03A3;<!-- Σ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \langle \mathbf {v} ,\mathbf {n} \rangle \;\mathrm {d} \Sigma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/82c60f21526c8dd7e8d8e54dd37e7848bd24ea1a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.355ex; height:2.843ex;" alt="{\displaystyle \langle \mathbf {v} ,\mathbf {n} \rangle \;\mathrm {d} \Sigma }"/></span> over the immersed surface, where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathrm {d} \Sigma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi mathvariant="normal">&#x03A3;<!-- Σ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathrm {d} \Sigma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/37b5a697b83b5d1313e6f58d91a8c6eed8873420" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.971ex; height:2.176ex;" alt="{\displaystyle \mathrm {d} \Sigma }"/></span> is the induced volume form on the surface, obtained
+by <a href="/wiki/Interior_multiplication" class="mw-redirect" title="Interior multiplication">interior multiplication</a> of the Riemannian metric of the ambient space with the outward normal of the surface.
+</p>
+<h2><span class="mw-headline" id="Surface_integrals_of_differential_2-forms">Surface integrals of differential 2-forms</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Surface_integral&amp;action=edit&amp;section=3" title="Edit section: Surface integrals of differential 2-forms">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Let
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f=f_{z}\,\mathrm {d} x\wedge \mathrm {d} y+f_{x}\,\mathrm {d} y\wedge \mathrm {d} z+f_{y}\,\mathrm {d} z\wedge \mathrm {d} x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>=</mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>z</mi>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>x</mi>
+        <mo>&#x2227;<!-- ∧ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>y</mi>
+        <mo>+</mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>y</mi>
+        <mo>&#x2227;<!-- ∧ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>z</mi>
+        <mo>+</mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>z</mi>
+        <mo>&#x2227;<!-- ∧ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f=f_{z}\,\mathrm {d} x\wedge \mathrm {d} y+f_{x}\,\mathrm {d} y\wedge \mathrm {d} z+f_{y}\,\mathrm {d} z\wedge \mathrm {d} x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/519f05bcb0bb1037b3aa42a60bc31fc7e3887fe0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:40.51ex; height:2.843ex;" alt=" f=f_{z}\, \mathrm dx \wedge \mathrm dy + f_{x}\, \mathrm dy \wedge \mathrm dz + f_{y}\, \mathrm dz  \wedge \mathrm dx "/></span></dd></dl>
+<p>be a <a href="/wiki/Differential_form" title="Differential form">differential 2-form</a> defined on the surface <i>S</i>, and let
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {x} (s,t)=(x(s,t),y(s,t),z(s,t))\!}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">x</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mspace width="negativethinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {x} (s,t)=(x(s,t),y(s,t),z(s,t))\!}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8d9386118f2be1a1ebfbbb350640413e36d3475e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-right: -0.166ex; width:30.832ex; height:2.843ex;" alt="\mathbf{x} (s,t)=( x(s,t), y(s,t), z(s,t))\!"/></span></dd></dl>
+<p>be an <a href="/wiki/Orientability" title="Orientability">orientation preserving</a> parametrization of <i>S</i> with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (s,t)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (s,t)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c4a80873677b13851457efa3447c2f412c91e425" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.773ex; height:2.843ex;" alt="(s,t)"/></span> in <i>D</i>. Changing coordinates from <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (x,y)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (x,y)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/41cf50e4a314ca8e2c30964baa8d26e5be7a9386" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.328ex; height:2.843ex;" alt="(x,y)"/></span>
+to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (s,t)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (s,t)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c4a80873677b13851457efa3447c2f412c91e425" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.773ex; height:2.843ex;" alt="(s, t)"/></span>, the differential forms transform as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathrm {d} x={\frac {\partial x}{\partial s}}\mathrm {d} s+{\frac {\partial x}{\partial t}}\mathrm {d} t}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>x</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>x</mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>s</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>s</mi>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>x</mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>t</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathrm {d} x={\frac {\partial x}{\partial s}}\mathrm {d} s+{\frac {\partial x}{\partial t}}\mathrm {d} t}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1f327e85383a80d104fecbf6fd8d45f62295bfa7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:20.044ex; height:5.509ex;" alt="{\displaystyle \mathrm {d} x={\frac {\partial x}{\partial s}}\mathrm {d} s+{\frac {\partial x}{\partial t}}\mathrm {d} t}"/></span></dd></dl>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathrm {d} y={\frac {\partial y}{\partial s}}\mathrm {d} s+{\frac {\partial y}{\partial t}}\mathrm {d} t}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>y</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>y</mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>s</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>s</mi>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>y</mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>t</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathrm {d} y={\frac {\partial y}{\partial s}}\mathrm {d} s+{\frac {\partial y}{\partial t}}\mathrm {d} t}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f82a7e984d0346b23e472e321d792704f144700a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:19.521ex; height:5.676ex;" alt="{\displaystyle \mathrm {d} y={\frac {\partial y}{\partial s}}\mathrm {d} s+{\frac {\partial y}{\partial t}}\mathrm {d} t}"/></span></dd></dl>
+<p>So <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathrm {d} x\wedge \mathrm {d} y}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>x</mi>
+        <mo>&#x2227;<!-- ∧ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>y</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathrm {d} x\wedge \mathrm {d} y}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1f79847e2bfe69e9b17a4955bdb28deff37be1be" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.653ex; height:2.509ex;" alt=" \mathrm dx \wedge \mathrm dy "/></span> transforms to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {\partial (x,y)}{\partial (s,t)}}\mathrm {d} s\wedge \mathrm {d} t}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>,</mo>
+              <mi>y</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mo stretchy="false">(</mo>
+              <mi>s</mi>
+              <mo>,</mo>
+              <mi>t</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>s</mi>
+        <mo>&#x2227;<!-- ∧ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>t</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\partial (x,y)}{\partial (s,t)}}\mathrm {d} s\wedge \mathrm {d} t}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0b26b497331f158bde682da8c09504bda26c9cbe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:14.58ex; height:6.509ex;" alt=" \frac{\partial(x,y)}{\partial(s,t)}  \mathrm ds \wedge \mathrm dt "/></span>, where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {\partial (x,y)}{\partial (s,t)}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo>,</mo>
+              <mi>y</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mo stretchy="false">(</mo>
+              <mi>s</mi>
+              <mo>,</mo>
+              <mi>t</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\partial (x,y)}{\partial (s,t)}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/382d24487299367781c0f2f7df8bfdbaec8d4faa" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:7.483ex; height:6.509ex;" alt=" \frac{\partial(x,y)}{\partial(s,t)} "/></span> denotes the determinant of the Jacobian of the transition function from <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (s,t)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (s,t)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c4a80873677b13851457efa3447c2f412c91e425" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.773ex; height:2.843ex;" alt="(s, t)"/></span> to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (x,y)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (x,y)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/41cf50e4a314ca8e2c30964baa8d26e5be7a9386" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.328ex; height:2.843ex;" alt="(x,y)"/></span>. The transformation of the other forms are similar.
+</p><p>Then, the surface integral of <i>f</i> on <i>S</i> is given by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \iint \limits _{D}\left[f_{z}(\mathbf {x} (s,t)){\frac {\partial (x,y)}{\partial (s,t)}}+f_{x}(\mathbf {x} (s,t)){\frac {\partial (y,z)}{\partial (s,t)}}+f_{y}(\mathbf {x} (s,t)){\frac {\partial (z,x)}{\partial (s,t)}}\right]\,\mathrm {d} s\,\mathrm {d} t}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo>&#x222C;<!-- ∬ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>D</mi>
+          </mrow>
+        </munder>
+        <mrow>
+          <mo>[</mo>
+          <mrow>
+            <msub>
+              <mi>f</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>z</mi>
+              </mrow>
+            </msub>
+            <mo stretchy="false">(</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="bold">x</mi>
+            </mrow>
+            <mo stretchy="false">(</mo>
+            <mi>s</mi>
+            <mo>,</mo>
+            <mi>t</mi>
+            <mo stretchy="false">)</mo>
+            <mo stretchy="false">)</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo>,</mo>
+                  <mi>y</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>s</mi>
+                  <mo>,</mo>
+                  <mi>t</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <mo>+</mo>
+            <msub>
+              <mi>f</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>x</mi>
+              </mrow>
+            </msub>
+            <mo stretchy="false">(</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="bold">x</mi>
+            </mrow>
+            <mo stretchy="false">(</mo>
+            <mi>s</mi>
+            <mo>,</mo>
+            <mi>t</mi>
+            <mo stretchy="false">)</mo>
+            <mo stretchy="false">)</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>y</mi>
+                  <mo>,</mo>
+                  <mi>z</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>s</mi>
+                  <mo>,</mo>
+                  <mi>t</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <mo>+</mo>
+            <msub>
+              <mi>f</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>y</mi>
+              </mrow>
+            </msub>
+            <mo stretchy="false">(</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="bold">x</mi>
+            </mrow>
+            <mo stretchy="false">(</mo>
+            <mi>s</mi>
+            <mo>,</mo>
+            <mi>t</mi>
+            <mo stretchy="false">)</mo>
+            <mo stretchy="false">)</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>z</mi>
+                  <mo>,</mo>
+                  <mi>x</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>s</mi>
+                  <mo>,</mo>
+                  <mi>t</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>s</mi>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>t</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \iint \limits _{D}\left[f_{z}(\mathbf {x} (s,t)){\frac {\partial (x,y)}{\partial (s,t)}}+f_{x}(\mathbf {x} (s,t)){\frac {\partial (y,z)}{\partial (s,t)}}+f_{y}(\mathbf {x} (s,t)){\frac {\partial (z,x)}{\partial (s,t)}}\right]\,\mathrm {d} s\,\mathrm {d} t}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bfc9a33f5238cdafee3774efb74e758facc23181" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.005ex; width:70.38ex; height:7.843ex;" alt="{\displaystyle \iint \limits _{D}\left[f_{z}(\mathbf {x} (s,t)){\frac {\partial (x,y)}{\partial (s,t)}}+f_{x}(\mathbf {x} (s,t)){\frac {\partial (y,z)}{\partial (s,t)}}+f_{y}(\mathbf {x} (s,t)){\frac {\partial (z,x)}{\partial (s,t)}}\right]\,\mathrm {d} s\,\mathrm {d} t}"/></span></dd></dl>
+<p>where
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\partial \mathbf {x}  \over \partial s}\times {\partial \mathbf {x}  \over \partial t}=\left({\frac {\partial (y,z)}{\partial (s,t)}},{\frac {\partial (z,x)}{\partial (s,t)}},{\frac {\partial (x,y)}{\partial (s,t)}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">x</mi>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>s</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">x</mi>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>y</mi>
+                  <mo>,</mo>
+                  <mi>z</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>s</mi>
+                  <mo>,</mo>
+                  <mi>t</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <mo>,</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>z</mi>
+                  <mo>,</mo>
+                  <mi>x</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>s</mi>
+                  <mo>,</mo>
+                  <mi>t</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <mo>,</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo>,</mo>
+                  <mi>y</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>s</mi>
+                  <mo>,</mo>
+                  <mi>t</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\partial \mathbf {x}  \over \partial s}\times {\partial \mathbf {x}  \over \partial t}=\left({\frac {\partial (y,z)}{\partial (s,t)}},{\frac {\partial (z,x)}{\partial (s,t)}},{\frac {\partial (x,y)}{\partial (s,t)}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2a2a1c0668283eb87ef146dcbaada0de51c9ee70" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:40.697ex; height:6.509ex;" alt="{\partial \mathbf{x} \over \partial s}\times {\partial \mathbf{x} \over \partial t}=\left(\frac{\partial(y,z)}{\partial(s,t)}, \frac{\partial(z,x)}{\partial(s,t)}, \frac{\partial(x,y)}{\partial(s,t)}\right)"/></span></dd></dl>
+<p>is the surface element normal to <i>S</i>.
+</p><p>Let us note that the surface integral of this 2-form is the same as the surface integral of the vector field which has as components <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f_{x}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f_{x}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bb36605624ab2287dc5ec558513c625b88acfee3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.312ex; height:2.509ex;" alt="f_{x}"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f_{y}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f_{y}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/12c2e2650f381b3212314edab5a27ccab586de53" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.189ex; height:2.843ex;" alt="f_y"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f_{z}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>z</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f_{z}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f803642740eb529735217a23124a05f2eb2763eb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.141ex; height:2.509ex;" alt="f_z"/></span>.
+</p>
+<h2><span class="mw-headline" id="Theorems_involving_surface_integrals">Theorems involving surface integrals</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Surface_integral&amp;action=edit&amp;section=4" title="Edit section: Theorems involving surface integrals">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Various useful results for surface integrals can be derived using <a href="/wiki/Differential_geometry" title="Differential geometry">differential geometry</a> and <a href="/wiki/Vector_calculus" title="Vector calculus">vector calculus</a>, such as the <a href="/wiki/Divergence_theorem" title="Divergence theorem">divergence theorem</a>, and its generalization, <a href="/wiki/Stokes%27_theorem" title="Stokes&#39; theorem">Stokes' theorem</a>.
+</p>
+<h2><span class="mw-headline" id="Advanced_issues">Advanced issues</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Surface_integral&amp;action=edit&amp;section=5" title="Edit section: Advanced issues">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Let us notice that we defined the surface integral by using a parametrization of the surface <i>S</i>. We know that a given surface might have several parametrizations. For example, if we move the locations of the North Pole and the South Pole on a sphere, the latitude and longitude change for all the points on the sphere. A natural question is then whether the definition of the surface integral depends on the chosen parametrization. For integrals of scalar fields, the answer to this question is simple, the value of the surface integral will be the same no matter what parametrization one uses.
+</p><p>For integrals of vector fields, things are more complicated, because the surface normal is involved. It can be proven that given two parametrizations of the same surface, whose surface normals point in the same direction, one obtains the same value for the surface integral with both parametrizations. If, however, the normals for these parametrizations point in opposite directions, the value of the surface integral obtained using one parametrization is the negative of the one obtained via the other parametrization. It follows that given a surface, we do not need to stick to any unique parametrization; but, when integrating vector fields, we do need to decide in advance which direction the normal will point to and then choose any parametrization consistent with that direction.
+</p><p>Another issue is that sometimes surfaces do not have parametrizations which cover the whole surface. The obvious solution is then to split that surface into several pieces, calculate the surface integral on each piece, and then add them all up. This is indeed how things work, but when integrating vector fields, one needs to again be careful how to choose the normal-pointing vector for each piece of the surface, so that when the pieces are put back together, the results are consistent. For the cylinder, this means that if we decide that for the side region the normal will point out of the body, then for the top and bottom circular parts the normal must point out of the body too.
+</p><p>Lastly, there are surfaces which do not admit a surface normal at each point with consistent results (for example, the <a href="/wiki/M%C3%B6bius_strip" title="Möbius strip">Möbius strip</a>).  If such a surface is split into pieces, on each piece a parametrization and corresponding surface normal is chosen, and the pieces are put back together, we will find that the normal vectors coming from different pieces cannot be reconciled. This means that at some junction between two pieces we will have normal vectors pointing in opposite directions. Such a surface is called <a href="/wiki/Orientability" title="Orientability">non-orientable</a>, and on this kind of surface, one cannot talk about integrating vector fields.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Surface_integral&amp;action=edit&amp;section=6" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Divergence_theorem" title="Divergence theorem">Divergence theorem</a></li>
+<li><a href="/wiki/Stokes%27_theorem" title="Stokes&#39; theorem">Stokes' theorem</a></li>
+<li><a href="/wiki/Line_integral" title="Line integral">Line integral</a></li>
+<li><a href="/wiki/Volume_element" title="Volume element">Volume element</a></li>
+<li><a href="/wiki/Volume_integral" title="Volume integral">Volume integral</a></li>
+<li><a href="/wiki/Cartesian_coordinate_system" title="Cartesian coordinate system">Cartesian coordinate system</a></li>
+<li><a href="/wiki/Spherical_coordinate_system#Integration_and_differentiation_in_spherical_coordinates" title="Spherical coordinate system">Volume and surface area elements in spherical coordinate systems</a></li>
+<li><a href="/wiki/Cylindrical_coordinate_system#Line_and_volume_elements" title="Cylindrical coordinate system">Volume and surface area elements in cylindrical coordinate systems</a></li>
+<li><a href="/wiki/Holstein%E2%80%93Herring_method" title="Holstein–Herring method">Holstein–Herring method</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Surface_integral&amp;action=edit&amp;section=7" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation book">Edwards, C. H. (1994). <i>Advanced Calculus of Several Variables</i>. Mineola, NY: Dover. p.&#160;335. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-486-68336-2" title="Special:BookSources/0-486-68336-2"><bdi>0-486-68336-2</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Advanced+Calculus+of+Several+Variables&amp;rft.place=Mineola%2C+NY&amp;rft.pages=335&amp;rft.pub=Dover&amp;rft.date=1994&amp;rft.isbn=0-486-68336-2&amp;rft.aulast=Edwards&amp;rft.aufirst=C.+H.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASurface+integral" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation book">Hazewinkel, Michiel (2001). <a rel="nofollow" class="external text" href="https://www.encyclopediaofmath.org/index.php/Surface_integral"><i>Encyclopedia of Mathematics</i></a>. Springer. pp.&#160;Surface Integral. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-55608-010-4" title="Special:BookSources/978-1-55608-010-4"><bdi>978-1-55608-010-4</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Encyclopedia+of+Mathematics&amp;rft.pages=Surface+Integral&amp;rft.pub=Springer&amp;rft.date=2001&amp;rft.isbn=978-1-55608-010-4&amp;rft.aulast=Hazewinkel&amp;rft.aufirst=Michiel&amp;rft_id=https%3A%2F%2Fwww.encyclopediaofmath.org%2Findex.php%2FSurface_integral&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASurface+integral" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Surface_integral&amp;action=edit&amp;section=8" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://mathworld.wolfram.com/SurfaceIntegral.html">Surface Integral — from MathWorld</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.math.gatech.edu/%7Ecain/notes/cal15.pdf">Surface Integral — Theory and exercises</a></li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1267
+Cached time: 20190805114118
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.308 seconds
+Real time usage: 0.462 seconds
+Preprocessor visited node count: 804/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 46292/2097152 bytes
+Template argument size: 747/2097152 bytes
+Highest expansion depth: 8/40
+Expensive parser function count: 1/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 6887/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.117/10.000 seconds
+Lua memory usage: 2.66 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  275.647      1 -total
+ 37.16%  102.444      1 Template:Reflist
+ 31.73%   87.464      2 Template:Cite_book
+ 31.12%   85.785      1 Template:Refimprove
+ 29.80%   82.155      1 Template:Calculus
+ 27.31%   75.285      1 Template:Ambox
+ 12.21%   33.670      1 Template:Find_sources_mainspace
+  8.17%   22.516      5 Template:Sidebar
+  3.41%    9.401      7 Template:Bigger
+  2.17%    5.992      7 Template:Startflatlist
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:528867-0!canonical!math=5 and timestamp 20190805114117 and revision id 878778288
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Surface_integral&amp;oldid=878778288">https://en.wikipedia.org/w/index.php?title=Surface_integral&amp;oldid=878778288</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Multivariable_calculus" title="Category:Multivariable calculus">Multivariable calculus</a></li><li><a href="/wiki/Category:Area" title="Category:Area">Area</a></li><li><a href="/wiki/Category:Surfaces" title="Category:Surfaces">Surfaces</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_needing_additional_references_from_January_2017" title="Category:Articles needing additional references from January 2017">Articles needing additional references from January 2017</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Surface+integral" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Surface+integral" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Surface_integral" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Surface_integral" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Surface_integral">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Surface_integral&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Surface_integral&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Surface_integral" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Surface_integral" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Surface_integral&amp;oldid=878778288" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Surface_integral&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q598146" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Surface_integral&amp;id=878778288" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Surface+integral">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Surface+integral&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Surface_integral&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%AA%D9%83%D8%A7%D9%85%D9%84_%D8%B3%D8%B7%D8%AD%D9%8A" title="تكامل سطحي – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Integral_de_superf%C3%ADcie" title="Integral de superfície – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Plo%C5%A1n%C3%BD_integr%C3%A1l" title="Plošný integrál – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Oberfl%C3%A4chenintegral" title="Oberflächenintegral – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Integral_de_superficie" title="Integral de superficie – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eo"><a href="https://eo.wikipedia.org/wiki/Surfaca_integralo" title="Surfaca integralo – Esperanto" lang="eo" hreflang="eo" class="interlanguage-link-target">Esperanto</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%A7%D9%86%D8%AA%DA%AF%D8%B1%D8%A7%D9%84_%D8%B3%D8%B7%D8%AD%DB%8C" title="انتگرال سطحی – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Int%C3%A9grale_de_surface" title="Intégrale de surface – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EB%A9%B4%EC%A0%81%EB%B6%84" title="면적분 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-hy"><a href="https://hy.wikipedia.org/wiki/%D5%84%D5%A1%D5%AF%D5%A5%D6%80%D6%87%D5%B8%D6%82%D5%A9%D5%A1%D5%B5%D5%AB%D5%B6_%D5%AB%D5%B6%D5%BF%D5%A5%D5%A3%D6%80%D5%A1%D5%AC" title="Մակերևութային ինտեգրալ – Armenian" lang="hy" hreflang="hy" class="interlanguage-link-target">Հայերեն</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Integrale_di_superficie" title="Integrale di superficie – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%A0%D7%98%D7%92%D7%A8%D7%9C_%D7%9E%D7%A9%D7%98%D7%97%D7%99" title="אינטגרל משטחי – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Oppervlakte-integraal" title="Oppervlakte-integraal – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E9%9D%A2%E7%A9%8D%E5%88%86" title="面積分 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/Flateintegral" title="Flateintegral – Norwegian" lang="no" hreflang="no" class="interlanguage-link-target">Norsk</a></li><li class="interlanguage-link interwiki-km"><a href="https://km.wikipedia.org/wiki/%E1%9E%A2%E1%9E%B6%E1%9F%86%E1%9E%84%E1%9E%8F%E1%9F%81%E1%9E%80%E1%9F%92%E1%9E%9A%E1%9E%B6%E1%9E%9B%E1%9E%95%E1%9F%92%E1%9E%91%E1%9F%83" title="អាំងតេក្រាលផ្ទៃ – Khmer" lang="km" hreflang="km" class="interlanguage-link-target">ភាសាខ្មែរ</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Ca%C5%82ka_powierzchniowa" title="Całka powierzchniowa – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Integral_de_superf%C3%ADcie" title="Integral de superfície – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D0%BE%D1%81%D1%82%D0%BD%D1%8B%D0%B5_%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%D1%8B" title="Поверхностные интегралы – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-simple"><a href="https://simple.wikipedia.org/wiki/Surface_integral" title="Surface integral – Simple English" lang="en-simple" hreflang="en-simple" class="interlanguage-link-target">Simple English</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B2%D1%80%D1%88%D0%B8%D0%BD%D1%81%D0%BA%D0%B8_%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB" title="Површински интеграл – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Pintaintegraali" title="Pintaintegraali – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Ytintegral" title="Ytintegral – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D0%B5%D0%B2%D0%B8%D0%B9_%D1%96%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB" title="Поверхневий інтеграл – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/T%C3%ADch_ph%C3%A2n_m%E1%BA%B7t" title="Tích phân mặt – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86" title="曲面积分 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q598146#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 16 January 2019, at 21:33<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Surface_integral&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.308","walltime":"0.462","ppvisitednodes":{"value":804,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":46292,"limit":2097152},"templateargumentsize":{"value":747,"limit":2097152},"expansiondepth":{"value":8,"limit":40},"expensivefunctioncount":{"value":1,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":6887,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  275.647      1 -total"," 37.16%  102.444      1 Template:Reflist"," 31.73%   87.464      2 Template:Cite_book"," 31.12%   85.785      1 Template:Refimprove"," 29.80%   82.155      1 Template:Calculus"," 27.31%   75.285      1 Template:Ambox"," 12.21%   33.670      1 Template:Find_sources_mainspace","  8.17%   22.516      5 Template:Sidebar","  3.41%    9.401      7 Template:Bigger","  2.17%    5.992      7 Template:Startflatlist"]},"scribunto":{"limitreport-timeusage":{"value":"0.117","limit":"10.000"},"limitreport-memusage":{"value":2793918,"limit":52428800}},"cachereport":{"origin":"mw1267","timestamp":"20190805114118","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Surface integral","url":"https:\/\/en.wikipedia.org\/wiki\/Surface_integral","sameAs":"http:\/\/www.wikidata.org\/entity\/Q598146","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q598146","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-03-15T18:43:29Z","dateModified":"2019-01-16T21:33:04Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/7\/72\/Surface_integral_illustration.svg","headline":"generalization of a multiple integral to (possibly)-curved surfaces"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":108,"wgHostname":"mw1252"});});</script>
+</body>
+</html>

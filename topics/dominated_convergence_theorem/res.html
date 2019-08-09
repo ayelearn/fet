@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Dominated convergence theorem - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Dominated_convergence_theorem","wgTitle":"Dominated convergence theorem","wgCurRevisionId":904336373,"wgRevisionId":904336373,"wgArticleId":351853,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles containing proofs","Theorems in real analysis","Theorems in measure theory","Probability theorems"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"
+],"wgRelevantPageName":"Dominated_convergence_theorem","wgRelevantArticleId":351853,"wgRequestId":"XUmbvgpAICwAAJLyZ1wAAABG","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q1067156","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready",
+"user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.math.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["ext.math.scripts","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader",
+"ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Dominated_convergence_theorem"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Dominated_convergence_theorem&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Dominated_convergence_theorem&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Dominated_convergence_theorem"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Dominated_convergence_theorem rootpage-Dominated_convergence_theorem skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Dominated convergence theorem</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>In <a href="/wiki/Measure_theory" class="mw-redirect" title="Measure theory">measure theory</a>, <a href="/wiki/Henri_Lebesgue" title="Henri Lebesgue">Lebesgue</a>'s <b>dominated convergence theorem</b> provides <a href="/wiki/Sufficient_condition" class="mw-redirect" title="Sufficient condition">sufficient conditions</a> under which <a href="/wiki/Almost_everywhere" title="Almost everywhere">almost everywhere</a> <a href="/wiki/Convergence_(mathematics)" class="mw-redirect" title="Convergence (mathematics)">convergence</a> of a <a href="/wiki/Sequence" title="Sequence">sequence</a> of <a href="/wiki/Function_(mathematics)" title="Function (mathematics)">functions</a> implies convergence in the <i>L</i><sup>1</sup> norm. Its power and utility are two of the primary theoretical advantages of <a href="/wiki/Lebesgue_integral" class="mw-redirect" title="Lebesgue integral">Lebesgue integration</a> over <a href="/wiki/Riemann_integral" title="Riemann integral">Riemann integration</a>.
+</p><p>In addition to its frequent appearance in mathematical analysis and partial differential equations, it is widely used in <a href="/wiki/Probability_theory" title="Probability theory">probability theory</a>, since it gives a sufficient condition for the convergence of <a href="/wiki/Expected_value" title="Expected value">expected values</a> of <a href="/wiki/Random_variable" title="Random variable">random variables</a>.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Statement_of_the_theorem"><span class="tocnumber">1</span> <span class="toctext">Statement of the theorem</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Proof_of_the_theorem"><span class="tocnumber">2</span> <span class="toctext">Proof of the theorem</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Discussion_of_the_assumptions"><span class="tocnumber">3</span> <span class="toctext">Discussion of the assumptions</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Bounded_convergence_theorem"><span class="tocnumber">4</span> <span class="toctext">Bounded convergence theorem</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Proof"><span class="tocnumber">4.1</span> <span class="toctext">Proof</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Dominated_convergence_in_Lp-spaces_(corollary)"><span class="tocnumber">5</span> <span class="toctext">Dominated convergence in <i>L</i><sup><i>p</i></sup>-spaces (corollary)</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Extensions"><span class="tocnumber">6</span> <span class="toctext">Extensions</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Statement_of_the_theorem">Statement of the theorem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dominated_convergence_theorem&amp;action=edit&amp;section=1" title="Edit section: Statement of the theorem">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><b>Lebesgue's Dominated Convergence Theorem.</b> Let {<i>f<sub>n</sub></i>} be a sequence of <a href="/wiki/Complex_number" title="Complex number">complex</a>-valued <a href="/wiki/Measurable_function" title="Measurable function">measurable functions</a> on a <a href="/wiki/Measure_space" title="Measure space">measure space</a> <span class="nowrap">(<i>S</i>, Σ, μ)</span>. Suppose that the sequence <a href="/wiki/Pointwise_convergence" title="Pointwise convergence">converges pointwise</a> to a function <i>f</i> and is dominated by some integrable function <i>g</i> in the sense that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |f_{n}(x)|\leq g(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |f_{n}(x)|\leq g(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3d2d768195305fcdd6d31a404c732042ad0aa460" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:14.144ex; height:2.843ex;" alt="    |f_n(x)| \le g(x)"/></span></dd></dl>
+<p>for all numbers <i>n</i> in the index set of the sequence and all points <i>x</i> ∈ <i>S</i>.
+Then <i>f</i> is integrable and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{n\to \infty }\int _{S}|f_{n}-f|\,d\mu =0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>f</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>&#x03BC;<!-- μ --></mi>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{n\to \infty }\int _{S}|f_{n}-f|\,d\mu =0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b2e7c1264c8f6b68eaa6fb790bc7e23fa8f0efc4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:22.668ex; height:5.676ex;" alt=" \lim_{n\to\infty} \int_S |f_n-f|\,d\mu = 0"/></span></dd></dl>
+<p>which also implies
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{n\to \infty }\int _{S}f_{n}\,d\mu =\int _{S}f\,d\mu }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>&#x03BC;<!-- μ --></mi>
+        <mo>=</mo>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>&#x03BC;<!-- μ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{n\to \infty }\int _{S}f_{n}\,d\mu =\int _{S}f\,d\mu }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/61007103966893aff9c63ab0776427973e1dfe49" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:23.348ex; height:5.676ex;" alt="\lim_{n\to\infty} \int_S f_n\,d\mu = \int_S f\,d\mu"/></span></dd></dl>
+<p><b>Remark 1.</b> The statement "<i>g</i> is integrable" means that measurable function g is Lebesgue integrable; i.e.
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{S}|g|\,d\mu &lt;\infty .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>g</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>&#x03BC;<!-- μ --></mi>
+        <mo>&lt;</mo>
+        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{S}|g|\,d\mu &lt;\infty .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/60ed9b4761f7f78450b9926b2f14feacb0e8610a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:14.455ex; height:5.676ex;" alt="\int_S|g|\,d\mu &lt; \infty."/></span></dd></dl>
+<p><b>Remark 2.</b> The convergence of the sequence and domination by <i>g</i> can be relaxed to hold only <span class="nowrap">μ-</span><a href="/wiki/Almost_everywhere" title="Almost everywhere">almost everywhere</a> provided the measure space <span class="nowrap">(<i>S</i>, Σ, μ)</span> is <a href="/wiki/Measure_(mathematics)#Completeness" title="Measure (mathematics)">complete</a> or <i>f</i> is chosen as a measurable function which agrees <span class="nowrap">μ-almost</span> everywhere with the <span class="nowrap">μ-almost</span> everywhere existing pointwise limit. (These precautions are necessary, because otherwise there might exist a <a href="/wiki/Non-measurable_set" title="Non-measurable set">non-measurable subset</a> of a <span class="nowrap">μ-null</span> set <span class="nowrap"><i>N</i> ∈ Σ</span>, hence <i>f</i> might not be measurable.)
+</p><p><b>Remark 3.</b> If μ(<i>S</i>) &lt; ∞, the condition that there is a dominating integrable function <i>g</i> can be relaxed to <a href="/wiki/Uniformly_integrable" class="mw-redirect" title="Uniformly integrable">uniform integrability</a> of the sequence {<i>f<sub>n</sub></i>}, see <a href="/wiki/Vitali_convergence_theorem" title="Vitali convergence theorem">Vitali convergence theorem</a>.
+</p>
+<h2><span class="mw-headline" id="Proof_of_the_theorem">Proof of the theorem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dominated_convergence_theorem&amp;action=edit&amp;section=2" title="Edit section: Proof of the theorem">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="/wiki/Without_loss_of_generality" title="Without loss of generality">Without loss of generality</a>, one can assume that <i>f</i> is real, because one can split <i>f</i> into its real and imaginary parts (remember that a sequence of complex numbers converges <a href="/wiki/If_and_only_if" title="If and only if">if and only if</a> both its real and imaginary counterparts converge) and apply the <a href="/wiki/Triangle_inequality" title="Triangle inequality">triangle inequality</a> at the end.
+</p><p>Lebesgue's dominated convergence theorem is a special case of the <a href="/wiki/Fatou%E2%80%93Lebesgue_theorem" title="Fatou–Lebesgue theorem">Fatou–Lebesgue theorem</a>. Below, however, is a direct proof that uses <a href="/wiki/Fatou%E2%80%99s_lemma" class="mw-redirect" title="Fatou’s lemma">Fatou’s lemma</a> as the essential tool.
+</p><p>Since <i>f</i> is the pointwise limit of the sequence <i>(f<sub>n</sub>)</i> of measurable functions that are dominated by <i>g</i>, it is also measurable and dominated by <i>g</i>, hence it is integrable. Furthermore, (these will be needed later),
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |f-f_{n}|\leq |f|+|f_{n}|\leq 2g}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>f</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mn>2</mn>
+        <mi>g</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |f-f_{n}|\leq |f|+|f_{n}|\leq 2g}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fd7b667f0d5ce57c925f36af8ab8925e854c1579" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:25.31ex; height:2.843ex;" alt="    |f-f_n| \le |f| + |f_n| \leq 2g"/></span></dd></dl>
+<p>for all <i>n</i> and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \limsup _{n\to \infty }|f-f_{n}|=0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim&#x2006;sup</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>=</mo>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \limsup _{n\to \infty }|f-f_{n}|=0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/595cf463cab58286ba0b8287a4ab5e3b0b9e4413" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:20.184ex; height:4.343ex;" alt="    \limsup_{n\to\infty} |f-f_n| = 0."/></span></dd></dl>
+<p>The second of these is trivially true (by the very definition of <i>f</i>). Using <a href="/wiki/Lebesgue_integral#Basic_theorems_of_the_Lebesgue_integral" class="mw-redirect" title="Lebesgue integral">linearity and monotonicity of the Lebesgue integral</a>,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \left|\int _{S}{f\,d\mu }-\int _{S}{f_{n}\,d\mu }\right|=\left|\int _{S}{(f-f_{n})\,d\mu }\right|\leq \int _{S}{|f-f_{n}|\,d\mu }.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>|</mo>
+          <mrow>
+            <msub>
+              <mo>&#x222B;<!-- ∫ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>S</mi>
+              </mrow>
+            </msub>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>f</mi>
+              <mspace width="thinmathspace" />
+              <mi>d</mi>
+              <mi>&#x03BC;<!-- μ --></mi>
+            </mrow>
+            <mo>&#x2212;<!-- − --></mo>
+            <msub>
+              <mo>&#x222B;<!-- ∫ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>S</mi>
+              </mrow>
+            </msub>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msub>
+                <mi>f</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+              <mspace width="thinmathspace" />
+              <mi>d</mi>
+              <mi>&#x03BC;<!-- μ --></mi>
+            </mrow>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>|</mo>
+          <mrow>
+            <msub>
+              <mo>&#x222B;<!-- ∫ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>S</mi>
+              </mrow>
+            </msub>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo stretchy="false">(</mo>
+              <mi>f</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <msub>
+                <mi>f</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+              <mspace width="thinmathspace" />
+              <mi>d</mi>
+              <mi>&#x03BC;<!-- μ --></mi>
+            </mrow>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mi>f</mi>
+          <mo>&#x2212;<!-- − --></mo>
+          <msub>
+            <mi>f</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>n</mi>
+            </mrow>
+          </msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mspace width="thinmathspace" />
+          <mi>d</mi>
+          <mi>&#x03BC;<!-- μ --></mi>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left|\int _{S}{f\,d\mu }-\int _{S}{f_{n}\,d\mu }\right|=\left|\int _{S}{(f-f_{n})\,d\mu }\right|\leq \int _{S}{|f-f_{n}|\,d\mu }.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0894314a63cd55246916f76fe7e3c5d8a2ce191e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:55.871ex; height:5.843ex;" alt="    \left | \int_S{f\,d\mu} - \int_S{f_n\,d\mu} \right|=   \left| \int_S{(f-f_n)\,d\mu} \right|\le \int_S{|f-f_n|\,d\mu}."/></span></dd></dl>
+<p>By the <a href="/wiki/Reverse_Fatou_lemma" class="mw-redirect" title="Reverse Fatou lemma">reverse Fatou lemma</a> (it is here that we use the fact that |<i>f</i>−<i>f<sub>n</sub></i>| is bounded above by an integrable function)
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \limsup _{n\to \infty }\int _{S}|f-f_{n}|\,d\mu \leq \int _{S}\limsup _{n\to \infty }|f-f_{n}|\,d\mu =0,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim&#x2006;sup</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>&#x03BC;<!-- μ --></mi>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim&#x2006;sup</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>&#x03BC;<!-- μ --></mi>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \limsup _{n\to \infty }\int _{S}|f-f_{n}|\,d\mu \leq \int _{S}\limsup _{n\to \infty }|f-f_{n}|\,d\mu =0,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b5e1e474f3de2f3b69739b866810be58e6f36455" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:50.512ex; height:5.676ex;" alt="\limsup_{n\to\infty} \int_S |f-f_n|\,d\mu \le \int_S \limsup_{n\to\infty} |f-f_n|\,d\mu = 0,"/></span></dd></dl>
+<p>which implies that the limit exists and vanishes i.e.
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{n\to \infty }\int _{S}|f-f_{n}|\,d\mu =0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>&#x03BC;<!-- μ --></mi>
+        <mo>=</mo>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{n\to \infty }\int _{S}|f-f_{n}|\,d\mu =0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/86ed5d145b600527959dbe6add2432d439348a65" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:23.314ex; height:5.676ex;" alt="\lim_{n\to\infty} \int_S |f-f_n|\,d\mu= 0."/></span></dd></dl>
+<p>Finally, since
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{n\to \infty }\left|\int _{S}fd\mu -\int _{S}f_{n}d\mu \right|\leq \lim _{n\to \infty }\int _{S}|f-f_{n}|\,d\mu =0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <mrow>
+          <mo>|</mo>
+          <mrow>
+            <msub>
+              <mo>&#x222B;<!-- ∫ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>S</mi>
+              </mrow>
+            </msub>
+            <mi>f</mi>
+            <mi>d</mi>
+            <mi>&#x03BC;<!-- μ --></mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <msub>
+              <mo>&#x222B;<!-- ∫ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>S</mi>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>f</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <mi>d</mi>
+            <mi>&#x03BC;<!-- μ --></mi>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>&#x03BC;<!-- μ --></mi>
+        <mo>=</mo>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{n\to \infty }\left|\int _{S}fd\mu -\int _{S}f_{n}d\mu \right|\leq \lim _{n\to \infty }\int _{S}|f-f_{n}|\,d\mu =0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/633ca517c37fdee9765127f072199f0802cbf338" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:50.022ex; height:5.843ex;" alt="{\displaystyle \lim _{n\to \infty }\left|\int _{S}fd\mu -\int _{S}f_{n}d\mu \right|\leq \lim _{n\to \infty }\int _{S}|f-f_{n}|\,d\mu =0.}"/></span></dd></dl>
+<p>we have that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{n\to \infty }\int _{S}f_{n}\,d\mu =\int _{S}f\,d\mu .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>&#x03BC;<!-- μ --></mi>
+        <mo>=</mo>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>&#x03BC;<!-- μ --></mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{n\to \infty }\int _{S}f_{n}\,d\mu =\int _{S}f\,d\mu .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/76e30a33625319380ddde60e9e2c429d8f1b552f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:23.994ex; height:5.676ex;" alt="{\displaystyle \lim _{n\to \infty }\int _{S}f_{n}\,d\mu =\int _{S}f\,d\mu .}"/></span></dd></dl>
+<p>The theorem now follows.
+</p><p>If the assumptions hold only <span class="nowrap">μ-almost</span> everywhere, then there exists a <span class="nowrap">μ-null</span> set <span class="nowrap"><i>N</i> ∈ Σ</span> such that the functions <i>f<sub>n</sub></i> <b>1</b><sub><i>S</i> \ <i>N</i></sub> satisfy the assumptions everywhere on&#160;<i>S</i>. Then the function <i>f</i>(<i>x</i>) defined as the pointwise limit of <i>f<sub>n</sub></i>(<i>x</i>) for <span class="nowrap"><i>x</i> ∈ <i>S</i> \ <i>N</i></span> and by <span class="nowrap"><i>f</i>(<i>x</i>) = 0</span> for <span class="nowrap"><i>x</i> ∈ <i>N</i></span>, is measurable and is the pointwise limit of this modified function sequence. The values of these integrals are not influenced by these changes to the integrands on this μ-null set&#160;<i>N</i>, so the theorem continues to hold.
+</p><p>DCT holds even if f<sub>n</sub> converges to f in measure (finite measure) and the dominating function is non-negative almost everywhere.
+</p>
+<h2><span class="mw-headline" id="Discussion_of_the_assumptions">Discussion of the assumptions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dominated_convergence_theorem&amp;action=edit&amp;section=3" title="Edit section: Discussion of the assumptions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The assumption that the sequence is dominated by some integrable <i>g</i> cannot be dispensed with. This may be seen as follows: define <span class="nowrap"><i>f<sub>n</sub></i>(<i>x</i>) = <i>n</i></span> for <i>x</i> in the <a href="/wiki/Interval_(mathematics)" title="Interval (mathematics)">interval</a> <span class="nowrap">(0, 1/<i>n</i>]</span> and <span class="nowrap"><i>f</i><sub><i>n</i></sub>(<i>x</i>) = 0</span> otherwise. Any <i>g</i> which dominates the sequence must also dominate the pointwise <a href="/wiki/Supremum" class="mw-redirect" title="Supremum">supremum</a> <span class="nowrap"><i>h</i> = sup<sub><i>n</i></sub> <i>f<sub>n</sub></i></span>. Observe that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{0}^{1}h(x)\,dx\geq \int _{\frac {1}{m}}^{1}{h(x)\,dx}=\sum _{n=1}^{m-1}\int _{\left({\frac {1}{n+1}},{\frac {1}{n}}\right]}{h(x)\,dx}\geq \sum _{n=1}^{m-1}\int _{\left({\frac {1}{n+1}},{\frac {1}{n}}\right]}{n\,dx}=\sum _{n=1}^{m-1}{\frac {1}{n+1}}\to \infty \qquad {\text{as }}m\to \infty }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msubsup>
+        <mi>h</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>x</mi>
+        <mo>&#x2265;<!-- ≥ --></mo>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>1</mn>
+              <mi>m</mi>
+            </mfrac>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msubsup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>h</mi>
+          <mo stretchy="false">(</mo>
+          <mi>x</mi>
+          <mo stretchy="false">)</mo>
+          <mspace width="thinmathspace" />
+          <mi>d</mi>
+          <mi>x</mi>
+        </mrow>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <mrow>
+                      <mi>n</mi>
+                      <mo>+</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo>,</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <mi>n</mi>
+                  </mfrac>
+                </mrow>
+              </mrow>
+              <mo>]</mo>
+            </mrow>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>h</mi>
+          <mo stretchy="false">(</mo>
+          <mi>x</mi>
+          <mo stretchy="false">)</mo>
+          <mspace width="thinmathspace" />
+          <mi>d</mi>
+          <mi>x</mi>
+        </mrow>
+        <mo>&#x2265;<!-- ≥ --></mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <mrow>
+                      <mi>n</mi>
+                      <mo>+</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo>,</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <mi>n</mi>
+                  </mfrac>
+                </mrow>
+              </mrow>
+              <mo>]</mo>
+            </mrow>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>n</mi>
+          <mspace width="thinmathspace" />
+          <mi>d</mi>
+          <mi>x</mi>
+        </mrow>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mi>n</mi>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+        <mspace width="2em" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>as&#xA0;</mtext>
+        </mrow>
+        <mi>m</mi>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{0}^{1}h(x)\,dx\geq \int _{\frac {1}{m}}^{1}{h(x)\,dx}=\sum _{n=1}^{m-1}\int _{\left({\frac {1}{n+1}},{\frac {1}{n}}\right]}{h(x)\,dx}\geq \sum _{n=1}^{m-1}\int _{\left({\frac {1}{n+1}},{\frac {1}{n}}\right]}{n\,dx}=\sum _{n=1}^{m-1}{\frac {1}{n+1}}\to \infty \qquad {\text{as }}m\to \infty }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6ce44a95f776d71b7c2ad5e232e8787195a5d949" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:104.234ex; height:7.676ex;" alt="\int_0^1 h(x)\,dx \ge \int_{\frac{1}{m}}^1{h(x)\,dx} = \sum_{n=1}^{m-1} \int_{\left(\frac{1}{n+1},\frac{1}{n}\right]}{h(x)\,dx} \ge \sum_{n=1}^{m-1} \int_{\left(\frac{1}{n+1},\frac{1}{n}\right]}{n\,dx}=\sum_{n=1}^{m-1} \frac{1}{n+1} \to \infty \qquad \text{as }m\to\infty  "/></span></dd></dl>
+<p>by the divergence of the <a href="/wiki/Harmonic_series_(mathematics)" title="Harmonic series (mathematics)">harmonic series</a>. Hence, the monotonicity of the Lebesgue integral tells us that there exists no integrable function which dominates the sequence on [0,1]. A direct calculation shows that integration and pointwise limit do not commute for this sequence:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{0}^{1}\lim _{n\to \infty }f_{n}(x)\,dx=0\neq 1=\lim _{n\to \infty }\int _{0}^{1}f_{n}(x)\,dx,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msubsup>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>x</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mo>&#x2260;<!-- ≠ --></mo>
+        <mn>1</mn>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msubsup>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>x</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{0}^{1}\lim _{n\to \infty }f_{n}(x)\,dx=0\neq 1=\lim _{n\to \infty }\int _{0}^{1}f_{n}(x)\,dx,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2106db59c48343b7c0dc7edf16bc66f98f04734e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:46.256ex; height:6.176ex;" alt="\int_0^1 \lim_{n\to\infty} f_n(x)\,dx = 0 \neq 1 = \lim_{n\to\infty}\int_0^1 f_n(x)\,dx,"/></span></dd></dl>
+<p>because the pointwise limit of the sequence is the <a href="/wiki/Zero_function" class="mw-redirect" title="Zero function">zero function</a>. Note that the sequence {<i>f<sub>n</sub></i>} is not even <a href="/wiki/Uniformly_integrable" class="mw-redirect" title="Uniformly integrable">uniformly integrable</a>, hence also the <a href="/wiki/Vitali_convergence_theorem" title="Vitali convergence theorem">Vitali convergence theorem</a> is not applicable.
+</p>
+<h2><span class="mw-headline" id="Bounded_convergence_theorem">Bounded convergence theorem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dominated_convergence_theorem&amp;action=edit&amp;section=4" title="Edit section: Bounded convergence theorem">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>One corollary to the dominated convergence theorem is the <b>bounded convergence theorem</b>, which states that if {<i>f<sub>n</sub></i>} is a sequence of <a href="/wiki/Uniform_boundedness" title="Uniform boundedness">uniformly bounded</a> <a href="/wiki/Real_number" title="Real number">complex</a>-valued <a href="/wiki/Measurable_function" title="Measurable function">measurable functions</a> which converges pointwise on a bounded <a href="/wiki/Measure_space" title="Measure space">measure space</a> <span class="nowrap">(<i>S</i>, Σ, μ)</span> (i.e. one in which μ(<i>S</i>) is finite) to a function <i>f</i>, then the limit <i>f</i> is an integrable function and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{n\to \infty }\int _{S}{f_{n}\,d\mu }=\int _{S}{f\,d\mu }.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msub>
+            <mi>f</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>n</mi>
+            </mrow>
+          </msub>
+          <mspace width="thinmathspace" />
+          <mi>d</mi>
+          <mi>&#x03BC;<!-- μ --></mi>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>f</mi>
+          <mspace width="thinmathspace" />
+          <mi>d</mi>
+          <mi>&#x03BC;<!-- μ --></mi>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{n\to \infty }\int _{S}{f_{n}\,d\mu }=\int _{S}{f\,d\mu }.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/22ecf91c182b35ef6732f5f384a4380d5261cb3e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:23.994ex; height:5.676ex;" alt="\lim_{n\to\infty} \int_S{f_n\,d\mu} = \int_S{f\,d\mu}."/></span></dd></dl>
+<p><b>Remark:</b> The pointwise convergence and uniform boundedness of the sequence can be relaxed to hold only <span class="nowrap">μ-</span><a href="/wiki/Almost_everywhere" title="Almost everywhere">almost everywhere</a>, provided the measure space <span class="nowrap">(<i>S</i>, Σ, μ)</span> is <a href="/wiki/Measure_(mathematics)#Completeness" title="Measure (mathematics)">complete</a> or <i>f</i> is chosen as a measurable function which agrees μ-almost everywhere with the <span class="nowrap">μ-almost</span> everywhere existing pointwise limit.
+</p>
+<h3><span class="mw-headline" id="Proof">Proof</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dominated_convergence_theorem&amp;action=edit&amp;section=5" title="Edit section: Proof">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Since the sequence is uniformly bounded, there is a real number <i>M</i> such that <span class="nowrap">|<i>f<sub>n</sub></i>(<i>x</i>)| ≤ <i>M</i></span> for all <span class="nowrap"><i>x</i> ∈ <i>S</i></span> and for all <i>n</i>. Define <span class="nowrap"><i>g</i>(<i>x</i>) = <i>M</i></span> for all <span class="nowrap"><i>x</i> ∈ <i>S</i></span>. Then the sequence is dominated by <i>g</i>. Furthermore, <i>g</i> is integrable since it is a constant function on a set of finite measure. Therefore, the result follows from the dominated convergence theorem.
+</p><p>If the assumptions hold only <span class="nowrap">μ-almost</span> everywhere, then there exists a <span class="nowrap">μ-null</span> set <span class="nowrap"><i>N</i> ∈ Σ</span> such that the functions <i>f<sub>n</sub></i><b>1</b><sub><i>S</i>\<i>N</i></sub> satisfy the assumptions everywhere on&#160;<i>S</i>.
+</p>
+<h2><span id="Dominated_convergence_in_Lp-spaces_.28corollary.29"></span><span class="mw-headline" id="Dominated_convergence_in_Lp-spaces_(corollary)">Dominated convergence in <i>L</i><sup><i>p</i></sup>-spaces (corollary)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dominated_convergence_theorem&amp;action=edit&amp;section=6" title="Edit section: Dominated convergence in Lp-spaces (corollary)">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (\Omega ,{\mathcal {A}},\mu )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi mathvariant="normal">&#x03A9;<!-- Ω --></mi>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">A</mi>
+          </mrow>
+        </mrow>
+        <mo>,</mo>
+        <mi>&#x03BC;<!-- μ --></mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\Omega ,{\mathcal {A}},\mu )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3cabc7dd1ffb04becc182e5356682ec027db7211" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.86ex; height:2.843ex;" alt="(\Omega,\mathcal{A},\mu)"/></span> be a <a href="/wiki/Measure_space" title="Measure space">measure space</a>, <span class="nowrap"> 1 ≤ <i>p</i> &lt; ∞</span> a real number and {<i>f<sub>n</sub></i>} a sequence of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathcal {A}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">A</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {A}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/280ae03440942ab348c2ca9b8db6b56ffa9618f8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.903ex; height:2.343ex;" alt="{\mathcal {A}}"/></span>-measurable functions <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f_{n}:\Omega \to \mathbb {C} \cup \{\infty \}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>:</mo>
+        <mi mathvariant="normal">&#x03A9;<!-- Ω --></mi>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">C</mi>
+        </mrow>
+        <mo>&#x222A;<!-- ∪ --></mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f_{n}:\Omega \to \mathbb {C} \cup \{\infty \}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4ff8165f4757d61870aff2f9f5ee75ca62d5bed0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.496ex; height:2.843ex;" alt="{\displaystyle f_{n}:\Omega \to \mathbb {C} \cup \{\infty \}}"/></span>.
+</p><p>Assume the sequence {<i>f<sub>n</sub></i>} converges μ-almost everywhere to an <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathcal {A}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">A</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {A}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/280ae03440942ab348c2ca9b8db6b56ffa9618f8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.903ex; height:2.343ex;" alt="{\mathcal {A}}"/></span>-measurable function <i>f</i>, and is dominated by a <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle g\in L^{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <msup>
+          <mi>L</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g\in L^{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b43ae0627fa44f964a0bd352d27222e384d43d14" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.599ex; height:2.676ex;" alt="g \in L^p"/></span> (cf. <a href="/wiki/Lp_space" title="Lp space">Lp space</a>), i.e., for every natural number <i>n</i> we have: |<i>f<sub>n</sub></i>| ≤ <i>g</i>, μ-almost everywhere.
+</p><p>Then all <i>f<sub>n</sub></i> as well as <i>f</i> are in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle L^{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>L</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle L^{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cf2317aaca1ecee4b8ccf667bc1001059eae5850" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.642ex; height:2.343ex;" alt="L^{p}"/></span> and the sequence {<i>f<sub>n</sub></i>} converges to <i>f</i> in <a href="/wiki/Lp-space" class="mw-redirect" title="Lp-space">the sense of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle L^{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>L</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle L^{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cf2317aaca1ecee4b8ccf667bc1001059eae5850" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.642ex; height:2.343ex;" alt="L^{p}"/></span></a>, i.e.:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{n\to \infty }\|f_{n}-f\|_{p}=\lim _{n\to \infty }\left(\int _{\Omega }|f_{n}-f|^{p}\,d\mu \right)^{\frac {1}{p}}=0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>f</mi>
+        <msub>
+          <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <msub>
+                <mo>&#x222B;<!-- ∫ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">&#x03A9;<!-- Ω --></mi>
+                </mrow>
+              </msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <msub>
+                <mi>f</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>f</mi>
+              <msup>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">|</mo>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>p</mi>
+                </mrow>
+              </msup>
+              <mspace width="thinmathspace" />
+              <mi>d</mi>
+              <mi>&#x03BC;<!-- μ --></mi>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>1</mn>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{n\to \infty }\|f_{n}-f\|_{p}=\lim _{n\to \infty }\left(\int _{\Omega }|f_{n}-f|^{p}\,d\mu \right)^{\frac {1}{p}}=0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/31da62731a7f1ffc6b3c381df1a03d8fe9f02691" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:47.28ex; height:7.176ex;" alt="\lim_{n \to \infty}\|f_n-f\|_p =\lim_{n \to \infty}\left(\int_\Omega |f_n-f|^p \,d\mu\right)^{\frac{1}{p}} = 0."/></span></dd></dl>
+<p>Idea of the proof: Apply the original theorem to the function sequence <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle h_{n}=|f_{n}-f|^{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>h</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>f</mi>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle h_{n}=|f_{n}-f|^{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/178c8057998c5416aa9d7dd2ac9f90c8abc4c49f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:14.485ex; height:3.009ex;" alt="h_n = |f_n-f|^p"/></span> with the dominating function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (2g)^{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mi>g</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (2g)^{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ae3090055845141d64db656f5c4579708d618155" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.147ex; height:2.843ex;" alt="(2g)^p"/></span>.
+</p>
+<h2><span class="mw-headline" id="Extensions">Extensions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dominated_convergence_theorem&amp;action=edit&amp;section=7" title="Edit section: Extensions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The dominated convergence theorem applies also to measurable functions with values in a <a href="/wiki/Banach_space" title="Banach space">Banach space</a>, with the dominating function still being non-negative and integrable as above. The assumption of convergence almost everywhere can be weakened to require only <a href="/wiki/Convergence_in_measure" title="Convergence in measure">convergence in measure</a>.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dominated_convergence_theorem&amp;action=edit&amp;section=8" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Convergence_of_random_variables" title="Convergence of random variables">Convergence of random variables</a>, <a href="/wiki/Convergence_in_mean" class="mw-redirect" title="Convergence in mean">Convergence in mean</a></li>
+<li><a href="/wiki/Monotone_convergence_theorem" title="Monotone convergence theorem">Monotone convergence theorem</a> (does not require domination by an integrable function but assumes monotonicity of the sequence instead)</li>
+<li><a href="/wiki/Scheff%C3%A9%E2%80%99s_lemma" class="mw-redirect" title="Scheffé’s lemma">Scheffé’s lemma</a></li>
+<li><a href="/wiki/Uniform_integrability" title="Uniform integrability">Uniform integrability</a></li>
+<li><a href="/wiki/Vitali_convergence_theorem" title="Vitali convergence theorem">Vitali convergence theorem</a> (a generalization of Lebesgue's dominated convergence theorem)</li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dominated_convergence_theorem&amp;action=edit&amp;section=9" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><cite id="CITEREFBartle1995" class="citation book">Bartle, R.G. (1995). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=8oNGAAAAYAAJ"><i>The Elements of Integration and Lebesgue Measure</i></a>. Wiley Interscience.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Elements+of+Integration+and+Lebesgue+Measure&amp;rft.pub=Wiley+Interscience&amp;rft.date=1995&amp;rft.aulast=Bartle&amp;rft.aufirst=R.G.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D8oNGAAAAYAAJ&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADominated+convergence+theorem" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></li>
+<li><cite id="CITEREFRoyden1988" class="citation book">Royden, H.L. (1988). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=J4k_AQAAIAAJ"><i>Real Analysis</i></a>. Prentice Hall.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Real+Analysis&amp;rft.pub=Prentice+Hall&amp;rft.date=1988&amp;rft.aulast=Royden&amp;rft.aufirst=H.L.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DJ4k_AQAAIAAJ&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADominated+convergence+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite class="citation book">Weir, Alan J. (1973). "The Convergence Theorems". <i>Lebesgue Integration and Measure</i>. Cambridge: Cambridge University Press. pp.&#160;93–118. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-521-08728-7" title="Special:BookSources/0-521-08728-7"><bdi>0-521-08728-7</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=The+Convergence+Theorems&amp;rft.btitle=Lebesgue+Integration+and+Measure&amp;rft.place=Cambridge&amp;rft.pages=93-118&amp;rft.pub=Cambridge+University+Press&amp;rft.date=1973&amp;rft.isbn=0-521-08728-7&amp;rft.aulast=Weir&amp;rft.aufirst=Alan+J.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADominated+convergence+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite id="CITEREFWilliams1991" class="citation book"><a href="/wiki/David_Williams_(mathematician)" title="David Williams (mathematician)">Williams, D.</a> (1991). <i>Probability with martingales</i>. Cambridge University Press. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-521-40605-6" title="Special:BookSources/0-521-40605-6"><bdi>0-521-40605-6</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Probability+with+martingales&amp;rft.pub=Cambridge+University+Press&amp;rft.date=1991&amp;rft.isbn=0-521-40605-6&amp;rft.aulast=Williams&amp;rft.aufirst=D.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADominated+convergence+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1270
+Cached time: 20190731160924
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.152 seconds
+Real time usage: 0.234 seconds
+Preprocessor visited node count: 513/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 6475/2097152 bytes
+Template argument size: 454/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 8352/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.066/10.000 seconds
+Lua memory usage: 2.01 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  118.958      1 -total
+ 90.42%  107.561      4 Template:Cite_book
+  5.86%    6.977     29 Template:Nowrap
+  2.06%    2.448      5 Template:=
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:351853-0!canonical!math=5 and timestamp 20190731160924 and revision id 904336373
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Dominated_convergence_theorem&amp;oldid=904336373">https://en.wikipedia.org/w/index.php?title=Dominated_convergence_theorem&amp;oldid=904336373</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Theorems_in_real_analysis" title="Category:Theorems in real analysis">Theorems in real analysis</a></li><li><a href="/wiki/Category:Theorems_in_measure_theory" title="Category:Theorems in measure theory">Theorems in measure theory</a></li><li><a href="/wiki/Category:Probability_theorems" title="Category:Probability theorems">Probability theorems</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_containing_proofs" title="Category:Articles containing proofs">Articles containing proofs</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Dominated+convergence+theorem" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Dominated+convergence+theorem" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Dominated_convergence_theorem" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Dominated_convergence_theorem" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Dominated_convergence_theorem">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Dominated_convergence_theorem&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Dominated_convergence_theorem&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Dominated_convergence_theorem" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Dominated_convergence_theorem" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Dominated_convergence_theorem&amp;oldid=904336373" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Dominated_convergence_theorem&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1067156" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Dominated_convergence_theorem&amp;id=904336373" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Dominated+convergence+theorem">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Dominated+convergence+theorem&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Dominated_convergence_theorem&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Lebesgueova_v%C4%9Bta" title="Lebesgueova věta – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Satz_von_der_majorisierten_Konvergenz" title="Satz von der majorisierten Konvergenz – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Teorema_de_la_convergencia_dominada" title="Teorema de la convergencia dominada – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_convergence_domin%C3%A9e" title="Théorème de convergence dominée – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EC%A7%80%EB%B0%B0_%EC%88%98%EB%A0%B4_%EC%A0%95%EB%A6%AC" title="지배 수렴 정리 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Teorema_della_convergenza_dominata" title="Teorema della convergenza dominata – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%A4%D7%98_%D7%94%D7%94%D7%AA%D7%9B%D7%A0%D7%A1%D7%95%D7%AA_%D7%94%D7%A0%D7%A9%D7%9C%D7%98%D7%AA" title="משפט ההתכנסות הנשלטת – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Gedomineerde_convergentie" title="Gedomineerde convergentie – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E5%84%AA%E5%8F%8E%E6%9D%9F%E5%AE%9A%E7%90%86" title="優収束定理 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Twierdzenie_Lebesgue%E2%80%99a_o_zbie%C5%BCno%C5%9Bci_ograniczonej" title="Twierdzenie Lebesgue’a o zbieżności ograniczonej – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Teorema_da_converg%C3%AAncia_dominada" title="Teorema da convergência dominada – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%9B%D0%B5%D0%B1%D0%B5%D0%B3%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%B6%D0%BE%D1%80%D0%B8%D1%80%D1%83%D0%B5%D0%BC%D0%BE%D0%B9_%D1%81%D1%85%D0%BE%D0%B4%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8" title="Теорема Лебега о мажорируемой сходимости – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sk"><a href="https://sk.wikipedia.org/wiki/Lebesgueova_veta" title="Lebesgueova veta – Slovak" lang="sk" hreflang="sk" class="interlanguage-link-target">Slovenčina</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Dominerade_konvergenssatsen" title="Dominerade konvergenssatsen – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%9B%D0%B5%D0%B1%D0%B5%D0%B3%D0%B0_%D0%BF%D1%80%D0%BE_%D0%BC%D0%B0%D0%B6%D0%BE%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D1%83_%D0%B7%D0%B1%D1%96%D0%B6%D0%BD%D1%96%D1%81%D1%82%D1%8C" title="Теорема Лебега про мажоровану збіжність – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E5%8B%92%E8%B4%9D%E6%A0%BC%E6%8E%A7%E5%88%B6%E6%94%B6%E6%95%9B%E5%AE%9A%E7%90%86" title="勒贝格控制收敛定理 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1067156#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 1 July 2019, at 13:47<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Dominated_convergence_theorem&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.152","walltime":"0.234","ppvisitednodes":{"value":513,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":6475,"limit":2097152},"templateargumentsize":{"value":454,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":8352,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  118.958      1 -total"," 90.42%  107.561      4 Template:Cite_book","  5.86%    6.977     29 Template:Nowrap","  2.06%    2.448      5 Template:="]},"scribunto":{"limitreport-timeusage":{"value":"0.066","limit":"10.000"},"limitreport-memusage":{"value":2105639,"limit":52428800}},"cachereport":{"origin":"mw1270","timestamp":"20190731160924","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Dominated convergence theorem","url":"https:\/\/en.wikipedia.org\/wiki\/Dominated_convergence_theorem","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1067156","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1067156","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2003-10-28T22:51:17Z","dateModified":"2019-07-01T13:47:38Z","headline":"theorem"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":102,"wgHostname":"mw1323"});});</script>
+</body>
+</html>

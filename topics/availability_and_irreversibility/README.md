@@ -1,0 +1,1 @@
+availability_and_irreversibility

@@ -1,0 +1,1 @@
+Stress_distribution_around_mine_openings

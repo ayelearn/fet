@@ -1,0 +1,1 @@
+minimization_of_functions_using_Boolean_identities_and_Karnaugh_map

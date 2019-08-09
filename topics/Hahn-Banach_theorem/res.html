@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Hahn–Banach theorem - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Hahn–Banach_theorem","wgTitle":"Hahn–Banach theorem","wgCurRevisionId":904241416,"wgRevisionId":904241416,"wgArticleId":13860,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Theorems in functional analysis"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Hahn–Banach_theorem","wgRelevantArticleId":13860,"wgRequestId":
+"XUse1gpAAEEAAHb4AOcAAACJ","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Hahn-Banach_theorem","wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!1,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgInternalRedirectTargetUrl":"/wiki/Hahn%E2%80%93Banach_theorem","wgWikibaseItemId":"Q866116","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready",
+"user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","ext.math.scripts","ext.cite.ux-enhancements","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","ext.popups",
+"ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Hahn%E2%80%93Banach_theorem"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Hahn%E2%80%93Banach_theorem&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Hahn%E2%80%93Banach_theorem&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Hahn%E2%80%93Banach_theorem"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Hahn–Banach_theorem rootpage-Hahn–Banach_theorem skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Hahn–Banach theorem</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"><span class="mw-redirectedfrom">&#160;&#160;(Redirected from <a href="/w/index.php?title=Hahn-Banach_theorem&amp;redirect=no" class="mw-redirect" title="Hahn-Banach theorem">Hahn-Banach theorem</a>)</span></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>In <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>, the <b>Hahn–Banach theorem</b> is a central tool in <a href="/wiki/Functional_analysis" title="Functional analysis">functional analysis</a>. It allows the extension of <a href="/wiki/Bounded_operator" title="Bounded operator">bounded linear functionals</a> defined on a subspace of some <a href="/wiki/Vector_space" title="Vector space">vector space</a> to the whole space, and it also shows that there are "enough" <a href="/wiki/Continuous_function_(topology)" class="mw-redirect" title="Continuous function (topology)">continuous</a> linear functionals defined on every <a href="/wiki/Normed_vector_space" title="Normed vector space">normed vector space</a> to make the study of the <a href="/wiki/Dual_space" title="Dual space">dual space</a> "interesting". Another version of the Hahn–Banach theorem is known as the <b>Hahn–Banach separation theorem</b> or the <a href="/wiki/Separating_hyperplane_theorem" class="mw-redirect" title="Separating hyperplane theorem">separating hyperplane theorem</a>, and has numerous uses in <a href="/wiki/Convex_geometry" title="Convex geometry">convex geometry</a>.
+</p><p>The theorem is named for the mathematicians <a href="/wiki/Hans_Hahn_(mathematician)" title="Hans Hahn (mathematician)">Hans Hahn</a> and <a href="/wiki/Stefan_Banach" title="Stefan Banach">Stefan Banach</a>, who proved it independently in the late 1920s. The special case of the theorem for the space <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle C\left[a,b\right]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>C</mi>
+        <mrow>
+          <mo>[</mo>
+          <mrow>
+            <mi>a</mi>
+            <mo>,</mo>
+            <mi>b</mi>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle C\left[a,b\right]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ecdd1fc1f958131f6d465423c98d2358c040b881" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.708ex; height:2.843ex;" alt="{\displaystyle C\left[a,b\right]}"/></span> of continuous functions on an interval was proved earlier (in 1912) by <a href="/wiki/Eduard_Helly" title="Eduard Helly">Eduard Helly</a>,<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> and a more general extension theorem, the <a href="/wiki/M._Riesz_extension_theorem" title="M. Riesz extension theorem">M. Riesz extension theorem</a>, from which the Hahn–Banach theorem can be derived, was proved in 1923 by <a href="/wiki/Marcel_Riesz" title="Marcel Riesz">Marcel Riesz</a>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Formulation"><span class="tocnumber">1</span> <span class="toctext">Formulation</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Important_consequences"><span class="tocnumber">2</span> <span class="toctext">Important consequences</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Hahn–Banach_separation_theorem"><span class="tocnumber">3</span> <span class="toctext">Hahn–Banach separation theorem</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Geometric_Hahn–Banach_theorem"><span class="tocnumber">4</span> <span class="toctext">Geometric Hahn–Banach theorem</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Relation_to_axiom_of_choice"><span class="tocnumber">5</span> <span class="toctext">Relation to axiom of choice</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Consequences"><span class="tocnumber">6</span> <span class="toctext">Consequences</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Topological_vector_spaces"><span class="tocnumber">6.1</span> <span class="toctext">Topological vector spaces</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#The_dual_space_C[a,_b]*"><span class="tocnumber">6.2</span> <span class="toctext">The dual space <span><i>C</i>[<i>a</i>, <i>b</i>]*</span></span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Notes"><span class="tocnumber">8</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Formulation">Formulation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Hahn%E2%80%93Banach_theorem&amp;action=edit&amp;section=1" title="Edit section: Formulation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The most general formulation of the theorem needs some preparation. Given a real <a href="/wiki/Vector_space" title="Vector space">vector space</a> <span class="texhtml mvar" style="font-style:italic;">V</span>, a <a href="/wiki/Function_(mathematics)" title="Function (mathematics)">function</a> <span class="texhtml"><i>f</i>&#160;: <i>V</i> → <b>R</b></span> is called <a href="/wiki/Sublinear_function" title="Sublinear function">sublinear</a> if
+</p>
+<ul><li><b><a href="/wiki/Positive_homogeneity" class="mw-redirect" title="Positive homogeneity">Positive homogeneity</a></b>: <span class="texhtml"><i>f</i>(<i>γx</i>) = <i>γ f</i>(<i>x</i>)</span> for all <span class="texhtml"><i>γ</i> ∈ <b>R</b><sub>+</sub>, <i>x</i> ∈ <i>V</i></span>,</li>
+<li><a href="/wiki/Subadditive_function" class="mw-redirect" title="Subadditive function"><b>Subadditivity:</b></a> <span class="texhtml"><i>f</i>(<i>x</i> + <i>y</i>) ≤ <i>f</i>(<i>x</i>) + <i>f</i>(<i>y</i>)</span> for all <span class="texhtml"><i>x</i>, <i>y</i> ∈ <i>V</i></span>.</li></ul>
+<p>Every <a href="/wiki/Seminorm" class="mw-redirect" title="Seminorm">seminorm</a> on <span class="texhtml mvar" style="font-style:italic;">V</span> (in particular, every <a href="/wiki/Norm_(mathematics)" title="Norm (mathematics)">norm</a> on <span class="texhtml mvar" style="font-style:italic;">V</span>) is sublinear. Other sublinear functions can be useful as well, especially <a href="/wiki/Minkowski_functional" title="Minkowski functional">Minkowski functionals</a> of convex sets.
+</p><p><b>Hahn–Banach theorem (<a href="#CITEREFRudin1991">Rudin 1991</a>, Th. 3.2)</b>. If <span class="texhtml"><i>p</i>&#160;: <i>V</i> → <b>R</b></span> is a sublinear function, and <span class="texhtml"><i>φ</i>&#160;: <i>U</i> → <b>R</b></span> is a <a href="/wiki/Linear_functional" class="mw-redirect" title="Linear functional">linear functional</a> on a <a href="/wiki/Linear_subspace" title="Linear subspace">linear subspace</a> <span class="texhtml"><i>U</i> ⊆ <i>V</i></span> which is dominated by <span class="texhtml mvar" style="font-style:italic;">p</span> on <span class="texhtml mvar" style="font-style:italic;">U</span>, i.e.
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \varphi (x)\leq p(x)\qquad \forall x\in U}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03C6;<!-- φ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mi>p</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="2em" />
+        <mi mathvariant="normal">&#x2200;<!-- ∀ --></mi>
+        <mi>x</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi>U</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi (x)\leq p(x)\qquad \forall x\in U}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0cd41bf823b9e0ff53d78a275891856dc9031930" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:23.957ex; height:2.843ex;" alt="\varphi(x) \leq p(x)\qquad\forall x \in U"/></span></dd></dl>
+<p>then there exists a linear extension <span class="texhtml"><i>ψ</i>&#160;: <i>V</i> → <b>R</b></span> of <span class="texhtml mvar" style="font-style:italic;">φ</span> to the whole space <span class="texhtml mvar" style="font-style:italic;">V</span>, i.e., there exists a linear functional <span class="texhtml mvar" style="font-style:italic;">ψ</span> such that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \psi (x)=\varphi (x)\qquad \forall x\in U,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03C8;<!-- ψ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>&#x03C6;<!-- φ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="2em" />
+        <mi mathvariant="normal">&#x2200;<!-- ∀ --></mi>
+        <mi>x</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi>U</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \psi (x)=\varphi (x)\qquad \forall x\in U,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a18592dcef549d4484c781843b60a0bbacfb458e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:24.947ex; height:2.843ex;" alt="\psi(x)=\varphi(x)\qquad\forall x\in U,"/></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \psi (x)\leq p(x)\qquad \forall x\in V.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03C8;<!-- ψ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mi>p</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="2em" />
+        <mi mathvariant="normal">&#x2200;<!-- ∀ --></mi>
+        <mi>x</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi>V</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \psi (x)\leq p(x)\qquad \forall x\in V.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c828c8c21422104130235a4da3d5234f058b0d54" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:24.601ex; height:2.843ex;" alt="\psi(x) \le p(x)\qquad\forall x\in V."/></span></dd></dl>
+<p><b>Hahn–Banach theorem</b> (<b>alternative version</b>). Set <span class="texhtml"><b>K</b> = <b>R</b></span> or <span class="texhtml"><b>C</b></span> and let <span class="texhtml mvar" style="font-style:italic;">V</span> be a <span class="texhtml"><b>K</b></span>-vector space with a seminorm <span class="texhtml"><i>p</i>&#160;: <i>V</i> → <b>R</b></span>. If <span class="texhtml"><i>φ</i>&#160;: <i>U</i> → <b>K</b></span> is a <span class="texhtml"><b>K</b></span>-linear functional on a <span class="texhtml"><b>K</b></span>-linear subspace <span class="texhtml mvar" style="font-style:italic;">U</span> of <span class="texhtml mvar" style="font-style:italic;">V</span> which is dominated by <span class="texhtml mvar" style="font-style:italic;">p</span> on <span class="texhtml mvar" style="font-style:italic;">U</span> in absolute value,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |\varphi (x)|\leq p(x)\qquad \forall x\in U}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>&#x03C6;<!-- φ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mi>p</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="2em" />
+        <mi mathvariant="normal">&#x2200;<!-- ∀ --></mi>
+        <mi>x</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi>U</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |\varphi (x)|\leq p(x)\qquad \forall x\in U}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/16eac186007fdfbbffec8f8ead86a4343c387a16" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:25.25ex; height:2.843ex;" alt="|\varphi(x)|\leq p(x)\qquad\forall x \in U"/></span></dd></dl>
+<p>then there exists a linear extension <span class="texhtml"><i>ψ</i>&#160;: <i>V</i> → <b>K</b></span> of <span class="texhtml mvar" style="font-style:italic;">φ</span> to the whole space <span class="texhtml mvar" style="font-style:italic;">V</span>, i.e., there exists a <span class="texhtml"><b>K</b></span>-linear functional <span class="texhtml mvar" style="font-style:italic;">ψ</span> such that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \psi (x)=\varphi (x)\qquad \forall x\in U,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03C8;<!-- ψ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>&#x03C6;<!-- φ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="2em" />
+        <mi mathvariant="normal">&#x2200;<!-- ∀ --></mi>
+        <mi>x</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi>U</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \psi (x)=\varphi (x)\qquad \forall x\in U,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a18592dcef549d4484c781843b60a0bbacfb458e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:24.947ex; height:2.843ex;" alt="\psi(x)=\varphi(x)\qquad\forall x\in U,"/></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |\psi (x)|\leq p(x)\qquad \forall x\in V.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>&#x03C8;<!-- ψ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mi>p</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="2em" />
+        <mi mathvariant="normal">&#x2200;<!-- ∀ --></mi>
+        <mi>x</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi>V</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |\psi (x)|\leq p(x)\qquad \forall x\in V.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f89989f9670c1df26d6cabdafec737134724d961" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:25.895ex; height:2.843ex;" alt="|\psi(x)| \le p(x)\qquad\forall x\in V."/></span></dd></dl>
+<p>In the complex case of the alternate version, the <span class="texhtml"><b>C</b></span>-linearity assumptions demand, in addition to the assumptions for the real case, that for every vector <span class="texhtml"><i>x</i> ∈ <i>U</i></span>,  we have <span class="texhtml">i<i>x</i> ∈ <i>U</i></span> and <span class="texhtml"><i>φ</i>(i<i>x</i>) = i<i>φ</i>(<i>x</i>)</span>.
+</p><p>The extension <span class="texhtml mvar" style="font-style:italic;">ψ</span> is in general not uniquely specified by <span class="texhtml mvar" style="font-style:italic;">φ</span> and the proof gives no explicit method as to how to find <span class="texhtml mvar" style="font-style:italic;">ψ</span>. The usual proof for the case of an infinite dimensional space <span class="texhtml mvar" style="font-style:italic;">V</span> uses <a href="/wiki/Zorn%27s_lemma" title="Zorn&#39;s lemma">Zorn's lemma</a> or, equivalently, the <a href="/wiki/Axiom_of_choice" title="Axiom of choice">axiom of choice</a>. It is now known (see below) that the <a href="/wiki/Ultrafilter_lemma" class="mw-redirect" title="Ultrafilter lemma">ultrafilter lemma</a>, which is slightly weaker than the axiom of choice, is actually strong enough.
+</p><p>It is possible to relax slightly the subadditivity condition on <span class="texhtml mvar" style="font-style:italic;">p</span>, requiring only that (Reed and Simon, 1980):
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle p(ax+by)\leq |a|\,p(x)+|b|\,p(y),\qquad x,y\in V,\quad |a|+|b|\leq 1.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>b</mi>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>a</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>p</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>b</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>p</mi>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mspace width="2em" />
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi>V</mi>
+        <mo>,</mo>
+        <mspace width="1em" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>a</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>b</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mn>1.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p(ax+by)\leq |a|\,p(x)+|b|\,p(y),\qquad x,y\in V,\quad |a|+|b|\leq 1.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/19df8cc5ad5c71429e41277025354b02481b0fa1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:60.337ex; height:2.843ex;" alt="p(ax+by)\leq|a| \, p(x) + |b| \, p(y),\qquad x,y\in V,\quad |a|+|b|\leq1."/></span></dd></dl>
+<p>It is further possible to relax the positive homogeneity and the subadditivity conditions on <span class="texhtml mvar" style="font-style:italic;">p</span>, requiring only that <span class="texhtml mvar" style="font-style:italic;">p</span> is convex (Schechter, 1996).
+</p><p>This reveals the intimate connection between the Hahn–Banach theorem and <a href="/wiki/Convex_function" title="Convex function">convexity</a>.
+</p><p>The <a href="/wiki/Mizar_system" title="Mizar system">Mizar project</a> has completely formalized and automatically checked the proof of the Hahn–Banach theorem in the HAHNBAN file.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Important_consequences">Important consequences</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Hahn%E2%80%93Banach_theorem&amp;action=edit&amp;section=2" title="Edit section: Important consequences">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The theorem has several important consequences, some of which are also sometimes called "Hahn–Banach theorem":
+</p>
+<ul><li>If <span class="texhtml mvar" style="font-style:italic;">V</span> is a normed vector space with linear subspace <span class="texhtml mvar" style="font-style:italic;">U</span> (not necessarily closed) and if <span class="texhtml"><i>φ</i>&#160;: <i>U</i> → <b>K</b></span> is continuous and linear, then there exists an extension <span class="texhtml"><i>ψ</i>&#160;: <i>V</i> → <b>K</b></span> of <span class="texhtml mvar" style="font-style:italic;">φ</span> which is also continuous and linear and which has the same norm as <span class="texhtml mvar" style="font-style:italic;">φ</span> (see <a href="/wiki/Banach_space" title="Banach space">Banach space</a> for a discussion of the norm of a linear map). In other words, in the category of normed vector spaces, the space <span class="texhtml"><b>K</b></span> is an <a href="/wiki/Injective_object" title="Injective object">injective object</a>.</li>
+<li>If <span class="texhtml mvar" style="font-style:italic;">V</span> is a normed vector space with linear subspace <span class="texhtml mvar" style="font-style:italic;">U</span> (not necessarily closed) and if <span class="texhtml mvar" style="font-style:italic;">z</span> is an element of <span class="texhtml mvar" style="font-style:italic;">V</span> not in the <a href="/wiki/Closure_(topology)" title="Closure (topology)">closure</a> of <span class="texhtml mvar" style="font-style:italic;">U</span>, then there exists a continuous linear map <span class="texhtml"><i>ψ</i>&#160;: <i>V</i> → <b>K</b></span> with <span class="texhtml"><i>ψ</i>(<i>x</i>) = 0</span> for all <span class="texhtml mvar" style="font-style:italic;">x</span> in <span class="texhtml mvar" style="font-style:italic;">U</span>, <span class="texhtml"><i>ψ</i>(<i>z</i>) = 1</span>, and <span class="texhtml">||<i>ψ</i>|| = dist(<i>z</i>, <i>U</i>)<sup>−1</sup></span>.</li>
+<li>In particular, if <span class="texhtml mvar" style="font-style:italic;">V</span> is a normed vector space and <span class="texhtml mvar" style="font-style:italic;">z</span> is an element of <span class="texhtml mvar" style="font-style:italic;">V</span>, then there exists a continuous linear map <span class="texhtml"><i>ψ</i>&#160;: <i>V</i> → <b>K</b></span> such that <span class="texhtml"><i>ψ</i>(<i>z</i>) = ||<i>z</i>||</span> and <span class="texhtml">||<i>ψ</i>|| ≤ 1</span>.  This implies that the <a href="/wiki/Reflexive_space#Normed_spaces" title="Reflexive space">natural injection</a> <span class="texhtml mvar" style="font-style:italic;">J</span> from a normed space <span class="texhtml mvar" style="font-style:italic;">V</span> into its  <a href="/wiki/Reflexive_space#Normed_spaces" title="Reflexive space">double dual</a> <span class="texhtml"><i>V′′</i></span> is isometric.</li></ul>
+<h2><span id="Hahn.E2.80.93Banach_separation_theorem"></span><span class="mw-headline" id="Hahn–Banach_separation_theorem">Hahn–Banach separation theorem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Hahn%E2%80%93Banach_theorem&amp;action=edit&amp;section=3" title="Edit section: Hahn–Banach separation theorem">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Hyperplane_separation_theorem" title="Hyperplane separation theorem">Hyperplane separation theorem</a></div>
+<p>Another version of Hahn–Banach theorem is known as the <b>Hahn–Banach separation theorem</b>.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> It has numerous uses in <a href="/wiki/Convex_geometry" title="Convex geometry">convex geometry</a>,<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> <a href="/wiki/Optimization_(mathematics)" class="mw-redirect" title="Optimization (mathematics)">optimization theory</a>, and <a href="/wiki/Mathematical_economics#Functional_analysis" title="Mathematical economics">economics</a>. The separation theorem is derived from the original form of the theorem.
+</p><p><b>Theorem.</b> Set <span class="texhtml"><b>K</b> = <b>R</b></span> or <span class="texhtml"><b>C</b></span> and let <span class="texhtml mvar" style="font-style:italic;">V</span> be a <a href="/wiki/Topological_vector_space" title="Topological vector space">topological vector space</a> over <span class="texhtml"><b>K</b></span>. If <span class="texhtml"><i>A</i>, <i>B</i></span> are convex, non-empty disjoint subsets of <span class="texhtml mvar" style="font-style:italic;">V</span>, then:
+</p>
+<ul><li>If <span class="texhtml mvar" style="font-style:italic;">A</span> is open, then there exists a continuous linear map <span class="texhtml"><i>λ</i>&#160;: <i>V</i> → <b>K</b></span> and <span class="texhtml"><i>t</i> ∈ <b>R</b></span> such that <span class="texhtml">Re(<i>λ</i>(<i>a</i>)) &lt; <i>t</i> ≤ Re(<i>λ</i>(<i>b</i>))</span> for all <span class="texhtml"><i>a</i> ∈ <i>A</i>, <i>b</i> ∈ <i>B</i></span>.</li>
+<li>If <span class="texhtml mvar" style="font-style:italic;">V</span> is locally convex, <span class="texhtml mvar" style="font-style:italic;">A</span> is compact, and <span class="texhtml mvar" style="font-style:italic;">B</span> closed, then there exists a continuous linear map <span class="texhtml"><i>λ</i>&#160;: <i>V</i> → <b>K</b></span> and <span class="texhtml"><i>s</i>, <i>t</i> ∈ <b>R</b></span> such that <span class="texhtml">Re(<i>λ</i>(<i>a</i>)) &lt; <i>t</i> &lt; <i>s</i> &lt; Re(<i>λ</i>(<i>b</i>))</span> for all <span class="texhtml"><i>a</i> ∈ <i>A</i>, <i>b</i> ∈ <i>B</i></span>.</li></ul>
+<h2><span id="Geometric_Hahn.E2.80.93Banach_theorem"></span><span class="mw-headline" id="Geometric_Hahn–Banach_theorem">Geometric Hahn–Banach theorem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Hahn%E2%80%93Banach_theorem&amp;action=edit&amp;section=4" title="Edit section: Geometric Hahn–Banach theorem">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>One form of Hahn–Banach theorem is known as the <b>Geometric Hahn–Banach theorem</b>, or <b>Mazur's theorem</b>.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup>
+</p><p><b>Theorem.</b> Let <span class="texhtml mvar" style="font-style:italic;">K</span> be a convex set having a nonempty interior in a real normed linear vector space <span class="texhtml mvar" style="font-style:italic;">X</span>. Suppose <span class="texhtml mvar" style="font-style:italic;">V</span> is a linear variety in <span class="texhtml mvar" style="font-style:italic;">X</span> containing no interior points of <span class="texhtml mvar" style="font-style:italic;">K</span>. Then there is a closed hyperplane in <span class="texhtml mvar" style="font-style:italic;">X</span> containing <span class="texhtml mvar" style="font-style:italic;">V</span> but containing no interior points of <span class="texhtml mvar" style="font-style:italic;">K</span>; i.e., there is an element <span class="texhtml"><i>x</i>* ∈ <i>X</i>*</span> and a constant <span class="texhtml mvar" style="font-style:italic;">c</span> such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \langle v,x^{*}\rangle =c}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">&#x27E8;<!-- ⟨ --></mo>
+        <mi>v</mi>
+        <mo>,</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2217;<!-- ∗ --></mo>
+          </mrow>
+        </msup>
+        <mo fence="false" stretchy="false">&#x27E9;<!-- ⟩ --></mo>
+        <mo>=</mo>
+        <mi>c</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \langle v,x^{*}\rangle =c}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b5e899f08eb2e2e874e23f750db0bb60c94f7955" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.46ex; height:2.843ex;" alt="{\displaystyle \langle v,x^{*}\rangle =c}"/></span> for all <span class="texhtml"><i>v</i> ∈ <i>V</i></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \langle v,x^{*}\rangle &lt;c}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">&#x27E8;<!-- ⟨ --></mo>
+        <mi>v</mi>
+        <mo>,</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2217;<!-- ∗ --></mo>
+          </mrow>
+        </msup>
+        <mo fence="false" stretchy="false">&#x27E9;<!-- ⟩ --></mo>
+        <mo>&lt;</mo>
+        <mi>c</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \langle v,x^{*}\rangle &lt;c}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/99d6b76a66c2d653eafaa6d98a55baaa79130c09" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.46ex; height:2.843ex;" alt="{\displaystyle \langle v,x^{*}\rangle &lt;c}"/></span> for all <span class="texhtml"><i>k</i> ∈ <b>int</b>(<i>K</i>)</span>.
+</p><p>This can be generalized to an arbitrary topological vector space, which need not be locally convex or even Hausdorff, as:<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
+</p><p><b>Theorem.</b> Let <span class="texhtml mvar" style="font-style:italic;">M</span> be a vector subspace of the topological vector space <span class="texhtml mvar" style="font-style:italic;">X</span>. Suppose <span class="texhtml mvar" style="font-style:italic;">K</span> is a non-empty convex open subset of <span class="texhtml mvar" style="font-style:italic;">X</span> with <span class="texhtml"><i>K</i> ∩ <i>M</i> = ∅</span>. Then there is a closed hyperplane <span class="texhtml mvar" style="font-style:italic;">N</span> in <span class="texhtml mvar" style="font-style:italic;">X</span> containing <span class="texhtml mvar" style="font-style:italic;">M</span> with <span class="texhtml"><i>K</i> ∩ <i>N</i> = ∅</span>.
+</p>
+<h2><span class="mw-headline" id="Relation_to_axiom_of_choice">Relation to axiom of choice</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Hahn%E2%80%93Banach_theorem&amp;action=edit&amp;section=5" title="Edit section: Relation to axiom of choice">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>As mentioned earlier, the <a href="/wiki/Axiom_of_choice" title="Axiom of choice">axiom of choice</a> implies the Hahn–Banach theorem. The converse is not true. One way to see that is by noting that the <a href="/wiki/Ultrafilter_lemma" class="mw-redirect" title="Ultrafilter lemma">ultrafilter lemma</a> (or equivalently, the Boolean prime ideal theorem), which is strictly weaker than the axiom of choice, can be used to show the Hahn–Banach theorem, although the converse is not the case.
+</p><p>The Hahn–Banach theorem is equivalent to the following:<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup>
+</p>
+<dl><dd>(∗): On every Boolean algebra <span class="texhtml mvar" style="font-style:italic;">B</span> there exists a "probability charge", that is: a nonconstant finitely additive map from <span class="texhtml mvar" style="font-style:italic;">B</span> into <span class="texhtml">[0, 1]</span>.</dd></dl>
+<p>(The Boolean prime ideal theorem is easily seen to be equivalent to the statement that there are always probability charges which take only the values 0 and 1.)
+</p><p>In <a href="/wiki/Zermelo%E2%80%93Fraenkel_set_theory" title="Zermelo–Fraenkel set theory">ZF</a>, one can show that the Hahn–Banach theorem is enough to derive the existence of a non-Lebesgue measurable set.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup> Moreover, the Hahn–Banach theorem implies the <a href="/wiki/Banach%E2%80%93Tarski_paradox" title="Banach–Tarski paradox">Banach–Tarski paradox</a>.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup>
+</p><p>For <a href="/wiki/Separable_space" title="Separable space">separable</a> <a href="/wiki/Banach_space" title="Banach space">Banach spaces</a>, D. K. Brown and S. G. Simpson proved that the Hahn–Banach theorem follows from WKL<sub>0</sub>, a weak subsystem of <a href="/wiki/Second-order_arithmetic" title="Second-order arithmetic">second-order arithmetic</a> that takes a form of <a href="/wiki/K%C5%91nig%27s_lemma" title="Kőnig&#39;s lemma">Kőnig's lemma</a> restricted to binary trees as an axiom. In fact, they prove that under a weak set of assumptions, the two are equivalent, an example of <a href="/wiki/Reverse_mathematics" title="Reverse mathematics">reverse mathematics</a>.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup><sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Consequences">Consequences</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Hahn%E2%80%93Banach_theorem&amp;action=edit&amp;section=6" title="Edit section: Consequences">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Topological_vector_spaces">Topological vector spaces</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Hahn%E2%80%93Banach_theorem&amp;action=edit&amp;section=7" title="Edit section: Topological vector spaces">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>If <span class="texhtml mvar" style="font-style:italic;">X</span> is a topological vector space, not necessarily Hausdorff or <a href="/wiki/Locally_convex_topological_vector_space" title="Locally convex topological vector space">locally convex</a>, then there exists a non-zero continuous linear form if and only if <span class="texhtml mvar" style="font-style:italic;">X</span> contains a nonempty, proper, convex, open set <span class="texhtml mvar" style="font-style:italic;">U</span>.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup> So if the continuous dual space of <span class="texhtml"><i>X</i>, <i>X</i>*</span>, is non-trivial then by considering <span class="texhtml mvar" style="font-style:italic;">X</span> with the weak topology induced by <span class="texhtml"><i>X</i>*, <i>X</i></span> becomes a locally convex topological vector space with a non-trivial topology that is weaker than original topology on <span class="texhtml mvar" style="font-style:italic;">X</span>. If in addition, <span class="texhtml"><i>X</i>*</span> separates points on <span class="texhtml mvar" style="font-style:italic;">X</span> (which means that for each <span class="texhtml"><i>x</i> ∈ <i>X</i></span> there is a linear functional in <span class="texhtml"><i>X</i>*</span> that's non-zero on <span class="texhtml mvar" style="font-style:italic;">x</span>) then <span class="texhtml mvar" style="font-style:italic;">X</span> with this weak topology becomes Hausdorff. This sometimes allows some results from locally convex topological vector spaces to be applied to non-Hausdorff and non-locally convex spaces.
+</p>
+<h3><span id="The_dual_space_C.5Ba.2C_b.5D.2A"></span><span class="mw-headline" id="The_dual_space_C[a,_b]*">The dual space <span class="texhtml"><i>C</i>[<i>a</i>, <i>b</i>]*</span></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Hahn%E2%80%93Banach_theorem&amp;action=edit&amp;section=8" title="Edit section: The dual space C[a, b]*">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>We have the following consequence of the Hahn–Banach theorem.
+</p><p><b>Proposition</b>. Let <span class="texhtml">−∞ &lt; <i>a</i> &lt; <i>b</i> &lt; ∞</span>. Then, <span class="texhtml"><i>F</i> ∈ <i>C</i>[<i>a</i>, <i>b</i>]*</span> if and only if there exists a (complex) measure <span class="texhtml"><i>ρ</i>&#160;: [<i>a</i>, <i>b</i>] → <b>R</b></span> of bounded variation such that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle F(u)=\int _{a}^{b}u(x)d\rho (x),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>F</mi>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>a</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>b</mi>
+          </mrow>
+        </msubsup>
+        <mi>u</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mi>d</mi>
+        <mi>&#x03C1;<!-- ρ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F(u)=\int _{a}^{b}u(x)d\rho (x),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e94fd03c9c7ad41aa4414a0f6c43aa28e4e3f855" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:22.439ex; height:6.343ex;" alt="F(u)=\int^b_a u(x)d\rho(x),"/></span></dd></dl>
+<p>for all <span class="texhtml"><i>u</i> ∈ <i>C</i>[<i>a</i>, <i>b</i>]</span>. In addition, <span class="texhtml">|<i>F</i>| = <i>V</i>(<i>ρ</i>)</span>, where <span class="texhtml"><i>V</i>(<i>ρ</i>)</span> denotes the total variation of <span class="texhtml mvar" style="font-style:italic;">ρ</span>.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Hahn%E2%80%93Banach_theorem&amp;action=edit&amp;section=9" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Fichera%27s_existence_principle" title="Fichera&#39;s existence principle">Fichera's existence principle</a></li>
+<li><a href="/wiki/M._Riesz_extension_theorem" title="M. Riesz extension theorem">M. Riesz extension theorem</a></li>
+<li><a href="/wiki/Separating_axis_theorem" class="mw-redirect" title="Separating axis theorem">Separating axis theorem</a></li>
+<li><a href="/wiki/Farkas%27_lemma" title="Farkas&#39; lemma">Farkas' lemma</a></li></ul>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Hahn%E2%80%93Banach_theorem&amp;action=edit&amp;section=10" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation"><a href="/wiki/John_J._O%27Connor_(mathematician)" class="mw-redirect" title="John J. O&#39;Connor (mathematician)">O'Connor, John J.</a>; <a href="/wiki/Edmund_F._Robertson" title="Edmund F. Robertson">Robertson, Edmund F.</a>, <a rel="nofollow" class="external text" href="http://www-history.mcs.st-andrews.ac.uk/Biographies/Helly.html">"Hahn–Banach theorem"</a>, <i><a href="/wiki/MacTutor_History_of_Mathematics_archive" title="MacTutor History of Mathematics archive">MacTutor History of Mathematics archive</a></i>, <a href="/wiki/University_of_St_Andrews" title="University of St Andrews">University of St Andrews</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Hahn%E2%80%93Banach+theorem&amp;rft.btitle=MacTutor+History+of+Mathematics+archive&amp;rft.pub=University+of+St+Andrews&amp;rft.aulast=O%27Connor&amp;rft.aufirst=John+J.&amp;rft.au=Robertson%2C+Edmund+F.&amp;rft_id=http%3A%2F%2Fwww-history.mcs.st-andrews.ac.uk%2FBiographies%2FHelly.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHahn%E2%80%93Banach+theorem" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style>.</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">See <a href="/wiki/M._Riesz_extension_theorem" title="M. Riesz extension theorem">M. Riesz extension theorem</a>. According to <cite id="CITEREFGȧrding1970" class="citation journal"><a href="/wiki/Lars_G%C3%A5rding" title="Lars Gårding">Gȧrding, L.</a> (1970). "Marcel Riesz in memoriam". <i>Acta Math</i>. <b>124</b> (1): I–XI. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1007%2Fbf02394565">10.1007/bf02394565</a>. <a href="/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a>&#160;<a rel="nofollow" class="external text" href="//www.ams.org/mathscinet-getitem?mr=0256837">0256837</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Acta+Math.&amp;rft.atitle=Marcel+Riesz+in+memoriam&amp;rft.volume=124&amp;rft.issue=1&amp;rft.pages=I-XI&amp;rft.date=1970&amp;rft_id=info%3Adoi%2F10.1007%2Fbf02394565&amp;rft_id=%2F%2Fwww.ams.org%2Fmathscinet-getitem%3Fmr%3D0256837&amp;rft.aulast=G%C8%A7rding&amp;rft.aufirst=L.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHahn%E2%80%93Banach+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/>, the argument was known to Riesz already in 1918.</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://mizar.uwb.edu.pl/JFM/Vol5/hahnban.html">HAHNBAN file</a></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text">Gabriel Nagy, <a rel="nofollow" class="external text" href="http://www.math.ksu.edu/~nagy/real-an/ap-e-h-b.pdf">Real Analysis</a> <a rel="nofollow" class="external text" href="http://www.math.ksu.edu/~nagy/real-an/">lecture notes</a></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite id="CITEREFHarveyLawson1983" class="citation journal">Harvey, R.; Lawson, H. B. (1983). "An intrinsic characterisation of Kähler manifolds". <i><a href="/wiki/Inventiones_Mathematicae" title="Inventiones Mathematicae">Invent. Math.</a></i> <b>74</b> (2): 169–198. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1007%2FBF01394312">10.1007/BF01394312</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Invent.+Math.&amp;rft.atitle=An+intrinsic+characterisation+of+K%C3%A4hler+manifolds&amp;rft.volume=74&amp;rft.issue=2&amp;rft.pages=169-198&amp;rft.date=1983&amp;rft_id=info%3Adoi%2F10.1007%2FBF01394312&amp;rft.aulast=Harvey&amp;rft.aufirst=R.&amp;rft.au=Lawson%2C+H.+B.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHahn%E2%80%93Banach+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation book"><a href="/wiki/David_Luenberger" title="David Luenberger">Luenberger, David G.</a> (1969). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=lZU0CAH4RccC&amp;pg=PA131"><i>Optimization by Vector Space Methods</i></a>. New York: John Wiley &amp; Sons. pp.&#160;131–134. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-471-18117-0" title="Special:BookSources/978-0-471-18117-0"><bdi>978-0-471-18117-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Optimization+by+Vector+Space+Methods&amp;rft.place=New+York&amp;rft.pages=131-134&amp;rft.pub=John+Wiley+%26+Sons&amp;rft.date=1969&amp;rft.isbn=978-0-471-18117-0&amp;rft.aulast=Luenberger&amp;rft.aufirst=David+G.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DlZU0CAH4RccC%26pg%3DPA131&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHahn%E2%80%93Banach+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text">Treves, p. 184</span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation book">Schechter, Eric. <i>Handbook of Analysis and its Foundations</i>. p.&#160;620.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Handbook+of+Analysis+and+its+Foundations&amp;rft.pages=620&amp;rft.aulast=Schechter&amp;rft.aufirst=Eric&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHahn%E2%80%93Banach+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite id="CITEREFForemanWehrung1991" class="citation journal">Foreman, M.; Wehrung, F. (1991). <a rel="nofollow" class="external text" href="http://matwbn.icm.edu.pl/ksiazki/fm/fm138/fm13812.pdf">"The Hahn–Banach theorem implies the existence of a non-Lebesgue measurable set"</a> <span class="cs1-format">(PDF)</span>. <i>Fundamenta Mathematicae</i>. <b>138</b>: 13–19.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Fundamenta+Mathematicae&amp;rft.atitle=The+Hahn%E2%80%93Banach+theorem+implies+the+existence+of+a+non-Lebesgue+measurable+set&amp;rft.volume=138&amp;rft.pages=13-19&amp;rft.date=1991&amp;rft.aulast=Foreman&amp;rft.aufirst=M.&amp;rft.au=Wehrung%2C+F.&amp;rft_id=http%3A%2F%2Fmatwbn.icm.edu.pl%2Fksiazki%2Ffm%2Ffm138%2Ffm13812.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHahn%E2%80%93Banach+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation journal">Pawlikowski, Janusz (1991). "The Hahn-Banach theorem implies the Banach-Tarski paradox". <i>Fundamenta Mathematicae</i>. <b>138</b>: 21–22.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Fundamenta+Mathematicae&amp;rft.atitle=The+Hahn-Banach+theorem+implies+the+Banach-Tarski+paradox&amp;rft.volume=138&amp;rft.pages=21-22&amp;rft.date=1991&amp;rft.aulast=Pawlikowski&amp;rft.aufirst=Janusz&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHahn%E2%80%93Banach+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite id="CITEREFBrownSimpson1986" class="citation journal">Brown, D. K.; Simpson, S. G. (1986). "Which set existence axioms are needed to prove the separable Hahn–Banach theorem?". <i>Annals of Pure and Applied Logic</i>. <b>31</b>: 123–144. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1016%2F0168-0072%2886%2990066-7">10.1016/0168-0072(86)90066-7</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Annals+of+Pure+and+Applied+Logic&amp;rft.atitle=Which+set+existence+axioms+are+needed+to+prove+the+separable+Hahn%E2%80%93Banach+theorem%3F&amp;rft.volume=31&amp;rft.pages=123-144&amp;rft.date=1986&amp;rft_id=info%3Adoi%2F10.1016%2F0168-0072%2886%2990066-7&amp;rft.aulast=Brown&amp;rft.aufirst=D.+K.&amp;rft.au=Simpson%2C+S.+G.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHahn%E2%80%93Banach+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/> <a rel="nofollow" class="external text" href="http://www.math.psu.edu/simpson/papers/hilbert/node7.html#3">Source of citation</a>.</span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text">Simpson, Stephen G. (2009), Subsystems of second order arithmetic, Perspectives in Logic (2nd ed.), Cambridge University Press, <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-521-88439-6" title="Special:BookSources/978-0-521-88439-6">978-0-521-88439-6</a>, <a href="/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a rel="nofollow" class="external text" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2517689">2517689</a></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text">Schaefer 1999, p. 47</span>
+</li>
+</ol></div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Hahn%E2%80%93Banach_theorem&amp;action=edit&amp;section=11" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><cite id="CITEREFHazewinkel2001" class="citation"><a href="/wiki/Michiel_Hazewinkel" title="Michiel Hazewinkel">Hazewinkel, Michiel</a>, ed. (2001) [1994], <a rel="nofollow" class="external text" href="https://www.encyclopediaofmath.org/index.php?title=p/h046130">"Hahn-Banach theorem"</a>, <i><a href="/wiki/Encyclopedia_of_Mathematics" title="Encyclopedia of Mathematics">Encyclopedia of Mathematics</a></i>, Springer Science+Business Media B.V. / Kluwer Academic Publishers, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-55608-010-4" title="Special:BookSources/978-1-55608-010-4"><bdi>978-1-55608-010-4</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Hahn-Banach+theorem&amp;rft.btitle=Encyclopedia+of+Mathematics&amp;rft.pub=Springer+Science%2BBusiness+Media+B.V.+%2F+Kluwer+Academic+Publishers&amp;rft.date=2001&amp;rft.isbn=978-1-55608-010-4&amp;rft_id=https%3A%2F%2Fwww.encyclopediaofmath.org%2Findex.php%3Ftitle%3Dp%2Fh046130&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHahn%E2%80%93Banach+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite class="citation journal">Narici, Lawrence; Beckenstein, Edward (1997). <a rel="nofollow" class="external text" href="http://at.yorku.ca/p/a/a/a/16.htm">"The Hahn–Banach Theorem: The Life and Times"</a>. <i>Topology and its Applications</i>. <b>77</b> (2): 193–211. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1016%2Fs0166-8641%2896%2900142-3">10.1016/s0166-8641(96)00142-3</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Topology+and+its+Applications&amp;rft.atitle=The+Hahn%E2%80%93Banach+Theorem%3A+The+Life+and+Times&amp;rft.volume=77&amp;rft.issue=2&amp;rft.pages=193-211&amp;rft.date=1997&amp;rft_id=info%3Adoi%2F10.1016%2Fs0166-8641%2896%2900142-3&amp;rft.aulast=Narici&amp;rft.aufirst=Lawrence&amp;rft.au=Beckenstein%2C+Edward&amp;rft_id=http%3A%2F%2Fat.yorku.ca%2Fp%2Fa%2Fa%2Fa%2F16.htm&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHahn%E2%80%93Banach+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li><cite class="citation journal">Schmitt, Lothar M (1992). <a rel="nofollow" class="external text" href="http://www.math.uh.edu/~hjm/vol18-3.html">"An Equivariant Version of the Hahn-Banach Theorem"</a>. <i>Houston J. Of Math</i>. <b>18</b>: 429–447.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Houston+J.+Of+Math.&amp;rft.atitle=An+Equivariant+Version+of+the+Hahn-Banach+Theorem&amp;rft.volume=18&amp;rft.pages=429-447&amp;rft.date=1992&amp;rft.aulast=Schmitt&amp;rft.aufirst=Lothar+M&amp;rft_id=http%3A%2F%2Fwww.math.uh.edu%2F~hjm%2Fvol18-3.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHahn%E2%80%93Banach+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li>Michael Reed and Barry Simon, <i>Methods of Modern Mathematical Physics, Vol. 1, Functional Analysis,</i> Section III.3. Academic Press, San Diego, 1980. <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-12-585050-6" title="Special:BookSources/0-12-585050-6">0-12-585050-6</a>.</li>
+<li>Eric Schechter, <i>Handbook of Analysis and Its Foundations</i>, Chapter 12,  Academic Press, 1996. <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-12-622760-8" title="Special:BookSources/0-12-622760-8">0-12-622760-8</a>.</li>
+<li><cite id="CITEREFRudin1991" class="citation book"><a href="/wiki/Walter_Rudin" title="Walter Rudin">Rudin, Walter</a> (1991). <i>Functional analysis</i>. McGraw-Hill Science/Engineering/Math. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-07-054236-5" title="Special:BookSources/978-0-07-054236-5"><bdi>978-0-07-054236-5</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Functional+analysis&amp;rft.pub=McGraw-Hill+Science%2FEngineering%2FMath&amp;rft.date=1991&amp;rft.isbn=978-0-07-054236-5&amp;rft.aulast=Rudin&amp;rft.aufirst=Walter&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHahn%E2%80%93Banach+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li>Terence Tao, <a rel="nofollow" class="external text" href="http://terrytao.wordpress.com/2007/11/30/the-hahn-banach-theorem-mengers-theorem-and-hellys-theorem">The Hahn–Banach theorem, Menger’s theorem, and Helly’s theorem</a></li>
+<li><cite class="citation book">Trèves, François (1995). <i>Topological Vector Spaces, Distributions and Kernels</i>. <a href="/wiki/Dover_Publications" title="Dover Publications">Dover Publications</a>. pp.&#160;136–149, 195–201, 240–252, 335–390, 420–433. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9780486453521" title="Special:BookSources/9780486453521"><bdi>9780486453521</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Topological+Vector+Spaces%2C+Distributions+and+Kernels&amp;rft.pages=136-149%2C+195-201%2C+240-252%2C+335-390%2C+420-433&amp;rft.pub=Dover+Publications&amp;rft.date=1995&amp;rft.isbn=9780486453521&amp;rft.aulast=Tr%C3%A8ves&amp;rft.aufirst=Fran%C3%A7ois&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHahn%E2%80%93Banach+theorem" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></li>
+<li>Gerd Wittstock, Ein operatorwertiger Hahn-Banach Satz, <a rel="nofollow" class="external text" href="http://www.sciencedirect.com/science/article/pii/0022123681900641">J. of Functional Analysis 40 (1981), 127–150</a></li>
+<li>Eberhard Zeidler, <i>Applied Functional Analysis: main principles and their applications</i>, Springer, 1995.</li></ul>
+<div role="navigation" class="navbox" aria-labelledby="Functional_analysis_(topics)" style="padding:3px"><table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="/wiki/Template:Functional_analysis" title="Template:Functional analysis"><abbr title="View this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Functional_analysis" title="Template talk:Functional analysis"><abbr title="Discuss this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Functional_analysis&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">e</abbr></a></li></ul></div><div id="Functional_analysis_(topics)" style="font-size:114%;margin:0 4em"><a href="/wiki/Functional_analysis" title="Functional analysis">Functional analysis</a>&#160;(<a href="/wiki/List_of_functional_analysis_topics" title="List of functional analysis topics">topics</a>)</div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Topological_vector_space" title="Topological vector space">TVS</a> types</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Asplund_space" title="Asplund space">Asplund</a></li>
+<li><a href="/wiki/Banach_space" title="Banach space">Banach</a> (<a href="/wiki/List_of_Banach_spaces" title="List of Banach spaces">list</a>)</li>
+<li><a href="/wiki/Banach_lattice" title="Banach lattice">Banach Lattice</a></li>
+<li><a href="/wiki/Barrelled_space" title="Barrelled space">Barrelled</a></li>
+<li><a href="/wiki/Bornological_space" title="Bornological space">Bornological</a></li>
+<li><a href="/wiki/Brauner_space" title="Brauner space">Brauner</a></li>
+<li><a href="/wiki/F-space" title="F-space">F-space</a></li>
+<li><a href="/wiki/Euclidean_space" title="Euclidean space">Finite-dimensional</a></li>
+<li><a href="/wiki/Fr%C3%A9chet_space" title="Fréchet space">Fréchet</a>&#160;(<a href="/wiki/Differentiation_in_Fr%C3%A9chet_spaces#Tame_Fréchet_spaces" title="Differentiation in Fréchet spaces">tame</a>)</li>
+<li><a href="/wiki/Hilbert_space" title="Hilbert space">Hilbert</a>&#160;(<a href="/wiki/Inner_product_space" title="Inner product space">pre-Hilbert</a></li>
+<li><a href="/wiki/Polarization_identity" title="Polarization identity">Polarization identity</a>)</li>
+<li><a href="/wiki/LF-space" title="LF-space">LF-space</a></li>
+<li><a href="/wiki/Locally_convex_topological_vector_space" title="Locally convex topological vector space">Locally convex</a>&#160;(<a href="/wiki/Locally_convex_topological_vector_space#Definition_via_seminorms" title="Locally convex topological vector space">Seminorms</a>/<a href="/wiki/Minkowski_functional" title="Minkowski functional">Minkowski functionals</a>)</li>
+<li><a href="/wiki/Mackey_space" title="Mackey space">Mackey</a></li>
+<li><a href="/wiki/Montel_space" title="Montel space">Montel</a></li>
+<li><a href="/wiki/Nuclear_space" title="Nuclear space">Nuclear</a></li>
+<li><a href="/wiki/Normed_space" class="mw-redirect" title="Normed space">Normed</a>&#160;(<a href="/wiki/Norm_(mathematics)" title="Norm (mathematics)">norm</a>)</li>
+<li><a href="/wiki/Quasinorm" title="Quasinorm">Quasinormed</a></li>
+<li><a href="/wiki/Reflexive_space" title="Reflexive space">Reflexive</a></li>
+<li><a href="/wiki/Riesz_space" title="Riesz space">Riesz</a></li>
+<li><a href="/wiki/Smith_space" title="Smith space">Smith</a></li>
+<li><a href="/wiki/Stereotype_space" title="Stereotype space">Stereotype</a></li>
+<li><a href="/wiki/Strictly_convex_space" title="Strictly convex space">Strictly convex</a></li>
+<li><a href="/wiki/Webbed_space" title="Webbed space">Webbed</a></li>
+<li><a href="/wiki/Topological_tensor_product" title="Topological tensor product">Topological tensor product</a>&#160;(<a href="/wiki/Tensor_product_of_Hilbert_spaces" title="Tensor product of Hilbert spaces">of Hilbert spaces</a>)</li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Mapping topologies</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Dual_topology" title="Dual topology">Dual</a></li>
+<li><a href="/wiki/Dual_space" title="Dual space">Dual space</a>&#160;(<a href="/wiki/Dual_norm" title="Dual norm">Dual norm</a>)</li>
+<li><a href="/wiki/Operator_topologies" title="Operator topologies">Operator</a></li>
+<li><a href="/wiki/Ultraweak_topology" title="Ultraweak topology">Ultraweak</a></li>
+<li><a href="/wiki/Weak_topology" title="Weak topology">Weak</a>&#160;(<a href="/wiki/Weak_topology_(polar_topology)" title="Weak topology (polar topology)">polar</a></li>
+<li><a href="/wiki/Weak_operator_topology" title="Weak operator topology">operator</a>)</li>
+<li><a href="/wiki/Mackey_topology" title="Mackey topology">Mackey </a></li>
+<li><a href="/wiki/Strong_topology" title="Strong topology">Strong</a>&#160;(<a href="/wiki/Strong_topology_(polar_topology)" title="Strong topology (polar topology)">polar</a></li>
+<li><a href="/wiki/Strong_operator_topology" title="Strong operator topology">operator</a>)</li>
+<li><a href="/wiki/Ultrastrong_topology" title="Ultrastrong topology">Ultrastrong</a></li>
+<li><a href="/wiki/Topology_of_uniform_convergence" title="Topology of uniform convergence">Uniform convergence</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Linear_map" title="Linear map">Linear operators</a></th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Hermitian_adjoint" title="Hermitian adjoint">Adjoint</a></li>
+<li><a href="/wiki/Bilinear_map" title="Bilinear map">Bilinear</a>&#160;(<a href="/wiki/Bilinear_form" title="Bilinear form">form</a></li>
+<li><a href="/wiki/Bilinear_map" title="Bilinear map">operator</a></li>
+<li><a href="/wiki/Sesquilinear_form" title="Sesquilinear form">sesquilinear</a>)</li>
+<li>(<a href="/wiki/Unbounded_operator" title="Unbounded operator">Un</a>)<a href="/wiki/Bounded_operator" title="Bounded operator">Bounded</a></li>
+<li><a href="/wiki/Closed_linear_operator" class="mw-redirect" title="Closed linear operator">Closed</a></li>
+<li><a href="/wiki/Compact_operator" title="Compact operator">Compact</a> (<a href="/wiki/Compact_operator_on_Hilbert_space" title="Compact operator on Hilbert space">on Hilbert spaces</a>)</li>
+<li>(<a href="/wiki/Discontinuous_linear_map" title="Discontinuous linear map">Dis</a>)<a href="/wiki/Continuous_linear_operator" title="Continuous linear operator">Continuous</a></li>
+<li><a href="/wiki/Densely_defined" class="mw-redirect" title="Densely defined">Densely defined</a></li>
+<li><a href="/wiki/Fredholm_operator" title="Fredholm operator">Fredholm</a></li>
+<li><a href="/wiki/Hilbert%E2%80%93Schmidt_operator" title="Hilbert–Schmidt operator">Hilbert–Schmidt</a></li>
+<li><a href="/wiki/Linear_form" title="Linear form">Functionals</a>&#160;(<a href="/wiki/Positive_linear_functional" title="Positive linear functional">positive</a>)</li>
+<li><a href="/wiki/Normal_operator" title="Normal operator">Normal</a></li>
+<li><a href="/wiki/Nuclear_operator" title="Nuclear operator">Nuclear</a></li>
+<li><a href="/wiki/Self-adjoint_operator" title="Self-adjoint operator">Self-adjoint</a></li>
+<li><a href="/wiki/Strictly_singular_operator" title="Strictly singular operator">Strictly singular</a></li>
+<li><a href="/wiki/Trace_class" title="Trace class">Trace class</a></li>
+<li><a href="/wiki/Transpose_of_a_linear_map" title="Transpose of a linear map">Transpose</a></li>
+<li><a href="/wiki/Unitary_operator" title="Unitary operator">Unitary</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Operator_theory" title="Operator theory">Operator theory</a></th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Banach_algebra" title="Banach algebra">Banach algebras</a></li>
+<li><a href="/wiki/C*-algebra" title="C*-algebra">C*-algebras</a></li>
+<li><a href="/wiki/Spectrum_(functional_analysis)" title="Spectrum (functional analysis)">Spectrum</a>&#160;(<a href="/wiki/Spectrum_of_a_C*-algebra" title="Spectrum of a C*-algebra">C*-algebra</a></li>
+<li><a href="/wiki/Spectral_radius" title="Spectral radius">radius</a>)</li>
+<li><a href="/wiki/Spectral_theory" title="Spectral theory">Spectral theory</a> (<a href="/wiki/Spectral_theory_of_ordinary_differential_equations" title="Spectral theory of ordinary differential equations">of ODEs</a></li>
+<li><a href="/wiki/Spectral_theorem" title="Spectral theorem">Spectral theorem</a>)</li>
+<li><a href="/wiki/Polar_decomposition" title="Polar decomposition">Polar decomposition</a></li>
+<li><a href="/wiki/Singular_value_decomposition" title="Singular value decomposition">Singular value decomposition</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Theorems</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Banach%E2%80%93Alaoglu_theorem" title="Banach–Alaoglu theorem">Banach–Alaoglu</a></li>
+<li><a href="/wiki/Banach%E2%80%93Mazur_theorem" title="Banach–Mazur theorem">Banach–Mazur</a></li>
+<li><a href="/wiki/Banach%E2%80%93Saks_theorem" class="mw-redirect" title="Banach–Saks theorem">Banach–Saks</a></li>
+<li><a href="/wiki/Open_mapping_theorem_(functional_analysis)" title="Open mapping theorem (functional analysis)">Banach–Schauder (open mapping)</a></li>
+<li><a href="/wiki/Uniform_boundedness_principle" title="Uniform boundedness principle">Banach–Steinhaus (Uniform boundedness)</a></li>
+<li><a href="/wiki/Bessel%27s_inequality" title="Bessel&#39;s inequality">Bessel's inequality</a></li>
+<li><a href="/wiki/Cauchy%E2%80%93Schwarz_inequality" title="Cauchy–Schwarz inequality">Cauchy–Schwarz inequality</a></li>
+<li><a href="/wiki/Closed_graph_theorem" title="Closed graph theorem">Closed graph</a></li>
+<li><a href="/wiki/Closed_range_theorem" title="Closed range theorem">Closed range</a></li>
+<li><a href="/wiki/Eberlein%E2%80%93%C5%A0mulian_theorem" title="Eberlein–Šmulian theorem">Eberlein–Šmulian</a></li>
+<li><a href="/wiki/Freudenthal_spectral_theorem" title="Freudenthal spectral theorem">Freudenthal spectral</a></li>
+<li><a href="/wiki/Gelfand%E2%80%93Mazur_theorem" title="Gelfand–Mazur theorem">Gelfand–Mazur</a></li>
+<li><a href="/wiki/Gelfand%E2%80%93Naimark_theorem" title="Gelfand–Naimark theorem">Gelfand–Naimark</a></li>
+<li><a href="/wiki/Goldstine_theorem" title="Goldstine theorem">Goldstine</a></li>
+<li><a class="mw-selflink selflink">Hahn–Banach</a>&#160;(<a href="/wiki/Hyperplane_separation_theorem" title="Hyperplane separation theorem">hyperplane separation</a>)</li>
+<li><a href="/wiki/Kakutani_fixed-point_theorem#Infinite-dimensional_generalizations" title="Kakutani fixed-point theorem">Kakutani fixed-point</a></li>
+<li><a href="/wiki/Krein%E2%80%93Milman_theorem" title="Krein–Milman theorem">Krein–Milman</a></li>
+<li><a href="/wiki/Invariant_subspace_problem#Known_special_cases" title="Invariant subspace problem">Lomonosov's invariant subspace</a></li>
+<li><a href="/wiki/Mackey%E2%80%93Arens_theorem" class="mw-redirect" title="Mackey–Arens theorem">Mackey–Arens</a></li>
+<li><a href="/wiki/Mazur%27s_lemma" title="Mazur&#39;s lemma">Mazur's lemma</a></li>
+<li><a href="/wiki/M._Riesz_extension_theorem" title="M. Riesz extension theorem">M. Riesz extension</a></li>
+<li><a href="/wiki/Riesz_representation_theorem" title="Riesz representation theorem">Riesz representation</a></li>
+<li><a href="/wiki/Parseval%27s_identity" title="Parseval&#39;s identity">Parseval's identity</a></li>
+<li><a href="/wiki/Schauder_fixed-point_theorem" title="Schauder fixed-point theorem">Schauder fixed-point</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Analysis</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Abstract_Wiener_space" title="Abstract Wiener space">Abstract Wiener space</a></li>
+<li><a href="/wiki/Bochner_space" title="Bochner space">Bochner space</a></li>
+<li><a href="/wiki/Differentiation_in_Fr%C3%A9chet_spaces" title="Differentiation in Fréchet spaces">Differentiation in Fréchet spaces</a></li>
+<li><a href="/wiki/Derivative" title="Derivative">Derivatives</a>&#160;(<a href="/wiki/Fr%C3%A9chet_derivative" title="Fréchet derivative">Fréchet</a></li>
+<li><a href="/wiki/Gateaux_derivative" title="Gateaux derivative">Gateaux</a></li>
+<li><a href="/wiki/Functional_derivative" title="Functional derivative">functional</a></li>
+<li><a href="/wiki/Infinite-dimensional_holomorphy" title="Infinite-dimensional holomorphy">holomorphic</a>)</li>
+<li><a href="/wiki/Integral" title="Integral">Integrals</a>&#160;(<a href="/wiki/Bochner_integral" title="Bochner integral">Bochner</a></li>
+<li>Dunford</li>
+<li><a href="/wiki/Pettis_integral" title="Pettis integral">Gelfand–Pettis</a></li>
+<li><a href="/wiki/Regulated_integral" title="Regulated integral">regulated</a></li>
+<li><a href="/wiki/Paley%E2%80%93Wiener_integral" title="Paley–Wiener integral">Paley–Wiener</a></li>
+<li><a href="/wiki/Pettis_integral" title="Pettis integral">weak</a>)</li>
+<li><a href="/wiki/Functional_calculus" title="Functional calculus">Functional calculus</a>&#160;(<a href="/wiki/Borel_functional_calculus" title="Borel functional calculus">Borel</a></li>
+<li><a href="/wiki/Continuous_functional_calculus" title="Continuous functional calculus">continuous</a></li>
+<li><a href="/wiki/Holomorphic_functional_calculus" title="Holomorphic functional calculus">holomorphic</a>)</li>
+<li><a href="/wiki/Inverse_function_theorem" title="Inverse function theorem">Inverse function theorem</a>&#160;(<a href="/wiki/Nash%E2%80%93Moser_theorem" title="Nash–Moser theorem">Nash–Moser theorem</a>)</li>
+<li><a href="/wiki/Measure_(mathematics)" title="Measure (mathematics)">Measures</a> (<a href="/wiki/Infinite-dimensional_Lebesgue_measure" title="Infinite-dimensional Lebesgue measure">Lebesgue</a></li>
+<li><a href="/wiki/Projection-valued_measure" title="Projection-valued measure">Projection-valued</a></li>
+<li><a href="/wiki/Vector_measure" title="Vector measure">Vector</a>)</li>
+<li><a href="/wiki/Weakly_measurable_function" title="Weakly measurable function">Weakly measurable function</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Types of sets</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Absolutely_convex_set" title="Absolutely convex set">Absolutely convex</a></li>
+<li><a href="/wiki/Absorbing_set" title="Absorbing set">Absorbing</a></li>
+<li><a href="/wiki/Balanced_set" title="Balanced set">Balanced</a></li>
+<li><a href="/wiki/Bounded_set_(topological_vector_space)" title="Bounded set (topological vector space)">Bounded</a></li>
+<li><a href="/wiki/Convex_set" title="Convex set">Convex</a></li>
+<li><a href="/wiki/Convex_cone" title="Convex cone">Convex cone <span style="font-size:90%;">(subset)</span></a></li>
+<li><a href="/wiki/Cone_(linear_algebra)" class="mw-redirect" title="Cone (linear algebra)">Linear cone <span style="font-size:90%;">(subset)</span></a></li>
+<li><a href="/wiki/Radial_set" title="Radial set">Radial</a></li>
+<li><a href="/wiki/Star_domain" title="Star domain">Star-shaped</a></li>
+<li><a href="/wiki/Symmetric_set" title="Symmetric set">Symmetric</a></li>
+<li><a href="/wiki/Zonotope" class="mw-redirect" title="Zonotope">Zonotope</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Subsets&#160;/&#32;set operations</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Algebraic_interior" title="Algebraic interior">Algebraic interior (core)</a></li>
+<li><a href="/wiki/Bounding_point" title="Bounding point">Bounding points</a></li>
+<li><a href="/wiki/Convex_hull" title="Convex hull">Convex hull</a></li>
+<li><a href="/wiki/Extreme_point" title="Extreme point">Extreme point</a></li>
+<li><a href="/wiki/Interior_(topology)" title="Interior (topology)">Interior</a></li>
+<li><a href="/wiki/Minkowski_addition" title="Minkowski addition">Minkowski addition</a></li>
+<li><a href="/wiki/Polar_set" title="Polar set">Polar</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1301
+Cached time: 20190730222446
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.412 seconds
+Real time usage: 0.615 seconds
+Preprocessor visited node count: 2881/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 62783/2097152 bytes
+Template argument size: 2975/2097152 bytes
+Highest expansion depth: 15/40
+Expensive parser function count: 2/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 42858/5000000 bytes
+Number of Wikibase entities loaded: 2/400
+Lua time usage: 0.145/10.000 seconds
+Lua memory usage: 3.94 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  397.593      1 -total
+ 59.32%  235.862      1 Template:Reflist
+ 21.06%   83.737      7 Template:Cite_journal
+ 18.65%   74.167      1 Template:MacTutor_Biography
+ 18.32%   72.854      2 Template:Citation
+ 13.20%   52.502      3 Template:ISBN
+  7.61%   30.239      1 Template:Functional_Analysis
+  6.12%   24.327     63 Template:Math
+  5.95%   23.662      1 Template:Navbox
+  5.42%   21.561      1 Template:Harv
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:13860-0!canonical!math=5 and timestamp 20190730222446 and revision id 904241416
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Hahn–Banach_theorem&amp;oldid=904241416">https://en.wikipedia.org/w/index.php?title=Hahn–Banach_theorem&amp;oldid=904241416</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Theorems_in_functional_analysis" title="Category:Theorems in functional analysis">Theorems in functional analysis</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Hahn%E2%80%93Banach+theorem" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Hahn%E2%80%93Banach+theorem" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Hahn%E2%80%93Banach_theorem" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Hahn%E2%80%93Banach_theorem" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Hahn%E2%80%93Banach_theorem">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Hahn%E2%80%93Banach_theorem&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Hahn%E2%80%93Banach_theorem&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Hahn%E2%80%93Banach_theorem" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Hahn%E2%80%93Banach_theorem" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Hahn%E2%80%93Banach_theorem&amp;oldid=904241416" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Hahn%E2%80%93Banach_theorem&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q866116" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Hahn%E2%80%93Banach_theorem&amp;id=904241416" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Hahn%E2%80%93Banach+theorem">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Hahn%E2%80%93Banach+theorem&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Hahn%E2%80%93Banach_theorem&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D9%85%D8%A8%D8%B1%D9%87%D9%86%D8%A9_%D9%87%D8%A7%D9%86-%D8%A8%D8%A7%D9%86%D8%A7%D8%AE" title="مبرهنة هان-باناخ – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-az"><a href="https://az.wikipedia.org/wiki/Han-Banax_teoremi" title="Han-Banax teoremi – Azerbaijani" lang="az" hreflang="az" class="interlanguage-link-target">Azərbaycanca</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Teorema_de_Hahn-Banach" title="Teorema de Hahn-Banach – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Hahnova%E2%80%93Banachova_v%C4%9Bta" title="Hahnova–Banachova věta – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Satz_von_Hahn-Banach" title="Satz von Hahn-Banach – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Teorema_de_Hahn%E2%80%93Banach" title="Teorema de Hahn–Banach – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Hahn-Banach" title="Théorème de Hahn-Banach – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%ED%95%9C-%EB%B0%94%EB%82%98%ED%9D%90_%EC%A0%95%EB%A6%AC" title="한-바나흐 정리 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Teorema_di_Hahn-Banach" title="Teorema di Hahn-Banach – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%A4%D7%98_%D7%94%D7%90%D7%9F-%D7%91%D7%A0%D7%9A" title="משפט האן-בנך – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Stelling_van_Hahn-Banach" title="Stelling van Hahn-Banach – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%BC%E3%83%B3%E2%80%93%E3%83%90%E3%83%8A%E3%83%83%E3%83%8F%E3%81%AE%E5%AE%9A%E7%90%86" title="ハーン–バナッハの定理 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pms"><a href="https://pms.wikipedia.org/wiki/Teorema_%C3%ABd_Hahn-Banach" title="Teorema ëd Hahn-Banach – Piedmontese" lang="pms" hreflang="pms" class="interlanguage-link-target">Piemontèis</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Twierdzenie_Hahna-Banacha" title="Twierdzenie Hahna-Banacha – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Teorema_de_Hahn-Banach" title="Teorema de Hahn-Banach – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%A5%D0%B0%D0%BD%D0%B0_%E2%80%94_%D0%91%D0%B0%D0%BD%D0%B0%D1%85%D0%B0" title="Теорема Хана — Банаха – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Hahn-Banachs_sats" title="Hahn-Banachs sats – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%93%D0%B0%D0%BD%D0%B0_%E2%80%94_%D0%91%D0%B0%D0%BD%D0%B0%D1%85%D0%B0" title="Теорема Гана — Банаха – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/%C4%90%E1%BB%8Bnh_l%C3%BD_Hahn-Banach" title="Định lý Hahn-Banach – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E5%93%88%E6%81%A9%EF%BC%8D%E5%B7%B4%E6%8B%BF%E8%B5%AB%E5%AE%9A%E7%90%86" title="哈恩－巴拿赫定理 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q866116#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 30 June 2019, at 22:12<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Hahn%E2%80%93Banach_theorem&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.412","walltime":"0.615","ppvisitednodes":{"value":2881,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":62783,"limit":2097152},"templateargumentsize":{"value":2975,"limit":2097152},"expansiondepth":{"value":15,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":42858,"limit":5000000},"entityaccesscount":{"value":2,"limit":400},"timingprofile":["100.00%  397.593      1 -total"," 59.32%  235.862      1 Template:Reflist"," 21.06%   83.737      7 Template:Cite_journal"," 18.65%   74.167      1 Template:MacTutor_Biography"," 18.32%   72.854      2 Template:Citation"," 13.20%   52.502      3 Template:ISBN","  7.61%   30.239      1 Template:Functional_Analysis","  6.12%   24.327     63 Template:Math","  5.95%   23.662      1 Template:Navbox","  5.42%   21.561      1 Template:Harv"]},"scribunto":{"limitreport-timeusage":{"value":"0.145","limit":"10.000"},"limitreport-memusage":{"value":4132538,"limit":52428800}},"cachereport":{"origin":"mw1301","timestamp":"20190730222446","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Hahn\u2013Banach theorem","url":"https:\/\/en.wikipedia.org\/wiki\/Hahn%E2%80%93Banach_theorem","sameAs":"http:\/\/www.wikidata.org\/entity\/Q866116","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q866116","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2001-09-29T15:03:40Z","dateModified":"2019-06-30T22:12:36Z","headline":"theorem on extension of bounded linear functionals"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":107,"wgHostname":"mw1270"});});</script>
+</body>
+</html>

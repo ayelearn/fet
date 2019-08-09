@@ -1,0 +1,1 @@
+Equal_area_criterion

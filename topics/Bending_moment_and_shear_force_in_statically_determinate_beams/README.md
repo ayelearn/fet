@@ -1,0 +1,1 @@
+Bending_moment_and_shear_force_in_statically_determinate_beams

@@ -1,0 +1,2542 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Continuity equation - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Continuity_equation","wgTitle":"Continuity equation","wgCurRevisionId":905851119,"wgRevisionId":905851119,"wgArticleId":410793,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Equations of fluid dynamics","Conservation equations","Partial differential equations"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":
+"Continuity_equation","wgRelevantArticleId":410793,"wgRequestId":"XUmOkwpAMFQAAD3KV2kAAAAJ","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q217219","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready",
+"ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["ext.math.scripts","ext.cite.ux-enhancements","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups",
+"ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Continuity_equation"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Continuity_equation&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Continuity_equation&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Continuity_equation"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Continuity_equation rootpage-Continuity_equation skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Continuity equation</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table class="vertical-navbox nowraplinks plainlist" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%"><tbody><tr><th style="padding:0.2em 0.4em 0.2em;font-size:145%;line-height:1.2em"><a href="/wiki/Continuum_mechanics" title="Continuum mechanics">Continuum mechanics</a></th></tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;background:#ddf; text-align:center;">Laws</div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center"><table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none"><tbody><tr><th style="padding:0.1em;font-style:italic;font-weight:normal;">
+Conservations</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Conservation_of_mass" title="Conservation of mass">Mass</a></li>
+<li><a href="/wiki/Momentum#Conservation" title="Momentum">Momentum</a></li>
+<li><a href="/wiki/Conservation_of_energy" title="Conservation of energy">Energy</a></li></ul></td>
+</tr><tr><th style="padding:0.1em;font-style:italic;font-weight:normal;">
+Inequalities</th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Clausius%E2%80%93Duhem_inequality" title="Clausius–Duhem inequality">Clausius–Duhem (entropy)</a></li></ul></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;background:#ddf; text-align:center;"><a href="/wiki/Solid_mechanics" title="Solid mechanics">Solid mechanics</a></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center"><div class="hlist">
+<ul><li><a href="/wiki/Deformation_(mechanics)" title="Deformation (mechanics)">Deformation</a></li>
+<li><a href="/wiki/Elasticity_(physics)" title="Elasticity (physics)">Elasticity</a>
+<ul><li><a href="/wiki/Linear_elasticity" title="Linear elasticity">linear</a></li></ul></li>
+<li><a href="/wiki/Plasticity_(physics)" title="Plasticity (physics)">Plasticity</a></li>
+<li><a href="/wiki/Hooke%27s_law" title="Hooke&#39;s law">Hooke's law</a></li>
+<li><a href="/wiki/Stress_(mechanics)" title="Stress (mechanics)">Stress</a></li>
+<li><a href="/wiki/Finite_strain_theory" title="Finite strain theory">Finite strain</a></li>
+<li><a href="/wiki/Infinitesimal_strain_theory" title="Infinitesimal strain theory">Infinitesimal strain</a></li>
+<li><a href="/wiki/Compatibility_(mechanics)" title="Compatibility (mechanics)">Compatibility</a></li>
+<li><a href="/wiki/Bending" title="Bending">Bending</a></li>
+<li><a href="/wiki/Contact_mechanics" title="Contact mechanics">Contact mechanics</a>
+<ul><li><a href="/wiki/Frictional_contact_mechanics" title="Frictional contact mechanics">frictional</a></li></ul></li>
+<li><a href="/wiki/Material_failure_theory" title="Material failure theory">Material failure theory</a></li>
+<li><a href="/wiki/Fracture_mechanics" title="Fracture mechanics">Fracture mechanics</a></li></ul>
+</div></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;background:#ddf; text-align:center;"><a href="/wiki/Fluid_mechanics" title="Fluid mechanics">Fluid mechanics</a></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center"><table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none"><tbody><tr><th style="padding:0.1em;font-style:italic;">
+<a href="/wiki/Fluid" title="Fluid">Fluids</a></th></tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="wraplinks">
+<ul><li><a href="/wiki/Hydrostatics" title="Hydrostatics">Statics</a>&#160;<b>·</b> <a href="/wiki/Fluid_dynamics" title="Fluid dynamics">Dynamics</a></li>
+<li><a href="/wiki/Archimedes%27_principle" title="Archimedes&#39; principle">Archimedes' principle</a>&#160;<b>·</b> <a href="/wiki/Bernoulli%27s_principle" title="Bernoulli&#39;s principle">Bernoulli's principle</a></li>
+<li><a href="/wiki/Navier%E2%80%93Stokes_equations" title="Navier–Stokes equations">Navier–Stokes equations</a></li>
+<li><a href="/wiki/Hagen%E2%80%93Poiseuille_equation" title="Hagen–Poiseuille equation">Poiseuille equation</a>&#160;<b>·</b> <a href="/wiki/Pascal%27s_law" title="Pascal&#39;s law">Pascal's law</a></li>
+<li><a href="/wiki/Viscosity" title="Viscosity">Viscosity</a>
+<ul><li>(<a href="/wiki/Newtonian_fluid" title="Newtonian fluid">Newtonian</a>&#160;<b>·</b> <a href="/wiki/Non-Newtonian_fluid" title="Non-Newtonian fluid">non-Newtonian</a>)</li></ul></li>
+<li><a href="/wiki/Buoyancy" title="Buoyancy">Buoyancy</a>&#160;<b>·</b> <a href="/wiki/Mixing_(process_engineering)" title="Mixing (process engineering)">Mixing</a>&#160;<b>·</b> <a href="/wiki/Pressure" title="Pressure">Pressure</a></li></ul>
+</div></td>
+</tr><tr><th style="padding:0.1em;font-style:italic;">
+<a href="/wiki/Liquid" title="Liquid">Liquids</a></th></tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="hlist">
+<ul><li><a href="/wiki/Surface_tension" title="Surface tension">Surface tension</a></li>
+<li><a href="/wiki/Capillary_action" title="Capillary action">Capillary action</a></li></ul>
+</div></td>
+</tr><tr><th style="padding:0.1em;font-style:italic;">
+<a href="/wiki/Gas" title="Gas">Gases</a></th></tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="hlist">
+<ul><li><a href="/wiki/Atmosphere" title="Atmosphere">Atmosphere</a></li>
+<li><a href="/wiki/Boyle%27s_law" title="Boyle&#39;s law">Boyle's law</a></li>
+<li><a href="/wiki/Charles%27s_law" title="Charles&#39;s law">Charles's law</a></li>
+<li><a href="/wiki/Gay-Lussac%27s_law" title="Gay-Lussac&#39;s law">Gay-Lussac's law</a></li>
+<li><a href="/wiki/Combined_gas_law" class="mw-redirect" title="Combined gas law">Combined gas law</a></li></ul>
+</div></td>
+</tr><tr><th style="padding:0.1em;font-style:italic;">
+<a href="/wiki/Plasma_(physics)" title="Plasma (physics)">Plasma</a></th></tr></tbody></table></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;background:#ddf; text-align:center;"><a href="/wiki/Rheology" title="Rheology">Rheology</a></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center"><table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none"><tbody><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Viscoelasticity" title="Viscoelasticity">Viscoelasticity</a></li>
+<li><a href="/wiki/Rheometry" title="Rheometry">Rheometry</a></li>
+<li><a href="/wiki/Rheometer" title="Rheometer">Rheometer</a></li></ul></td>
+</tr><tr><th style="padding:0.1em;font-style:italic;">
+<a href="/wiki/Smart_fluid" title="Smart fluid">Smart fluids</a></th></tr><tr><td class="hlist" style="padding:0 0.1em 0.4em">
+<ul><li><a href="/wiki/Electrorheological_fluid" title="Electrorheological fluid">Electrorheological</a></li>
+<li><a href="/wiki/Magnetorheological_fluid" title="Magnetorheological fluid">Magnetorheological</a></li>
+<li><a href="/wiki/Ferrofluid" title="Ferrofluid">Ferrofluids</a></li></ul></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left;background:#ddf; text-align:center;">Scientists</div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center"><div class="hlist">
+<ul><li><a href="/wiki/Daniel_Bernoulli" title="Daniel Bernoulli">Bernoulli</a></li>
+<li><a href="/wiki/Robert_Boyle" title="Robert Boyle">Boyle</a></li>
+<li><a href="/wiki/Augustin-Louis_Cauchy" title="Augustin-Louis Cauchy">Cauchy</a></li>
+<li><a href="/wiki/Jacques_Charles" title="Jacques Charles">Charles</a></li>
+<li><a href="/wiki/Leonhard_Euler" title="Leonhard Euler">Euler</a></li>
+<li><a href="/wiki/Joseph_Louis_Gay-Lussac" title="Joseph Louis Gay-Lussac">Gay-Lussac</a></li>
+<li><a href="/wiki/Robert_Hooke" title="Robert Hooke">Hooke</a></li>
+<li><a href="/wiki/Blaise_Pascal" title="Blaise Pascal">Pascal</a></li>
+<li><a href="/wiki/Isaac_Newton" title="Isaac Newton">Newton</a></li>
+<li><a href="/wiki/Claude-Louis_Navier" title="Claude-Louis Navier">Navier</a></li>
+<li><a href="/wiki/Sir_George_Stokes,_1st_Baronet" title="Sir George Stokes, 1st Baronet">Stokes</a></li></ul>
+</div></div></div></td>
+</tr><tr><td style="text-align:right;font-size:115%;padding-top: 0.6em;"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="/wiki/Template:Continuum_mechanics" title="Template:Continuum mechanics"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Continuum_mechanics" title="Template talk:Continuum mechanics"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Continuum_mechanics&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p>A <b>continuity equation</b> in physics is an <a href="/wiki/Equation" title="Equation">equation</a> that describes the transport of some quantity.  It is particularly simple and powerful when applied to a <a href="/wiki/Conserved_quantity" title="Conserved quantity">conserved quantity</a>, but it can be generalized to apply to any <a href="/wiki/Intensive_and_extensive_properties" title="Intensive and extensive properties">extensive quantity</a>.  Since <a href="/wiki/Mass" title="Mass">mass</a>, <a href="/wiki/Energy" title="Energy">energy</a>, <a href="/wiki/Momentum" title="Momentum">momentum</a>, <a href="/wiki/Electric_charge" title="Electric charge">electric charge</a> and other natural&#160;quantities are conserved under their respective appropriate conditions, a variety of physical phenomena may be described using continuity equations.
+</p><p>Continuity equations are a stronger, local form of <a href="/wiki/Conservation_law_(physics)" class="mw-redirect" title="Conservation law (physics)">conservation laws</a>. For example, a weak version of the law of <a href="/wiki/Conservation_of_energy" title="Conservation of energy">conservation of energy</a> states that energy can neither be created nor destroyed—i.e., the total amount of energy in the universe is fixed.  This statement does not rule out the possibility that a quantity of energy could disappear from one point while simultaneously appearing at another point. A stronger statement is that energy is <i>locally</i> conserved: energy can neither be created nor destroyed, <i>nor</i> can it "<a href="/wiki/Teleportation" title="Teleportation">teleport</a>" from one place to another—it can only move by a continuous flow. A continuity equation is the mathematical way to express this kind of statement.  For example, the continuity equation for <a href="/wiki/Electric_charge" title="Electric charge">electric charge</a> states that the amount of electric charge in any volume of space can only change by the amount of <a href="/wiki/Electric_current" title="Electric current">electric current</a> flowing into or out of that volume through its boundaries.
+</p><p>Continuity equations more generally can include "source" and "sink" terms, which allow them to describe quantities that are often but not always conserved, such as the density of a molecular species which can be created or destroyed by chemical reactions. In an everyday example, there is a continuity equation for the number of people alive; it has a "source term" to account for people being born, and a "sink term" to account for people dying.
+</p><p>Any continuity equation can be expressed in an "integral form" (in terms of a <a href="/wiki/Flux#Flux_as_a_surface_integral" title="Flux">flux integral</a>), which applies to any finite region, or in a "differential form" (in terms of the <a href="/wiki/Divergence" title="Divergence">divergence</a> operator) which applies at a point.
+</p><p>Continuity equations underlie more specific <a href="/wiki/Transport_equation" class="mw-redirect" title="Transport equation">transport equations</a> such as the <a href="/wiki/Convection%E2%80%93diffusion_equation" title="Convection–diffusion equation">convection–diffusion equation</a>, <a href="/wiki/Boltzmann_transport_equation" class="mw-redirect" title="Boltzmann transport equation">Boltzmann transport equation</a>, and <a href="/wiki/Navier%E2%80%93Stokes_equations" title="Navier–Stokes equations">Navier–Stokes equations</a>.
+</p><p>Flows governed by continuity equations can be visualized using a <a href="/wiki/Sankey_diagram" title="Sankey diagram">Sankey diagram</a>.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#General_equation"><span class="tocnumber">1</span> <span class="toctext">General equation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Definition_of_flux"><span class="tocnumber">1.1</span> <span class="toctext">Definition of flux</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Integral_form"><span class="tocnumber">1.2</span> <span class="toctext">Integral form</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Differential_form"><span class="tocnumber">1.3</span> <span class="toctext">Differential form</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Electromagnetism"><span class="tocnumber">2</span> <span class="toctext">Electromagnetism</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Fluid_dynamics"><span class="tocnumber">3</span> <span class="toctext">Fluid dynamics</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Energy_and_heat"><span class="tocnumber">4</span> <span class="toctext">Energy and heat</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Probability_distributions"><span class="tocnumber">5</span> <span class="toctext">Probability distributions</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Quantum_mechanics"><span class="tocnumber">6</span> <span class="toctext">Quantum mechanics</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Relativistic_version"><span class="tocnumber">7</span> <span class="toctext">Relativistic version</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#Special_relativity"><span class="tocnumber">7.1</span> <span class="toctext">Special relativity</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#General_relativity"><span class="tocnumber">7.2</span> <span class="toctext">General relativity</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Particle_physics"><span class="tocnumber">8</span> <span class="toctext">Particle physics</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Noether&#39;s_theorem"><span class="tocnumber">9</span> <span class="toctext">Noether's theorem</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#See_also"><span class="tocnumber">10</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#References"><span class="tocnumber">11</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#Further_reading"><span class="tocnumber">12</span> <span class="toctext">Further reading</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="General_equation">General equation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Continuity_equation&amp;action=edit&amp;section=1" title="Edit section: General equation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Definition_of_flux">Definition of flux</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Continuity_equation&amp;action=edit&amp;section=2" title="Edit section: Definition of flux">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Flux" title="Flux">Flux</a></div>
+<p>A continuity equation is useful when a <i><a href="/wiki/Flux" title="Flux">flux</a></i> can be defined. To define flux, first there must be a quantity <span class="texhtml"><i>q</i></span> which can flow or move, such as <a href="/wiki/Mass" title="Mass">mass</a>, <a href="/wiki/Energy" title="Energy">energy</a>, <a href="/wiki/Electric_charge" title="Electric charge">electric charge</a>, <a href="/wiki/Momentum" title="Momentum">momentum</a>, number of molecules, etc. Let <span class="texhtml"><i>ρ</i></span> be the <a href="/wiki/Volume" title="Volume">volume</a> density of this quantity, that is, the amount of <span class="texhtml"><i>q</i></span> per unit volume.
+</p><p>The way that this quantity <span class="texhtml"><i>q</i></span> is flowing is described by its <b>flux</b>. The flux of <span class="texhtml"><i>q</i></span> is a <a href="/wiki/Vector_field" title="Vector field">vector field</a>, which we denote as <b>j</b>. Here are some examples and properties of flux:
+</p>
+<ul><li>The dimension of flux is "amount of <span class="texhtml"><i>q</i></span> flowing per unit time, through a unit area". For example, in the mass continuity equation for flowing water, if 1 gram per second of water is flowing through a pipe with cross-sectional area 1&#160;cm<sup>2</sup>, then the average mass flux <span class="texhtml"><b>j</b></span> inside the pipe is <span class="nowrap">(1 gram / second) / cm<sup>2</sup></span>, and its direction is along the pipe in the direction that the water is flowing. Outside the pipe, where there is no water, the flux is zero.</li>
+<li>If there is a <a href="/wiki/Velocity_field" class="mw-redirect" title="Velocity field">velocity field</a> <span class="texhtml"><b>u</b></span> which describes the relevant flow—in other words, if all of the quantity <span class="texhtml"><i>q</i></span> at a point <span class="texhtml"><b>x</b></span> is moving with velocity <span class="texhtml"><b>u</b>(<b>x</b>)</span>—then the flux is by definition equal to the density times the velocity field:</li></ul>
+<dl><dd><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {j} =\rho \mathbf {u} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">j</mi>
+        </mrow>
+        <mo>=</mo>
+        <mi>&#x03C1;<!-- ρ --></mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">u</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {j} =\rho \mathbf {u} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/430a9b40f64aaa6aca20395d7dff7d03784f9541" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.164ex; width:6.766ex; height:2.676ex;" alt="\mathbf{j} = \rho \mathbf{u}"/></span></dd></dl></dd>
+<dd>For example, if in the mass continuity equation for flowing water, <span class="texhtml"><b>u</b></span> is the water's velocity at each point, and <span class="texhtml"><i>ρ</i></span> is the water's density at each point, then <span class="texhtml"><b>j</b></span> would be the mass flux.</dd></dl>
+<ul><li>In a well-known example, the flux of <a href="/wiki/Electric_charge" title="Electric charge">electric charge</a> is the <a href="/wiki/Electric_current_density" class="mw-redirect" title="Electric current density">electric current density</a>.</li></ul>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:Continuity_eqn_open_surface.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Continuity_eqn_open_surface.svg/220px-Continuity_eqn_open_surface.svg.png" decoding="async" width="220" height="155" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Continuity_eqn_open_surface.svg/330px-Continuity_eqn_open_surface.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Continuity_eqn_open_surface.svg/440px-Continuity_eqn_open_surface.svg.png 2x" data-file-width="474" data-file-height="333" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Continuity_eqn_open_surface.svg" class="internal" title="Enlarge"></a></div>Illustration of how the flux <span class="texhtml"><b>j</b></span> of a quantity <span class="texhtml"><i>q</i></span> passes through an open surface <span class="texhtml"><i>S</i></span>. (<span class="texhtml"><i>d</i><b>S</b></span> is differential <a href="/wiki/Vector_area" title="Vector area">vector area</a>).</div></div></div>
+<ul><li>If there is an imaginary surface <span class="texhtml"><i>S</i></span>, then the <a href="/wiki/Surface_integral" title="Surface integral">surface integral</a> of flux over <span class="texhtml"><i>S</i></span> is equal to the amount of <span class="texhtml"><i>q</i></span> that is passing through the surface <span class="texhtml"><i>S</i></span> per unit time:</li></ul>
+<dl><dd><dl><dd><div class="equation-box" style="margin: 0 0 0 1.6em;padding: 5px; border-width:2px; border-style: solid; border-color: #50C878; background-color: #ECFCF4; text-align: center; display: table"></div></dd></dl></dd></dl>
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle ({\text{Rate that }}q{\text{ is flowing through the imaginary surface }}S)=\iint _{S}\mathbf {j} \cdot d\mathbf {S} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>Rate that&#xA0;</mtext>
+        </mrow>
+        <mi>q</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>&#xA0;is flowing through the imaginary surface&#xA0;</mtext>
+        </mrow>
+        <mi>S</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msub>
+          <mo>&#x222C;<!-- ∬ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">j</mi>
+        </mrow>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mi>d</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">S</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle ({\text{Rate that }}q{\text{ is flowing through the imaginary surface }}S)=\iint _{S}\mathbf {j} \cdot d\mathbf {S} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4723a81edf257f7e5a3503844de3c3e41e592168" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:68.492ex; height:5.676ex;" alt="{\displaystyle ({\text{Rate that }}q{\text{ is flowing through the imaginary surface }}S)=\iint _{S}\mathbf {j} \cdot d\mathbf {S} }"/></span>
+</p>
+
+<dl><dd>in which <span class="texhtml">∬<sub><i>S</i></sub> <i>d</i><b>S</b></span> is a <a href="/wiki/Surface_integral" title="Surface integral">surface integral</a>.</dd></dl>
+<p>(Note that the concept that is here called "flux" is alternatively termed "flux density" in some literature, in which context "flux" denotes the surface integral of flux density.  See the main article on <a href="/wiki/Flux" title="Flux">Flux</a> for details.)
+</p>
+<h3><span class="mw-headline" id="Integral_form"><span id="Integral_form"></span><span id="integral_form"></span> Integral form</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Continuity_equation&amp;action=edit&amp;section=3" title="Edit section: Integral form">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The integral form of the continuity equation states that:
+</p>
+<ul><li>The amount of <span class="texhtml"><i>q</i></span> in a region increases when additional <span class="texhtml"><i>q</i></span> flows inward through the surface of the region, and decreases when it flows outward;</li>
+<li>The amount of <span class="texhtml"><i>q</i></span> in a region increases when new <span class="texhtml"><i>q</i></span> is created inside the region, and decreases when <span class="texhtml"><i>q</i></span> is destroyed;</li>
+<li>Apart from these two processes, there is <i>no other way</i> for the amount of <span class="texhtml"><i>q</i></span> in a region to change.</li></ul>
+<p>Mathematically, the integral form of the continuity equation expressing the rate of increase of <span class="texhtml"><i>q</i></span> within a volume <span class="texhtml"><i>V</i></span> is:
+</p>
+<dl><dd><div class="equation-box" style="margin: 0 0 0 1.6em;padding: 5px; border-width:2px; border-style: solid; border-color: #0073CF; background-color: #F5FFFA; text-align: center; display: table"></div></dd></dl>
+<p><span class="nowrap"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {dq}{dt}}+}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>d</mi>
+              <mi>q</mi>
+            </mrow>
+            <mrow>
+              <mi>d</mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {dq}{dt}}+}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5b634e5aef0842759067de2db5fa197813392c9b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:4.93ex; height:5.509ex;" alt="\frac{d q}{d t} + "/></span> <img alt="\oiint" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/86/OiintLaTeX.svg/25px-OiintLaTeX.svg.png" decoding="async" width="25" height="44" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/86/OiintLaTeX.svg/38px-OiintLaTeX.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/86/OiintLaTeX.svg/50px-OiintLaTeX.svg.png 2x" data-file-width="204" data-file-height="354" /><span style="position:relative; right:8px; top:18px; margin-right:-8px;"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \scriptstyle S}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="false" scriptlevel="1">
+          <mi>S</mi>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \scriptstyle S}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/62e91bf22a258bad807b5a9ae8068ef38202ca30" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.06ex; height:1.676ex;" alt="\scriptstyle S"/></span></span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {j} \cdot d\mathbf {S} =\Sigma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">j</mi>
+        </mrow>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mi>d</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">S</mi>
+        </mrow>
+        <mo>=</mo>
+        <mi mathvariant="normal">&#x03A3;<!-- Σ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {j} \cdot d\mathbf {S} =\Sigma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/61c070a8e762387572169c0673117eb0b58d9f7e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.164ex; width:10.137ex; height:2.509ex;" alt="\mathbf{j} \cdot d\mathbf{S} = \Sigma"/></span></span>
+</p>
+
+<p>where
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:252px;"><a href="/wiki/File:SurfacesWithAndWithoutBoundary.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1e/SurfacesWithAndWithoutBoundary.svg/250px-SurfacesWithAndWithoutBoundary.svg.png" decoding="async" width="250" height="274" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1e/SurfacesWithAndWithoutBoundary.svg/375px-SurfacesWithAndWithoutBoundary.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1e/SurfacesWithAndWithoutBoundary.svg/500px-SurfacesWithAndWithoutBoundary.svg.png 2x" data-file-width="634" data-file-height="696" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:SurfacesWithAndWithoutBoundary.svg" class="internal" title="Enlarge"></a></div>In the integral form of the continuity equation, <span class="texhtml"><i>S</i></span> is any imaginary <a href="/wiki/Closed_surface" class="mw-redirect" title="Closed surface">closed surface</a> that fully encloses a volume <span class="texhtml"><i>V</i></span>, like any of the surfaces on the left. <span class="texhtml"><i>S</i></span> can <i>not</i> be a surface with boundaries, like those on the right. (Surfaces are blue, boundaries are red.)</div></div></div>
+<ul><li><span class="texhtml"><i>S</i></span> is any imaginary <a href="/wiki/Closed_surface" class="mw-redirect" title="Closed surface">closed surface</a>, that encloses a volume <span class="texhtml"><i>V</i></span>,</li>
+<li><span class="nowrap"> <img alt="\oiint" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/86/OiintLaTeX.svg/25px-OiintLaTeX.svg.png" decoding="async" width="25" height="44" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/86/OiintLaTeX.svg/38px-OiintLaTeX.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/86/OiintLaTeX.svg/50px-OiintLaTeX.svg.png 2x" data-file-width="204" data-file-height="354" /><span style="position:relative; right:8px; top:18px; margin-right:-8px;"><span class="texhtml"><i>S</i></span></span> <span class="texhtml"><i>d</i><b>S</b></span></span> denotes a <a href="/wiki/Surface_integral" title="Surface integral">surface integral</a> over that closed surface,</li>
+<li><span class="texhtml"><i>q</i></span> is the total amount of the quantity in the volume <span class="texhtml"><i>V</i></span>,</li>
+<li><span class="texhtml"><b>j</b></span> is the flux of <span class="texhtml"><i>q</i></span>,</li>
+<li><span class="texhtml"><i>t</i></span> is time,</li>
+<li><span class="texhtml"><i>Σ</i></span> is the net rate that <span class="texhtml"><i>q</i></span> is being generated inside the volume <span class="texhtml"><i>V</i></span>. When <span class="texhtml"><i>q</i></span> is being generated, it is called a <i>source</i> of <span class="texhtml"><i>q</i></span>, and it makes <span class="texhtml"><i>Σ</i></span> more positive. When <span class="texhtml"><i>q</i></span> is being destroyed, it is called a <i>sink</i> of <span class="texhtml"><i>q</i></span>, and it makes <span class="texhtml"><i>Σ</i></span> more negative. This term is sometimes written as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle dq/dt|_{\rm {gen}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mi>q</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>d</mi>
+        <mi>t</mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">g</mi>
+              <mi mathvariant="normal">e</mi>
+              <mi mathvariant="normal">n</mi>
+            </mrow>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle dq/dt|_{\rm {gen}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a2014d1637e3471ade135ca52b82bb7e44501d5d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.338ex; width:8.848ex; height:3.343ex;" alt="{\displaystyle dq/dt|_{\rm {gen}}}"/></span> or the total change of q from its generation or destruction inside the control volume.</li></ul>
+<p>In a simple example, <span class="texhtml"><i>V</i></span> could be a building, and <span class="texhtml"><i>q</i></span> could be the number of people in the building. The surface <span class="texhtml"><i>S</i></span> would consist of the walls, doors, roof, and foundation of the building. Then the continuity equation states that the number of people in the building increases when people enter the building (an inward flux through the surface), decreases when people exit the building (an outward flux through the surface), increases when someone in the building gives birth (a source, <span class="texhtml"><i>Σ</i> &gt; 0</span>), and decreases when someone in the building dies (a sink, <span class="texhtml"><i>Σ</i> &lt; 0</span>).
+</p>
+<h3><span class="mw-headline" id="Differential_form">Differential form</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Continuity_equation&amp;action=edit&amp;section=4" title="Edit section: Differential form">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Conservation_law" title="Conservation law">Conservation law</a> and <a href="/wiki/Conservation_form" title="Conservation form">conservation form</a></div>
+<p>By the <a href="/wiki/Divergence_theorem" title="Divergence theorem">divergence theorem</a>, a general continuity equation can also be written in a "differential form":
+</p>
+<div class="equation-box" style="margin: 0 0 0 1.6em;padding: 5px; border-width:2px; border-style: solid; border-color: #0073CF; background-color: #F5FFFA; text-align: center; display: table">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {\partial \rho }{\partial t}}+\nabla \cdot \mathbf {j} =\sigma \,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>&#x03C1;<!-- ρ --></mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">j</mi>
+        </mrow>
+        <mo>=</mo>
+        <mi>&#x03C3;<!-- σ --></mi>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\partial \rho }{\partial t}}+\nabla \cdot \mathbf {j} =\sigma \,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c4f41ca816e5db767c9260a64f03da64f3762111" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:15.443ex; height:5.676ex;" alt="\frac{\partial \rho}{\partial t} + \nabla \cdot \mathbf{j} = \sigma\,"/></span>
+</p>
+</div>
+<p>where
+</p>
+<ul><li><span class="texhtml">∇⋅</span> is <a href="/wiki/Divergence" title="Divergence">divergence</a>,</li>
+<li><span class="texhtml"><i>ρ</i></span> is the amount of the quantity <span class="texhtml"><i>q</i></span> per unit volume,</li>
+<li><span class="texhtml"><b>j</b></span> is the flux of <span class="texhtml"><i>q</i></span>,</li>
+<li><span class="texhtml"><i>t</i></span> is time,</li>
+<li><span class="texhtml"><i>σ</i></span> is the generation of <span class="texhtml"><i>q</i></span> per unit volume per unit time. Terms that generate <span class="texhtml"><i>q</i></span> (i.e. <span class="texhtml"><i>σ</i> &gt; 0</span>) or remove <span class="texhtml"><i>q</i></span> (i.e. <span class="texhtml"><i>σ</i> &lt; 0</span>) are referred to as a "sources" and "sinks" respectively.</li></ul>
+<p>This general equation may be used to derive any continuity equation, ranging from as simple as the volume continuity equation to as complicated as the <a href="/wiki/Navier%E2%80%93Stokes_equations" title="Navier–Stokes equations">Navier–Stokes equations</a>. This equation also generalizes the <a href="/wiki/Advection_equation" class="mw-redirect" title="Advection equation">advection equation</a>. Other equations in physics, such as <a href="/wiki/Gauss%27s_law" title="Gauss&#39;s law">Gauss's law of the electric field</a> and <a href="/wiki/Gauss%27s_law_for_gravity" title="Gauss&#39;s law for gravity">Gauss's law for gravity</a>, have a similar mathematical form to the continuity equation, but are not usually referred to by the term "continuity equation", because <span class="texhtml"><b>j</b></span> in those cases does not represent the flow of a real physical quantity.
+</p><p>In the case that <span class="texhtml"><i>q</i></span> is a <a href="/wiki/Conservation_law_(physics)" class="mw-redirect" title="Conservation law (physics)">conserved quantity</a> that cannot be created or destroyed (such as <a href="/wiki/Energy" title="Energy">energy</a>), <span class="texhtml"><i>σ</i> = 0</span> and the equations becomes:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {\partial \rho }{\partial t}}+\nabla \cdot \mathbf {j} =0\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>&#x03C1;<!-- ρ --></mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">j</mi>
+        </mrow>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\partial \rho }{\partial t}}+\nabla \cdot \mathbf {j} =0\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7c219106af71dccfbaa993f687c702795bbb6dcb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:15.276ex; height:5.676ex;" alt="\frac{\partial \rho}{\partial t} + \nabla \cdot \mathbf{j} = 0\,"/></span></dd></dl>
+<h2><span class="mw-headline" id="Electromagnetism">Electromagnetism</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Continuity_equation&amp;action=edit&amp;section=5" title="Edit section: Electromagnetism">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Charge_conservation" title="Charge conservation">Charge conservation</a></div>
+<p>In <a href="/wiki/Electromagnetic_theory" class="mw-redirect" title="Electromagnetic theory">electromagnetic theory</a>, the continuity equation is an empirical law expressing (local) <a href="/wiki/Charge_conservation" title="Charge conservation">charge conservation</a>. Mathematically it is an automatic consequence of <a href="/wiki/Maxwell%27s_equations" title="Maxwell&#39;s equations">Maxwell's equations</a>, although charge conservation is more fundamental than Maxwell's equations.  It states that the <a href="/wiki/Divergence" title="Divergence">divergence</a> of the <a href="/wiki/Current_density" title="Current density">current density</a> <span class="texhtml"><b>J</b></span> (in <a href="/wiki/Amperes" class="mw-redirect" title="Amperes">amperes</a> per square metre) is equal to the negative rate of change of the <a href="/wiki/Charge_density" title="Charge density">charge density</a> <span class="texhtml"><i>ρ</i></span> (in <a href="/wiki/Coulomb" title="Coulomb">coulombs</a> per cubic metre),
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \cdot \mathbf {J} =-{\partial \rho  \over \partial t}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">J</mi>
+        </mrow>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>&#x03C1;<!-- ρ --></mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \cdot \mathbf {J} =-{\partial \rho  \over \partial t}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/755aff52ec5e975ffc56e31752466eb467c7fd87" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:13.258ex; height:5.676ex;" alt=" \nabla \cdot \mathbf{J} = - {\partial \rho \over \partial t} "/></span></dd></dl>
+<dl><dd><table class="toccolours collapsible collapsed" width="80%" style="text-align:left">
+<tbody><tr>
+<th>Consistency with Maxwell's equations
+</th></tr>
+<tr>
+<td>
+<p>One of <a href="/wiki/Maxwell%27s_equations" title="Maxwell&#39;s equations">Maxwell's equations</a>, <a href="/wiki/Amp%C3%A8re%27s_law" class="mw-redirect" title="Ampère&#39;s law">Ampère's law (with Maxwell's correction)</a>, states that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \times \mathbf {H} =\mathbf {J} +{\frac {\partial \mathbf {D} }{\partial t}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">H</mi>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">J</mi>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">D</mi>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \times \mathbf {H} =\mathbf {J} +{\frac {\partial \mathbf {D} }{\partial t}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/461e38011d976a3c6aaec5de1f73d15f814c0f91" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:19.038ex; height:5.509ex;" alt=" \nabla \times \mathbf{H} = \mathbf{J} + \frac{\partial \mathbf{D}}{\partial t}. "/></span></dd></dl>
+<p>Taking the divergence of both sides (the divergence and partial derivative in time commute) results in
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \cdot (\nabla \times \mathbf {H} )=\nabla \cdot \mathbf {J} +{\frac {\partial (\nabla \cdot \mathbf {D} )}{\partial t}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">H</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">J</mi>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mo stretchy="false">(</mo>
+              <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+              <mo>&#x22C5;<!-- ⋅ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">D</mi>
+              </mrow>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \cdot (\nabla \times \mathbf {H} )=\nabla \cdot \mathbf {J} +{\frac {\partial (\nabla \cdot \mathbf {D} )}{\partial t}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/10db7c72a777b9a744a6a2911468e102ad54e20c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:33.502ex; height:5.843ex;" alt=" \nabla \cdot ( \nabla \times \mathbf{H} ) = \nabla \cdot \mathbf{J} + \frac{\partial (\nabla \cdot \mathbf{D})}{\partial t}, "/></span></dd></dl>
+<p>but the divergence of a curl is zero, so that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \cdot \mathbf {J} +{\frac {\partial (\nabla \cdot \mathbf {D} )}{\partial t}}=0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">J</mi>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mo stretchy="false">(</mo>
+              <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+              <mo>&#x22C5;<!-- ⋅ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">D</mi>
+              </mrow>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \cdot \mathbf {J} +{\frac {\partial (\nabla \cdot \mathbf {D} )}{\partial t}}=0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2abe7d24d04b2e8054bc6ea5dcf3942d57f27fe8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:22.372ex; height:5.843ex;" alt=" \nabla \cdot \mathbf{J} + \frac{\partial (\nabla \cdot \mathbf{D})}{\partial t} = 0. "/></span></dd></dl>
+<p>Another one of Maxwell's equations, <a href="/wiki/Gauss%27s_law" title="Gauss&#39;s law">Gauss's law</a>, states that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \cdot \mathbf {D} =\rho ,\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">D</mi>
+        </mrow>
+        <mo>=</mo>
+        <mi>&#x03C1;<!-- ρ --></mi>
+        <mo>,</mo>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \cdot \mathbf {D} =\rho ,\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7c635aad4ec5194fb6d212934f303b8563af8f3e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.999ex; height:2.676ex;" alt=" \nabla \cdot \mathbf{D} = \rho,\, "/></span></dd></dl>
+<p>substitution into the previous equation yields the continuity equation
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \cdot \mathbf {J} +{\partial \rho  \over \partial t}=0.\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">J</mi>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>&#x03C1;<!-- ρ --></mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>0.</mn>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \cdot \mathbf {J} +{\partial \rho  \over \partial t}=0.\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/76132dc9d9db42fc2e469c4255f0695476e65bb9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:16.487ex; height:5.676ex;" alt=" \nabla \cdot \mathbf{J} + {\partial \rho \over \partial t} = 0.\,"/></span></dd></dl>
+</td></tr></tbody></table></dd></dl>
+<p>Current is the movement of charge.  The continuity equation says that if charge is moving out of a differential volume (i.e. divergence of current density is positive) then the amount of charge within that volume is going to decrease, so the rate of change of charge density is negative.  Therefore, the continuity equation amounts to a conservation of charge.
+</p><p>If <a href="/wiki/Magnetic_monopole" title="Magnetic monopole">magnetic monopoles</a> exist, there would be a continuity equation for monopole currents as well, see the monopole article for background and the duality between electric and magnetic currents.
+</p>
+<h2><span class="mw-headline" id="Fluid_dynamics">Fluid dynamics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Continuity_equation&amp;action=edit&amp;section=6" title="Edit section: Fluid dynamics">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Mass_flux" title="Mass flux">Mass flux</a> and <a href="/wiki/Vorticity_equation" title="Vorticity equation">Vorticity equation</a></div>
+<p>In <a href="/wiki/Fluid_dynamics" title="Fluid dynamics">fluid dynamics</a>, the continuity equation states that the rate at which mass enters a system is equal to the rate at which mass leaves the system plus the accumulation of mass within the system.<sup id="cite_ref-Pedlosky_1-0" class="reference"><a href="#cite_note-Pedlosky-1">&#91;1&#93;</a></sup><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+The differential form of the continuity equation is:<sup id="cite_ref-Pedlosky_1-1" class="reference"><a href="#cite_note-Pedlosky-1">&#91;1&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {\partial \rho }{\partial t}}+\nabla \cdot (\rho \mathbf {u} )=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>&#x03C1;<!-- ρ --></mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03C1;<!-- ρ --></mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">u</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\partial \rho }{\partial t}}+\nabla \cdot (\rho \mathbf {u} )=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2567e1f460ceb134fd751701f777e0f1931aa7a1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:18.569ex; height:5.676ex;" alt="{\displaystyle {\frac {\partial \rho }{\partial t}}+\nabla \cdot (\rho \mathbf {u} )=0}"/></span></dd></dl>
+<p>where 
+</p>
+<ul><li><span class="texhtml"><i>ρ</i></span> is fluid <a href="/wiki/Density" title="Density">density</a>,</li>
+<li><span class="texhtml"><i>t</i></span> is time,</li>
+<li><span class="texhtml"><b>u</b></span> is the <a href="/wiki/Flow_velocity" title="Flow velocity">flow velocity</a> <a href="/wiki/Vector_field" title="Vector field">vector field</a>.</li></ul>
+<p>The time derivative can be understood as the accumulation (or loss) of mass in the system, while the <a href="/wiki/Divergence" title="Divergence">divergence</a> term represents the difference in flow in versus flow out. In this context, this equation is also one of the <a href="/wiki/Euler_equations_(fluid_dynamics)" title="Euler equations (fluid dynamics)">Euler equations (fluid dynamics)</a>. The <a href="/wiki/Navier%E2%80%93Stokes_equations" title="Navier–Stokes equations">Navier–Stokes equations</a> form a vector continuity equation describing the conservation of <a href="/wiki/Linear_momentum" class="mw-redirect" title="Linear momentum">linear momentum</a>.
+</p><p>If the fluid is an <a href="/wiki/Incompressible_flow" title="Incompressible flow">incompressible flow</a> (<span class="texhtml"><i>ρ</i></span> is constant), the mass continuity equation simplifies to a volume continuity equation:<sup id="cite_ref-Pedlosky_1-2" class="reference"><a href="#cite_note-Pedlosky-1">&#91;1&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \cdot \mathbf {u} =0,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">u</mi>
+        </mrow>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \cdot \mathbf {u} =0,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e12812c8a9d3ffb93c86f1042bef079d7d61cebe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.008ex; height:2.509ex;" alt="\nabla \cdot \mathbf{u} = 0,"/></span></dd></dl>
+<p>which means that the <a href="/wiki/Divergence" title="Divergence">divergence</a> of velocity field is zero everywhere.  Physically, this is equivalent to saying that the local volume dilation rate is zero, hence a flow of water through a converging pipe will adjust solely by increasing its velocity as water is largely incompressible.
+</p>
+<h2><span class="mw-headline" id="Energy_and_heat">Energy and heat</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Continuity_equation&amp;action=edit&amp;section=7" title="Edit section: Energy and heat">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="/wiki/Conservation_of_energy" title="Conservation of energy">Conservation of energy</a> says that energy cannot be created or destroyed. (See <a href="#General_relativity">below</a> for the nuances associated with general relativity.) Therefore, there is a continuity equation for energy flow:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {\partial u}{\partial t}}+\nabla \cdot \mathbf {q} =0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>u</mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">q</mi>
+        </mrow>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\partial u}{\partial t}}+\nabla \cdot \mathbf {q} =0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3172b8e18a8dd11d364153803a7a52679566a976" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:15.616ex; height:5.509ex;" alt=" \frac{ \partial u}{\partial t} + \nabla \cdot \mathbf{q} = 0"/></span></dd></dl>
+<p>where 
+</p>
+<ul><li><span class="texhtml"><i>u</i></span> = local <a href="/wiki/Energy_density" title="Energy density">energy density</a> (energy per unit volume),</li>
+<li><span class="texhtml"><b>q</b></span> = <a href="/wiki/Energy_flux" title="Energy flux">energy flux</a> (transfer of energy per unit cross-sectional area per unit time) as a vector,</li></ul>
+<p>An important practical example is <a href="/wiki/Heat_transfer" title="Heat transfer">the flow of heat</a>. When heat flows inside a solid, the continuity equation can be combined with <a href="/wiki/Thermal_conduction#Fourier.27s_law" title="Thermal conduction">Fourier's law</a> (heat flux is proportional to temperature gradient) to arrive at the <a href="/wiki/Heat_equation" title="Heat equation">heat equation</a>. The equation of heat flow may also have source terms: Although <i>energy</i> cannot be created or destroyed, <i>heat</i> can be created from other types of energy, for example via <a href="/wiki/Friction" title="Friction">friction</a> or <a href="/wiki/Joule_heating" title="Joule heating">joule heating</a>.
+</p>
+<h2><span class="mw-headline" id="Probability_distributions">Probability distributions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Continuity_equation&amp;action=edit&amp;section=8" title="Edit section: Probability distributions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>If there is a quantity that moves continuously according to a stochastic (random) process, like the location of a single dissolved molecule with <a href="/wiki/Brownian_motion" title="Brownian motion">Brownian motion</a>, then there is a continuity equation for its <a href="/wiki/Probability_distribution" title="Probability distribution">probability distribution</a>. The flux in this case is the probability per unit area per unit time that the particle passes through a surface. According to the continuity equation, the negative divergence of this flux equals the rate of change of the <a href="/wiki/Probability_density" class="mw-redirect" title="Probability density">probability density</a>. The continuity equation reflects the fact that the molecule is always somewhere—the integral of its probability distribution is always equal to 1—and that it moves by a continuous motion (no <a href="/wiki/Teleportation" title="Teleportation">teleporting</a>).
+</p>
+<h2><span class="mw-headline" id="Quantum_mechanics">Quantum mechanics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Continuity_equation&amp;action=edit&amp;section=9" title="Edit section: Quantum mechanics">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="/wiki/Quantum_mechanics" title="Quantum mechanics">Quantum mechanics</a> is another domain where there is a continuity equation related to <i>conservation of probability</i>. The terms in the equation require the following definitions, and are slightly less obvious than the other examples above, so they are outlined here:
+</p>
+<ul><li>The <a href="/wiki/Wavefunction" class="mw-redirect" title="Wavefunction">wavefunction</a> <span class="texhtml"><i>Ψ</i></span> for a single <a href="/wiki/Particle" title="Particle">particle</a> in <a href="/wiki/Position_and_momentum_space" title="Position and momentum space">position space</a> (rather than <a href="/wiki/Position_and_momentum_space" title="Position and momentum space">momentum space</a>), that is, a function of position <span class="texhtml"><b>r</b></span> and time <span class="texhtml"><i>t</i></span>, <span class="texhtml"><i>Ψ</i> = <i>Ψ</i>(<b>r</b>, <i>t</i>)</span>.</li>
+<li>The <a href="/wiki/Probability_density_function" title="Probability density function">probability density function</a> is:</li></ul>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \rho (\mathbf {r} ,t)=\Psi ^{*}(\mathbf {r} ,t)\Psi (\mathbf {r} ,t)=|\Psi (\mathbf {r} ,t)|^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03C1;<!-- ρ --></mi>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2217;<!-- ∗ --></mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \rho (\mathbf {r} ,t)=\Psi ^{*}(\mathbf {r} ,t)\Psi (\mathbf {r} ,t)=|\Psi (\mathbf {r} ,t)|^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/26797fc97828848f2e1602c98f01f438ecb5586c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:35.365ex; height:3.343ex;" alt="{\displaystyle \rho (\mathbf {r} ,t)=\Psi ^{*}(\mathbf {r} ,t)\Psi (\mathbf {r} ,t)=|\Psi (\mathbf {r} ,t)|^{2}}"/></span></dd></dl>
+<ul><li>The <a href="/wiki/Probability" title="Probability">probability</a> of finding the particle within <span class="texhtml"><i>V</i></span> at <span class="texhtml"><i>t</i></span> is denoted and defined by:</li></ul>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P=P_{\mathbf {r} \in V}(t)=\int _{V}\Psi ^{*}\Psi dV=\int _{V}|\Psi |^{2}dV}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo>=</mo>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="bold">r</mi>
+            </mrow>
+            <mo>&#x2208;<!-- ∈ --></mo>
+            <mi>V</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>V</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2217;<!-- ∗ --></mo>
+          </mrow>
+        </msup>
+        <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+        <mi>d</mi>
+        <mi>V</mi>
+        <mo>=</mo>
+        <msub>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>V</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mi>d</mi>
+        <mi>V</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P=P_{\mathbf {r} \in V}(t)=\int _{V}\Psi ^{*}\Psi dV=\int _{V}|\Psi |^{2}dV}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/267f6b9dcd978872600add6ff87cac1dade1a902" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:39.738ex; height:5.676ex;" alt="{\displaystyle P=P_{\mathbf {r} \in V}(t)=\int _{V}\Psi ^{*}\Psi dV=\int _{V}|\Psi |^{2}dV}"/></span></dd></dl>
+<ul><li>The <a href="/wiki/Probability_current" title="Probability current">probability current</a> (aka probability flux):</li></ul>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbf {j} (\mathbf {r} ,t)={\frac {\hbar }{2mi}}\left[\Psi ^{*}\left(\nabla \Psi \right)-\Psi \left(\nabla \Psi ^{*}\right)\right].}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">j</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+            <mrow>
+              <mn>2</mn>
+              <mi>m</mi>
+              <mi>i</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow>
+          <mo>[</mo>
+          <mrow>
+            <msup>
+              <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>&#x2217;<!-- ∗ --></mo>
+              </mrow>
+            </msup>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                <msup>
+                  <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>&#x2217;<!-- ∗ --></mo>
+                  </mrow>
+                </msup>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {j} (\mathbf {r} ,t)={\frac {\hbar }{2mi}}\left[\Psi ^{*}\left(\nabla \Psi \right)-\Psi \left(\nabla \Psi ^{*}\right)\right].}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ec0b1e29963dd9bc0561ebca55905dedc9a7669c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; margin-left: -0.164ex; width:36.866ex; height:5.343ex;" alt=" \mathbf{j}(\mathbf{r},t) = \frac{\hbar}{2mi} \left [ \Psi^{*} \left ( \nabla \Psi \right ) - \Psi \left ( \nabla \Psi^{*} \right ) \right ]. "/></span></dd></dl>
+<p>With these definitions the continuity equation reads:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \nabla \cdot \mathbf {j} +{\frac {\partial \rho }{\partial t}}=0\rightleftharpoons \nabla \cdot \mathbf {j} +{\frac {\partial |\Psi |^{2}}{\partial t}}=0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">j</mi>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>&#x03C1;<!-- ρ --></mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mo class="MJX-variant" stretchy="false">&#x21CC;<!-- ⇌ --></mo>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">j</mi>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+              <msup>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">|</mo>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla \cdot \mathbf {j} +{\frac {\partial \rho }{\partial t}}=0\rightleftharpoons \nabla \cdot \mathbf {j} +{\frac {\partial |\Psi |^{2}}{\partial t}}=0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1b7186fc160aff32c64e00b3f50f90cb3969d23b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:36.993ex; height:6.176ex;" alt=" \nabla \cdot \mathbf{j} + \frac{\partial \rho}{\partial t} = 0 \rightleftharpoons \nabla \cdot \mathbf{j} + \frac{\partial |\Psi|^2}{\partial t} = 0."/></span></dd></dl>
+<p>Either form may be quoted. Intuitively, the above quantities indicate this represents the flow of probability. The <i>chance</i> of finding the particle at some position <span class="texhtml"><b>r</b></span> and time <span class="texhtml"><i>t</i></span> flows like a <a href="/wiki/Fluid" title="Fluid">fluid</a>; hence the term <i>probability current</i>, a <a href="/wiki/Vector_field" title="Vector field">vector field</a>. The particle itself does <i>not</i> flow <a href="/wiki/Deterministic_system" title="Deterministic system">deterministically</a> in this <a href="/wiki/Vector_field" title="Vector field">vector field</a>.
+</p>
+<dl><dd><table class="toccolours collapsible collapsed" width="80%" style="text-align:left">
+<tbody><tr>
+<th>Consistency with Schrödinger equation
+</th></tr>
+<tr>
+<td>For this derivation see<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup> for example. The 3-d time dependent <a href="/wiki/Schr%C3%B6dinger_equation" title="Schrödinger equation">Schrödinger equation</a> and its <a href="/wiki/Complex_conjugate" title="Complex conjugate">complex conjugate</a> (<span class="texhtml"><i>i</i> → –<i>i</i></span> throughout) are respectively:
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}&amp;-{\frac {\hbar ^{2}}{2m}}\nabla ^{2}\Psi +U\Psi =i\hbar {\frac {\partial \Psi }{\partial t}},\\&amp;-{\frac {\hbar ^{2}}{2m}}\nabla ^{2}\Psi ^{*}+U\Psi ^{*}=-i\hbar {\frac {\partial \Psi ^{*}}{\partial t}},\\\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <msup>
+                      <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mrow>
+                      <mn>2</mn>
+                      <mi>m</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <msup>
+                  <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                <mo>+</mo>
+                <mi>U</mi>
+                <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                <mo>=</mo>
+                <mi>i</mi>
+                <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <msup>
+                      <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mrow>
+                      <mn>2</mn>
+                      <mi>m</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <msup>
+                  <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>&#x2217;<!-- ∗ --></mo>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+                <mi>U</mi>
+                <msup>
+                  <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>&#x2217;<!-- ∗ --></mo>
+                  </mrow>
+                </msup>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>i</mi>
+                <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <msup>
+                        <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mo>&#x2217;<!-- ∗ --></mo>
+                        </mrow>
+                      </msup>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}&amp;-{\frac {\hbar ^{2}}{2m}}\nabla ^{2}\Psi +U\Psi =i\hbar {\frac {\partial \Psi }{\partial t}},\\&amp;-{\frac {\hbar ^{2}}{2m}}\nabla ^{2}\Psi ^{*}+U\Psi ^{*}=-i\hbar {\frac {\partial \Psi ^{*}}{\partial t}},\\\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/65a8ed19e54a0cdf0a5a58351e03ff1a11db4240" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -5.338ex; width:33.648ex; height:11.843ex;" alt=" \begin{align} &amp; -\frac{\hbar^2}{2m}\nabla^2 \Psi + U\Psi = i\hbar \frac{\partial \Psi}{\partial t} , \\&#10;&amp; - \frac{\hbar^2}{2m}\nabla^2 \Psi^{*} + U\Psi^{*} = - i\hbar \frac{\partial \Psi^{*}}{\partial t} ,\\&#10;\end{align}"/></span></dd></dl>
+<p>where <span class="texhtml"><i>U</i></span> is the <a href="/wiki/Potential" title="Potential">potential function</a>. The <a href="/wiki/Partial_derivative" title="Partial derivative">partial derivative</a> of <span class="texhtml"><i>ρ</i></span> with respect to <span class="texhtml"><i>t</i></span> is:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {\partial \rho }{\partial t}}={\frac {\partial |\Psi |^{2}}{\partial t}}={\frac {\partial }{\partial t}}\left(\Psi ^{*}\Psi \right)=\Psi ^{*}{\frac {\partial \Psi }{\partial t}}+\Psi {\frac {\partial \Psi ^{*}}{\partial t}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>&#x03C1;<!-- ρ --></mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+              <msup>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">|</mo>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <msup>
+              <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>&#x2217;<!-- ∗ --></mo>
+              </mrow>
+            </msup>
+            <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2217;<!-- ∗ --></mo>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <msup>
+                <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo>&#x2217;<!-- ∗ --></mo>
+                </mrow>
+              </msup>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\partial \rho }{\partial t}}={\frac {\partial |\Psi |^{2}}{\partial t}}={\frac {\partial }{\partial t}}\left(\Psi ^{*}\Psi \right)=\Psi ^{*}{\frac {\partial \Psi }{\partial t}}+\Psi {\frac {\partial \Psi ^{*}}{\partial t}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/86fb8e021cc5b3948f8911ac747f51b3fa5c8109" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:45.959ex; height:6.176ex;" alt=" \frac{\partial \rho}{\partial t} = \frac{\partial |\Psi |^2}{\partial t } = \frac{\partial}{\partial t} \left ( \Psi^{*} \Psi \right ) =  \Psi^{*} \frac{\partial \Psi}{\partial t} + \Psi \frac{\partial\Psi^{*}}{\partial t} ."/></span></dd></dl>
+<p>Multiplying the Schrödinger equation by <span class="texhtml"><i>Ψ</i>*</span> then solving for <span class="texhtml"><i>Ψ</i>* <span class="sfrac nowrap" style="display:inline-block; vertical-align:-0.5em; font-size:85%; text-align:center;"><span style="display:block; line-height:1em; margin:0 0.1em;">∂<i>Ψ</i></span><span class="visualhide">/</span><span style="display:block; line-height:1em; margin:0 0.1em; border-top:1px solid;">∂<i>t</i></span></span></span>, and similarly multiplying the complex conjugated Schrödinger equation by <span class="texhtml"><i>Ψ</i></span> then solving for <span class="texhtml"><i>Ψ</i> <span class="sfrac nowrap" style="display:inline-block; vertical-align:-0.5em; font-size:85%; text-align:center;"><span style="display:block; line-height:1em; margin:0 0.1em;">∂<i>Ψ</i>*</span><span class="visualhide">/</span><span style="display:block; line-height:1em; margin:0 0.1em; border-top:1px solid;">∂<i>t</i></span></span></span>;
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}&amp;\Psi ^{*}{\frac {\partial \Psi }{\partial t}}={\frac {1}{i\hbar }}\left[-{\frac {\hbar ^{2}\Psi ^{*}}{2m}}\nabla ^{2}\Psi +U\Psi ^{*}\Psi \right],\\&amp;\Psi {\frac {\partial \Psi ^{*}}{\partial t}}=-{\frac {1}{i\hbar }}\left[-{\frac {\hbar ^{2}\Psi }{2m}}\nabla ^{2}\Psi ^{*}+U\Psi \Psi ^{*}\right],\\\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd />
+              <mtd>
+                <msup>
+                  <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>&#x2217;<!-- ∗ --></mo>
+                  </mrow>
+                </msup>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <mrow>
+                      <mi>i</mi>
+                      <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mrow>
+                  <mo>[</mo>
+                  <mrow>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <msup>
+                            <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>2</mn>
+                            </mrow>
+                          </msup>
+                          <msup>
+                            <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mo>&#x2217;<!-- ∗ --></mo>
+                            </mrow>
+                          </msup>
+                        </mrow>
+                        <mrow>
+                          <mn>2</mn>
+                          <mi>m</mi>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                    <msup>
+                      <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                    <mo>+</mo>
+                    <mi>U</mi>
+                    <msup>
+                      <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mo>&#x2217;<!-- ∗ --></mo>
+                      </mrow>
+                    </msup>
+                    <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                  </mrow>
+                  <mo>]</mo>
+                </mrow>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <msup>
+                        <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mo>&#x2217;<!-- ∗ --></mo>
+                        </mrow>
+                      </msup>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <mrow>
+                      <mi>i</mi>
+                      <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mrow>
+                  <mo>[</mo>
+                  <mrow>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <msup>
+                            <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>2</mn>
+                            </mrow>
+                          </msup>
+                          <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                        </mrow>
+                        <mrow>
+                          <mn>2</mn>
+                          <mi>m</mi>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                    <msup>
+                      <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <msup>
+                      <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mo>&#x2217;<!-- ∗ --></mo>
+                      </mrow>
+                    </msup>
+                    <mo>+</mo>
+                    <mi>U</mi>
+                    <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                    <msup>
+                      <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mo>&#x2217;<!-- ∗ --></mo>
+                      </mrow>
+                    </msup>
+                  </mrow>
+                  <mo>]</mo>
+                </mrow>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}&amp;\Psi ^{*}{\frac {\partial \Psi }{\partial t}}={\frac {1}{i\hbar }}\left[-{\frac {\hbar ^{2}\Psi ^{*}}{2m}}\nabla ^{2}\Psi +U\Psi ^{*}\Psi \right],\\&amp;\Psi {\frac {\partial \Psi ^{*}}{\partial t}}=-{\frac {1}{i\hbar }}\left[-{\frac {\hbar ^{2}\Psi }{2m}}\nabla ^{2}\Psi ^{*}+U\Psi \Psi ^{*}\right],\\\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d518e2b0afa5c3299ced0923cf213386a6abf685" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -5.671ex; width:41.278ex; height:12.509ex;" alt=" \begin{align} &amp; \Psi^*\frac{\partial \Psi}{\partial t} = \frac{1}{i\hbar } \left [ -\frac{\hbar^2\Psi^*}{2m}\nabla^2 \Psi + U\Psi^*\Psi \right ], \\&#10;&amp; \Psi \frac{\partial \Psi^*}{\partial t} = - \frac{1}{i\hbar } \left [ - \frac{\hbar^2\Psi}{2m}\nabla^2 \Psi^* + U\Psi\Psi^* \right ],\\ &#10;\end{align}"/></span></dd></dl>
+<p>substituting into the time derivative of <span class="texhtml"><i>ρ</i></span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}{\frac {\partial \rho }{\partial t}}&amp;={\frac {1}{i\hbar }}\left[-{\frac {\hbar ^{2}\Psi ^{*}}{2m}}\nabla ^{2}\Psi +U\Psi ^{*}\Psi \right]-{\frac {1}{i\hbar }}\left[-{\frac {\hbar ^{2}\Psi }{2m}}\nabla ^{2}\Psi ^{*}+U\Psi \Psi ^{*}\right]\\&amp;={\frac {1}{i\hbar }}\left[-{\frac {\hbar ^{2}\Psi ^{*}}{2m}}\nabla ^{2}\Psi +U\Psi ^{*}\Psi \right]+{\frac {1}{i\hbar }}\left[+{\frac {\hbar ^{2}\Psi }{2m}}\nabla ^{2}\Psi ^{*}-U\Psi ^{*}\Psi \right]\\&amp;=-{\frac {1}{i\hbar }}{\frac {\hbar ^{2}\Psi ^{*}}{2m}}\nabla ^{2}\Psi +{\frac {1}{i\hbar }}{\frac {\hbar ^{2}\Psi }{2m}}\nabla ^{2}\Psi ^{*}\\&amp;={\frac {\hbar }{2im}}\left[\Psi \nabla ^{2}\Psi ^{*}-\Psi ^{*}\nabla ^{2}\Psi \right]\\\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>&#x03C1;<!-- ρ --></mi>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <mrow>
+                      <mi>i</mi>
+                      <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mrow>
+                  <mo>[</mo>
+                  <mrow>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <msup>
+                            <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>2</mn>
+                            </mrow>
+                          </msup>
+                          <msup>
+                            <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mo>&#x2217;<!-- ∗ --></mo>
+                            </mrow>
+                          </msup>
+                        </mrow>
+                        <mrow>
+                          <mn>2</mn>
+                          <mi>m</mi>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                    <msup>
+                      <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                    <mo>+</mo>
+                    <mi>U</mi>
+                    <msup>
+                      <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mo>&#x2217;<!-- ∗ --></mo>
+                      </mrow>
+                    </msup>
+                    <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                  </mrow>
+                  <mo>]</mo>
+                </mrow>
+                <mo>&#x2212;<!-- − --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <mrow>
+                      <mi>i</mi>
+                      <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mrow>
+                  <mo>[</mo>
+                  <mrow>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <msup>
+                            <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>2</mn>
+                            </mrow>
+                          </msup>
+                          <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                        </mrow>
+                        <mrow>
+                          <mn>2</mn>
+                          <mi>m</mi>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                    <msup>
+                      <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <msup>
+                      <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mo>&#x2217;<!-- ∗ --></mo>
+                      </mrow>
+                    </msup>
+                    <mo>+</mo>
+                    <mi>U</mi>
+                    <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                    <msup>
+                      <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mo>&#x2217;<!-- ∗ --></mo>
+                      </mrow>
+                    </msup>
+                  </mrow>
+                  <mo>]</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <mrow>
+                      <mi>i</mi>
+                      <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mrow>
+                  <mo>[</mo>
+                  <mrow>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <msup>
+                            <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>2</mn>
+                            </mrow>
+                          </msup>
+                          <msup>
+                            <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mo>&#x2217;<!-- ∗ --></mo>
+                            </mrow>
+                          </msup>
+                        </mrow>
+                        <mrow>
+                          <mn>2</mn>
+                          <mi>m</mi>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                    <msup>
+                      <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                    <mo>+</mo>
+                    <mi>U</mi>
+                    <msup>
+                      <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mo>&#x2217;<!-- ∗ --></mo>
+                      </mrow>
+                    </msup>
+                    <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                  </mrow>
+                  <mo>]</mo>
+                </mrow>
+                <mo>+</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <mrow>
+                      <mi>i</mi>
+                      <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mrow>
+                  <mo>[</mo>
+                  <mrow>
+                    <mo>+</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <msup>
+                            <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>2</mn>
+                            </mrow>
+                          </msup>
+                          <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                        </mrow>
+                        <mrow>
+                          <mn>2</mn>
+                          <mi>m</mi>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                    <msup>
+                      <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <msup>
+                      <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mo>&#x2217;<!-- ∗ --></mo>
+                      </mrow>
+                    </msup>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mi>U</mi>
+                    <msup>
+                      <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mo>&#x2217;<!-- ∗ --></mo>
+                      </mrow>
+                    </msup>
+                    <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                  </mrow>
+                  <mo>]</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <mrow>
+                      <mi>i</mi>
+                      <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <msup>
+                        <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>2</mn>
+                        </mrow>
+                      </msup>
+                      <msup>
+                        <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mo>&#x2217;<!-- ∗ --></mo>
+                        </mrow>
+                      </msup>
+                    </mrow>
+                    <mrow>
+                      <mn>2</mn>
+                      <mi>m</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <msup>
+                  <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                <mo>+</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <mrow>
+                      <mi>i</mi>
+                      <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <msup>
+                        <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>2</mn>
+                        </mrow>
+                      </msup>
+                      <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                    </mrow>
+                    <mrow>
+                      <mn>2</mn>
+                      <mi>m</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <msup>
+                  <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>&#x2217;<!-- ∗ --></mo>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                    <mrow>
+                      <mn>2</mn>
+                      <mi>i</mi>
+                      <mi>m</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mrow>
+                  <mo>[</mo>
+                  <mrow>
+                    <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                    <msup>
+                      <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <msup>
+                      <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mo>&#x2217;<!-- ∗ --></mo>
+                      </mrow>
+                    </msup>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <msup>
+                      <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mo>&#x2217;<!-- ∗ --></mo>
+                      </mrow>
+                    </msup>
+                    <msup>
+                      <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                  </mrow>
+                  <mo>]</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}{\frac {\partial \rho }{\partial t}}&amp;={\frac {1}{i\hbar }}\left[-{\frac {\hbar ^{2}\Psi ^{*}}{2m}}\nabla ^{2}\Psi +U\Psi ^{*}\Psi \right]-{\frac {1}{i\hbar }}\left[-{\frac {\hbar ^{2}\Psi }{2m}}\nabla ^{2}\Psi ^{*}+U\Psi \Psi ^{*}\right]\\&amp;={\frac {1}{i\hbar }}\left[-{\frac {\hbar ^{2}\Psi ^{*}}{2m}}\nabla ^{2}\Psi +U\Psi ^{*}\Psi \right]+{\frac {1}{i\hbar }}\left[+{\frac {\hbar ^{2}\Psi }{2m}}\nabla ^{2}\Psi ^{*}-U\Psi ^{*}\Psi \right]\\&amp;=-{\frac {1}{i\hbar }}{\frac {\hbar ^{2}\Psi ^{*}}{2m}}\nabla ^{2}\Psi +{\frac {1}{i\hbar }}{\frac {\hbar ^{2}\Psi }{2m}}\nabla ^{2}\Psi ^{*}\\&amp;={\frac {\hbar }{2im}}\left[\Psi \nabla ^{2}\Psi ^{*}-\Psi ^{*}\nabla ^{2}\Psi \right]\\\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/96e407c3d223275c2f9f94c9d0468d1c1c76a241" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -11.505ex; width:65.57ex; height:24.176ex;" alt=" \begin{align} &#10;\frac{\partial \rho}{\partial t} &amp; = \frac{1}{i\hbar } \left [ -\frac{\hbar^2\Psi^{*}}{2m}\nabla^2 \Psi + U\Psi^{*}\Psi \right ] - \frac{1}{i\hbar } \left [ - \frac{\hbar^2\Psi}{2m}\nabla^2 \Psi^{*} + U\Psi\Psi^{*} \right ] \\&#10; &amp; = \frac{1}{i\hbar } \left [ -\frac{\hbar^2\Psi^{*}}{2m}\nabla^2 \Psi + U\Psi^{*}\Psi \right ] + \frac{1}{i\hbar } \left [ +\frac{\hbar^2\Psi}{2m}\nabla^2 \Psi^{*} - U\Psi^{*}\Psi \right ] \\&#10; &amp; = - \frac{1}{i\hbar } \frac{\hbar^2\Psi^{*}}{2m}\nabla^2 \Psi  + \frac{1}{i\hbar } \frac{\hbar^2\Psi}{2m}\nabla^2 \Psi^{*} \\&#10; &amp; = \frac{\hbar}{2im} \left [ \Psi\nabla^2 \Psi^{*} - \Psi^{*}\nabla^2 \Psi \right ] \\&#10;\end{align} "/></span></dd></dl>
+<p>The <a href="/wiki/Laplace_operator" title="Laplace operator">Laplacian</a> <a href="/wiki/Operator_(mathematics)" title="Operator (mathematics)">operators</a> (<span class="texhtml">∇<sup>2</sup></span>) in the above result suggest that the right hand side is the divergence of <span class="texhtml"><b>j</b></span>, and the reversed order of terms imply this is the negative of <span class="texhtml"><b>j</b></span>, altogether:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}\nabla \cdot \mathbf {j} &amp;=\nabla \cdot \left[{\frac {\hbar }{2mi}}\left(\Psi ^{*}\left(\nabla \Psi \right)-\Psi \left(\nabla \Psi ^{*}\right)\right)\right]\\&amp;={\frac {\hbar }{2mi}}\left[\Psi ^{*}\left(\nabla ^{2}\Psi \right)-\Psi \left(\nabla ^{2}\Psi ^{*}\right)\right]\\&amp;=-{\frac {\hbar }{2mi}}\left[\Psi \left(\nabla ^{2}\Psi ^{*}\right)-\Psi ^{*}\left(\nabla ^{2}\Psi \right)\right]\\\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                <mo>&#x22C5;<!-- ⋅ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="bold">j</mi>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                <mo>&#x22C5;<!-- ⋅ --></mo>
+                <mrow>
+                  <mo>[</mo>
+                  <mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                        <mrow>
+                          <mn>2</mn>
+                          <mi>m</mi>
+                          <mi>i</mi>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <msup>
+                          <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mo>&#x2217;<!-- ∗ --></mo>
+                          </mrow>
+                        </msup>
+                        <mrow>
+                          <mo>(</mo>
+                          <mrow>
+                            <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                            <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                        <mrow>
+                          <mo>(</mo>
+                          <mrow>
+                            <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                            <msup>
+                              <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mo>&#x2217;<!-- ∗ --></mo>
+                              </mrow>
+                            </msup>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                  </mrow>
+                  <mo>]</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                    <mrow>
+                      <mn>2</mn>
+                      <mi>m</mi>
+                      <mi>i</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mrow>
+                  <mo>[</mo>
+                  <mrow>
+                    <msup>
+                      <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mo>&#x2217;<!-- ∗ --></mo>
+                      </mrow>
+                    </msup>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <msup>
+                          <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mn>2</mn>
+                          </mrow>
+                        </msup>
+                        <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <msup>
+                          <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mn>2</mn>
+                          </mrow>
+                        </msup>
+                        <msup>
+                          <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mo>&#x2217;<!-- ∗ --></mo>
+                          </mrow>
+                        </msup>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                  </mrow>
+                  <mo>]</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                    <mrow>
+                      <mn>2</mn>
+                      <mi>m</mi>
+                      <mi>i</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mrow>
+                  <mo>[</mo>
+                  <mrow>
+                    <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <msup>
+                          <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mn>2</mn>
+                          </mrow>
+                        </msup>
+                        <msup>
+                          <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mo>&#x2217;<!-- ∗ --></mo>
+                          </mrow>
+                        </msup>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <msup>
+                      <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mo>&#x2217;<!-- ∗ --></mo>
+                      </mrow>
+                    </msup>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <msup>
+                          <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mn>2</mn>
+                          </mrow>
+                        </msup>
+                        <mi mathvariant="normal">&#x03A8;<!-- Ψ --></mi>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                  </mrow>
+                  <mo>]</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}\nabla \cdot \mathbf {j} &amp;=\nabla \cdot \left[{\frac {\hbar }{2mi}}\left(\Psi ^{*}\left(\nabla \Psi \right)-\Psi \left(\nabla \Psi ^{*}\right)\right)\right]\\&amp;={\frac {\hbar }{2mi}}\left[\Psi ^{*}\left(\nabla ^{2}\Psi \right)-\Psi \left(\nabla ^{2}\Psi ^{*}\right)\right]\\&amp;=-{\frac {\hbar }{2mi}}\left[\Psi \left(\nabla ^{2}\Psi ^{*}\right)-\Psi ^{*}\left(\nabla ^{2}\Psi \right)\right]\\\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0f9b816bda584a12429d38918d2b5af60794b310" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -8.005ex; width:41.835ex; height:17.176ex;" alt="\begin{align} \nabla \cdot \mathbf{j} &amp; = \nabla \cdot \left [ \frac{\hbar}{2mi} \left ( \Psi^{*} \left ( \nabla \Psi \right ) - \Psi \left ( \nabla \Psi^{*} \right ) \right ) \right ] \\&#10; &amp; = \frac{\hbar}{2mi} \left [ \Psi^{*} \left ( \nabla^2 \Psi \right ) - \Psi \left ( \nabla^2 \Psi^{*} \right ) \right ] \\&#10; &amp; = - \frac{\hbar}{2mi} \left [ \Psi \left ( \nabla^2 \Psi^{*} \right ) - \Psi^{*} \left ( \nabla^2 \Psi \right ) \right ] \\&#10;\end{align} "/></span></dd></dl>
+<p>so the continuity equation is:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}&amp;{\frac {\partial \rho }{\partial t}}=-\nabla \cdot \mathbf {j} \\&amp;{\frac {\partial \rho }{\partial t}}+\nabla \cdot \mathbf {j} =0\\\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd />
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>&#x03C1;<!-- ρ --></mi>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                <mo>&#x22C5;<!-- ⋅ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="bold">j</mi>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>&#x03C1;<!-- ρ --></mi>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo>+</mo>
+                <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+                <mo>&#x22C5;<!-- ⋅ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="bold">j</mi>
+                </mrow>
+                <mo>=</mo>
+                <mn>0</mn>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}&amp;{\frac {\partial \rho }{\partial t}}=-\nabla \cdot \mathbf {j} \\&amp;{\frac {\partial \rho }{\partial t}}+\nabla \cdot \mathbf {j} =0\\\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1f4b1539d524042310d33f2f3fb5afb01d52f0d4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -5.171ex; width:15.64ex; height:11.509ex;" alt=" \begin{align} &amp; \frac{\partial \rho}{\partial t} = - \nabla \cdot \mathbf{j} \\&#10;&amp; \frac{\partial \rho}{\partial t} + \nabla \cdot \mathbf{j} = 0 \\&#10;\end{align}"/></span></dd></dl>
+<p>The integral form follows as for the general equation.
+</p>
+</td></tr></tbody></table></dd></dl>
+<h2><span class="mw-headline" id="Relativistic_version">Relativistic version</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Continuity_equation&amp;action=edit&amp;section=10" title="Edit section: Relativistic version">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Special_relativity">Special relativity</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Continuity_equation&amp;action=edit&amp;section=11" title="Edit section: Special relativity">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/4-vector" class="mw-redirect" title="4-vector">4-vector</a></div>
+<p>The notation and tools of <a href="/wiki/Special_relativity" title="Special relativity">special relativity</a>, especially <a href="/wiki/4-vector" class="mw-redirect" title="4-vector">4-vectors</a> and <a href="/wiki/4-gradient" class="mw-redirect" title="4-gradient">4-gradients</a>, offer a convenient way to write any continuity equation.
+</p><p>The density of a quantity <span class="texhtml"><i>ρ</i></span> and its current <span class="texhtml"><b>j</b></span> can be combined into a <a href="/wiki/4-vector" class="mw-redirect" title="4-vector">4-vector</a> called a <a href="/wiki/4-current" class="mw-redirect" title="4-current">4-current</a>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle J=\left(c\rho ,j_{x},j_{y},j_{z}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>J</mi>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mi>c</mi>
+            <mi>&#x03C1;<!-- ρ --></mi>
+            <mo>,</mo>
+            <msub>
+              <mi>j</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>x</mi>
+              </mrow>
+            </msub>
+            <mo>,</mo>
+            <msub>
+              <mi>j</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>y</mi>
+              </mrow>
+            </msub>
+            <mo>,</mo>
+            <msub>
+              <mi>j</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>z</mi>
+              </mrow>
+            </msub>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle J=\left(c\rho ,j_{x},j_{y},j_{z}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6ec5dafc9f27c7d6be4b4813458668688d743035" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:17.787ex; height:3.009ex;" alt="J = \left(c \rho, j_x, j_y, j_z \right)"/></span></dd></dl>
+<p>where <span class="texhtml"><i>c</i></span> is the <a href="/wiki/Speed_of_light" title="Speed of light">speed of light</a>. The 4-<a href="/wiki/Divergence" title="Divergence">divergence</a> of this current is:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \partial _{\mu }J^{\mu }=c{\frac {\partial \rho }{\partial t}}+\nabla \cdot \mathbf {j} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03BC;<!-- μ --></mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>J</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03BC;<!-- μ --></mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mi>c</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>&#x03C1;<!-- ρ --></mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">j</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \partial _{\mu }J^{\mu }=c{\frac {\partial \rho }{\partial t}}+\nabla \cdot \mathbf {j} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dbe11a2cda1f1efaae88b6eb0b42f35c6f343407" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:19.94ex; height:5.676ex;" alt="{\displaystyle \partial _{\mu }J^{\mu }=c{\frac {\partial \rho }{\partial t}}+\nabla \cdot \mathbf {j} }"/></span></dd></dl>
+<p>where <span class="texhtml">∂<sub><i>μ</i></sub></span> is the <a href="/wiki/4-gradient" class="mw-redirect" title="4-gradient">4-gradient</a> and <span class="texhtml"><i>μ</i></span> is an <a href="/wiki/Index_notation" title="Index notation">index</a> labelling the <a href="/wiki/Spacetime" title="Spacetime">spacetime</a> <a href="/wiki/Dimension" title="Dimension">dimension</a>. Then the continuity equation is:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \partial _{\mu }J^{\mu }=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03BC;<!-- μ --></mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>J</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03BC;<!-- μ --></mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \partial _{\mu }J^{\mu }=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/472f381a896a765d01d25965ad5c7adb7adc384e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:9.468ex; height:3.009ex;" alt="\partial_\mu J^\mu = 0"/></span></dd></dl>
+<p>in the usual case where there are no sources or sinks, that is, for perfectly conserved quantities like energy or charge. This continuity equation is manifestly ("obviously") <a href="/wiki/Lorentz_invariant" class="mw-redirect" title="Lorentz invariant">Lorentz invariant</a>.
+</p><p>Examples of continuity equations often written in this form include electric charge conservation
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \partial _{\mu }J^{\mu }=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03BC;<!-- μ --></mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>J</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03BC;<!-- μ --></mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \partial _{\mu }J^{\mu }=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/472f381a896a765d01d25965ad5c7adb7adc384e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:9.468ex; height:3.009ex;" alt="\partial_\mu J^\mu = 0"/></span></dd></dl>
+<p>where <span class="texhtml"><i>J</i></span> is the electric <a href="/wiki/4-current" class="mw-redirect" title="4-current">4-current</a>; and energy-momentum conservation
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \partial _{\nu }T^{\mu \nu }=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03BD;<!-- ν --></mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03BC;<!-- μ --></mi>
+            <mi>&#x03BD;<!-- ν --></mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \partial _{\nu }T^{\mu \nu }=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/591b9c40738ffa8eea23a77dffadfa446bc8b93a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.414ex; height:2.676ex;" alt="\partial_\nu T^{\mu\nu} = 0"/></span></dd></dl>
+<p>where <span class="texhtml"><i>T</i></span> is the <a href="/wiki/Stress-energy_tensor" class="mw-redirect" title="Stress-energy tensor">stress-energy tensor</a>.
+</p>
+<h3><span class="mw-headline" id="General_relativity">General relativity</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Continuity_equation&amp;action=edit&amp;section=12" title="Edit section: General relativity">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In <a href="/wiki/General_relativity" title="General relativity">general relativity</a>, where spacetime is curved, the continuity equation (in differential form) for energy, charge, or other conserved quantities involves the <a href="/wiki/Covariant_derivative" title="Covariant derivative"><i>covariant</i> divergence</a> instead of the ordinary divergence.
+</p><p>For example, the <a href="/wiki/Stress%E2%80%93energy_tensor" title="Stress–energy tensor">stress–energy tensor</a> is a second-order <a href="/wiki/Tensor_field" title="Tensor field">tensor field</a> containing energy–momentum densities, energy–momentum fluxes, and shear stresses, of a mass-energy distribution. The differential form of energy-momentum conservation in general relativity states that the <i>covariant</i> divergence of the stress-energy tensor is zero:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {T^{\mu }}_{\nu ;\mu }=0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msup>
+              <mi>T</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>&#x03BC;<!-- μ --></mi>
+              </mrow>
+            </msup>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03BD;<!-- ν --></mi>
+            <mo>;</mo>
+            <mi>&#x03BC;<!-- μ --></mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {T^{\mu }}_{\nu ;\mu }=0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e0092b232b9f3f0d855bdd015151a93b5d7a847c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:10.403ex; height:3.009ex;" alt="{\displaystyle {T^{\mu }}_{\nu ;\mu }=0.}"/></span></dd></dl>
+<p>This is an important constraint on the form the <a href="/wiki/Einstein_field_equations" title="Einstein field equations">Einstein field equations</a> take in <a href="/wiki/General_relativity" title="General relativity">general relativity</a>.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup>
+</p><p>However, the <i>ordinary</i> <a href="/wiki/Tensors_in_curvilinear_coordinates#Second-order_tensor_field" title="Tensors in curvilinear coordinates">divergence</a> of the stress-energy tensor does <i>not</i> necessarily vanish:<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \partial _{\mu }T^{\mu \nu }=-\Gamma _{\mu \lambda }^{\mu }T^{\lambda \nu }-\Gamma _{\mu \lambda }^{\nu }T^{\mu \lambda },}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03BC;<!-- μ --></mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03BC;<!-- μ --></mi>
+            <mi>&#x03BD;<!-- ν --></mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <msubsup>
+          <mi mathvariant="normal">&#x0393;<!-- Γ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03BC;<!-- μ --></mi>
+            <mi>&#x03BB;<!-- λ --></mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03BC;<!-- μ --></mi>
+          </mrow>
+        </msubsup>
+        <msup>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03BB;<!-- λ --></mi>
+            <mi>&#x03BD;<!-- ν --></mi>
+          </mrow>
+        </msup>
+        <mo>&#x2212;<!-- − --></mo>
+        <msubsup>
+          <mi mathvariant="normal">&#x0393;<!-- Γ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03BC;<!-- μ --></mi>
+            <mi>&#x03BB;<!-- λ --></mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03BD;<!-- ν --></mi>
+          </mrow>
+        </msubsup>
+        <msup>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03BC;<!-- μ --></mi>
+            <mi>&#x03BB;<!-- λ --></mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \partial _{\mu }T^{\mu \nu }=-\Gamma _{\mu \lambda }^{\mu }T^{\lambda \nu }-\Gamma _{\mu \lambda }^{\nu }T^{\mu \lambda },}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7aa40bdb87a8940f35e10045ad74f5fe4554c995" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.338ex; width:29.619ex; height:3.676ex;" alt="{\displaystyle \partial _{\mu }T^{\mu \nu }=-\Gamma _{\mu \lambda }^{\mu }T^{\lambda \nu }-\Gamma _{\mu \lambda }^{\nu }T^{\mu \lambda },}"/></span></dd></dl>
+<p>The right-hand side strictly vanishes for a flat geometry only.
+</p><p>As a consequence, the <i>integral</i> form of the continuity equation is difficult to define and not necessarily valid for a region within which spacetime is significantly curved (e.g. around a black hole, or across the whole universe).<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Particle_physics">Particle physics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Continuity_equation&amp;action=edit&amp;section=13" title="Edit section: Particle physics">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="/wiki/Quark" title="Quark">Quarks</a> and <a href="/wiki/Gluon" title="Gluon">gluons</a> have <i><a href="/wiki/Color_charge" title="Color charge">color charge</a></i>, which is always conserved like electric charge, and there is a continuity equation for such color charge currents (explicit expressions for currents are given at <a href="/wiki/Gluon_field_strength_tensor#Equation_of_motion" title="Gluon field strength tensor">gluon field strength tensor</a>).
+</p><p>There are many other quantities in particle physics which are often or always conserved: <a href="/wiki/Baryon_number" title="Baryon number">baryon number</a> (proportional to the number of quarks minus the number of antiquarks), <a href="/wiki/Lepton_number" title="Lepton number">electron number, mu number, tau number</a>, <a href="/wiki/Isospin" title="Isospin">isospin</a>, and others.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup> Each of these has a corresponding continuity equation, possibly including source / sink terms.
+</p>
+<h2><span id="Noether.27s_theorem"></span><span class="mw-headline" id="Noether's_theorem">Noether's theorem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Continuity_equation&amp;action=edit&amp;section=14" title="Edit section: Noether&#039;s theorem">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">For more detailed explanations and derivations, see <a href="/wiki/Noether%27s_theorem" title="Noether&#39;s theorem">Noether's theorem</a>.</div>
+<p>One reason that conservation equations frequently occur in physics is <a href="/wiki/Noether%27s_theorem" title="Noether&#39;s theorem">Noether's theorem</a>. This states that whenever the laws of physics have a <a href="/wiki/Continuous_symmetry" title="Continuous symmetry">continuous symmetry</a>, there is a continuity equation for some conserved physical quantity. The three most famous examples are:
+</p>
+<ul><li>The laws of physics are invariant with respect to <a href="/wiki/Time_translation" class="mw-redirect" title="Time translation">time-translation</a>—for example, the laws of physics today are the same as they were yesterday. This symmetry leads to the continuity equation for <a href="/wiki/Conservation_of_energy" title="Conservation of energy">conservation of energy</a>.</li>
+<li>The laws of physics are invariant with respect to space-translation—for example, the laws of physics in Brazil are the same as the laws of physics in Argentina. This symmetry leads to the continuity equation for <a href="/wiki/Conservation_of_momentum" class="mw-redirect" title="Conservation of momentum">conservation of momentum</a>.</li>
+<li>The laws of physics are invariant with respect to orientation—for example, floating in outer space, there is no measurement you can do to say "which way is up"; the laws of physics are the same regardless of how you are oriented. This symmetry leads to the continuity equation for <a href="/wiki/Conservation_of_angular_momentum" class="mw-redirect" title="Conservation of angular momentum">conservation of angular momentum</a>.</li></ul>
+<p>See <a href="/wiki/Noether%27s_theorem" title="Noether&#39;s theorem">Noether's theorem</a> for proofs and details.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Continuity_equation&amp;action=edit&amp;section=15" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Conservation_law_(physics)" class="mw-redirect" title="Conservation law (physics)">Conservation law</a></li>
+<li><a href="/wiki/Conservation_form" title="Conservation form">Conservation form</a></li>
+<li><a href="/wiki/Dissipative_system" title="Dissipative system">Dissipative system</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Continuity_equation&amp;action=edit&amp;section=16" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-Pedlosky-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-Pedlosky_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Pedlosky_1-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Pedlosky_1-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><cite class="citation book">Pedlosky, Joseph (1987). <i>Geophysical fluid dynamics</i>. <a href="/wiki/Springer_Science%2BBusiness_Media" title="Springer Science+Business Media">Springer</a>. pp.&#160;10–13. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-387-96387-7" title="Special:BookSources/978-0-387-96387-7"><bdi>978-0-387-96387-7</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Geophysical+fluid+dynamics&amp;rft.pages=10-13&amp;rft.pub=Springer&amp;rft.date=1987&amp;rft.isbn=978-0-387-96387-7&amp;rft.aulast=Pedlosky&amp;rft.aufirst=Joseph&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AContinuity+equation" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">Clancy, L.J.(1975), <i>Aerodynamics</i>, Section 3.3, Pitman Publishing Limited, London</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text">Quantum Mechanics Demystified, D. McMahon, McGraw Hill (USA), 2006, <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-07-145546-9" title="Special:BookSources/0-07-145546-9">0-07-145546-9</a></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation book">D. McMahon (2006). <i>Relativity DeMystified</i>. McGraw Hill (USA). <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-07-145545-0" title="Special:BookSources/0-07-145545-0"><bdi>0-07-145545-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Relativity+DeMystified&amp;rft.pub=McGraw+Hill+%28USA%29&amp;rft.date=2006&amp;rft.isbn=0-07-145545-0&amp;rft.au=D.+McMahon&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AContinuity+equation" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation book">C.W. Misner; K.S. Thorne; J.A. Wheeler (1973). <i>Gravitation</i>. W.H. Freeman &amp; Co. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-7167-0344-0" title="Special:BookSources/0-7167-0344-0"><bdi>0-7167-0344-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Gravitation&amp;rft.pub=W.H.+Freeman+%26+Co&amp;rft.date=1973&amp;rft.isbn=0-7167-0344-0&amp;rft.au=C.W.+Misner&amp;rft.au=K.S.+Thorne&amp;rft.au=J.A.+Wheeler&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AContinuity+equation" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation web">Michael Weiss; John Baez. <a rel="nofollow" class="external text" href="http://math.ucr.edu/home/baez/physics/Relativity/GR/energy_gr.html">"Is Energy Conserved in General Relativity?"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2014-04-25</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Is+Energy+Conserved+in+General+Relativity%3F&amp;rft.au=Michael+Weiss&amp;rft.au=John+Baez&amp;rft_id=http%3A%2F%2Fmath.ucr.edu%2Fhome%2Fbaez%2Fphysics%2FRelativity%2FGR%2Fenergy_gr.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AContinuity+equation" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation book">J.A. Wheeler; C. Misner; K.S. Thorne (1973). <i>Gravitation</i>. W.H. Freeman &amp; Co. pp.&#160;558–559. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-7167-0344-0" title="Special:BookSources/0-7167-0344-0"><bdi>0-7167-0344-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Gravitation&amp;rft.pages=558-559&amp;rft.pub=W.H.+Freeman+%26+Co&amp;rft.date=1973&amp;rft.isbn=0-7167-0344-0&amp;rft.au=J.A.+Wheeler&amp;rft.au=C.+Misner&amp;rft.au=K.S.+Thorne&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AContinuity+equation" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Continuity_equation&amp;action=edit&amp;section=17" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><i>Hydrodynamics, H. Lamb</i>, Cambridge University Press, (2006 digitalization of 1932 6th edition) <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-521-45868-9" title="Special:BookSources/978-0-521-45868-9">978-0-521-45868-9</a></li>
+<li><i>Introduction to Electrodynamics (3rd Edition), D.J. Griffiths</i>, Pearson Education Inc, 1999, <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/81-7758-293-3" title="Special:BookSources/81-7758-293-3">81-7758-293-3</a></li>
+<li><i>Electromagnetism (2nd edition), I.S. Grant, W.R. Phillips</i>, Manchester Physics Series, 2008 <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-471-92712-0" title="Special:BookSources/0-471-92712-0">0-471-92712-0</a></li>
+<li><i>Gravitation, J.A. Wheeler, C. Misner, K.S. Thorne</i>, W.H. Freeman &amp; Co, 1973, <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/><a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-7167-0344-0" title="Special:BookSources/0-7167-0344-0">0-7167-0344-0</a></li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1265
+Cached time: 20190722180752
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision]
+CPU time usage: 0.468 seconds
+Real time usage: 0.661 seconds
+Preprocessor visited node count: 3330/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 47689/2097152 bytes
+Template argument size: 4311/2097152 bytes
+Highest expansion depth: 13/40
+Expensive parser function count: 0/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 25719/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.152/10.000 seconds
+Lua memory usage: 3.39 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  392.303      1 -total
+ 50.32%  197.425      1 Template:Reflist
+ 31.65%  124.145      4 Template:Cite_book
+ 19.26%   75.563      5 Template:ISBN
+ 15.99%   62.748      1 Template:Continuum_mechanics
+ 14.93%   58.586      1 Template:Sidebar_with_collapsible_lists
+  7.81%   30.651      5 Template:Catalog_lookup_link
+  7.34%   28.796    107 Template:Math
+  4.51%   17.678      5 Template:Error-small
+  3.88%   15.226      2 Template:Main
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:410793-0!canonical!math=5 and timestamp 20190722180751 and revision id 905851119
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Continuity_equation&amp;oldid=905851119">https://en.wikipedia.org/w/index.php?title=Continuity_equation&amp;oldid=905851119</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Equations_of_fluid_dynamics" title="Category:Equations of fluid dynamics">Equations of fluid dynamics</a></li><li><a href="/wiki/Category:Conservation_equations" title="Category:Conservation equations">Conservation equations</a></li><li><a href="/wiki/Category:Partial_differential_equations" title="Category:Partial differential equations">Partial differential equations</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Continuity+equation" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Continuity+equation" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Continuity_equation" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Continuity_equation" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Continuity_equation">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Continuity_equation&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Continuity_equation&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Continuity_equation" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Continuity_equation" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Continuity_equation&amp;oldid=905851119" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Continuity_equation&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q217219" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Continuity_equation&amp;id=905851119" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Continuity+equation">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Continuity+equation&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Continuity_equation&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D9%85%D8%B9%D8%A7%D8%AF%D9%84%D8%A9_%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%85%D8%B1%D8%A7%D8%B1%D9%8A%D8%A9" title="معادلة الاستمرارية – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-be"><a href="https://be.wikipedia.org/wiki/%D0%A3%D1%80%D0%B0%D1%9E%D0%BD%D0%B5%D0%BD%D0%BD%D0%B5_%D0%BD%D0%B5%D1%80%D0%B0%D0%B7%D1%80%D1%8B%D1%9E%D0%BD%D0%B0%D1%81%D1%86%D1%96" title="Ураўненне неразрыўнасці – Belarusian" lang="be" hreflang="be" class="interlanguage-link-target">Беларуская</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Equaci%C3%B3_de_continu%C3%AFtat" title="Equació de continuïtat – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Rovnice_kontinuity" title="Rovnice kontinuity – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Kontinuit%C3%A4tsgleichung" title="Kontinuitätsgleichung – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Ecuaci%C3%B3n_de_continuidad" title="Ecuación de continuidad – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%85%D8%B9%D8%A7%D8%AF%D9%84%D9%87_%D9%BE%DB%8C%D9%88%D8%B3%D8%AA%DA%AF%DB%8C" title="معادله پیوستگی – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/%C3%89quation_de_continuit%C3%A9" title="Équation de continuité – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EC%97%B0%EC%86%8D_%EB%B0%A9%EC%A0%95%EC%8B%9D" title="연속 방정식 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-hy"><a href="https://hy.wikipedia.org/wiki/%D4%B1%D5%B6%D5%AD%D5%A6%D5%A5%D5%AC%D5%AB%D5%B8%D6%82%D5%A9%D5%B5%D5%A1%D5%B6_%D5%B0%D5%A1%D5%BE%D5%A1%D5%BD%D5%A1%D6%80%D5%B8%D6%82%D5%B4" title="Անխզելիության հավասարում – Armenian" lang="hy" hreflang="hy" class="interlanguage-link-target">Հայերեն</a></li><li class="interlanguage-link interwiki-hi"><a href="https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A4%BE%E0%A4%A4%E0%A4%A4%E0%A5%8D%E0%A4%AF_%E0%A4%B8%E0%A4%AE%E0%A5%80%E0%A4%95%E0%A4%B0%E0%A4%A3" title="सातत्य समीकरण – Hindi" lang="hi" hreflang="hi" class="interlanguage-link-target">हिन्दी</a></li><li class="interlanguage-link interwiki-hr"><a href="https://hr.wikipedia.org/wiki/Jednad%C5%BEba_kontinuiteta" title="Jednadžba kontinuiteta – Croatian" lang="hr" hreflang="hr" class="interlanguage-link-target">Hrvatski</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Equazione_di_continuit%C3%A0" title="Equazione di continuità – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%95%D7%95%D7%90%D7%AA_%D7%A8%D7%A6%D7%99%D7%A4%D7%95%D7%AA" title="משוואת רציפות – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-ka"><a href="https://ka.wikipedia.org/wiki/%E1%83%A3%E1%83%AC%E1%83%A7%E1%83%95%E1%83%94%E1%83%A2%E1%83%9D%E1%83%91%E1%83%98%E1%83%A1_%E1%83%92%E1%83%90%E1%83%9C%E1%83%A2%E1%83%9D%E1%83%9A%E1%83%94%E1%83%91%E1%83%90" title="უწყვეტობის განტოლება – Georgian" lang="ka" hreflang="ka" class="interlanguage-link-target">ქართული</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/Kontinuit%C3%A1si_egyenlet" title="Kontinuitási egyenlet – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-mr"><a href="https://mr.wikipedia.org/wiki/%E0%A4%B8%E0%A4%BE%E0%A4%A4%E0%A4%A4%E0%A5%8D%E0%A4%AF" title="सातत्य – Marathi" lang="mr" hreflang="mr" class="interlanguage-link-target">मराठी</a></li><li class="interlanguage-link interwiki-ms"><a href="https://ms.wikipedia.org/wiki/Persamaan_keselanjaran" title="Persamaan keselanjaran – Malay" lang="ms" hreflang="ms" class="interlanguage-link-target">Bahasa Melayu</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Continu%C3%AFteitsvergelijking" title="Continuïteitsvergelijking – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E9%80%A3%E7%B6%9A%E3%81%AE%E6%96%B9%E7%A8%8B%E5%BC%8F" title="連続の方程式 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/Kontinuitetsligning" title="Kontinuitetsligning – Norwegian" lang="no" hreflang="no" class="interlanguage-link-target">Norsk</a></li><li class="interlanguage-link interwiki-nn"><a href="https://nn.wikipedia.org/wiki/Kontinuitetslikninga" title="Kontinuitetslikninga – Norwegian Nynorsk" lang="nn" hreflang="nn" class="interlanguage-link-target">Norsk nynorsk</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/R%C3%B3wnanie_ci%C4%85g%C5%82o%C5%9Bci" title="Równanie ciągłości – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Equa%C3%A7%C3%A3o_de_continuidade" title="Equação de continuidade – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="https://ro.wikipedia.org/wiki/Ecua%C8%9Bia_de_continuitate" title="Ecuația de continuitate – Romanian" lang="ro" hreflang="ro" class="interlanguage-link-target">Română</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%A3%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="Уравнение непрерывности – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sk"><a href="https://sk.wikipedia.org/wiki/Rovnica_kontinuity" title="Rovnica kontinuity – Slovak" lang="sk" hreflang="sk" class="interlanguage-link-target">Slovenčina</a></li><li class="interlanguage-link interwiki-sl"><a href="https://sl.wikipedia.org/wiki/Kontinuitetna_ena%C4%8Dba" title="Kontinuitetna enačba – Slovenian" lang="sl" hreflang="sl" class="interlanguage-link-target">Slovenščina</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Jatkuvuusyht%C3%A4l%C3%B6" title="Jatkuvuusyhtälö – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Kontinuitetsekvationen" title="Kontinuitetsekvationen – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/S%C3%BCreklilik_denklemi" title="Süreklilik denklemi – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%A0%D1%96%D0%B2%D0%BD%D1%8F%D0%BD%D0%BD%D1%8F_%D0%BD%D0%B5%D0%BF%D0%B5%D1%80%D0%B5%D1%80%D0%B2%D0%BD%D0%BE%D1%81%D1%82%D1%96" title="Рівняння неперервності – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/Ph%C6%B0%C6%A1ng_tr%C3%ACnh_li%C3%AAn_t%E1%BB%A5c" title="Phương trình liên tục – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E9%80%A3%E7%BA%8C%E6%80%A7%E6%96%B9%E7%A8%8B%E5%BC%8F" title="連續性方程式 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q217219#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 11 July 2019, at 21:27<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Continuity_equation&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.468","walltime":"0.661","ppvisitednodes":{"value":3330,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":47689,"limit":2097152},"templateargumentsize":{"value":4311,"limit":2097152},"expansiondepth":{"value":13,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":25719,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  392.303      1 -total"," 50.32%  197.425      1 Template:Reflist"," 31.65%  124.145      4 Template:Cite_book"," 19.26%   75.563      5 Template:ISBN"," 15.99%   62.748      1 Template:Continuum_mechanics"," 14.93%   58.586      1 Template:Sidebar_with_collapsible_lists","  7.81%   30.651      5 Template:Catalog_lookup_link","  7.34%   28.796    107 Template:Math","  4.51%   17.678      5 Template:Error-small","  3.88%   15.226      2 Template:Main"]},"scribunto":{"limitreport-timeusage":{"value":"0.152","limit":"10.000"},"limitreport-memusage":{"value":3557076,"limit":52428800}},"cachereport":{"origin":"mw1265","timestamp":"20190722180752","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Continuity equation","url":"https:\/\/en.wikipedia.org\/wiki\/Continuity_equation","sameAs":"http:\/\/www.wikidata.org\/entity\/Q217219","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q217219","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2003-12-22T02:30:36Z","dateModified":"2019-07-11T21:27:08Z","headline":"equation constraining a quantity to flow only via adjacent locations; can express a locality principle"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":133,"wgHostname":"mw1249"});});</script>
+</body>
+</html>

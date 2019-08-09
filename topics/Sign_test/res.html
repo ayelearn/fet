@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Sign test - Wikipedia</title>
+<script>document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Sign_test","wgTitle":"Sign test","wgCurRevisionId":904417969,"wgRevisionId":904417969,"wgArticleId":3319766,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Statistical tests","Nonparametric statistics"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Sign_test","wgRelevantArticleId":3319766,"wgRequestId":
+"XUnLsQpAIC4AAKNu3cwAAACF","wgCSPNonce":!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!0,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q2301904","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready",
+"user.options":"ready","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents",
+"ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.34.0-wmf.16"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Sign_test"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Sign_test&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Sign_test&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Sign_test"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Sign_test rootpage-Sign_test skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Sign test</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>The <b>sign test</b> is a statistical method to test for consistent differences between pairs of observations, such as the weight of subjects before and after treatment. Given pairs of observations (such as weight pre- and post-treatment) for each subject, the sign test determines if one member of the pair (such as pre-treatment) tends to be greater than (or less than) the other member of the pair (such as post-treatment).
+</p><p>The paired observations may be designated <i>x</i> and <i>y</i>. For comparisons of paired observations (<i>x</i>,y), the sign test is most useful if comparisons can only be expressed as <i>x</i> &gt; <i>y</i>, <i>x</i> = <i>y</i>, or <i>x</i> &lt; <i>y</i>. If, instead, the observations can be expressed as numeric quantities (<i>x</i> = 7, <i>y</i> = 18), or as ranks (rank of <i>x</i> = 1st, rank of <i>y</i> = 8th), then the paired <a href="/wiki/T-test" class="mw-redirect" title="T-test">t-test</a><sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+or the <a href="/wiki/Wilcoxon_signed-rank_test" title="Wilcoxon signed-rank test">Wilcoxon signed-rank test</a><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> will usually have greater power than the sign test to detect consistent differences.
+</p><p>If X and Y are quantitative variables, the <b>sign test</b> can be used to <a href="/wiki/Hypothesis_test" class="mw-redirect" title="Hypothesis test">test the hypothesis</a> that the difference between the <i>X</i> and <i>Y</i> has zero median, assuming continuous distributions of the two <a href="/wiki/Random_variable" title="Random variable">random variables</a> <i>X</i> and <i>Y</i>, in the situation when we can draw <a href="/wiki/Paired_difference_test" title="Paired difference test">paired samples</a> from <i>X</i> and <i>Y</i>.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>
+</p><p>The sign test can also test if the median of a collection of numbers is significantly greater than or less than a specified value. For example, given a list of student grades in a class, the sign test can determine if the median grade is significantly different from, say, 75 out of 100.
+</p><p>The sign test is a <a href="/wiki/Non-parametric_test" class="mw-redirect" title="Non-parametric test">non-parametric test</a> which makes very few assumptions about the nature of the distributions under test – this means that it has very general applicability but may lack the <a href="/wiki/Statistical_power" class="mw-redirect" title="Statistical power">statistical power</a> of the alternative tests.
+</p><p>The two conditions for the paired-sample sign test are that a sample must be randomly selected from each population, and the samples must be dependent, or paired. 
+Independent samples cannot be meaningfully paired. Since the test is nonparametric, the samples need not come from normally distributed populations. Also, the test works for left-tailed, right-tailed, and two-tailed tests.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Method"><span class="tocnumber">1</span> <span class="toctext">Method</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Assumptions"><span class="tocnumber">2</span> <span class="toctext">Assumptions</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Significance_testing"><span class="tocnumber">3</span> <span class="toctext">Significance testing</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Example_of_two-sided_sign_test_for_matched_pairs"><span class="tocnumber">4</span> <span class="toctext">Example of two-sided sign test for matched pairs</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Example_of_one-sided_sign_test_for_matched_pairs"><span class="tocnumber">5</span> <span class="toctext">Example of one-sided sign test for matched pairs</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Example_of_sign_test_for_median_of_a_single_sample"><span class="tocnumber">6</span> <span class="toctext">Example of sign test for median of a single sample</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Examples_of_computer_software_for_the_sign_test"><span class="tocnumber">7</span> <span class="toctext">Examples of computer software for the sign test</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Excel_software_for_the_sign_test"><span class="tocnumber">7.1</span> <span class="toctext">Excel software for the sign test</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#R_software_for_the_sign_test"><span class="tocnumber">7.2</span> <span class="toctext">R software for the sign test</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#History"><span class="tocnumber">8</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Relationship_to_other_statistical_tests"><span class="tocnumber">9</span> <span class="toctext">Relationship to other statistical tests</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="#Wilcoxon_signed-rank_test"><span class="tocnumber">9.1</span> <span class="toctext">Wilcoxon signed-rank test</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Paired_t-test"><span class="tocnumber">9.2</span> <span class="toctext">Paired t-test</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#McNemar&#39;s_test"><span class="tocnumber">9.3</span> <span class="toctext">McNemar's test</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Friedman_test"><span class="tocnumber">9.4</span> <span class="toctext">Friedman test</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Trinomial_test"><span class="tocnumber">9.5</span> <span class="toctext">Trinomial test</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#See_also"><span class="tocnumber">10</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#References"><span class="tocnumber">11</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Method">Method</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sign_test&amp;action=edit&amp;section=1" title="Edit section: Method">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Let <i>p</i> = Pr(<i>X</i> &gt; <i>Y</i>), and then test the <a href="/wiki/Null_hypothesis" title="Null hypothesis">null hypothesis</a> H<sub>0</sub>: <i>p</i> = 0.50. In other words, the null hypothesis states that given a <a href="/wiki/Random" class="mw-redirect" title="Random">random</a> pair of measurements (<i>x</i><sub><i>i</i></sub>, <i>y</i><sub><i>i</i></sub>), then <i>x</i><sub><i>i</i></sub> and <i>y</i><sub><i>i</i></sub> are equally likely to be larger than the other.
+</p><p>To test the null hypothesis, independent pairs of sample data are collected from the populations {(<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>), (<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>), . . ., (<i>x</i><sub><i>n</i></sub>, <i>y</i><sub><i>n</i></sub>)}. Pairs are omitted for which there is no difference so that there is a possibility of a reduced sample of <i>m</i> pairs.<sup id="cite_ref-mendenhall_4-0" class="reference"><a href="#cite_note-mendenhall-4">&#91;4&#93;</a></sup>
+</p><p>Then let <i>W</i> be the number of pairs for which <i>y</i><sub><i>i</i></sub>&#160;&#8722;&#160;<i>x</i><sub><i>i</i></sub> &gt; 0. Assuming that H<sub>0</sub> is true, then <i>W</i> follows a <a href="/wiki/Binomial_distribution" title="Binomial distribution">binomial distribution</a> <i>W</i> ~ b(<i>m</i>, 0.5).
+</p>
+<h2><span class="mw-headline" id="Assumptions">Assumptions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sign_test&amp;action=edit&amp;section=2" title="Edit section: Assumptions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Let  <i>Z</i><sub>i</sub>&#160;=&#160;<i>Y</i><sub>i</sub>&#160;&#8211;&#160;<i>X</i><sub>i</sub>  for  <i>i</i>&#160;=&#160;1,&#160;...&#160;,&#160;<i>n</i>.
+</p>
+<ol><li>The differences  <i>Z<sub>i</sub></i>  are assumed to be independent.</li>
+<li>Each  <i>Z<sub>i</sub></i>  comes from the same continuous population.</li>
+<li>The values  <i>X</i><sub><i>i</i></sub>  and  <i>Y</i><sub><i>i</i></sub>  represent are ordered (at least the <a href="/wiki/Ordinal_scale" class="mw-redirect" title="Ordinal scale">ordinal scale</a>), so the comparisons "greater than", "less than", and "equal to" are meaningful.</li></ol>
+<h2><span class="mw-headline" id="Significance_testing">Significance testing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sign_test&amp;action=edit&amp;section=3" title="Edit section: Significance testing">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Since the test statistic is expected to follow a <a href="/wiki/Binomial_distribution" title="Binomial distribution">binomial distribution</a>, the standard <a href="/wiki/Binomial_test" title="Binomial test">binomial test</a> is used to calculate <a href="/wiki/Statistical_significance" title="Statistical significance">significance</a>. The <a href="/wiki/Binomial_distribution#Normal_approximation" title="Binomial distribution">normal approximation to the binomial distribution</a> can be used for large sample sizes, <i>m</i> &gt; 25.<sup id="cite_ref-mendenhall_4-1" class="reference"><a href="#cite_note-mendenhall-4">&#91;4&#93;</a></sup>
+</p><p>The left-tail value is computed by Pr(<i>W</i> ≤ <i>w</i>), which is the <a href="/wiki/P-value" title="P-value">p-value</a> for the alternative H<sub>1</sub>: <i>p</i> &lt; 0.50. This alternative means that the <i>X</i> measurements tend to be higher.
+</p><p>The right-tail value is computed by Pr(<i>W</i> ≥ <i>w</i>), which is the p-value for the alternative H<sub>1</sub>: <i>p</i> &gt; 0.50. This alternative means that the <i>Y</i> measurements tend to be higher.
+</p><p>For a two-sided alternative H<sub>1</sub> the p-value is twice the smaller tail-value.
+</p>
+<h2><span class="mw-headline" id="Example_of_two-sided_sign_test_for_matched_pairs">Example of two-sided sign test for matched pairs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sign_test&amp;action=edit&amp;section=4" title="Edit section: Example of two-sided sign test for matched pairs">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Zar gives the following example of the sign test for matched pairs. Data are collected on the length of the left hind leg and left foreleg for 10 deer.<sup id="cite_ref-Zar1999_5-0" class="reference"><a href="#cite_note-Zar1999-5">&#91;5&#93;</a></sup>
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Deer</th>
+<th>Hind leg length (cm)</th>
+<th>Foreleg length (cm)</th>
+<th>Difference
+</th></tr>
+<tr>
+<td>1</td>
+<td>142</td>
+<td>138</td>
+<td>+
+</td></tr>
+<tr>
+<td>2</td>
+<td>140</td>
+<td>136</td>
+<td>+
+</td></tr>
+<tr>
+<td>3</td>
+<td>144</td>
+<td>147</td>
+<td>−
+</td></tr>
+<tr>
+<td>4</td>
+<td>144</td>
+<td>139</td>
+<td>+
+</td></tr>
+<tr>
+<td>5</td>
+<td>142</td>
+<td>143</td>
+<td>−
+</td></tr>
+<tr>
+<td>6</td>
+<td>146</td>
+<td>141</td>
+<td>+
+</td></tr>
+<tr>
+<td>7</td>
+<td>149</td>
+<td>143</td>
+<td>+
+</td></tr>
+<tr>
+<td>8</td>
+<td>150</td>
+<td>145</td>
+<td>+
+</td></tr>
+<tr>
+<td>9</td>
+<td>142</td>
+<td>136</td>
+<td>+
+</td></tr>
+<tr>
+<td>10</td>
+<td>148</td>
+<td>146</td>
+<td>+
+</td></tr></tbody></table>
+<p>The null hypothesis is that there is no difference between the hind leg and foreleg length in deer. The alternative hypothesis is that there is a difference between hind leg length and foreleg length. Note that this is a two-tailed test, rather than a one-tailed test. For the two tailed test, the alternative hypothesis is that hind leg length may be either greater than or less than foreleg length. A one-sided test could be that hind leg length is greater than foreleg length, so that the difference can only be in one direction (greater than).
+</p><p>There are n=10 deer. There are 8 positive differences and 2 negative differences. If the null hypothesis is true, that there is no difference in hind leg and foreleg lengths, then the expected number of positive differences is 5 out of 10. What is the probability that the observed result of 8 positive differences, or a more extreme result, would occur if there is no difference in leg lengths?
+</p><p>Because the test is two-sided, a result as extreme or more extreme than 8 positive differences includes the results of 8, 9, or 10 positive differences, and the results of 0, 1, or 2 positive differences. The probability of 8 or more positives among 10 deer or 2 or fewer positives among 10 deer is the same as the probability of 8 or more heads or 2 or fewer heads in 10 flips of a fair coin. The probabilities can be calculated using the <a href="/wiki/Binomial_test" title="Binomial test">binomial test</a>, with the probability of heads = probability of tails = 0.5.
+</p>
+<ul><li>Probability of 0 heads in 10 flips of fair coin = 0.00098</li>
+<li>Probability of 1 heads in 10 flips of fair coin = 0.00977</li>
+<li>Probability of 2 heads in 10 flips of fair coin = 0.04395</li>
+<li>Probability of 8 heads in 10 flips of fair coin = 0.04395</li>
+<li>Probability of 9 heads in 10 flips of fair coin = 0.00977</li>
+<li>Probability of 10 heads in 10 flips of fair coin = 0.00098</li></ul>
+<p>The two-sided probability of a result as extreme as 8 of 10 positive difference is the sum of these probabilities:
+</p>
+<dl><dd>0.00098 + 0.00977 + 0.04395 + 0.04395 + 0.00977 + 0.00098 = 0.109375.</dd></dl>
+<p>Thus, the probability of observing a results as extreme as 8 of 10 positive differences in leg lengths, if there is no difference in leg lengths, is <i>p</i>&#160;=&#160;0.109375. The null hypothesis is not rejected at a significance level of <i>p</i>&#160;=&#160;0.05. With a larger sample size, the evidence might be sufficient to reject the null hypothesis.
+</p><p>Because the observations can be expressed as numeric quantities (actual leg length), the paired t-test or Wilcoxon signed rank test will usually have greater power than the sign test to detect consistent differences. For this example, the paired t-test for differences indicates that there is a significant difference between hind leg length and foreleg length (<i>p</i>&#160;=&#160;0.007).
+</p><p>If the observed result was 9 positive differences in 10 comparisons, the sign test would be significant. Only coin flips with 0, 1, 9, or 10 heads would be as extreme as or more extreme than the observed result.
+</p>
+<ul><li>Probability of 0 heads in 10 flips of fair coin = 0.00098</li>
+<li>Probability of 1 heads in 10 flips of fair coin = 0.00977</li>
+<li>Probability of 9 heads in 10 flips of fair coin = 0.00977</li>
+<li>Probability of 10 heads in 10 flips of fair coin = 0.00098</li></ul>
+<p>The probability of a result as extreme as 9 of 10 positive difference is the sum of these probabilities:
+</p>
+<dl><dd>0.00098 + 0.00977 + 0.00977 + 0.00098 = 0.0215.</dd></dl>
+<p>In general, 8 of 10 positive differences is not significant (<i>p</i>&#160;=&#160;0.11), but 9 of 10 positive differences is significant (<i>p</i>&#160;=&#160;0.0215).
+</p>
+<h2><span class="mw-headline" id="Example_of_one-sided_sign_test_for_matched_pairs">Example of one-sided sign test for matched pairs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sign_test&amp;action=edit&amp;section=5" title="Edit section: Example of one-sided sign test for matched pairs">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Conover<sup id="cite_ref-Conover1999_6-0" class="reference"><a href="#cite_note-Conover1999-6">&#91;6&#93;</a></sup> gives the following example using a one-sided sign test for matched pairs. A manufacturer produces two products, A and B. The manufacturer wishes to know if consumers prefer product B over product A. A sample of 10 consumers are each given product A and product B, and asked which product they prefer.
+</p><p>The null hypothesis is that consumers do not prefer product B over product A. The alternative hypothesis is that consumers prefer product B over product A. Note that this is a one-sided (directional) test.
+</p><p>At the end of the study, 8 consumers preferred product B, 1 consumer preferred product A, and one reported no preference.
+</p>
+<ul><li>Number of +'s (preferred B) = 8</li>
+<li>Number of –'s (preferred A) = 1</li>
+<li>Number of ties (no preference) = 1</li></ul>
+<p>The tie is excluded from the analysis, giving n = number of +'s and –'s = 8&#160;+&#160;1&#160;=&#160;9.
+</p><p>What is the probability of a result as extreme as 8 positives in favor of B in 9 pairs, if the null hypothesis is true, that consumers have no preference for B over A? This is the probability of 8 or more heads in 9 flips of a fair coin, and can be calculated using the binomial distribution with p(heads) = p(tails) = 0.5.
+</p><p>P(8 or 9 heads in 9 flips of a fair coin) = 0.0195. The null hypothesis is rejected, and the manufacturer concludes that consumers prefer product B over product A.
+</p>
+<h2><span class="mw-headline" id="Example_of_sign_test_for_median_of_a_single_sample">Example of sign test for median of a single sample</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sign_test&amp;action=edit&amp;section=6" title="Edit section: Example of sign test for median of a single sample">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Sprent <sup id="cite_ref-Sprent1989_7-0" class="reference"><a href="#cite_note-Sprent1989-7">&#91;7&#93;</a></sup> gives the following example of a sign test for a median. In a clinical trial, survival time (weeks) is collected for 10 subjects with non-Hodgkins lymphoma. The exact survival time was not known for one subject who was still alive after 362 weeks, when the study ended. The subjects' survival times were
+</p>
+<dl><dd>49, 58, 75, 110, 112, 132, 151, 276, 281, 362+</dd></dl>
+<p>The plus sign indicates the subject still alive at the end of the study. The researcher wished to determine if the median survival time was less than or greater than 200 weeks.
+</p><p>The null hypothesis is that median survival is 200 weeks.
+The alternative hypothesis is that median survival is not 200 weeks. Notice that this is a two-sided test: the alternative median may be greater than or less than 200 weeks.
+</p><p>If the null hypothesis is true, that the median survival is 200 weeks, then, in a random sample approximately half the subjects should survive less than 200 weeks, and half should survive more than 200 weeks. Observations below 200 are assigned a minus (−); observations above 200 are assigned a plus (+). For the subject survival times, there are 7 observations below 200 weeks (−) and 3 observations above 200 weeks (+) for the n=10 subjects.
+</p><p>Because any one observation is equally likely to be above or below the population median, the number of plus scores will have a binomial distribution with mean = 0.5. What is the probability of a result as extreme as 7 in 10 subjects being below the median? This is exactly the same as the probability of a result as extreme as 7 heads in 10 tosses of a fair coin. Because this is a two-sided test, an extreme result can be either three or fewer heads or seven or more heads.
+</p><p>The probability of observing k heads in 10 tosses of a fair coin, with p(heads) = 0.5, is given by the binomial formula:
+</p>
+<dl><dd>Pr(Number of heads = <i>k</i>) = Choose(10, <i>k</i>) × 0.5^10</dd></dl>
+<p>The probability for each value of <i>k</i> is given in the table below.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>k</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10
+</th></tr>
+<tr>
+<td>Pr</td>
+<td>0.0010</td>
+<td>0.0098</td>
+<td>0.0439</td>
+<td>0.1172</td>
+<td>0.2051</td>
+<td>0.2461</td>
+<td>0.2051</td>
+<td>0.1172</td>
+<td>0.0439</td>
+<td>0.0098</td>
+<td>0.0010
+</td></tr></tbody></table>
+<p>The probability of 0, 1, 2, 3, 7, 8, 9, or 10 heads in 10 tosses is the sum of their individual probabilities:
+</p>
+<dl><dd>0.0010 + 0.0098 + 0.0439 + 0.1172 + 0.1172 + 0.0439 + 0.0098 + 0.0010 = 0.3438.</dd></dl>
+<p>Thus, the probability of observing 3 or fewer plus signs or 7 or more plus signs in the survival data, if the median survival is 200 weeks, is 0.3438. The expected number of plus signs is 5 if the null hypothesis is true. Observing 3 or fewer, or 7 or more pluses is not significantly different from 5. The null hypothesis is not rejected. Because of the extremely small sample size, this sample has low power to detect a difference.
+</p>
+<h2><span class="mw-headline" id="Examples_of_computer_software_for_the_sign_test">Examples of computer software for the sign test</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sign_test&amp;action=edit&amp;section=7" title="Edit section: Examples of computer software for the sign test">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The sign test is a special case of the binomial test where the probability of success under the null hypothesis is p=0.5. Thus, the sign test can be performed using the binomial test, which is provided in most statistical software programs. On-line calculators for the sign test can be founded by searching for "sign test calculator". Many websites offer the binomial test, but generally offer only a two-sided version.
+</p>
+<h3><span class="mw-headline" id="Excel_software_for_the_sign_test">Excel software for the sign test</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sign_test&amp;action=edit&amp;section=8" title="Edit section: Excel software for the sign test">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A template for the sign test using Excel is available at <a rel="nofollow" class="external free" href="http://www.real-statistics.com/non-parametric-tests/sign-test/">http://www.real-statistics.com/non-parametric-tests/sign-test/</a>
+</p>
+<h3><span class="mw-headline" id="R_software_for_the_sign_test">R software for the sign test</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sign_test&amp;action=edit&amp;section=9" title="Edit section: R software for the sign test">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In <a href="/wiki/R_(programming_language)" title="R (programming language)">R</a>, the binomial test can be performed using the function <code>binom.test()</code>.
+</p><p>The syntax for the function is
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>binom.test<span class="p">(</span>x<span class="p">,</span> n<span class="p">,</span> p <span class="o">=</span> <span class="m">0.5</span><span class="p">,</span> alternative <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;two.sided&quot;</span><span class="p">,</span> <span class="s">&quot;less&quot;</span><span class="p">,</span> <span class="s">&quot;greater&quot;</span><span class="p">),</span> conf.level <span class="o">=</span> <span class="m">0.95</span><span class="p">)</span>
+</pre></div>
+<p>where
+</p>
+<ul><li><code>x</code> = number of successes, or a vector of length 2 giving the numbers of successes and failures, respectively</li>
+<li><code>n</code> = number of trials; ignored if x has length 2</li>
+<li><code>p</code> = hypothesized probability of success</li>
+<li><code>alternative</code> =indicates the alternative hypothesis and must be one of "two.sided", "greater" or "less"</li>
+<li><code>conf.level</code> = confidence level for the returned confidence interval.</li></ul>
+<p>Examples of the sign test using the R function binom.test
+</p><p>The sign test example from Zar <sup id="cite_ref-Zar1999_5-1" class="reference"><a href="#cite_note-Zar1999-5">&#91;5&#93;</a></sup> compared the length of hind legs and forelegs of deer. The hind leg was longer than the foreleg in 8 of 10 deer. Thus, there are x=8 successes in n=10 trials. The hypothesized probability of success (defined as hind leg longer than foreleg) is <i>p</i>&#160;=&#160;0.5 under the null hypothesis that hind legs and forelegs do not differ in length. The alternative hypothesis is that hind leg length may be either greater than or less than foreleg length, which is a two sided test, specified as alternative="two.sided".
+</p><p>The R command <code class="mw-highlight" dir="ltr">binom.test<span class="p">(</span>x<span class="o">=</span><span class="m">8</span><span class="p">,</span> n<span class="o">=</span><span class="m">10</span><span class="p">,</span> p<span class="o">=</span><span class="m">0.5</span><span class="p">,</span> alternative<span class="o">=</span><span class="s">&quot;two.sided&quot;</span><span class="p">)</span></code> gives p=0.1094, as in the example.
+</p><p>The sign test example in Conover <sup id="cite_ref-Conover1999_6-1" class="reference"><a href="#cite_note-Conover1999-6">&#91;6&#93;</a></sup> examined consumer preference for product A vs. product B. The null hypothesis was that consumers do not prefer product B over product A. The alternative hypothesis was that consumers prefer product B over product A, a one-sided test. In the study, 8 of 9 consumers who expressed a preference preferred product B over product A.
+</p><p>The R command <code class="mw-highlight" dir="ltr">binom.test<span class="p">(</span>x<span class="o">=</span><span class="m">8</span><span class="p">,</span> n<span class="o">=</span><span class="m">9</span><span class="p">,</span> p<span class="o">=</span><span class="m">0.5</span><span class="p">,</span> alternative<span class="o">=</span><span class="s">&quot;greater&quot;</span><span class="p">)</span></code> gives p=0.01953, as in the example.
+</p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sign_test&amp;action=edit&amp;section=10" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/History_of_statistics" title="History of statistics">History of statistics</a></div>
+<p>Conover  <sup id="cite_ref-Conover1999_6-2" class="reference"><a href="#cite_note-Conover1999-6">&#91;6&#93;</a></sup> and Sprent 
+<sup id="cite_ref-Sprent1989_7-1" class="reference"><a href="#cite_note-Sprent1989-7">&#91;7&#93;</a></sup> describe <a href="/wiki/John_Arbuthnot" title="John Arbuthnot">John Arbuthnot</a>'s use of the sign test in 1710. Arbuthnot examined birth records in London for each of the 82 years from 1629 to 1710.  In every year, the number of males born in London exceeded the number of females. If the null hypothesis of equal number of births is true, the probability of the observed outcome is 1/2<sup>82</sup>, leading Arbuthnot to conclude that the probability of male and female births were not exactly equal.
+</p><p>For his publications in 1692 and 1710, Arbuthnot is credited with "… the first use of significance tests …"  
+<sup id="cite_ref-Bellhouse2001_8-0" class="reference"><a href="#cite_note-Bellhouse2001-8">&#91;8&#93;</a></sup>
+, the first example of reasoning about statistical significance and moral certainty, <sup id="cite_ref-Hald1998_9-0" class="reference"><a href="#cite_note-Hald1998-9">&#91;9&#93;</a></sup> and "… perhaps the first published report of a nonparametric test …".<sup id="cite_ref-Conover1999_6-3" class="reference"><a href="#cite_note-Conover1999-6">&#91;6&#93;</a></sup>
+</p><p>Hald <sup id="cite_ref-Hald1998_9-1" class="reference"><a href="#cite_note-Hald1998-9">&#91;9&#93;</a></sup> further describes the impact of Arbuthnot's research.
+</p><p>"Nicholas Bernoulli (1710–1713) completes the analysis of Arbuthnot's data by showing that the larger part of the variation of the yearly number of male births can be explained as binomial with <i>p</i>&#160;=&#160;18/35. This is the first example of fitting a binomial to data. Hence we here have a test of significance rejecting the hypothesis <i>p</i> = 0.5 followed by an estimation of p and a discussion of the goodness of fit …"
+</p>
+<h2><span class="mw-headline" id="Relationship_to_other_statistical_tests">Relationship to other statistical tests</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sign_test&amp;action=edit&amp;section=11" title="Edit section: Relationship to other statistical tests">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Wilcoxon_signed-rank_test">Wilcoxon signed-rank test</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sign_test&amp;action=edit&amp;section=12" title="Edit section: Wilcoxon signed-rank test">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The sign test requires only that the observations in a pair be ordered, for example <i>x</i> &gt; <i>y</i>. In some cases, the observations for all subjects can be assigned a rank value (1, 2, 3, ...).  If the observations can be ranked, and each observation in a pair is a random sample from a symmetric distribution, then the <a href="/wiki/Wilcoxon_signed-rank_test" title="Wilcoxon signed-rank test">Wilcoxon signed-rank test</a> is appropriate. The Wilcoxon test will generally have greater power to detect differences than the sign test. The <a href="/wiki/Asymptotic_relative_efficiency" class="mw-redirect" title="Asymptotic relative efficiency">asymptotic relative efficiency</a> of the sign test to the Wilcoxon signed rank test, under these circumstances, is 0.67.<sup id="cite_ref-Conover1999_6-4" class="reference"><a href="#cite_note-Conover1999-6">&#91;6&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Paired_t-test">Paired t-test</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sign_test&amp;action=edit&amp;section=13" title="Edit section: Paired t-test">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>If the paired observations are numeric quantities (such as the actual length of the hind leg and foreleg in the Zar example), and the differences between paired observations are random samples from a single normal distribution, then the <a href="/wiki/Paired_t-test" class="mw-redirect" title="Paired t-test">paired t-test</a> is appropriate. The paired t-test will generally have greater power to detect differences than the sign test. The asymptotic relative efficiency of the sign test to the paired t-test, under these circumstances, is 0.637. However, if the distribution of the differences between pairs is not normal, but instead is heavy-tailed (<a href="/wiki/Platykurtic_distribution" class="mw-redirect" title="Platykurtic distribution">platykurtic distribution</a>), the sign test can have more power than the paired t-test, with <a href="/wiki/Asymptotic_relative_efficiency" class="mw-redirect" title="Asymptotic relative efficiency">asymptotic relative efficiency</a> of 2.0 relative to the paired t-test and 1.3 relative to the Wilcoxon signed rank test.<sup id="cite_ref-Conover1999_6-5" class="reference"><a href="#cite_note-Conover1999-6">&#91;6&#93;</a></sup>
+</p>
+<h3><span id="McNemar.27s_test"></span><span class="mw-headline" id="McNemar's_test">McNemar's test</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sign_test&amp;action=edit&amp;section=14" title="Edit section: McNemar&#039;s test">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In some applications, the observations within each pair can only take the values 0 or 1. For example, 0 may indicate failure and 1 may indicate success. There are 4 possible pairs: {0,0}, {0,1}, {1,0}, and {1,1}. In these cases, the same procedure as the sign test is used, but is known as <a href="/wiki/McNemar%27s_test" title="McNemar&#39;s test">McNemar's test</a>.<sup id="cite_ref-Conover1999_6-6" class="reference"><a href="#cite_note-Conover1999-6">&#91;6&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Friedman_test"><a href="/wiki/Friedman_test" title="Friedman test">Friedman test</a></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sign_test&amp;action=edit&amp;section=15" title="Edit section: Friedman test">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Instead of paired observations such as (Product A, Product B), the data may consist of three or more levels (Product A, Product B, Product C). If the individual observations can be ordered in the same way as for the sign test, for example B &gt; C &gt; A, then the <a href="/wiki/Friedman_test" title="Friedman test">Friedman test</a> may be used.<sup id="cite_ref-Zar1999_5-2" class="reference"><a href="#cite_note-Zar1999-5">&#91;5&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Trinomial_test">Trinomial test</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sign_test&amp;action=edit&amp;section=16" title="Edit section: Trinomial test">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Bian, McAleer and Wong<sup id="cite_ref-Bian2011_10-0" class="reference"><a href="#cite_note-Bian2011-10">&#91;10&#93;</a></sup> proposed in 2011 a non-parametric test for paired data when there are many ties. They showed that their trinomial test is superior to the sign test in presence of ties.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sign_test&amp;action=edit&amp;section=17" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Wilcoxon_signed-rank_test" title="Wilcoxon signed-rank test">Wilcoxon signed-rank test</a> – A more powerful variant of the sign test, but one which also assumes a symmetric distribution and interval data.</li>
+<li><a href="/wiki/Median_test" title="Median test">Median test</a> – An unpaired alternative to the sign test.</li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sign_test&amp;action=edit&amp;section=18" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite id="CITEREFBaguley2012" class="citation">Baguley, Thomas (2012), <a rel="nofollow" class="external text" href="https://books.google.com/books?id=ObUcBQAAQBAJ&amp;pg=PA281"><i>Serious Stats: A Guide to Advanced Statistics for the Behavioral Sciences</i></a>, Palgrave Macmillan, p.&#160;281, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9780230363557" title="Special:BookSources/9780230363557"><bdi>9780230363557</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Serious+Stats%3A+A+Guide+to+Advanced+Statistics+for+the+Behavioral+Sciences&amp;rft.pages=281&amp;rft.pub=Palgrave+Macmillan&amp;rft.date=2012&amp;rft.isbn=9780230363557&amp;rft.aulast=Baguley&amp;rft.aufirst=Thomas&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DObUcBQAAQBAJ%26pg%3DPA281&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASign+test" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r886058088">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style>.</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite id="CITEREFCorderForeman2014" class="citation">Corder, Gregory W.; Foreman, Dale I. (2014), <a rel="nofollow" class="external text" href="https://books.google.com/books?id=CIxgAwAAQBAJ&amp;pg=SA3-PA7">"3.6 Statistical Power"</a>, <i>Nonparametric Statistics: A Step-by-Step Approach</i> (2nd ed.), John Wiley &amp; Sons, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9781118840429" title="Special:BookSources/9781118840429"><bdi>9781118840429</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=3.6+Statistical+Power&amp;rft.btitle=Nonparametric+Statistics%3A+A+Step-by-Step+Approach&amp;rft.edition=2nd&amp;rft.pub=John+Wiley+%26+Sons&amp;rft.date=2014&amp;rft.isbn=9781118840429&amp;rft.aulast=Corder&amp;rft.aufirst=Gregory+W.&amp;rft.au=Foreman%2C+Dale+I.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DCIxgAwAAQBAJ%26pg%3DSA3-PA7&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASign+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/>.</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://onlinecourses.science.psu.edu/stat414/node/318">The Sign Test for a Median</a> // STAT 415 Intro Mathematical Statistics. Penn State University.</span>
+</li>
+<li id="cite_note-mendenhall-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-mendenhall_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-mendenhall_4-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite id="CITEREFMendenhallWackerlyScheaffer1989" class="citation">Mendenhall W, Wackerly DD, Scheaffer RL (1989), "15: Nonparametric statistics", <i>Mathematical statistics with applications</i> (Fourth ed.), PWS-Kent, pp.&#160;674–679, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-534-92026-8" title="Special:BookSources/0-534-92026-8"><bdi>0-534-92026-8</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=15%3A+Nonparametric+statistics&amp;rft.btitle=Mathematical+statistics+with+applications&amp;rft.pages=674-679&amp;rft.edition=Fourth&amp;rft.pub=PWS-Kent&amp;rft.date=1989&amp;rft.isbn=0-534-92026-8&amp;rft.aulast=Mendenhall&amp;rft.aufirst=W&amp;rft.au=Wackerly%2C+DD&amp;rft.au=Scheaffer%2C+RL&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASign+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Zar1999-5"><span class="mw-cite-backlink">^ <a href="#cite_ref-Zar1999_5-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Zar1999_5-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Zar1999_5-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><cite id="CITEREFZar1999" class="citation">Zar, Jerold H. (1999), "Chapter 24: More on Dichotomous Variables", <i>Biostatistical Analysis</i> (Fourth ed.), Prentice-Hall, pp.&#160;516–570, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-13-081542-X" title="Special:BookSources/0-13-081542-X"><bdi>0-13-081542-X</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Chapter+24%3A+More+on+Dichotomous+Variables&amp;rft.btitle=Biostatistical+Analysis&amp;rft.pages=516-570&amp;rft.edition=Fourth&amp;rft.pub=Prentice-Hall&amp;rft.date=1999&amp;rft.isbn=0-13-081542-X&amp;rft.aulast=Zar&amp;rft.aufirst=Jerold+H.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASign+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Conover1999-6"><span class="mw-cite-backlink">^ <a href="#cite_ref-Conover1999_6-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Conover1999_6-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Conover1999_6-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-Conover1999_6-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-Conover1999_6-4"><sup><i><b>e</b></i></sup></a> <a href="#cite_ref-Conover1999_6-5"><sup><i><b>f</b></i></sup></a> <a href="#cite_ref-Conover1999_6-6"><sup><i><b>g</b></i></sup></a></span> <span class="reference-text"><cite id="CITEREFConover1999" class="citation">Conover, W.J. (1999), "Chapter 3.4: The Sign Test", <i>Practical Nonparametric Statistics</i> (Third ed.), Wiley, pp.&#160;157–176, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-471-16068-7" title="Special:BookSources/0-471-16068-7"><bdi>0-471-16068-7</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Chapter+3.4%3A+The+Sign+Test&amp;rft.btitle=Practical+Nonparametric+Statistics&amp;rft.pages=157-176&amp;rft.edition=Third&amp;rft.pub=Wiley&amp;rft.date=1999&amp;rft.isbn=0-471-16068-7&amp;rft.aulast=Conover&amp;rft.aufirst=W.J.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASign+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/> </span>
+</li>
+<li id="cite_note-Sprent1989-7"><span class="mw-cite-backlink">^ <a href="#cite_ref-Sprent1989_7-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Sprent1989_7-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite id="CITEREFSprent1989" class="citation">Sprent, P. (1989), <i>Applied Nonparametric Statistical Methods</i> (Second ed.), Chapman &amp; Hall, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-412-44980-3" title="Special:BookSources/0-412-44980-3"><bdi>0-412-44980-3</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Applied+Nonparametric+Statistical+Methods&amp;rft.edition=Second&amp;rft.pub=Chapman+%26+Hall&amp;rft.date=1989&amp;rft.isbn=0-412-44980-3&amp;rft.aulast=Sprent&amp;rft.aufirst=P.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASign+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Bellhouse2001-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-Bellhouse2001_8-0">^</a></b></span> <span class="reference-text"><cite id="CITEREFBellhouse2001" class="citation">Bellhouse, P. (2001), "John Arbuthnot", <i>in Statisticians of the Centuries by C.C. Heyde and E. Seneta</i>, Springer, pp.&#160;39–42, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-387-95329-9" title="Special:BookSources/0-387-95329-9"><bdi>0-387-95329-9</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=John+Arbuthnot&amp;rft.btitle=in+Statisticians+of+the+Centuries+by+C.C.+Heyde+and+E.+Seneta&amp;rft.pages=39-42&amp;rft.pub=Springer&amp;rft.date=2001&amp;rft.isbn=0-387-95329-9&amp;rft.aulast=Bellhouse&amp;rft.aufirst=P.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASign+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Hald1998-9"><span class="mw-cite-backlink">^ <a href="#cite_ref-Hald1998_9-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Hald1998_9-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite id="CITEREFHald1998" class="citation">Hald, Anders (1998), "Chapter 4. Chance or Design: Tests of Significance", <i>A History of Mathematical Statistics from 1750 to 1930</i>, Wiley, p.&#160;65</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Chapter+4.+Chance+or+Design%3A+Tests+of+Significance&amp;rft.btitle=A+History+of+Mathematical+Statistics+from+1750+to+1930&amp;rft.pages=65&amp;rft.pub=Wiley&amp;rft.date=1998&amp;rft.aulast=Hald&amp;rft.aufirst=Anders&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASign+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+<li id="cite_note-Bian2011-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-Bian2011_10-0">^</a></b></span> <span class="reference-text"><cite id="CITEREFBianMcAleerWong2011" class="citation">Bian G, McAleer M, Wong WK (2011), <i>A trinomial test for paired data when there are many ties.</i>, Mathematics and Computers in Simulation, 81(6), pp.&#160;1153–1160</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=A+trinomial+test+for+paired+data+when+there+are+many+ties.&amp;rft.pages=1153-1160&amp;rft.pub=Mathematics+and+Computers+in+Simulation%2C+81%286%29&amp;rft.date=2011&amp;rft.aulast=Bian&amp;rft.aufirst=G&amp;rft.au=McAleer%2C+M&amp;rft.au=Wong%2C+WK&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASign+test" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886058088"/></span>
+</li>
+</ol></div></div>
+<ul><li><a href="/wiki/Jean_D._Gibbons" title="Jean D. Gibbons">Gibbons, J.D.</a> and Chakraborti, S. (1992). Nonparametric Statistical Inference. Marcel Dekker Inc., New York.</li>
+<li>Kitchens, L.J.(2003). <i>Basic Statistics and Data Analysis.</i> Duxbury.</li>
+<li>Conover, W. J. (1980). <i>Practical Nonparametric Statistics</i>, 2nd ed. Wiley, New York.</li>
+<li>Lehmann, E. L. (1975). <i>Nonparametrics: Statistical Methods Based on Ranks.</i> Holden and Day, San Francisco.</li></ul>
+<div role="navigation" class="navbox" aria-labelledby="Statistics" style="padding:3px"><table class="nowraplinks hlist collapsible uncollapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="/wiki/Template:Statistics" title="Template:Statistics"><abbr title="View this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Statistics" title="Template talk:Statistics"><abbr title="Discuss this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Statistics&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">e</abbr></a></li></ul></div><div id="Statistics" style="font-size:114%;margin:0 4em"><a href="/wiki/Statistics" title="Statistics">Statistics</a></div></th></tr><tr><td class="navbox-abovebelow" colspan="2"><div id="*_Outline&amp;#10;*_Index">
+<ul><li><a href="/wiki/Outline_of_statistics" title="Outline of statistics">Outline</a></li>
+<li><a href="/wiki/List_of_statistics_articles" title="List of statistics articles">Index</a></li></ul>
+</div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Descriptive_statistics" style="font-size:114%;margin:0 4em"><a href="/wiki/Descriptive_statistics" title="Descriptive statistics">Descriptive statistics</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Continuous_probability_distribution" class="mw-redirect" title="Continuous probability distribution">Continuous data</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Central_tendency" title="Central tendency">Center</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Mean" title="Mean">Mean</a>
+<ul><li><a href="/wiki/Arithmetic_mean" title="Arithmetic mean">arithmetic</a></li>
+<li><a href="/wiki/Geometric_mean" title="Geometric mean">geometric</a></li>
+<li><a href="/wiki/Harmonic_mean" title="Harmonic mean">harmonic</a></li></ul></li>
+<li><a href="/wiki/Median" title="Median">Median</a></li>
+<li><a href="/wiki/Mode_(statistics)" title="Mode (statistics)">Mode</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Statistical_dispersion" title="Statistical dispersion">Dispersion</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Variance#Sample_variance" title="Variance">Variance</a></li>
+<li><a href="/wiki/Standard_deviation" title="Standard deviation">Standard deviation</a></li>
+<li><a href="/wiki/Coefficient_of_variation" title="Coefficient of variation">Coefficient of variation</a></li>
+<li><a href="/wiki/Percentile" title="Percentile">Percentile</a></li>
+<li><a href="/wiki/Range_(statistics)" title="Range (statistics)">Range</a></li>
+<li><a href="/wiki/Interquartile_range" title="Interquartile range">Interquartile range</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Shape_of_the_distribution" class="mw-redirect" title="Shape of the distribution">Shape</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Central_limit_theorem" title="Central limit theorem">Central limit theorem</a></li>
+<li><a href="/wiki/Moment_(mathematics)" title="Moment (mathematics)">Moments</a>
+<ul><li><a href="/wiki/Skewness" title="Skewness">Skewness</a></li>
+<li><a href="/wiki/Kurtosis" title="Kurtosis">Kurtosis</a></li>
+<li><a href="/wiki/L-moment" title="L-moment">L-moments</a></li></ul></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Count_data" title="Count data">Count data</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Index_of_dispersion" title="Index of dispersion">Index of dispersion</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em">Summary tables</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Grouped_data" title="Grouped data">Grouped data</a></li>
+<li><a href="/wiki/Frequency_distribution" title="Frequency distribution">Frequency distribution</a></li>
+<li><a href="/wiki/Contingency_table" title="Contingency table">Contingency table</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Correlation_and_dependence" title="Correlation and dependence">Dependence</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Pearson_correlation_coefficient" title="Pearson correlation coefficient">Pearson product-moment correlation</a></li>
+<li><a href="/wiki/Rank_correlation" title="Rank correlation">Rank correlation</a>
+<ul><li><a href="/wiki/Spearman%27s_rank_correlation_coefficient" title="Spearman&#39;s rank correlation coefficient">Spearman's rho</a></li>
+<li><a href="/wiki/Kendall_rank_correlation_coefficient" title="Kendall rank correlation coefficient">Kendall's tau</a></li></ul></li>
+<li><a href="/wiki/Partial_correlation" title="Partial correlation">Partial correlation</a></li>
+<li><a href="/wiki/Scatter_plot" title="Scatter plot">Scatter plot</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Statistical_graphics" title="Statistical graphics">Graphics</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Bar_chart" title="Bar chart">Bar chart</a></li>
+<li><a href="/wiki/Biplot" title="Biplot">Biplot</a></li>
+<li><a href="/wiki/Box_plot" title="Box plot">Box plot</a></li>
+<li><a href="/wiki/Control_chart" title="Control chart">Control chart</a></li>
+<li><a href="/wiki/Correlogram" title="Correlogram">Correlogram</a></li>
+<li><a href="/wiki/Fan_chart_(statistics)" title="Fan chart (statistics)">Fan chart</a></li>
+<li><a href="/wiki/Forest_plot" title="Forest plot">Forest plot</a></li>
+<li><a href="/wiki/Histogram" title="Histogram">Histogram</a></li>
+<li><a href="/wiki/Pie_chart" title="Pie chart">Pie chart</a></li>
+<li><a href="/wiki/Q%E2%80%93Q_plot" title="Q–Q plot">Q–Q plot</a></li>
+<li><a href="/wiki/Run_chart" title="Run chart">Run chart</a></li>
+<li><a href="/wiki/Scatter_plot" title="Scatter plot">Scatter plot</a></li>
+<li><a href="/wiki/Stem-and-leaf_display" title="Stem-and-leaf display">Stem-and-leaf display</a></li>
+<li><a href="/wiki/Radar_chart" title="Radar chart">Radar chart</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Data_collection" style="font-size:114%;margin:0 4em"><a href="/wiki/Data_collection" title="Data collection">Data collection</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Design_of_experiments" title="Design of experiments">Study design</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Population_(statistics)" class="mw-redirect" title="Population (statistics)">Population</a></li>
+<li><a href="/wiki/Statistic" title="Statistic">Statistic</a></li>
+<li><a href="/wiki/Effect_size" title="Effect size">Effect size</a></li>
+<li><a href="/wiki/Statistical_power" class="mw-redirect" title="Statistical power">Statistical power</a></li>
+<li><a href="/wiki/Optimal_design" title="Optimal design">Optimal design</a></li>
+<li><a href="/wiki/Sample_size_determination" title="Sample size determination">Sample size determination</a></li>
+<li><a href="/wiki/Replication_(statistics)" title="Replication (statistics)">Replication</a></li>
+<li><a href="/wiki/Missing_data" title="Missing data">Missing data</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Survey_methodology" title="Survey methodology">Survey methodology</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Sampling_(statistics)" title="Sampling (statistics)">Sampling</a>
+<ul><li><a href="/wiki/Stratified_sampling" title="Stratified sampling">stratified</a></li>
+<li><a href="/wiki/Cluster_sampling" title="Cluster sampling">cluster</a></li></ul></li>
+<li><a href="/wiki/Standard_error" title="Standard error">Standard error</a></li>
+<li><a href="/wiki/Opinion_poll" title="Opinion poll">Opinion poll</a></li>
+<li><a href="/wiki/Questionnaire" title="Questionnaire">Questionnaire</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Experiment" title="Experiment">Controlled experiments</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Scientific_control" title="Scientific control">Scientific control</a></li>
+<li><a href="/wiki/Randomized_experiment" title="Randomized experiment">Randomized experiment</a></li>
+<li><a href="/wiki/Randomized_controlled_trial" title="Randomized controlled trial">Randomized controlled trial</a></li>
+<li><a href="/wiki/Random_assignment" title="Random assignment">Random assignment</a></li>
+<li><a href="/wiki/Blocking_(statistics)" title="Blocking (statistics)">Blocking</a></li>
+<li><a href="/wiki/Interaction_(statistics)" title="Interaction (statistics)">Interaction</a></li>
+<li><a href="/wiki/Factorial_experiment" title="Factorial experiment">Factorial experiment</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em">Adaptive Designs</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Adaptive_clinical_trial" title="Adaptive clinical trial">Adaptive clinical trial</a></li>
+<li><a href="/wiki/Up-and-Down_Designs" title="Up-and-Down Designs">Up-and-Down Designs</a></li>
+<li><a href="/wiki/Stochastic_approximation" title="Stochastic approximation">Stochastic approximation</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Observational_study" title="Observational study">Observational Studies</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Cross-sectional_study" title="Cross-sectional study">Cross-sectional study</a></li>
+<li><a href="/wiki/Cohort_study" title="Cohort study">Cohort study</a></li>
+<li><a href="/wiki/Natural_experiment" title="Natural experiment">Natural experiment</a></li>
+<li><a href="/wiki/Quasi-experiment" title="Quasi-experiment">Quasi-experiment</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks collapsible uncollapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Statistical_inference" style="font-size:114%;margin:0 4em"><a href="/wiki/Statistical_inference" title="Statistical inference">Statistical inference</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Statistical_theory" title="Statistical theory">Statistical theory</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Population_(statistics)" class="mw-redirect" title="Population (statistics)">Population</a></li>
+<li><a href="/wiki/Statistic" title="Statistic">Statistic</a></li>
+<li><a href="/wiki/Probability_distribution" title="Probability distribution">Probability distribution</a></li>
+<li><a href="/wiki/Sampling_distribution" title="Sampling distribution">Sampling distribution</a>
+<ul><li><a href="/wiki/Order_statistic" title="Order statistic">Order statistic</a></li></ul></li>
+<li><a href="/wiki/Empirical_distribution_function" title="Empirical distribution function">Empirical distribution</a>
+<ul><li><a href="/wiki/Density_estimation" title="Density estimation">Density estimation</a></li></ul></li>
+<li><a href="/wiki/Statistical_model" title="Statistical model">Statistical model</a>
+<ul><li><a href="/wiki/Model_specification" class="mw-redirect" title="Model specification">Model specification</a></li>
+<li><a href="/wiki/Lp_space" title="Lp space">L<sup><i>p</i></sup> space</a></li></ul></li>
+<li><a href="/wiki/Statistical_parameter" title="Statistical parameter">Parameter</a>
+<ul><li><a href="/wiki/Location_parameter" title="Location parameter">location</a></li>
+<li><a href="/wiki/Scale_parameter" title="Scale parameter">scale</a></li>
+<li><a href="/wiki/Shape_parameter" title="Shape parameter">shape</a></li></ul></li>
+<li><a href="/wiki/Parametric_statistics" title="Parametric statistics">Parametric family</a>
+<ul><li><a href="/wiki/Likelihood_function" title="Likelihood function">Likelihood</a>&#160;<a href="/wiki/Monotone_likelihood_ratio" title="Monotone likelihood ratio"><span style="font-size:85%;">(monotone)</span></a></li>
+<li><a href="/wiki/Location%E2%80%93scale_family" title="Location–scale family">Location–scale family</a></li>
+<li><a href="/wiki/Exponential_family" title="Exponential family">Exponential family</a></li></ul></li>
+<li><a href="/wiki/Completeness_(statistics)" title="Completeness (statistics)">Completeness</a></li>
+<li><a href="/wiki/Sufficient_statistic" title="Sufficient statistic">Sufficiency</a></li>
+<li><a href="/wiki/Plug-in_principle" title="Plug-in principle">Statistical functional</a>
+<ul><li><a href="/wiki/Bootstrapping_(statistics)" title="Bootstrapping (statistics)">Bootstrap</a></li>
+<li><a href="/wiki/U-statistic" title="U-statistic">U</a></li>
+<li><a href="/wiki/V-statistic" title="V-statistic">V</a></li></ul></li>
+<li><a href="/wiki/Optimal_decision" title="Optimal decision">Optimal decision</a>
+<ul><li><a href="/wiki/Loss_function" title="Loss function">loss function</a></li></ul></li>
+<li><a href="/wiki/Efficiency_(statistics)" title="Efficiency (statistics)">Efficiency</a></li>
+<li><a href="/wiki/Statistical_distance" title="Statistical distance">Statistical distance</a>
+<ul><li><a href="/wiki/Divergence_(statistics)" title="Divergence (statistics)">divergence</a></li></ul></li>
+<li><a href="/wiki/Asymptotic_theory_(statistics)" title="Asymptotic theory (statistics)">Asymptotics</a></li>
+<li><a href="/wiki/Robust_statistics" title="Robust statistics">Robustness</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Frequentist_inference" title="Frequentist inference">Frequentist inference</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Point_estimation" title="Point estimation">Point estimation</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Estimating_equations" title="Estimating equations">Estimating equations</a>
+<ul><li><a href="/wiki/Maximum_likelihood" class="mw-redirect" title="Maximum likelihood">Maximum likelihood</a></li>
+<li><a href="/wiki/Method_of_moments_(statistics)" title="Method of moments (statistics)">Method of moments</a></li>
+<li><a href="/wiki/M-estimator" title="M-estimator">M-estimator</a></li>
+<li><a href="/wiki/Minimum_distance_estimation" title="Minimum distance estimation">Minimum distance</a></li></ul></li>
+<li><a href="/wiki/Bias_of_an_estimator" title="Bias of an estimator">Unbiased estimators</a>
+<ul><li><a href="/wiki/Minimum-variance_unbiased_estimator" title="Minimum-variance unbiased estimator">Mean-unbiased minimum-variance</a>
+<ul><li><a href="/wiki/Rao%E2%80%93Blackwell_theorem" title="Rao–Blackwell theorem">Rao–Blackwellization</a></li>
+<li><a href="/wiki/Lehmann%E2%80%93Scheff%C3%A9_theorem" title="Lehmann–Scheffé theorem">Lehmann–Scheffé theorem</a></li></ul></li>
+<li><a href="/wiki/Median-unbiased_estimator" class="mw-redirect" title="Median-unbiased estimator">Median unbiased</a></li></ul></li>
+<li><a href="/wiki/Plug-in_principle" title="Plug-in principle">Plug-in</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Interval_estimation" title="Interval estimation">Interval estimation</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Confidence_interval" title="Confidence interval">Confidence interval</a></li>
+<li><a href="/wiki/Pivotal_quantity" title="Pivotal quantity">Pivot</a></li>
+<li><a href="/wiki/Likelihood_interval" class="mw-redirect" title="Likelihood interval">Likelihood interval</a></li>
+<li><a href="/wiki/Prediction_interval" title="Prediction interval">Prediction interval</a></li>
+<li><a href="/wiki/Tolerance_interval" title="Tolerance interval">Tolerance interval</a></li>
+<li><a href="/wiki/Resampling_(statistics)" title="Resampling (statistics)">Resampling</a>
+<ul><li><a href="/wiki/Bootstrapping_(statistics)" title="Bootstrapping (statistics)">Bootstrap</a></li>
+<li><a href="/wiki/Jackknife_resampling" title="Jackknife resampling">Jackknife</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Statistical_hypothesis_testing" title="Statistical hypothesis testing">Testing hypotheses</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/One-_and_two-tailed_tests" title="One- and two-tailed tests">1- &amp; 2-tails</a></li>
+<li><a href="/wiki/Power_(statistics)" title="Power (statistics)">Power</a>
+<ul><li><a href="/wiki/Uniformly_most_powerful_test" title="Uniformly most powerful test">Uniformly most powerful test</a></li></ul></li>
+<li><a href="/wiki/Permutation_test" class="mw-redirect" title="Permutation test">Permutation test</a>
+<ul><li><a href="/wiki/Randomization_test" class="mw-redirect" title="Randomization test">Randomization test</a></li></ul></li>
+<li><a href="/wiki/Multiple_comparisons" class="mw-redirect" title="Multiple comparisons">Multiple comparisons</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Parametric_statistics" title="Parametric statistics">Parametric tests</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Likelihood-ratio_test" title="Likelihood-ratio test">Likelihood-ratio</a></li>
+<li><a href="/wiki/Score_test" title="Score test">Score/Lagrange multiplier</a></li>
+<li><a href="/wiki/Wald_test" title="Wald test">Wald</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em">Specific tests</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><td colspan="2" class="navbox-list navbox-even" style="width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Z-test" title="Z-test"><i>Z</i>-test <span style="font-size:90%;">(normal)</span></a></li>
+<li><a href="/wiki/Student%27s_t-test" title="Student&#39;s t-test">Student's <i>t</i>-test</a></li>
+<li><a href="/wiki/F-test" title="F-test"><i>F</i>-test</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Goodness_of_fit" title="Goodness of fit">Goodness of fit</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Chi-squared_test" title="Chi-squared test">Chi-squared</a></li>
+<li><a href="/wiki/G-test" title="G-test"><i>G</i>-test</a></li>
+<li><a href="/wiki/Kolmogorov%E2%80%93Smirnov_test" title="Kolmogorov–Smirnov test">Kolmogorov–Smirnov</a></li>
+<li><a href="/wiki/Anderson%E2%80%93Darling_test" title="Anderson–Darling test">Anderson–Darling</a></li>
+<li><a href="/wiki/Lilliefors_test" title="Lilliefors test">Lilliefors</a></li>
+<li><a href="/wiki/Jarque%E2%80%93Bera_test" title="Jarque–Bera test">Jarque–Bera</a></li>
+<li><a href="/wiki/Shapiro%E2%80%93Wilk_test" title="Shapiro–Wilk test">Normality <span style="font-size:90%;">(Shapiro–Wilk)</span></a></li>
+<li><a href="/wiki/Likelihood-ratio_test" title="Likelihood-ratio test">Likelihood-ratio test</a></li>
+<li><a href="/wiki/Model_selection" title="Model selection">Model selection</a>
+<ul><li><a href="/wiki/Cross-validation_(statistics)" title="Cross-validation (statistics)">Cross validation</a></li>
+<li><a href="/wiki/Akaike_information_criterion" title="Akaike information criterion">AIC</a></li>
+<li><a href="/wiki/Bayesian_information_criterion" title="Bayesian information criterion">BIC</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Rank_statistics" class="mw-redirect" title="Rank statistics">Rank statistics</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a class="mw-selflink selflink">Sign</a>
+<ul><li><a href="/wiki/Sample_median" class="mw-redirect" title="Sample median">Sample median</a></li></ul></li>
+<li><a href="/wiki/Wilcoxon_signed-rank_test" title="Wilcoxon signed-rank test">Signed rank <span style="font-size:90%;">(Wilcoxon)</span></a>
+<ul><li><a href="/wiki/Hodges%E2%80%93Lehmann_estimator" title="Hodges–Lehmann estimator">Hodges–Lehmann estimator</a></li></ul></li>
+<li><a href="/wiki/Mann%E2%80%93Whitney_U_test" title="Mann–Whitney U test">Rank sum <span style="font-size:90%;">(Mann–Whitney)</span></a></li>
+<li><a href="/wiki/Nonparametric_statistics" title="Nonparametric statistics">Nonparametric</a> <a href="/wiki/Analysis_of_variance" title="Analysis of variance">anova</a>
+<ul><li><a href="/wiki/Kruskal%E2%80%93Wallis_one-way_analysis_of_variance" title="Kruskal–Wallis one-way analysis of variance">1-way <span style="font-size:90%;">(Kruskal–Wallis)</span></a></li>
+<li><a href="/wiki/Friedman_test" title="Friedman test">2-way <span style="font-size:90%;">(Friedman)</span></a></li>
+<li><a href="/wiki/Jonckheere%27s_trend_test" title="Jonckheere&#39;s trend test">Ordered alternative <span style="font-size:90%;">(Jonckheere–Terpstra)</span></a></li></ul></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Bayesian_inference" title="Bayesian inference">Bayesian inference</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Bayesian_probability" title="Bayesian probability">Bayesian probability</a>
+<ul><li><a href="/wiki/Prior_probability" title="Prior probability">prior</a></li>
+<li><a href="/wiki/Posterior_probability" title="Posterior probability">posterior</a></li></ul></li>
+<li><a href="/wiki/Credible_interval" title="Credible interval">Credible interval</a></li>
+<li><a href="/wiki/Bayes_factor" title="Bayes factor">Bayes factor</a></li>
+<li><a href="/wiki/Bayes_estimator" title="Bayes estimator">Bayesian estimator</a>
+<ul><li><a href="/wiki/Maximum_a_posteriori_estimation" title="Maximum a posteriori estimation">Maximum posterior estimator</a></li></ul></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="CorrelationRegression_analysis" style="font-size:114%;margin:0 4em"><div class="hlist hlist-separated"><ul><li><a href="/wiki/Correlation_and_dependence" title="Correlation and dependence">Correlation</a></li><li><a href="/wiki/Regression_analysis" title="Regression analysis">Regression analysis</a></li></ul></div></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Correlation_and_dependence" title="Correlation and dependence">Correlation</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Pearson_product-moment_correlation_coefficient" class="mw-redirect" title="Pearson product-moment correlation coefficient">Pearson product-moment</a></li>
+<li><a href="/wiki/Partial_correlation" title="Partial correlation">Partial correlation</a></li>
+<li><a href="/wiki/Confounding" title="Confounding">Confounding variable</a></li>
+<li><a href="/wiki/Coefficient_of_determination" title="Coefficient of determination">Coefficient of determination</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Regression_analysis" title="Regression analysis">Regression analysis</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Errors_and_residuals_in_statistics" class="mw-redirect" title="Errors and residuals in statistics">Errors and residuals</a></li>
+<li><a href="/wiki/Regression_validation" title="Regression validation">Regression validation</a></li>
+<li><a href="/wiki/Mixed_model" title="Mixed model">Mixed effects models</a></li>
+<li><a href="/wiki/Simultaneous_equations_model" title="Simultaneous equations model">Simultaneous equations models</a></li>
+<li><a href="/wiki/Multivariate_adaptive_regression_splines" class="mw-redirect" title="Multivariate adaptive regression splines">Multivariate adaptive regression splines (MARS)</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Linear_regression" title="Linear regression">Linear regression</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Simple_linear_regression" title="Simple linear regression">Simple linear regression</a></li>
+<li><a href="/wiki/Ordinary_least_squares" title="Ordinary least squares">Ordinary least squares</a></li>
+<li><a href="/wiki/General_linear_model" title="General linear model">General linear model</a></li>
+<li><a href="/wiki/Bayesian_linear_regression" title="Bayesian linear regression">Bayesian regression</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em">Non-standard predictors</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Nonlinear_regression" title="Nonlinear regression">Nonlinear regression</a></li>
+<li><a href="/wiki/Nonparametric_regression" title="Nonparametric regression">Nonparametric</a></li>
+<li><a href="/wiki/Semiparametric_regression" title="Semiparametric regression">Semiparametric</a></li>
+<li><a href="/wiki/Isotonic_regression" title="Isotonic regression">Isotonic</a></li>
+<li><a href="/wiki/Robust_regression" title="Robust regression">Robust</a></li>
+<li><a href="/wiki/Heteroscedasticity" title="Heteroscedasticity">Heteroscedasticity</a></li>
+<li><a href="/wiki/Homoscedasticity" title="Homoscedasticity">Homoscedasticity</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Generalized_linear_model" title="Generalized linear model">Generalized linear model</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Exponential_family" title="Exponential family">Exponential families</a></li>
+<li><a href="/wiki/Logistic_regression" title="Logistic regression">Logistic <span style="font-size:90%;">(Bernoulli)</span></a>&#160;/&#32;<a href="/wiki/Binomial_regression" title="Binomial regression">Binomial</a>&#160;/&#32;<a href="/wiki/Poisson_regression" title="Poisson regression">Poisson regressions</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Partition_of_sums_of_squares" title="Partition of sums of squares">Partition of variance</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Analysis_of_variance" title="Analysis of variance">Analysis of variance (ANOVA, anova)</a></li>
+<li><a href="/wiki/Analysis_of_covariance" title="Analysis of covariance">Analysis of covariance</a></li>
+<li><a href="/wiki/Multivariate_analysis_of_variance" title="Multivariate analysis of variance">Multivariate ANOVA</a></li>
+<li><a href="/wiki/Degrees_of_freedom_(statistics)" title="Degrees of freedom (statistics)">Degrees of freedom</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Categorical_/_Multivariate_/_Time-series_/_Survival_analysis" style="font-size:114%;margin:0 4em"><a href="/wiki/Categorical_variable" title="Categorical variable">Categorical</a>&#160;/&#32;<a href="/wiki/Multivariate_statistics" title="Multivariate statistics">Multivariate</a>&#160;/&#32;<a href="/wiki/Time_series" title="Time series">Time-series</a>&#160;/&#32;<a href="/wiki/Survival_analysis" title="Survival analysis">Survival analysis</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Categorical_variable" title="Categorical variable">Categorical</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Cohen%27s_kappa" title="Cohen&#39;s kappa">Cohen's kappa</a></li>
+<li><a href="/wiki/Contingency_table" title="Contingency table">Contingency table</a></li>
+<li><a href="/wiki/Graphical_model" title="Graphical model">Graphical model</a></li>
+<li><a href="/wiki/Poisson_regression" title="Poisson regression">Log-linear model</a></li>
+<li><a href="/wiki/McNemar%27s_test" title="McNemar&#39;s test">McNemar's test</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Multivariate_statistics" title="Multivariate statistics">Multivariate</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/General_linear_model" title="General linear model">Regression</a></li>
+<li><a href="/wiki/Multivariate_analysis_of_variance" title="Multivariate analysis of variance">Manova</a></li>
+<li><a href="/wiki/Principal_component_analysis" title="Principal component analysis">Principal components</a></li>
+<li><a href="/wiki/Canonical_correlation" title="Canonical correlation">Canonical correlation</a></li>
+<li><a href="/wiki/Linear_discriminant_analysis" title="Linear discriminant analysis">Discriminant analysis</a></li>
+<li><a href="/wiki/Cluster_analysis" title="Cluster analysis">Cluster analysis</a></li>
+<li><a href="/wiki/Statistical_classification" title="Statistical classification">Classification</a></li>
+<li><a href="/wiki/Structural_equation_modeling" title="Structural equation modeling">Structural equation model</a>
+<ul><li><a href="/wiki/Factor_analysis" title="Factor analysis">Factor analysis</a></li></ul></li>
+<li><a href="/wiki/Multivariate_distribution" class="mw-redirect" title="Multivariate distribution">Multivariate distributions</a>
+<ul><li><a href="/wiki/Elliptical_distribution" title="Elliptical distribution">Elliptical distributions</a>
+<ul><li><a href="/wiki/Multivariate_normal_distribution" title="Multivariate normal distribution">Normal</a></li></ul></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Time_series" title="Time series">Time-series</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;">General</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Decomposition_of_time_series" title="Decomposition of time series">Decomposition</a></li>
+<li><a href="/wiki/Trend_estimation" class="mw-redirect" title="Trend estimation">Trend</a></li>
+<li><a href="/wiki/Stationary_process" title="Stationary process">Stationarity</a></li>
+<li><a href="/wiki/Seasonal_adjustment" title="Seasonal adjustment">Seasonal adjustment</a></li>
+<li><a href="/wiki/Exponential_smoothing" title="Exponential smoothing">Exponential smoothing</a></li>
+<li><a href="/wiki/Cointegration" title="Cointegration">Cointegration</a></li>
+<li><a href="/wiki/Structural_break" title="Structural break">Structural break</a></li>
+<li><a href="/wiki/Granger_causality" title="Granger causality">Granger causality</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;">Specific tests</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Dickey%E2%80%93Fuller_test" title="Dickey–Fuller test">Dickey–Fuller</a></li>
+<li><a href="/wiki/Johansen_test" title="Johansen test">Johansen</a></li>
+<li><a href="/wiki/Ljung%E2%80%93Box_test" title="Ljung–Box test">Q-statistic <span style="font-size:90%;">(Ljung–Box)</span></a></li>
+<li><a href="/wiki/Durbin%E2%80%93Watson_statistic" title="Durbin–Watson statistic">Durbin–Watson</a></li>
+<li><a href="/wiki/Breusch%E2%80%93Godfrey_test" title="Breusch–Godfrey test">Breusch–Godfrey</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Time_domain" title="Time domain">Time domain</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Autocorrelation" title="Autocorrelation">Autocorrelation (ACF)</a>
+<ul><li><a href="/wiki/Partial_autocorrelation_function" title="Partial autocorrelation function">partial (PACF)</a></li></ul></li>
+<li><a href="/wiki/Cross-correlation" title="Cross-correlation">Cross-correlation (XCF)</a></li>
+<li><a href="/wiki/Autoregressive%E2%80%93moving-average_model" title="Autoregressive–moving-average model">ARMA model</a></li>
+<li><a href="/wiki/Box%E2%80%93Jenkins_method" title="Box–Jenkins method">ARIMA model <span style="font-size:90%;">(Box–Jenkins)</span></a></li>
+<li><a href="/wiki/Autoregressive_conditional_heteroskedasticity" title="Autoregressive conditional heteroskedasticity">Autoregressive conditional heteroskedasticity (ARCH)</a></li>
+<li><a href="/wiki/Vector_autoregression" title="Vector autoregression">Vector autoregression (VAR)</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Frequency_domain" title="Frequency domain">Frequency domain</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Spectral_density_estimation" title="Spectral density estimation">Spectral density estimation</a></li>
+<li><a href="/wiki/Fourier_analysis" title="Fourier analysis">Fourier analysis</a></li>
+<li><a href="/wiki/Wavelet" title="Wavelet">Wavelet</a></li>
+<li><a href="/wiki/Whittle_likelihood" title="Whittle likelihood">Whittle likelihood</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Survival_analysis" title="Survival analysis">Survival</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Survival_function" title="Survival function">Survival function</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Kaplan%E2%80%93Meier_estimator" title="Kaplan–Meier estimator">Kaplan–Meier estimator (product limit)</a></li>
+<li><a href="/wiki/Proportional_hazards_model" title="Proportional hazards model">Proportional hazards models</a></li>
+<li><a href="/wiki/Accelerated_failure_time_model" title="Accelerated failure time model">Accelerated failure time (AFT) model</a></li>
+<li><a href="/wiki/First-hitting-time_model" title="First-hitting-time model">First hitting time</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Failure_rate" title="Failure rate">Hazard function</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Nelson%E2%80%93Aalen_estimator" title="Nelson–Aalen estimator">Nelson–Aalen estimator</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;">Test</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Log-rank_test" class="mw-redirect" title="Log-rank test">Log-rank test</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Applications" style="font-size:114%;margin:0 4em"><a href="/wiki/List_of_fields_of_application_of_statistics" title="List of fields of application of statistics">Applications</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Biostatistics" title="Biostatistics">Biostatistics</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Bioinformatics" title="Bioinformatics">Bioinformatics</a></li>
+<li><a href="/wiki/Clinical_trial" title="Clinical trial">Clinical trials</a>&#160;/&#32;<a href="/wiki/Clinical_study_design" title="Clinical study design">studies</a></li>
+<li><a href="/wiki/Epidemiology" title="Epidemiology">Epidemiology</a></li>
+<li><a href="/wiki/Medical_statistics" title="Medical statistics">Medical statistics</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Engineering_statistics" title="Engineering statistics">Engineering statistics</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Chemometrics" title="Chemometrics">Chemometrics</a></li>
+<li><a href="/wiki/Methods_engineering" title="Methods engineering">Methods engineering</a></li>
+<li><a href="/wiki/Probabilistic_design" title="Probabilistic design">Probabilistic design</a></li>
+<li><a href="/wiki/Statistical_process_control" title="Statistical process control">Process</a>&#160;/&#32;<a href="/wiki/Quality_control" title="Quality control">quality control</a></li>
+<li><a href="/wiki/Reliability_engineering" title="Reliability engineering">Reliability</a></li>
+<li><a href="/wiki/System_identification" title="System identification">System identification</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Social_statistics" title="Social statistics">Social statistics</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Actuarial_science" title="Actuarial science">Actuarial science</a></li>
+<li><a href="/wiki/Census" title="Census">Census</a></li>
+<li><a href="/wiki/Crime_statistics" title="Crime statistics">Crime statistics</a></li>
+<li><a href="/wiki/Demographic_statistics" title="Demographic statistics">Demography</a></li>
+<li><a href="/wiki/Econometrics" title="Econometrics">Econometrics</a></li>
+<li><a href="/wiki/National_accounts" title="National accounts">National accounts</a></li>
+<li><a href="/wiki/Official_statistics" title="Official statistics">Official statistics</a></li>
+<li><a href="/wiki/Population_statistics" class="mw-redirect" title="Population statistics">Population statistics</a></li>
+<li><a href="/wiki/Psychometrics" title="Psychometrics">Psychometrics</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:12.5em"><a href="/wiki/Spatial_analysis" title="Spatial analysis">Spatial statistics</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Cartography" title="Cartography">Cartography</a></li>
+<li><a href="/wiki/Environmental_statistics" title="Environmental statistics">Environmental statistics</a></li>
+<li><a href="/wiki/Geographic_information_system" title="Geographic information system">Geographic information system</a></li>
+<li><a href="/wiki/Geostatistics" title="Geostatistics">Geostatistics</a></li>
+<li><a href="/wiki/Kriging" title="Kriging">Kriging</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr><td class="navbox-abovebelow" colspan="2"><div>
+<ul><li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" decoding="async" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /><b><a href="/wiki/Category:Statistics" title="Category:Statistics">Category</a></b></li>
+<li><img alt="Portal" src="//upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/16px-Portal-puzzle.svg.png" decoding="async" title="Portal" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/24px-Portal-puzzle.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/32px-Portal-puzzle.svg.png 2x" data-file-width="32" data-file-height="28" /><b><a href="/wiki/Portal:Statistics" title="Portal:Statistics">Portal</a></b></li>
+<li><img alt="Commons page" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/12px-Commons-logo.svg.png" decoding="async" title="Commons page" width="12" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/18px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/24px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /><b><a href="https://commons.wikimedia.org/wiki/Category:Statistics" class="extiw" title="commons:Category:Statistics">Commons</a></b></li>
+<li><img alt="WikiProject" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/16px-People_icon.svg.png" decoding="async" title="WikiProject" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/24px-People_icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/32px-People_icon.svg.png 2x" data-file-width="100" data-file-height="100" /> <b><a href="/wiki/Wikipedia:WikiProject_Statistics" title="Wikipedia:WikiProject Statistics">WikiProject</a></b></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1268
+Cached time: 20190801020326
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.344 seconds
+Real time usage: 1.182 seconds
+Preprocessor visited node count: 1287/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 163823/2097152 bytes
+Template argument size: 552/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 0/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 30608/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.141/10.000 seconds
+Lua memory usage: 3.65 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  264.910      1 -total
+ 52.69%  139.586      1 Template:Reflist
+ 43.52%  115.283      9 Template:Citation
+ 32.57%   86.281      1 Template:Statistics
+ 30.68%   81.268      1 Template:Navbox_with_collapsible_groups
+ 19.57%   51.856     11 Template:Navbox
+ 11.88%   31.484      1 Template:See_also
+  4.84%   12.811      4 Template:Icon
+  3.43%    9.092      1 Template:Hlist
+  1.92%    5.083     10 Template:Smaller
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:3319766-0!canonical and timestamp 20190801020324 and revision id 904417969
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Sign_test&amp;oldid=904417969">https://en.wikipedia.org/w/index.php?title=Sign_test&amp;oldid=904417969</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Statistical_tests" title="Category:Statistical tests">Statistical tests</a></li><li><a href="/wiki/Category:Nonparametric_statistics" title="Category:Nonparametric statistics">Nonparametric statistics</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Sign+test" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Sign+test" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Sign_test" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Sign_test" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Sign_test">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Sign_test&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Sign_test&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Sign_test" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Sign_test" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Sign_test&amp;oldid=904417969" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Sign_test&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q2301904" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Sign_test&amp;id=904417969" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Sign+test">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Sign+test&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Sign_test&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Vorzeichentest" title="Vorzeichentest – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-eu"><a href="https://eu.wikipedia.org/wiki/Zeinuen_froga" title="Zeinuen froga – Basque" lang="eu" hreflang="eu" class="interlanguage-link-target">Euskara</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%A2%D8%B2%D9%85%D9%88%D9%86_%D8%B9%D9%84%D8%A7%D9%85%D8%AA" title="آزمون علامت – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Test_des_signes" title="Test des signes – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Test_dei_segni" title="Test dei segni – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Tekentoets" title="Tekentoets – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Teste_do_sinal" title="Teste do sinal – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B8%D1%82%D0%B5%D1%80%D0%B8%D0%B9_%D0%B7%D0%BD%D0%B0%D0%BA%D0%BE%D0%B2" title="Критерий знаков – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Merkkitesti" title="Merkkitesti – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q2301904#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 2 July 2019, at 01:08<span class="anonymous-show">&#160;(UTC)</span>.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Sign_test&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.344","walltime":"1.182","ppvisitednodes":{"value":1287,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":163823,"limit":2097152},"templateargumentsize":{"value":552,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":30608,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  264.910      1 -total"," 52.69%  139.586      1 Template:Reflist"," 43.52%  115.283      9 Template:Citation"," 32.57%   86.281      1 Template:Statistics"," 30.68%   81.268      1 Template:Navbox_with_collapsible_groups"," 19.57%   51.856     11 Template:Navbox"," 11.88%   31.484      1 Template:See_also","  4.84%   12.811      4 Template:Icon","  3.43%    9.092      1 Template:Hlist","  1.92%    5.083     10 Template:Smaller"]},"scribunto":{"limitreport-timeusage":{"value":"0.141","limit":"10.000"},"limitreport-memusage":{"value":3828965,"limit":52428800}},"cachereport":{"origin":"mw1268","timestamp":"20190801020326","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Sign test","url":"https:\/\/en.wikipedia.org\/wiki\/Sign_test","sameAs":"http:\/\/www.wikidata.org\/entity\/Q2301904","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q2301904","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2005-12-04T15:15:48Z","dateModified":"2019-07-02T01:08:43Z","headline":"Statistical test with teststatistic the number of signs of one type"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":169,"wgHostname":"mw1325"});});</script>
+</body>
+</html>

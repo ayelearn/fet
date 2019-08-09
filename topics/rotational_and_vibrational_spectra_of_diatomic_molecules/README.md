@@ -1,0 +1,1 @@
+rotational_and_vibrational_spectra_of_diatomic_molecules

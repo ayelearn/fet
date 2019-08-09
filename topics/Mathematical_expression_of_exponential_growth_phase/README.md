@@ -1,0 +1,1 @@
+Mathematical_expression_of_exponential_growth_phase

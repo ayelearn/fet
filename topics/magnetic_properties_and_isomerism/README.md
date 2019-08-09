@@ -1,0 +1,1 @@
+magnetic_properties_and_isomerism

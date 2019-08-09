@@ -1,0 +1,1 @@
+solutions_of_onedimensional_diffusion_equation
