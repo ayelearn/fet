@@ -12,6 +12,12 @@ Find unique topics
 ```
 ls | tr '[A-Z]' '[a-z]' | tr -d '\-_' | sort -u
 ```
+```
+ls | tr '[A-Z]' '[a-z]' | tr -d '\-_' | sort -u | awk '/[^s]$/ {$x=$1; print $x "s";next};/./ {print $0}' | sort > a.txt
+ls | tr '[A-Z]' '[a-z]' | tr -d '\-_' | sort -u | awk '/[^s]$/ {$x=$1; print $x "s";next};/./ {print $0}' | sort -u > b.txt
+diff a.txt b.txt | grep "<" | cut -d' ' -f2
+diff a.txt b.txt | grep "<" | cut -d' ' -f2 | wc -l
+```
 
 Find all refs to a topic
 ```
