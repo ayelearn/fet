@@ -23,3 +23,8 @@ Find all refs to a topic
 ```
 export topic="calculus"; find -L ../refs -type d 2>/dev/null | grep -i $topic | awk -F'/' '{print $4}' | sort -u
 ```
+
+Clean up wiki.md
+```
+cat wiki.md | awk 'BEGIN {s=0; e=0};/^Jump_to/ {if (e==0) s=1; next};/./ {if (s==1 && e==0) {e=1; next} else {if (s==1 && e==1) print $0}}' | tr -s '*' | sed 's/i\.e\./that is/g; s/vs\./vs/g; s/\.\.\./~~~/g; s/[0-9]\./~/g; s/\[[0-9]*\]//g; s/\*\ /.\n~ /g; s/[^[:print:]]//g' | tr '\n' ' ' | awk -F'.' '/./ {for (i=1; i<=NF; i++) print $i"."}' | tr -s ' ' | sed 's/^\ //g; s/^\.$//g; s/\ \././g; s/\[edit\]//g; s/:\./ - /g; s/\*\./-/g; s/~~~/.../g' | grep -e '[a-z]' | awk '/^~\ Refer/ {exit};/./ {print}' | tr '_:~' ' \-\-'
+```
